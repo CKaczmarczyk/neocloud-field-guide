@@ -128,14 +128,15 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
 .drow{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;border-top:1px solid var(--line);padding-top:4px}
 .drow b{font-family:var(--mono);font-weight:500}
 #calccf tr.sep td,#calccf tr.sep th{border-top:2px solid var(--line)}
-#calccf td:first-child{white-space:nowrap}#calccf,#calcsens{font-size:12.5px}#calccf td,#calccf th,#calcsens td,#calcsens th{padding:6px 8px}
+#calccf td:first-child{white-space:nowrap}
+#cantorleases{font-size:12.5px}#cantorleases td,#cantorleases th{padding:6px 8px}#cantorleases th{white-space:normal}#calccf,#calcsens{font-size:12.5px}#calccf td,#calccf th,#calcsens td,#calcsens th{padding:6px 8px}
 </style>
 
 <div class="wrap">
 <header class="top">
   <h1>Neocloud Field Guide</h1>
   <p>Who sells AI compute, who builds and powers the sites, how it gets financed, and what that implies for how Kona should make money.</p>
-  <div class="stamp">Research gathered 4 Oct 2026, updated 26 Oct · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
+  <div class="stamp">Research gathered 4 Oct 2026, updated 27 Oct · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
 </header>
 
 <nav class="tabs" role="tablist" id="tabs"></nav>
@@ -218,6 +219,13 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
     <h2>Lease comps, highest implied rent first</h2>
     <div class="tablebox"><table id="leasetable"></table></div>
     <p class="src">Implied rent is arithmetic on disclosed contract value, term and MW. It includes escalators and may include pass-throughs. No reliable 2026 source splits rents between powered land, powered shell and turnkey, so treat any such split as unsourced.</p>
+  </div>
+  <div class="block">
+    <h2>What a signed lease is worth: Cantor's lease-by-lease DCF</h2>
+    <p class="lede">Cantor Fitzgerald (26 Oct 2026) ran a discounted cash flow on every lease seven listed landlords have signed: year-one rent, an NOI margin, the term, a WACC built from each lease's own cost of debt (cost of equity 13%), and either a terminal value at 10x NOI (a 10% cap rate) or none. The exercise answers the pushback that these buildings are worthless when the lease ends. For Kona it is the clearest public statement of how a buyer would price a Vaca Muerta lease: by the tenant's rent, discounted at the project's own debt cost plus a thin equity slice, with the building's afterlife as the swing.</p>
+    <div class="tablebox"><table id="cantorleases"></table></div>
+    <div class="tablebox"><table id="cantorsum"></table></div>
+    <p class="src">Source: Cantor Fitzgerald, "Addressing DCF Pushback on AIDCs", Brett Knoblauch and Ben Mitchell, 26 Oct 2026; FactSet prices at 1:35pm that day. Capex is Cantor's year-zero figure for the lease (zero where the site was already built or tenant-funded). Cantor's WACC for Core42 is shown as 13% in the note; the sensitivity grid centers on 9.2%.</p>
   </div>
   <div class="block">
     <h2>Behind-the-meter power by technology</h2>
@@ -596,7 +604,7 @@ const P=[
  model:["Landlord, not GPU owner. Builds the power, shell and cooling; tenants bring the GPUs and pay actual power costs at utility rates, usually with a mark-up.","HPC hosting was 71% of revenue by Q2 2026, up from zero in 2024."],
  scale:["About 840 MW contracted across New York and Kentucky; 102 MW generating revenue at Lake Mariner, New York. The first CB-4 hall was due in late September but slipped about a quarter on Fluidstack design changes; delivery not yet confirmed.","Muskie, Kentucky: contracted power doubled to 1 GW on 5 October (second 500 MW in 2029, subject to approval). No tenant yet.","Build cost running about $9M per critical IT MW (guidance $8–10M). Lake Mariner power cost $49 per MWh in Q2 2026."],
  cust:["Core42 (first lease, December 2024): 60 MW at $125 per kW-month with 3% escalators, $90M prepaid, backed by a G42 parent guarantee. Management cited a 17–18% unlevered yield.","Fluidstack at Lake Mariner: about 360–380 MW, about $6.7B, implied about $154 per kW-month. Google backstops about $3.2B of the rent in return for warrants on about 14% of TeraWulf.","Anthropic at Justified, Kentucky (a former aluminum smelter): 401 MW for 20 years, about $19B, implied about $197 per kW-month; KBW estimates an 18.3% yield on cost. Delivery from late 2027.","Sold its stake in a Texas joint venture to Fluidstack for about $530M against $450M invested."],
- cap:["Secondary market, 23 Oct 2026: the 7.75% notes trade at 102.1, a 7.0% yield and 222 bps spread to worst, the tightest of the 20 landlord bonds; they widened only 71 bps in the October selloff against a cohort average of 136 (JunkBondInvestor).","$3.2B of 7.75% secured notes due 2030, issued by a ring-fenced subsidiary (WULF Compute) and rated Ba2/BB, with a lockbox, amortization and a debt service reserve.","$2.525B of convertible notes (about $2.1B on the balance sheet).","The roughly $3.5–4B Kentucky financing, led by Morgan Stanley, had not priced by 20 October, and the investment-grade backer for the Anthropic lease is still unnamed.","Q3 results on 6 November."],
+ cap:["Cantor's lease DCF (26 Oct 2026): the three signed leases are worth $19.49 per share with a 10x terminal value and $10.51 without, against a $12.06 share price. Fluidstack is modeled at $628M of year-one rent on $1.14B of capex at an 8.8% WACC; Hawesville at $707M of rent on $4.06B of capex over 20 years at 9.2%. The market is paying about the no-terminal value and nothing for the pipeline.","Secondary market, 23 Oct 2026: the 7.75% notes trade at 102.1, a 7.0% yield and 222 bps spread to worst, the tightest of the 20 landlord bonds; they widened only 71 bps in the October selloff against a cohort average of 136 (JunkBondInvestor).","$3.2B of 7.75% secured notes due 2030, issued by a ring-fenced subsidiary (WULF Compute) and rated Ba2/BB, with a lockbox, amortization and a debt service reserve.","$2.525B of convertible notes (about $2.1B on the balance sheet).","The roughly $3.5–4B Kentucky financing, led by Morgan Stanley, had not priced by 20 October, and the investment-grade backer for the Anthropic lease is still unnamed.","Q3 results on 6 November."],
  risk:["Nearly all contracted growth traces back to Anthropic, directly or through Fluidstack.","About $4B of Kentucky capex not yet financed; working capital of -$957M at 30 June.","Dilution: shares rose from 420M to 499M in seven months, with warrants, stock units and converts on top. Short interest is about 28% of float.","New York has paused permits for new sites of 50 MW or more, which hits expansion rather than existing leases.","Both New York sites are leased from entities controlled by management."],
  kona:"The closest listed analogue to Kona's path. It started with a 60 MW lease to a guaranteed tenant that prepaid, then used a hyperscaler backstop to borrow at 7.75% in a ring-fenced subsidiary. In October's selloff its shares fell about 25% while those backed notes reportedly held near par. See the case study on the Kona tab.",
  flag:"The bond price (102.25, about 7.1% yield on 16 October) comes from a single data source. The Anthropic lease structure (triple-net, escalators) is not disclosed. Fluidstack's megawatts differ by source.",
@@ -605,7 +613,7 @@ const P=[
  model:["Build-to-suit hyperscale leases. Pivot from mining nearly complete."],
  scale:["907 MW operating or contracted. Portfolio of 5.3 GW across 11 sites.","Build cost $9–11M per MW. Three leases expected to average about $793M of annual net operating income."],
  cust:["AWS at Black Pearl: 300 MW, 15 years, about $5.5B, an implied $102 per kW-month. AWS absorbs build cost above $9.5M per MW.","Fluidstack at Barber Lake with a Google backstop; a second 10-year lease with an AI lab took the site above $9B."],
- cap:["Non-recourse project notes: $2.0B at 6.125%, $1.73B at 7.125%, $810M at 6.0%.","Secondary market, 23 Oct 2026: CIFR 7.125% 2031 at 99.3 (7.3% yield, 252 bps), Stingray 6% 2031 at 95.1 (245 bps), Black Pearl 8.125% 2031 at 97.5 (199 bps, the tightest spread in the cohort); Bloomberg shows the Black Pearl coupon as 8.125%, not 6.125%.","Management does not expect to need more equity."],
+ cap:["Cantor's lease DCF (26 Oct 2026): $15.13 per share with terminal value, $8.28 without, against $8.94; the two AWS leases are modeled at 100% NOI margins and WACCs under 7%, Barber Lake at 87.5% and 8.6%.","Non-recourse project notes: $2.0B at 6.125%, $1.73B at 7.125%, $810M at 6.0%.","Secondary market, 23 Oct 2026: CIFR 7.125% 2031 at 99.3 (7.3% yield, 252 bps), Stingray 6% 2031 at 95.1 (245 bps), Black Pearl 8.125% 2031 at 97.5 (199 bps, the tightest spread in the cohort); Bloomberg shows the Black Pearl coupon as 8.125%, not 6.125%.","Management does not expect to need more equity."],
  risk:["About 95% Texas concentration and grid-study uncertainty.","Backstops cover tenant default, not construction delay."],
  kona:"Shows cost-overrun sharing written into a lease, and how project-level notes keep each site's risk separate. The coupon gap between the AWS site and the Fluidstack site is the price of a direct hyperscaler tenant.",
  flag:"Barber Lake size and backstop amount differ between sources.",
@@ -623,7 +631,7 @@ const P=[
  model:["Single-tenant build-to-suit landlord at a former mining site."],
  scale:["526 MW of IT load leased; Galaxy now expects to deliver 800 gross MW to CoreWeave at Helios 1, with Phase 2 (260 MW) from Q2 2027. Helios 2 has 830 MW approved and no tenant.","Phase I (133 MW) delivered at about $80M per quarter, an implied $200 per kW-month.","Project-level EBITDA margin above 90%."],
  cust:["CoreWeave for 15 years with two five-year extensions and 3–5% annual escalators on Phase II. No hyperscaler backstop."],
- cap:["Phase II: $3.5B of secured notes at 9.875%, the most expensive project debt in the group. Interest starts before Phase II rent.","Secondary market, 23 Oct 2026: the notes trade at 90.1, a 12.7% yield and 788 bps spread, second widest of the 20 landlord bonds, after widening 249 bps in a month. The market prices Galaxy's bond off CoreWeave's credit, not the Helios campus."],
+ cap:["Cantor's lease DCF (26 Oct 2026): the CoreWeave lease is worth $13.63 per share with terminal value and $5.87 without, against $15.72, on $957M of year-one rent, $5.5B of capex and a 10.2% WACC driven by the 9.875% notes.","Phase II: $3.5B of secured notes at 9.875%, the most expensive project debt in the group. Interest starts before Phase II rent.","Secondary market, 23 Oct 2026: the notes trade at 90.1, a 12.7% yield and 788 bps spread, second widest of the 20 landlord bonds, after widening 249 bps in a month. The market prices Galaxy's bond off CoreWeave's credit, not the Helios campus."],
  risk:["Single tenant without investment-grade support."],
  kona:"The cost of an unbacked tenant, in one number: 9.875% here against about 6.1–6.2% for Hut 8's Google-backed and investment-grade leases.",
  flag:"Build cost per MW is not disclosed.",
@@ -675,9 +683,10 @@ renderPlayers();
  ["TensorWave","s1","AMD-only GPU cloud. Raised $350M at $1.55B. Signed 222 MW with Fermi America for 15 years."],
  ["Voltage Park / Lightning AI","s1","Merged in January 2026 at a $2.5B valuation, claiming 35,000 GPUs across six US sites."],
  ["Vultr","s1","General-purpose independent cloud with a growing GPU business. AMD is an investor."],
- ["Hut 8","s2","949 MW contracted on triple-net take-or-pay leases worth $26.6B. Best financing in the group: $3.25B at 6.19% and $4.25B at 6.13%, backed by Google and an investment-grade tenant."],
+ ["Hut 8","s2","949 MW contracted on triple-net take-or-pay leases worth $26.6B. Best financing in the group: $3.25B at 6.19% and $4.25B at 6.13%, backed by Google and an investment-grade tenant. Cantor's lease DCF: $102 per share with terminal value, $42 without, against a $68 share price."],
  ["Core Scientific","s2","About 1.1 GW leased to CoreWeave and AMD. Moving from tenant-funded capex (60–65% yields, not repeatable) to self-funded 15-year leases at about 12%. Has a $3B minimum market-cap covenant."],
- ["Riot Platforms","s2","191 MW at Rockdale to a frontier AI lab for 20 years, $9.1B, about $199 per kW-month."],
+ ["Riot Platforms","s2","191 MW at Rockdale to a frontier AI lab for 20 years, $9.1B, about $199 per kW-month. Cantor values its three signed leases at $7.89 per share with terminal value against a $13.97 price: the market is paying for leases not yet signed, at Corsicana in particular."],
+ ["CleanSpark","s2","One lease, Sandersville to Meta, signed August 2026 and debt-funded; Meta holds an option to more than double the IT. Cantor's DCF of the signed lease is $6.95 per share with terminal value against an $8.46 price."],
  ["Bitdeer","s2","121 MW in Norway leased to Volta for 16 years, $4.7B, about $202 per kW-month."],
  ["Vantage, Aligned, Related Digital","s2","Private hyperscale developers. Vantage's Frontier campus in Texas carries about $22B of bank debt. Aligned sold for $40B in July 2026. Related financed a $16B Oracle campus in Michigan."],
  ["Tract","s2","Pure powered land: master-planned, entitled sites with power, sold or leased to builders. No 2026 pricing found."],
@@ -698,6 +707,31 @@ function table(id,head,rows,numCols=[]){
   t.append(th,tb)}
 
 /* ---------- models ---------- */
+table("#cantorleases",["Landlord","Lease","Debt share","Cost of debt","WACC","Capex, $M","Year-1 rent, $M","NOI margin","Term, yrs","Value per share with 10x terminal","Without terminal"],[
+ ["TeraWulf","Core42 (60 MW)","80%","8.25%","9.2%","–","87","70%","10","$1.35","$0.77"],
+ ["TeraWulf","Fluidstack (Google backstop)","80%","7.8%","8.8%","1,140","628","85%","10","$10.15","$4.92"],
+ ["TeraWulf","Hawesville (Anthropic)","80%","8.25%","9.2%","4,058","707","85%","20","$7.99","$4.82"],
+ ["Hut 8","River Bend","90%","6.19%","6.9%","1,950","376","97%","15","$33.65","$17.11"],
+ ["Hut 8","Beacon Point 1","90%","6.125%","6.8%","3,748","527","95%","15","$37.73","$14.88"],
+ ["Hut 8","Beacon Point 2","80%","7.0%","7.6%","4,048","527","95%","15","$30.72","$10.25"],
+ ["Cipher","Barber Lake","75%","7.125%","8.6%","1,860","339","87.5%","20","$5.54","$3.46"],
+ ["Cipher","Black Pearl (AWS)","90%","6.125%","6.8%","1,602","296","100%","15","$7.01","$3.54"],
+ ["Cipher","Stingray (AWS)","90%","6.0%","6.7%","609","109","100%","15","$2.58","$1.28"],
+ ["Core Scientific","CoreWeave (tenant-funded build)","90%","7.75%","8.3%","135","728","80%","12","$18.29","$11.21"],
+ ["Core Scientific","AMD","90%","7.75%","8.3%","5,495","781","93%","15","$10.94","$3.83"],
+ ["CleanSpark","Sandersville (Meta)","90%","7.875%","8.4%","1,933","246","97%","20","$6.95","$3.70"],
+ ["Riot","AMD 1","80%","8.0%","8.9%","–","27","80%","10","$0.74","$0.42"],
+ ["Riot","AMD 2","80%","8.0%","9.0%","50","34","80%","10","$0.80","$0.40"],
+ ["Riot","AI lab (Rockdale)","90%","8.0%","8.4%","2,047","339","85%","20","$6.35","$3.72"],
+ ["Galaxy","Helios Phase 1 (CoreWeave)","90%","9.875%","10.2%","5,532","957","90%","15","$13.63","$5.87"]],[2,3,4,5,6,7,8,9,10]);
+table("#cantorsum",["Company","Share price, 26 Oct","Value of signed leases with terminal","Without terminal","Read","Cantor target"],[
+ ["TeraWulf (WULF)","$12.06","$19.49","$10.51","Trades near no-terminal value: the market pays nothing for the buildings after the leases, and nothing for the pipeline","$30"],
+ ["Hut 8 (HUT)","$68.17","$102.10","$42.24","Some terminal value priced in; River Bend expansion still to come","$151"],
+ ["Cipher (CIFR)","$8.94","$15.13","$8.28","At no-terminal value with AWS as tenant; recent capital raise an overhang","$19"],
+ ["CleanSpark (CLSK)","$8.46","$6.95","$3.70","Premium to signed leases; Meta holds an option to more than double the IT leased","$19"],
+ ["Riot (RIOT)","$13.97","$7.89","$4.54","Premium: market expects Corsicana leases and more at Rockdale","$24"],
+ ["Core Scientific (CORZ)","$13.73","$33.46","$16.69","Cantor's most mispriced name: the CoreWeave lease needed almost no capex, so its NPV is high","$30"],
+ ["Galaxy (GLXY)","$15.72","$13.63","$5.87","Premium, but the 9.875% debt drives a 10.2% WACC that depresses the DCF","$30"]],[1,2,3]);
 table("#modeltable",["Model","What you sell","Revenue per MW per year","Capex per MW","Contract","Who does it"],[
  ["Energy only","Firm power behind the meter","About $0.7M before fuel (Williams, implied)","$1.2–2.0M engines; $2.6–3.4M integrated","10–20 years, fixed-term","VoltaGrid, Williams"],
  ["Powered land or shell","Entitled site, power, building shell","No reliable 2026 pricing","Low","Sale or long lease","Tract, LandBridge"],
@@ -839,6 +873,7 @@ table("#disagree",["Question","One side","Other side","For Kona"],[
  ["Is off-grid permanent or a bridge?","Going off-grid on empty land is the most plausible answer if grid builds hit a ceiling (Shayle Kann).","Off-grid is a bridge; staying off-grid permanently is a bad idea (Sivaram, Emerald AI). Google prefers the grid and uses its own power to bridge (Vahdat). Off-grid needs about 2.6 GW of generation for a 1 GW campus (Janous).","Vaca Muerta has no grid to bridge to, so Kona is permanent off-grid by design. Price the overbuild in, and sell to buyers that do not need a later grid connection."],
  ["How long does the power shortage last?","The US will add more grid capacity in about two years than in decades, so the speed premium fades after about 2028 (Kann).","Buyers who expect relief in 2027–28 will still be short in 2029–30 (Janous). Turbines for 2028 are sold out (SemiAnalysis).","Lock in long, take-or-pay contracts while the premium lasts."],
  ["How big must a site be?","Most buyers want 100 MW or more; the smallest a desperate buyer will take is about 50 MW (Janous).","Useful inference runs at 10 MW-class sites (Vahdat). One operator plans revenue from 2–5 MW sites (Third Prime overview).","Below 50 MW, target neoclouds, inference and batch buyers, not hyperscale leases. Plan a path to a 50 MW block."],
+ ["Is a data hall worth anything after the lease?","Cantor: powered, zoned land stays attractive and a retrofit costs less than a new build, so value the building at 10x NOI at lease end; on that basis TeraWulf, Cipher and Core Scientific trade below the value of their signed leases.","The market, and part of the buy side, price the landlords at roughly the no-terminal-value DCF of their leases, paying nothing for the buildings afterwards or for unsigned pipeline.","Underwrite Kona so the equity case works with no terminal value and a lease-length loan, and treat the afterlife of the site (gas, engines, a hall near Vaca Muerta demand) as upside to negotiate for, not a number to lean on."],
  ["Will compute contracts get longer or shorter?","Landlords sign 10–20 year leases and lenders size loans inside them; chip-maker guarantees and prepayments exist to stretch terms (Financing tab). Creditors prefer long contracts, which is CoreWeave's bind (Rubinstein).","SpaceX rents whole sites on 90-day exits and CoreWeave quotes $40M per MW on 3–6 month deals; buyers pay more for less commitment. Musk: the smart move is short contracts and a bet on useful intelligence per watt rising; payback on new compute is heading toward a year or less (Nebius 1y10m, Huang under a year).","Price Kona's power and space two ways: a long take-or-pay at a lower rate for the bank, and a short-term premium tier for capacity the bank is not relying on."],
  ["How much reliability to build?","Off-grid reliability needs N+1 generation or more; four-nines from your own plant means about 2x the capacity (Janous, Vahdat).","Users often prefer twice the capacity at 99% uptime. Meta builds about 10 MW of backup per 100 MW (Vahdat, SemiAnalysis).","Offer a standard tier and a cheaper lower-uptime tier, and let the tenant choose."]]);
 table("#wulftimeline",["When","Step","Why it mattered"],[
@@ -904,7 +939,10 @@ table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
 ].forEach(x=>$("#openq").append(el("li",null,x)));
 
 /* ---------- library ---------- */
-[{t:"Credit Weekly: Rated BB, Priced Like Something Else",by:"JunkBondInvestor (Substack) · 25 Oct 2026",u:"https://www.junkbondinvestor.com/",why:"The first full secondary-market read on the landlord bonds: 20 issues, $45.6B, with price, yield and spread for each, and the reasons they trade so differently.",
+[{t:"Addressing DCF Pushback on AIDCs",by:"Cantor Fitzgerald equity research, Brett Knoblauch and Ben Mitchell · 26 Oct 2026",u:null,why:"A lease-by-lease DCF of every contract seven listed landlords have signed, with and without terminal value, which is exactly how a buyer or lender would value a Kona lease.",
+  pts:["Method: year-one rent × NOI margin over the lease term, discounted at a WACC built from each lease's own cost of debt (6.0–9.875%) and a 13% cost of equity at 75–90% debt; terminal value at 10x NOI or none. Capex is the year-zero outlay.","Result: TeraWulf, Cipher and Core Scientific trade at or below the value of their signed leases with no terminal value; Hut 8 has some terminal value priced in; CleanSpark and Riot trade above signed leases because the market expects more; Galaxy is held back by a 10.2% WACC.","Core Scientific is the standout because CoreWeave funded the build: $728M of year-one rent against $135M of capex, so the lease's NPV is $18 a share with terminal value.","Cantor's answer to the no-terminal-value camp: powered, zoned land with a hall stays valuable and retrofitting is cheaper than building, so a 10% cap rate at lease end is reasonable. To justify current prices you must assume no terminal value and no more leases.","The lease-level inputs (NOI margins of 70–100%, 10–20 year terms, debt at 6–10%) are the benchmarks for any Kona lease model."],
+  chg:"Added the lease-by-lease table and the seven-company summary to the Models tab, Cantor's valuations to the TeraWulf, Cipher and Galaxy profiles and the Hut 8, Riot and CleanSpark watchlist rows, and a terminal-value row to 'Where the sources disagree' on the Kona tab."},
+{t:"Credit Weekly: Rated BB, Priced Like Something Else",by:"JunkBondInvestor (Substack) · 25 Oct 2026",u:"https://www.junkbondinvestor.com/",why:"The first full secondary-market read on the landlord bonds: 20 issues, $45.6B, with price, yield and spread for each, and the reasons they trade so differently.",
   pts:["These bonds are closer to project finance than corporate credit: an SPV owns one campus with one long lease, debt is sized to the rent, and the rating rests on the tenant. They stay BB because campuses are unbuilt, there is no diversification, issuers are ex-miners with thin balance sheets, and most mature in 2030–31 with a balance outstanding.","The cohort has widened 136 bps since mid-September to a 471 bps average spread, 150 bps wide of single-Bs. Dispersion is wide: TeraWulf 222 bps, Zenith Arc 848.","Four things explain the dispersion: who pays the rent (TeraWulf's Google backstop versus CoreWeave at near 1,000 bps), how far along the campus is (budgets above $13M per MW), location, and whether the parent can fund overruns until completion.","Small in the index (3%) but large in supply (27.6% of 2026 non-refinancing HY issuance, about $37B), so nearly every HY buyer owns some, bought as safe BB carry.","Three risks to separate: expected loss, mark-to-market, and 2030–31 refinancing. The CoreWeave-tenant bonds (Galaxy, Core Scientific, Applied Digital) widened about 150 bps in a month, twice the rest; the real danger is tenant failure turning into landlord credit loss."],
   chg:"Added the full 20-bond table and a spread chart to the Financing tab, three bullets to Market health, secondary pricing to the TeraWulf, Cipher, Applied Digital and Galaxy profiles, and widened the tenant-credit spread on the Kona tab from 300 bps at issue to about 550 bps in the secondary market."},
 {t:"Capital Wars: CoreWeave and the Economics of a Data Center Build",by:"Marc Rubinstein, Net Interest · 23 Oct 2026",u:"https://www.netinterest.co/",why:"Treats a neocloud as a non-bank financial: the business is the spread between what new GPUs earn and what the money to buy them costs, and CoreWeave's spread is the barometer for the whole AI build.",
