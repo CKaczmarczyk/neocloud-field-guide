@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Musk says SpaceX closed $40B of GPU debt on its investment-grade rating and Starlink and launch revenue, while lenders have nearly shut out AI data center firms without other revenue.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-25",
+      "direction": "supports",
+      "numbers": "No lenders, rates or terms given; the FT-reported Apollo package was still described as under discussion on 20 October, so the close is unconfirmed (single source).",
+      "segment": "financing",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/musk-lenders-stop-funding-ai-data-centers/"
+    },
+    {
+      "claim": "Josh preview: Google backstops neocloud leases as credit derivatives, $43.8B notional at 30 June with an estimated $24.1B more agreed in principle; at TeraWulf and Cipher about $1.3B to $1.7B per site of 168 MW or more.",
+      "company": "Alphabet (Google)",
+      "date": "2026-10-23",
+      "direction": "supports",
+      "numbers": "The backstop is what turns a neocloud lease into financeable cash flow; Google keeps step-in and termination rights.",
+      "segment": "financing",
+      "source": "Alphabet 2Q26 10-Q, via Josh GOOGL preview",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
       "claim": "3Q26 10-Q: data center financing 'has generally become more difficult'; neoclouds, colocation providers and other tenants are increasingly viewed as high credit risks, which may cancel projects and push developers to negotiate lower equipment prices.",
       "company": "Bloom Energy",
       "date": "2026-10-22",
@@ -21,6 +41,16 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
     },
     {
+      "claim": "A mature, listed cloud provider signed a 10-year, 20 MW colocation lease from Q2 2027 for more than $400M over the initial term.",
+      "company": "Duos Technologies",
+      "date": "2026-10-21",
+      "direction": "neutral",
+      "numbers": "About $2M per MW per year on the lower figure; the article headline says $700M and does not explain the gap. Small sites can sign listed-tenant paper.",
+      "segment": "developer",
+      "source": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/duos-secures-cloud-provider-as-customer-for-20mw-of-data-center-capacity/"
+    },
+    {
       "claim": "The tenant's own credit is drifting: Meta had negative free cash flow, moved to net debt, and created non-voting Class C stock for capital raising, among other purposes (also employee compensation, acquisitions, general corporate purposes). Management said it has no specific financing plans.",
       "company": "Meta Platforms",
       "date": "2026-10-21",
@@ -29,6 +59,26 @@
       "segment": "financing",
       "source": "Meta 3Q26 8-K Ex.99.1; 3Q26 call",
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    },
+    {
+      "claim": "FT: Anthropic is offering Blackstone more than 10% on $9B of debt backed by Anthropic's five-year chip lease payments.",
+      "company": "Anthropic",
+      "date": "2026-10-16",
+      "direction": "supports",
+      "numbers": "Even the largest lab's lease paper prices at double digits when it is not wrapped by an investment-grade parent. Reuters could not verify (single source).",
+      "segment": "financing",
+      "source": "The Star, citing Reuters and the FT",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-offers-blackstone-double-digit-yield-in-chip-financing-deal-ft-reports"
+    },
+    {
+      "claim": "JPMorgan and Goldman guaranteed only the $1.3B lease-backed term loan in Volta's $5.0B package; the $3.7B GPU term loan was sold best-efforts.",
+      "company": "Volta",
+      "date": "2026-10-14",
+      "direction": "supports",
+      "numbers": "Both loans priced at about 11.2% to 11.75% yield to maturity, per PitchBook LCD data (single source).",
+      "segment": "financing",
+      "source": "BigGo Finance, citing PitchBook LCD",
+      "url": "https://finance.biggo.com/news/5b44ab5d-e597-4f4b-94cf-47a5ae305bac"
     },
     {
       "claim": "AMD agreed credit support for TensorWave's 222 MW lease at Fermi, a chip supplier standing behind a neocloud tenant.",
@@ -74,6 +124,16 @@
       "url": "https://cryptoslate.com/the-brutal-346m-math-behind-galaxys-high-stakes-race-to-build-coreweaves-texas-ai-mega-center/"
     },
     {
+      "claim": "Josh AMZN preview: Cipher's 70 MW Stingray lease is 15-year triple-net with a 3% escalator and an Amazon.com, Inc. guarantee of rent and opex; Amazon pays overruns above $10.5M per IT MW.",
+      "company": "Cipher Digital / Amazon",
+      "date": "2026-06-01",
+      "direction": "supports",
+      "numbers": "The parent guarantee let Cipher raise about $810M of project debt; Josh estimates about $128 to $159 per kW-month.",
+      "segment": "developer",
+      "source": "Cipher 8-K, via Josh AMZN preview",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000095010326008635/dp248110_ex9901.htm"
+    },
+    {
       "claim": "A facility backed by one investment-grade customer priced at SOFR + 225 bps, rated A3.",
       "company": "CoreWeave",
       "date": "2026-03-01",
@@ -86,7 +146,7 @@
   "order": 1,
   "question": "Does the tenant's credit, not the asset, set what developers and neoclouds pay to borrow?",
   "status": "strengthening",
-  "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler backstop prices near 6–7%; the same assets against weaker tenants pay 9–10% or more. October's selloff widened the gap.",
+  "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. Musk's claim that only borrowers with non-AI revenue can still raise money fits the pattern, though his $40B close is unconfirmed. Status unchanged: this week added more evidence in the same direction.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-10-23"
+  "updated": "2026-10-26"
 }

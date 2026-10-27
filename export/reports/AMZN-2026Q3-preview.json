@@ -1,0 +1,507 @@
+{
+  "brief": [
+    "Verdict ahead of the print: consensus revenue of about $202.2bn sits at the top of Amazon's $197bn to $202bn guide, so the consolidated numbers are not the event. The shares and bonds will move on four things: AWS growth against about 35% to 38%, how fast the $496bn backlog converts, the first frame for 2027 capex after the 2026 plan rose to about $220bn, and how a business with -$7.6bn of TTM free cash flow keeps funding the build. Amazon confirmed on 15 October 2026 that it reports on Thursday 29 October after the close, with the call at 5:00 pm ET.",
+    "Where expectations sit. Yahoo Finance shows 3Q26 revenue consensus of $202.2bn from 49 analysts (range $199.37bn to $205.36bn), up 12.2% on $180.17bn, and EPS of $1.96 from 45 analysts (range $1.72 to $2.23) against $1.95. MarketBeat has $202.16bn and $1.96; Zacks has $202.11bn and $2.01. Zacks puts AWS at $45.42bn, up 37.6% on $33.01bn, which needs about 7.5% sequential growth. Benzinga's preview says analysts expect 30% to 35%, and Pepperstone says about 35%. The year-ago $1.95 included $9.5bn of pre-tax Anthropic gains. Pepperstone says consensus excludes Anthropic marks, so 3Q GAAP EPS can land far from $1.96 either way. We found no published consensus for AWS operating income, backlog or quarterly capex.",
+    "What the last call set up. On 30 July, Jassy raised 2026 cash capex to about $220bn (from about $200bn), citing memory costs. With H1 net capex at $96.3bn, that implies about $61.8bn a quarter in the second half, 17% above 2Q's $53.1bn. He said most 2027 capacity is already reserved, with a good deal reserved for 2028, and that power capacity will double from 2025 by the end of 2027. AWS margin was 39.4% in 2Q26, which CFO Olsavsky said included an energy-derivative gain; without it, the year-on-year expansion was 520 bps rather than 650 bps. Q3 guidance assumes no energy-derivative remeasurement and operating income of $22.5bn to $26.5bn.",
+    "Three debates. First, capex against cash: 2Q26 free cash flow was -$7.7bn, $21.3bn more went to OpenAI after 30 June, and Morgan Stanley (via Motley Fool, single source) models 2027 capex of $355bn. Second, backlog quality: $496bn is 2.9x annualized AWS revenue, but much of it rests on two labs. Anthropic committed more than $100bn over ten years for up to 5 GW. OpenAI expanded its $38bn contract by $100bn and committed to 2 GW of Trainium. Amazon holds $190.4bn of Anthropic securities and $50bn of OpenAI preferred. Third, the lease and power build: leases not yet commenced rose to $137.2bn from $96.4bn at year-end ($93.5bn of it after 2030). At Cipher's 70 MW Stingray site, Amazon.com, Inc. guarantees AWS's rent. Amazon also bought the GW Ranch site in Texas, permitted for 7.65 GW of on-site gas.",
+    "What would move the stock. Positive: AWS at or above about $45bn with a margin in the high 30s and no derivative help, backlog well above $496bn with more customers in it, and a 2027 capex frame tied to reserved capacity. Negative: AWS below about 33%, margin pressure from D&A (AWS D&A +67% in 2Q26), 2027 capex well above $355bn with no free cash flow floor, or signs that the September draw deadline on the $17.5bn term loan forced more borrowing. AMZN closed at $248.00 on 23 October and traded at $248.34 early on 26 October. Options imply about a 7.4% move (Pepperstone, 23 October).",
+    "Kona read-through. Amazon is both a buyer of third-party AI capacity and the builder of the largest off-grid gas campus yet proposed. At Cipher's Stingray site, it signed a 15-year triple-net lease for 70 MW of critical IT with a 3% escalator, a parent guarantee of rent and operating expenses, and a cap that makes Amazon pay construction overruns above $10.5mn per IT MW. That is close to Kona's scale, and it is the clearest template yet for project debt at a small site."
+  ],
+  "changes": [
+    "Capex raised: 2026 cash capex to about $220bn from about $200bn (30 July call), after $131.8bn in 2025. H1 net capex was $96.3bn, so the second half needs about $123.7bn.",
+    "Debt funding at scale: $37.0bn of USD notes (March), EUR 14.5bn, CHF 2.8bn, CAD 14.0bn, $25.0bn of USD notes on 9 July (T+40 to T+125 bps, a reported 18 to 21 bps new-issue concession), GBP 4.25bn on 14 September, and a $17.5bn delayed-draw term loan (draw by 30 September). Long-term debt was $133.0bn at 30 June, against $68.8bn at year-end.",
+    "Backlog jumped: $244bn (4Q25), $364bn (1Q26), $496bn (2Q26), with a 6.4-year weighted life. Anthropic's more-than-$100bn, 10-year commitment (up to 5 GW) and OpenAI's $100bn expansion (2 GW of Trainium) were signed in 1H26.",
+    "Lab stakes ballooned: Anthropic securities were carried at $190.4bn at 30 June ($62.8bn of upward adjustments in H1), and a $15.0bn Anthropic facility remains available. The $50bn OpenAI commitment was fully funded, including $21.3bn after 30 June.",
+    "Power and leases went off-grid and long: leases not yet commenced reached $137.2bn (from $96.4bn). Amazon acquired GW Ranch in Pecos County, Texas (7.65 GW gas permit, first power targeted for 1Q27, single source for timing). It also signed 690 MW of Calvert Cliffs nuclear (1 October) and is funding a 960 MW X-energy/AEP SMR plant in Indiana (19 October)."
+  ],
+  "checks": "No knowledge base detected (no Neocloud Agents folder or AMZN thesis file exists). Proceeding with web-retrieved documents only; historical comparison depth will be limited. No subagent was used, so I verified figures myself. Report date: confirmed by Amazon's 15 October 2026 release (via InvestingNews): Thursday 29 October, 2:00 pm PT / 5:00 pm ET. MarketBeat still marks the date as estimated. Filings: data.sec.gov returned the submissions list and XBRL companyfacts with the requested User-Agent, which I saved to amzn_src/sub. www.sec.gov rejected that User-Agent with 403 ('undeclared automated tool'), so I read the 2Q26 Ex. 99.1, the 2Q26 10-Q XBRL R pages (R2, R8, R9, R10, R11, R12, R54, R58, R59), the 2025 10-K R pages (R23, R71, R87, R92, R93), the 3Q25 Ex. 99.1, the July FWP and the July and September 8-Ks through a fetch tool. Those figures were not string-matched in code. I cross-checked the following XBRL values against the R pages and the release, and each matched: revenue (200,606; 180,169; 716,924), operating income (27,461; 17,422; 79,975), EPS (5.75; 1.95; 7.17), OCF (45,387; TTM 161,403), purchases of P&E (54,208; H1 98,411; TTM 173,028), finance-lease principal (395; TTM 1,599), LTD (132,995; 68,836), finance lease liabilities (13,451), operating lease liabilities (96,320), cash (78,213) and debt proceeds (H1 66,998). From filings only: backlog $496bn and 6.4 years; leases not yet commenced $137,214mn against $96,373mn; commitments $650,034mn against $439,661mn; Anthropic $92.5bn and $97.9bn, the $62.8bn H1 adjustments and the $15.0bn facility; OpenAI $15.0bn, $13.7bn and $21.3bn; debt facilities and notes; energy contracts of 270mn MWh; July tranche spreads and ratings. Call quotes ($220bn capex, $496bn backlog, doubling of power by end-2027, the 520 bps margin ex-gain, server life and breakeven, 'real chance' of Trainium sales) come from the StockAnalysis transcript and were cross-checked with 24/7 Wall St and Pepperstone. Consensus: I reopened Yahoo's analysis page, MarketBeat, Zacks via Yahoo, Benzinga, Pepperstone, 24/7 Wall St and Barchart. Each matched what I recorded. Share prices come from StockAnalysis history (23 October close $248.00; 26 October $248.34 at 10:03 am, intraday) and match MarketBeat and Motley Fool. Derived numbers were recomputed in Python: revenue growth of 12.2%, AWS growth of 37.6% and 7.5% sequential, a 2Q AWS margin of 39.4%, about 38.1% excluding the gain, H1 net capex of $96.3bn, H2 need of $123.7bn and $61.8bn a quarter (+16.5% on 2Q), TTM FCF of -$7.6bn and -$9.5bn after lease and financing principal, 2Q FCF of -$7.7bn, backlog +148% on 3Q25 and 2.9x annualized AWS, leases not yet commenced +42%, LTD +93%, notes issued about $91.9bn through July, share-price moves, target upside, 4Q consensus growth of 14.5%, the AWS share of capex additions (76%), AWS D&A +67%, Anthropic carrying value of $190.4bn, the Cipher implied rent ($1.54mn per MW-year in year one, about $128/kW-month, average about $159/kW-month), and 23.5x FY27 EPS. Single source or not primary: Morgan Stanley's 2027 capex of $355bn and AWS +47% (Motley Fool); GW Ranch first power in 1Q27 and the >5 GW figure (Crypto Briefing; DCD confirms the site and the 7.65 GW permit); Cipher's $810mn notes at about 6.25% (Cobo); the July concession of 18 to 21 bps and 2.5x coverage (Fortune, BofA) against 1.6x (Reuters/Sage); Amazon CDS at record (Investing.com, 20 October, no level). Cipher lease terms come from Cipher's 8-K Ex. 99.1 deck (1 June 2026). Not found: Amazon bond spreads or CDS levels dated 23 to 26 October; consensus for AWS operating income, backlog, quarterly capex and FCF; the cause of the 4.6% fall on 22 October; whether the $17.5bn term loan was drawn. I did not convert the GBP 4.25bn issue to dollars. No 3Q26 results had been filed when this card was built (latest EDGAR filing checked: 6 October 2026), and no post-results material was read. Independent check: a separate fact-check agent, given only the draft and sources, re-confirmed about 15 core figures (consensus, 2Q26 XBRL actuals, guide, backlog, capex, debt, July notes, 23 October price, Cipher Stingray terms) and recomputed derived figures; one debt-sum wording fixed; Stingray debt cost and the Morgan Stanley 2027 capex figure remain unverified/single source.",
+  "consensus_thesis": "Investors own Amazon as the AI capacity landlord whose AWS growth re-accelerated to 37% on a $496bn backlog anchored by multi-gigawatt Trainium commitments from Anthropic and OpenAI. At $248 (23 October), about 23.5x FY27 consensus EPS of $10.56 (Yahoo; our arithmetic), the market is paying for AWS growth in the mid-to-high 30s and 2027 capex that earns its keep, rather than for retail. Positioning is crowded long (47 Strong Buy, 6 Moderate Buy, 3 Hold of 56 per Barchart; average target $335.62 per Benzinga), though the shares are down 5.5% from $262.37 on 21 October. In credit, the A1/AA/AA- notes priced at T+40 to T+125 bps in July. Press on 20 October put Amazon CDS at an all-time high, but we found no level and no bond spread dated 23 to 26 October.",
+  "date": "2026-10-26",
+  "headline": "3Q26 will be judged less on the consolidated beat than on whether AWS can turn a $496bn backlog into about 35% to 38% growth while Amazon funds a roughly $220bn 2026 capex plan with negative free cash flow, about $92bn of new notes this year and $137bn of leases not yet commenced.",
+  "kind": "preview",
+  "kona": "Amazon is underwriting small third-party AI sites on terms Kona can copy. At Cipher's 70 MW Stingray site it signed a 15-year triple-net lease with a 3% escalator and an Amazon.com, Inc. guarantee of rent and opex, and it pays construction overruns above $10.5mn per IT MW. That structure let the developer raise about $810mn of project debt ((debt cost not disclosed; Cipher's illustrative coupon is 6.0%), single source). For Kona, the bankable product is a long, escalating, parent-guaranteed lease with a capped build cost, priced near $128 to $159/kW-month on that deal (our arithmetic). With GW Ranch, Amazon is building 7.65 GW of permitted on-site gas itself, so off-grid gas is acceptable to a hyperscaler buyer. The gap is that every template so far is in the US. Kona should test whether Amazon or an Amazon-backed lab will sign in Argentina, and price country risk into the lease rather than the power tariff.",
+  "kpis": [
+    {
+      "consensus": "$202.2bn (Yahoo, 49 analysts, range $199.37bn to $205.36bn); MarketBeat $202.16bn; Zacks $202.11bn; Benzinga $202.21bn",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "The company guided to $197.0bn to $202.0bn (+9% to 12%), with about 80 bps of FX headwind and Prime Day moved into 2Q (worth nearly 400 bps). Consensus sits $0.2bn above the top of the guide.",
+      "prior": "$200.61bn (2Q26, +19.6%); $180.17bn (3Q25)"
+    },
+    {
+      "consensus": "n.a. (no published consensus found); guide $22.5bn to $26.5bn",
+      "current": "",
+      "metric": "Operating income",
+      "note": "Guide midpoint $24.5bn, about a 12.3% margin on the $199.5bn sales midpoint (our arithmetic). The guide assumes no energy-derivative remeasurement.",
+      "prior": "$27.46bn (2Q26, +43%); $17.42bn (3Q25, including the $2.5bn FTC settlement and $1.8bn of severance)"
+    },
+    {
+      "consensus": "$1.96 (Yahoo, 45 analysts, range $1.72 to $2.23); MarketBeat $1.96; Zacks $2.01; Barchart $2.02 (13 October)",
+      "current": "",
+      "metric": "Diluted EPS",
+      "note": "Pepperstone says consensus excludes Anthropic marks. FY26 EPS is not comparable across providers: $12.90 (Yahoo, including H1 gains) against $8.03 (Barchart).",
+      "prior": "$5.75 (2Q26 GAAP, including $53.4bn of non-operating income, mostly Anthropic); $1.95 (3Q25, including $9.5bn of pre-tax Anthropic gains)"
+    },
+    {
+      "consensus": "$45.42bn, +37.6% (Zacks, 26 October); growth 30% to 35% (Benzinga, 22 October); about 35% (Pepperstone, 23 October)",
+      "current": "",
+      "metric": "AWS revenue",
+      "note": "Zacks needs +7.5% sequential. A 35% outcome would be about $44.6bn (our arithmetic). Growth ex-FX by quarter: 20%, 24%, 28%, then 37% reported.",
+      "prior": "$42.23bn (2Q26, +36.8%); $33.01bn (3Q25, +20%)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "AWS operating income and margin",
+      "note": "The CFO said the 2Q margin was up 650 bps year on year, or 520 bps excluding a derivative accounting gain (about 38.1%, our arithmetic). AWS D&A was $8.08bn in 2Q26, up 67%.",
+      "prior": "$16.62bn, 39.4% (2Q26); $11.43bn, 34.6% (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "AWS backlog (RPO)",
+      "note": "Weighted remaining life of long-term contracts is 6.4 years (10-Q). The backlog is 2.9x annualized 2Q AWS revenue. The 1Q26 figure excluded the Anthropic deal (Yahoo, 30 April).",
+      "prior": "$496bn (30 June 2026); $364bn (1Q26); $244bn (4Q25); $200bn (3Q25)"
+    },
+    {
+      "consensus": "FY26 about $220bn (company); FY27 $355bn (Morgan Stanley via Motley Fool, single source); quarterly n.a.",
+      "current": "",
+      "metric": "Capex (cash, net of proceeds)",
+      "note": "The guide implies about $61.8bn a quarter in the second half. AWS took 76% of H1 property additions ($90.1bn of $118.6bn). Property acquired but not yet paid rose $20.6bn in H1.",
+      "prior": "$53.1bn (2Q26); H1 $96.3bn; FY25 $131.8bn gross"
+    },
+    {
+      "consensus": "n.a. (no consensus found)",
+      "current": "",
+      "metric": "Free cash flow",
+      "note": "Less finance-lease principal ($1.60bn TTM) and financing obligations ($0.31bn), TTM is about -$9.5bn (our arithmetic). The $21.3bn OpenAI payment in 3Q falls in investing, not FCF.",
+      "prior": "TTM -$7.6bn (2Q26); 2Q26 -$7.7bn (our arithmetic); TTM $14.8bn (3Q25)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Leases not yet commenced",
+      "note": "Not on the balance sheet. Commenced finance lease liabilities were $13.45bn and operating lease liabilities $96.3bn. Total contractual commitments were $650.0bn, against $439.7bn.",
+      "prior": "$137.2bn (30 June 2026), against $96.4bn (31 December 2025); $93.5bn falls after 2030"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Lab exposure (Anthropic, OpenAI)",
+      "note": "The 10-Q says maximum exposure to these VIEs is generally limited to carrying value plus future funding commitments. Anthropic has committed more than $100bn to AWS over 10 years, and OpenAI $38bn plus $100bn over 8 years.",
+      "prior": "Anthropic: preferred $92.5bn plus convertible notes $97.9bn (fair value); $15.0bn of facility remaining. OpenAI: $50.0bn of Series C preferred, fully funded after 30 June"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash and debt",
+      "note": "After 30 June: $25.0bn of USD notes (9 July) and GBP 4.25bn (14 September). The $5.0bn short-term revolver matures in October 2026. Ratings A1/AA/AA-.",
+      "prior": "Cash $78.2bn plus current marketable securities $44.8bn; long-term debt face $133.0bn ($3.3bn current); notes fair value $123.8bn; undrawn $17.5bn term loan, $20.0bn revolvers and $30.0bn CP"
+    },
+    {
+      "consensus": "4Q revenue $244.37bn (Yahoo, 47 analysts, range $234.24bn to $255.93bn), +14.5%; EPS $2.45 (42 analysts); operating income n.a.",
+      "current": "",
+      "metric": "4Q26 outlook",
+      "note": "The 4Q guide will be read for AWS capacity additions and memory-cost pressure on margins.",
+      "prior": "4Q25 revenue $213.39bn; 4Q25 operating income $24.98bn (our arithmetic); last year's 4Q guide was $206bn to $213bn"
+    }
+  ],
+  "monitor": [
+    "AWS revenue and margin against $45.4bn (Zacks) and 39.4% in 2Q26 (about 38% excluding the derivative gain), and backlog against $496bn.",
+    "The 2027 capex frame against Morgan Stanley's $355bn (single source), second-half 2026 cash capex against the implied $61.8bn a quarter, and free cash flow after finance-lease principal.",
+    "Funding: whether the $17.5bn term loan was drawn, the 2027 issuance plan, changes in the $137.2bn of leases not yet commenced, and any parent guarantees of third-party sites."
+  ],
+  "name": "Amazon",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "Leases not yet commenced rose from $96.4bn at year-end to $137.2bn at 30 June, and $93.5bn of that falls after 2030. At Cipher's Stingray site, Amazon.com, Inc. guarantees all base rent and operating expenses for AWS. How many MW do the $137.2bn of leases cover? What share is with third-party developers or neocloud-type landlords rather than build-to-suit? What is the total of parent guarantees given to landlords? Will you disclose the 30 September figure on the call, yes or no?",
+      "style": "credit",
+      "why": "These are debt-like commitments outside reported debt. Rating agencies and bond investors need their size, counterparties and guarantee terms to judge lease-adjusted leverage behind A1/AA paper, and to see how far Amazon's credit reaches into the developer sector."
+    },
+    {
+      "question": "You have issued about $92bn of notes in USD, EUR, CHF and CAD this year plus GBP 4.25bn in September, signed a $17.5bn delayed-draw term loan with a 30 September draw deadline, and paid OpenAI $21.3bn after 30 June. TTM free cash flow is -$7.6bn. Did you draw the term loan? What range of debt issuance is in your 2027 plan? Is there a net leverage level at which you would slow capex or protect the AA rating?",
+      "style": "credit",
+      "why": "The July deal needed an 18 to 21 bps concession on the long end, and press reports Amazon CDS at record wides. A stated issuance range or leverage limit sets the supply overhang and the cost of the next dollar for the whole hyperscaler curve."
+    },
+    {
+      "question": "You raised 2026 cash capex to about $220bn, citing memory costs, and said most 2027 capacity is already reserved. Morgan Stanley models $355bn for 2027. What is your 2027 framework? How much of the 2026 increase is component inflation rather than more MW? What share goes to Trainium against Nvidia systems, and to power and buildings against servers?",
+      "style": "equity",
+      "why": "2027 capex is the main swing factor for free cash flow. If price inflation rather than capacity drives the raise, returns per MW fall."
+    },
+    {
+      "question": "Backlog is $496bn, up from $364bn in one quarter, with a 6.4-year weighted life. Anthropic committed more than $100bn over ten years and OpenAI $100bn over eight. What share of the $496bn comes from your two largest customers? How much will be recognized in the next 12 months? What was backlog at 30 September?",
+      "style": "credit",
+      "why": "Concentration in two cash-burning labs, both of which Amazon also funds ($190.4bn of Anthropic securities and $50bn of OpenAI preferred), turns the backlog into counterparty exposure. Conversion speed decides whether capex earns its return."
+    },
+    {
+      "question": "AWS margin was 39.4% in 2Q, but you said the year-on-year gain was 520 bps rather than 650 bps without the derivative gain. AWS D&A rose 67%, and you described server lives as at least five to six years with breakeven in a little under three. What is the AWS margin excluding energy-derivative remeasurement this quarter? Do you expect to shorten useful lives for Trainium and GPU fleets, yes or no?",
+      "style": "equity",
+      "why": "Margin quality decides whether AI capacity is earning more than its depreciation and funding cost. A life change would reset earnings and the value of the capacity base."
+    },
+    {
+      "question": "You acquired GW Ranch in Pecos County, permitted for 7.65 GW of on-site gas with first power targeted for 1Q27 (press). You also signed 690 MW at Calvert Cliffs and are funding a 960 MW X-energy plant. What share of the capacity you will double by end-2027 is behind-the-meter gas rather than grid supply? Who owns the generation at GW Ranch, and are you guaranteeing Pacifico's turbine or fuel commitments?",
+      "style": "credit",
+      "why": "On-site generation moves power risk and capital onto Amazon's balance sheet or into take-or-pay contracts (270mn MWh of energy derivatives already). It also shows whether off-grid gas is now a mainstream route to capacity."
+    },
+    {
+      "question": "You said there is a real chance you will sell Trainium chips to customers outside AWS, and your chips business runs above $25bn. Will Trainium be placed in third-party or customer-owned data centers in 2027? Would that capacity be leased or sold?",
+      "style": "equity",
+      "why": "Selling chips into third-party sites would create a new channel for Trainium capacity and change who funds the data center."
+    }
+  ],
+  "risks": [
+    "AWS growth stalls below about 33% because power and capacity slip, or the backlog converts more slowly than capex is spent.",
+    "Capex inflation: memory and component prices push 2026 to $220bn and 2027 toward $355bn (Morgan Stanley), keeping free cash flow negative and requiring steady issuance into wider spreads.",
+    "Lab concentration: Anthropic and OpenAI anchor the backlog while Amazon carries $190.4bn and $50bn of their securities. A funding setback at either lab hits revenue and the balance sheet at once.",
+    "Off-balance-sheet growth: $137.2bn of leases not yet commenced, parent rent guarantees to developers, 270mn MWh of energy contracts, and on-site gas at GW Ranch.",
+    "Earnings quality: GAAP EPS swings on Anthropic marks and energy-derivative remeasurements, and the AWS margin included a derivative gain in 2Q."
+  ],
+  "sections": [
+    {
+      "body": "For AI compute, Amazon is a buyer, builder and financier. It builds and leases data centers, buys Nvidia GPUs and designs Trainium and Graviton, and sells that capacity through AWS ($128.7bn of FY25 revenue; $42.2bn in 2Q26, +37%, 39.4% margin). Contracted demand sits in a $496bn backlog with a 6.4-year weighted life, anchored by multi-GW Trainium commitments from Anthropic and OpenAI, in both of which Amazon is also a large investor ($190.4bn and $50bn). When its own builds fall short, AWS leases capacity from third-party developers, as at Cipher (300 MW and 70 MW), sometimes with an Amazon.com parent guarantee, and it is moving to on-site gas (GW Ranch) and nuclear PPAs. The build is funded by $161.4bn of TTM operating cash flow, about $92bn of 2026 notes through July (A1/AA/AA-), $137.2bn of leases not yet commenced, and undrawn bank and CP lines. TTM free cash flow is -$7.6bn. Full profile: AMZN_model.txt.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 13 to 26 October 2026. We found no published consensus for operating income, AWS operating income, backlog, quarterly capex or FCF. Consensus EPS is understood to exclude Anthropic marks (Pepperstone).",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$202.2bn (49; $199.37bn to $205.36bn)",
+            "Yahoo Finance, 26 Oct",
+            "Guide $197.0bn to $202.0bn; 2Q26 $200.61bn; 3Q25 $180.17bn"
+          ],
+          [
+            "3Q26 revenue, other providers",
+            "MarketBeat $202.16bn; Zacks $202.11bn; Benzinga $202.21bn; 24/7 $202.20bn",
+            "23 to 26 Oct",
+            ""
+          ],
+          [
+            "3Q26 operating income",
+            "n.a.",
+            "",
+            "Guide $22.5bn to $26.5bn; 2Q26 $27.46bn; 3Q25 $17.42bn"
+          ],
+          [
+            "3Q26 EPS",
+            "$1.96 (45; $1.72 to $2.23)",
+            "Yahoo Finance, 26 Oct",
+            "2Q26 $5.75 GAAP; 3Q25 $1.95 (including $9.5bn of Anthropic gains)"
+          ],
+          [
+            "3Q26 EPS, other providers",
+            "MarketBeat $1.96; Zacks $2.01; Barchart $2.02",
+            "13 to 26 Oct",
+            ""
+          ],
+          [
+            "AWS revenue",
+            "$45.42bn (+37.6%); growth 30% to 35% (Benzinga); about 35% (Pepperstone)",
+            "Zacks via Yahoo, 26 Oct; Benzinga, 22 Oct; Pepperstone, 23 Oct",
+            "2Q26 $42.23bn (+36.8%); 3Q25 $33.01bn"
+          ],
+          [
+            "AWS operating income",
+            "n.a.",
+            "",
+            "2Q26 $16.62bn (39.4%); 3Q25 $11.43bn (34.6%)"
+          ],
+          [
+            "AWS backlog",
+            "n.a.",
+            "",
+            "$496bn at 30 June; $364bn at 31 March"
+          ],
+          [
+            "FY26 capex",
+            "about $220bn (company guide)",
+            "2Q26 call, 30 Jul",
+            "H1 net $96.3bn; FY25 $131.8bn"
+          ],
+          [
+            "FY27 capex",
+            "$355bn (Morgan Stanley, single source)",
+            "Motley Fool, Oct",
+            "'Largely reserved' 2027 capacity (Jassy)"
+          ],
+          [
+            "4Q26 revenue / EPS",
+            "$244.37bn (47) / $2.45 (42)",
+            "Yahoo Finance, 26 Oct",
+            "4Q25 $213.39bn; 4Q25 guide was $206bn to $213bn"
+          ],
+          [
+            "FY26 / FY27 revenue",
+            "$828.74bn / $949.96bn",
+            "Yahoo Finance, 26 Oct",
+            "FY25 $716.92bn"
+          ],
+          [
+            "FY26 / FY27 EPS",
+            "$12.90 / $10.56 (Yahoo, FY26 including H1 marks); $8.03 / $10.59 (Barchart)",
+            "Yahoo, 26 Oct; Barchart, 13 Oct",
+            "FY25 $7.17"
+          ],
+          [
+            "Price target",
+            "$335.62 avg (Benzinga); $328.91 mean (Barchart); Morgan Stanley $350, Wells Fargo $329, Cantor $310",
+            "22 Oct; 13 Oct",
+            "Close $248.00 on 23 Oct"
+          ],
+          [
+            "Implied move",
+            "about 7.4%",
+            "Pepperstone, 23 Oct",
+            ""
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 AWS re-acceleration holds",
+            "AWS grows in the mid-to-high 30s as new capacity lands; supply, not demand, is the limit",
+            "AWS revenue of $44.6bn to $45.4bn (35% to 37.6%), against 36.8% in 2Q",
+            "Zacks, Pepperstone, Benzinga, Morgan Stanley; management ('largely reserved')"
+          ],
+          [
+            "P2 Backlog converts and broadens",
+            "$496bn backlog turns into revenue on schedule and is not just two labs",
+            "Backlog above $496bn; any concentration or 12-month conversion disclosure",
+            "24/7 Wall St, Pepperstone; Jassy ('reasonable breadth', 1Q call)"
+          ],
+          [
+            "P3 AWS margin survives the D&A wave",
+            "Margin stays in the high 30s despite AWS D&A +67% and memory inflation",
+            "AWS margin against 39.4% (about 38.1% excluding the derivative gain)",
+            "Pepperstone, 24/7 Wall St; CFO said margins will vary with AI mix"
+          ],
+          [
+            "P4 Capex is funded and earns a return",
+            "About $220bn in 2026 and well above that in 2027, funded by OCF and A1/AA debt without stress",
+            "Second-half capex pace (about $61.8bn a quarter implied), 3Q FCF, 2027 frame, term-loan draw",
+            "Morgan Stanley ($355bn, single source); Pepperstone (bear framing on FCF and debt)"
+          ],
+          [
+            "P5 Lab stakes and off-balance-sheet build are assets, not risks",
+            "Anthropic and OpenAI stakes add value; $137.2bn of leases and on-site power are manageable",
+            "Change in leases not yet commenced, any guarantees, Anthropic marks",
+            "Filings only; few previews address it (single source: filings)"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "AWS growth at an 18-quarter high (37%) with a $496bn backlog growing triple digits",
+            "TTM free cash flow of -$7.6bn, and capex keeps rising ($220bn in 2026; $355bn in 2027 per Morgan Stanley)"
+          ],
+          [
+            "Both leading labs committed multi-GW to Trainium (Anthropic up to 5 GW; OpenAI 2 GW); chips run-rate above $25bn",
+            "Lab concentration, with Amazon funding the same customers ($190.4bn and $50bn of stakes)"
+          ],
+          [
+            "AWS margin of 39.4%; operating income up 43%; beat EPS in 11 of the last 12 reports (24/7)",
+            "Margin flattered by a derivative gain; GAAP EPS swings on Anthropic marks; memory, fuel and tariff inflation"
+          ],
+          [
+            "Strong Buy consensus (47 of 56); Morgan Stanley top pick at $350",
+            "Long-term debt nearly doubled to $133.0bn; the July deal needed a concession; CDS at record (press)"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) AWS growth and conversion: does the $496bn backlog deliver about 35% to 38% AWS growth now, or is capacity still the bottleneck until 2027? 2) Capex against cash: can Amazon frame 2027 capex (Morgan Stanley $355bn) with a funding plan and free cash flow floor that keeps AA ratings and spreads stable after about $92bn of notes and a $17.5bn term loan? 3) Quality of AI earnings: does the AWS margin hold in the high 30s without derivative gains as D&A rises 67%, and how much of the backlog depends on Anthropic and OpenAI, which Amazon also funds? 4) The off-balance-sheet build: how far will leases not yet commenced ($137.2bn), parent guarantees and on-site gas (GW Ranch) grow before the market treats them as debt?",
+      "title": "Live debates"
+    },
+    {
+      "body": "EPS: 3Q26 consensus runs from $1.96 (Yahoo, MarketBeat, Pepperstone) to $2.01 (Zacks) and $2.02 (Barchart, 13 October). FY26 EPS is $12.90 at Yahoo (including H1 Anthropic gains) against $8.03 at Barchart, so the two are not comparable. AWS growth: Zacks' $45.42bn implies 37.6%, while Benzinga reports 30% to 35% and Pepperstone about 35%. July bond deal: Fortune (citing BofA) says 2.5x coverage against 3.2x in March; Reuters (citing Sage) says about 1.6x against 3.4x. Report date: MarketBeat still calls 29 October an estimate, but Amazon confirmed it on 15 October. GW Ranch: DCD says the project starts off-grid and moves to grid service as interconnection allows; Crypto Briefing describes a self-contained energy island with first power in 1Q27 (single source for timing). Beat record: 24/7 Wall St says Amazon beat EPS in 11 of its last 12 reports; Barchart says it beat in two of the last four and missed in two. Year-ago EPS base: some previews compare $1.96 with $1.95 as flat growth without noting the $9.5bn Anthropic gain in 3Q25.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June 2026: cash $78.2bn plus $44.8bn of current marketable securities; long-term debt of $133.0bn face ($128.9bn non-current and $3.3bn current, both net of about $0.8bn unamortized discount and issuance costs), up from $68.8bn at year-end; notes fair value $123.8bn; weighted remaining life 14.2 years. 2026 issuance: $37.0bn of USD notes in March (3.85% to 6.05%), EUR 14.5bn ($16.55bn), CHF 2.8bn ($3.49bn), CAD 14.0bn ($9.85bn), then $25.0bn of USD notes on 9 July at T+40 (2029) to T+125 bps (2066) with coupons of 4.60% to 6.25%, and GBP 4.25bn on 14 September (5.20% to 6.65%). Facilities: a $17.5bn delayed-draw term loan (draws by 30 September 2026; undrawn at 30 June), a $15.0bn revolver to November 2028, a $5.0bn short-term revolver maturing October 2026, and $30.0bn of CP programs, all undrawn at 30 June. Ratings A1/AA/AA- (July FWP). Capex against cash: TTM OCF $161.4bn against TTM net capex $169.0bn, giving FCF of -$7.6bn and about -$9.5bn after finance-lease and financing-obligation principal. 2Q26 alone: OCF $45.4bn, net capex $53.1bn. Leases: finance lease liabilities $13.45bn, operating lease liabilities $96.3bn, and $137.2bn of leases not yet commenced. Total contractual commitments $650.0bn, including $130.1bn of purchase obligations. Off-balance-sheet support: a parent guarantee of AWS rent and opex at Cipher Stingray (70 MW, 15 years, 3% escalator, overrun cover above $10.5mn per IT MW); 270mn MWh of energy contracts held as derivatives; and a $15.0bn Anthropic facility available. Credit market: the July deal paid an 18 to 21 bps concession on the long end (Fortune), and Sage says it widened Amazon's earlier 30-year bond by about 20 bps (Reuters, 29 July). Press on 20 October reports Amazon CDS at an all-time high but gives no level. We found no Amazon spread or CDS level dated 23 to 26 October.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: leases not yet commenced, third-party share and parent guarantees (credit); term-loan draw, 2027 issuance and leverage limit (credit); the 2027 capex frame and inflation against MW; backlog concentration and 12-month conversion (credit); AWS margin excluding derivatives and server lives; GW Ranch and behind-the-meter power commitments (credit); Trainium sales outside AWS.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "Amazon: Amazon.com to Webcast Third Quarter 2026 Financial Results Conference Call (15 October 2026, via InvestingNews)",
+      "url": "https://investingnews.com/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call/"
+    },
+    {
+      "title": "Amazon 2Q26 earnings release (8-K Ex. 99.1, 30 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm"
+    },
+    {
+      "title": "Amazon 2Q26 10-Q (31 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+    },
+    {
+      "title": "Amazon 2025 10-K (6 February 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+    },
+    {
+      "title": "Amazon 3Q25 earnings release (8-K Ex. 99.1, 30 October 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000121/amzn-20250930xex991.htm"
+    },
+    {
+      "title": "Amazon FWP pricing term sheet, $25bn notes (7 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926081334/tm2619352d3_fwp.htm"
+    },
+    {
+      "title": "Amazon 8-K, closing of $25bn notes (9 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926082293/tm2619352d4_8k.htm"
+    },
+    {
+      "title": "Amazon 8-K, closing of GBP 4.25bn notes (14 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107526/tm2624614d5_8k.htm"
+    },
+    {
+      "title": "SEC EDGAR submissions and XBRL company facts, CIK 1018724",
+      "url": "https://data.sec.gov/submissions/CIK0001018724.json"
+    },
+    {
+      "title": "StockAnalysis: Amazon 2Q26 earnings call transcript",
+      "url": "https://stockanalysis.com/stocks/amzn/transcripts/657334-q2-2026/"
+    },
+    {
+      "title": "Yahoo Finance AMZN analysis (consensus)",
+      "url": "https://finance.yahoo.com/quote/AMZN/analysis/"
+    },
+    {
+      "title": "Zacks via Yahoo: Gear up for Amazon Q3 earnings, key metrics (26 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gear-amazon-amzn-q3-earnings-121504650.html"
+    },
+    {
+      "title": "MarketBeat: Amazon Q3 2026 earnings date and estimates",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-10-29-amazoncom-inc-stock/"
+    },
+    {
+      "title": "Pepperstone: Amazon Q3 2026 earnings preview (23 October 2026)",
+      "url": "https://pepperstone.com/en/insights/market-analysis/equities/amazon-q3-2026-earnings-preview"
+    },
+    {
+      "title": "Benzinga: Amazon earnings are a week away (22 October 2026)",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62522059/amazon-earnings-are-a-week-away-heres-what-to-expect"
+    },
+    {
+      "title": "24/7 Wall St: The hidden $496bn catalyst for Amazon on 29 October (25 October 2026)",
+      "url": "https://247wallst.com/investing/2026/10/25/the-hidden-496-billion-catalyst-waiting-to-ignite-amazon-stock-on-oct-29/"
+    },
+    {
+      "title": "Barchart via Yahoo: What to expect from Amazon's Q3 2026 report (13 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/expect-amazon-com-q3-2026-110710701.html"
+    },
+    {
+      "title": "Motley Fool: Wall Street firm names Amazon its top pick (Morgan Stanley, October 2026)",
+      "url": "https://www.fool.com/investing/2026/10/22/wall-street-firm-names-amazon-its-top-pick-with-mo/"
+    },
+    {
+      "title": "StockAnalysis AMZN price history",
+      "url": "https://stockanalysis.com/stocks/amzn/history/"
+    },
+    {
+      "title": "Yahoo Finance: Amazon's $364bn backlog is the bull case (30 April 2026)",
+      "url": "https://finance.yahoo.com/markets/article/amazons-364-billion-backlog-is-the-bull-case-for-its-ai-spending-boom-135535292.html"
+    },
+    {
+      "title": "DCD: AWS added 3.8 GW of data center capacity in the last year (3Q25)",
+      "url": "https://www.datacenterdynamics.com/en/news/aws-added-38gw-of-data-center-capacity-in-the-last-year/"
+    },
+    {
+      "title": "Anthropic: Anthropic and Amazon expand compute collaboration (20 April 2026)",
+      "url": "https://www.anthropic.com/news/anthropic-amazon-compute"
+    },
+    {
+      "title": "DCD: OpenAI to use 2 GW of Trainium on AWS, expand contract by $100bn (27 February 2026)",
+      "url": "https://www.datacenterdynamics.com/en/news/openai-to-use-2gw-of-trainium-on-aws-expand-amazon-cloud-contract-by-100bn/"
+    },
+    {
+      "title": "GeekWire: How Amazon's $50bn OpenAI deal works (1 March 2026)",
+      "url": "https://www.geekwire.com/2026/filings-how-amazons-50b-openai-deal-actually-works-and-what-theyre-keeping-secret/"
+    },
+    {
+      "title": "Odaily: Amazon 10-Q shows $50bn OpenAI investment completed (1 August 2026)",
+      "url": "https://www.odaily.news/en/newsflash/505747"
+    },
+    {
+      "title": "Cipher Digital 8-K Ex. 99.1: Stingray AWS lease (1 June 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000095010326008635/dp248110_ex9901.htm"
+    },
+    {
+      "title": "Cobo: Cipher Digital raises $810mn for Amazon-leased Texas data center (June 2026)",
+      "url": "https://www.cobo.com/agentic-wallet/zh/news/cipher-digital-raises-810m-in-junk-bonds-to-fund-amazon-leased-texas-dat"
+    },
+    {
+      "title": "DCD: Amazon acquires 8,000-acre Pecos site for behind-the-meter gas data center (10 August 2026)",
+      "url": "https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/"
+    },
+    {
+      "title": "Crypto Briefing: Amazon backs 7.65 GW gas plant in West Texas (8 August 2026)",
+      "url": "https://cryptobriefing.com/amazon-natural-gas-power-plant-ai-data-center-texas/"
+    },
+    {
+      "title": "TechCrunch: Amazon to fund 12 small nuclear reactors in Indiana (19 October 2026)",
+      "url": "https://techcrunch.com/2026/10/19/amazon-to-fund-12-small-nuclear-reactors-at-former-indiana-coal-plant"
+    },
+    {
+      "title": "Quartz: Amazon signs 20-year nuclear deal with Constellation (1 October 2026)",
+      "url": "https://qz.com/amazon-constellation-energy-nuclear-power-deal-maryland-100126"
+    },
+    {
+      "title": "Fortune: Amazon's $25bn surprise bond sale dangled extra yield (8 July 2026)",
+      "url": "https://fortune.com/2026/07/08/amazons-25-billion-surprise-bond-sale-dangled-extra-yield-to-lure-in-buyers/"
+    },
+    {
+      "title": "Reuters via Yahoo: Hyperscaler debt binge pushes yields up (29 July 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/hyperscaler-debt-binge-pushes-yields-134825104.html"
+    },
+    {
+      "title": "Investing.com: Investors hedge AI boom with CDS on tech debt (20 October 2026)",
+      "url": "https://www.investing.com/news/stock-market-news/investors-hedge-ai-boom-with-credit-default-swaps-on-tech-debt-93CH-4959158"
+    }
+  ],
+  "ticker": "AMZN",
+  "verdict": "Preview",
+  "versus": "Pending — reports 29 October 2026 after the close",
+  "watch": [
+    "AWS revenue, operating margin and backlog against $45.4bn, 39.4% and $496bn.",
+    "The 2026 capex update (about $220bn) and any 2027 framework.",
+    "Third-quarter free cash flow, the OpenAI $21.3bn outflow, term-loan draws and new notes.",
+    "Leases not yet commenced ($137.2bn), finance leases ($13.5bn) and third-party capacity (Cipher's 300 MW and 70 MW AWS sites).",
+    "Power: GW Ranch on-site gas, the nuclear deals, energy-derivative remeasurements, and progress toward doubling capacity by end-2027."
+  ]
+}

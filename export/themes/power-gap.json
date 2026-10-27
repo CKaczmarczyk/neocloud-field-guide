@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Josh preview: Galaxy's 830 MW of approved grid power at Helios is still unleased because it energizes only in late 2028 and Texas has gated large loads.",
+      "company": "Galaxy",
+      "date": "2026-10-22",
+      "direction": "supports",
+      "numbers": "Tenants are not paying for grid power that arrives after 2027.",
+      "segment": "developer",
+      "source": "Galaxy 2Q26 10-Q, via Josh GLXY preview",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000091/glxy-20260630.htm"
+    },
+    {
       "claim": "Tone softened in 3Q26: current capacity plus what is scheduled to come online 'gives us the flexibility' to allocate across training, core and new products. Commitments still rose 30% QoQ.",
       "company": "Meta Platforms",
       "date": "2026-10-21",
@@ -9,6 +19,16 @@
       "segment": "financing",
       "source": "Meta 3Q26 release and call",
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    },
+    {
+      "claim": "Microsoft exited Nscale's 90 MW Loughton, UK site because UK Power Networks cannot connect it until the early-to-mid 2030s; Ofgem counts about 73 GW of data center projects queued against about 45 GW of UK peak demand.",
+      "company": "Nscale / Microsoft",
+      "date": "2026-10-18",
+      "direction": "supports",
+      "numbers": "A signed hyperscaler lease was lost purely to grid timing.",
+      "segment": "neocloud",
+      "source": "Tech Times, citing The Telegraph",
+      "url": "https://www.techtimes.com/articles/329207/20261019/microsoft-exits-nscales-uk-flagship-grid-cant-supply-power-until-2030s-ipo-risk.htm"
     },
     {
       "claim": "Trucking natural gas to keep sites running in Utah and Texas while pipelines lag.",
@@ -58,7 +78,7 @@
   "order": 3,
   "question": "Will chips arrive at sites that have no power in 2027?",
   "status": "strengthening",
-  "summary": "Utility dates are slipping and gas pipelines and permits are lagging. Oracle's force majeure in New Mexico and its use of trucked gas show the gap is already real. The counterview is that US grid additions surge from about 2028.",
+  "summary": "Utility dates are slipping and the gap is now costing signed deals: Microsoft dropped Nscale's UK flagship over a 2030s grid date, and Galaxy's 830 MW cannot be leased until it energizes in late 2028. Oracle's trucked gas shows the same gap in the US. The counterview is that US grid additions surge from about 2028.",
   "title": "Power arriving after the chips",
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }

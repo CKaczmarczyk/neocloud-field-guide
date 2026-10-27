@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-26",
+  "items": [
+    {
+      "headline": "SpaceX Q3: $7.56B of AI revenue, 1.7 GW online and a 13 GW target for end-2027",
+      "segment": "neocloud",
+      "source": "Constellation Research; Measured AI",
+      "summary": "Reported 20 October: revenue $14.57B (up 161%), net income $4.4B, AI unit revenue $7.56B and capex $16.44B in the quarter. CFO Bret Johnsen guided 2.2 GW by end-October and up to 3 GW by year-end, said new compute pays back in under a year at current prices, and Musk said he is highly confident of about 10 GW more in 2027.",
+      "url": "https://www.constellationr.com/insights/news/spacexs-q3-musk-says-it-could-rent-out-its-ai-compute-several-times-over"
+    },
+    {
+      "headline": "Musk: lenders have almost shut off neoclouds without non-AI revenue",
+      "segment": "financing",
+      "source": "Crypto Briefing",
+      "summary": "On X on 25 October Musk predicted stranded compute in half-built data centers and consolidation among more than 200 neoclouds, and said SpaceX closed $40B of GPU debt thanks to its investment-grade rating and Starlink revenue. He named no lenders or terms, and as of 20 October the FT-reported Apollo-led package ($10B bank loans plus $30B investment-grade debt) was still described as under discussion, so treat the close as unconfirmed.",
+      "url": "https://cryptobriefing.com/musk-lenders-stop-funding-ai-data-centers/"
+    },
+    {
+      "headline": "CoreWeave sinks to about $54, a market value near $30B",
+      "segment": "financing",
+      "source": "The Motley Fool",
+      "summary": "Shares closed at $54.24 on 23 October after a 52-week low of $53.50 the day before, down about 13% on the week and 54% over a year, after a Bernstein downgrade; Benzinga put its bond yields above 15.5%. Liabilities stand at $72B against a $104B contracted backlog.",
+      "url": "https://www.fool.com/investing/2026/10/23/coreweave-is-down-xx-in-a-week-heres-the-price-at/"
+    },
+    {
+      "headline": "Nebius says price per megawatt is still rising and 2027 capacity would sell out",
+      "segment": "neocloud",
+      "source": "CNBC, via Slicast",
+      "summary": "Chief revenue officer Marc Boroditsky told CNBC on 21 October that a capacity auction that week showed price per MW still climbing, and that Nebius does not carry CoreWeave-style debt. Crusoe's CEO said older A100 and H100 chips now rent for more than when first deployed. No dollar figures given; read through Slicast's summary of the CNBC piece.",
+      "url": "https://slicast.com/article/23ctzb"
+    },
+    {
+      "headline": "Microsoft walks away from Nscale's 90 MW UK flagship over a grid date in the 2030s",
+      "segment": "neocloud",
+      "source": "Tech Times, citing The Telegraph",
+      "summary": "Microsoft ended its anchor lease at Loughton, Essex, after UK Power Networks said grid capacity would not come until the early-to-mid 2030s. Nscale, which filed for a NYSE IPO at up to $35B, says other contracts are unaffected, but Microsoft and Anthropic make up about 85% of its backlog. First reported by the Telegraph on 18 October; Microsoft has not commented.",
+      "url": "https://www.techtimes.com/articles/329207/20261019/microsoft-exits-nscales-uk-flagship-grid-cant-supply-power-until-2030s-ipo-risk.htm"
+    },
+    {
+      "headline": "Crusoe picks Paraguay's Itaipú for its first Latin American AI cloud",
+      "segment": "neocloud",
+      "source": "Crusoe (press release)",
+      "summary": "Announced 22 October with local developer Araico: a site beside the Itaipú substation with a path to 106 MW of IT load and options to about 280 MW, first deployment mid-2027, serving US cloud customers and Latin American demand. No investment figure or financing disclosed; a US deputy secretary of state called it potentially Paraguay's largest private foreign investment.",
+      "url": "https://globenewswire.com/news-release/2026/10/22/3386649/0/en/crusoe-partners-with-araico-to-deploy-ai-cloud-infrastructure-in-paraguay.html"
+    },
+    {
+      "headline": "Trump says data centers are mandated to make their own electricity",
+      "segment": "energy",
+      "source": "Bisnow",
+      "summary": "In a 21 October Truth Social post Trump said data centers must generate their own power, sell or give excess to the grid, and pay communities a dividend. No executive action or thresholds were announced, and FERC this month rejected a rule that would have required bring-your-own generation in PJM.",
+      "url": "https://www.bisnow.com/news/national/data-center-community-relations/trump-data-centers-mandated-to-supply-own-electricity-should-pay-dividend-to-communities"
+    },
+    {
+      "headline": "Innio adds a 620 MW gas engine order, 1.72 GW for one US developer",
+      "segment": "energy",
+      "source": "Data Center Dynamics",
+      "summary": "Announced 23 October: a follow-on order of Jenbacher J624 engines (4.5 MW each, containerized for behind-the-meter prime power) from an unnamed US hyperscale developer, on top of 1.1 GW ordered in July. Value and delivery dates not disclosed.",
+      "url": "https://www.datacenterdynamics.com/en/news/innio-signs-620mw-gas-engine-order-with-undisclosed-us-data-center-developer/"
+    },
+    {
+      "headline": "Duos signs a 20 MW, 10-year colocation lease with a listed cloud provider",
+      "segment": "developer",
+      "source": "Data Center Dynamics",
+      "summary": "Announced around 21 October: an unnamed mature, publicly traded cloud provider takes 20 MW from Q2 2027 for more than $400M over the initial term (the headline says $700M; the gap is not explained), roughly $2M per MW per year on the lower figure. A useful price point for small sites.",
+      "url": "https://www.datacenterdynamics.com/en/news/duos-secures-cloud-provider-as-customer-for-20mw-of-data-center-capacity/"
+    },
+    {
+      "headline": "Argentina country risk jumps to 675 bps, its 2026 high",
+      "segment": "financing",
+      "source": "El Economista",
+      "summary": "JP Morgan's spread rose to 675 on 19 October from 648 a week earlier and 403 in July, the highest since October 2025, on global volatility, reserve doubts and early 2027 election worries; dollar bonds fell about 5% in a month. Analyst Gustavo Ber said neither external nor domestic financing can move forward for now. The Super RIGI still awaits a Senate vote.",
+      "url": "https://eleconomista.com.ar/economia/el-riesgo-pais-dispara-alcanza-su-maximo-2026-crece-preocupacion-inversores-n98988"
+    }
+  ],
+  "kona": "Debt is now sorted by whether the borrower has revenue outside AI: SpaceX says it is raising GPU debt at investment-grade terms while Musk says lenders have nearly shut off neoclouds, and CoreWeave fell to new lows. Kona should keep its first financing on an investment-grade or credit-backed offtaker, or prepaid capacity sales, since Argentina's country risk jumped to 675 bps and local analysts say neither external nor domestic financing is possible for now. Two things help the pitch: prices are rising (Nebius says price per MW keeps climbing; SpaceX says new compute pays back in under a year), and Trump's call for data centers to make their own power backs the on-site gas model. The warning is Crusoe's 106 MW hydro site in Paraguay, the first neocloud build in Latin America aimed at US customers, which now competes directly with Vaca Muerta.",
+  "stale": "Players tab, CoreWeave: market value about $38B and shares near $61 as of mid-October; now about $30B and $54.24 (23 October close, 52-week low $53.50). Players tab, SpaceX: compute online should read 1.7 GW at 30 September, guided 2.2 GW end-October and up to 3 GW at year-end, with a target of about 13 GW by end-2027; Q3 AI revenue $7.56B; the Apollo-led $40B GPU debt is claimed closed by Musk but unconfirmed. Players tab, Nscale: add that Microsoft ended its anchor lease at the 90 MW Loughton site and that Microsoft plus Anthropic are about 85% of backlog. Kona tab, Argentina section: country risk now 675 bps (19 October), not about 597-600. Kona tab, competition: add Crusoe's Itaipú site in Paraguay (106 MW IT, up to about 280 MW, mid-2027).",
+  "title": "Credit splits on who has other revenue; Crusoe lands in Paraguay; Argentina risk hits 2026 high"
+}

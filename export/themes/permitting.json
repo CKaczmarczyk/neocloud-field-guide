@@ -11,13 +11,42 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm"
     },
     {
-      "claim": "Paused state environmental permits for new data centers of 50 MW or more for up to a year.",
-      "company": "New York",
-      "date": "2026-07-14",
+      "claim": "Amazon withdrew its four-building Ashburn, Virginia campus at the former GWU site after resident and county opposition, ceding about 25 acres and $5M to the county.",
+      "company": "Amazon",
+      "date": "2026-10-21",
       "direction": "supports",
+      "numbers": "Amazon paid $427M for the 122-acre site in March.",
+      "segment": "developer",
+      "source": "Data Center Dynamics, via Slicast",
+      "url": "https://slicast.com/article/ri6jt9"
+    },
+    {
+      "claim": "Trump urged data centers to pay communities a dividend and make their own power; Hazle Township residents earlier rejected an AWS campus despite a $10,000-per-resident offer.",
+      "company": "US federal policy",
+      "date": "2026-10-21",
+      "direction": "supports",
+      "numbers": "Cash offers are not reliably buying consent.",
       "segment": "policy",
-      "source": "Utility Dive",
-      "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
+      "source": "Bisnow",
+      "url": "https://www.bisnow.com/news/national/data-center-community-relations/trump-data-centers-mandated-to-supply-own-electricity-should-pay-dividend-to-communities"
+    },
+    {
+      "claim": "Memphis council rejected an 18-month moratorium on a 6-6 vote but approved a 135-day pause on new data center applications alongside a 90-day review; SpaceXAI's turbines remain the flashpoint.",
+      "company": "Memphis",
+      "date": "2026-10-20",
+      "direction": "supports",
+      "numbers": "",
+      "segment": "policy",
+      "source": "Data Center Dynamics, via Slicast",
+      "url": "https://slicast.com/article/1wa7y2y"
+    },
+    {
+      "claim": "Moratorium bills failed in about ten states, including vetoes in Maine and Vermont.",
+      "company": "US states",
+      "date": "2026-10-01",
+      "direction": "against",
+      "segment": "policy",
+      "source": "Third Prime October overview"
     },
     {
       "claim": "Ordered a grid audit in August and paused environmental permits for AI and crypto data centers in September.",
@@ -37,18 +66,19 @@
       "url": "https://www.youtube.com/watch?v=e3SkfcVvARU"
     },
     {
-      "claim": "Moratorium bills failed in about ten states, including vetoes in Maine and Vermont.",
-      "company": "US states",
-      "date": "2026-10-01",
-      "direction": "against",
+      "claim": "Paused state environmental permits for new data centers of 50 MW or more for up to a year.",
+      "company": "New York",
+      "date": "2026-07-14",
+      "direction": "supports",
       "segment": "policy",
-      "source": "Third Prime October overview"
+      "source": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
     }
   ],
   "order": 7,
   "question": "Is opposition slowing builds, and where?",
   "status": "strengthening",
-  "summary": "Opposition is now bipartisan state politics: New York and Texas have paused permits, and polling turned negative from late 2025. Most states are likely to settle on negotiated concessions; moratorium bills have failed in about ten.",
+  "summary": "Opposition is now national politics: Amazon dropped a Virginia campus, Memphis paused applications for 135 days, and Trump is telling developers to pay communities and make their own power. Moratorium bills mostly fail, but local pauses and withdrawals are rising, and cash offers have not reliably won votes.",
   "title": "Permitting and community backlash",
-  "updated": "2026-10-23"
+  "updated": "2026-10-26"
 }

@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "A listed cloud provider took a 20 MW, 10-year colocation lease from Q2 2027 for more than $400M over the term.",
+      "company": "Duos Technologies",
+      "date": "2026-10-21",
+      "direction": "supports",
+      "numbers": "Supports demand for sites of tens of MW from established cloud tenants.",
+      "segment": "developer",
+      "source": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/duos-secures-cloud-provider-as-customer-for-20mw-of-data-center-capacity/"
+    },
+    {
       "claim": "Muse, Meta's consumer agent, is 'very compute intensive'. Meta targets more than 10x cost efficiency in a year through off-peak capacity, smaller models and inference optimization, and wants to serve as much high-margin inference as possible.",
       "company": "Meta Platforms",
       "date": "2026-10-21",
@@ -62,5 +72,5 @@
   "status": "strengthening",
   "summary": "Inference is taking a growing share and needs different sites: smaller, spread out, with more CPUs and storage beside the accelerators. That widens the market for sites of tens of megawatts, though large tenants still prefer 50 MW or more.",
   "title": "Inference changing site design",
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }

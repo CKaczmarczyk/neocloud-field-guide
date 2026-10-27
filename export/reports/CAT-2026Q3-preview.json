@@ -1,0 +1,512 @@
+{
+  "brief": [
+    "Verdict ahead of the print: consensus expects 3Q26 revenue of about $20.7bn, up about 17% on 3Q25's $17,638mn, and adjusted EPS of about $7.03, up 42% on $4.95. The stock will trade on backlog (the $72.1bn record at 30 June), Power Generation growth, and whether margins hold up now that the $392mn IEEPA tariff recovery that lifted 2Q26 is gone. Shares closed at $687.00 on 23 October, down 2.42% on the day and 36% below the $1,073.46 52-week high.",
+    "Where expectations sit. Yahoo Finance shows 3Q26 EPS of $7.03 from 22 analysts (range $6.23 to $8.48) and revenue of $20.69bn from 12 (range $19.96bn to $23.07bn). MarketBeat has $7.04 and $20.76bn, and Fiscal.ai (via Stocktwits, 5 October) had about $6.92 and $20.40bn. The quarterly EPS consensus has risen from $6.48 90 days ago. FY26 consensus is $27.33 EPS and $79.6bn revenue (up 17.8%, inside the mid-to-high-teens guide), and FY27 is $32.59 and $88.67bn. No consensus was found for Power & Energy segment sales or margin, Power Generation sales, orders or backlog.",
+    "What the company guided for 3Q26 (2Q26 call, 4 August): strong sales growth year on year in all three primary segments, a higher adjusted operating margin than 3Q25's 17.5%, and tariff costs of about $600mn, similar to 3Q25. Power & Energy margin should rise year on year on volume and price, partly offset by depreciation and costs from the capacity expansion. For FY26: sales up mid-to-high teens; adjusted operating margin near the bottom of the target range excluding IEEPA recoveries (about 18.8% to 22.8% at $79.6bn of sales, interpolated from the 18% to 22% band at $72bn and 21% to 25% at $100bn); MP&E free cash flow in the top half of the $6bn to $15bn range; tariffs of about $2.2bn; capex of about $3.5bn.",
+    "Three debates. First, data center durability: Baird downgraded on 29 July, citing local moratoria and pushback, and Truist cut its target on 5 October over the durability of power, data center and AI spending. Management said in August that no customer had backed off, and Citi calls the worries overblown. Second, capacity versus demand: gas prime gensets are with lead times into late 2028 and turbines run longer, a restarted 10 MW engine line adds about 1.5 GW from 4Q26, and large-engine capacity rises to nearly 3x 2024 by 2030. Bears ask whether that capacity arrives as orders peak. Third, margin quality: 2Q26's 21.9% adjusted margin included the $392mn tariff recovery, and the guide is near the bottom of the band without it.",
+    "What would move the stock. Positive: backlog above $72.1bn with Power & Energy the main contributor, Power Generation growth at or above 2Q's 29%, a Power & Energy margin near 2Q's 24.6%, and the FY26 guide raised. Negative: a flat or lower backlog, any customer deferral or cancellation of data center orders, slippage in the 10 MW restart, or margin pressure from capacity costs and tariffs. Options imply a move of about 7.8% on the print (earnings-watcher, 23 October), about $54 on a $687 share price.",
+    "Kona read-through. Caterpillar's gas prime genset slots run into late 2028 and turbines run longer, and distant orders carry price escalators. At tens of MW, Kona competes for the same slots as gigawatt data center buyers. It should expect long reservations, indexed prices and vendor financing as the main commercial terms."
+  ],
+  "changes": [
+    "The stock fell from $863.44 on 6 October to $687.00 on 23 October (StockAnalysis). Truist cut its target from $1,225 to $1,100 on 5 October (shares fell 5.7% on 7 October, to $813.83), and Citi cut from $1,100 to $950 on 12 October. On 22 October shares fell 4.89% to $704.05 in a sector-wide power-equipment selloff with no company news (TIKR).",
+    "Leadership: Derrick York, president of Solar Turbines, becomes group president of Resource Industries on 1 November 2026, replacing the retiring Denise Johnson (8-K, 15 October 2026). The filing names no successor at Solar Turbines.",
+    "Caterpillar and Cat Financial renewed $11.5bn of undrawn revolving credit lines on 27 August 2026: $3.5bn 364-day, $3.0bn three-year (due 2029) and $5.0bn five-year (due 2031) (8-K, 1 September 2026).",
+    "CEO Joe Creed sold 32,401 shares on 28 August at an average of $808.98, about $26.2mn (MarketBeat). At a conference on 10 September he described supply as 'hand to mouth' with little slack (TIKR, single source).",
+    "Deliveries on the AIP Monarch campus (2 GW of G3516 gas gensets, West Virginia) are scheduled from September 2026 to August 2027, with Caterpillar Financial providing vendor equipment financing (Data Center Dynamics, January 2026)."
+  ],
+  "checks": "No knowledge base folder exists for Caterpillar. This card uses web-retrieved documents only, so historical comparison depth is limited. EDGAR: data.sec.gov returned the submissions index (latest filing: the 8-K of 15 October 2026; no 3Q26 release filed) and XBRL company facts, saved to cat_src. From the XBRL file I read revenue, operating profit, diluted EPS, cash, capex, operating cash flow, RPO, contract liabilities, share count and buybacks for 2Q25 to 2Q26. Every request to www.sec.gov archives with the required User-Agent returned HTTP 403 (undeclared automated tool), including retries. The 2Q26 Ex 99.1 release, 3Q25 and 1Q26 releases, 2Q26 10-Q, Cat Financial 2Q26 10-Q, 2025 10-K, the 26 March 2026 recast 8-K, and the 15 October and 1 September 2026 8-Ks were therefore read through WebFetch summaries, not downloaded and string-matched. Some of those pages were cut off before the MD&A (the 10-Q and 10-K), so backlog, guidance and MP&E free cash flow come from the 2Q26 analyst deck and the call transcript (Motley Fool) instead. Reopened and confirmed: the 2Q26 deck (backlog $72.1bn and deltas, MP&E free cash flow $5.1bn and $5.7bn, the $6bn to $15bn range, tariffs, margin bands, capex, 72%, 24.6%, $595mn price); the transcript (twice: lead times, 1.5 GW, 2.5x, Wamego, escalators, margin and free cash flow guide, $600mn in 3Q, capacity costs, dealer inventory); Yahoo (every EPS and revenue estimate and the $687.00 close on 23 October); MarketBeat (consensus, ratings, targets, CEO sale, dividend); Data Center Dynamics (AIP and vendor financing). StockAnalysis was opened twice (price history, then forecast and the $687.00 close). Read once only: the release summaries, the 8-Ks, Cat Financial 10-Q, 1Q26 and 4Q25 decks, Truist and Citi via Yahoo/Stocktwits, Baird via Stocktwits, Burry via TIKR, Morgan Stanley via Yahoo, TIKR (22 October), Trefis, Investmenthouse, AOL, Fool, XTB, earnings-watcher, TheRightTrader, Power Progress (Joule), Dallas Innovates (Hunt) and the P&E September deck. Derived numbers were recomputed in Python: growth on consensus, H2 revenue and EPS needs, the guide-implied FY26 range, the interpolated margin band, backlog growth, Power Generation and Power & Energy growth and margins, distance from the high, market cap (459.7mn shares at 30 June), P/E multiples, target upside, implied-move dollars, debt sums, credit-line total and the H2 free cash flow floor. Single source: the 'hand to mouth' remark and the engine additions running ahead of plan (TIKR); the implied move (earnings-watcher); the bond estimate (TheRightTrader model, not a trade); the Fiscal.ai figures; the about $0.65 recovery effect on EPS (deck). Not found or not verified: consensus for backlog, Power & Energy, Power Generation and orders; the data center share of backlog; Caterpillar $/kW; Lafayette capacity investment details; Titan 130/250 lead times; current credit ratings (not confirmed from a dated source); CDS; the 3Q25 recast Power & Energy margin and recast Power Generation; 26 October trading beyond a $695.00 pre-market quote (StockAnalysis) and a $686.47 intraday quote (Fool). No post-results material was read. Independent check: a separate fact-check agent, given only the draft and sources, re-confirmed about 15 core figures (consensus, 2Q26 actuals, backlog, debt and credit lines, outlook, 23 October price, AIP Monarch order, 2055 bond estimate) and recomputed derived figures; the 7 October move was corrected to 5.7% and 'sold out' changed to lead-time language. Unverified: past dues 1.31%, 3Q25 recast Power & Energy figures, the 2030 >3x target, Cat Financial leverage.",
+  "consensus_thesis": "Investors own Caterpillar as the diversified way into AI data center power: gas gensets and Solar turbines with lead times into late 2028 and beyond, capacity rising to nearly 3x 2024 for large engines and 2.5x for turbines, and a 2030 Power Generation target of more than 3x 2024 sales. At $687.00 (about $316bn market cap, about 25.1x Yahoo's FY26 EPS of $27.33 and 21.1x FY27's $32.59), the valuation pays for revenue rising from $67.6bn in 2025 to about $79.6bn in FY26 and $88.7bn in FY27. Positioning has turned contested: the stock is 36% off its 30 June peak, Baird is at Neutral, Michael Burry disclosed a short, Truist and Citi have cut targets, and the Street is split 15 Buy to 12 Hold (MarketBeat). Credit is not the debate: Caterpillar's 5.5% 2055 notes are estimated (not traded) at about 95.1, a yield of about 5.86% and a spread of about 52bp on 23 October (TheRightTrader model).",
+  "date": "2026-10-26",
+  "headline": "3Q26 will be judged less on a roughly $20.7bn revenue quarter (up about 17%) than on whether the $72.1bn backlog keeps growing and Power Generation keeps compounding without IEEPA tariff help. The stock closed at $687.00 on 23 October, 36% below its $1,073.46 high, after target cuts and a sector-wide selloff over data center durability.",
+  "kind": "preview",
+  "kona": "Caterpillar's gas prime gensets have lead times into late 2028, turbines longer, and distant orders carry price escalators tied to economic indicators. Caterpillar does not publish $/kW, and no sourced price was found. At tens of MW, Kona will be competing with gigawatt data center buyers for slots, so a new-build Caterpillar island likely means a reservation now for 2028 delivery, at a price that is indexed rather than fixed. The 1.5 GW restart of the 10 MW engine from 4Q26, dealer channels and rental fleets are the faster routes to check. Caterpillar Financial's vendor financing on the 2 GW AIP order is a precedent Kona can ask for: OEM credit in place of, or alongside, project debt.",
+  "kpis": [
+    {
+      "consensus": "$20.69bn (Yahoo, 12 analysts, range $19.96bn to $23.07bn); MarketBeat $20.76bn; Fiscal.ai about $20.40bn (5 October)",
+      "current": "",
+      "metric": "Total sales and revenues",
+      "note": "Consensus implies 17.3% growth year on year and 0.7% quarter on quarter. FY26 consensus of $79.6bn needs $41.6bn in the second half, and Yahoo's 3Q plus 4Q sum to $42.11bn. The mid-to-high-teens guide (15% to 19%) implies $77.7bn to $80.4bn.",
+      "prior": "$20,543mn (2Q26); $17,638mn (3Q25)"
+    },
+    {
+      "consensus": "$7.03 (Yahoo, 22 analysts, range $6.23 to $8.48); MarketBeat $7.04; Fiscal.ai about $6.92",
+      "current": "",
+      "metric": "Adjusted profit per share",
+      "note": "Consensus implies 42% growth year on year. 2Q26 beat consensus of about $6.20 to $6.22 by about $1.95. The 3Q estimate rose from $6.48 90 days ago.",
+      "prior": "$8.17 (2Q26, including about $0.65 from IEEPA recoveries); $4.95 (3Q25)"
+    },
+    {
+      "consensus": "n.a.; guide 'higher' than 3Q25",
+      "current": "",
+      "metric": "Adjusted operating margin",
+      "note": "The FY26 guide is near the bottom of the target band excluding IEEPA recoveries. Interpolating the band at $79.6bn of sales gives about 18.8% to 22.8%.",
+      "prior": "21.9% (2Q26, including the $392mn IEEPA recovery); 18.0% (1Q26); 17.5% (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Backlog",
+      "note": "59% is due within 12 months. Caterpillar does not disclose the backlog by segment or the data center share. RPO (contracts over one year) was $44.1bn at 30 June.",
+      "prior": "$72.1bn at 30 June 2026 (up $9.4bn on the quarter, up $34.6bn or 92% on the year); $62.7bn at 1Q26; $51.2bn at end-2025"
+    },
+    {
+      "consensus": "n.a.; guide: margin higher year on year",
+      "current": "",
+      "metric": "Power & Energy segment sales / margin",
+      "note": "Retail sales to users rose 33% in 2Q26. The 3Q25 recast margin was not found (the original E&T margin, including Rail, was 20.0%).",
+      "prior": "$8,238mn, 24.6% (2Q26); $7,031mn, 20.6% (1Q26); 3Q25 recast sales $7,463mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Power Generation sales",
+      "note": "Sales to users rose 72% in 2Q26 on large gensets and turbines for data centers. The 2030 target is more than 3x 2024 sales, raised from 2x (1Q26 deck).",
+      "prior": "$3,098mn (2Q26, up 29%); $2,817mn (1Q26, up 41%); 3Q25 $2,634mn as originally reported under E&T"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Lead times",
+      "note": "Distant orders typically carry price escalators tied to economic indicators.",
+      "prior": "Gas prime gensets 'late 2028 for sure'; turbines somewhat longer; diesel gensets well into 2028; some orders out to 2030 (2Q26 call)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Capacity additions",
+      "note": "MP&E capex is about $3.5bn in 2026. Management said large-engine additions were running two to three months ahead of plan (TIKR).",
+      "prior": "Large reciprocating engines to nearly 3x 2024, turbines to 2.5x 2024; 10 MW gas engine restart of about 1.5 GW, first shipments in 4Q26 with an 18-month ramp; Wamego, Kansas plant repurposed for PGM130 packaging"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "MP&E free cash flow",
+      "note": "The guide is the top half of the $6bn to $15bn range, with H2 slightly above H1, which implies more than $11.4bn for FY26.",
+      "prior": "$5.1bn (2Q26); $5.7bn in H1; $9.5bn in FY25"
+    },
+    {
+      "consensus": "n.a.; guide about $600mn in 3Q26",
+      "current": "",
+      "metric": "Tariff costs",
+      "note": "The FY26 guide is about $2.2bn, excluding IEEPA recoveries; no further recoveries are assumed in H2.",
+      "prior": "About $400mn in 2Q26 excluding the $392mn IEEPA recovery"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cat Financial credit",
+      "note": "Vendor financing on the 2 GW AIP genset order is the first named data center financing exposure.",
+      "prior": "Past dues 1.31% (2Q26, against 1.62% a year earlier); allowance $294mn; H1 write-offs $88mn; debt $34,456mn"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash, debt and capital return",
+      "note": "Credit lines of $11.5bn are undrawn. The quarterly dividend is $1.63, with an ex-date of 26 October.",
+      "prior": "Enterprise cash $6,713mn; MP&E debt $10,690mn; H1 buybacks $6,522mn cash paid; 459.7mn shares at 30 June"
+    }
+  ],
+  "monitor": [
+    "Backlog against $72.1bn at 30 June (up $9.4bn in 2Q), and any disclosure of the Power & Energy or data center share, which Caterpillar has not given.",
+    "Power Generation sales growth (29% in 2Q26, 41% in 1Q26) and Power & Energy margin (24.6% in 2Q26), now without IEEPA recoveries and with capacity-ramp costs.",
+    "The FY26 guide (sales mid-to-high teens, adjusted operating margin near the bottom of the band, MP&E free cash flow in the top half of $6bn to $15bn) and the timing of the 10 MW engine restart (1.5 GW, first shipments in 4Q26)."
+  ],
+  "name": "Caterpillar",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "In August you said 59% of the $72.1bn backlog ships within 12 months and that gas prime gensets are with lead times into late 2028, but you do not disclose the backlog by segment or the data center share. How much of the 30 September backlog is Power & Energy, and how much of that is for data centers? What share of data center orders carry cancellation fees or non-refundable deposits? Has any data center customer deferred or cancelled an order since July, yes or no, and for how many MW?",
+      "style": "equity",
+      "why": "The multiple rests on Power Generation reaching more than 3x 2024 sales by 2030. Without a segment backlog and its terms, investors cannot tell firm demand from options, and that gap is the core of the Baird and Burry bear case."
+    },
+    {
+      "question": "Power & Energy margin was 24.6% in 2Q26, and you guided 3Q margin higher year on year despite capacity-related depreciation, while large-engine capacity goes to nearly 3x 2024 and turbines to 2.5x. What price realization did Power & Energy earn in 3Q, in dollars? What is the escalator formula on 2028 to 2030 deliveries? If data center orders slowed in 2027, what segment margin would the added capacity support at 2025 volumes?",
+      "style": "equity",
+      "why": "This tests whether margin gains are structural (pricing power in a sold-out market) or cyclical (volume over a fixed cost base that is now expanding). Capacity added at the peak is how earnings power reverses in this industry."
+    },
+    {
+      "question": "Caterpillar Financial is providing vendor financing on the 2 GW AIP order of G3516 gensets, with deliveries from September 2026 to August 2027. How much Cat Financial exposure to data center developers and power projects is on the book at 30 September, or committed? What share is with non-investment-grade or project-level borrowers? What is the largest single exposure? Will you cap this lending as a share of Cat Financial's roughly $35bn of receivables?",
+      "style": "credit",
+      "why": "Cat Financial runs at about 9.8x debt to equity under a 10.0x covenant. If it becomes the lender of last resort for data center developers, the risk of a slowdown moves from lost orders into credit losses on a highly leveraged finance arm."
+    },
+    {
+      "question": "You plan MP&E free cash flow in the top half of $6bn to $15bn and to return substantially all of it, after $6.5bn of buybacks in H1, while capex rises to about $3.5bn and Cat Financial debt is about $34.5bn. What minimum enterprise cash and what ratings do you run to? If data center orders fell 30% in 2027, would buybacks or capacity capex give way first? Give a number for the 2027 capex plan.",
+      "style": "credit",
+      "why": "Bondholders price Caterpillar tightly (an estimated spread of about 52bp on the 2055 notes). The risk to them is cash returned at the peak while capex commitments and vendor financing grow at the same time."
+    },
+    {
+      "question": "Excluding the $392mn IEEPA recovery, 2Q26 adjusted margin would have been well below the reported 21.9%. You guide FY26 near the bottom of the band, about 18.8% at consensus sales, while sales are tracking toward the top of the mid-to-high-teens growth range. Why is the margin not higher at those volumes? What would you need to reach the midpoint in 2027: price, tariff relief or volume? Will tariff costs in 2027 be above or below $2.2bn?",
+      "style": "equity",
+      "why": "Consensus EPS growth of 42% in 3Q needs incremental margins to hold without one-off recoveries. A guide near the bottom of the band despite top-of-range sales challenges the operating-leverage pillar."
+    },
+    {
+      "question": "Derrick York leaves Solar Turbines on 1 November, just as turbine capacity is going to 2.5x 2024 and turbine lead times are longer than for gas gensets. Who runs Solar Turbines from 1 November? Is the turbine expansion on schedule, in MW per year? For a new customer ordering a Titan 130 or Titan 350 package today, what is the earliest delivery quarter?",
+      "style": "equity",
+      "why": "Turbines are the longest-lead product in the data center power stack and the biggest capacity bet. A leadership change during the ramp is an execution risk the market has not priced."
+    }
+  ],
+  "risks": [
+    "Data center demand durability: local moratoria and pushback (Baird), AI-capex worries (Truist), and no disclosure of the data center share of backlog.",
+    "Capacity arriving at the peak: large engines going to nearly 3x 2024 and turbines to 2.5x, with capacity-related depreciation already weighing on the 3Q Power & Energy margin.",
+    "Margin quality: about $2.2bn of 2026 tariffs, no further IEEPA recoveries assumed, and a guide near the bottom of the band.",
+    "Cat Financial exposure to data center developers through vendor financing (AIP, 2 GW), on a finance arm with debt about 9.8x equity against a 10.0x covenant.",
+    "Execution and leadership: the 10 MW restart (first shipments in 4Q26), a 'hand to mouth' supply chain (single source), the Solar Turbines succession, and a Construction dealer inventory cut of more than $1bn in 4Q26."
+  ],
+  "sections": [
+    {
+      "body": "Caterpillar sells machines, engines, gensets and turbines through 150 independent dealers, and it earns a services stream of $24bn in 2025 against a $30bn target for 2030. From 2026 it reports Construction Industries, Resource Industries (now including Rail) and Power & Energy, plus Financial Products. Power & Energy had 2025 sales of $28.6bn, with external sales split 43% Power Generation, 32% Oil & Gas and 25% Industrial. It sells reciprocating gensets (G3516, G3520K, up to 10 MW) and Solar Turbines (1 to 39 MW; Titan 350 up to 38 MW). In data centers, diesel gensets still serve backup, while gas gensets and turbines serve prime power. Power revenue is units times price per kW plus services, and distant orders carry price escalators. Caterpillar returns substantially all MP&E free cash flow ($9.5bn in 2025). Cat Financial ($34.5bn of debt) funds customers, including vendor financing on data center power orders.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 22 to 26 October 2026. No consensus was found for backlog, orders, Power & Energy or Power Generation sales, segment margin, or 3Q free cash flow.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$20.69bn (12; $19.96bn to $23.07bn)",
+            "Yahoo Finance, 23 to 26 Oct",
+            "2Q26 $20,543mn; 3Q25 $17,638mn; guide: strong growth"
+          ],
+          [
+            "3Q26 adjusted EPS",
+            "$7.03 (22; $6.23 to $8.48)",
+            "Yahoo Finance, 23 to 26 Oct",
+            "2Q26 $8.17; 3Q25 $4.95"
+          ],
+          [
+            "3Q26 EPS / revenue, other providers",
+            "MarketBeat $7.04 / $20.76bn; Fiscal.ai about $6.92 / $20.40bn",
+            "MarketBeat 22 Oct; Fiscal.ai via Stocktwits 5 Oct",
+            ""
+          ],
+          [
+            "3Q26 adjusted operating margin",
+            "n.a.",
+            "",
+            "Guide higher than 3Q25's 17.5%"
+          ],
+          [
+            "3Q26 tariffs",
+            "n.a.",
+            "",
+            "Guide about $600mn"
+          ],
+          [
+            "4Q26 revenue / EPS",
+            "$21.42bn / $6.99",
+            "Yahoo, 23 to 26 Oct",
+            "4Q25 $19.13bn / $5.16"
+          ],
+          [
+            "FY26 revenue / EPS",
+            "$79.6bn ($75.93bn to $85.62bn) / $27.33 (Yahoo, S&P Global); MarketBeat EPS $27.74",
+            "Yahoo and StockAnalysis, 26 Oct; MarketBeat 22 Oct",
+            "Guide sales up mid-to-high teens ($77.7bn to $80.4bn at 15% to 19%); margin near the bottom of the band"
+          ],
+          [
+            "FY26 MP&E free cash flow",
+            "n.a.",
+            "",
+            "Guide top half of $6bn to $15bn; H1 $5.7bn"
+          ],
+          [
+            "FY27 revenue / EPS",
+            "$88.67bn / $32.59 (Yahoo); MarketBeat EPS $33.46",
+            "Yahoo 26 Oct; MarketBeat 22 Oct",
+            "2030: Power Generation more than 3x 2024"
+          ],
+          [
+            "Price target",
+            "$933.64 average, $950 median, $575 to $1,150 (29 analysts); MarketBeat $967.83 (15 Buy, 12 Hold)",
+            "StockAnalysis (S&P Global), 26 Oct; MarketBeat, 22 Oct",
+            "Close $687.00 on 23 Oct"
+          ],
+          [
+            "Implied move",
+            "About 7.8%",
+            "earnings-watcher, 23 Oct (single source)",
+            "2Q26 implied 7.4%; actual close +5.6%"
+          ],
+          [
+            "Bond (5.5% 2055)",
+            "About 95.1, yield about 5.86%, spread about 52bp (estimate, not a trade)",
+            "TheRightTrader model, 23 Oct",
+            "+80bp at issue (May 2025)"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Data center power demand is durable",
+            "Gensets and turbines with lead times into late 2028 and beyond; no customer backing off",
+            "Backlog above $72.1bn; no deferrals; any data center share disclosed",
+            "Management; Citi; Fool; Trefis (challenged by Baird, Truist and Burry)"
+          ],
+          [
+            "P2 Power Generation compounding",
+            "Power Generation sales to more than 3x 2024 by 2030",
+            "Power Generation growth at or near 2Q's 29% (sales to users +72%)",
+            "Management (1Q26 deck); Morgan Stanley; JPMorgan"
+          ],
+          [
+            "P3 Capacity ramp on time",
+            "Large engines to nearly 3x and turbines to 2.5x 2024; 1.5 GW 10 MW restart from 4Q26",
+            "Restart on track for 4Q shipments; capacity costs contained in Power & Energy margin",
+            "Management; TIKR (supply 'hand to mouth', single source)"
+          ],
+          [
+            "P4 Margin and operating leverage",
+            "Sales growth drops through despite tariffs, without IEEPA recoveries",
+            "Adjusted margin above 3Q25's 17.5%; Power & Energy margin higher year on year; tariffs about $600mn; EPS about $7.03",
+            "Management; Truist (estimates to rise); Yahoo consensus up from $6.48 to $7.03 in 90 days"
+          ],
+          [
+            "P5 Cash return",
+            "MP&E free cash flow in the top half of $6bn to $15bn, nearly all returned",
+            "FY guide held; H2 free cash flow tracking above H1's $5.7bn",
+            "Management"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Record $72.1bn backlog, up 92% year on year, with 59% due within 12 months and orders out to 2030",
+            "No disclosure of the data center share of backlog; an order is not yet a sale (Trefis)"
+          ],
+          [
+            "Power Generation sales to users up 72% in 2Q26; named data center deals with Joule (up to 4 GW), AIP (2 GW) and Hunt (up to 1 GW)",
+            "Local data center moratoria and pushback spreading (Baird, Neutral, $900 target)"
+          ],
+          [
+            "Capacity rising: large engines to nearly 3x 2024, turbines to 2.5x, a 1.5 GW restart from 4Q26",
+            "Capacity arriving as AI capex may peak; Truist cites spending durability and cut its target to $1,100"
+          ],
+          [
+            "Four straight EPS beats; 2Q26 beat by about $1.95; Citi says data center concerns are overblown",
+            "Burry short at $1,060.98 on valuation (about 28x NTM EV/EBITDA per TIKR); 2Q margin flattered by the $392mn IEEPA recovery"
+          ],
+          [
+            "Forward P/E below 25x after a 36% fall from the high (Investmenthouse); average target about $934 to $968",
+            "FY26 margin guided near the bottom of the band; $2.2bn of tariffs; Construction dealer inventory cut of more than $1bn in 4Q"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Data center durability: does the backlog keep growing from $72.1bn with no deferrals, or do moratoria and AI-capex worries (Baird, Truist) begin to show in orders? 2) Capacity versus cycle: do nearly 3x engine and 2.5x turbine capacity, plus the 1.5 GW 10 MW restart from 4Q26, arrive on time and keep pricing, or do they arrive as demand peaks? 3) Margin quality: can 3Q's adjusted margin rise above 17.5% and Power & Energy margin rise year on year without IEEPA recoveries and with capacity-ramp costs, and is the guide near the bottom of the band too low at top-of-range sales?",
+      "title": "Live debates"
+    },
+    {
+      "body": "Report timing: the company says results come at 5:30 am CDT on 29 October, with the call at 7:30 am CDT. A 5 October Stocktwits article (via Fiscal.ai) gave 4 November, and XTB said 29 October after the close; both are wrong. 3Q26 EPS runs from about $6.92 (Fiscal.ai, 5 October) to $7.03 (Yahoo) and $7.04 (MarketBeat), and revenue from $20.40bn to $20.76bn. FY26 EPS is $27.33 on Yahoo and S&P Global against $27.74 at MarketBeat, and FY27 is $32.59 against $33.46. Average targets range from $933.64 (S&P Global, 29 analysts, rated Buy) to $967.83 (MarketBeat, Moderate Buy) and about $946 (TIKR). Citi's target is $950 after a 12 October cut from $1,100; an earlier Stocktwits piece still shows $1,100. Power Generation growth in 2Q26 is 29% on segment sales but 72% on sales to users (dealer retail), and press uses the two interchangeably. Some articles call the AIP order 'turbines', but the source says G3516 gensets. The 23 October close is $687.00 on Yahoo and StockAnalysis, against $686.79 (AOL) and $685.37 (Fool snapshot). Lead times are 'late 2028' for gas prime (transcript) but 'into 2029' in Trefis's paraphrase.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June 2026: enterprise cash of $6,713mn. MP&E long-term debt was $10,655mn plus a $35mn current portion. Financial Products debt was $34,456mn ($5,046mn short-term, $8,026mn current portion of long-term debt, $21,384mn long-term). Undrawn credit lines total $11.5bn ($3.5bn 364-day to August 2027, $3.0bn to August 2029, $5.0bn to August 2031), with covenants of Caterpillar net worth of at least $9bn and Cat Financial interest coverage above 1.15x and leverage no higher than 10.0x. Cat Financial's derived debt to equity is about 9.8x. Cat Financial: past dues 1.31% (lowest since 1998, per the CFO), allowance $294mn, H1 write-offs $88mn, and receivables of about $35.1bn gross. It provides vendor financing on the 2 GW AIP genset order. Capital return: H1 buybacks of $6,522mn cash paid (including $1.6bn outstanding under accelerated repurchases), a $1.63 quarterly dividend (raised 8%) and 459.7mn shares at 30 June. MP&E capex is about $3.5bn in 2026. The 5.5% 2055 notes are estimated at about 95.1 (yield about 5.86%, spread about 52bp) on 23 October by TheRightTrader; this is a model estimate, not a trade price. No CDS quote or dated rating action was found.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: the backlog by segment and data center share, cancellation terms and any deferrals; Power & Energy price realization, escalators and margin resilience as capacity grows; Cat Financial exposure to data center developers (credit); minimum cash, ratings and buybacks against capex (credit); margin near the bottom of the band at top-of-range sales and the 2027 tariff path; Solar Turbines succession and turbine lead times.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "EDGAR submissions index, Caterpillar (CIK 18230)",
+      "url": "https://data.sec.gov/submissions/CIK0000018230.json"
+    },
+    {
+      "title": "EDGAR XBRL company facts, Caterpillar",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000018230.json"
+    },
+    {
+      "title": "Caterpillar 2Q26 earnings release (8-K Ex. 99.1, 4 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000018230/000001823026000040/ex991toformcat2q2026earnin.htm"
+    },
+    {
+      "title": "Caterpillar 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000018230/000001823026000046/cat-20260630.htm"
+    },
+    {
+      "title": "Cat Financial 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000764764/000076476426000021/cfsc-20260630.htm"
+    },
+    {
+      "title": "Caterpillar 3Q25 earnings release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823025000043/ex991toformcat3q2025earnin.htm"
+    },
+    {
+      "title": "Caterpillar 1Q26 earnings release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000018230/000001823026000017/ex991toformcat1q2026earnin.htm"
+    },
+    {
+      "title": "Caterpillar 2025 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/cat-20251231.htm"
+    },
+    {
+      "title": "Caterpillar 8-K, segment recast (26 March 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000013/cat-20260326_d2.htm"
+    },
+    {
+      "title": "Caterpillar 8-K, Resource Industries leadership (15 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926116198/tm2627668d1_8k.htm"
+    },
+    {
+      "title": "Caterpillar 8-K Ex. 99.1, leadership release (15 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000018230/000110465926116198/tm2627668d1_ex99-1.htm"
+    },
+    {
+      "title": "Caterpillar 8-K, credit facilities (1 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926104197/tm2624321d1_8k.htm"
+    },
+    {
+      "title": "Caterpillar 2Q26 analyst slide deck",
+      "url": "https://s25.q4cdn.com/358376879/files/doc_financials/2026/q2/2Q-2026-Analyst-Slide-Deck_Final.pdf"
+    },
+    {
+      "title": "Caterpillar 1Q26 analyst slide deck",
+      "url": "https://s25.q4cdn.com/358376879/files/doc_financials/2026/q1/1Q-2026-Analyst-Slide-Deck_Final.pdf"
+    },
+    {
+      "title": "Caterpillar 4Q25 analyst slide deck",
+      "url": "https://s25.q4cdn.com/358376879/files/doc_financials/2025/q4/4Q-2025-Analyst-Slide-Deck_Final.pdf"
+    },
+    {
+      "title": "Caterpillar Power & Energy overview (September 2026)",
+      "url": "https://s25.q4cdn.com/358376879/files/doc_downloads/2026/09/2026_P-E-Overview_Cat-Investor-Materials_September.pdf"
+    },
+    {
+      "title": "Caterpillar 2Q26 earnings call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/caterpillar-cat-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "Caterpillar: to announce 3Q 2026 results on 29 October",
+      "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/caterpillar-to-announce-3q-2026-financial-results-on-oct-29.html"
+    },
+    {
+      "title": "Yahoo Finance CAT analysis (consensus)",
+      "url": "https://finance.yahoo.com/quote/CAT/analysis/"
+    },
+    {
+      "title": "StockAnalysis CAT price history",
+      "url": "https://stockanalysis.com/stocks/cat/history/"
+    },
+    {
+      "title": "StockAnalysis CAT forecast (S&P Global)",
+      "url": "https://stockanalysis.com/stocks/cat/forecast/"
+    },
+    {
+      "title": "MarketBeat: Caterpillar expected to post earnings on Thursday (22 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/upcoming-caterpillar-cat-expected-to-post-quarterly-earnings-on-thursday-2026-10-22/"
+    },
+    {
+      "title": "Stocktwits via Yahoo: Q3 setup 'constructive', Truist (5 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/caterpillar-q3-earnings-setup-looks-180449689.html"
+    },
+    {
+      "title": "XTB: Caterpillar shares down 30% from record high (7 October 2026)",
+      "url": "https://www.xtb.com/en/market-analysis/caterpillar-shares-extend-decline-down-30-from-record-high"
+    },
+    {
+      "title": "Stocktwits: Baird downgrades Caterpillar over data center backlash (29 July 2026)",
+      "url": "https://stocktwits.com/news-articles/markets/equity/cat-stock-slides-8-percent-baird-downgrades-caterpillar-over-data-center-backlash/cZNTRjvRJTi"
+    },
+    {
+      "title": "TIKR: Caterpillar fell 12% after Michael Burry's short (8 July 2026)",
+      "url": "https://www.tikr.com/blog/caterpillar-fell-12-from-its-high-after-michael-burrys-short-is-cat-stock-a-buy-in-2026"
+    },
+    {
+      "title": "TIKR: Caterpillar fell nearly 5% as power-equipment stocks slid (October 2026)",
+      "url": "https://www.tikr.com/blog/caterpillar-stock-fell-nearly-5-as-power-equipment-stocks-slid-a-week-before-its-q3-report-heres-where-the-stock-could-go"
+    },
+    {
+      "title": "Yahoo: Morgan Stanley doubles Caterpillar price target to $915 (May 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-doubles-caterpillar-price-161644674.html"
+    },
+    {
+      "title": "Trefis: what has the market missed in Caterpillar's drop (23 October 2026)",
+      "url": "https://www.trefis.com/stock/cat/articles/620221/what-has-the-market-missed-in-caterpillar-stocks-drop/2026-10-23"
+    },
+    {
+      "title": "Investmenthouse: Caterpillar has fallen 36% from its high (25 October 2026)",
+      "url": "https://www.investmenthouse.com/2026/10/25/caterpillar-has-fallen-36-from-its-high-thursdays-report-could-close-that-gap/"
+    },
+    {
+      "title": "AOL: can Caterpillar's $72bn backlog save its stock (25 October 2026)",
+      "url": "https://www.aol.com/articles/caterpillar-72b-backlog-save-stock-152837000.html"
+    },
+    {
+      "title": "Motley Fool: Caterpillar is quietly becoming an AI stock (24 October 2026)",
+      "url": "https://www.fool.com/investing/2026/10/24/caterpillar-is-quietly-becoming-an-ai-stock-heres/"
+    },
+    {
+      "title": "Motley Fool: Caterpillar's power generation backlog (7 September 2026)",
+      "url": "https://fool.com/investing/2026/09/07/caterpillars-power-generation-backlog-just-hit-72"
+    },
+    {
+      "title": "Transport Topics/Bloomberg: data center boom drives Q2 (4 August 2026)",
+      "url": "https://www.ttnews.com/articles/caterpillar-earnings-q2-2026"
+    },
+    {
+      "title": "Data Center Dynamics: Caterpillar to supply 2 GW for Monarch Compute Campus",
+      "url": "https://www.datacenterdynamics.com/en/news/caterpillar-to-supply-2gw-of-natural-gas-turbines-for-monarch-compute-campus-in-mason-county-west-virginia/"
+    },
+    {
+      "title": "Power Progress: Joule taps Caterpillar and Wheeler for 4 GW in Utah (7 August 2025)",
+      "url": "https://www.powerprogress.com/stationary/news/joule-taps-caterpillar-and-wheeler-for-4-gw-data-center-in-utah/8082992.article"
+    },
+    {
+      "title": "Dallas Innovates: Caterpillar and Hunt Energy 1 GW agreement (August 2025)",
+      "url": "https://dallasinnovates.com/?p=278434"
+    },
+    {
+      "title": "Heavy Equipment Guide: Caterpillar's growth engine in the AI power crunch (29 July 2026)",
+      "url": "https://www.heavyquipmag.com/2026/07/29/caterpillar-is-finding-its-next-growth-engine-inside-the-ai-power-crunch/"
+    },
+    {
+      "title": "earnings-watcher: CAT implied move (23 October 2026)",
+      "url": "https://earnings-watcher.com/wiki/cat-implied-move"
+    },
+    {
+      "title": "TheRightTrader: Caterpillar 5.5% 2055 notes (estimated price)",
+      "url": "https://therighttrader.com/bonds/caterpillar/5-5-2055"
+    }
+  ],
+  "ticker": "CAT",
+  "verdict": "Preview",
+  "versus": "Pending — reports 29 October 2026 before the open (release 5:30 am CDT, call 7:30 am CDT)",
+  "watch": [
+    "Backlog against $72.1bn, and the share due within 12 months against 59%.",
+    "Power Generation sales growth against 29% in 2Q26, and Power & Energy margin against the guide of higher year on year.",
+    "Lead times for gas prime gensets (late 2028) and turbines, and any change in price escalator terms.",
+    "Adjusted operating margin against 17.5% in 3Q25 and the bottom of the band (about 18.8% at consensus FY sales); tariffs against about $600mn.",
+    "Any new named data center deal, any word on deferrals or cancellations, the Solar Turbines succession, and Cat Financial exposure to data center developers."
+  ]
+}

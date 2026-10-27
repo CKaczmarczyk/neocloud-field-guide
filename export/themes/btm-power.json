@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "Josh preview: gas prime genset lead times run into late 2028, with price escalators on distant orders; Cat Financial provided vendor financing on a 2 GW order.",
+      "company": "Caterpillar",
+      "date": "2026-10-26",
+      "direction": "supports",
+      "numbers": "No published $/kW.",
+      "segment": "energy",
+      "source": "Caterpillar 2Q26 call, via Josh CAT preview",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/caterpillar-cat-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "A 620 MW follow-on order of Jenbacher J624 gas engines (4.5 MW each, containerized prime power) from an unnamed US hyperscale developer, taking that customer to 1.72 GW.",
+      "company": "INNIO",
+      "date": "2026-10-23",
+      "direction": "supports",
+      "numbers": "Value and delivery dates not disclosed.",
+      "segment": "energy",
+      "source": "Data Center Dynamics",
+      "url": "https://www.datacenterdynamics.com/en/news/innio-signs-620mw-gas-engine-order-with-undisclosed-us-data-center-developer/"
+    },
+    {
+      "claim": "Josh preview: heavy-duty frames mostly sold out through 2030 with new reservations four to five years out; 2H26 pricing at the high end of +10 to 20 points; BNP estimates about $790/kW heavy-duty and $1,800/kW aeroderivative.",
+      "company": "GE Vernova",
+      "date": "2026-10-23",
+      "direction": "supports",
+      "numbers": "Small buyers are pushed to aeroderivatives and engines.",
+      "segment": "energy",
+      "source": "GE Vernova 2Q26 call, via Josh GEV preview",
+      "url": "https://www.gevernova.com/sites/default/files/gev_webcast_transcript_07222026.pdf"
+    },
+    {
       "claim": "Record 3Q26: revenue $1,235.8mn (+138% YoY), product revenue above $1bn for the first time; FY26 revenue guide raised a third time to $4.4bn-$4.6bn. Management calls 5 GW of capacity 'just a milestone' and says backlog grows faster than revenue.",
       "company": "Bloom Energy",
       "date": "2026-10-22",
@@ -29,6 +59,26 @@
       "segment": "financing",
       "source": "Meta 3Q26 and 2Q26 10-Q, Note 10",
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+    },
+    {
+      "claim": "Trump posted that data centers are mandated to make their own electricity and should pay communities a dividend.",
+      "company": "US federal policy",
+      "date": "2026-10-21",
+      "direction": "supports",
+      "numbers": "No executive action or thresholds; FERC this month rejected requiring bring-your-own generation in PJM, so words and rules diverge.",
+      "segment": "policy",
+      "source": "Bisnow",
+      "url": "https://www.bisnow.com/news/national/data-center-community-relations/trump-data-centers-mandated-to-supply-own-electricity-should-pay-dividend-to-communities"
+    },
+    {
+      "claim": "SpaceX reported 1.7 GW of compute at 30 September, guided 2.2 GW by end-October and up to 3 GW by year-end, and aims to build 20 GW of incremental power and cooling ahead of about 10 GW more compute in 2027.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-20",
+      "direction": "supports",
+      "numbers": "Capex $16.44B in Q3; Doosan has shipped the first of about five 380 MW H-class turbines reported for SpaceXAI.",
+      "segment": "energy",
+      "source": "Constellation Research; Measured AI",
+      "url": "https://measuredai.substack.com/p/spacexsi-compute-ramp"
     },
     {
       "claim": "Lined up about 11.5 GW of gas power islands for up to 10 GW of AI compute; no customer yet.",
@@ -68,7 +118,7 @@
   "order": 4,
   "question": "How fast are on-site and gas-to-compute builds scaling, and at what cost?",
   "status": "strengthening",
-  "summary": "On-site gas has gone mainstream: Goldman sees 67 GW behind the meter by 2030, and engine and turbine makers are sold out for years. Costs are high, about $150–200 per MWh off-grid in Texas, so it wins on speed, not price.",
+  "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, and SpaceX plans 20 GW of its own power and cooling. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-10-23"
+  "updated": "2026-10-26"
 }

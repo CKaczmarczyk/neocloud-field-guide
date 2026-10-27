@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Musk predicts stranded compute in half-built data centers and consolidation among more than 200 neoclouds, saying debt markets have almost shut for firms without substantial non-AI revenue.",
+      "company": "Neoclouds (Musk)",
+      "date": "2026-10-25",
+      "direction": "against",
+      "numbers": "Opinion from an interested party; no data given (single source).",
+      "segment": "financing",
+      "source": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/musk-lenders-stop-funding-ai-data-centers/"
+    },
+    {
+      "claim": "Shares closed at $54.24, after a 52-week low of $53.50, down about 13% on the week and 54% over a year, market value about $30B; Bernstein downgraded on financing worries.",
+      "company": "CoreWeave",
+      "date": "2026-10-23",
+      "direction": "against",
+      "numbers": "Liabilities $72B against $104B backlog; Benzinga put bond yields above 15.5%.",
+      "segment": "neocloud",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/10/23/coreweave-is-down-xx-in-a-week-heres-the-price-at/"
+    },
+    {
       "claim": "The one neocloud-scale operator with an investment-grade balance sheet: $25B of BBB-tier notes at 5.855% in June, backed by Starlink cash flow rather than GPUs, and a reported $40B Apollo-led package (about $10B loans, $30B IG debt) to buy Nvidia chips, closing in 2027. The CFO expects no further equity after the $85.7B IPO.",
       "company": "SpaceX (SpaceXAI)",
       "date": "2026-10-22",
@@ -31,6 +51,16 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
     },
     {
+      "claim": "Nebius CRO says price per MW keeps rising in capacity auctions, 2027 capacity would sell out, and Nebius does not carry CoreWeave-style debt.",
+      "company": "Nebius",
+      "date": "2026-10-21",
+      "direction": "neutral",
+      "numbers": "Management talks pricing power while the sector's debt reprices; no dollar figures given (CNBC via Slicast).",
+      "segment": "neocloud",
+      "source": "CNBC, via Slicast",
+      "url": "https://slicast.com/article/23ctzb"
+    },
+    {
       "claim": "Unsecured notes trade near 80 cents (about 15% yield) and five-year CDS hit about 1,128–1,195 bps, implying roughly 45–60% odds of default within five years.",
       "company": "CoreWeave",
       "date": "2026-10-20",
@@ -40,12 +70,32 @@
       "url": "https://www.junkbondinvestor.com/p/coreweave-crwv-34-billion-of-equity"
     },
     {
+      "claim": "Microsoft ended its anchor lease at Nscale's 90 MW Loughton site after the grid date slipped to the early-to-mid 2030s, weeks before Nscale's NYSE IPO at up to $35B.",
+      "company": "Nscale",
+      "date": "2026-10-18",
+      "direction": "against",
+      "numbers": "Microsoft and Anthropic are about 85% of Nscale's backlog; Nscale says other contracts are unaffected.",
+      "segment": "neocloud",
+      "source": "Tech Times, citing The Telegraph",
+      "url": "https://www.techtimes.com/articles/329207/20261019/microsoft-exits-nscales-uk-flagship-grid-cant-supply-power-until-2030s-ipo-risk.htm"
+    },
+    {
       "claim": "Firmus pulled a near-$5B IPO and AirTrunk delayed its REIT listing to 2027.",
       "company": "Firmus, AirTrunk",
       "date": "2026-10-16",
       "direction": "supports",
       "segment": "developer",
       "source": "Weekly briefing, 19 Oct"
+    },
+    {
+      "claim": "Banks would not underwrite Volta's $3.7B GPU term loan, selling it best-efforts at about 11.2% to 11.75%.",
+      "company": "Volta",
+      "date": "2026-10-14",
+      "direction": "against",
+      "numbers": "Only the $1.3B lease-backed piece was guaranteed (single source).",
+      "segment": "financing",
+      "source": "BigGo Finance, citing PitchBook LCD",
+      "url": "https://finance.biggo.com/news/5b44ab5d-e597-4f4b-94cf-47a5ae305bac"
     },
     {
       "claim": "Closed a $1B loan at 6.78% fixed, rated Baa1, against contracts with two investment-grade customers, and is raising up to $4B of equity.",
@@ -68,7 +118,7 @@
   "order": 5,
   "question": "Can neoclouds keep raising money below what their assets earn?",
   "status": "weakening",
-  "summary": "October repriced weak-credit compute: CoreWeave's unsecured bonds yield about 15% and its default swaps hit records, data center IPOs were pulled, and lenders now price by tenant. Secured loans against strong customers remain open; unbacked parent money has become expensive.",
+  "summary": "October repriced weak-credit compute and the second half of the month did not reverse it: CoreWeave hit new lows near $54 with bonds above 15%, banks refused to underwrite Volta's GPU loan (sold at about 11.5%), Microsoft walked from Nscale's UK flagship just before its IPO, and Musk says lenders have nearly shut off neoclouds without other revenue. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open.",
   "title": "Neocloud funding access",
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }

@@ -11,6 +11,26 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
     },
     {
+      "claim": "Crusoe's CEO says older A100 and H100 chips rent for more now than when first deployed; Nebius says price per MW keeps rising.",
+      "company": "Crusoe",
+      "date": "2026-10-21",
+      "direction": "supports",
+      "numbers": "Management statements without rate data (CNBC via Slicast).",
+      "segment": "neocloud",
+      "source": "CNBC, via Slicast",
+      "url": "https://slicast.com/article/23ctzb"
+    },
+    {
+      "claim": "CFO says new compute at current prices pays back in under a year; Measured AI calculates about $44 per watt per year across five contracts, about $33 for Anthropic and near $50 for Google.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-20",
+      "direction": "supports",
+      "numbers": "Measured AI estimates 10 to 12 months payback on operating cash, so Musk's six-month 2027 target looks hard.",
+      "segment": "neocloud",
+      "source": "Constellation Research; Measured AI",
+      "url": "https://measuredai.substack.com/p/spacexsi-compute-ramp"
+    },
+    {
       "claim": "Raised prices about 25% in July and signed an A100 contract into 2029, but renewals so far cover a small part of the fleet; adjusted EBITDA margin 58.6% against operating margin 5.0% shows how much depreciation weighs.",
       "company": "CoreWeave",
       "date": "2026-10-20",
@@ -50,7 +70,7 @@
   "order": 2,
   "question": "What do GPUs earn once their first contract ends, and does that justify six-year depreciation?",
   "status": "mixed",
-  "summary": "So far older chips are holding value: H100 rents are above launch prices and Google runs seven-year-old TPUs flat out. But only a small part of fleets has come up for renewal; the test comes when 2027–28 supply is online and the first big block of contracts rolls off.",
+  "summary": "Older chips are still holding value on management's telling: Crusoe says A100 and H100 rents exceed launch levels, and SpaceX says new compute pays back in under a year. But these are statements, not renewal data, and only a small part of fleets has come up for renewal; the test comes when 2027-28 supply is online and the first big block of contracts rolls off. Status unchanged.",
   "title": "What chips earn after their first contract",
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }

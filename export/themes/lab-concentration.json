@@ -11,13 +11,24 @@
       "url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/"
     },
     {
-      "claim": "Draft prospectus shows at least $518B of compute commitments over a decade, about 80% non-cancellable.",
-      "company": "Anthropic",
-      "date": "2026-09-29",
+      "claim": "Nscale's S-1 shows Microsoft and Anthropic at about 85% of contracted backlog, anchored by a $44.6B six-year Anthropic deal in West Virginia; its largest customer was 52% of H1 revenue.",
+      "company": "Nscale",
+      "date": "2026-10-18",
       "direction": "supports",
+      "numbers": "Microsoft has now walked from one site.",
+      "segment": "neocloud",
+      "source": "Tech Times",
+      "url": "https://www.techtimes.com/articles/329207/20261019/microsoft-exits-nscales-uk-flagship-grid-cant-supply-power-until-2030s-ipo-risk.htm"
+    },
+    {
+      "claim": "Anthropic is reported offering Blackstone above 10% on $9B of debt backed by its five-year chip lease payments.",
+      "company": "Anthropic",
+      "date": "2026-10-16",
+      "direction": "supports",
+      "numbers": "Lab is now borrowing directly against its compute leases (single source).",
       "segment": "financing",
-      "source": "Reuters via Yahoo",
-      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-filing-discloses-84-5b-212105063.html"
+      "source": "The Star, citing Reuters and the FT",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-offers-blackstone-double-digit-yield-in-chip-financing-deal-ft-reports"
     },
     {
       "claim": "Q3 revenue of $16.8B, up 45% on the quarter after 145% in Q2, from an investor presentation (unaudited).",
@@ -37,6 +48,15 @@
       "url": "https://www.junkbondinvestor.com/p/coreweave-crwv-34-billion-of-equity"
     },
     {
+      "claim": "Draft prospectus shows at least $518B of compute commitments over a decade, about 80% non-cancellable.",
+      "company": "Anthropic",
+      "date": "2026-09-29",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Reuters via Yahoo",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-filing-discloses-84-5b-212105063.html"
+    },
+    {
       "claim": "Nearly all contracted growth traces to Anthropic, directly or through Fluidstack.",
       "company": "TeraWulf",
       "date": "2026-08-05",
@@ -49,7 +69,7 @@
   "order": 6,
   "question": "How exposed is the buildout to two labs?",
   "status": "strengthening",
-  "summary": "Exposure keeps rising: Anthropic alone carries at least $518B of compute commitments, and much of the landlord pipeline traces back to it. Revenue figures are softer than headlines suggested for both labs.",
+  "summary": "Exposure keeps rising: Anthropic carries at least $518B of compute commitments, Nscale's backlog is about 85% Microsoft and Anthropic, and Anthropic is now borrowing against its own chip leases at above 10%. Revenue figures are softer than headlines suggested for both labs.",
   "title": "Concentration on Anthropic and OpenAI",
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }
