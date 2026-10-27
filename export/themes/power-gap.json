@@ -1,0 +1,64 @@
+{
+  "evidence": [
+    {
+      "claim": "Tone softened in 3Q26: current capacity plus what is scheduled to come online 'gives us the flexibility' to allocate across training, core and new products. Commitments still rose 30% QoQ.",
+      "company": "Meta Platforms",
+      "date": "2026-10-21",
+      "direction": "neutral",
+      "numbers": "Implied 4Q26 capex $49-59bn; 2027 commitments due $121.41bn.",
+      "segment": "financing",
+      "source": "Meta 3Q26 release and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    },
+    {
+      "claim": "Trucking natural gas to keep sites running in Utah and Texas while pipelines lag.",
+      "company": "Oracle",
+      "date": "2026-10-08",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Weekly briefing, 12 Oct (Bloomberg)"
+    },
+    {
+      "claim": "Force majeure notice on its 2.45 GW Project Jupiter site in New Mexico over gas pipeline and air-permit delays.",
+      "company": "Oracle",
+      "date": "2026-09-24",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Third Prime October overview"
+    },
+    {
+      "claim": "Shayle Kann expects the US to add more grid capacity in about two years than in any year in decades.",
+      "company": "US grid",
+      "date": "2026-09-17",
+      "direction": "against",
+      "segment": "policy",
+      "source": "Catalyst",
+      "url": "https://www.youtube.com/watch?v=hp0Qjarb24g"
+    },
+    {
+      "claim": "Meta says it is planning 2028 for flexibility: securing land and power now and deciding on chips later. It also said capacity is the constraint and near-term capacity is worth more than long-term.",
+      "company": "Meta Platforms",
+      "date": "2026-07-29",
+      "direction": "supports",
+      "numbers": "2026 capex guide then $130-145bn; leases not commenced $278.99bn at 30 Jun 2026.",
+      "segment": "financing",
+      "source": "Meta 2Q26 call (Susan Li)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/meta-meta-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "SemiAnalysis reports utility promises such as 1 GW by 2027 turning into 100 MW by 2029, with no penalty for missing.",
+      "company": "Utilities",
+      "date": "2026-07-09",
+      "direction": "supports",
+      "segment": "policy",
+      "source": "Catalyst",
+      "url": "https://www.youtube.com/watch?v=b5YnPsBxgjA"
+    }
+  ],
+  "order": 3,
+  "question": "Will chips arrive at sites that have no power in 2027?",
+  "status": "strengthening",
+  "summary": "Utility dates are slipping and gas pipelines and permits are lagging. Oracle's force majeure in New Mexico and its use of trucked gas show the gap is already real. The counterview is that US grid additions surge from about 2028.",
+  "title": "Power arriving after the chips",
+  "updated": "2026-10-22"
+}

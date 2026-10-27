@@ -1,0 +1,55 @@
+{
+  "evidence": [
+    {
+      "claim": "SpaceX's compute business rests on two tenants: Anthropic (all of Colossus 1, $1.25B a month through May 2029, up to $84.5B per Anthropic's prospectus) and Google ($920M a month to June 2029, called 'bridge capacity'). Most agreements can be ended on 90 days' notice.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-22",
+      "direction": "supports",
+      "numbers": "Contracted cloud revenue $14.1B at Q2 plus $6.7B of six-month deals; the two named tenants are about $26B a year.",
+      "segment": "neocloud",
+      "source": "SpaceX S-1 and Q2 call; TechRepublic on Google terms; Anthropic prospectus via BigGo",
+      "url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/"
+    },
+    {
+      "claim": "Draft prospectus shows at least $518B of compute commitments over a decade, about 80% non-cancellable.",
+      "company": "Anthropic",
+      "date": "2026-09-29",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Reuters via Yahoo",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-filing-discloses-84-5b-212105063.html"
+    },
+    {
+      "claim": "Q3 revenue of $16.8B, up 45% on the quarter after 145% in Q2, from an investor presentation (unaudited).",
+      "company": "Anthropic",
+      "date": "2026-10-14",
+      "direction": "neutral",
+      "segment": "financing",
+      "source": "Weekly briefing, 19 Oct (Reuters)"
+    },
+    {
+      "claim": "Reporting clarified annualized revenue closer to $50B than the $68B circulating.",
+      "company": "OpenAI",
+      "date": "2026-10-06",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "JunkBondInvestor",
+      "url": "https://www.junkbondinvestor.com/p/coreweave-crwv-34-billion-of-equity"
+    },
+    {
+      "claim": "Nearly all contracted growth traces to Anthropic, directly or through Fluidstack.",
+      "company": "TeraWulf",
+      "date": "2026-08-05",
+      "direction": "supports",
+      "segment": "developer",
+      "source": "TeraWulf 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000166/wulf-20260630.htm"
+    }
+  ],
+  "order": 6,
+  "question": "How exposed is the buildout to two labs?",
+  "status": "strengthening",
+  "summary": "Exposure keeps rising: Anthropic alone carries at least $518B of compute commitments, and much of the landlord pipeline traces back to it. Revenue figures are softer than headlines suggested for both labs.",
+  "title": "Concentration on Anthropic and OpenAI",
+  "updated": "2026-10-22"
+}

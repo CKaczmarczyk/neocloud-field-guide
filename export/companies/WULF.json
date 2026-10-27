@@ -1,0 +1,15 @@
+{
+  "drivers": [
+    "MW paying rent and delivery timing versus schedule (Lake Mariner CB-4 and CB-5, Justified 2H27 to early 2028), including slips the tenant causes",
+    "Rent per kW and term on new leases, plus progress on the 250 to 500 MW per year contracting target (Muskie 1 GW of power has no tenant yet)",
+    "Build cost per critical IT MW ($8M to $10M guidance at Lake Mariner; $10M to $12M net at Justified) and resulting yield on cost",
+    "Availability and price of project debt, which depends on investment-grade credit support (Google for Fluidstack; Justified backstop not finalized), plus parent leverage and convertibles",
+    "Bitcoin price and hashprice for the shrinking mining segment; warrant fair-value marks for GAAP results"
+  ],
+  "model": "TeraWulf owns power-rich former industrial sites (Lake Mariner NY, Justified and Muskie KY, Chesapeake MD) and leases finished data halls to AI tenants (Fluidstack with Google credit support, Core42, Anthropic) on 10 to 20 year terms, with tenants bringing their own GPUs and power passed through at cost. Scale matters because each new site is financed mostly against the tenant's credit or a third-party backstop, so contracted MW become debt capacity; legacy bitcoin mining is shrinking.",
+  "name": "TeraWulf",
+  "next_report": "2026-11-06",
+  "segment": "developer",
+  "thesis": "",
+  "ticker": "WULF"
+}

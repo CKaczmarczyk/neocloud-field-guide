@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-04",
+  "items": [
+    {
+      "headline": "Fluidstack raises $1.5B at $18B",
+      "segment": "neocloud",
+      "source": "Dealroom",
+      "summary": "Led by Jane Street on 28 September, up from $7.5B about two months earlier. The asset-light hosting model is the one closest to what Kona could serve.",
+      "url": "https://dealroom.co/news/157101-fluidstack-raises-1-5b-led-by-jane-street-valuation-quadruples-to-18b-in/"
+    },
+    {
+      "headline": "Nscale files to go public",
+      "segment": "neocloud",
+      "source": "DCD",
+      "summary": "S-1 filed 18 September seeking up to $3B. Contract value is $103.4B but only about 5% of contracted GPUs are energized.",
+      "url": "https://www.datacenterdynamics.com/en/news/ai-cloud-and-data-center-firm-nscale-raises-336bn-ahead-of-its-ipo/"
+    },
+    {
+      "headline": "Crusoe raises $3.9B at $30.9B",
+      "segment": "neocloud",
+      "source": "Crusoe",
+      "summary": "Series F on 17 September with Nvidia participating. More than 6 GW contracted and more than 1 GW operating.",
+      "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"
+    },
+    {
+      "headline": "CoreWeave reports short contracts at about $40M per MW",
+      "segment": "neocloud",
+      "source": "CoreWeave",
+      "summary": "Three to six month contracts signed in Q3 priced at about $40M per MW annualized. The same day it announced a $3B convertible and a share sale programme.",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx"
+    },
+    {
+      "headline": "Cipher adds a second lease at Barber Lake",
+      "segment": "developer",
+      "source": "SEC filing",
+      "summary": "A 10-year lease with an AI lab signed 25 September takes the site above $9B over 20 years. Cipher bears the first $359M of cost overruns.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+    },
+    {
+      "headline": "Hut 8 closes project debt near 6.1 to 6.2%",
+      "segment": "financing",
+      "source": "TechTimes",
+      "summary": "$3.25B and $4.25B of investment-grade project financing plus a $1.07B revolver closed 24 September, backed by Google-supported and investment-grade leases.",
+      "url": "https://www.techtimes.com/articles/328138/20260928/hut-8-closes-two-tier-ai-data-center-finance-stack-jpmorgan-leads-12-bank-revolver.htm"
+    },
+    {
+      "headline": "Anthropic prospectus shows at least $518B of compute obligations",
+      "segment": "financing",
+      "source": "Reuters via Yahoo",
+      "summary": "Reported 29 September. Spread across six partners over a decade, with some capacity cancellable on 90 days' notice.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-filing-discloses-84-5b-212105063.html"
+    },
+    {
+      "headline": "Argentina reportedly requires large loads to bring new generation",
+      "segment": "energy",
+      "source": "Rio Times",
+      "summary": "Energy Secretariat Resolution 264/2026, effective 25 September, is reported to require new loads of about 80 MW or more to source at least 80% of energy from new generation. Single source; confirm in the Boletin Oficial.",
+      "url": "https://www.riotimesonline.com/argentina-data-centers-mines-own-power-supply-rule-2026/"
+    },
+    {
+      "headline": "EXIM signs framework of up to $7B for Argentina",
+      "segment": "financing",
+      "source": "EXIM",
+      "summary": "Signed 23 September, covering energy, minerals and digital connectivity through 2027. No data center borrower named.",
+      "url": "https://www.exim.gov/news/exim-signs-7-billion-argentina-build-future-framework-prioritize-energy-security-and-critical"
+    },
+    {
+      "headline": "Argentine country risk reaches 2026 high",
+      "segment": "financing",
+      "source": "Noticias NQN",
+      "summary": "The spread hit 641 bps on 28 September on reserve and 2027 financing concerns.",
+      "url": "https://www.noticiasnqn.com.ar/noticias/2026/09/28/354544-el-riesgo-pais-supero-los-640-puntos-y-alcanzo-su-maximo-de-2026"
+    }
+  ],
+  "kona": "Two Argentine items matter most. A reported energy resolution now makes large new loads bring their own generation, which favours Kona's model, and EXIM signed a framework of up to $7B that includes digital connectivity. Against that, country risk hit its 2026 high and Stargate Argentina is still only a letter of intent.",
+  "title": "Baseline: the two weeks to 4 October 2026"
+}

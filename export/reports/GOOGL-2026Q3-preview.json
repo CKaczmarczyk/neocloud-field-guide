@@ -1,0 +1,486 @@
+{
+  "brief": [
+    "Verdict ahead of the print: few doubt that Alphabet beats the quarter. The shares will move on four things: how fast Google Cloud grows (the Street is near 90% against 82% in 2Q26), whether Cloud margins hold now that rented third-party capacity is coming in, the first 2027 capex framework (Street talk runs from about $300bn to about $330bn), and how management funds a free cash flow line that has gone negative. Alphabet confirmed on 6 October 2026 that it reports on Wednesday 28 October 2026 after the close, with the call at 4:30 pm ET.",
+    "Where expectations sit. Yahoo Finance shows 3Q26 revenue consensus of $127.85bn from 41 analysts (range $123.41bn to $138.68bn), up 24.9% on $102.35bn, and EPS of $3.00 from 44 analysts (range $2.25 to $3.63) against $2.87 a year ago. MarketBeat has $127.92bn and $2.96, and Drillr's survey has $3.04. Zacks puts Google Cloud revenue at $29.16bn, up 92.4% on $15.16bn. BofA reports the Street at 89% Cloud growth against its own 93%. Zacks' total revenue of $111.64bn and BofA's Street figure of $111.0bn appear to be net of TAC; this is our inference, since $127.85bn less Zacks' $16.53bn of TAC gives $111.32bn. Neither source states the basis. We found no published consensus for Cloud operating income, backlog or quarterly capex.",
+    "What the last call set up. In July, CFO Anat Ashkenazi raised 2026 capex guidance to $195bn to $205bn (from $180bn to $190bn, and $175bn to $185bn in February), and said capex will 'increase significantly in 2027'. H1 capex was $80.6bn, so the guide implies $57bn to $62bn a quarter in the second half. She also guided to 'modest margin pressure' in Cloud as Google expands third-party capacity in 3Q as a 'bridging strategy', and said free cash flow 'will remain under pressure'. 2Q26 free cash flow was -$5.9bn. Cloud backlog was $514bn, up more than $50bn in the quarter, with just over half to be recognized within 24 months. TPU systems sold into customer data centers began to be recognized in 2Q26, with 'the vast majority' of revenue in 2027.",
+    "Three debates. First, the capex-to-cash bridge: the Street has FY26 capex at about $202bn (BofA) and FY26 free cash flow of only $7.07bn (S&P Global via StockAnalysis), with FY27 free cash flow consensus negative (about -$37bn per Barchart via Yahoo; about -$32bn per TIKR via Admiral Markets). Second, Cloud margin quality, as the 35.6% margin in 2Q26 absorbs rented capacity, including the SpaceX GPU contract (reported at $920mn a month for 32 months from October 2026), and Pichai's 20 October comment that Cloud is giving up revenue so research gets first claim on compute. Third, the off-balance-sheet build: $85.2bn of data center leases not yet commenced, plus a $5.8bn short-term lease starting in 3Q, $43.8bn of credit-derivative backstops of third-party data center payments (up from $16.9bn at year-end), $7.6bn of energy equipment guarantees, and an agreement for an estimated $24.1bn more.",
+    "What would move the stock. Positive: Cloud growth at or above 90% with a margin in the mid-30s, backlog well above $514bn as Anthropic's multi-GW TPU capacity and Meta's TPU rental are booked, TPU revenue quantified, and a 2027 capex frame near $300bn with a credible funding mix. Negative: Cloud below about 85%, a margin dip larger than 'modest', a 2027 capex frame well above $330bn with no free cash flow floor, or a sign of more equity issuance beyond the $40bn ATM, which management said is for employee equity taxes. GOOGL closed at $324.22 on 22 October, down 7.2% from $349.22 on 15 October, and traded at about $323.85 early on 23 October. Implied moves run from 5.07% (Pepperstone) to about 6.4% (EarningsWatcher via OANDA).",
+    "Kona read-through. Google is now the market's main tenant-credit provider for third-party AI sites. It backstops neocloud leases (Fluidstack at TeraWulf and Cipher) as credit derivatives worth $43.8bn and is lining up another $24.1bn, while it rents GPUs (SpaceX) and sells TPUs into other people's data centers. A small off-grid site can borrow that credit only by fitting the template: a hyperscaler-approved tenant, a long lease, and power that is ready to energize. The call should show how far down the size curve Google will go."
+  ],
+  "changes": [
+    "Capex guide raised twice since February: $175bn to $185bn (February), $180bn to $190bn (April), $195bn to $205bn (July), with 2027 to 'increase significantly'. Some previews (InsiderFinance, Plus500) still quote the stale $175bn to $185bn.",
+    "Funding shift in June to August: $49.6bn of net equity (common including a $10.0bn Berkshire Hathaway private placement, plus 6.25% mandatory convertible preferred), a $40.0bn ATM, $20.3bn of 2Q notes, then $25bn of US dollar notes on 10 August, rated Aa2/AA+, at T+33 bps (2028) to T+130 bps (2066). Long-term debt was $98.2bn at 30 June, against $46.5bn at year-end.",
+    "Off-balance-sheet AI commitments jumped in 2Q26: credit-derivative backstops of third-party data center payments of $43.8bn (from $16.9bn), leases not yet commenced of $85.2bn, total purchase commitments of $811.0bn, and a $20.0bn milestone-based capital funding commitment to a private company. AI Weekly, citing Bloomberg, links Alphabet's large private holding to Anthropic; the 10-Q does not name it.",
+    "New compute and power deals: SpaceX GPU capacity (about 110,000 Nvidia GPUs, $920mn a month, 32 months from October 2026; reported from SpaceX's IPO filing); Anthropic's 3.5 GW of TPU capacity from 2027 (Broadcom filing, via Business Today); OpenAI models on Google Cloud in private preview from 21 October; AEP's 702 MW, $4bn Bloom fuel-cell plant near Cheyenne under a 20-year PPA (15 October).",
+    "Sentiment cooled into the print: the stock fell 7.2% between 15 and 22 October amid a broader AI sell-off, and press reports record-wide CDS for Amazon, Alphabet and Meta in mid-October (no Alphabet level quoted)."
+  ],
+  "checks": "No subagent was used, so I verified the figures myself. Report date: confirmed on abc.xyz ('Alphabet Announces Date of Third Quarter 2026 Financial Results Conference Call', 6 October 2026: Wednesday 28 October, 1:30 pm PT / 4:30 pm ET). MarketBeat still says 'not confirmed', which is out of date. Filing figures: I downloaded from EDGAR the 2Q26 8-K Ex. 99.1 (22 July 2026), the 2Q26 10-Q (23 July 2026), the 3Q25 Ex. 99.1 (29 October 2025), the 6 August 2026 FWP pricing term sheet and the 10 August 2026 8-K. I converted them to text and string-matched 52 figures in code: revenue, Cloud revenue and operating income, operating income, OCF, capex, FCF, TTM FCF, cash, debt, equity and notes proceeds, RPO, Cloud backlog, leases not yet commenced, the short-term lease, purchase commitments, backstops, credit-derivative notionals, the $24.1bn future backstops, the $20.0bn equity derivative, credit facilities, commercial paper, debt face value, TPU recognition timing, the August tranche sizes, spreads and ratings, and the 3Q25 comparatives. All matched. Call quotes (capex guide, 2027 'increase significantly', the bridging strategy, modest margin pressure, TPU timing, no further equity raises) come from the Benzinga transcript; the guide and backlog were cross-checked against MarketBeat's call highlights and OANDA. Consensus: I reopened the Zacks/Yahoo key-metrics article (EPS $2.94, revenue $111.64bn, Cloud $29.16bn, TAC $16.53bn), the Proactive/Yahoo BofA note (all six figures) and OANDA (all five figures), and each matched. Yahoo's analysis page, StockAnalysis's forecast and price history, MarketBeat, Pepperstone, Drillr, Admiral Markets, InsiderFinance and Top1Markets were each read once. Derived numbers were recomputed in Python: second-half capex needed ($114.4bn to $124.4bn), the 2Q Cloud margin of 35.6%, Cloud growth implied by Zacks (92.4%) and by BofA's 89%/93% ($28.6bn/$29.3bn), revenue growth of 24.9%, the ex-TAC reconciliation, EPS growth of 4.5%, the backstop totals ($51.4bn; $75.5bn including the $24.1bn), debt face of about $126bn after August, market cap of about $3.97tn, price moves, the SpaceX total ($29.4bn), backlog at 5.2x annualized Cloud revenue, the August tranche sum ($25.0bn), and Cipher's backstop (about $1.73bn). Inference: that the $111bn revenue consensus is net of TAC is our arithmetic; neither source says so. Single source or not primary: SpaceX contract terms (Euronews, citing SpaceX's IPO filing); Anthropic 3.5 GW (Business Today, citing a Broadcom filing); Meta TPU rental (SiliconANGLE, citing The Information); the Anthropic link to the private holding and the $20bn commitment (AI Weekly, citing Bloomberg; the 10-Q does not name it); 2027 capex of about $330bn (Wolfe via Invezz/Admiral) and about $300bn (BofA); FY27 FCF consensus (-$37bn Barchart; -$32bn TIKR); JPMorgan's 'approximately double' (Barron's via OANDA); Pichai's revenue-forgone comment (Barchart/Yahoo summary of a podcast). Fluidstack backstop sizes come from 2025 DCD reports and are not reconciled to the 10-Q notional. No Alphabet CDS level and no secondary bond spread was found for 22 or 23 October. The 23 October price is intraday. FY26 EPS consensus is not comparable across providers ($20.60 Yahoo, including equity gains; $13.14 StockAnalysis; $10.91 MarketBeat). No 3Q26 results had been filed when this card was built (latest EDGAR filing checked: 15 October 2026), and no post-results material was read.",
+  "consensus_thesis": "Investors own Alphabet as the only hyperscaler with its own full stack (TPUs, Gemini, Cloud), and at about $3.97tn and about 24.6x forward earnings (Pepperstone) they are paying for Cloud growing near 90% off a $514bn backlog, with TPUs becoming a second, external revenue stream in 2027 that justifies roughly $200bn of 2026 capex and about $300bn or more in 2027. Positioning is crowded long (16 Buy, 1 Hold, 0 Sell per Pepperstone; average target about $430) but has cooled 7% into the print. In credit, Aa2/AA+ paper still clears at T+33 to T+130 bps, but hyperscaler CDS has widened to record levels as Alphabet funds the build with debt, equity and $43.8bn of off-balance-sheet backstops.",
+  "date": "2026-10-23",
+  "headline": "3Q26 will be judged less on another beat than on whether Google Cloud's near-90% growth and $514bn backlog can carry a capex bill heading for about $300bn in 2027, now that free cash flow is negative and Alphabet is backstopping tens of billions of third-party data center leases.",
+  "kind": "preview",
+  "kona": "Google has become the tenant-credit provider of last resort for AI data centers. It backstops neocloud leases as credit derivatives ($43.8bn notional at 30 June, with an estimated $24.1bn more agreed in principle), and keeps the right to take over the lease or pay a termination fee. At TeraWulf and Cipher those backstops ran to about $1.3bn to $1.7bn per site of 168 MW or more, alongside equity warrants. For Kona, that is the clearest route to investment-grade cash flows at a small off-grid site: host a Google-approved tenant (a Fluidstack-type neocloud serving a TPU or Anthropic-class buyer) on a long lease. The bar, though, is energized, grid-independent power, and so far the template has been used only on US sites of 100 MW or more. Kona's tens of MW in Argentina need to show either that Google will backstop at smaller scale abroad, or that its inference demand (Gemini at 22 billion API tokens a minute, Cloud capacity being rationed) leaves room for overflow capacity bought on shorter contracts.",
+  "kpis": [
+    {
+      "consensus": "$127.85bn (Yahoo, 41 analysts, range $123.41bn to $138.68bn); MarketBeat and OANDA $127.92bn; Drillr $127.22bn (23 analysts); ex-TAC basis $111.64bn (Zacks) and $111.0bn Street (BofA)",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "Year-ago 3Q25 was $102.35bn ($87.47bn net of $14.88bn TAC). Consensus implies about 25% growth on a gross basis.",
+      "prior": "$119.80bn (2Q26, +24%)"
+    },
+    {
+      "consensus": "$3.00 (Yahoo, 44 analysts, range $2.25 to $3.63); MarketBeat $2.96; OANDA/MarketBeat $3.02; Drillr $3.04; Zacks $2.94; BofA Street $2.98 (BofA own $3.07)",
+      "current": "",
+      "metric": "Diluted EPS",
+      "note": "Consensus excludes mark-to-market gains on equity stakes (SpaceX, private companies). 2Q26 GAAP EPS of $9.11 included $6.26 from those gains, so the underlying figure was about $2.85.",
+      "prior": "$9.11 (2Q26 GAAP); $2.87 (3Q25)"
+    },
+    {
+      "consensus": "$29.16bn, +92.4% (Zacks); Street growth 89% (BofA, own 93%); JPMorgan 'approximately double' (via Barron's)",
+      "current": "",
+      "metric": "Google Cloud revenue",
+      "note": "Cloud growth by quarter: 34%, 48%, 63%, 82%. 2Q26 included TPU system sales for the first time.",
+      "prior": "$24.77bn (2Q26, +82%); $15.16bn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Google Cloud operating income",
+      "note": "The CFO guided to 'modest margin pressure' from third-party capacity in 3Q. Visible Alpha (via S&P Global, July) raised FY26 Cloud operating income estimates by 15.5%.",
+      "prior": "$8.81bn, 35.6% margin (2Q26); $3.59bn, 23.7% (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Cloud backlog (RPO)",
+      "note": "Just over 50% is to be recognized within 24 months. Backlog includes TPU system sales, and since 1Q26 it also includes contracts of one year or less.",
+      "prior": "$513.9bn Cloud; $519.5bn total (30 June 2026), up more than $50bn in the quarter"
+    },
+    {
+      "consensus": "FY26 about $202bn (Street, per BofA); quarterly n.a.; FY27 about $300bn (BofA), about $330bn (Wolfe)",
+      "current": "",
+      "metric": "Capex",
+      "note": "The guide implies $57.2bn to $62.2bn a quarter in the second half. About 60% of 2Q spend went to servers.",
+      "prior": "$44.92bn (2Q26); $80.60bn in H1; FY26 guide $195bn to $205bn"
+    },
+    {
+      "consensus": "FY26 $7.07bn (StockAnalysis/S&P Global); FY27 about -$37bn (Barchart) or about -$32bn (TIKR)",
+      "current": "",
+      "metric": "Free cash flow",
+      "note": "The CFO said FCF 'will remain under pressure'. Top1Markets' own estimate for 3Q is -$15bn to -$20bn; this is not consensus.",
+      "prior": "-$5.86bn (2Q26); TTM $53.27bn; $24.46bn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "TPU system sales (external)",
+      "note": "There is no dollar disclosure. Anthropic's 3.5 GW starts in 2027, and Meta rents TPUs via Cloud (talks on buying TPUs reported in February). BofA calls TPU data the 'key 2027 upside case'.",
+      "prior": "First recognized in 2Q26; 'significant majority' in 2027"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Leases not yet commenced",
+      "note": "These are mainly data centers. Data center VIE leases are booked as finance leases. Prepayments on leases not yet commenced were $835mn in H1.",
+      "prior": "$85.2bn (commencing 2026 to 2031) plus a $5.8bn short-term lease commencing in 3Q26; commenced finance lease liabilities $2.59bn"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Backstops of third-party data centers and energy",
+      "note": "On a default, Google can take over or sublease the lease, or pay a termination fee. Energy guarantees support counterparties' procurement of long-lead equipment.",
+      "prior": "Credit derivatives $43.8bn (from $16.9bn at 31 December 2025); financial guarantees $7.6bn (terms through September 2026); a further estimated $24.1bn agreed, subject to terms"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash and debt",
+      "note": "Net cash is about $142bn at 30 June. Total face value is about $126bn after the $25bn August deal, before any 2026 maturities. Interest expense was $1.28bn in 2Q26, up from $0.26bn.",
+      "prior": "Cash and marketable securities $242.5bn; long-term debt $98.2bn (face $101.1bn) plus $2.0bn current; $11.7bn of credit facilities ($1.3bn drawn); $25bn commercial paper program (undrawn)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Purchase commitments",
+      "note": "These are mostly long-term supply agreements for technical infrastructure through 2030, plus energy take-or-pay contracts out to 2054.",
+      "prior": "$811.0bn ($200.7bn short term); $707.0bn under contracts longer than one year"
+    }
+  ],
+  "monitor": [
+    "Google Cloud revenue growth against about 89% to 92% consensus, and the Cloud margin after third-party capacity costs (2Q26: 35.6%).",
+    "The 2027 capex framework against Street views of about $300bn to $330bn, and any funding mix (OCF, debt, ATM) or free cash flow floor.",
+    "Changes in backstops (credit derivatives $43.8bn, the $24.1bn pipeline), leases not yet commenced ($85.2bn) and the Cloud backlog ($514bn)."
+  ],
+  "name": "Alphabet",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "Your 10-Q shows credit-derivative backstops of third-party data center payments rising from $16.9bn at year-end to $43.8bn at 30 June, plus an agreement for an estimated $24.1bn more, on top of $7.6bn of energy guarantees. You say you can take over the leases on default. What was the notional at 30 September, how many counterparties and MW does it cover, and what share sits with Fluidstack or other unrated neoclouds? Will these backstops count against your own credit metrics in your planning, yes or no? If a counterparty defaults, would the resulting lease run through capex or opex?",
+      "style": "credit",
+      "why": "Backstops have become a second balance sheet that supports the neocloud build-out. They grew 2.6x in six months and are not in reported debt, so their size and concentration decide how much tail risk sits behind Aa2/AA+ paper, and how widely Google's credit reaches across the sector."
+    },
+    {
+      "question": "In July you said free cash flow 'will remain under pressure', that operating cash flow funds first and debt second, and that you plan no more equity raises beyond the ATM. 2Q free cash flow was -$5.9bn, the Street models FY27 free cash flow near -$32bn to -$37bn, and since June you have raised $49.6bn of equity and more than $45bn of notes. What free cash flow do you expect for the second half of 2026? What range of debt issuance is in your 2027 plan? Will you commit to keeping the current ratings, and is there a net leverage ceiling?",
+      "style": "credit",
+      "why": "The investment case now rests on an external funding mix as well as on cash generation. A stated leverage ceiling or issuance range sets the supply overhang for hyperscaler bonds and the risk of further dilution."
+    },
+    {
+      "question": "You have $85.2bn of leases not yet commenced, running to 2031, plus a $5.8bn short-term lease starting in 3Q, and press reports describe a SpaceX GPU contract at $920mn a month for 32 months. You also guided to 'modest margin pressure' in Cloud from third-party capacity. How much third-party capacity cost hit Cloud in 3Q, and how many MW or GPUs does it cover? How much of the $85.2bn commences in 2027? When do you expect owned capacity to replace rented capacity, by quarter?",
+      "style": "credit",
+      "why": "Rented capacity is a fixed cost carried on contracts, not capex. If it remains a lasting part of supply rather than a bridge, Cloud margins and lease-adjusted leverage both reset."
+    },
+    {
+      "question": "You said capex will 'increase significantly in 2027'. The Street ranges from about $300bn (BofA) to about $330bn (Wolfe), against FY26 guidance of $195bn to $205bn. What is the 2027 framework? What share is servers against data centers and power? How much of it goes to TPUs for external customers, such as Anthropic's 3.5 GW from 2027, compared with internal training?",
+      "style": "equity",
+      "why": "The 2027 capex number is the single largest driver of the stock's free cash flow case. The split between servers and buildings, and between external and internal use, tells whether spend is matched to contracted revenue."
+    },
+    {
+      "question": "Cloud backlog reached $514bn, just over half to be recognized within 24 months, and it now includes TPU system sales. What was backlog at 30 September? How much of the change came from Anthropic, Meta or other TPU commitments? What TPU system revenue was in 3Q, and what do you expect in 2027? Pichai said last week that Cloud is giving up revenue so research gets compute. Can you size the demand you turned away in 3Q?",
+      "style": "equity",
+      "why": "TPU sales are the bull case for 2027 (BofA calls it the 'key 2027 upside case'). Concentration in one or two AI labs turns a $514bn backlog into counterparty exposure, and Anthropic's capacity is conditional on its 'continued commercial success' (Broadcom)."
+    },
+    {
+      "question": "You have energy take-or-pay contracts out to 2054, $7.6bn of guarantees for counterparties' power equipment, and AEP's 702 MW Bloom fuel-cell plant near Cheyenne under a 20-year PPA from 2028. What share of capacity coming online in 2027 and 2028 is behind-the-meter or on-site generation rather than grid supply? Are the $7.6bn of guarantees that expired in September being renewed or turned into PPAs?",
+      "style": "credit",
+      "why": "Power is the binding constraint on capacity. Guarantees and take-or-pay contracts add commitments of a debt-like kind, and how much Google relies on behind-the-meter generation shows whether off-grid sites can compete for its demand."
+    }
+  ],
+  "risks": [
+    "Cloud deceleration or margin compression as rented third-party capacity (including SpaceX GPUs) and depreciation grow faster than revenue.",
+    "The capex trajectory (about $200bn in 2026, about $300bn to $330bn in 2027 on Street views) keeps free cash flow negative and requires steady debt and equity issuance.",
+    "Off-balance-sheet exposure: $43.8bn of credit-derivative backstops to third-party data centers, $85.2bn of leases not yet commenced, and $811.0bn of purchase commitments.",
+    "Concentration of TPU and backlog demand in a few AI labs (Anthropic, Meta), with Anthropic's capacity described as dependent on its commercial success.",
+    "Earnings quality and macro: EPS swings from mark-to-market on SpaceX and private stakes, Search disruption from AI assistants, DOJ and EU remedies, and the Fed decision on the same day (28 October)."
+  ],
+  "sections": [
+    {
+      "body": "For AI compute, Alphabet is a buyer and financier. It builds and leases data centers for its own TPUs and GPUs, sells that capacity as Google Cloud (GCP consumption, AI infrastructure, and since 2Q26 TPU systems installed in customer data centers), and serves Gemini and Search internally. Compute goes first to frontier research (DeepMind), then to Google's own products and Cloud. When in-house supply falls short, Alphabet rents third-party capacity (neoclouds, SpaceX) and backstops lease payments of third-party data center developers, booked as credit derivatives. That capacity is funded by about $185.7bn of TTM operating cash flow, $242.5bn of cash and securities, Aa2/AA+ senior notes, a June equity raise, and long-term supply and energy take-or-pay contracts.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 23 September to 23 October 2026. We found no published consensus for Cloud operating income, backlog or quarterly capex. The EPS consensus excludes equity-mark gains. Revenue figures near $111bn appear to be net of TAC; this is our arithmetic and is not stated by the sources.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$127.85bn (41; $123.41bn to $138.68bn)",
+            "Yahoo Finance, 23 Oct",
+            "2Q26 $119.80bn; 3Q25 $102.35bn"
+          ],
+          [
+            "3Q26 revenue, other providers",
+            "MarketBeat $127.92bn; Drillr $127.22bn; ex-TAC: Zacks $111.64bn, BofA Street $111.0bn",
+            "22 Sep to 23 Oct",
+            "3Q25 ex-TAC $87.47bn"
+          ],
+          [
+            "3Q26 EPS",
+            "$3.00 (44; $2.25 to $3.63)",
+            "Yahoo Finance, 23 Oct",
+            "2Q26 $9.11 GAAP (about $2.85 ex gains); 3Q25 $2.87"
+          ],
+          [
+            "3Q26 EPS, other providers",
+            "MarketBeat $2.96; OANDA/MarketBeat $3.02; Drillr $3.04; Zacks $2.94; BofA Street $2.98 (BofA $3.07)",
+            "28 Sep to 23 Oct",
+            ""
+          ],
+          [
+            "Google Cloud revenue",
+            "$29.16bn (+92.4%); growth 89% Street (BofA 93%)",
+            "Zacks via Yahoo, 23 Oct; Proactive/BofA, 20 Oct",
+            "2Q26 $24.77bn (+82%); 3Q25 $15.16bn"
+          ],
+          [
+            "Google Cloud operating income",
+            "n.a.",
+            "",
+            "2Q26 $8.81bn (35.6%); 3Q25 $3.59bn (23.7%)"
+          ],
+          [
+            "Cloud backlog",
+            "n.a.",
+            "",
+            "$513.9bn at 30 June"
+          ],
+          [
+            "FY26 capex",
+            "about $202bn (BofA about $200bn)",
+            "Proactive/BofA, 20 Oct",
+            "Guide $195bn to $205bn; H1 $80.6bn"
+          ],
+          [
+            "FY27 capex",
+            "about $300bn (BofA); about $330bn (Wolfe)",
+            "Proactive/BofA, 20 Oct; Admiral via Invezz, 12 Oct",
+            "'Increase significantly'"
+          ],
+          [
+            "FCF",
+            "FY26 $7.07bn; FY27 about -$37bn (Barchart) or about -$32bn (TIKR)",
+            "StockAnalysis (S&P Global), 22 Oct; Yahoo/Barchart, 22 Oct; Admiral, 12 Oct",
+            "2Q26 -$5.86bn; TTM $53.27bn"
+          ],
+          [
+            "FY26 / FY27 revenue",
+            "$500.15bn / $626.82bn",
+            "Yahoo Finance, 23 Oct",
+            "FY25 $402.84bn"
+          ],
+          [
+            "Price target",
+            "$430.51 avg, $430 median, $340 to $515 (62)",
+            "StockAnalysis (S&P Global), 22 Oct",
+            "Close $324.22 on 22 Oct"
+          ],
+          [
+            "Implied move",
+            "5.07% to about 6.4%",
+            "Pepperstone, 22 Oct; EarningsWatcher via OANDA, 21 Oct",
+            "10-year average 6.6% (OANDA)"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Cloud hypergrowth",
+            "Cloud near 90% growth, supply-constrained, with demand beyond capacity",
+            "Cloud revenue at or above $29bn (about 89% to 92%); backlog above $514bn",
+            "Zacks, BofA, JPMorgan; management ('supply constrained')"
+          ],
+          [
+            "P2 Cloud margin holds",
+            "Margin stays in the mid-30s despite third-party capacity and depreciation",
+            "Cloud margin against 35.6%; 'modest' pressure means roughly 2 to 3 points at most (our reading)",
+            "CFO guidance; Drillr, Pepperstone (single-source bar)"
+          ],
+          [
+            "P3 TPU second engine",
+            "External TPU sales (Anthropic 3.5 GW, Meta) become a large 2027 revenue line",
+            "Any TPU revenue figure or 2027 framing; backlog mix",
+            "BofA ('key 2027 upside case'); CFO"
+          ],
+          [
+            "P4 Capex is funded and earns a return",
+            "About $200bn in 2026 and about $300bn in 2027, funded by OCF and Aa2 debt with no new equity",
+            "2027 capex frame; second-half FCF; debt issuance plan",
+            "BofA, Wolfe; CFO; Admiral, Top1Markets (bear framing)"
+          ],
+          [
+            "P5 Off-balance-sheet build is manageable",
+            "Backstops and leases are collateralized by assets Google can use itself",
+            "Change in the $43.8bn of credit derivatives and $85.2bn of leases not yet commenced; any impairment",
+            "10-Q disclosure; few previews address it (single source: filings)"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Cloud accelerated four quarters running (34% to 82%), with a $514bn backlog and a 35.6% margin",
+            "FCF turned negative (-$5.9bn in 2Q26); FY27 FCF consensus about -$32bn to -$37bn"
+          ],
+          [
+            "Full stack: TPUs sold externally (Anthropic 3.5 GW from 2027, Meta rental), and OpenAI models on Google Cloud",
+            "Capex of $195bn to $205bn in 2026, heading for $300bn to $330bn in 2027; depreciation and energy costs rising"
+          ],
+          [
+            "Fortress funding: $242.5bn of cash and securities, Aa2/AA+, $25bn of notes 4.6x covered, Berkshire took $10bn of equity",
+            "Dilution and leverage: $49.6bn of equity plus a $40bn ATM; long-term debt doubled to $98.2bn; $43.8bn of backstops off balance sheet"
+          ],
+          [
+            "Beat revenue in the last 8 quarters (Pepperstone); 16 Buy, 0 Sell; average target about $430",
+            "Rented capacity (SpaceX, neoclouds) dilutes Cloud margins; Pichai says Cloud is giving up revenue to research"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Capex against cash: can Alphabet frame 2027 capex (about $300bn to $330bn on Street views) with a funding plan and a free cash flow floor that keeps the AA credit story intact? 2) Cloud margin: does rented third-party capacity (the SpaceX GPUs, the $5.8bn short-term lease) cause a 'modest' dip or reset the margin below 30%? 3) The TPU business model: is selling TPUs into Anthropic and Meta data centers a high-return second engine or concentrated lab exposure, and when does it show up in revenue? 4) The backstop book: how large can Google's guarantees of neocloud and data center leases grow before the market treats them as debt?",
+      "title": "Live debates"
+    },
+    {
+      "body": "Capex guide: InsiderFinance (19 October) and part of Plus500 quote $175bn to $185bn, which is the February guide; the July call, MarketBeat, OANDA and Pepperstone have $195bn to $205bn. Revenue basis: Yahoo and MarketBeat show about $127.9bn gross, while Zacks ($111.64bn), BofA's Street figure ($111.0bn) and Pepperstone ($112.7bn, +28.9%, Bloomberg) appear to be net of TAC. EPS: 3Q26 runs from $2.94 (Zacks) and $2.96 (MarketBeat) to $3.04 (Drillr, Admiral). FY26 EPS ranges from $10.91 (MarketBeat) and $13.14 (S&P Global) to $20.60 (Yahoo, including equity gains), so the figures are not comparable. Report date: MarketBeat says the date is unconfirmed, but abc.xyz confirmed 28 October on 6 October. FY27 FCF: about -$37bn (Barchart) against about -$32bn (TIKR). 2027 capex: about $300bn (BofA) against about $330bn (Wolfe). Implied move: 5.07% (Pepperstone) against about 6.4% (EarningsWatcher). Cloud: BofA's 93% against a Street figure of 89% and Zacks' 92.4%.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June 2026: cash, cash equivalents and marketable securities of $242.5bn; long-term debt of $98.2bn (face $101.1bn), plus $2.0bn current; $11.7bn of credit facilities with $1.3bn drawn (SOFR plus 1.5% to 2.25%); and a $25bn commercial paper program, undrawn. 2026 notes issuance: $20.0bn in US dollars at a 4.80% weighted coupon, plus $31.8bn in Sterling, Swiss franc, Euro, Canadian dollar and yen. On 10 August, $25bn of US dollar notes in 10 tranches at 4.500% to 6.500%, priced at T+33 bps (2028), T+60 (2031), T+85 (2036), T+105 (2046) and T+130 (2066); Investing.com reports $115bn of demand. Equity: $20.5bn public offering, a $10.0bn Berkshire placement, $19.0bn of 6.25% mandatory convertible preferred, and a $40.0bn ATM with nothing sold at 30 June. Off balance sheet: $85.2bn of leases not yet commenced, a $5.8bn short-term lease from 3Q, $43.8bn of credit-derivative backstops, $7.6bn of financial guarantees, $24.1bn of further backstops agreed, a $20.0bn milestone-based capital commitment to a private company, and $811.0bn of purchase commitments. Credit: rated Aa2/AA+ (stable at the August issue). Sector spreads have widened about 10 bps this year, and 78 of 91 hyperscaler bonds issued in 2026 trade wider than issue (Investing.com). Press reports record-wide CDS for Alphabet in mid-October, but we found no level quoted.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: backstop notional, counterparties and treatment (credit); second-half FCF, 2027 debt plan and leverage ceiling (credit); third-party capacity cost and the timing of leases not yet commenced (credit); the 2027 capex framework and its mix; backlog, TPU revenue and lab concentration; behind-the-meter power and energy guarantees (credit).",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "Alphabet: Announces Date of Third Quarter 2026 Financial Results Conference Call (6 October 2026)",
+      "url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Date-of-Third-Quarter-2026-Financial-Results-Conference-Call-2026-8tpGZsLS6v/default.aspx"
+    },
+    {
+      "title": "Alphabet 2Q26 earnings release (8-K Ex. 99.1, 22 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
+    },
+    {
+      "title": "Alphabet 2Q26 10-Q (23 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+      "title": "Alphabet 3Q25 earnings release (8-K Ex. 99.1, 29 October 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000087/googexhibit991q32025.htm"
+    },
+    {
+      "title": "Alphabet FWP pricing term sheet, $25bn notes (6 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526338750/d159970dfwp.htm"
+    },
+    {
+      "title": "Alphabet 8-K, closing of $25bn notes (10 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526342390/d171253d8k.htm"
+    },
+    {
+      "title": "Benzinga: Alphabet 2Q26 earnings call transcript",
+      "url": "https://www.benzinga.com/news/26/09/61834150"
+    },
+    {
+      "title": "MarketBeat: Alphabet 2Q earnings call highlights (22 July 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/alphabet-q2-earnings-call-highlights-2026-07-22/"
+    },
+    {
+      "title": "Yahoo Finance GOOGL analysis (consensus)",
+      "url": "https://finance.yahoo.com/quote/GOOGL/analysis/"
+    },
+    {
+      "title": "Zacks via Yahoo: Countdown to Alphabet Q3 earnings, key metrics (23 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/countdown-alphabet-googl-q3-earnings-121507781.html"
+    },
+    {
+      "title": "Proactive via Yahoo: Alphabet set for earnings beat, BofA (20 October 2026)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alphabet-set-earnings-beat-cloud-163400786.html"
+    },
+    {
+      "title": "MarketBeat: GOOGL earnings page",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/GOOGL/earnings/"
+    },
+    {
+      "title": "StockAnalysis GOOGL forecast (S&P Global)",
+      "url": "https://stockanalysis.com/stocks/googl/forecast/"
+    },
+    {
+      "title": "StockAnalysis GOOGL price history",
+      "url": "https://stockanalysis.com/stocks/googl/history/"
+    },
+    {
+      "title": "OANDA: Alphabet Q3 earnings preview (23 October 2026)",
+      "url": "https://www.oanda.com/eu-en/blog/alphabet-q3-earnings-preview"
+    },
+    {
+      "title": "Pepperstone: Alphabet Q3 2026 earnings preview (22 October 2026)",
+      "url": "https://pepperstone.com/en/insights/market-analysis/equities/alphabet-q3-2026-earnings-preview-can-cloud-and-tpu-growth-justify-the-ai-spending-boom"
+    },
+    {
+      "title": "Drillr: Alphabet Q3 2026 earnings preview (29 September 2026)",
+      "url": "https://drillr.ai/article/googl-alphabet-q3-2026-earnings-preview-search-cloud-margins-capex"
+    },
+    {
+      "title": "Admiral Markets: Alphabet stock before Q3 2026 earnings (12 October 2026)",
+      "url": "https://admiralmarkets.com/education/articles/shares/alphabet-stock-q3-2026-earnings-preview"
+    },
+    {
+      "title": "InsiderFinance: Alphabet Q3 2026 earnings preview (19 October 2026)",
+      "url": "https://www.insiderfinance.io/news/alphabet-q3-2026-earnings-preview"
+    },
+    {
+      "title": "Top1Markets: Alphabet Q3 2026 preview, Cloud vs $200bn capex (21 October 2026)",
+      "url": "https://www.top1markets.com/news/alphabet-q3-2026-earnings-preview-cloud-capex"
+    },
+    {
+      "title": "Plus500: Alphabet Q3 2026 earnings expectations",
+      "url": "https://us.plus500.com/en/forecasts/alphabet-earnings-expectations"
+    },
+    {
+      "title": "PrimeXBT: Alphabet earnings date Q3 2026",
+      "url": "https://primexbt.com/for-traders/alphabet-earnings-date/"
+    },
+    {
+      "title": "Barchart via Yahoo: Pichai says Google Cloud is giving up revenue to feed AI research (22 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/pichai-says-google-cloud-giving-200139123.html"
+    },
+    {
+      "title": "Investing.com: Alphabet's $25bn bond sale and hyperscaler spread widening",
+      "url": "https://www.investing.com/news/stock-market-news/alphabets-25b-bond-sale-and-the-hyperscaler-credit-spread-widening-93CH-4843694"
+    },
+    {
+      "title": "Crypto Briefing: Cost to insure big tech debt surges (16 October 2026)",
+      "url": "https://cryptobriefing.com/big-tech-debt-insurance-costs-surge-ai/"
+    },
+    {
+      "title": "Euronews: Google rents SpaceX/xAI supercomputers for $920mn a month (6 June 2026)",
+      "url": "https://euronews.com/2026/06/06/google-rents-spacexai-supercomputers-for-920m-a-month-ahead-of-ipo"
+    },
+    {
+      "title": "Business Today: Anthropic signs multi-gigawatt compute deal with Google, Broadcom (7 April 2026)",
+      "url": "https://www.businesstoday.in/amp/technology/story/anthropic-signs-multi-gigawatt-ai-compute-deal-with-google-broadcom-524381-2026-04-07"
+    },
+    {
+      "title": "SiliconANGLE: Google, Meta reportedly strike multibillion-dollar AI chip deal (26 February 2026)",
+      "url": "https://siliconangle.com/2026/02/26/google-meta-reportedly-strike-new-multibillion-dollar-ai-chip-deal/"
+    },
+    {
+      "title": "Pulse 2.0: Alphabet up to $40bn investment in Anthropic (26 April 2026)",
+      "url": "https://pulse2.com/alphabet-up-to-40-billion-investment-in-anthropic-signals-escalation-in-ai-infrastructure-race/"
+    },
+    {
+      "title": "AI Weekly: Alphabet discloses $811bn future spend, $124bn Anthropic mark (24 July 2026)",
+      "url": "https://www.aiweekly.co/alerts/alphabet-discloses-811b-future-spend-124b-anthropic-mark"
+    },
+    {
+      "title": "DCD: TeraWulf and Fluidstack Texas data center in Google-backed deal (October 2025)",
+      "url": "https://www.datacenterdynamics.com/en/news/terawulf-and-fluidstack-to-develop-texas-data-center-in-google-backed-deal/"
+    },
+    {
+      "title": "DCD: Fluidstack signs additional 39 MW lease with Cipher, backed by Google (November 2025)",
+      "url": "https://www.datacenterdynamics.com/en/news/fluidstack-signs-additional-39mw-lease-with-cipher-mining-in-texas-backed-by-google/"
+    },
+    {
+      "title": "ESG Today: AEP to build $4bn fuel cell project to supply Google (15 October 2026)",
+      "url": "https://www.esgtoday.com/?p=26319"
+    }
+  ],
+  "ticker": "GOOGL",
+  "verdict": "Preview",
+  "versus": "Pending — reports 28 October 2026 after the close",
+  "watch": [
+    "Google Cloud revenue, operating margin and backlog against $29.2bn, 35.6% and $514bn.",
+    "The 2027 capex framework and any update to the FY26 guide of $195bn to $205bn.",
+    "Second-half free cash flow, debt issuance plans and ATM usage.",
+    "Credit-derivative backstops, leases not yet commenced, and third-party capacity costs (SpaceX, neoclouds).",
+    "TPU system revenue and the external TPU pipeline (Anthropic, Meta), plus power deals such as AEP's Cheyenne plant."
+  ]
+}

@@ -1,0 +1,862 @@
+{
+  "changes": [
+    "Funding turned: free cash flow negative $2.12bn (first negative quarter in the five quarters reviewed) and net debt ~$1.2bn; capex was 106% of operating cash flow.",
+    "Meta created a non-voting Class C stock for capital raising, among other purposes (also employee compensation, acquisitions, general corporate purposes) (effective 19 Jan 2027): equity is now a named funding source for compute.",
+    "Off-balance-sheet obligations jumped again: leases not yet commenced $355.7bn (+$76.7bn QoQ, 3.4x year-end), non-cancelable commitments $454.5bn (+$105.2bn; mostly third-party cloud), maximum RVG $41.5bn after the El Paso (Texas) JV.",
+    "New lease and commitment categories: 'energy-related infrastructure' and 'energy service agreements for data centers' now appear in the notes; Meta is contracting power as well as halls.",
+    "Inference economics moved centre stage: Muse is 'very compute intensive'; management targets >10x cost efficiency within a year and wants to sell 'high margin inference'."
+  ],
+  "checks": "Every figure in the report was checked in code (scripts/verify.py; 118 string checks, 0 missing) against text extracted from the SEC filings (3Q26 8-K Ex.99.1 and item 1.01; 3Q26, 2Q26 and 1Q26 10-Qs; FY25 10-K; 1Q26, 2Q26 and 3Q25 Ex.99.1; April 2026 FWP), the four Motley Fool transcripts (4Q25-3Q26) and the stockanalysis.com price history. Derived numbers (growth rates, capex/OCF, implied 4Q capex = 2026 guide minus 9M capex of $85.82bn, net debt, QoQ changes in leases and commitments, 4Q revenue growth vs 4Q25 revenue of $59.89bn, bond fair value/face) were recomputed in scripts/calc.py. Partner deal terms were checked on Nebius's newsroom and 6-K, CoreWeave's Business Wire release, Bloomberg (30 Sep 2025) and Meta's Hyperion release. Caveats: the 22 October share price is intraday ($652.03 at about 9:50 am ET, -6.52%, per stockanalysis.com; fool.com and Investing.com page tickers show ~$650, -6.8%), not a close. No dated secondary Meta bond yields or spreads were found for 21-22 October; the record 5-year CDS of 108bp (October 2026) is single source (Crypto Briefing). The 4Q26 revenue consensus was not found. The El Paso Texas Venture is linked to BlackRock only via the 2Q26 call, not the 10-Q. Mapping the $14.72bn contingent cloud purchase to the Nebius $15bn resale commitment is an inference. Consensus figures come from previews (LSEG and FactSet via Superpower Daily, BigGo, CMS), not from a terminal. Independent subagent verifier reviewed the draft against primary sources on 22 Oct 2026; 5 fixes applied.",
+  "consensus_thesis": "Ads compounding in the mid-to-high 20s % fund an AI build that can run hot without hurting AA- credit; the stock trades on the size of the 2027 capex number.",
+  "date": "2026-10-22",
+  "headline": "The consensus view should shift from 'cash-funded build' to 'externally funded build': long-term ad compounding holds, but Meta is now a net borrower with ~$825bn of off-balance-sheet commitments (gross, components may overlap: uncommenced leases, purchase commitments, contingent cloud) and an equity tool for capex, so credit quality is weakening at the margin.",
+  "kind": "postcall",
+  "kona": "Meta still guides capacity tight through 2027. It is signing 'energy service agreements' and leasing 'energy-related infrastructure', so power bundled with compute is now something a hyperscaler contracts for. Kona can pitch power as an energy service contract, not only as land plus a hall. The structures to copy are short initial terms (4 years) with a residual value guarantee, and a buyer who backstops capacity it resells. Meta's cost of capital is rising, so Kona should expect investment-grade buyers to push risk onto the developer through short terms and RVG caps, and should price debt on the tenant's credit, not the asset.",
+  "monitor": [
+    "4Q26 call (late January 2027): 2027 capex and expense guide vs ~$193-205bn street range.",
+    "Any Class C issuance, new bond deal or third JV/SPV; pricing vs the April 2026 curve (T+53 to T+147bp).",
+    "4Q26 FCF (implied 4Q capex $49-59bn vs ~$33bn quarterly operating cash flow) and the New Mexico appeal bond."
+  ],
+  "name": "Meta Platforms",
+  "pdf_brief": "/_blob/ac3eeea6d5b44c2c06966b1e3cf557d5",
+  "pdf_report": "/_blob/6a7552c42fb8877799ad34dbe9017dab",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "Verdicts against the pre-results consensus card.",
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Ads fund the build",
+            "Revenue ~$63.2bn; high-20s growth",
+            "$64.60bn, +26% YoY; 4Q guide $73-76bn (+22-27%)",
+            "Confirmed",
+            "3Q26 8-K"
+          ],
+          [
+            "P2 Capex top of range; 2027 ~$193-205bn",
+            "2026 $140-145bn (BofA); 2027 guide",
+            "2026 $135-145bn; implied 4Q $49-59bn; 2027 deferred to 4Q call",
+            "Unresolved",
+            "8-K; call"
+          ],
+          [
+            "P3 Funded by OCF + debt + JVs, AA- intact",
+            "FCF thin but positive",
+            "FCF -$2.12bn; net debt ~$1.2bn; Class C for capital raising among other purposes; CDS record 108bp (Oct)",
+            "Challenged",
+            "8-K; 10-Q; press"
+          ],
+          [
+            "P4 D&A compresses 2027 margins",
+            "~40% 2027 expense growth",
+            "D&A +44% YoY; op. margin ex-charge 35% vs 40%; no 2027 guide",
+            "Confirmed",
+            "8-K"
+          ],
+          [
+            "P5 Third-party capacity a bridge",
+            "CoreWeave/Nebius share; Meta Compute",
+            "Commitments $454.5bn, mostly 3rd-party cloud; due 2027 $121.4bn (from $81.7bn)",
+            "Confirmed",
+            "10-Q Note 10"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Management moved from capacity scarcity and selling compute at a premium (2Q26) to compute efficiency and a diverse pool of funding sources (3Q26).",
+      "table": {
+        "head": [
+          "",
+          "Observation"
+        ],
+        "rows": [
+          [
+            "Emphasized more",
+            "Muse (consumer agent), compute cost efficiency (>10x in a year), 'high margin inference', enterprise platform/API, Class C capital flexibility"
+          ],
+          [
+            "Emphasized less / dropped",
+            "Selling compute directly (2Q26: offers at a 'meaningful premium'); 'Meta Compute' branding; 2028 flexibility framing; BlackRock-style partnerships not repeated"
+          ],
+          [
+            "KPIs more important",
+            "Capex vs OCF; leases not commenced; commitments due next year; RVG; net debt; D&A"
+          ],
+          [
+            "KPIs less important",
+            "DAP (+3%, mature); Reality Labs loss (now guided down to ~$15bn in 2027)"
+          ],
+          [
+            "Risks up",
+            "Funding/refinancing; off-balance-sheet RVG; legal cash (NM $25bn); depreciation"
+          ],
+          [
+            "Risks down",
+            "Supply/capacity (management confident in 'current capacity and what is scheduled')"
+          ]
+        ]
+      },
+      "title": "Emphasis and narrative shift"
+    },
+    {
+      "body": "Flags: [up] better, [down] worse, [~] within normal range, [?] distorted. For cost, debt, capex and obligation lines, down means worse for shareholders. Net cash = cash and marketable securities minus carrying debt (excludes $12.8bn restricted cash). 2Q26 ex-charge margin and advertising not shown (n.a.). YE25 = 31 December 2025.",
+      "table": {
+        "head": [
+          "Metric ($bn unless stated)",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "64.60",
+            "60.80",
+            "51.24",
+            "+6.3% / +26.1% [up]",
+            "Steady high-20s"
+          ],
+          [
+            "Advertising revenue",
+            "63.06",
+            "n.a.",
+            "50.08",
+            "n.a. / +25.9% [up]",
+            "Price +14%, impr. +10%"
+          ],
+          [
+            "Operating margin (GAAP)",
+            "20%",
+            "31%",
+            "40%",
+            "-11pp / -20pp [down]",
+            "Legal charges"
+          ],
+          [
+            "Operating margin ex-legal charge",
+            "35%",
+            "n.a.",
+            "40%",
+            "n.a. / -5pp [down]",
+            "D&A and cloud"
+          ],
+          [
+            "FoA operating income",
+            "17.12",
+            "23.39",
+            "24.97",
+            "-27% / -31% [down]",
+            "Incl. $9.89bn charge"
+          ],
+          [
+            "Capex incl. finance-lease principal",
+            "34.91",
+            "31.08",
+            "19.37",
+            "+12.3% / +80.2% [down]",
+            "Rising"
+          ],
+          [
+            "Operating cash flow",
+            "32.79",
+            "31.86",
+            "30.00",
+            "+2.9% / +9.3% [~]",
+            "Flat ~$32bn"
+          ],
+          [
+            "Free cash flow",
+            "-2.12",
+            "0.78",
+            "10.63",
+            "neg. / neg. [down]",
+            "First negative"
+          ],
+          [
+            "Capex / operating cash flow",
+            "106%",
+            "98%",
+            "65%",
+            "+8pp / +42pp [down]",
+            "Above 100%"
+          ],
+          [
+            "Depreciation and amortization",
+            "7.15",
+            "6.36",
+            "4.96",
+            "+12.6% / +44.1% [down]",
+            "Accelerating"
+          ],
+          [
+            "Cash and marketable securities",
+            "82.45",
+            "90.26",
+            "44.45",
+            "-8.7% / +85% [~]",
+            "Debt-funded"
+          ],
+          [
+            "Debt (carrying)",
+            "83.67",
+            "83.66",
+            "28.83",
+            "0% / +190% [down]",
+            "Two jumbo deals"
+          ],
+          [
+            "Net cash (debt)",
+            "(1.22)",
+            "6.60",
+            "15.62",
+            "flips to net debt [down]",
+            "First net debt"
+          ],
+          [
+            "Interest expense on notes ($mn)",
+            "882",
+            "754",
+            "205",
+            "+17% / +330% [down]",
+            "Rising"
+          ],
+          [
+            "Leases not yet commenced",
+            "355.73",
+            "278.99",
+            "n.a.",
+            "+27.5% / 3.4x YE25 [down]",
+            "103.77 at YE25"
+          ],
+          [
+            "Non-cancelable commitments",
+            "454.52",
+            "349.31",
+            "n.a.",
+            "+30.1% / 3.5x YE25 [down]",
+            "131.05 at YE25"
+          ],
+          [
+            "  of which due next year (2027)",
+            "121.41",
+            "81.65",
+            "n.a.",
+            "+48.7% [down]",
+            "Cloud capacity"
+          ],
+          [
+            "Max. residual value guarantees",
+            "41.49",
+            "n.a.",
+            "n.a.",
+            "28.09 at YE25 [down]",
+            "Texas JV added"
+          ],
+          [
+            "Contingent cloud purchase",
+            "14.72",
+            "14.72",
+            "n.a.",
+            "unchanged [~]",
+            "Resale backstop"
+          ],
+          [
+            "Construction in progress",
+            "89.50",
+            "n.a.",
+            "n.a.",
+            "50.52 at YE25 [?]",
+            "Not yet depreciating"
+          ],
+          [
+            "Headcount",
+            "66,775",
+            "75,472",
+            "78,450",
+            "-11.5% / -14.9% [~]",
+            "Post-May cut"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "2026 capex range by quarter: $115-135bn (Jan), $125-145bn (Apr, memory pricing), $130-145bn (Jul), $135-145bn (Oct). The low end has been raised three times in a row. In January management said cash generation would fund 2026 and flagged a 'positive net debt balance' as possible eventually. Both are now playing out. Credibility: Stable (it was telegraphed), but the guidance has risked upward every quarter. Underlying economic performance: strong revenue, with weaker cash conversion. Ex-charge operating income rose 11% YoY while free cash flow went negative, so earnings power holds and the funding burden has moved to the balance sheet.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "4Q26 revenue",
+            "$73-76bn",
+            "New",
+            "n.a. (not found)",
+            "AI lifts ads; 1% FX headwind",
+            "Strong; +22-27% YoY"
+          ],
+          [
+            "2026 total expenses",
+            "$175-179bn",
+            "Raised $10bn",
+            "Charge only",
+            "Adds $9.9bn legal charge",
+            "Underlying unchanged"
+          ],
+          [
+            "2026 capex (incl. FL)",
+            "$135-145bn",
+            "Low end +$5bn",
+            "In line (BofA $140-145bn)",
+            "Servers, DCs, network",
+            "Implied 4Q $49-59bn"
+          ],
+          [
+            "2026 op. income",
+            "Above 2025 ex-charge",
+            "Maintained",
+            "n.a.",
+            "Ad growth",
+            "Holds"
+          ],
+          [
+            "Reality Labs loss",
+            "$18-19bn (2026); ~$15bn (2027)",
+            "New",
+            "n.a.",
+            "Shift to AI",
+            "Frees ~$3-4bn for AI"
+          ],
+          [
+            "2027 capex",
+            "None; 'invest aggressively'",
+            "None",
+            "~$193-205bn street",
+            "Plans still in development",
+            "Deferred; risk upward"
+          ],
+          [
+            "2027 revenue",
+            "'strong growth throughout 2027'",
+            "Qualitative",
+            "n.a.",
+            "AI benefits, new products",
+            "Supportive"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5-10 year view: Meta's moat in ads is intact and AI-enhanced. Its moat as a compute owner rests on cheap capital, and that edge is narrowing as it becomes a net borrower with growing guarantees. The 4-year initial terms on JV campuses keep an exit option, but the RVGs mean Meta still bears the residual-value risk.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Ad distribution",
+            "Strong",
+            "Stable",
+            "3.64bn DAP; price/ad +14%",
+            "Funds the build"
+          ],
+          [
+            "Access to power and sites",
+            "Strong",
+            "Improving",
+            "JV campuses; leases now include energy infrastructure",
+            "Secures 2027-28 capacity"
+          ],
+          [
+            "Cost of capital",
+            "Strong but rising",
+            "Weakening",
+            "AA-; net debt; CDS record; Class C",
+            "Next dollar costs more"
+          ],
+          [
+            "Compute supply / silicon",
+            "Strong",
+            "Stable",
+            "Broadcom custom silicon >1 GW, AMD, Nvidia (1Q26)",
+            "Supply leverage"
+          ],
+          [
+            "AI monetization",
+            "Unproven",
+            "Improving",
+            "Muse 10mn users, 25% daily; API, enterprise",
+            "Revenue from 2027"
+          ],
+          [
+            "Balance-sheet flexibility",
+            "Good",
+            "Weakening",
+            "4-yr initial JV leases + RVG; $14.7bn backstop",
+            "Optionality at a contingent cost"
+          ]
+        ]
+      },
+      "title": "Moat evolution"
+    },
+    {
+      "body": "Concern: Can Meta fund 2027 without stressing credit? Response: Sheridan asked; Li cited 'a diverse pool of funding sources' and 'no specific financing plans'. Evidence: 3Q FCF -$2.12bn, net debt ~$1.2bn, Class C created; bonds at 87% of par on 30 Sep (fair value $73.31bn vs $84.0bn face; partly rates). Concern: Is Muse a compute sink? Response: Zuckerberg/Li: >10x cost efficiency in a year via off-peak capacity, smaller models, inference optimization. Evidence: No unit-cost numbers; total serving costs expected to rise; monetization to start sooner than the usual playbook.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Funding / refinancing",
+            "Cash-funded, net cash $6.6bn",
+            "FCF negative; net debt; Class C",
+            "Up",
+            "Equity dilution or wider spreads in 2027"
+          ],
+          [
+            "Off-balance-sheet guarantees",
+            "RVG $28.1bn (YE25)",
+            "RVG $41.5bn; exposure $68.4bn",
+            "Up",
+            "Contingent debt-like claims"
+          ],
+          [
+            "Legal cash calls",
+            "AG settlement up to $18.6bn",
+            "NM $25bn penalty + 15% interest; appeal bond",
+            "Up",
+            "Competes with capex for cash"
+          ],
+          [
+            "Depreciation / GPU life",
+            "5.5-yr server life",
+            "D&A +44% YoY; CIP $89.5bn to come",
+            "Up",
+            "Margin drag in 2027-28"
+          ],
+          [
+            "Supplier counterparty",
+            "CoreWeave/Nebius ramps",
+            "Due 2027 $121.4bn; contingent $14.7bn",
+            "Up",
+            "Meta bears neocloud delivery risk"
+          ],
+          [
+            "Capacity supply",
+            "Tight (2Q26)",
+            "'Flexibility' from scheduled capacity",
+            "Down",
+            "Less scarcity premium"
+          ]
+        ]
+      },
+      "title": "Major risks"
+    },
+    {
+      "body": "What the next dollar costs: the April 2026 $25bn deal priced at 4.55% (2031, T+53bp) to 6.45% (2066, T+147bp), Aa3/AA-. The November 2025 $30bn notes priced at 4.20-5.75% coupons. Meta's 5-year CDS hit a record 108bp in October 2026 (single source). No dated secondary spreads were found for 21-22 October. Maturities in the next 24 months are small: $2.75bn in 2027 and $1.5bn in 2028. The pressure is the run-rate gap: 4Q26 implied capex of $49-59bn against ~$33bn quarterly OCF, plus $121.4bn of commitments due in 2027. Off-balance-sheet support: Louisiana (Hyperion; Blue Owl funds 80%, ~$27bn cost, lease from 2029) and Texas/El Paso (~$14bn, lease from 2028) JVs. Each has a 4-year initial lease (renewals to 20 years) plus an RVG; maximum exposure is $68.40bn (equity $4.73bn, leases $18.48bn, funding $3.70bn, RVG $41.49bn). There is also a $10.80bn escrow under infrastructure purchase agreements and $1.53bn of letters of credit. Per share: the Class C dividend (1:1) is a 2-for-1 split in economic terms. Dilution comes only if Class C is issued for cash; diluted shares were 2,573mn in 3Q26 against 2,572mn a year earlier. $bn. Capex includes finance-lease principal (Meta definition). 4Q25 capex, FCF, cash and debt from the 4Q25 call; leases and commitments from the 10-K and 10-Qs. Debt = carrying value of senior notes.",
+      "table": {
+        "head": [
+          "Period",
+          "Capex",
+          "OCF",
+          "FCF",
+          "Cash+MS",
+          "Debt",
+          "Leases not commenced",
+          "Commitments"
+        ],
+        "rows": [
+          [
+            "3Q25",
+            "19.37",
+            "30.00",
+            "10.63",
+            "44.45",
+            "28.83",
+            "n.a.",
+            "n.a."
+          ],
+          [
+            "4Q25 / YE25",
+            "22.1",
+            "n.a.",
+            "14.1",
+            "81.6",
+            "58.7",
+            "103.77",
+            "131.05"
+          ],
+          [
+            "1Q26",
+            "19.84",
+            "32.23",
+            "12.39",
+            "81.18",
+            "58.75",
+            "182.88",
+            "237.67"
+          ],
+          [
+            "2Q26",
+            "31.08",
+            "31.86",
+            "0.78",
+            "90.26",
+            "83.66",
+            "278.99",
+            "349.31"
+          ],
+          [
+            "3Q26",
+            "34.91",
+            "32.79",
+            "-2.12",
+            "82.45",
+            "83.67",
+            "355.73",
+            "454.52"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "Analysts pressed on Muse economics (3 of 7 questions on compute cost) and on capital structure (Sheridan), but 2027 capex was deflected to the 4Q call and no one asked about RVGs, leases or depreciation.",
+      "table": {
+        "head": [
+          "Topic",
+          "4Q25",
+          "1Q26",
+          "2Q26",
+          "3Q26",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Capex level / 2027 capex",
+            "0",
+            "2",
+            "2",
+            "1",
+            "Persistent"
+          ],
+          [
+            "Funding, FCF, capital structure",
+            "2",
+            "0",
+            "2",
+            "1",
+            "Persistent"
+          ],
+          [
+            "Third-party capacity / selling compute",
+            "1",
+            "0",
+            "1",
+            "0",
+            "Fading"
+          ],
+          [
+            "Compute cost / inference efficiency",
+            "1",
+            "0",
+            "0",
+            "3",
+            "New, rising"
+          ],
+          [
+            "AI monetization (Muse, API, enterprise)",
+            "2",
+            "4",
+            "2",
+            "6",
+            "Rising"
+          ],
+          [
+            "Core ads and recommendations",
+            "3",
+            "3",
+            "1",
+            "1",
+            "Fading"
+          ],
+          [
+            "JVs, leases, RVG (off-balance-sheet)",
+            "1",
+            "0",
+            "0",
+            "0",
+            "Absent"
+          ],
+          [
+            "Depreciation / GPU useful life",
+            "0",
+            "0",
+            "0",
+            "0",
+            "Never asked"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "body": "Trevor's pick: Eric Sheridan (Goldman Sachs) presses hardest on funding, asking about sources of capital in 2Q26 and 3Q26. Doug Anmuth (JPMorgan) is the backup, with FCF/JVs in 4Q25 and 2027 capex in 3Q26. Nobody has asked about depreciation lives, the RVGs or the $355.7bn of uncommenced leases.",
+      "table": {
+        "head": [
+          "Analyst",
+          "Qtr",
+          "Question (trimmed)",
+          "Answer in brief",
+          "Rating"
+        ],
+        "rows": [
+          [
+            "Eric Sheridan (Goldman)",
+            "2Q26",
+            "Mix of debt and equity; sources of capital",
+            "OCF strong; more long-duration debt; partnerships (BlackRock)",
+            "Partial"
+          ],
+          [
+            "Eric Sheridan (Goldman)",
+            "3Q26",
+            "Class C and sources of capital for AI",
+            "For raising capital etc.; 'no specific financing plans'",
+            "Partial"
+          ],
+          [
+            "Doug Anmuth (JPM)",
+            "4Q25",
+            "Positive FCF in 2026? Future JVs?",
+            "Cash generation sufficient; exploring structures",
+            "Partial"
+          ],
+          [
+            "Doug Anmuth (JPM)",
+            "2Q26",
+            "Selling compute while buying third-party",
+            "Not enough compute; portfolio of uses",
+            "Direct"
+          ],
+          [
+            "Doug Anmuth (JPM)",
+            "3Q26",
+            "Framework for 2027 capex and expenses",
+            "Too early; guidance on 4Q call",
+            "Deflected"
+          ],
+          [
+            "Brian Nowak (MS)",
+            "2Q26",
+            "2027 capex and financing philosophy",
+            "No 2027 outlook; near-term capacity worth more",
+            "Deflected"
+          ],
+          [
+            "Ross Sandler (Barclays)",
+            "3Q26",
+            "Per-user cost of Muse and cost curve",
+            "No numbers; off-peak capacity, smaller models",
+            "Partial"
+          ]
+        ]
+      },
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "Key risks building: Negative FCF meeting peak capex in 4Q; ~$825bn of off-balance-sheet obligations (gross, components may overlap); legal cash calls; RVGs growing faster than equity in the JVs. Confirmation signals: 4Q FCF back near breakeven; 2027 capex guided with funding plan that does not need Class C; Muse revenue lines launched in 1H27. Conviction tripwires: Class C issued for cash within 2027; a ratings outlook change from Aa3/AA-; a server useful-life cut; RVG or contingent backstop drawn.",
+      "table": {
+        "head": [
+          "Signal"
+        ],
+        "rows": [
+          [
+            "2027 capex/expense guide on the 4Q26 call vs ~$193-205bn."
+          ],
+          [
+            "First Class C issuance or new bond/SPV, and its pricing."
+          ],
+          [
+            "Change in uncommenced leases and in commitments due in 2028."
+          ],
+          [
+            "Any change to the 5.5-year server life (D&A sensitivity)."
+          ],
+          [
+            "Muse monetization data (subscriptions, transaction fees) vs serving cost."
+          ]
+        ]
+      },
+      "title": "Monitoring checklist"
+    },
+    {
+      "body": "Post-call; each notes whether it was asked on the 21 October 2026 call.",
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Leases not yet commenced rose $76.7bn in a quarter to $355.7bn, 3.4x year-end. What share starts in 2027, and what annual rent does that add to 2027 expenses? (asked: no)",
+            "Sizes the fixed-cost step-up behind P4."
+          ],
+          [
+            "You created Class C for capital raising, among other purposes, while saying there are 'no specific financing plans'. Will you commit not to issue Class C for cash in 2027 if capex is in the ~$190bn+ range? (asked: partly, Sheridan; answer partial)",
+            "Tests P3 and dilution."
+          ],
+          [
+            "Maximum RVGs rose to $41.5bn. At what campus value falls would RVG payments become probable, and what are the RVG thresholds per campus? (credit; asked: no)",
+            "Hidden leverage."
+          ],
+          [
+            "Implied 4Q capex is $49-59bn against ~$33bn OCF. What net debt do you plan to carry at end-2027, and is AA- a constraint? (credit; asked: no)",
+            "Ratings path."
+          ],
+          [
+            "$121.4bn of commitments are due in 2027, mostly third-party cloud. How much is CoreWeave/Nebius capacity, and what happens if a supplier delivers late? (asked: no)",
+            "Tests P5 and counterparty risk."
+          ],
+          [
+            "Muse needs >10x cost efficiency in a year. What is serving cost per daily user today? (asked: Sandler; answer partial, no numbers)",
+            "Inference ROI."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "Meta 3Q26 8-K and Ex.99.1 (21 Oct 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    },
+    {
+      "title": "Meta 8-K item 1.01 Class C / Founder Alignment",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm"
+    },
+    {
+      "title": "Meta 3Q26 10-Q (22 Oct 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+    },
+    {
+      "title": "Meta 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+    },
+    {
+      "title": "Meta 1Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm"
+    },
+    {
+      "title": "Meta FY25 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+    },
+    {
+      "title": "Meta 2Q26 Ex.99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-06302026xexhibit991.htm"
+    },
+    {
+      "title": "Meta 1Q26 Ex.99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-03312026xexhibit991.htm"
+    },
+    {
+      "title": "Meta 3Q25 Ex.99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-09302025xexhibit991.htm"
+    },
+    {
+      "title": "Meta April 2026 bond pricing term sheet (FWP)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526197902/d148113dfwp.htm"
+    },
+    {
+      "title": "3Q26 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/21/meta-meta-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "2Q26 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/07/meta-meta-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "1Q26 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/04/29/meta-meta-q1-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "4Q25 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/01/28/meta-meta-q4-2025-earnings-call-transcript/"
+    },
+    {
+      "title": "Meta / Blue Owl Hyperion JV (21 Oct 2025)",
+      "url": "https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/"
+    },
+    {
+      "title": "Nebius-Meta up to $27bn (16 Mar 2026)",
+      "url": "https://nebius.com/newsroom/nebius-signs-new-ai-infrastructure-agreement-with-meta"
+    },
+    {
+      "title": "Nebius 3Q25 6-K ($3bn Meta deal)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm"
+    },
+    {
+      "title": "CoreWeave-Meta $21bn expansion (Apr 2026)",
+      "url": "https://www.businesswire.com/news/home/20260409138818/en/CoreWeave-and-Meta-Announce-$21-Billion-Expanded-AI-Infrastructure-Agreement"
+    },
+    {
+      "title": "Bloomberg: CoreWeave $14.2bn Meta deal (30 Sep 2025)",
+      "url": "https://www.bloomberg.com/news/articles/2025-09-30/coreweave-inks-14-billion-meta-deal-in-latest-sign-of-ai-demand"
+    },
+    {
+      "title": "META price history (stockanalysis.com, S&P Global data)",
+      "url": "https://stockanalysis.com/stocks/meta/history/"
+    },
+    {
+      "title": "Reuters via Investing.com, 22 Oct 2026",
+      "url": "https://www.investing.com/news/stock-market-news/meta-falls-as-investors-balance-muse-growth-with-rising-ai-costs-4965902"
+    },
+    {
+      "title": "Crypto Briefing, Meta 5y CDS record (20 Oct 2026)",
+      "url": "https://cryptobriefing.com/investors-hedge-big-tech-ai-debt/"
+    },
+    {
+      "title": "Preview: CMS Investments (20 Oct 2026)",
+      "url": "https://cmsinvestments.substack.com/p/meta-q3-preview-the-2027-capex-number"
+    },
+    {
+      "title": "Preview: Superpower Daily, LSEG/FactSet (21 Oct 2026)",
+      "url": "https://superpowerdaily.com/posts/meta-earnings-preview-analysts-expect-196-3-billion-in-capital-spending-in-2027"
+    },
+    {
+      "title": "Preview: BigGo Finance (20 Oct 2026)",
+      "url": "https://finance.biggo.com/news/7704261d-f24f-48c4-b5be-014986e460d6"
+    }
+  ],
+  "ticker": "META",
+  "verdict": "Monitoring",
+  "versus": "Quarter: beat on revenue ($64.60bn vs $63.2bn LSEG, above the $61-64bn guide); GAAP EPS $3.83 vs headline LSEG consensus $5.75 (set before the charge); in line with the only charge-inclusive estimate found ($3.79 BofA). Outlook: above on 4Q revenue ($73-76bn, +22-27% YoY); in line on 2026 capex (low end raised to $135bn); no 2027 capex number, which the stock was trading on. Shares -6.5% intraday 22 Oct ($652.03 at about 9:50 am ET)."
+}

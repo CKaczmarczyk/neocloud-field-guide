@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-05",
+  "items": [
+    {
+      "headline": "Pampa Energía offers 800 MW in Vaca Muerta for an AI data center",
+      "segment": "energy",
+      "source": "EconoJournal",
+      "summary": "Marcelo Mindlin said at Argentina Week Paris on 2 October that Pampa has about 800 MW available, anchored on the 780 MW Loma La Lata plant in Neuquén. A second outlet (GlobalPorts, single source) adds a campus of up to 500 MW, about $900M of electrical works, a 20-40 MW pilot and no committed investor.",
+      "url": "https://econojournal.com.ar/energia/argentina-week-pampa-energia-aseguro-que-dispone-de-800-mw-para-data-centers/"
+    },
+    {
+      "headline": "Nebius raises on-demand GPU prices 17-21% from 1 October",
+      "segment": "neocloud",
+      "source": "Nebius pricing page",
+      "summary": "Nebius' pricing page shows H100 moving from $3.85 to $4.50 per GPU-hour, H200 from $4.50 to $5.40, B200 from $7.15 to $8.50 and B300 from $7.85 to $9.50. These are list prices; committed rates differ.",
+      "url": "https://nebius.com/prices"
+    },
+    {
+      "headline": "High-yield data center debt now needs concessions, even with Meta as tenant",
+      "segment": "financing",
+      "source": "The Information",
+      "summary": "The Information reports CleanSpark's $2.3B bond for a Meta site priced at 98.5 cents with a 7.875% coupon and amortizing principal, that all four high-yield data center bonds since July sold at a discount, and that SocGen, SMBC and MUFG are more selective on project loans. Single paywalled source read through a Dealroom summary; exact publication date not confirmed.",
+      "url": "https://www.theinformation.com/articles/new-data-center-debt-concessions-stall-ai-build-outs"
+    },
+    {
+      "headline": "Argentine country risk holds near 640 bps, the high for 2026",
+      "segment": "financing",
+      "source": "Infobae",
+      "summary": "JP Morgan's index passed 640 bps and the Global 2035 bond yields about 11%, with US Treasury yields above 5% and 2027 election uncertainty cited. The Treasury faces more than $21B of debt service in 2027.",
+      "url": "https://www.infobae.com/economia/2026/10/05/por-que-los-precios-de-los-activos-argentinos-volvieron-al-nivel-preelectoral-de-2025/"
+    },
+    {
+      "headline": "Pluspetrol wins RIGI approval for a $12.4B Vaca Muerta project",
+      "segment": "energy",
+      "source": "Ámbito",
+      "summary": "Approved 2 October for the Bajo del Choique - La Invernada block with Neuquén's GyP: $12.4B over 25 years, more than 620 wells, 613M barrels of oil and about 50 bcm of gas, over 92% for export. It shows the RIGI still clearing large Neuquén projects; no data center component.",
+      "url": "https://www.ambito.com/economia/pluspetrol-anuncia-la-inversion-us-12400-millones-vaca-muerta-traves-del-rigi-n6329233"
+    },
+    {
+      "headline": "Wärtsilä reported to book a 282 MW engine plant for a US data center",
+      "segment": "energy",
+      "source": "Gas to Power Journal",
+      "summary": "Fifteen 50SG gas engines for an unnamed US data center, with engines delivered in 2028 and the plant running in 2029, a two to three year wait. Trade-press report only; the order was not on Wärtsilä's own news page when checked.",
+      "url": "https://gastopowerjournal.com/news/brief-news/wartsila-to-power-us-data-center/"
+    },
+    {
+      "headline": "Jera, Dell and Rhaelm plan 400 MW of AI compute behind the meter at an LNG plant in Japan",
+      "segment": "energy",
+      "source": "DCD",
+      "summary": "Up to 400 MW at Jera's 4.38 GW Chiba thermal station, operating from about 2028, roughly $15B across phases with Apollo financing, and a plan to repeat it at 20-plus Jera sites. The same model Pampa is proposing: an existing gas generator hosting compute on site.",
+      "url": "https://www.datacenterdynamics.com/en/news/jera-dell-technologies-and-rhaelm-team-up-for-behind-the-meter-ai-infrastructure-in-japan/"
+    },
+    {
+      "headline": "Nscale's 90 MW UK site reported delayed from 2027 to the early 2030s",
+      "segment": "neocloud",
+      "source": "TechRadar",
+      "summary": "The Loughton, Essex site cannot get enough grid power; 315 UK data centers totalling 73 GW were waiting for connection in June. Single secondary source, published while Nscale is preparing its IPO.",
+      "url": "https://techradar.com/pro/nvidia-backed-neocloud-nscale-faces-years-of-delay-because-uks-largest-ai-supercomputer-cant-get-enough-power-from-the-grid-to-feed-its-data-centers"
+    },
+    {
+      "headline": "Applied Digital delivers 75 MW more to CoreWeave at Ellendale",
+      "segment": "developer",
+      "source": "DCD",
+      "summary": "Building 2 phase 2 reached ready-for-service, taking Polaris Forge 1 to 250 MW operating of 400 MW planned, all leased to CoreWeave. Building 2's first phase went live in July, so the second followed in about three months.",
+      "url": "https://www.datacenterdynamics.com/en/news/applied-digital-adds-75mw-of-capacity-at-ellendale-data-center-campus-in-north-dakota/"
+    },
+    {
+      "headline": "Verda (formerly DataCrunch) raises $189M Series B",
+      "segment": "neocloud",
+      "source": "DCD",
+      "summary": "Emergence Capital led, with MUFG Innovation Partners and Supermicro participating; total raised is over $450M. The Finnish neocloud targets more than 250 MW operating by 2027 in Finland and Iceland. Valuation not disclosed.",
+      "url": "https://www.datacenterdynamics.com/en/news/ai-cloud-startup-verda-raises-189m-in-series-b-funding-round/"
+    }
+  ],
+  "kona": "The biggest change is local: Pampa Energía said in Paris it has about 800 MW at Loma La Lata in Neuquén for a behind-the-meter AI data center, reportedly starting with a 20-40 MW pilot and with no investor yet, so Kona now has a large incumbent pitching the same gas-to-compute story to the same offtakers and should decide whether Pampa is a competitor or a power partner. On monetization, Nebius list prices rose 17-21% on 1 October, which supports GPU-cloud economics, but high-yield data center debt is getting harder even with Meta as tenant and Argentine country risk sits near 640 bps, so debt for Kona still depends on an investment-grade or prepaying offtaker more than on rents. No movement was found this week on the Super RIGI in the Senate or on Stargate Argentina.",
+  "stale": "Models tab, GPU rental prices: the B200 range of 7.15-8.55 used Nebius' old $7.15 list price, now $8.50, and Nebius H100 and H200 list prices are now $4.50 and $5.40. Start here tab: the line that H100 rental indices are up about 14% over twelve months predates the 1 October increases. Players tab, Applied Digital: 175 MW live is out of date, since Ellendale alone is now 250 MW. Kona tab, Argentina section: does not yet list Pampa Energía's 800 MW Loma La Lata proposal as a local competitor or partner.",
+  "title": "Pampa enters Kona's backyard; GPU prices up, junk debt tighter"
+}

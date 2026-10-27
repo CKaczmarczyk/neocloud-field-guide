@@ -1,0 +1,16 @@
+{
+  "active_mw": "",
+  "contracted_mw": "",
+  "date": "2026-10-22",
+  "debt_cost": "4.55% (2031, T+53bp) to 6.45% (2066, T+147bp), Aa3/AA-, $25bn senior unsecured priced 30 Apr 2026 (most recent deal); 5y CDS record 108bp in Oct 2026 (single source)",
+  "margin": "EBITDA n.a. / operating 20% (35% excluding the $9.89bn legal charge)",
+  "name": "Meta Platforms",
+  "notes": "Revenue_m = total revenue (all ad-driven; no compute or cloud segment exists). Meta does not disclose MW. Capex incl. finance-lease principal $34.91bn (106% of OCF), FCF -$2.12bn, net debt ~$1.2bn; leases not yet commenced $355.73bn (+27.5% QoQ), commitments $454.52bn (+30.1% QoQ), max RVG $41.49bn. Rate left blank: no capacity price is disclosed. Flags >25% QoQ: operating margin 31% to 20% (legal charge), FCF $0.78bn to -$2.12bn, leases and commitments. New non-voting Class C stock created for capital raising, among other purposes (also employee compensation, acquisitions, general corporate purposes).",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "64601",
+  "segment": "financing",
+  "source": "Meta 3Q26 8-K Ex.99.1 and 10-Q; April 2026 FWP",
+  "ticker": "META",
+  "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+}

@@ -1,0 +1,467 @@
+{
+  "brief": [
+    "Verdict ahead of the print: Microsoft guided 1Q FY27 to $89.85bn to $90.95bn of revenue, Azure growth of 44% to 45% in constant currency on the new definition, roughly flat operating margin and capex above $50bn including finance leases. The stock will trade on Azure against a 46% to 47% buy-side bar, on whether FY27 capex and lease commitments keep climbing, and on whether free cash flow stays clearly positive. This is the fiscal 1Q FY27 report (quarter ended 30 September 2026), filed here as calendar 2026Q3.",
+    "Where expectations sit. Yahoo Finance shows 1Q FY27 revenue consensus of $90.72bn from 38 analysts (range $89.64bn to $92.66bn) and EPS of $4.72 from 26 analysts (range $4.43 to $4.86). MarketBeat has $90.62bn and $4.71, Barchart $4.71, and Zacks $4.67 (as cited by WindowsForum, single source). FY27 consensus is $391.38bn and $19.76 (Yahoo), and Barchart has $19.65. Taking the guide midpoints, revenue is $90.4bn, operating income about $43.85bn (48.5% margin) and EPS about $4.70 by our arithmetic, which matches Morningstar's $4.70. A compiled consensus cited by Tiger has EBIT of $43.99bn, also about 48.5%.",
+    "The AI-compute numbers. 4Q FY26 capex including finance leases was about $41bn (cash PP&E $35.8bn plus $5.6bn of finance leases), about two-thirds on short-lived assets such as GPUs and CPUs. FY26 cash capex was $115.9bn. At 30 June, Microsoft had $66.6bn of finance lease liabilities, $329.1bn of leases not yet commenced (mostly data centers, starting FY27 to FY33, some still subject to conditions), $443.5bn of total lease payments including imputed interest, and $194.1bn of purchase commitments. Bernstein models FY27 capex including leases of about $200bn. Commercial RPO was $678bn (up 84%), up 25% excluding OpenAI. OpenAI generated $24.1bn of FY26 revenue including revenue-share payments, and Bernstein estimates it is less than 40% of RPO (single source).",
+    "Three debates. First, Azure: Morgan Stanley expects about 47%, Bernstein 45.6% against a 44.9% consensus, and UBS 46% against the 47% it says investors want; prediction markets give a 47% chance of 46% to 48% (24/7 Wall St.). Second, capex optics: the lease reclassification means a lower reported capex number does not show less spending, so investors want cash PP&E, finance leases and leases not yet commenced side by side. Third, third-party capacity: Microsoft had about $60bn of neocloud GPU leases (Bloomberg, November 2025), and it now faces the Nscale Loughton cancellation and CoreWeave credit stress. Management said nothing on neoclouds in July.",
+    "What would move the stock. Positive: Azure at 46% or more, a raised FY27 capex outlook paired with a stated FCF floor, RPO growth excluding OpenAI above 25%, and an explicit statement that capacity constraints are easing. Negative: Azure at or below 44%, operating margin below about 48.5%, a 4Q-like FCF of about $20bn or less against capex above $50bn, or any hint of debt issuance or lease cancellations. The stock closed at $521.08 on 22 October and traded at $521.53 at 10:04 am ET on 23 October. Options imply a move of about 5.4% (EarningsWatcher, 22 October).",
+    "Kona read-through. Microsoft is still buying capacity faster than it can build it, but it is moving future data center leases to operating leases and has just walked away from a neocloud site that could not get grid power. A small off-grid site with its own power is the kind of asset that answers that problem, but Microsoft-grade tenant credit will come only with contractual delivery milestones and termination rights like those in the Nebius contract."
+  ],
+  "changes": [
+    "Since the July print, Microsoft moved to two segments (Agents and Infra; Devices and Consumer) from 1Q FY27 and re-based Azure: GitHub cloud, Security Copilot and Healthcare cloud moved out, so the 1Q FY27 Azure guide became 44% to 45% in constant currency (8-K, 2 September 2026) from about 45%. Restated FY26 Azure was $101.9bn, and 4Q FY26 restated growth was 42%.",
+    "Capex accounting changed: data centers and office buildings now depreciate over 25 years rather than 15, and more future data center leases will be operating rather than finance leases, which removes them from reported capex. CY26 capex expectation became about $175bn (from about $190bn in April) with spending 'unchanged' outside this effect; 1Q FY27 capex is guided above $50bn.",
+    "Neocloud stress: Microsoft reportedly ended its rental at Nscale's Loughton, UK site (50 MW initial, 23,040 GPUs) after grid officials said power would not arrive until the 2030s (The Telegraph via SiliconANGLE, 18 October). In the past month CoreWeave fell 35%, Nebius 29% and IREN 46%, and CoreWeave CDS topped 1,000bp (Reuters via 24/7 Wall St., 22 October).",
+    "Consensus edged above the guide midpoint: 1Q FY27 revenue $90.72bn (Yahoo, 38 analysts) against a $90.4bn guide midpoint; EPS $4.72 is unchanged over 60 days. FY27 EPS rose from $19.40 to $19.76 over 90 days.",
+    "The stock rallied from $389.10 on 27 July to $521.08 on 22 October (up 34%), though it is down from $539.44 on 15 October."
+  ],
+  "checks": "I verified the figures myself; no subagent was used. Filing figures: I downloaded the 4Q FY26 release (8-K Ex. 99.1, 29 July 2026), the FY26 10-K and the 2 September 2026 8-K with its Ex. 99.1 (FY27 segments and adjusted outlook) from EDGAR, converted them to text, and string-matched in code: $678bn RPO, $329.1bn leases not yet commenced, $24.1bn OpenAI revenue, $6.0bn receivable, $13.0bn and $11.9bn funding, finance lease liabilities $66,594mn, total lease payments $443,506mn, purchase commitments $194,060mn, construction commitments $34,566mn, OCF $55,441mn and $182,935mn, PP&E $35,802mn and $115,948mn, debt $9,227mn and $31,067mn, principal $46,136mn, cash $76,843mn, 2.3 years, 30%, and finance-lease ROU additions $24,608mn. From the 8-K exhibit: 'over $50 billion', $75.15bn to $75.75bn, 44% to 45%, $22,384mn, $29,417mn, $101,938mn, and the revenue, COGS and opex guides. All matched. EDGAR's submissions list shows no 1Q FY27 release as of 23 October (latest filings were the 21 October proxy and ARS). Call: I read the Earnings Whispers 4Q FY26 transcript twice and confirmed the $175bn, lease-shift, 15-to-25-year, $5.6bn, $35.8bn, 'demand continues to exceed available supply', 'H1 growth to accelerate', 'free cash flow positive in FY27' and 'RPO increased 25% when excluding OpenAI' wording. No 1Q capex sentence appeared in that transcript; the over-$50bn figure comes from the 8-K. Consensus: I reopened Yahoo analysis and StockAnalysis history on 23 October and both confirmed (revenue $90.72bn, 38, $89.64bn to $92.66bn; EPS $4.72, 26, $4.43 to $4.86; FY27 $391.38bn and $19.76; closes of $521.08 on 22 October and $532.95 on 21 October; $521.53 at 10:04 am ET on 23 October). MarketBeat, Barchart via Yahoo, Morgan Stanley (Bitget/Zhitong and TheStreet via Yahoo, consistent with each other), Bernstein (KuCoin/TechFlow summary, not the original note), UBS and Stifel (via Tiger), WindowsForum, TOPONE, 24/7 Wall St., EarningsWatcher, SiliconANGLE, DCD, TheEnergyMag, nai500 and Bloomberg Government were each read once. Derived numbers recomputed in Python: guide midpoints (revenue $90.4bn, operating income $43.85bn, 48.5%, EPS about $4.70), 1Q FY26 margin 48.9%, consensus against midpoint (+0.4%), Azure revenue at 44%, 45% and 47%, 4Q capex about $41.4bn, FCF ($19.6bn quarter; $67.0bn FY26), book debt and net cash, market cap about $3.87tn, P/E about 26.4x FY27 and 22.0x FY28, the 33.9% rise since 27 July, gross margins, OpenAI revenue at about 24% of Azure, leases not yet commenced at about 4.9x finance lease liabilities, and Nebius upfront at 40% of the total. Single source or unverified: Azure consensus of 44.9% and OpenAI below 40% of RPO (Bernstein summary); Zacks $4.67 and Visible Alpha $90.7bn (WindowsForum); Morgan Stanley's GW and debt-issuance figures; UBS's 47% buy-side bar and Stifel's OpenAI share of growth (Tiger); the $60bn neocloud total (Bloomberg via DCD, November 2025, possibly stale); the Nscale Loughton cancellation (The Telegraph via SiliconANGLE; no Microsoft statement); CoreWeave CDS above 1,000bp (Reuters via 24/7); the April 2026 OpenAI amendment and the $250bn Azure commitment (TOPONE only); and Microsoft CDS 'more than doubled' (Bloomberg excerpt, no level). CNBC and Benzinga pages failed to load. The Microsoft rating was not checked. We found no quarterly consensus for capex, RPO or Agents and Infra revenue.",
+  "consensus_thesis": "Investors own Microsoft as the capacity-constrained AI cloud whose 45%-plus Azure growth and $678bn commercial RPO justify capex rising past $50bn a quarter, and at about $521 (about 26x FY27 consensus EPS of $19.76, after a roughly 34% rally since late July) positioning is long and crowded, with Morgan Stanley and UBS warning that the bar is now 46% to 47% Azure, above the guide. Bonds price Microsoft as a near-sovereign AAA credit with about $36.5bn of book net cash and no new bonds in FY26, but press reports say its CDS has more than doubled since fall 2025 and AI-linked issuer spreads have widened to about 115bp, so the credit debate is about off-balance-sheet lease and neocloud commitments rather than Microsoft's own debt.",
+  "date": "2026-10-23",
+  "headline": "Fiscal 1Q FY27 (calendar 3Q26) is judged less on a roughly $90.7bn quarter than on whether Azure beats its 44% to 45% guide toward the 47% the buy side wants, while capex of more than $50bn a quarter, $329.1bn of leases not yet commenced and a wobbling neocloud supply chain still leave Microsoft free cash flow positive.",
+  "kind": "preview",
+  "kona": "Microsoft is still capacity-constrained and adding leases ($329.1bn not yet commenced) and neocloud rentals, so there is demand for third-party AI capacity. But it is moving future data center leases to operating leases and has just exited Nscale's Loughton site because the grid could not deliver power until the 2030s. That makes power that is actually available the scarce input, which favors a site with its own power like Kona's Vaca Muerta gas. For a small off-grid site, a Microsoft tenancy would likely follow the Nebius template: payments tied to deployment and availability milestones, with service credits and tranche termination for misses. That is strong credit only once capacity is delivered, so lenders will discount it before commissioning. With neocloud credit under stress (CoreWeave CDS above 1,000bp), selling power or hosting a GPU owner that holds such a contract is safer for Kona than owning GPUs against it.",
+  "kpis": [
+    {
+      "consensus": "$90.72bn (Yahoo, 38 analysts, range $89.64bn to $92.66bn); MarketBeat $90.62bn; Visible Alpha about $90.7bn (via WindowsForum)",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "Guide $89.85bn to $90.95bn (midpoint $90.4bn); consensus is 0.4% above the midpoint and implies 16.8% growth.",
+      "prior": "$90,007mn (4Q FY26); $77,673mn (1Q FY26)"
+    },
+    {
+      "consensus": "$4.72 (Yahoo, 26 analysts, range $4.43 to $4.86); MarketBeat and Barchart $4.71; Zacks $4.67 (via WindowsForum)",
+      "current": "",
+      "metric": "Diluted EPS (non-GAAP, excluding OpenAI)",
+      "note": "Guide midpoints imply about $4.70 by our arithmetic (20% tax, 7,443mn shares, $(100)mn other income). Beat in each of the last four quarters (Yahoo).",
+      "prior": "$4.74 (4Q FY26, including a $0.27 benefit from discrete items); $4.13 (1Q FY26)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Agents and Infra revenue",
+      "note": "Guide $75.15bn to $75.75bn (8-K, 2 September 2026). This is the new segment that contains Azure.",
+      "prior": "$74,576mn (4Q FY26 restated); $61,672mn (1Q FY26 restated)"
+    },
+    {
+      "consensus": "44.9% (as cited by Bernstein, single source); Morgan Stanley 47%; UBS 46%; Bernstein 45.6%",
+      "current": "",
+      "metric": "Azure revenue growth (constant currency)",
+      "note": "Guide 44% to 45% on the new definition. 45% means about $32.5bn of Azure revenue, $3.0bn above 4Q FY26 restated $29.4bn (our arithmetic; Bernstein says about $2.9bn).",
+      "prior": "42% restated (43% old definition) in 4Q FY26; 1Q FY26 restated Azure $22,384mn"
+    },
+    {
+      "consensus": "n.a. for the quarter; Bernstein FY27 about $200bn including leases",
+      "current": "",
+      "metric": "Capex including finance leases",
+      "note": "1Q FY27 guided above $50bn including the useful-life update; CY26 about $175bn after the lease shift; FY27 to grow year on year. Morgan Stanley thinks spending could exceed $50bn.",
+      "prior": "About $41bn in 4Q FY26 ($35.8bn cash PP&E plus $5.6bn finance leases); FY26 cash PP&E $115,948mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Free cash flow",
+      "note": "Management: 'free cash flow positive in FY27'. Finance lease principal ($3.1bn in FY26) is outside this definition.",
+      "prior": "$19.6bn in 4Q FY26 (OCF $55,441mn less PP&E $35,802mn); $67.0bn in FY26"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Commercial RPO",
+      "note": "OpenAI less than 40% of RPO (Bernstein, single source). Microsoft has not disclosed the OpenAI dollar amount.",
+      "prior": "$678bn at 30 June 2026, up 84%; up 25% excluding OpenAI; about 30% due within 12 months; 2.3-year weighted duration"
+    },
+    {
+      "consensus": "About 48.5% (compiled EBIT $43.99bn on $90.69bn, via Tiger)",
+      "current": "",
+      "metric": "Operating margin",
+      "note": "Guide 'relatively flat year over year'; FY27 down less than a point. Guide midpoints give about 48.5%.",
+      "prior": "48.9% in 1Q FY26; 45.1% in 4Q FY26"
+    },
+    {
+      "consensus": "About 67.2% (implied by Bernstein's 66.7% being 50bp below consensus)",
+      "current": "",
+      "metric": "Gross margin (total company)",
+      "note": "Guide COGS $29.6bn to $29.8bn. Morgan Stanley models FY27 gross margin of 65.8%.",
+      "prior": "67.2% in 4Q FY26; 67.9% in FY26"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Leases not yet commenced",
+      "note": "About 4.9x the $66.6bn of finance lease liabilities already on the balance sheet. Total lease payments including imputed interest were $443.5bn, of which $32.4bn is due in FY27.",
+      "prior": "$329.1bn at 30 June 2026, mainly data centers, starting FY27 to FY33, terms 1 to 20 years, some subject to conditions"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Third-party / neocloud commitments",
+      "note": "Purchase commitments, which include take-or-pay contracts, were $194.1bn at 30 June. Nscale Loughton was reportedly cancelled on 18 October.",
+      "prior": "Not disclosed separately; about $60bn of neocloud GPU leases (Bloomberg via DCD, November 2025): Nscale about $23bn, IREN $9.7bn, Nebius up to $17.4bn, Lambda multi-billion"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "OpenAI exposure",
+      "note": "OpenAI revenue was about 24% of FY26 restated Azure, but it includes revenue-share payments, so it is not all Azure. Stifel estimates OpenAI drove about half of FY26 Azure growth.",
+      "prior": "FY26 revenue from OpenAI $24.1bn; receivable $6.0bn at 30 June; about 25% equity stake (as-converted); $11.9bn of $13.0bn funding commitment paid"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash and debt",
+      "note": "Book net cash about $36.5bn. No new bonds in FY26 (repayments of $3.0bn). Finance lease liabilities of $66.6bn are separate.",
+      "prior": "Cash and short-term investments $76,843mn; debt $40,294mn book ($9,227mn current plus $31,067mn long-term; $46,136mn principal)"
+    }
+  ],
+  "monitor": [
+    "Azure constant-currency growth against the 44% to 45% guide and the 46% to 47% buy-side bar, and whether management says it is still capacity-limited.",
+    "1Q FY27 capex including finance leases (guided above $50bn), cash paid for PP&E, free cash flow, and the 30 September balance of leases not yet commenced (was $329.1bn).",
+    "Commercial RPO (was $678bn), RPO growth excluding OpenAI (was 25%), and any comment on third-party and neocloud capacity after the Nscale Loughton cancellation."
+  ],
+  "name": "Microsoft",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "At 30 June you had $329.1bn of leases not yet commenced, starting between FY27 and FY33 and some still subject to conditions, on top of $66.6bn of finance lease liabilities, and in July you said more future data center leases will be operating leases and so leave reported capex. What was the leases-not-yet-commenced figure at 30 September? How much of the 1Q increase is classified as operating rather than finance? What share is still conditional on power or construction milestones? Will you report capex plus all new lease commitments each quarter so the comparison with FY26 is like for like?",
+      "style": "credit",
+      "why": "Lease commitments are debt-like and now larger than reported capex. If the shift to operating leases lowers reported capex without lowering obligations, the FCF and leverage picture the market is using is flattered, and the landlords and developers who carry these leases depend on Microsoft's covenant."
+    },
+    {
+      "question": "Bloomberg reported about $60bn of neocloud GPU leases in late 2025, including about $23bn with Nscale, $9.7bn with IREN and up to $17.4bn with Nebius. You have now reportedly exited Nscale's Loughton site because the grid could not deliver until the 2030s, and CoreWeave CDS is above 1,000bp. What is your total remaining commitment to third-party GPU capacity, and how much of the $194.1bn of purchase commitments does it represent? How much will be delivered in FY27? If a provider misses delivery or fails financially, do you have step-in rights over the GPUs or only termination and service credits? Does the Loughton exit reflect delivery failure only, or are you resizing third-party capacity?",
+      "style": "credit",
+      "why": "Neocloud lenders and equity are priced on Microsoft's contracts. Whether Microsoft treats them as firm take-or-pay, or as options it can walk away from on delivery failure, sets the tenant-credit value of every third-party AI site, including small off-grid ones."
+    },
+    {
+      "question": "4Q FY26 free cash flow was $19.6bn on $35.8bn of cash capex, and 1Q FY27 capex is guided above $50bn, with FY27 capex up again. Bernstein models about $200bn in FY27 including leases, and Morgan Stanley models about $45bn of debt issuance across FY28 and FY29. What FCF floor do you mean by 'free cash flow positive in FY27': before or after finance lease principal? Do you plan to issue bonds in FY27, yes or no? Would you cut buybacks before you borrow?",
+      "style": "credit",
+      "why": "Microsoft issued no new bonds in FY26 and holds about $36.5bn of book net cash. A move to regular issuance at hyperscaler scale would weigh on IG tech spreads, which are already about 115bp for AI-linked issuers against about 78bp for the broad market, and would mark the end of self-funded AI capex."
+    },
+    {
+      "question": "You guided Azure to 44% to 45% in constant currency on the new definition and said in July that 'demand continues to exceed available supply.' Morgan Stanley expects 47%, and UBS says investors want 47%. How many points of Azure growth did capacity limits cost in 1Q? How many GW came online in the quarter, against roughly 1 GW a quarter in CY26 (Bernstein) and 4.25 GW in FY27 (Morgan Stanley)? In which quarter do you expect supply to meet demand?",
+      "style": "equity",
+      "why": "Owning the stock depends on capacity converting to Azure revenue. The date when supply meets demand is also the date when Microsoft's need for third-party and leased capacity peaks."
+    },
+    {
+      "question": "Commercial RPO rose 84% to $678bn, but only 25% excluding OpenAI, and OpenAI contracted an incremental $250bn of Azure in October 2025. Bernstein estimates OpenAI is less than 40% of RPO. What is the dollar amount of OpenAI's share of RPO at 30 September? What share of the $678bn is inference rather than training capacity? How much of OpenAI's commitment is backed by prepayment or collateral given the $6.0bn receivable at 30 June?",
+      "style": "equity",
+      "why": "If a large share of the backlog that justifies the capex comes from one counterparty that is a related party and is itself loss-making, the backlog's credit quality, not its size, determines whether the capex earns a return."
+    },
+    {
+      "question": "About two-thirds of 4Q capex went to short-lived assets such as GPUs and CPUs, which you depreciate over two to six years, and you said newer contracts reflect higher component costs. What share of 1Q capex was short-lived? Did chip or memory supply limit what you could deploy? Have you changed the useful life of servers and network equipment, or do you plan to? How would a one-year change affect FY27 operating income?",
+      "style": "equity",
+      "why": "Depreciation of short-lived assets is the main pressure on the FY27 margin guide (down less than a point). GPU useful life is also the residual-value assumption behind every neocloud and GPU-owner financing."
+    }
+  ],
+  "risks": [
+    "Azure lands at or below the 44% to 45% guide while the buy side expects 46% to 47%, with a crowded long after a 34% rally since late July.",
+    "Capex optics: the shift to operating leases and the 25-year useful life lower reported capex and depreciation without lowering commitments ($329.1bn of leases not yet commenced), which risks a credibility discount.",
+    "FCF compression as capex rises above $50bn a quarter, leading to debt issuance (Morgan Stanley models about $45bn in FY28 to FY29) and wider spreads.",
+    "OpenAI concentration: a related party behind most RPO growth (ex-OpenAI RPO up 25% against 84% in total) with a $6.0bn receivable.",
+    "Third-party capacity counterparty risk: neocloud credit stress (CoreWeave CDS above 1,000bp; Gartner says up to 80% of neoclouds may not stay independent by 2030) and grid-delayed sites (Nscale Loughton)."
+  ],
+  "sections": [
+    {
+      "body": "From 1Q FY27 Microsoft reports two segments. Agents and Infra ($268.1bn of FY26 restated revenue) holds Azure, Microsoft 365 cloud, productivity and server licensing, industry solutions, and frontier and support services. Devices and Consumer ($63.7bn) holds search and advertising, XBOX and Windows OEM. For AI compute, Microsoft is a buyer: it builds and leases data centers, buys GPUs (about two-thirds of 4Q FY26 capex went to short-lived assets), and rents GPU capacity from neoclouds, then sells it as Azure consumption (restated FY26 Azure $101.9bn) and through its own apps. OpenAI is both its largest AI customer ($24.1bn of FY26 revenue including revenue share) and a roughly 25%-owned equity-method investee. Capex is funded from operating cash flow ($182.9bn in FY26) and leases. FY26 debt was only repaid.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 19 to 23 October 2026. We found no published quarterly consensus for capex, RPO or Agents and Infra revenue. The Azure consensus is a single figure cited by Bernstein.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "1Q FY27 revenue",
+            "$90.72bn (38; $89.64bn to $92.66bn)",
+            "Yahoo Finance, 23 Oct",
+            "Guide $89.85bn to $90.95bn; 1Q FY26 $77.67bn"
+          ],
+          [
+            "1Q FY27 EPS",
+            "$4.72 (26; $4.43 to $4.86)",
+            "Yahoo Finance, 23 Oct",
+            "1Q FY26 $4.13; guide midpoints imply about $4.70"
+          ],
+          [
+            "1Q FY27 revenue / EPS, other providers",
+            "MarketBeat $90.62bn / $4.71; Barchart $4.71; Zacks $4.67; Visible Alpha about $90.7bn; MS cites $90.639bn",
+            "21 to 23 Oct (Zacks and Visible Alpha via WindowsForum, 22 Oct)",
+            ""
+          ],
+          [
+            "Azure growth (cc)",
+            "44.9% consensus; MS 47%; UBS 46%; Bernstein 45.6%",
+            "Bernstein, MS, 19 Oct; UBS, 14 Oct",
+            "Guide 44% to 45% (new definition); 4Q FY26 42% restated"
+          ],
+          [
+            "Operating income / margin",
+            "$43.99bn / about 48.5%",
+            "Compiled consensus via Tiger, 22 Oct",
+            "Guide 'relatively flat' (1Q FY26 48.9%)"
+          ],
+          [
+            "Gross margin",
+            "About 67.2% (implied)",
+            "Bernstein, 19 Oct",
+            "4Q FY26 67.2%"
+          ],
+          [
+            "Capex including finance leases",
+            "n.a.; Bernstein FY27 about $200bn",
+            "Bernstein, 19 Oct",
+            "1Q guide above $50bn; CY26 about $175bn; 4Q FY26 about $41bn"
+          ],
+          [
+            "Commercial RPO",
+            "n.a.",
+            "",
+            "$678bn at 30 June"
+          ],
+          [
+            "FY27 revenue / EPS",
+            "$391.38bn / $19.76 (51 / 34 analysts)",
+            "Yahoo Finance, 23 Oct",
+            "Guide: double-digit revenue and operating income growth; margin down less than 1 point"
+          ],
+          [
+            "FY28 revenue / EPS",
+            "$468.55bn / $23.70",
+            "Yahoo Finance, 23 Oct",
+            ""
+          ],
+          [
+            "Price target",
+            "$592.66 average (51 analysts); $589.60 (24/7 Wall St.)",
+            "Barchart via Yahoo, 21 Oct; 24/7, 19 Oct",
+            "Close $521.08 on 22 Oct"
+          ],
+          [
+            "Implied move",
+            "About 5.4%",
+            "EarningsWatcher, 22 Oct",
+            "10-year average 5.3%"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Azure acceleration",
+            "Azure beats the guide as capacity lands; H1 FY27 accelerates",
+            "Azure 46% or more in constant currency (guide 44% to 45%)",
+            "Morgan Stanley, UBS, Bernstein; management ('H1 growth to accelerate')"
+          ],
+          [
+            "P2 Capex up, FCF still positive",
+            "Capex rises past $50bn a quarter and about $200bn in FY27, but OCF keeps FCF positive without leverage",
+            "Capex at or above $50bn with positive FCF; FY27 capex and FCF commentary",
+            "Management; Bernstein (FY27 $200bn, single source); Morgan Stanley"
+          ],
+          [
+            "P3 Backlog quality",
+            "$678bn RPO converts, and growth outside OpenAI holds",
+            "RPO at or above $678bn; ex-OpenAI growth of 25% or more",
+            "Management; Bernstein (OpenAI below 40% of RPO, single source)"
+          ],
+          [
+            "P4 Margins absorb depreciation",
+            "Operating margin roughly flat; FY27 down less than a point",
+            "Operating margin about 48.5% or higher; gross margin near 67%",
+            "Management; compiled consensus; Morgan Stanley"
+          ],
+          [
+            "P5 Capacity constrained, so all supply is used",
+            "Owned, leased and neocloud capacity all fill (4.25 GW in FY27)",
+            "Constraint commentary, GW added, leases not yet commenced, and neocloud stance after Loughton",
+            "Morgan Stanley (GW, single source); Bernstein (about 1 GW a quarter, single source); management"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Azure passed $100bn in FY26; 4Q beat (43% against 39.98% Visible Alpha); guide 44% to 45% with MS at 47%",
+            "Bar raised: about 26x FY27 EPS after a 34% rally; MS says investors are used to positive surprises"
+          ],
+          [
+            "RPO $678bn, up 84%; demand exceeds supply",
+            "Ex-OpenAI RPO up only 25%; OpenAI is a related party with a $6.0bn receivable"
+          ],
+          [
+            "Short-lived assets can be slowed quickly (Hood); FCF positive in FY27; about $36.5bn book net cash",
+            "4Q FCF $19.6bn, down about 23% y/y (24/7); $329.1bn leases not yet commenced; lease reclassification flatters capex"
+          ],
+          [
+            "More than 30mn paid M365 Copilot seats; MS models Azure AI revenue rising from $25.7bn to $52.2bn over two years",
+            "Neocloud stress (Nscale Loughton exit; CoreWeave CDS above 1,000bp); hyperscaler CDS more than doubled since fall 2025 (Bloomberg)"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Azure: does Microsoft clear the 46% to 47% buy-side bar, or only the 44% to 45% guide, and is the limit demand or capacity? 2) Capex and lease optics: with future data center leases moving to operating leases and building lives going to 25 years, is reported capex of more than $50bn the full picture, or should investors add leases not yet commenced ($329.1bn) and neocloud take-or-pay? 3) Funding: does 'FCF positive in FY27' mean Microsoft stays self-funded, or is it moving toward the debt issuance Morgan Stanley models for FY28 and FY29? 4) Third-party capacity: after Loughton, is Microsoft still adding neocloud capacity or quietly letting weak sites go?",
+      "title": "Live debates"
+    },
+    {
+      "body": "Q1 capex: the 2 September 8-K restates the July guide as 'over $50 billion including the impact of the useful life update', while TOPONE Markets writes 'about $50B', and the Earnings Whispers transcript we read has no 1Q capex sentence. We use the 8-K. Azure consensus: Bernstein cites 44.9%, StreetAccount was 41.4% before the July guide (via TOPONE), and UBS frames the bar as 47%. EPS consensus runs from $4.67 (Zacks via WindowsForum) to $4.72 (Yahoo). Tiger's compiled 28.8% EPS growth uses the $3.72 GAAP base; non-GAAP growth is about 14%. Gross margin: Tiger labels Morgan Stanley's 65.8% FY27 figure as 'cloud gross margin' against 67.9% for FY26, but 67.9% is the total-company FY26 gross margin in the 10-K, so it is total company. Bernstein says 45% Azure needs about $2.9bn of new revenue; our arithmetic on restated figures gives $3.0bn. 4Q FY26 capex is '$41B' (Investing.com) against $41.4bn by our sum of PP&E and finance leases. Share price: WindowsForum cites about $523.20, against StockAnalysis's $521.08 close on 22 October. Targets: Guggenheim $586 and MS $600 against Bernstein $662 and UBS $675.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June 2026: cash and short-term investments $76.8bn; debt $40.3bn book ($9.2bn current plus $31.1bn long-term; $46.1bn of principal, with $9.25bn due in FY27), giving book net cash of about $36.5bn. Equity and other investments $36.3bn. Finance lease liabilities $66.6bn (13-year weighted term, 4.5% discount rate); operating lease liabilities $21.9bn; leases not yet commenced $329.1bn; total lease payments including imputed interest $443.5bn ($32.4bn due in FY27); construction commitments $34.6bn; purchase commitments $194.1bn, mainly data centers and including take-or-pay contracts. FY26 OCF was $182.9bn, cash capex $115.9bn, FCF $67.0bn, and finance lease principal paid $3.1bn; shareholder returns were $48.7bn (dividends $26.4bn plus buybacks $22.3bn). Bonds: no new issuance in FY26. Bloomberg (16 October) says CDS on Microsoft and other large tech names has more than doubled since fall 2025 (no level given). AI-linked issuer spreads are about 115bp against about 78bp for the broad IG market (nai500, citing Reuters, Goldman Sachs and ICE BofA, September 2026). We found no Microsoft bond yield or CDS level for 22 or 23 October. The AAA/Aaa rating was not re-verified in this session.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: leases not yet commenced and the operating-lease shift (credit); total neocloud commitments, step-in rights and the Loughton exit (credit); FCF floor, bond issuance and buybacks (credit); Azure points lost to capacity and GW added; the OpenAI dollar share of RPO, inference against training, and collateral; the short-lived share of capex and server useful lives.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "Microsoft 4Q FY26 earnings release (8-K Ex. 99.1, 29 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-ex99_1.htm"
+    },
+    {
+      "title": "Microsoft FY26 Form 10-K (29 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+    },
+    {
+      "title": "Microsoft 8-K, 2 September 2026 (FY27 segments)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
+    },
+    {
+      "title": "Microsoft FY27 Segments and Investor Metrics, adjusted 1Q FY27 outlook (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965dex991.htm"
+    },
+    {
+      "title": "SEC EDGAR submissions list (filing check)",
+      "url": "https://data.sec.gov/submissions/CIK0000789019.json"
+    },
+    {
+      "title": "Earnings Whispers: Microsoft 4Q FY26 call transcript",
+      "url": "https://www.earningswhispers.com/transcript/MSFT/Q42026"
+    },
+    {
+      "title": "Microsoft: earnings release date announcement (7 October 2026)",
+      "url": "https://news.microsoft.com/source/2026/10/07/microsoft-announces-quarterly-earnings-release-date-69/"
+    },
+    {
+      "title": "Investing.com: Microsoft surges on strong revenue outlook (July 2026)",
+      "url": "https://www.investing.com/news/earnings/microsoft-beats-on-profit-and-revenue-shares-rise-after-hours-4821565"
+    },
+    {
+      "title": "Yahoo Finance MSFT analysis (consensus)",
+      "url": "https://finance.yahoo.com/quote/MSFT/analysis/"
+    },
+    {
+      "title": "StockAnalysis MSFT price history",
+      "url": "https://stockanalysis.com/stocks/msft/history/"
+    },
+    {
+      "title": "MarketBeat: MSFT 1Q FY27 earnings page",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-10-28-microsoft-co-stock/"
+    },
+    {
+      "title": "Barchart via Yahoo: Earnings preview, what to expect from Microsoft (21 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-preview-expect-microsoft-report-130944126.html"
+    },
+    {
+      "title": "WindowsForum: Microsoft FY27 Q1 earnings preview (22 October 2026)",
+      "url": "https://windowsforum.com/news/microsoft-fy27-q1-earnings-preview-azure-growth-50b-capex-and-copilot-cash-flow-test.449563/"
+    },
+    {
+      "title": "TOPONE Markets: Microsoft Q1 FY2027 earnings preview (22 October 2026)",
+      "url": "https://www.top1markets.com/news/7527766"
+    },
+    {
+      "title": "Tiger: Microsoft FY27 Q1 preview (22 October 2026)",
+      "url": "https://www.itiger.com/news/1163139268"
+    },
+    {
+      "title": "Bitget/Zhitong: Morgan Stanley sees Azure at 47%, $600 target (19 October 2026)",
+      "url": "https://www.bitget.com/amp/news/detail/12560605981177"
+    },
+    {
+      "title": "TheStreet via Yahoo: Morgan Stanley sees new hurdle for Microsoft (20 October 2026)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/morgan-stanley-sees-hurdle-microsoft-230000709.html"
+    },
+    {
+      "title": "KuCoin/TechFlow: Bernstein on Azure 45% and $662 target (20 October 2026)",
+      "url": "https://www.kucoin.com/news/flash/bernstein-report-microsoft-azure-revenue-to-grow-45-office-cloud-accelerates-to-20"
+    },
+    {
+      "title": "GuruFocus: Microsoft expected to meet Q1 forecasts (19 October 2026)",
+      "url": "https://www.gurufocus.com/news/9130826/microsoft-msft-expected-to-meet-q1-earnings-forecasts-driven-by-azure-growth"
+    },
+    {
+      "title": "24/7 Wall St.: One big question for Microsoft stock (19 October 2026)",
+      "url": "https://247wallst.com/investing/2026/10/19/one-big-question-could-determine-where-microsoft-stock-goes-next/"
+    },
+    {
+      "title": "EarningsWatcher: MSFT earnings October 2026 (implied move)",
+      "url": "https://earnings-watcher.com/wiki/msft-earnings-october-2026"
+    },
+    {
+      "title": "Schwab Network: Microsoft 4Q FY26 earnings preview (28 July 2026)",
+      "url": "https://schwabnetwork.com/articles/microsoft-earnings-preview-azure-copilot-and-ai-spending-face-a-high-bar"
+    },
+    {
+      "title": "SiliconANGLE: Microsoft pulls UK Nscale data center project (18 October 2026)",
+      "url": "https://siliconangle.com/2026/10/18/neocloud-operator-nscales-ipo-plans-could-be-at-risk-after-microsoft-pulls-the-plug-on-u-k-data-center-project/"
+    },
+    {
+      "title": "DCD: Microsoft's neocloud spending surpasses $60bn (November 2025)",
+      "url": "https://www.datacenterdynamics.com/en/news/microsofts-neocloud-spending-surpasses-60bn/"
+    },
+    {
+      "title": "TheEnergyMag: Microsoft committed $7bn upfront in Nebius deal (4 May 2026)",
+      "url": "https://theenergymag.com/news/2026-05-04/microsoft-nebius-ai"
+    },
+    {
+      "title": "24/7 Wall St. via Yahoo: The neocloud bloodbath (22 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/neocloud-bloodbath-nbis-iren-crwv-170631338.html"
+    },
+    {
+      "title": "nai500: AI hyperscalers turn to debt as bond spreads widen (28 September 2026)",
+      "url": "https://nai500.com/blog/2026/09/ai-hyperscalers-turn-to-debt-as-bond-spreads-widen/"
+    },
+    {
+      "title": "Bloomberg Government: Why tech's AI borrowing binge is rattling markets (16 October 2026)",
+      "url": "https://news.bgov.com/insurance/why-techs-ai-borrowing-binge-is-rattling-markets-explainer"
+    }
+  ],
+  "ticker": "MSFT",
+  "verdict": "Preview",
+  "versus": "Pending — reports 28 October 2026 after the close",
+  "watch": [
+    "Azure constant-currency growth against 44% to 45% and any 2Q FY27 Azure guide.",
+    "Capex including finance leases, cash PP&E, finance leases and FCF for the quarter, plus any FY27 capex number.",
+    "Leases not yet commenced and purchase commitments in the 10-Q.",
+    "Commercial RPO, RPO excluding OpenAI and bookings.",
+    "Any statement on neocloud or third-party capacity, capacity timing in GW, and debt issuance plans."
+  ]
+}

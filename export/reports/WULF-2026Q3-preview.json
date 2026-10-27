@@ -1,0 +1,177 @@
+{
+  "brief": [
+    "Verdict ahead of the print: the reported numbers will be small and probably still loss-making at the EBITDA line; the stock will trade on Lake Mariner delivery dates and on how Justified gets financed.",
+    "Where expectations sit. Yahoo Finance shows a Q3 revenue consensus of $64.3M from 14 analysts (range $56.2M to $79.5M), against $44.8M in Q2 and $50.6M a year ago. EPS consensus is -$0.38, but only 2 analysts contribute. We could not find a published Q3 adjusted EBITDA consensus. Needham's full-year 2026 numbers ($230M revenue, $26M adjusted EBITDA, cut in August from $393M and $200M) imply the second half has to deliver roughly $151M of revenue against $78.8M in the first half, so most of the year's EBITDA must land in Q3 and Q4.",
+    "What the quarter should show. CB-3 was delivered in early July, lifting revenue-generating HPC capacity from 81 MW to 102 MW, so Q3 gets a full quarter of that step-up. CB-4's first hall was targeting its contractual milestone in late September, with the rest of CB-4 phased through Q4 and CB-5 starting in early January 2027. Those dates are already about one quarter later than planned because Fluidstack changed the design; TeraWulf says the new dates were mutually agreed, with no delay penalties. Bitcoin mining, $12.8M of Q2 revenue, is shrinking and bitcoin was trading near $80,000 to $82,000 in mid-October.",
+    "Three debates. First, delivery: did CB-4 hit its late-September milestone, and how many MW are paying rent at 30 September and at year-end? Another slip would push the 2026 numbers below even Needham's reduced estimates. Second, Justified financing: the 20-year Anthropic lease (about 401 MW, about $19B of initial contracted revenue) still lacked finalized investment-grade credit support as of KBW's July note, and Bloomberg reported a roughly $3.5B leveraged loan and high-yield package led by Morgan Stanley. That has to price into a market where CoreWeave's 2032 bonds traded as high as 15% yield and the 10-year Treasury sat around 5.0% to 5.4% in mid-October. Third, the balance sheet: at 30 June TeraWulf held about $3.0B of cash and restricted cash against about $3.11B of senior notes and $2.10B of convertibles, $1.10B of them classified as current. Q2 interest expense was $56.4M, more than the $44.8M of total revenue.",
+    "What would move the stock. Positive: a named credit-support provider for Justified, a priced debt deal with no parent guarantee, CB-4 rent commencing on time, and a new lease at Muskie, where contracted power doubled to 1 GW on 5 October. Negative: another Fluidstack slip, credit support that is only partial, or a financing plan that leans on equity with the stock near $12 (20 October close), well under half the $33.33 consensus target.",
+    "Kona read-through. TeraWulf's economics show what a long, hyperscaler-adjacent lease is worth (KBW's 18.3% trended yield on cost at $10M to $12M per net MW), and also that the lease alone does not unlock cheap debt without investment-grade credit support. Kona should treat the credit wrapper, not the lease rate, as the binding constraint."
+  ],
+  "checks": "No subagent was available, so I reopened every source myself and confirmed each number kept. Q2 release (EDGAR): revenue $44.8M, HPC $31.9M, adjusted EBITDA -$18.3M, net loss $940.8M, warrant loss $755.7M, about $3.0B cash and restricted cash, 81 MW to 102 MW, 336 MW under construction, CB-4 2H26 and CB-5 early 2027 (phased delivery start), Anthropic about 401 MW / 20 years / about $19B / up to about $33B, Justified timing, Google $600M, Abernathy about $530M (agreement, not closed), $8M to $10M per MW, 250 MW to 500 MW target, interest expense $56.4M. 10-Q: convertibles $1,102.0M current and $1,001.1M noncurrent, senior notes $90.7M and $3,019.3M, warrants $1,816.7M, depreciation $21.2M, H1 purchases of plant and equipment $1,378.5M, capex not yet paid $530.6M, all Core42 leases commenced. Needham article: estimate cuts, Q2 estimates, CB-4 and CB-5 timing, one-quarter slip, no penalties, $150M fit-out. KBW article: 18.3%, $10M to $12M per net MW (management guidance including smelter retirement), 85% NOI margin, 401/482 MW, no investment-grade support, Abernathy installments. Yahoo: $64.31M consensus, 14 analysts, range, year-ago $50.58M, no EBITDA estimate. MarketBeat: $14.685 on 5 October, $33.33 target. CoinDesk: Prager's comment of about $9M per MW, CoreWeave 2032 bonds as high as 15%, 10-year about 5.04% to 5.36%. Muskie 8-K: 1 GW, 2028 and 2029 phases. The roughly $3.5B financing appears only in Bloomberg as relayed by Stocktwits and is not in any filing (unverified). The $197 per kW-month figure is our own calculation. No Q3 adjusted EBITDA consensus was found. CB-4's September milestone has not been confirmed by any company announcement found.",
+  "date": "2026-10-21",
+  "headline": "Q3 is a delivery-and-funding test, not a revenue test: the market will judge whether CB-4 rent started on the slipped schedule and whether the Anthropic campus at Justified has signed credit support and debt at a price that still works.",
+  "kind": "preview",
+  "kona": "TeraWulf shows that a 20-year hyperscaler-tier lease earns a high-teens yield on cost, and that even so, the debt waits on investment-grade credit support. Kona, at tens of MW without a hyperscaler wrapper, should expect lenders to price the tenant, not the asset. That argues for prepayments, parent guarantees or letters of credit from any GPU-owner tenant before Kona commits capex. Lake Mariner's slip also argues for contract terms that make the tenant pay for design changes (as Fluidstack now does, at cost plus a margin) and that do not reset delivery penalties.",
+  "kpis": [
+    {
+      "consensus": "$64.3M (14 analysts, range $56.2M to $79.5M)",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "Year-ago Q3 2025 was $50.6M.",
+      "prior": "$44.8M (Q2 2026)"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "HPC lease revenue",
+      "note": "Q3 is the first full quarter with CB-3.",
+      "prior": "$31.9M (71% of total)"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "Bitcoin mining revenue",
+      "note": "Bitcoin traded near $80,000 to $82,000 in mid-October.",
+      "prior": "$12.8M"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "Adjusted EBITDA",
+      "note": "Needham full-year 2026 estimate is $26M.",
+      "prior": "-$18.3M"
+    },
+    {
+      "consensus": "-$0.38 (2 analysts)",
+      "current": "",
+      "metric": "EPS",
+      "note": "Warrant marks can swamp the GAAP result.",
+      "prior": "-$1.94 (incl. $755.7M warrant fair-value loss)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Revenue-generating HPC MW",
+      "note": "336 MW under construction across CB-4 and CB-5.",
+      "prior": "81 MW at 30 June; 102 MW after CB-3 in early July"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Interest expense",
+      "note": "Interest income was $29.0M in Q2.",
+      "prior": "$56.4M"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash and restricted cash",
+      "note": "H1 purchases of plant and equipment were $1.38B, plus $530.6M of capex incurred but not yet paid.",
+      "prior": "about $3.0B"
+    }
+  ],
+  "name": "TeraWulf",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "In August you told us CB-4's first hall would hit its contractual milestone in late September, after Fluidstack's design changes had already cost a quarter, and 2026 consensus EBITDA has fallen from about $200M to the mid-twenties. How many critical IT MW were paying rent on 30 September, and how many will be on 31 December? If any CB-4 hall is now expected to commence after 31 December, which halls, and how much annualized rent does that move into 2027?",
+      "style": "equity",
+      "why": "Q3 and Q4 have to carry almost all of 2026 EBITDA. A second slip would hurt credibility, because these dates are what support the 2027 and 2028 valuation."
+    },
+    {
+      "question": "KBW put the Anthropic lease at an 18.3% trended yield on cost, but in July there was still no finalized investment-grade credit support, and since then CoreWeave paper has traded at 15%. Is the Justified backstop signed, who provides it, and what share of the 20-year rent does it cover? What all-in coupon do you expect on the roughly $3.5B financing, and is it non-recourse to the parent? If the support is partial, will you fill the gap with a parent guarantee or with equity?",
+      "style": "credit",
+      "why": "The project's equity return depends on the spread between yield on cost and cost of debt. A partial wrapper or a parent guarantee would change the credit quality of the whole company."
+    },
+    {
+      "question": "At 30 June you had about $3.0B of cash and restricted cash, $1.10B of convertibles classified as current, $530.6M of capex incurred but not yet paid, and quarterly interest of $56.4M against $44.8M of revenue. Through which date are CB-4, CB-5 and Justified's equity share fully funded? Will you settle the current convertibles in cash or in shares? What is the maximum share issuance you would accept before Justified's debt closes?",
+      "style": "credit",
+      "why": "With the stock near $12, settling in shares and issuing equity is the main threat to per-share value."
+    }
+  ],
+  "risks": [
+    "Another Fluidstack-driven delay at CB-4 or CB-5.",
+    "Justified credit support ends up partial or delayed, which raises the coupon or requires a parent guarantee.",
+    "Convertible settlement or new equity issued with the stock near $12.",
+    "Bitcoin weakness speeds up the decline in mining revenue.",
+    "Warrant fair-value swings distort GAAP EPS."
+  ],
+  "sections": [
+    {
+      "body": "TeraWulf owns power-rich former industrial sites and leases finished data halls to AI tenants on 10-year to 20-year terms. The tenants supply their own GPUs. Revenue is fixed rent recognized straight-line, with power passed through at cost. Scale matters because each new site is financed largely against the tenant's credit or a third-party backstop, so contracted MW turn into debt capacity. Bitcoin mining is a shrinking legacy business.",
+      "title": "Business model"
+    },
+    {
+      "body": "Q3 revenue consensus is $64.3M (Yahoo Finance, 14 analysts) and EPS is -$0.38 (2 analysts); we could not find an adjusted EBITDA consensus. Needham cut 2026 to $230M revenue and $26M adjusted EBITDA in August, after Q2 missed its $50M revenue and $8.2M EBITDA estimates. The sell side is valuing 2027 and 2028 (Needham: 20x discounted 2028 EBITDA of $1.32B), so Q3 matters mainly as a check on whether the delivery schedule holds.",
+      "title": "What the market expects"
+    },
+    {
+      "body": "Lake Mariner (Fluidstack, Core42): 102 MW revenue-generating; CB-4 first hall due late September and the rest through Q4; CB-5 from early January 2027; build cost tracking about $9M per critical IT MW against $8M to $10M guidance (CEO, 15 October). Google's $600M credit support for Fluidstack became effective when CB-3 was delivered. Justified (Anthropic): about 401 MW net and 482 MW gross; initial delivery 2H 2027 and full delivery early 2028; Kentucky PSC approved the power agreement in August. By our calculation, $19B over 20 years averages about $197 per kW-month across the term; this is not a disclosed figure. Muskie: contracted power raised to 1 GW on 5 October, with the first 500 MW ramping in 2028 and the second 500 MW in 2029, subject to approval; no tenant yet. Abernathy: sale of the 50.1% stake to a Fluidstack-led group for about $530M, paid as $250M, $150M by 31 December 2026 and about $130M by 30 April 2027. Morgantown (Chesapeake): FERC authorized the acquisition on 29 July, with closing expected in 2H 2026.",
+      "title": "Drivers to watch"
+    },
+    {
+      "body": "At 30 June: about $3.0B of cash and restricted cash; senior notes of $3.11B; convertibles of $2.10B, of which $1.10B is current; warrant liabilities of $1.82B. Q2 interest expense was $56.4M against revenue of $44.8M, and depreciation was $21.2M. TeraWulf funded about $150M of Fluidstack fit-out through 30 June; Fluidstack pays for costs incurred after 5 July in cash plus a margin. According to Bloomberg via Stocktwits, the CFO plans a roughly $3.5B package for Justified (its first leveraged loan plus high-yield bonds, led by Morgan Stanley), but no deal has been announced. KBW said the main overhang is the lack of finalized investment-grade credit support, which depends on which chips Anthropic chooses.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "Credit markets for AI infrastructure have tightened: CoreWeave's 2032 bonds traded as high as 15% yield and the 10-year Treasury moved above 5%. The tenant has caused one schedule slip at Lake Mariner already. Interest expense exceeds revenue until CB-4 and CB-5 pay rent. The current convertibles may be settled in shares, which would dilute holders. Warrant marks make GAAP results volatile.",
+      "title": "Emerging risks"
+    },
+    {
+      "body": "MW paying rent at 30 September and 31 December; revised CB-4 and CB-5 dates; name, size and scope of the Justified credit support; coupon and recourse of the Justified debt; Abernathy cash received; Morgantown closing; first tenant at Muskie; progress against the 250 MW to 500 MW annual contracting target; interest expense against HPC revenue.",
+      "title": "Indicators to track"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "TeraWulf Q2 2026 earnings release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000162/a_wulfearningsreleaseq22026.htm"
+    },
+    {
+      "title": "TeraWulf Q2 2026 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000166/wulf-20260630.htm"
+    },
+    {
+      "title": "Muskie expansion to 1 GW press release (8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000162828026064757/muskieexpansionpr.htm"
+    },
+    {
+      "title": "Blockspace: KBW on Anthropic lease economics",
+      "url": "https://blockspace.media/insight/terawulf-anthropic-lease-economics-2026/"
+    },
+    {
+      "title": "Blockspace: Needham keeps $33 target despite estimate cuts",
+      "url": "https://blockspace.media/insight/needham-reiterates-terawulf-wulf-price-target-2026/"
+    },
+    {
+      "title": "CoinDesk live updates, 15 October 2026",
+      "url": "https://www.coindesk.com/business/2026/10/15/live-updates-bitcoin-back-under-usd81-000-as-ai-selloff-worsens"
+    },
+    {
+      "title": "Yahoo Finance WULF analysis (consensus)",
+      "url": "https://finance.yahoo.com/quote/WULF/analysis/"
+    },
+    {
+      "title": "MarketBeat, 5 October 2026",
+      "url": "https://www.marketbeat.com/instant-alerts/price-terawulf-nasdaq-wulf-stock-falls-52-heres-why-2026-10-05/"
+    },
+    {
+      "title": "Stocktwits on the $3.5B Justified debt plan (citing Bloomberg)",
+      "url": "https://stocktwits.com/news-articles/markets/equity/wulf-stock-jumps-7-percent-terawulf-3-5b-ai-data-centre-plan-retail-investors/cZmY5g0R7nn"
+    },
+    {
+      "title": "Finviz: Q3 2026 call scheduled",
+      "url": "https://finviz.com/news/401358/terawulf-schedules-conference-call-for-third-quarter-2026-financial-results"
+    }
+  ],
+  "ticker": "WULF",
+  "verdict": "preview",
+  "watch": [
+    "MW paying rent at quarter-end and the exit run-rate of HPC revenue.",
+    "Who provides the Justified backstop and what it covers.",
+    "Pricing and recourse of the Justified debt package.",
+    "Muskie tenant announcement.",
+    "Abernathy cash received and Morgantown closing."
+  ]
+}

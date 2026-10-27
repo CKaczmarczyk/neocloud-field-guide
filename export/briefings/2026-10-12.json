@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-12",
+  "items": [
+    {
+      "headline": "Lambda closes a $1B investment-grade GPU loan at 6.78% fixed",
+      "segment": "financing",
+      "source": "Lambda",
+      "summary": "A $1.008B delayed-draw term loan, rated Baa1 by Moody's and A (low) by DBRS, fixed at 6.78%, fully amortizing to May 2033, secured on the GPUs and contracts with two investment-grade customers; J.P. Morgan arranged it. Announced 1 October, slightly before this week's window, and not in last week's briefing.",
+      "url": "https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-fixed-rate-financing"
+    },
+    {
+      "headline": "Lambda raising up to $4B at $14.5B pre-money; IPO pushed to 2027",
+      "segment": "neocloud",
+      "source": "TechCrunch",
+      "summary": "Coatue and Blackstone are leading, per a WSJ report on an investor letter. The letter says backlog rose from $15B in June to $50B in September, mostly from a $35B Anthropic commitment signed in late August.",
+      "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo"
+    },
+    {
+      "headline": "CoreWeave enters India with 240 MW at AdaniConneX",
+      "segment": "neocloud",
+      "source": "CoreWeave",
+      "summary": "Announced 6 October: CoreWeave will be sole tenant of three 80 MW buildings at the Taloja campus in Navi Mumbai, first phase mid-2028, with an option to double to 480 MW. No dollar value disclosed.",
+      "url": "https://coreweave.com/news/coreweave-enters-india-expanding-ai-cloud-platform-with-adaniconnex"
+    },
+    {
+      "headline": "Anthropic reported to have signed a multiyear cloud deal with IREN",
+      "segment": "developer",
+      "source": "Dataconomy, citing The Information",
+      "summary": "The Information reported the deal over the weekend; IREN rose about 4% on 12 October. No value, MW or term was reported and neither company has confirmed it. Single paywalled source, read through secondary coverage.",
+      "url": "https://dataconomy.com/2026/10/12/anthropic-reportedly-signs-multiyear-cloud-deal-with-iren/"
+    },
+    {
+      "headline": "Galaxy: Helios Phase 2 delivers from Q2 2027; Helios 2 has 830 MW with no tenant",
+      "segment": "developer",
+      "source": "Benzinga (call transcript)",
+      "summary": "On its earnings call (about 7 October), Galaxy said Phase 2 adds 260 MW of critical IT for CoreWeave from Q2 2027, Phase 3 adds 133 MW in 2028, and it expects to deliver 800 gross MW to CoreWeave at Helios 1. Helios 2 has 830 MW approved, unleased, energizing late 2028. Build cost per MW not disclosed.",
+      "url": "https://benzinga.com/news/26/10/62240555/galaxy-digital-q2-2026-earnings-call-transcript"
+    },
+    {
+      "headline": "Oracle trucks in natural gas to keep data centers running while pipelines lag",
+      "segment": "energy",
+      "source": "Investing.com via Yahoo Finance, citing Bloomberg",
+      "summary": "Bloomberg reported on 8 October that trucked gas has run an Oracle site near Salt Lake City for over a year, is used at an OpenAI campus in Shackelford County, Texas, and is being considered for Project Jupiter in New Mexico after a pipeline slipped to next year. Bloom fell over 7.5% and Oracle over 5% that day.",
+      "url": "https://au.finance.yahoo.com/news/bloom-energy-shares-fall-report-175411214.html"
+    },
+    {
+      "headline": "HD Hyundai wins a $291M gas-engine order for US data centers",
+      "segment": "energy",
+      "source": "Korea Herald",
+      "summary": "HD Construction Equipment will supply 390 billion won (about $291M) of engines to ERock, which builds generator sets for US hyperscale data centers, for delivery in 2027-2028. New 1.5 MW and 3 MW engine models are planned for 2027 and 2028.",
+      "url": "https://www.koreaherald.com/article/10896120"
+    },
+    {
+      "headline": "Wells Fargo: over $20B of secured data center debt coming, priced by tenant",
+      "segment": "financing",
+      "source": "Yahoo Finance",
+      "summary": "Wells Fargo expects Applied Digital (about $8B), Core Scientific (about $5B) and TeraWulf ($3.5-4B) among issuers; AWS- or Nvidia-backed bonds yield about 6.8-7.2%, CoreWeave- or Oracle-backed about 8-9% or more. The 10-year Treasury reached 5.31% on 7 October, near its highest since 2002, and data center stocks fell 1-6% on 8 October on yields.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/wells-fargo-keeps-ai-hpc-153010388.html"
+    },
+    {
+      "headline": "Stargate Argentina: a year on, no construction and no RIGI filing",
+      "segment": "developer",
+      "source": "Chequeado",
+      "summary": "Chequeado reported on 10 October that the $25B, 500 MW Sur Energy project has no construction, no concrete investment and no RIGI application; the Economy Ministry reported no movement. OpenAI says it is only a possible buyer, contingent on the project being built. The Super RIGI is still in the Senate.",
+      "url": "https://chequeado.com/el-explicador/stargate-argentina-a-un-ano-del-anuncio-no-hay-avances-en-la-construccion-del-data-center-de-us-25-000-millones-para-openai/"
+    },
+    {
+      "headline": "Argentine country risk peaks at 655 bps, then eases to about 589",
+      "segment": "financing",
+      "source": "Infobae",
+      "summary": "JP Morgan's spread hit 655 bps on 2 October, a ten-month high, and fell to about 573-589 by 6 October as Brazil's election and central bank dollar purchases (close to $15B this year) helped. Economist Miguel Broda estimates usable dollar firepower at about $36B, well below the government's figures.",
+      "url": "https://www.infobae.com/economia/2026/10/06/mercados-vuelve-a-caer-fuerte-el-riesgo-pais-argentino-ante-una-mejoria-del-animo-inversor/"
+    }
+  ],
+  "kona": "The most useful datapoint for Kona this week is Lambda's $1B GPU loan: fixed 6.78%, rated Baa1, secured on the GPUs and on contracts with two investment-grade customers, which confirms that a contract with a strong buyer, not the site or the parent, is what gets debt near 7%. Wells Fargo's split (about 7% for AWS- or Nvidia-backed paper, 8-9% or more for CoreWeave- or Oracle-backed) and a 10-year Treasury above 5.3% mean the gap between a strong and a weak offtaker is widening, so Kona should keep putting offtaker credit ahead of headline price. Oracle trucking gas to keep sites running shows buyers will pay for power that arrives now, which favours Kona's on-site model, but Stargate Argentina has shown no progress in a year and country risk touched 655 bps, so Kona cannot lean on a local anchor project to validate Neuquén.",
+  "stale": "Players tab, Lambda: status line says in talks at $12B or more; the round is now up to $4B at $14.5B pre-money led by Coatue and Blackstone. Its capital list and the Financing tab debt row cite only the $926M loan at SOFR + 300; add the $1.008B fixed 6.78% loan rated Baa1. Its Anthropic line says neither company has announced the $35B deal; Lambda's investor letter now cites a $35B Anthropic commitment (reported, still not announced publicly). Start here tab, point 3, lists Lambda as reported; same caveat. Players tab, IREN: the new unnamed frontier AI lab is now reported to be Anthropic (unconfirmed). Players tab, Galaxy: 526 MW leased should reflect Galaxy's statement that it expects to deliver 800 gross MW to CoreWeave at Helios 1, plus 830 MW unleased at Helios 2. Players tab, CoreWeave: add the 240 MW India campus with AdaniConneX. Kona tab, Argentina section: country risk high is now 655 bps on 2 October (not 641 on 28 September), and Stargate Argentina should be described as showing no progress or RIGI filing one year on.",
+  "title": "Investment-grade GPU debt at 6.78% while rates hit 24-year highs; Stargate Argentina still idle"
+}

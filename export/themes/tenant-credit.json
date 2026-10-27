@@ -1,0 +1,92 @@
+{
+  "evidence": [
+    {
+      "claim": "3Q26 10-Q: data center financing 'has generally become more difficult'; neoclouds, colocation providers and other tenants are increasingly viewed as high credit risks, which may cancel projects and push developers to negotiate lower equipment prices.",
+      "company": "Bloom Energy",
+      "date": "2026-10-22",
+      "direction": "supports",
+      "numbers": "A Brookfield-affiliated financing vehicle was 26% of 3Q revenue and the largest receivable (31%); the supplier is carrying more of the working capital (contract assets $858.6mn).",
+      "segment": "energy",
+      "source": "Bloom 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm"
+    },
+    {
+      "claim": "Meta backs two off-balance-sheet JV campuses (Louisiana/Hyperion, Texas/El Paso) with 4-year initial leases plus residual value guarantees. Partners and their lenders fund 80%, and the leases and guarantees of an AA- tenant carry the debt.",
+      "company": "Meta Platforms",
+      "date": "2026-10-22",
+      "direction": "supports",
+      "numbers": "Max RVG $41.49bn at 30 Sep 2026 vs $28.09bn at YE25; total max exposure $68.40bn; development cost ~$27bn and ~$14bn.",
+      "segment": "financing",
+      "source": "Meta 3Q26 10-Q, Note 5",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+    },
+    {
+      "claim": "The tenant's own credit is drifting: Meta had negative free cash flow, moved to net debt, and created non-voting Class C stock for capital raising, among other purposes (also employee compensation, acquisitions, general corporate purposes). Management said it has no specific financing plans.",
+      "company": "Meta Platforms",
+      "date": "2026-10-21",
+      "direction": "neutral",
+      "numbers": "FCF -$2.12bn; cash and securities $82.45bn vs debt $83.67bn; capex $34.91bn = 106% of OCF.",
+      "segment": "financing",
+      "source": "Meta 3Q26 8-K Ex.99.1; 3Q26 call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    },
+    {
+      "claim": "AMD agreed credit support for TensorWave's 222 MW lease at Fermi, a chip supplier standing behind a neocloud tenant.",
+      "company": "Fermi America",
+      "date": "2026-10-13",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Weekly briefing, 19 Oct"
+    },
+    {
+      "claim": "Wells Fargo puts AWS- or Nvidia-backed data center bonds at about 6.8–7.2% and CoreWeave- or Oracle-backed at 8–9% or more.",
+      "company": "Market",
+      "date": "2026-10-12",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Weekly briefing, 12 Oct (Wells Fargo)"
+    },
+    {
+      "claim": "Project debt backed by Google-supported and investment-grade leases priced at about 6.1–6.2%.",
+      "company": "Hut 8",
+      "date": "2026-09-28",
+      "direction": "supports",
+      "segment": "developer",
+      "source": "TechTimes",
+      "url": "https://www.techtimes.com/articles/328138/20260928/hut-8-closes-two-tier-ai-data-center-finance-stack-jpmorgan-leads-12-bank-revolver.htm"
+    },
+    {
+      "claim": "A facility backed by three-year contracts with weaker customers priced at SOFR + 550 bps and had to widen in syndication.",
+      "company": "CoreWeave",
+      "date": "2026-08-11",
+      "direction": "supports",
+      "segment": "neocloud",
+      "source": "TheEnergyMag",
+      "url": "https://www.theenergymag.com/news/2026-08-11/coreweave-ai-2-6-billion-wider-spread"
+    },
+    {
+      "claim": "Phase II notes against an unbacked CoreWeave lease priced at 9.875%, the most expensive project debt among landlords.",
+      "company": "Galaxy",
+      "date": "2026-07-24",
+      "direction": "supports",
+      "segment": "developer",
+      "source": "CryptoSlate",
+      "url": "https://cryptoslate.com/the-brutal-346m-math-behind-galaxys-high-stakes-race-to-build-coreweaves-texas-ai-mega-center/"
+    },
+    {
+      "claim": "A facility backed by one investment-grade customer priced at SOFR + 225 bps, rated A3.",
+      "company": "CoreWeave",
+      "date": "2026-03-01",
+      "direction": "supports",
+      "segment": "neocloud",
+      "source": "CoreWeave",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"
+    }
+  ],
+  "order": 1,
+  "question": "Does the tenant's credit, not the asset, set what developers and neoclouds pay to borrow?",
+  "status": "strengthening",
+  "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler backstop prices near 6–7%; the same assets against weaker tenants pay 9–10% or more. October's selloff widened the gap.",
+  "title": "Tenant credit sets the cost of capital",
+  "updated": "2026-10-23"
+}

@@ -1,0 +1,551 @@
+{
+  "brief": [
+    "Verdict ahead of the print: Helios has turned from a construction project into a rent-paying asset, but the market is pricing the tenant, not the building. Expect the quarter to confirm Phase I's economics; the stock will move on what Galaxy says about CoreWeave exposure, Phase III funding and the 830 MW.",
+    "Where expectations sit. EPS consensus ranges from -$0.13 (Zacks, 13 October, stale) to +$0.04 (Yahoo, 22 October, 14 analysts, range -$0.44 to +$0.49), with Benzinga at -$0.06; revisions are moving up (Yahoo -$0.08 thirty days ago). That compares with -$0.09 in 2Q26 and $1.12 adjusted a year ago. Revenue consensus ($9.04bn or $8.58bn) is gross crypto trading revenue and says nothing about earnings power. We found no adjusted EBITDA or Data Centers consensus, so management's guide is the bar: about $80mn of Phase I leasing revenue a quarter at a project-level margin above 90%. Bitcoin rose about 43% in the quarter, so the Treasury and Corporate marks should help, though some holdings are carried under impairment accounting.",
+    "Helios economics. Phase I: 133 MW, cost $1.8bn, $315mn average annual base revenue (about $197 per kW-month, a 17.5% average yield on cost). Contracted minimum cash rent is lower in the early years: $259.1mn in 2027, or about $162 per kW-month. The $80mn quarterly figure is straight-line revenue. Phase II: 260 MW, estimated cost $4.0bn, $690mn average revenue, 13.7% starting yield, funded by the 9.875% notes. On Galaxy's own schedule, debt service coverage is only about 1.2x to 1.3x in 2029 to 2031, and about $3.05-3.2bn of notes remain at the August 2031 maturity ($3,215mn at end-2030, $3,048mn at end-2031). Phase III (133 MW, 2028) still needs debt; at Phase II costs that is roughly a $2bn build (our estimate).",
+    "Three debates. First, CoreWeave: all 526 MW rests on one tenant whose CDS is about 1,100bp; what security protects Galaxy and its noteholders? Second, funding: Phase III debt, $445mn of 2026 exchangeable notes maturing within weeks (exchange price about $33, stock about $17), $1.49bn of open construction commitments, and an unused $500mn ATM. Third, Helios II: Citi expects a tenant within six months, but power arrives in late 2028 and Texas has paused new large-load approvals until mid-December.",
+    "What would move the stock. Positive: rent at or above the guide with cash collection disclosed, named tenant security or a stronger-credit backstop, a Helios II lease with an investment-grade tenant or wrap, and Phase III debt with no equity. Negative: any change to CoreWeave lease terms, equity issuance near $17, a Phase III cost or schedule slip, or silence on tenant protections.",
+    "Kona read-through. A neocloud's credit passes straight through to its landlord's equity and bonds, even while rent is being paid. Kona should require security that survives a tenant restructuring before committing capex for a single neocloud tenant. Galaxy's late-2028 grid power also shows the value of faster off-grid time-to-power."
+  ],
+  "changes": [
+    "Phase I (133 MW) is in service: management guides about $80mn of quarterly leasing revenue at a project-level margin above 90% from 3Q26, against $18.9mn of lease revenue in the 2Q26 ramp quarter.",
+    "Phase II is funded by $3.507bn of 9.875% senior secured notes due August 2031 (closed 28 July), at an 85% loan-to-cost per the call (87.7% against the $4.0bn estimated cost) with an uncapped completion guarantee from the parent partnership; first halls are due 2Q27.",
+    "CoreWeave's credit has sold off: five-year CDS about 1,100bp and 2032 notes at 80.5 cents (14.7%). GLXY fell 31% from the end of September to 19 October, in step with CRWV.",
+    "The Texas audit has paused ERCOT's Batch Zero until mid-December, which holds back Helios III and the new sites; Helios II (830 MW, approved) energizes in late 2028 and has no tenant.",
+    "Bitcoin rose about 43% in the quarter and EPS estimates are moving up: consensus runs from -$0.13 (Zacks, 13 Oct, stale) to +$0.04 (Yahoo, 22 Oct, 14 analysts), with Benzinga at -$0.06; Yahoo's figure was -$0.01 seven days ago and -$0.08 thirty days ago."
+  ],
+  "checks": "No subagent was available, so I listed every number with its source in figures.md, reopened each source and recomputed the derived numbers in code (calc.py).\n\nEDGAR filings, downloaded and searched as text:\n- 2Q26 release: EPS -$0.09; adjusted EBITDA -$77mn; Data Centers adjusted gross profit $20mn and adjusted EBITDA $11mn; lease revenue $18.9mn; capex $448mn; 133 MW delivered; about $80mn a quarter and over 90% from 3Q26; $2,459mn cash and stablecoins; 830 MW uncontracted; 5.7 GW pipeline; Phase II halls from 2Q27; 391.4mn A and B shares.\n- Overview deck: Phase I $315mn average revenue and $1.8bn cost; Phase II $690mn and $4.0bn; 5,730 MW.\n- 10-Q: minimum lease income $126.9mn, $259.1mn and $3,820.1mn; $150mn deferred rent; $1,489.2mn of commitments; $445.0mn of notes in the less-than-one-year bucket (2026 exchangeable notes); exchange rates; Deutsche Bank loan at SOFR+4.75% with $28.4mn interest cost; no ATM sales through 30 June; 1,260,888 shares repurchased; Texas audit risk factor.\n- Notes 8-Ks: 99.5% issue price; 9.875%; maturity 1 August 2031; 4.00% amortization; uncapped completion guarantee.\n- Offering deck: 13.7% starting yield; $10.4bn minimum payments; 3-5% escalator; $15 per kW-month opex; rent, NOI, interest, amortization and debt schedule.\n- 3Q25 release: EPS $1.12 adjusted; $505mn net income; $629mn adjusted EBITDA; $318mn Digital Assets gross profit; $28.40bn revenues.\n\nRecomputed in code:\n- Phase II rent for 2027-2043 sums to $10,351mn, consistent with $10.4bn.\n- DSCR 1.40x, 1.22x, 1.29x and 1.28x for 2028-2031.\n- $/kW-month: Phase I $197 average and $162 cash in 2027; Phase II $221 average and $181 in 2029; $190 across all three phases.\n- Yields on cost 17.5%, 17.25% and 14.4%.\n- Exchange prices $33.34, $23.81 and $55.76.\n- Equity value $6.63bn at $16.93.\n- BTC +42.7% and SOL +60.5% in 3Q26.\n- GLXY -30.9% from 30 September to 19 October.\n- Zacks-implied year-ago EPS $1.12, which matches the filing.\n\nMarket prices: GLXY closed at $16.93 on 21 October (Yahoo chart API, matching Defense World's $16.93 open and Benzinga's -5.08% to $16.07 on 22 October). The ca.finance.yahoo page showed a stale $21.11, which I discarded. CoreWeave bonds and CDS come from Benzinga (21 October).\n\nUnverified or single source:\n- Helios II notes at 10.68% / 559bp: as of 28 September, relayed by a Moomoo post citing Morgan Stanley. No 21-22 October price was found.\n- Texas audit dates (reports by 10 December; Batch Zero mid-December) come from Inside Climate News (24 August) only.\n- Call quotes and details (late-2028 Helios II energization, over $180mn of deposits, 85% loan-to-cost (call figure; the $3.507bn notes are 87.7% of the $4.0bn estimated cost), no equity need, Helios III security) come from the Motley Fool transcript via an extraction tool, not a full read.\n- Citi's six-month tenant view is single source (CoinGape).\n- The 2026 exchangeable notes' maturity month is not stated in the 10-Q.\n- No consensus for adjusted EBITDA, Data Centers or capex was found.\n- Phase III cost of about $2bn and the straight-line explanation of the $80mn guide are our own estimates.\n\nIndependent subagent verifier reviewed against EDGAR and market pages on 22 Oct 2026; fixes applied (EPS consensus restated as a range including Yahoo +$0.04 on 22 Oct, FY26 -$0.77 added, 2031 notes outstanding as $3.05-3.2bn, 2026 exchangeables maturing within weeks, 85% LTC flagged as a call figure, Data Centers adjusted EBITDA $11mn). The Yahoo 22 Oct figures were supplied by the verifier; my own Yahoo page fetch had failed.",
+  "consensus_thesis": "Investors own Galaxy as a crypto franchise with a contracted Helios annuity underneath; at $16.93 the price roughly equals contracted Helios value, so the debate is whether CoreWeave's credit stress makes that annuity worth less than the sell side assumes.",
+  "date": "2026-10-22",
+  "headline": "3Q26 is the first full quarter of Helios rent, but the stock will trade on CoreWeave's credit: investors want to know whether the roughly $80mn-a-quarter Phase I annuity and the debt-funded Phase II and III build hold up for a landlord whose only tenant's bonds now yield about 15%.",
+  "kind": "preview",
+  "kona": "Galaxy shows that a neocloud's credit passes straight through to its landlord. Rent is being paid on time, yet GLXY fell 31% with CoreWeave, and the 9.875% Helios II debt priced before the tenant's bonds fell to about 15%. Kona, at tens of MW, should not commit capex for a single neocloud tenant without security that survives a tenant restructuring: prepayments, letters of credit, or a guarantee from a stronger party. Galaxy's 830 MW of approved grid power is still unleased because it energizes in late 2028 and Texas has gated large loads, which supports Kona's time-to-power case if its gas permits move faster than an ERCOT queue.",
+  "kpis": [
+    {
+      "consensus": "-$0.13 (Zacks, 13 Oct, stale) to +$0.04 (Yahoo, 22 Oct, 14 analysts, range -$0.44 to +$0.49); Benzinga -$0.06",
+      "current": "",
+      "metric": "Adjusted / diluted EPS",
+      "note": "Revisions moving up: Yahoo -$0.01 seven days ago, -$0.08 thirty days ago. Year-ago 3Q25 adjusted EPS $1.12. FY26 consensus -$0.71 (MarketBeat) or -$0.77 (Yahoo, 14 analysts).",
+      "prior": "-$0.09 (2Q26)"
+    },
+    {
+      "consensus": "$9.04bn (Benzinga); $8.58bn (Zacks)",
+      "current": "",
+      "metric": "Revenues (gross)",
+      "note": "Gross trading revenue; not a measure of earnings power. Year-ago $28.40bn.",
+      "prior": "$8.56bn"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "Firm adjusted EBITDA",
+      "note": "Year-ago $629mn.",
+      "prior": "-$77mn"
+    },
+    {
+      "consensus": "about $80mn (company guide)",
+      "current": "",
+      "metric": "Data Centers lease revenue",
+      "note": "10-Q minimum lease income implies about $63mn a quarter of contracted cash rent in 2H26.",
+      "prior": "$18.9mn (ramp quarter)"
+    },
+    {
+      "consensus": "project-level margin above 90% (company guide)",
+      "current": "",
+      "metric": "Data Centers adjusted EBITDA / project-level margin",
+      "note": "Project-level margin excludes overhead.",
+      "prior": "$11mn"
+    },
+    {
+      "consensus": "no change until 2Q27",
+      "current": "",
+      "metric": "Delivered / contracted critical IT",
+      "note": "830 MW of approved Helios power uncontracted.",
+      "prior": "133 MW / 526 MW"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "Data Centers capex",
+      "note": "Management said capex will keep rising; $1,489.2mn of Helios commitments at 30 June.",
+      "prior": "$448mn (1Q26 $354mn)"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "Digital Assets adjusted gross profit",
+      "note": "Year-ago 3Q25 $318mn (3Q25 release); Q2 trading volumes down 7% QoQ.",
+      "prior": "$66mn"
+    },
+    {
+      "consensus": "not found",
+      "current": "",
+      "metric": "Treasury and Corporate adjusted gross profit",
+      "note": "BTC up about 43% and SOL up about 60% in 3Q26 (Yahoo price data).",
+      "prior": "-$42mn"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash and stablecoins",
+      "note": "Before the Helios II notes proceeds (closed 28 July).",
+      "prior": "$2,459mn"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Notes payable, principal",
+      "note": "Plus $3,507mn of Helios II notes issued 28 July.",
+      "prior": "$3,415.8mn, of which $445.0mn of 2026 exchangeable notes maturing in 2026"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Class A plus Class B shares",
+      "note": "1.26mn repurchased in August; $500mn ATM unused through 30 June.",
+      "prior": "391.4mn"
+    }
+  ],
+  "monitor": [
+    "Data Centers lease revenue and adjusted EBITDA against the roughly $80mn and above-90% guide, and any disclosure of cash rent received or of tenant security.",
+    "Phase III debt plan and repayment of the $445mn of 2026 exchangeable notes maturing within weeks (cash or ATM).",
+    "Helios II tenant news and Texas audit or Batch Zero timing."
+  ],
+  "name": "Galaxy Digital",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "Your 10-Q shows contracted minimum lease income of $126.9mn for 2H26, about $63mn a quarter, and $259.1mn for 2027, yet you guide about $80mn a quarter of leasing revenue, so roughly $15mn a quarter is straight-line accrual. What cash rent did CoreWeave pay in 3Q26, is it current on every payment, and how large is the straight-line receivable at 30 September? Will you report cash rent collected every quarter from now on?",
+      "style": "equity",
+      "why": "Tests pillar 1. With CoreWeave's CDS near 1,100bp, cash collection and a growing receivable are the first signs of tenant stress, and the gap between accrual and cash is what a bondholder would watch."
+    },
+    {
+      "question": "The Helios II notes priced at 9.875% at what you called an 85% loan-to-cost (87.7% against the $4.0bn estimated cost), and your offering deck shows debt service coverage of only 1.22x in 2029, while CoreWeave's 2032 notes now trade at 80.5 cents. What tenant security exists across Phases I to III (deposits, letters of credit, guarantees), and in what dollar amount? If CoreWeave rejected the leases in a restructuring, how long would re-leasing take and at what rent? Yes or no: is any part of the CoreWeave obligation backed by an investment-grade party?",
+      "style": "credit",
+      "why": "Tests pillar 3. A thin coverage ratio leaves little room for a rent cut. Recovery depends on security and on re-leasing value, not on the headline lease value."
+    },
+    {
+      "question": "Phase III still needs its debt, and at Phase II's roughly $15.4mn per MW it is about a $2bn build. At what loan-to-cost and coupon do you expect to close it now that CoreWeave-tenant debt has repriced, and by what date must it close to hold rent commencement in 2028? Your deck also leaves about $3.05-3.2bn of Helios II notes outstanding at the August 2031 maturity. What remaining lease term will back that refinancing?",
+      "style": "credit",
+      "why": "Tests pillar 2 and the no-equity promise. A wider spread on Phase III, or a 2031 refinancing against a shorter remaining lease, cuts equity returns or pushes the parent into the funding."
+    },
+    {
+      "question": "$445mn of 2026 exchangeable notes matures in 2026, within weeks, at an exchange price of about $33.34, against a share price of $16.93, and $1.49bn of Helios construction commitments are open. Will you repay from the $2.46bn of cash and stablecoins, refinance, or draw on the $500mn ATM, and did you sell any ATM shares in 3Q26? How much of that cash does the trading business need to keep?",
+      "style": "credit",
+      "why": "With the stock down 31% in three weeks, the choice between cash and equity sets dilution risk for shareholders and liquidity cover for creditors."
+    },
+    {
+      "question": "Citi expects a Helios II tenant within six months, but you said energization is slated for late 2028 and ERCOT's audit runs to about 10 December. Do you have an LOI or exclusivity on any of the 830 MW, and with what kind of counterparty? Would you lease to another neocloud only with an investment-grade wrap? Will you sign before Helios III's Batch Zero status is known?",
+      "style": "equity",
+      "why": "Tests pillar 4. A second tenant with stronger credit is the cleanest answer to the concentration discount, while another unwrapped neocloud would deepen it."
+    }
+  ],
+  "risks": [
+    "CoreWeave credit event or lease renegotiation (single tenant for all 526 MW).",
+    "Phase III debt costs more, or needs parent support, after CoreWeave-tenant debt repriced.",
+    "Equity issuance near $17 to repay the 2026 exchangeable notes or fund construction.",
+    "Texas audit and Batch Zero delays push out Helios III and the new sites; Helios II stays unleased.",
+    "Crypto prices and trading volumes swing reported EPS; an accounting-officer change took effect 30 September."
+  ],
+  "sections": [
+    {
+      "body": "Galaxy has two engines. The crypto franchise (trading, lending, asset management, staking) and the Treasury book drive reported earnings and swing with digital asset prices. The data center business is a single-tenant landlord at Helios in West Texas: 526 MW of critical IT leased to CoreWeave on near-triple-net 15-year leases with 3-5% escalators. Each phase sits in its own project subsidiary with secured debt, so equity returns depend on yield on cost (about 14-17%) exceeding the cost of debt (8.7% on the Phase I loan; 9.875% on the Phase II notes), and on CoreWeave paying.",
+      "title": "Business model"
+    },
+    {
+      "table": {
+        "head": [
+          "Metric",
+          "2Q26 actual",
+          "3Q26 consensus or guide",
+          "Source and date"
+        ],
+        "rows": [
+          [
+            "Adjusted / diluted EPS",
+            "-$0.09",
+            "-$0.13 to +$0.04; Benzinga -$0.06; revisions moving up",
+            "Zacks 13 Oct (stale); Yahoo 22 Oct (14 analysts); Benzinga 22 Oct"
+          ],
+          [
+            "Revenues (gross)",
+            "$8.56bn",
+            "$9.04bn / $8.58bn",
+            "Benzinga; Zacks"
+          ],
+          [
+            "Firm adjusted EBITDA",
+            "-$77mn",
+            "n.a.",
+            "not found"
+          ],
+          [
+            "Data Centers lease revenue",
+            "$18.9mn",
+            "about $80mn (guide)",
+            "2Q26 release, 5 Aug"
+          ],
+          [
+            "Project-level EBITDA margin",
+            "n.a.",
+            "above 90% (guide)",
+            "2Q26 release"
+          ],
+          [
+            "Delivered / contracted critical IT",
+            "133 / 526 MW",
+            "unchanged",
+            "2Q26 release"
+          ],
+          [
+            "Data Centers capex",
+            "$448mn",
+            "n.a. (rising)",
+            "2Q26 call"
+          ],
+          [
+            "FY26 EPS",
+            "H1 -$0.58",
+            "-$0.71 / -$0.77",
+            "MarketBeat via Defense World, 22 Oct; Yahoo, 22 Oct (14 analysts)"
+          ],
+          [
+            "Average price target",
+            "",
+            "$40.50 / $37.00",
+            "Benzinga; MarketBeat"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "1 Phase I annuity",
+            "About $80mn a quarter at a margin above 90% from 3Q26",
+            "Data Centers revenue and adjusted EBITDA against the guide; cash rent disclosure",
+            "Company; Benzinga; Citi"
+          ],
+          [
+            "2 Phase II on time and funded",
+            "First halls 2Q27; notes cover the build; no equity",
+            "Capex, cost against $4.0bn, schedule under HITT",
+            "Company"
+          ],
+          [
+            "3 CoreWeave pays",
+            "Lease cash flows are safe despite tenant credit stress",
+            "Lease terms, security, payment status",
+            "StoneX (single source); contested by the market"
+          ],
+          [
+            "4 Helios II catalyst",
+            "830 MW tenant within about six months, possibly wrapped",
+            "LOI or lease; tenant type; Texas audit timing",
+            "Citi (single source); company"
+          ],
+          [
+            "5 Crypto drives EPS",
+            "Reported EPS swings with crypto; consensus -$0.13 to +$0.04, revisions moving up",
+            "Digital Assets gross profit against $66mn; Treasury marks",
+            "Zacks; Benzinga"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Share price roughly equals contracted Helios value; crypto gets about zero value (StoneX; Benchmark SOTP about $21 a share)",
+            "526 MW on one tenant whose CDS is about 1,100bp"
+          ],
+          [
+            "Phase I delivered on schedule and on budget; Helios I economics better than Citi expected",
+            "Rising CoreWeave borrowing costs raise doubts about long-term commitments (Benzinga)"
+          ],
+          [
+            "CoreWeave backlog $104bn; firm GPU pricing; no missed payments to Galaxy (StoneX)",
+            "Targets cut by Piper ($33 to $25) and Morgan Stanley ($48 to $43); Zacks Rank #4"
+          ],
+          [
+            "830 MW of approved power when power is scarce; tenant possible within six months (Citi)",
+            "Texas audit pauses Batch Zero until mid-December; Helios II energizes late 2028"
+          ],
+          [
+            "2Q26 EPS beat the -$0.36 consensus (Zacks, MarketBeat)",
+            "Crypto-driven earnings swings: 2Q26 net loss $85mn against $505mn net income a year earlier"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1. CoreWeave credit: what protects Helios cash flows and the Helios II noteholders (coverage of only about 1.2x to 1.3x in 2029 to 2031 on Galaxy's own schedule) if the tenant restructures? 2. Funding: Phase III debt (roughly $2bn build, our estimate), $445mn of 2026 exchangeable notes maturing within weeks, $1.49bn of open commitments and an unused $500mn ATM, all with the stock near $17. 3. Helios II: is a tenant for the 830 MW signed within six months, and is it investment-grade or a wrapped neocloud, given late-2028 power and the Texas audit?",
+      "title": "Live debates"
+    },
+    {
+      "table": {
+        "head": [
+          "Phase",
+          "Critical IT MW",
+          "Tenant",
+          "Avg. annual base revenue",
+          "Cost",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Phase I",
+            "133",
+            "CoreWeave, 15 years",
+            "$315mn (about $197 per kW-month)",
+            "$1.8bn",
+            "Deutsche Bank loan up to $1.4bn, SOFR+4.75%, matures Aug 2028",
+            "In service; rent from 2Q26"
+          ],
+          [
+            "Phase II",
+            "260",
+            "CoreWeave, 15 years",
+            "$690mn (about $221 per kW-month)",
+            "$4.0bn (est.)",
+            "$3.507bn 9.875% notes due Aug 2031; 85% LTC per the call (87.7% against $4.0bn est. cost); completion guarantee",
+            "Under construction; first halls 2Q27, last early 2028"
+          ],
+          [
+            "Phase III",
+            "133",
+            "CoreWeave, 15 years",
+            "not disclosed",
+            "not disclosed (about $2bn at Phase II cost, our estimate)",
+            "Debt to be raised; no equity planned",
+            "Rent through 2028"
+          ],
+          [
+            "Helios II",
+            "830 MW gross approved",
+            "none",
+            "n.a.",
+            "n.a.",
+            "n.a.",
+            "Energization late 2028; over $180mn of equipment deposits"
+          ],
+          [
+            "Helios III / IV; Merlin; Caspian; Selene",
+            "1,000 / 1,000; 74 to 500; about 700; about 900 MW gross",
+            "none",
+            "n.a.",
+            "n.a.",
+            "n.a.",
+            "ERCOT process; Texas audit"
+          ]
+        ]
+      },
+      "title": "Helios by phase"
+    },
+    {
+      "table": {
+        "head": [
+          "Item",
+          "Source A",
+          "Source B"
+        ],
+        "rows": [
+          [
+            "3Q26 EPS consensus",
+            "-$0.13 (Zacks, 13 Oct, stale); -$0.06 (Benzinga, 22 Oct)",
+            "+$0.04 (Yahoo, 22 Oct, 14 analysts; -$0.08 thirty days ago)"
+          ],
+          [
+            "FY26 EPS consensus",
+            "-$0.71 (MarketBeat, 22 Oct)",
+            "-$0.77 (Yahoo, 22 Oct, 14 analysts)"
+          ],
+          [
+            "3Q26 revenue consensus",
+            "$9.04bn (Benzinga)",
+            "$8.58bn (Zacks)"
+          ],
+          [
+            "2Q26 consensus EPS",
+            "-$0.05, a miss (Benzinga)",
+            "-$0.36, a beat (Zacks, MarketBeat)"
+          ],
+          [
+            "Average price target",
+            "$40.50 (Benzinga)",
+            "$37.00 (MarketBeat)"
+          ],
+          [
+            "Morgan Stanley cut date",
+            "12 Oct (Benzinga)",
+            "9 Oct (Defense World)"
+          ],
+          [
+            "Helios value",
+            "Undervalued; crypto at zero (StoneX)",
+            "Targets cut on sentiment (Piper, Morgan Stanley)"
+          ]
+        ]
+      },
+      "title": "Where sources disagree"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Question (short)"
+        ],
+        "rows": [
+          [
+            "1",
+            "Cash rent collected in 3Q26 against the roughly $80mn straight-line guide; size of the receivable"
+          ],
+          [
+            "3 (credit)",
+            "Dollar amount of tenant security; re-leasing time and rent; any investment-grade backing"
+          ],
+          [
+            "2 (credit)",
+            "Phase III loan-to-cost, coupon and deadline; remaining lease term behind the 2031 refinancing"
+          ],
+          [
+            "Funding (credit)",
+            "Repaying the $445mn of 2026 exchangeable notes (maturing within weeks): cash, refinancing or ATM; any 3Q26 ATM sales"
+          ],
+          [
+            "4",
+            "Helios II LOI or exclusivity; tenant type and wrap; timing against the Texas audit"
+          ]
+        ]
+      },
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Galaxy 2Q26 earnings release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"
+    },
+    {
+      "title": "Galaxy 2Q26 overview deck (8-K Ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+    },
+    {
+      "title": "Galaxy 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000091/glxy-20260630.htm"
+    },
+    {
+      "title": "Helios II notes closing 8-K, 28 July 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000079/glxy-20260728.htm"
+    },
+    {
+      "title": "Helios II notes pricing release, 23 July 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000074/exhibit991-pressreleasepri.htm"
+    },
+    {
+      "title": "Helios II notes investor presentation, July 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000068/launch8-kexhibit99172226.htm"
+    },
+    {
+      "title": "ATM program 8-K, 8 May 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000162828026032991/glxy-20260508.htm"
+    },
+    {
+      "title": "Galaxy 3Q25 earnings release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939225000073/glxy-20250930xpressrelease.htm"
+    },
+    {
+      "title": "2Q26 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/12/galaxy-digital-glxy-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "Finviz: 3Q26 call scheduled",
+      "url": "https://finviz.com/news/402092/galaxy-schedules-webcast-and-investor-call-to-review-third-quarter-2026-results-on-october-27-2026"
+    },
+    {
+      "title": "Benzinga earnings preview, 22 October 2026",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62522586/galaxy-digital-earnings-are-less-than-a-week-away-heres-what-investors-should-know"
+    },
+    {
+      "title": "Zacks preview via Yahoo Finance, 13 October 2026",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/analysts-estimate-galaxy-digital-inc-130014715.html"
+    },
+    {
+      "title": "Defense World (MarketBeat data), 22 October 2026",
+      "url": "https://www.defenseworld.net/2026/10/22/investors-buy-large-volume-of-galaxy-digital-call-options-nasdaqglxy.html"
+    },
+    {
+      "title": "The Block: StoneX on Helios and CoreWeave, 19 October 2026",
+      "url": "https://www.theblock.co/news/markets/2026-10-19-galaxy-digital-glxy-stonex-buy-coreweave-helios-ai-data-center-421045"
+    },
+    {
+      "title": "Investing.com: StoneX reiterates, 19 October 2026",
+      "url": "https://www.investing.com/news/analyst-ratings/stonex-reiterates-galaxy-digital-stock-rating-on-tenant-concerns-93CH-4957981"
+    },
+    {
+      "title": "Benzinga: Galaxy drops 30% in two weeks, 19 October 2026",
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/10/62449953/galaxy-digital-drops-30-in-2-weeks-what-is-going-on"
+    },
+    {
+      "title": "CoinGape: Citi upgrade, 13 October 2026",
+      "url": "https://coingape.com/citi-upgrades-galaxy-digital-to-buy-raises-glxy-price-target-to-28/"
+    },
+    {
+      "title": "GuruFocus: Piper Sandler target cut, 20 October 2026",
+      "url": "https://www.gurufocus.com/news/9131960/glxy-maintained-by-piper-sandler-price-target-lowered-to-25"
+    },
+    {
+      "title": "The Block: Benchmark sum-of-the-parts, January 2026",
+      "url": "https://www.theblock.co/post/387240/benchmark-buy-galaxy-digital-helios-expansion-underpriced-upside"
+    },
+    {
+      "title": "Benzinga: CoreWeave bonds, 21 October 2026",
+      "url": "https://www.benzinga.com/markets/bonds/26/10/62503267/coreweave-bonds-spacex-results-treasury-yield"
+    },
+    {
+      "title": "Moomoo: Morgan Stanley AI financing spreads (Helios notes, 28 September)",
+      "url": "https://www.moomoo.com/community/feed/coreweave-crwv-us-cracks-in-the-ai-infrastructure-financing-chain-117448653799430"
+    },
+    {
+      "title": "Yahoo Finance: neocloud rout, 22 October 2026",
+      "url": "https://www.aol.com/articles/neocloud-stock-rout-silver-lining-132635000.html"
+    },
+    {
+      "title": "Inside Climate News: Texas data center audit, 24 August 2026",
+      "url": "https://insideclimatenews.org/news/24082026/texas-gov-abbott-data-centers-audit/"
+    },
+    {
+      "title": "Yahoo Finance GLXY quote and chart",
+      "url": "https://finance.yahoo.com/quote/GLXY/"
+    }
+  ],
+  "ticker": "GLXY",
+  "verdict": "Preview",
+  "versus": "Pending — reports 27 October 2026 before the open",
+  "watch": [
+    "Cash rent collected and the straight-line receivable for Phase I.",
+    "Any disclosure of tenant security, guarantees or lease amendments with CoreWeave.",
+    "Phase III financing terms and timing.",
+    "Repayment plan for the $445mn of exchangeable notes and any ATM sales.",
+    "Helios II tenant talks; Texas audit (about 10 December) and Batch Zero outcome."
+  ]
+}

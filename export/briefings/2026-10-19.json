@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-19",
+  "items": [
+    {
+      "headline": "CoreWeave bonds fall to distressed levels; default swaps hit a record",
+      "segment": "financing",
+      "source": "24/7 Wall St.",
+      "summary": "On 15 October CoreWeave's five-year CDS reached a record 1,194.5 bps, which Bloomberg says implies better than 60% odds of default within five years. Its 9% and 9.75% notes due 2031 traded near 79-80 cents (yields 15.6-16.2%), and the stock fell about 25% on the week after hot US inflation data. Read through secondary coverage of Bloomberg and Reuters; Nvidia said CoreWeave needs no backstop.",
+      "url": "https://247wallst.com/investing/2026/10/16/cathie-wood-bought-coreweave-two-days-in-a-row-as-its-bonds-cratered/"
+    },
+    {
+      "headline": "FT: data center project bonds for Meta, Nvidia and Oracle sites slip below par",
+      "segment": "financing",
+      "source": "ChainCatcher, citing the Financial Times",
+      "summary": "The FT reported on about 16 October that some bonds funding data center builds for Meta, Nvidia and Oracle trade below par, and Allianz's CIO called it a Darwinian moment for weaker projects. An aggregator citing Reuters puts Meta's Hyperion bonds below 91 cents and Blackstone's Microsoft-leased QTS Project Excalibur below 87 cents; those two prices rest on that one secondary page.",
+      "url": "https://www.chaincatcher.com/en/article/2296767"
+    },
+    {
+      "headline": "Firmus scraps a near-$5B Australian IPO; AirTrunk delays its $1.5B REIT to 2027",
+      "segment": "developer",
+      "source": "investingLive; DCD",
+      "summary": "Nvidia-linked Firmus, backed by Coatue and Blackstone, pulled what would have been Australia's largest IPO in 30 years, citing volatility, and plans to raise privately and list in the US next year. Blackstone's AirTrunk delayed its roughly $1.5B REIT listing even after considering a 6% yield, citing high rates.",
+      "url": "https://investinglive.com/stocks/australia-s-biggest-planned-ipo-in-30-years-pulled-as-ai-infrastructure-appetite-cools/"
+    },
+    {
+      "headline": "Anthropic's Q3 revenue $16.8B, up 45% on the quarter, slower than Q2's 145%",
+      "segment": "financing",
+      "source": "ROIC.ai, citing Reuters",
+      "summary": "Figures from a private pre-IPO investor presentation on 14 October, reported by Reuters: Q3 revenue $16.8B against $11.6B in Q2, with positive adjusted cash flow. Not audited. The slowdown fed the AI selloff; its compute commitments of at least $518B are unchanged.",
+      "url": "https://www.roic.ai/news/anthropics-q3-revenue-growth-slows-to-45-but-da-davidson-says-its-not-a-demand-problem-10-15-2026"
+    },
+    {
+      "headline": "AMD gives credit support for Fermi's 222 MW TensorWave lease",
+      "segment": "developer",
+      "source": "Fermi (press release)",
+      "summary": "Announced 13 October: AMD signed a credit support agreement for the phase 1 lease at Project Matador in Texas (222 MW gross), which Fermi calls a key step toward project financing, plus a framework for expansion to 650 MW. Amount of support not disclosed; the TensorWave lease (about $6.5B over 15 years) still has to close and Fermi still needs project financing.",
+      "url": "https://www.newswire.com/news/fermi-signs-credit-support-agreement-with-amd-and-announces-partnership"
+    },
+    {
+      "headline": "Venture Global lines up about 11.5 GW of gas power islands for up to 10 GW of AI compute",
+      "segment": "energy",
+      "source": "Venture Global (SEC 8-K exhibit)",
+      "summary": "The LNG exporter agreed with GE Vernova and Baker Hughes for up to 16 power islands of 720 MW each, on top of 4.5 GW of off-grid gas generation it already has, and targets up to 10 GW of compute by end-2034. First purchase order expected by end-2026; no compute customer named and most purchases are conditional.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002007855/000200785526000081/frameagreementpressrelease.htm"
+    },
+    {
+      "headline": "Enerflex books more than 1 GW of behind-the-meter gas generation for one data center",
+      "segment": "energy",
+      "source": "Enerflex (SEC 6-K exhibit)",
+      "summary": "Announced 13 October for an unnamed large North American data center development, with deliveries through 2028; it follows a 450 MW award on 1 October and lifts Enerflex's behind-the-meter backlog above 1.75 GW. Value and equipment type not disclosed.",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001904856/000119312526419999/efxt-ex99_1.htm"
+    },
+    {
+      "headline": "Oracle confirms Bloom fuel cells as primary power for Project Jupiter",
+      "segment": "energy",
+      "source": "24/7 Wall St.",
+      "summary": "On 13 October Oracle confirmed Bloom as the main power source for its New Mexico campus, where Bloom is to supply up to 2.45 GW, and proposed up to $55M a year of bill credits for local customers. No contract value disclosed; Bloom still fell about 21% on the week. Single secondary source.",
+      "url": "https://247wallst.com/investing/2026/10/15/bloom-energy-got-good-news-from-oracle-and-fell-anyway-is-it-time-to-buy/"
+    },
+    {
+      "headline": "Vista's Galuccio pitches Vaca Muerta as a data center hub",
+      "segment": "energy",
+      "source": "Neuquén al Instante",
+      "summary": "On 14 October the Vista Energy CEO argued Argentina should site data centers near Vaca Muerta for its gas and power, estimating the world needs 250 GW of new capacity in the next decade. No project, partner or price was given. Single local source.",
+      "url": "https://www.neuquenalinstante.com.ar/noticias/2026/10/14/144750-galuccio-propone-llevar-los-data-centers-a-vaca-muerta-para-aprovechar-su-abundancia-energetica"
+    },
+    {
+      "headline": "Argentine country risk settles near 600 bps, seen as a floor",
+      "segment": "financing",
+      "source": "El Economista; Rava",
+      "summary": "The spread closed at 597 bps on 13 October (from 589). Analysts quoted by El Economista see about 600 as a floor until the 2027 election, with the US 10-year near 5.2%; Morgan Stanley blames mostly Argentina-specific risk. No Senate vote on the Super RIGI was found this week.",
+      "url": "https://eleconomista.com.ar/economia/riesgo-pais-600-puntos-piso-no-techo-mercado-alerta-milei-elecciones-2027-n98836"
+    }
+  ],
+  "kona": "The market repriced weak-credit compute this week: CoreWeave's unsecured bonds traded at 75-80 cents and yields of 15-16%, data center project bonds slipped below par and two big data center IPOs were pulled. Debt or equity raised against a neocloud tenant is now close to unavailable, so Kona should put an investment-grade or credit-supported offtaker first (AMD's credit support for Fermi's TensorWave lease shows a supplier guarantee can fill that role) and favour selling power or capacity with prepayments over owning GPUs. Gas-to-compute supply is growing fast (Venture Global, Enerflex), and Vista's Galuccio has joined Pampa in pitching Vaca Muerta for data centers, so Kona's edge has to be speed and a signed customer rather than the gas. With country risk near 600 bps, Argentine project debt stays a later step.",
+  "stale": "Players tab, CoreWeave: status line says about $49B market cap; it was about $38B on 15 October and shares closed near $61 on 16 October. Its risks list should add that the unsecured 2031 and 2032 notes trade at about 75-80 cents (yields 14.5-16%) and five-year CDS hit a record 1,194.5 bps. Start here tab, point 1: Anthropic's run-rate described as above $100B in September conflicts with the $16.8B Q3 revenue (about $67B annualized) shown to investors; SemiAnalysis now estimates about $74B. Players watchlist, Fermi America: add AMD's credit support for the 222 MW TensorWave lease and the framework to 650 MW; still needs project financing. Financing tab, Market health: add that data center IPOs are closing (Firmus pulled, AirTrunk delayed to 2027) and that project bonds for Meta, Oracle and Microsoft sites trade below par. Kona tab, Argentina section: country risk reads 641 bps on 28 September; it peaked at 655 on 2 October and is now about 597-600.",
+  "title": "CoreWeave debt prices like distress, AI IPOs pulled; gas-to-compute keeps scaling"
+}

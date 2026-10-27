@@ -1,0 +1,1356 @@
+<title>Neocloud Field Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a reference manual. Sticky tab rail on top, one reading column per tab, dense tables scroll inside their own frames. */
+:root{
+  --bg:#EDF1F0; --surface:#F8FAF9; --raised:#FFFFFF; --ink:#14201F; --muted:#55645F; --line:#CBD5D1;
+  --accent:#0E6A74; --accent-soft:#D8EBEC; --flag:#8A5A0B; --flag-soft:#F5E9CF;
+  --s1:#0E6A74; --s2:#5B4BA8; --s3:#A1481C; --s4:#3C6E2B;
+  --c1:#2a78d6; --c2:#eb6834; --c3:#1baf7a; --c4:#eda100; --c5:#e87ba4;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0E1514; --surface:#151E1D; --raised:#1B2625; --ink:#E4EBE8; --muted:#93A39E; --line:#2C3A38;
+  --accent:#58BCC6; --accent-soft:#16363A; --flag:#E2AE55; --flag-soft:#3A2E14;
+  --s1:#58BCC6; --s2:#A99BEA; --s3:#E8946A; --s4:#8FC57A; --c1:#3987e5; --c2:#d95926; --c3:#199e70; --c4:#c98500; --c5:#d55181; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0E1514; --surface:#151E1D; --raised:#1B2625; --ink:#E4EBE8; --muted:#93A39E; --line:#2C3A38;
+  --accent:#58BCC6; --accent-soft:#16363A; --flag:#E2AE55; --flag-soft:#3A2E14;
+  --s1:#58BCC6; --s2:#A99BEA; --s3:#E8946A; --s4:#8FC57A; --c1:#3987e5; --c2:#d95926; --c3:#199e70; --c4:#c98500; --c5:#d55181; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
+header.top h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,4vw,38px);line-height:1.1;margin:0 0 6px;letter-spacing:-.01em;text-wrap:balance}
+header.top p{color:var(--muted);margin:0;max-width:68ch}
+.stamp{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-top:22px;display:flex;gap:2px;overflow-x:auto}
+nav.tabs button{font:600 13px var(--display);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:12px 12px 10px;cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs button:focus-visible,summary:focus-visible,.chip:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section.panel{padding-top:26px;display:flex;flex-direction:column;gap:26px}
+section.panel[hidden]{display:none}
+h2{font-family:var(--display);font-weight:700;font-size:22px;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:600;font-size:16px;margin:0}
+.lede{max-width:70ch;margin:0}
+.prose{max-width:70ch;display:flex;flex-direction:column;gap:10px}
+.prose p{margin:0}
+.block{display:flex;flex-direction:column;gap:12px}
+a{color:var(--accent)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card h3 .muted{font-weight:400;color:var(--muted);font-size:.85em}
+.card{background:var(--surface);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card p{margin:0}
+.eyebrow{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.seg{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.seg.s1{color:var(--s1)}.seg.s2{color:var(--s2)}.seg.s3{color:var(--s3)}.seg.s4{color:var(--s4)}
+.tablebox{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font:600 11px var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--raised);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td.num,th.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 12px var(--mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent)}
+details.player{background:var(--surface);border:1px solid var(--line)}
+details.player summary{list-style:none;cursor:pointer;padding:14px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline}
+details.player summary::-webkit-details-marker{display:none}
+details.player summary .name{font:700 18px var(--display)}
+details.player summary .status{font:400 12px var(--mono);color:var(--muted)}
+details.player summary .one{grid-column:1/-1;color:var(--muted);margin:0}
+details.player summary .more{font:500 12px var(--mono);color:var(--accent)}
+details.player[open] summary{border-bottom:1px solid var(--line)}
+.pbody{padding:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.pbody>div{min-width:0;display:flex;flex-direction:column;gap:6px}
+.pbody ul,.plain{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:5px}
+.pbody .wide{grid-column:1/-1}
+.kona{background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 12px}
+.flagbox{background:var(--flag-soft);border-left:3px solid var(--flag);padding:10px 12px;color:var(--ink)}
+.flagbox .eyebrow{color:var(--flag)}
+.src{font-size:12.5px;color:var(--muted)}
+.src a{margin-right:10px;white-space:nowrap}
+.stack{display:grid;gap:0;border:1px solid var(--line);background:var(--surface)}
+.layer{display:grid;grid-template-columns:150px minmax(0,1fr) minmax(0,1fr);gap:12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.layer:last-child{border-bottom:0}
+.layer .l{font:600 14px var(--display)}
+.layer .m{color:var(--muted);font-size:13.5px}
+@media (max-width:640px){.layer{grid-template-columns:1fr}}
+dl.gloss{display:grid;grid-template-columns:minmax(120px,200px) minmax(0,1fr);gap:8px 16px;margin:0}
+dl.gloss dt{font-weight:600}
+dl.gloss dd{margin:0;color:var(--muted)}
+@media (max-width:560px){dl.gloss{grid-template-columns:1fr}dl.gloss dd{margin-bottom:6px}}
+.brief{background:var(--surface);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:12px}
+.brief .item{display:flex;flex-direction:column;gap:2px;padding-top:10px;border-top:1px solid var(--line)}
+.empty{border:1px dashed var(--line);padding:22px;color:var(--muted);max-width:70ch}
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:12px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px}
+.steps li::before{content:counter(s);font:600 14px var(--mono);color:var(--accent);border:1px solid var(--accent);width:28px;height:28px;display:grid;place-items:center}
+.steps b{font-family:var(--display)}
+.pill{display:inline-block;font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border:1px solid var(--line);color:var(--muted)}
+.pill.up{color:var(--accent);border-color:var(--accent)}.pill.down{color:var(--flag);border-color:var(--flag)}
+.rowhead{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline}
+textarea.thesis{width:100%;min-height:70px;font:400 14px var(--body);color:var(--ink);background:var(--raised);border:1px solid var(--line);padding:8px}
+button.act{font:600 12px var(--display);letter-spacing:.04em;text-transform:uppercase;background:var(--accent);color:var(--bg);border:0;padding:7px 12px;cursor:pointer}
+.ev{border-top:1px solid var(--line);padding-top:8px;display:flex;flex-direction:column;gap:2px}
+.viz{background:var(--surface);border:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.viz svg{width:100%;height:auto;display:block;font-family:var(--body)}
+.vtitle{font:600 14px var(--display)}
+.viz .grid{stroke:var(--line);stroke-width:1}
+.viz .axis{stroke:var(--muted);stroke-width:1}
+.viz .ref{stroke:var(--flag);stroke-width:1.5;stroke-dasharray:4 4}
+.viz .tick{font-size:11px;fill:var(--muted);font-family:var(--mono)}
+.viz .lbl{font-size:12px;fill:var(--ink)}
+.viz .val{font-size:12px;fill:var(--ink);font-family:var(--mono)}
+.viz .line{fill:none;stroke-width:2}
+.viz .dot{stroke:var(--surface);stroke-width:2}
+.viz .mark:hover rect,.viz .dot:hover{opacity:.8}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.mgroup{background:var(--surface);border:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:8px}
+.field{display:grid;grid-template-columns:minmax(0,1fr) 96px;gap:2px 10px;align-items:center}
+.field .flab{font-size:13px}
+.field .funit{grid-column:1/-1;font:400 11px var(--mono);color:var(--muted)}
+.field input,.field select,input.scen{font:500 14px var(--mono);color:var(--ink);background:var(--raised);border:1px solid var(--line);padding:6px 8px;width:100%;min-width:0}
+input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px}
+#annual,#quarterly{font-size:12.5px}#annual td,#annual th,#quarterly td,#quarterly th{padding:7px 9px}
+.tile{background:var(--surface);border:1px solid var(--line);padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.tile .tv{font:600 22px var(--display);font-variant-numeric:tabular-nums}
+#scenbar{align-items:center}
+.crow{display:flex;flex-direction:column;gap:4px;padding:8px 0;border-top:1px solid var(--line)}
+.crow:first-child{border-top:0;padding-top:0}
+.crow input[type=range]{width:100%;accent-color:var(--accent)}
+.derived{display:flex;flex-direction:column;gap:4px}
+.drow{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;border-top:1px solid var(--line);padding-top:4px}
+.drow b{font-family:var(--mono);font-weight:500}
+#calccf tr.sep td,#calccf tr.sep th{border-top:2px solid var(--line)}
+#calccf td:first-child{white-space:nowrap}#calccf,#calcsens{font-size:12.5px}#calccf td,#calccf th,#calcsens td,#calcsens th{padding:6px 8px}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <h1>Neocloud Field Guide</h1>
+  <p>Who sells AI compute, who builds and powers the sites, how it gets financed, and what that implies for how Kona should make money.</p>
+  <div class="stamp">Research gathered 4 Oct 2026, updated 25 Oct · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
+</header>
+
+<nav class="tabs" role="tablist" id="tabs"></nav>
+
+<!-- START HERE -->
+<section class="panel" id="p-start">
+  <div class="block">
+    <h2>The market in seven points</h2>
+    <ol class="plain lede" style="max-width:74ch">
+      <li><b>Demand is compounding.</b> Google's monthly token volume rose about 7x in the year to May 2026, to 3.2 quadrillion. Anthropic's revenue run-rate went from about $1B at the start of 2025 to a reported pace above $100B in September 2026, though the $16.8B of Q3 revenue it showed investors annualizes to about $67B. The four largest hyperscalers guide to about $725B of capex this year, against $410B in 2025. Google says it must double its token-serving capacity every six months, mostly through software.</li>
+      <li><b>Pricing has turned up.</b> Public neoclouds now quote revenue per megawatt. Nebius reports $20–25M per MW per year on 1–3 year contracts and $40–50M on deals under six months. CoreWeave reports about $40M per MW on 3–6 month contracts. SpaceX rents all of Colossus 1 to Anthropic at $1.25B a month, roughly $50M per MW, on 90-day exit terms. H100 rental indices are up about 14% over twelve months.</li>
+      <li><b>Anthropic is the marginal buyer of 2026.</b> Its prospectus shows at least $518B of compute obligations over a decade. It signed with CoreWeave, Nscale, Lambda (reported), Volta, Fluidstack, TeraWulf, Riot and Hut 8. Meta is the other large buyer.</li>
+      <li><b>Cost of debt follows the tenant, not the hardware.</b> Debt backed by an investment-grade contract prices at SOFR + 225–300 bps. The same GPUs against weaker customers price at SOFR + 500–750 bps, sometimes with lender return floors.</li>
+      <li><b>Landlords signed 2026 leases at about $140–200 per kW-month.</b> Development yields run 10–14% on build costs of $9–16M per MW. Only about 15% of the capacity contracted by the listed ex-miners is operating.</li>
+      <li><b>Bringing your own power is now mainstream.</b> Goldman projects 67 GW behind the meter by 2030. Turbines are sold out for years, so reciprocating engines and fuel cells carry the near-term load at an all-in cost of roughly $100–165 per MWh in the US.</li>
+      <li><b>A gigawatt costs $35–60B, and most of it is chips.</b> Crusoe's CEO puts the site and power plant near $20M per MW and the compute near $40M. NVIDIA says $50–60B, Blackstone $55B, Foxconn about $47B for Vera Rubin, Bernstein about $35B. Renting the chips earns about $15M per MW a year; adding managed inference can lift that toward $30M.</li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <h2>The value chain, from electrons to tokens</h2>
+    <p class="lede">Every company in this guide sits on one or more of these layers. The further up you go, the more revenue per megawatt, the more capital per megawatt, and the shorter the contract.</p>
+    <div class="stack" id="stack"></div>
+  </div>
+
+  <div class="block">
+    <h2>A reading path</h2>
+    <ol class="steps">
+      <li><div><b>Models.</b> Learn the six ways to monetize a powered site and what each one earns, costs and risks.</div></li>
+      <li><div><b>Players.</b> Read one company per layer: Williams or VoltaGrid for power, TeraWulf or Cipher for leasing, CoreWeave for GPU cloud, Crusoe for all three.</div></li>
+      <li><div><b>Financing.</b> See why the tenant's credit sets the price of debt and what a sub-100 MW developer can actually borrow.</div></li>
+      <li><div><b>Kona.</b> Apply it: which model fits a gas-powered site in Vaca Muerta at its current scale, and in what order.</div></li>
+      <li><div><b>Library.</b> The talks and essays behind this guide, with what each one changed here.</div></li>
+      <li><div><b>Briefings.</b> A weekly digest lands here each Monday with what changed.</div></li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <h2>Glossary</h2>
+    <dl class="gloss" id="gloss"></dl>
+  </div>
+</section>
+
+<!-- PLAYERS -->
+<section class="panel" id="p-players" hidden>
+  <div class="block">
+    <h2>Thirteen companies to know in depth</h2>
+    <p class="lede">Open a company for its model, scale, contracts, capital structure and risks. Each ends with why it matters for Kona.</p>
+    <div class="chips" id="segchips"></div>
+  </div>
+  <div class="block" id="playerlist"></div>
+  <div class="block">
+    <h2>Watchlist</h2>
+    <p class="lede">Shorter notes on the rest of the field.</p>
+    <div class="tablebox"><table id="watch"><thead><tr><th>Company</th><th>Layer</th><th>What to know</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<!-- MODELS -->
+<section class="panel" id="p-models" hidden>
+  <div class="block">
+    <h2>Six ways to monetize a powered site</h2>
+    <p class="lede">Figures are 2026 market data points from the companies in this guide. Rents marked "implied" are contract value divided by term and megawatts, so they are term averages.</p>
+    <div class="tablebox"><table id="modeltable"></table></div>
+  </div>
+  <div class="block">
+    <h2>What a megawatt costs to build, per Crusoe</h2>
+    <p class="lede">From the slides in Chase Lochmiller's Stanford lecture (June 2026). He said he built them that afternoon and that some items may be double counted, so read them as round, illustrative numbers. He also said the total is rising.</p>
+    <div class="tablebox"><table id="stacktable"></table></div>
+    <div class="tablebox"><table id="paybacktable"></table></div>
+    <h3>Line items from Crusoe's Abilene slide</h3>
+    <p class="lede">Example costs Crusoe showed for its Abilene campus, which is laid out as 25 MW data halls around a 3 MW network core. They are examples, not a full budget: labor, soft costs and in-hall fit-out sit outside them.</p>
+    <div class="tablebox"><table id="lineitems"></table></div>
+    <p class="src">These example items sit inside the build-up categories above: the listed electrical items come to $1.4M of the $1.8M category, and the mechanical items to $1.0M of $1.7M. In total the listed items come to about $7–8M per MW, roughly 40% of the $19.2M site figure. For a 20 MW site that is about $140–170M; that figure is my arithmetic. Three items matter most for Kona. Site work is the largest building cost and depends heavily on terrain. UPS is the largest electrical item and is where tiered reliability saves money. Kona has already secured engines, which covers part of the power plant line.</p>
+    <p class="src">Crusoe's modular Spark units (500 kW air-cooled, 2 MW liquid-cooled) are built in a factory and, by his estimate, cut the site cost by 30–50%. The IaaS revenue line is based on SemiAnalysis' April 2026 estimate of a five-year GB300 contract price, which sits below the $20–25M per MW Nebius reports on one- to three-year deals. Payback figures are my arithmetic on the slide numbers. Crusoe depreciates chips over six years. Bernstein's split of a gigawatt is similar in shape: networking about 13%, power equipment about 15%, cooling about 4%, the rest silicon, memory, servers and shell.
+      <a href="https://www.youtube.com/watch?v=GcCGzfKdCd0">Stanford MS&amp;E435: Building AI Factories</a>
+      <a href="https://www.youtube.com/watch?v=4rhShOPHl50">Blackstone, Jon Gray</a></p>
+  </div>
+  <div class="block">
+    <h2>Lease comps, highest implied rent first</h2>
+    <div class="tablebox"><table id="leasetable"></table></div>
+    <p class="src">Implied rent is arithmetic on disclosed contract value, term and MW. It includes escalators and may include pass-throughs. No reliable 2026 source splits rents between powered land, powered shell and turnkey, so treat any such split as unsourced.</p>
+  </div>
+  <div class="block">
+    <h2>Behind-the-meter power by technology</h2>
+    <div class="tablebox"><table id="powertable"></table></div>
+    <p class="src">US figures. Rabobank puts all-in behind-the-meter gas at $100–165 per MWh once overbuild and bridge duration are counted, against $90–95 for grid supply. Integrated projects cost far more than equipment alone: Williams Neo works out to about $3,370 per kW and Tallgrass/Crusoe to about $2,600 per kW. On Catalyst, Brian Janous put off-grid power in Texas at $150–200 per MWh at about $2,700 per kW with up to 2x overbuild, and EIP's Andy Lubershane cited new combined-cycle quotes of $3,600–4,000 per kW, with transformers and switchgear roughly doubled in price.
+      <a href="https://www.rabobank.com/knowledge/d011524694-the-sprint-data-centers-are-building-a-parallel-energy-system-in-the-us">Rabobank</a>
+      <a href="https://gridcapacityintelligence.substack.com/p/gas-engines-vs-gas-turbines-vs-ccgt">Grid Capacity Intelligence</a>
+      <a href="https://oilprice.com/Energy/Energy-General/The-Gas-Turbine-Shortage-Just-Became-AIs-Biggest-Constraint.amp.html">OilPrice</a></p>
+  </div>
+  <div class="block">
+    <h2>GPU rental prices</h2>
+    <div class="tablebox"><table id="gputable"></table></div>
+    <p class="src">Newest systems (GB200, GB300, Vera Rubin) are not listed per hour. They sell on contract, quoted per MW. Indices differ: Silicon Data's H100 index reads $2.81 for neoclouds, up from $2.00 in December 2025, and one-year H100 contract prices rose about 40% between October 2025 and March 2026.
+      <a href="https://getdeploying.com/gpu-price-index">GPU Rental Price Index</a>
+      <a href="https://savrn.com/ai-index/pricing/gpus">Savrn</a>
+      <a href="https://blockspace.media/insight/nebius-revenue-surges-ai-cloud-margins-q2-2026/">Blockspace on Nebius</a></p>
+  </div>
+</section>
+
+<!-- FINANCING -->
+<section class="panel" id="p-finance" hidden>
+  <div class="block">
+    <h2>Who is buying</h2>
+    <div class="tablebox"><table id="buyers"></table></div>
+  </div>
+  <div class="block">
+    <h2>What debt costs, by credit behind it</h2>
+    <p class="lede">Cheapest first. The pattern holds across every structure: lenders underwrite the customer and the contract length more than the hardware.</p>
+    <div class="tablebox"><table id="debt"></table></div>
+  </div>
+  <div class="block">
+    <h2>The structures</h2>
+    <div class="grid2" id="structures"></div>
+  </div>
+  <div class="block">
+    <h2>Four structures taken apart</h2>
+    <p class="lede">Summarized from Marc Rubinstein's Net Interest essay "The Art of Doing Financial Engineering" (3 Oct 2026, paid newsletter), with a note on what each teaches. His framing: these structures do not remove risk, they move it, and much of it now sits in the notes to the accounts.</p>
+    <div class="grid2" id="cases"></div>
+    <p class="src">Scale, per the same essay: KKR estimates public investment-grade markets can supply about $1.7T of the $7.6–8.0T of AI capex expected through 2030. Guarantees across nine AI companies already total $278B, on top of $1.21T of signed leases not yet commenced.</p>
+  </div>
+  <div class="block">
+    <h2>What a small or emerging-market developer can get</h2>
+    <div class="grid2" id="small"></div>
+  </div>
+  <div class="block">
+    <h2>Market health</h2>
+    <ul class="plain lede" style="max-width:74ch" id="health"></ul>
+  </div>
+</section>
+
+<!-- KONA -->
+<section class="panel" id="p-kona" hidden>
+  <div class="block">
+    <h2>What Kona is selling against</h2>
+    <div class="prose">
+      <p>Kona's asset is cheap, stranded gas turned into firm power at a site that needs no grid interconnection. Its constraints are scale (tens of megawatts while the market signs hundreds), country risk, and distance from customers.</p>
+      <p>The six models below are scored against those facts. The view at the end is a framing for discussion with Matías and Ken. It is not investment advice, and the Kona-specific numbers are arithmetic on market data points, not Kona's own model.</p>
+    </div>
+  </div>
+  <div class="block">
+    <h2>Model by model</h2>
+    <div class="tablebox"><table id="konatable"></table></div>
+  </div>
+  <div class="block">
+    <h2>What 20 MW earns under each model</h2>
+    <div class="tablebox"><table id="konamath"></table></div>
+    <p class="src">Arithmetic on market data points, per MW of IT load, before operating costs. Energy pricing uses the roughly $56 per kW-month implied by Williams' stated build multiple. Lease pricing uses the $100–220 range of 2025–26 leases. GPU cloud uses Nebius' $20–25M per MW per year. GPU cloud revenue spans Crusoe's $15M and Nebius' $20–25M per MW per year. Capital uses Crusoe's figures of about $20M per MW for site and power and $40M for compute; the low end of the lease range uses the $9M per MW that listed landlords report for the hall alone. Kona has already secured engines, and modular builds could cut the site figure by 30–50%. Crusoe's slides make the value split plain: the gas plant is $3M of a $59M per MW stack, about 5%. Power is essential but a small share of the capital, which is why selling energy alone earns the smallest revenue.</p>
+  </div>
+  <div class="block">
+    <h2>The fuel advantage</h2>
+    <div class="tablebox"><table id="fuel"></table></div>
+    <p class="src">Fuel cost per MWh is heat rate (8–9 MMBtu per MWh for engines and simple-cycle turbines) times gas price. Argentine contract gas under Plan Gas was about $3.5 per MMBtu in 2025 data, and associated gas spot prices have collapsed in summer. A verified 2026 wellhead series was not found.
+      <a href="https://ri.pampa.com/en/our-assets/oil-and-gas/the-argentine-gas-and-oil-market/">Pampa Energía</a>
+      <a href="https://www.shale24.com/en/oil-gas/vaca-muertas-associated-gas-doubled-in-2025-and-hit-new-record-in-january-2026-can-this-byproduct-of-the-oil-boom-be-monetized-n645">Shale24</a></p>
+  </div>
+  <div class="block">
+    <h2>Where the sources disagree</h2>
+    <p class="lede">The talks and episodes in the Library pull in different directions on the questions that decide Kona's strategy. Each row names the positions and what follows for Kona.</p>
+    <div class="tablebox"><table id="disagree"></table></div>
+  </div>
+  <div class="block">
+    <h2>A sequenced view</h2>
+    <ol class="steps" id="konasteps"></ol>
+  </div>
+  <div class="block">
+    <h2>Case study: how TeraWulf built its tenant credit</h2>
+    <p class="lede">TeraWulf is the listed company whose path is closest to Kona's: a power-first former miner that sells space and power, not GPUs, and financed itself by borrowing against its tenants' credit.</p>
+    <div class="tablebox"><table id="wulftimeline"></table></div>
+    <div class="grid2" id="wulflessons"></div>
+    <p class="src">Sources: TeraWulf SEC filings and releases, Moody's, KBW via Blockspace, and Yahoo Finance prices; see the TeraWulf profile on the Players tab.</p>
+  </div>
+  <div class="block">
+    <h2>SpaceX: the gas-to-compute case at the other end of the scale</h2>
+    <p class="lede">SpaceXAI's Colossus complex is what Kona's model looks like at 2 GW: gas generation behind the meter, batteries for ride-through, chips rented to labs and a hyperscaler. The scale does not transfer, but four things do.</p>
+    <div class="grid2" id="spacexlessons"></div>
+    <p class="src">Sources: SpaceX Q2 2026 release and call, Google contract terms via TechRepublic, FT via InvestingLive on the $40B package, World-Energy on the turbine agreement; see the SpaceX profile on the Players tab.</p>
+  </div>
+  <div class="block">
+    <h2>Argentina: what helps and what blocks</h2>
+    <div class="grid2" id="arg"></div>
+  </div>
+  <div class="block">
+    <h2>Who to approach, by type</h2>
+    <div class="grid2" id="targets"></div>
+  </div>
+  <div class="block">
+    <h2>Open questions to resolve</h2>
+    <ul class="plain lede" style="max-width:74ch" id="openq"></ul>
+  </div>
+</section>
+
+<!-- MODEL -->
+<section class="panel" id="p-model" hidden>
+  <div class="block">
+    <h2>The price of money</h2>
+    <p class="lede">JunkBondInvestor's point about CoreWeave, drawn as a ladder: the same kind of asset (GPUs or a data hall) borrows at anything from 6% to 15% depending on whose promise stands behind the rent. Each bar is a real 2026 financing from the Financing tab.</p>
+    <div class="viz" id="viz-ladder"></div>
+    <div class="src">Yields as reported at pricing; CoreWeave facilities shown at an assumed 3.9% SOFR; CoreWeave unsecured is a secondary-market yield from 20 Oct 2026. Sources are on the Financing tab.</div>
+  </div>
+  <div class="block">
+    <h2>Why a 59% EBITDA margin can still mean 15% bonds</h2>
+    <div class="grid2">
+      <div class="viz" id="viz-margins"></div>
+      <div class="viz" id="viz-cash"></div>
+    </div>
+    <p class="lede">The gap between the two margins is depreciation on chips that have to be replaced, and the gap between operating cash and capex is filled with new money every year. When the price of that money jumps, as it did in October, the equity story is unchanged but the credit math is not. Figures from CoreWeave's Q2 2026 results and 2027 consensus as cited by JunkBondInvestor.</p>
+  </div>
+
+  <div class="block" id="calcblock">
+    <div class="rowhead"><span class="eyebrow">Kinetic Yard · Kona</span></div>
+    <h2>Contract return calculator: what unlevered IRR does one Kona contract earn?</h2>
+    <p class="lede">One contract, one block of capacity. Set the deal, the price, the build cost and the funding, and the calculator derives the capacity, lays out the cash flows year by year and returns the unlevered IRR, payback and a price-versus-cost sensitivity. Pick a Kona case to start. $ in millions unless stated.</p>
+    <div class="chips" id="calcpresets"></div>
+    <div class="tiles" id="calctiles"></div>
+    <div class="grid2">
+      <div class="mgroup">
+        <div class="eyebrow">Levers</div>
+        <div id="calcinputs"></div>
+      </div>
+      <div class="mgroup">
+        <div class="eyebrow">Deal frame</div>
+        <div id="calcfixed"></div>
+        <div class="eyebrow" style="margin-top:8px">Derived</div>
+        <div class="derived" id="calcderived"></div>
+        <div><button class="chip" id="calcreset" type="button">Reset to Kona base case</button></div>
+      </div>
+    </div>
+    <div class="viz" id="viz-payback"></div>
+    <h3>Contract cash flows, $M</h3>
+    <div class="tablebox"><table id="calccf"></table></div>
+    <h3>Sensitivity: post-tax unlevered IRR</h3>
+    <p class="src">Rows: price-adjusted revenue per MW per year. Columns: capex per MW. The outlined cell is the current case. Shaded toward orange below 10%, toward teal above 20%.</p>
+    <div class="tablebox"><table id="calcsens"></table></div>
+    <div class="grid2">
+      <div class="card"><h3>How it works</h3><p>Capacity = original deal ÷ base revenue per MW ÷ contract years. Capex = capacity × capex per MW. During the contract, revenue = price-adjusted revenue per MW × capacity; after it, the residual percentage of that revenue runs to the end of useful life. Opex = revenue × (1 − EBITDA margin). Debt = debt share × capex, repaid in equal annual amounts over the contract, with interest on the opening balance. Cash tax = max(0, EBITDA − capex ÷ useful life) × tax rate. The unlevered IRR is on capex against EBITDA less cash tax, so the debt lines show the funding and the owner's cash position but do not change the return.</p></div>
+      <div class="card"><h3>Reading it for Kona</h3><p>The GPU case is a CoreWeave-style contract priced at new-contract rates; it clears 15% only if price-adjusted revenue stays near $13M per MW and capex near $30M per MW, and Kona's all-in cost with its own power is closer to $59M. The hosting and energy cases earn less per MW but on 10-year terms with long useful lives, which is where a landlord's return comes from. Argentine cash tax is 35%, or 25% under RIGI; the base case uses 25%. Illustrative only.</p></div>
+    </div>
+  </div>
+  <div class="block">
+    <h2>Kona financing model</h2>
+    <p class="lede">A project-finance model for one Kona block. Pick a monetization case, then change any input; everything below recomputes. It builds the block over a construction period, funds each dollar of capex from prepayment, a delayed-draw senior loan, optional junior capital and equity, then runs rent against operating cost, interest, fees and amortization quarter by quarter. Scenarios can be saved to the guide.</p>
+    <div class="chips" id="presets"></div>
+    <div class="mgrid" id="inputs"></div>
+    <div class="rowhead" id="scenbar"></div>
+  </div>
+
+  <div class="block">
+    <h2>Results</h2>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid2">
+      <div class="viz" id="viz-rent"></div>
+      <div class="viz" id="viz-debt"></div>
+    </div>
+    <div class="viz" id="viz-dscr"></div>
+    <div class="flagbox" id="modelflags" hidden></div>
+  </div>
+
+  <div class="block">
+    <h2>Annual summary</h2>
+    <div class="tablebox"><table id="annual"></table></div>
+    <details><summary class="chip">Quarterly detail</summary><div class="tablebox" style="margin-top:10px"><table id="quarterly"></table></div></details>
+    <div class="src" id="modelnotes"></div>
+  </div>
+
+  <div class="block">
+    <h2>How to read it</h2>
+    <div class="grid2">
+      <div class="card"><h3>Delayed-draw loan</h3><p>The senior facility is committed at the advance rate on total capex and drawn alongside each construction payment, so interest runs only on what is drawn and a commitment fee runs on the rest. Interest during construction is paid by equity. After any interest-only period it amortizes level, is sculpted to a target debt service cover, or is repaid in one bullet; anything still outstanding at tenor is repaid as a balloon, which is where refinancing risk sits.</p></div>
+      <div class="card"><h3>Prepayment</h3><p>A customer prepayment is cash in during construction and a rent credit afterwards: headline rent stays the same but cash rent is lower for the contract term. It is the cheapest capital in the market and the hardest to get.</p></div>
+      <div class="card"><h3>Term mismatch</h3><p>When the contract is shorter than the loan, rent after the term is marked down to the renewal price. The GPU case reproduces CoreWeave's DDTL 5.5: three-year contracts, a five-year loan, chips re-rented at half price in years four and five.</p></div>
+      <div class="card"><h3>What it leaves out</h3><p>Taxes, Argentine withholding and remittance limits, currency, working capital, GPU refresh capex and any value of the asset at the end of the horizon unless you set a terminal multiple. Treat the outputs as a way to compare structures, not as a forecast.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EARNINGS -->
+<section class="panel" id="p-earnings" hidden>
+  <div class="block">
+    <h2>Earnings desk</h2>
+    <p class="lede">Four agents work this tab, modeled on Marc Rubinstein's earnings team at Net Interest: Josh, Trevor, Brandon and Scott. They run on a schedule and write here; you can also ask for any of them by name in a chat.</p>
+    <div class="grid2">
+      <div class="card"><h3>Josh <span class="muted">· earnings analyst</span></h3><p>Built on Marc Rubinstein's Ernie. Before a covered company reports, it builds the market's consensus thesis from previews. When results land, it tests that thesis pillar by pillar and writes a five-page report and a two-page brief as PDFs, with a fixed eight-section structure, the sharpest equity and credit questions, and a Kona read-through. Every number is checked before it is saved.</p><div class="src">Runs on weekday mornings and acts only when a covered company is within five days of reporting or has just reported.</div></div>
+      <div class="card"><h3>Trevor <span class="muted">· transcript analyst</span></h3><p>Works inside Josh's reports. Logs every analyst question by quarter and topic, rates each answer direct, partial or deflected, and keeps a watch-list of the analysts who press hardest on funding and credit.</p><div class="src">Runs on every call transcript.</div></div>
+      <div class="card"><h3>Brandon <span class="muted">· theme tracker</span></h3><p>Follows nine cross-company themes and logs new evidence, noting where management's words and the numbers disagree.</p><div class="src">Runs every Monday after the weekly briefing.</div></div>
+      <div class="card"><h3>Scott <span class="muted">· scorecard keeper</span></h3><p>Keeps one comparable row per company per quarter: MW active and contracted, revenue, margins, cost of debt and price of capacity.</p><div class="src">Updated with each results report.</div></div>
+    </div>
+  </div>
+  <div class="block">
+    <h2>Scorecard</h2>
+    <p class="lede">Latest quarter on file for each company. Figures are as reported; definitions are in Scott's instructions.</p>
+    <div class="chips" id="scchips"></div>
+    <div class="tablebox"><table id="scorecard"><thead><tr><th>Company</th><th>Period</th><th class="num">Active MW</th><th class="num">Contracted MW</th><th class="num">Revenue $M (qtr)</th><th>Margin</th><th>Latest debt cost</th><th>Price of capacity</th><th>Notes</th></tr></thead><tbody></tbody></table></div>
+    <div class="empty" id="scempty">No scorecard rows yet. Scott adds a row each time a covered company reports.</div>
+  </div>
+  <div class="block">
+    <h2>Reports</h2>
+    <div class="block" id="reports"><div class="empty" id="repempty">No reports yet. Josh posts a preview about five days before a covered company reports.</div></div>
+  </div>
+  <div class="block">
+    <h2>Coverage and your thesis</h2>
+    <p class="lede">The analyst reads your thesis before every report and judges the quarter against it. Edit it here.</p>
+    <div class="block" id="coverage"><div class="empty" id="covempty">Coverage list not loaded yet.</div></div>
+  </div>
+</section>
+
+<!-- THEMES -->
+<section class="panel" id="p-themes" hidden>
+  <div class="block">
+    <h2>Themes</h2>
+    <p class="lede">Cross-company questions that decide where AI compute goes and what Kona should do. Each theme keeps a running verdict and the evidence behind it, newest first.</p>
+  </div>
+  <div class="block" id="themes"><div class="empty" id="themeempty">No themes yet. Brandon writes here every Monday.</div></div>
+</section>
+
+<!-- LIBRARY -->
+<section class="panel" id="p-library" hidden>
+  <div class="block">
+    <h2>Library</h2>
+    <p class="lede">The talks and essays you have added, with the points worth keeping and what each changed in this guide. Summaries are in my words; watch or read the original for the full argument.</p>
+  </div>
+  <div class="block" id="lib"></div>
+</section>
+
+<!-- BRIEFINGS -->
+<section class="panel" id="p-briefings" hidden>
+  <div class="block">
+    <h2>Weekly briefings</h2>
+    <p class="lede">A digest of what changed across neoclouds, developers, power and financing, with a note on what it means for Kona. Newest first.</p>
+  </div>
+  <div class="block" id="briefs">
+    <div class="empty" id="briefempty">No briefings yet. The weekly digest is posted here each Monday morning.</div>
+  </div>
+</section>
+</div>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s);
+const el=(t,c,txt)=>{const e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e};
+const link=(t,u)=>{const a=el("a",null,t);a.href=u;a.target="_blank";a.rel="noopener";return a};
+const SEG={s1:"Neocloud / GPU cloud",s2:"Developer / landlord",s3:"Energy-first",s4:"Financing"};
+
+/* ---------- tabs ---------- */
+const TABS=[["start","Start here"],["players","Players"],["models","Models"],["finance","Financing & offtake"],["kona","Kona"],["model","Model"],["earnings","Earnings"],["themes","Themes"],["library","Library"],["briefings","Briefings"]];
+function show(id){
+  TABS.forEach(([k])=>{$("#p-"+k).hidden=k!==id;$("#t-"+k).setAttribute("aria-selected",k===id)});
+  try{localStorage.setItem("nfg-tab",id)}catch(e){}
+}
+TABS.forEach(([k,l])=>{const b=el("button",null,l);b.id="t-"+k;b.setAttribute("role","tab");b.onclick=()=>show(k);$("#tabs").append(b)});
+let start="start";const h=(location.hash||"").slice(1);
+if(TABS.some(t=>t[0]===h))start=h;else{try{const s=localStorage.getItem("nfg-tab");if(TABS.some(t=>t[0]===s))start=s}catch(e){}}
+show(start);
+
+/* ---------- start here ---------- */
+[["Tokens / inference","Sell model output per token or managed endpoints.","Nebius Token Factory, Crusoe managed inference, Together AI"],
+ ["GPU cloud","Own the GPUs and rent them by the hour or on multi-year contracts.","CoreWeave, Nebius, Lambda, IREN, Nscale"],
+ ["Turnkey data hall","Finished, cooled, powered hall leased for 10–20 years. Tenant brings GPUs.","TeraWulf, Cipher, Applied Digital, Galaxy, Hut 8, Core Scientific"],
+ ["Powered shell / land","Entitled site with power and a building shell. Tenant fits it out.","Tract, LandBridge, miner sites before conversion"],
+ ["Power","On-site generation sold as a service or under a fixed-term contract.","VoltaGrid, Williams, Bloom, Chevron / Engine No. 1"],
+ ["Fuel and site","Gas supply, land, permits, water, fibre.","Energy Transfer, Kern River, Vaca Muerta producers"]
+].forEach(([l,m,w])=>{const d=el("div","layer");d.append(el("div","l",l),el("div",null,m),el("div","m",w));$("#stack").append(d)});
+
+[["Neocloud","A cloud provider built around GPUs, not general computing. Rents capacity to AI labs and hyperscalers."],
+ ["Critical IT MW","Power delivered to the servers. Gross or utility MW is larger because of cooling and losses."],
+ ["PUE","Total facility power divided by IT power. 1.2 means 20% overhead."],
+ ["$/kW-month","The unit data center leases are priced in. $150 per kW-month is $1.8M per MW per year."],
+ ["Take-or-pay","The customer pays for the capacity whether it uses it or not."],
+ ["Triple-net (NNN)","The tenant pays taxes, insurance and maintenance, and usually power, on top of rent."],
+ ["Backstop","A stronger company guarantees a weaker tenant's lease. Google does this for Fluidstack."],
+ ["DDTL","Delayed-draw term loan. A facility drawn in stages as GPUs are delivered, secured on the GPUs and the customer contract."],
+ ["Behind the meter","Generation on the customer's side of the utility meter, or with no utility connection at all."],
+ ["Heat rate","Fuel burned per unit of electricity, in Btu per kWh. Lower is more efficient."],
+ ["RPO / backlog","Contracted revenue not yet recognized."],
+ ["Development yield","Stabilized net operating income divided by build cost."],
+ ["Bit-watt spread","The gap between what compute earns and what its power costs. It is so wide that operators will pay far more for power that arrives sooner."],
+ ["N+1","Enough generating units to carry the full load with one unit out of service. Off-grid sites need it or more, so they build well above the load they sell."],
+ ["Bridge power","On-site generation used until a grid connection arrives, then kept as backup or handed to the grid."],
+ ["Goodput","Google's term for the useful work a system delivers once failures, restarts and slowdowns are counted. At 100,000 accelerators something fails several times an hour, so goodput, not peak FLOPS, is what buyers judge."],
+ ["Time to token","How long it takes to go from nothing to serving model output. Crusoe's measure for modular, fast-deployed capacity."],
+ ["Across the meter","Crusoe's term for on-site generation that also trades with the grid: sell surplus out, draw from the grid to firm supply."],
+ ["RIGI","Argentina's incentive regime for large investments: $200M minimum, 25% income tax, currency freedoms phased in."]
+].forEach(([t,d])=>{$("#gloss").append(el("dt",null,t),el("dd",null,d))});
+
+/* ---------- players ---------- */
+const P=[
+{n:"SpaceX (SpaceXAI)",seg:"s1",st:"Nasdaq: SPCX · IPO 12 June 2026 at $135, $1.77T valuation · Q3 results due early November",one:"The largest single operator of gas-powered, behind-the-meter AI compute, and since May 2026 a seller of it. Rents whole data centers to Anthropic and Google on contracts either side can end on 90 days' notice.",
+ model:["AI segment = Grok and X advertising plus 'AI solutions and infrastructure': compute sold in whole-site blocks under Cloud Services Agreements, not a self-serve cloud. Shotwell: SpaceX '100 percent' sees itself as a neocloud competitor and an infrastructure company.","Own sites, own power. Colossus 1 (Memphis, ex-Electrolux plant, H100/H200/GB200, >300 MW), Colossus 2 (Memphis, online January 2026), Minihard (220,000 GB300s announced July 2026), a third site planned in Southaven, Mississippi.","Builds exclusively on Nvidia Vera Rubin from 2027, with its own 'Starmind' NVL72 rack design for ground and orbit. About 10% of compute for Grok training, falling over time; the rest rented out."],
+ scale:["Nameplate compute 1.4 GW at 30 June 2026 (0.4 GW a year earlier); guided to over 2 GW by end-2026 and 'closer to 10 GW than 5' by end-2027, with 15–20 GW of power and cooling targeted.","Q2 2026 AI segment revenue $2,561M (up 247%), of which AI infrastructure $2,194M; segment operating loss $1,257M after $1,885M of depreciation; adjusted EBITDA $1,146M, the first positive quarter.","Q2 capex $18.4B, $15.8B of it AI compute, with the next two quarters guided similar. Group ARR run-rate target $100B by December 2026, cloud the largest piece.","Memory, not GPUs or power, is the constraint Musk names: supply growing about 20% a year against demand near 200%."],
+ cust:["Compute revenue per average megawatt rose from $8.5M in Q2 to $19.5M in Q3 2026, as the Google and Anthropic contracts ramped (Net Interest, 23 Oct, citing the Q3 report; the Q3 release itself has not yet been read into this guide).","Anthropic: all of Colossus 1 (>220,000 GPUs, >300 MW) at $1.25B a month through May 2029; Anthropic's own prospectus puts the commitment at up to $84.5B, nearly double the $45B in SpaceX's S-1.","Google: about 110,000 GPUs plus CPUs and memory at $920M a month from October 2026 to June 2029, about $30.4B in total, described by Google as 'bridge capacity' for Gemini Enterprise. Google could terminate if SpaceX missed the GPU count by 30 September; after 31 December 2026 either side can exit on 90 days' notice.","Reflection AI about $150M a month from July 2026; an unnamed tenant about $1.11B a month from December 2026; Cursor (acquired for $60B in August) and the Pentagon (talks reported at 'several billion dollars') as further demand.","Contracted cloud revenue $14.1B at Q2 plus $6.7B of six-month contracts signed in July. Most agreements can be ended on 90 days' notice, and SpaceX can reclaim capacity if Grok needs it."],
+ cap:["IPO raised about $85.7B net; cash and securities about $100B at 30 June 2026 against $39.4B of debt and finance leases.","$25B inaugural investment-grade bond in June 2026 at a 5.855% weighted average coupon and 11.7-year average life, rated BBB-tier by all three agencies; partly repaid a $20B bridge taken to clear xAI's pre-merger debt (the $5B Morgan Stanley secured notes and loans of July 2025).","October 2026: seeking about $40B more, roughly $10B of bank loans and $30B of investment-grade debt led by Apollo with Pimco among lenders, to buy Nvidia chips; expected to close in 2027. At Nvidia's $60B per GW, 2 GW to 10 GW is roughly $480B.","Power: 69 mobile gas turbines at Southaven to be removed by July 2027 under an agreement with Mississippi regulators, replaced by a permitted 1.2 GW plant of 41 turbines; a 900 MW Solaris joint venture (Stateline Power); 3.3 GWh of Tesla Megapacks; TVA and MLGW grid supply of a few hundred MW. Known supply covers about 2 GW; the sites and generation for the rest are not public."],
+ risk:["Contracts are short at the customer's option: 90-day exits make the $14.1B 'contracted' figure softer than a neocloud take-or-pay backlog, and Anthropic and Google both have other capacity coming.","Depreciation already runs about $1.9B a quarter against $2.2B of infrastructure revenue; the CFO describes compute capex as behaving 'more like cost of goods sold than a long-lived asset'.","Power and permitting: NAACP Clean Air Act suit over the mobile turbines; the 15–20 GW power target has no disclosed site list.","Capital: a $480B build-out funded mostly with debt after an IPO the CFO called the last equity sale; the stock fell after Q2 on AI spending.","Customer concentration on two labs that are also competitors to Grok; execution with most xAI co-founders gone."],
+ kona:"SpaceX is the proof that gas-fired, behind-the-meter compute can command the market's highest rents: Colossus 1 rents for roughly $50M per MW-year, and Musk's planning figure is $30–50 per watt. It is also the biggest buyer of the mobile gensets, turbines and batteries Kona needs, and it sells 'bridge capacity' to the hyperscaler Kona would most like as a tenant. Note the contract form: whole-site blocks, short exit rights, priced for scarcity.",
+ flag:"Per-MW and per-GPU prices are implied from reported monthly fees and site sizes, not disclosed. The $1.11B unnamed tenant and the Pentagon talks rest on single secondary sources. Q3 results, due early November, will be the first full quarter of the Google and Anthropic ramps.",
+ src:[["Q2 2026 earnings release (SEC)","https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/earningsreleaseq22608042.htm"],["Q2 2026 call transcript","https://www.fool.com/earnings/call-transcripts/2026/08/11/spacex-spcx-q2-2026-earnings-call-transcript/"],["Fortune on the compute business","https://fortune.com/2026/07/19/spacex-ai-compute-renting-business-google-anthropic-pentagon-deals-revenue-valuation-elon-musk-colossus-data-centers/"],["Google contract terms","https://www.techrepublic.com/article/news-google-spacex-compute-deal/"],["Anthropic contract in prospectus","https://finance.biggo.com/news/24d90a7f-d26d-413c-8685-bf4da9cb540d"],["$40B debt package (FT via InvestingLive)","https://investinglive.com/stocks/spacex-seeks-40-billion-in-debt-led-by-apollo-to-fund-nvidia-chip-order-ft-says/"],["Turbine removal agreement","https://www.world-energy.org/article/55673.html"],["Orbital data center feasibility","https://www.sciencedaily.com/releases/2026/06/260618041501.htm"]]},
+{n:"CoreWeave",seg:"s1",st:"Nasdaq: CRWV · about $34B market cap at ~$61 (20 Oct 2026), down ~60% in five months",one:"The largest pure GPU cloud. Buys GPUs, rents them on multi-year committed contracts, and funds it with layered debt.",
+ model:["GPU rental with a managed software stack, mostly multi-year take-or-pay.","Leases most of its data center space. The $9B Core Scientific purchase, which would have added owned sites, was voted down in October 2025."],
+ scale:["1.5 GW active across 51 data centers at 30 June 2026; about 4.2 GW contracted by August.","Q2 revenue $2,575M, up 112%. Adjusted EBITDA margin 59%. Net loss $626M after $640M of interest.","Backlog $104.2B. FY2026 revenue guidance $12.4–13.2B."],
+ cust:["Top two customers were 62% of Q2 revenue.","Meta up to $21B through 2032 on top of $14.2B. OpenAI about $22.4B. Anthropic signed April 2026.","New 3–6 month contracts at about $40M per MW annualized."],
+ cap:["$35.1B of debt against $5.5B cash at 30 June.","Cost of funds (Net Interest, 23 Oct): about $42B of debt after August draws and the September convert, serviced at $3.3B a year, an average rate of 7.8%. Roughly a third is DDTLs, half unsecured notes and converts, the rest OEM and software financing and a revolver. DDTL 1.0 (July 2023) cost about 15% and amortizes to March 2028, when its contract ends; DDTL 5.5 at SOFR + 550 (about 9%) is cheaper, but a premium to the other DDTLs for its three-year contracts against a five-year loan. Unsecured notes issued at 9.75% in H1 now yield over 15%.","Capex of $35–39B in 2026. At Nvidia's $25B per GW for Blackwell and $40B for Vera Rubin, the 8 GW target for 2030 implies about $300B of capex, $62B spent so far; the 4.2 GW already committed needs about $100B, against $10B of undrawn facilities and $10B of cash, leaving about $80B to raise.","About 70% of contracts carry a prepayment, averaging 15–25% of contract value, but prepayments have fallen as the company got comfortable with its cost of capital.","$8.5B facility rated A3 at SOFR + 225 bps: the first investment-grade GPU-backed loan.","August's $2.6B facility priced at SOFR + 550 bps and had to widen in syndication.","Nvidia invested $2.0B in January 2026.","September 2026: $4.2B of 2.875% converts due 2033 and an at-the-market programme for up to 35M shares. Pro forma debt is about $42B against about $11.5B of cash; average cash cost is under 8%.","Structure: most debt sits in project subsidiaries ('boxes') that hold the contracts and GPUs, but the parent guarantees nearly all of it. Only about $3.8B is non-recourse.","Nvidia has agreed to buy residual unsold capacity through April 2032, subject to delivery terms."],
+ risk:["October 2026 credit selloff: unsecured notes trade around 80 cents and yield about 15%; five-year CDS hit a record of about 1,128–1,195 bps, which implies roughly a 45–60% chance of default within five years. New parent-level money now costs about that much.","Q2 adjusted EBITDA margin was 58.6% but adjusted operating margin only 5.0%; the gap is depreciation on chips that must be replaced. FY2026 free cash flow runs about -$27B, and 2027 consensus has about $18B of operating cash flow against about $48B of capex.","Interest runs at about a quarter of revenue.","$4.4B matures in the rest of 2026 and $6.2B in 2027.","Customer concentration and continued dilution."],
+ kona:"The reference case for what own-GPU economics need: committed contracts first, then debt priced off the customer. Its two facilities 325 bps apart show what tenant credit is worth. Rubinstein's framing is the one to keep: a neocloud is a non-bank financial, and the business is the spread between what new GPUs earn and what the money to buy them costs. Payback is the number that spread shows up in: CoreWeave guided 2.5 years at its IPO, Nebius now reports 1 year 10 months on new deals, Huang says under a year, Musk floats six months. A three-month delay on a gigawatt costs about $3.25B of revenue, which is why delivery, not demand, is the risk lenders price.",
+ flag:"Leased-versus-owned split and GPU count are not disclosed. Credit figures are from JunkBondInvestor (20 Oct 2026) and Bloomberg via secondary coverage.",
+ src:[["Q2 2026 results","https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx"],["Investment-grade facility","https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"],["Pricing release, Sept 2026","https://investors.coreweave.com/news/news-details/2026/CoreWeave-Continues-to-Contract-New-Compute-Capacity-at-Higher-Prices/default.aspx"]]},
+{n:"Nebius",seg:"s1",st:"Nasdaq: NBIS",one:"Full-stack AI cloud with its own software and an inference service. Funds growth largely with customer prepayments.",
+ model:["GPU cloud plus Token Factory, a per-token inference service whose workloads tripled in Q2.","Mix of self-built sites and colocation. Introduced an asset-light model where third parties finance infrastructure and Nebius supplies the platform."],
+ scale:["Year-end targets: 5 GW contracted and 800 MW to 1 GW connected.","Q2 revenue $582M, up 454%. Adjusted EBITDA margin 41% (50% for the AI cloud segment).","Backlog above $40B. 2026 capex guidance $20–25B."],
+ cust:["Microsoft $17.4B over five years, fully delivered.","Meta up to $27B, of which only $12B is firm; up to $15B is a backstop on capacity Nebius first tries to sell elsewhere.","About 70% of Q2 deals carried prepayments covering 50–60% of capex."],
+ cap:["Nvidia invested $2B for about 8.3%.","$4B of converts at 1.25% and 2.625%.","$775M asset-backed loan at SOFR + 250 bps.","$8B cash at end of June."],
+ risk:["Capex plan is six to eight times this year's revenue.","Vera Rubin delivery timing.","Headline Meta number is more than half optional."],
+ kona:"Two ideas to borrow: prepayments as the main source of capex, and the asset-light model where someone else owns the site. Nebius could be the platform partner on a site it does not finance.",
+ flag:"Current market cap and connected MW were not confirmed.",
+ src:[["Q2 shareholder letter","https://assets.nebius.com/assets/4462517b-ce83-41f2-96ed-f2ac1bc06a05/SHLQ226%20(1).pdf-0"],["Q2 summary","https://blockspace.media/insight/nebius-revenue-surges-ai-cloud-margins-q2-2026/"],["Meta deal structure","https://thenextweb.com/news/meta-nebius-27-billion-ai-infrastructure-deal"]]},
+{n:"Lambda",seg:"s1",st:"Private · raising up to $4B at $14.5B pre-money (Coatue, Blackstone)",one:"Developer-focused GPU cloud that leases colocation space and is moving toward large dedicated sites.",
+ model:["On-demand instances, reserved clusters and dedicated private cloud.","Has leased colocation across about 15 US data centers. Target of 3 GW by 2030."],
+ scale:["Revenue about $700M in 2025 and more than $1.5B projected for 2026, at about 50% gross margin. All secondary; nothing is filed."],
+ cust:["Nvidia leases back about 18,000 GPUs for $1.5B over four years.","Microsoft multibillion-dollar deal, November 2025.","A $35B Anthropic commitment tied to a 350 MW Hut 8-developed site in Texas, cited in Lambda's investor letter but not publicly announced. Backlog rose from $15B in June to $50B in September."],
+ cap:["$1.008B delayed-draw loan, fixed 6.78%, rated Baa1, fully amortizing to May 2033, secured on GPUs and contracts with two investment-grade customers (October 2026).","$926M term loan rated Baa2 at SOFR + 300 bps, fully amortizing to 2030, backed by an investment-grade customer contract.","About $2.9B of secured debt in total.","IPO has slipped to 2027 at the earliest."],
+ risk:["Nvidia is investor, sole supplier and a major customer.","Little owned infrastructure.","Largest contract is unconfirmed."],
+ kona:"Shows the SPV pattern for a mid-sized borrower: ring-fence one investment-grade contract and the debt prices at SOFR + 300 bps regardless of the parent.",
+ flag:"Revenue, margin and the Anthropic contract come from secondary or unnamed sources.",
+ src:[["Term loan release","https://lambda.ai/blog/lambda-closes-926-million-senior-secured-term-loan-b-facility"],["Anthropic report","https://thenextweb.com/news/anthropic-lambda-35bn-cloud-deal"],["Sacra profile","https://sacra.com/c/lambda-labs/"]]},
+{n:"Crusoe",seg:"s1",st:"Private · $30.9B post-money, Sept 2026",one:"Started on flare gas, now builds gigawatt campuses with its own power and runs a cloud on top. The closest large analogue to Kona's thesis.",
+ model:["Three lines: build and lease campuses to hyperscalers, GPU rental, and managed inference.","Energy-first: on-site generation contracts with GE Vernova (about 1 GW) and ProEnergy (650 MW), plus in-house electrical gear and modular units.","Campus revenue is 15-year triple-net leases. Cloud reservations run 6 months to 3 years.","Lochmiller's framing: three products (data centers, GPUs, tokens) and an aim to be the vertically integrated supermajor of AI, so that margin moving between layers is hedged. He says managed GPU clusters are the highest-margin layer today because supply is short.","Builds its own electrical gear: a power distribution unit quoted at 100 weeks was made in-house in 28. Delivered Abilene's first two buildings in one year against a next-best bid of 2.5 years."],
+ scale:["More than 6 GW contracted and more than 1 GW operating.","Abilene: 1.2 GW for Oracle/OpenAI and 900 MW for Microsoft. Wyoming: 1.8 GW with Tallgrass building 2.7 GW of on-site gas for about $7B.","Total contracted value above $140B. Managed inference above $100M of contracted annual revenue."],
+ cust:["Oracle/OpenAI, Microsoft, Google, Meta, Jane Street (about $13B over five years)."],
+ cap:["Series F of $3.9B, with Nvidia participating. Valuation tripled in eleven months.","Abilene financed at project level through a Blue Owl joint venture with JPMorgan loans. A Crusoe slide describes it as a $15B joint venture with Blue Owl and Primary Digital, now in its second phase; earlier reports cited $11.6B.","IPO talks are preliminary."],
+ risk:["Turbine delivery and construction across several gigawatt sites at once.","Exposure to the Oracle/OpenAI credit chain; the Abilene expansion was dropped in March 2026."],
+ kona:"The proof that stranded gas plus compute can become a platform. Crusoe moved from energy up through leases to cloud and inference in sequence, funding each step with the contracts from the last.",
+ flag:"2025–26 revenue figures are analyst projections. No margins disclosed.",
+ src:[["Series F release","https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding"],["Wyoming campus","https://www.datacenterdynamics.com/en/news/crusoe-gets-go-ahead-for-18gw-data-center-campus-and-power-plant-in-cheyenne-wyoming"],["Abilene financing","https://www.datacenterdynamics.com/en/news/crusoe-secures-116bn-in-debt-and-equity-for-openais-stargate-data-center-campus-in-abilene-texas/"],["20VC interview","https://www.youtube.com/watch?v=Ko7nU1Img40"],["Stanford lecture","https://www.youtube.com/watch?v=GcCGzfKdCd0"]]},
+{n:"Nscale",seg:"s1",st:"IPO filed 18 Sept 2026 · last round $14.6B",one:"UK neocloud spun out of a bitcoin miner. Huge contracted book, very little of it live, and a gas-powered flagship campus.",
+ model:["Vertically integrated: sites, power, GPU clusters. Sells reserved private cloud and per-token inference.","Says it does not buy GPUs until demand is contracted.","Monarch campus, West Virginia: gas engines on site, 2 GW in phase one, expected H1 2028."],
+ scale:["55 MW active across five data centers.","461,000 GPUs active or contracted, about 5% energized.","H1 2026 revenue $140.6M against a $1.02B net loss. Contract value $103.4B, of which $2.6B is active."],
+ cust:["Anthropic up to $44.6B over about six years for roughly 460 MW at Monarch. No binding financing yet.","Microsoft up to $43.8B in Norway and Portugal. It walked away from a 1.35 GW letter of intent at Monarch."],
+ cap:["Investment-grade-backed loans at SOFR + 237.5 bps. GPU credit at SOFR + 500 bps, with a default waived in April 2026.","Macquarie loans at SOFR + 550–750 bps with lender return floors of 1.18x to 1.40x.","$2.54B of 3–4 month Dell bridge leases carrying GPUs until loans fund."],
+ risk:["95% of contracted GPUs are not yet live.","The Anthropic build is unfinanced.","Covenant waiver and disclosed weaknesses in financial controls."],
+ kona:"The full price list for a developer on one balance sheet: the same company borrows at SOFR + 237.5 with Microsoft behind the loan and at SOFR + 750 with a return floor without. Also a gas-engine campus at scale.",
+ flag:"Sources disagree on IPO valuation ($25B to $50B). Financial figures are from coverage of the S-1, not the filing itself.",
+ src:[["Pre-IPO raise and S-1","https://www.datacenterdynamics.com/en/news/ai-cloud-and-data-center-firm-nscale-raises-336bn-ahead-of-its-ipo/"],["Financing breakdown","https://ccir.io/research/nscale-gpu-financing"],["Anthropic deal","https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/"]]},
+{n:"IREN",seg:"s2",st:"Nasdaq: IREN · $16.5B market cap",one:"Former bitcoin miner that chose to own the GPUs and sell cloud instead of leasing space.",
+ model:["Own-GPU AI cloud on its own powered sites. No colocation or shell leasing."],
+ scale:["Targets 0.3 GW of IT load in 2026 and 0.8 GW in 2027. Pipeline above 5 GW.","FY26 revenue $707M, of which AI cloud $128.8M. Contracted annual revenue for 2026 capacity is $4.0B.","Adjusted EBITDA margin fell to 14% in Q4 during the mining exit."],
+ cust:["Microsoft $9.7B contract. A new frontier AI lab, reported to be Anthropic (unconfirmed).","Three-year contracts above $20M per IT MW per year, about a two-year payback. Customers prepay 45–55% of GPU capex."],
+ cap:["$5.9B cash. $6.3B of converts raised in FY26.","$3.6B GPU financing for the Microsoft contract at 6.0%. $2.4B from Blue Owl/PIMCO at 9.0% for non-investment-grade deployments."],
+ risk:["GPU residual value on three-year contracts.","Execution on 300 MW by year-end."],
+ kona:"The cleanest disclosed unit economics for owning GPUs on your own power: revenue per MW, payback and prepayment share. Also the 300 bps gap between investment-grade and other customers.",
+ flag:"Microsoft contract term is reported as both three and five years; Net Interest describes a five-year average term. See the Financing tab for how the deal was structured.",
+ src:[["FY26 results","https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"],["Microsoft contract","https://iren.gcs-web.com/news-releases/news-release-details/iren-secures-97bn-ai-cloud-contract-microsoft"]]},
+{n:"TeraWulf",seg:"s2",st:"Nasdaq: WULF · about $6.0B market cap at ~$12 (20 Oct 2026), down ~25% since 2 Oct",one:"Former bitcoin miner that turned its powered sites into long-term data center leases for AI labs. The closest listed analogue to Kona's power-first path.",
+ model:["Landlord, not GPU owner. Builds the power, shell and cooling; tenants bring the GPUs and pay actual power costs at utility rates, usually with a mark-up.","HPC hosting was 71% of revenue by Q2 2026, up from zero in 2024."],
+ scale:["About 840 MW contracted across New York and Kentucky; 102 MW generating revenue at Lake Mariner, New York. The first CB-4 hall was due in late September but slipped about a quarter on Fluidstack design changes; delivery not yet confirmed.","Muskie, Kentucky: contracted power doubled to 1 GW on 5 October (second 500 MW in 2029, subject to approval). No tenant yet.","Build cost running about $9M per critical IT MW (guidance $8–10M). Lake Mariner power cost $49 per MWh in Q2 2026."],
+ cust:["Core42 (first lease, December 2024): 60 MW at $125 per kW-month with 3% escalators, $90M prepaid, backed by a G42 parent guarantee. Management cited a 17–18% unlevered yield.","Fluidstack at Lake Mariner: about 360–380 MW, about $6.7B, implied about $154 per kW-month. Google backstops about $3.2B of the rent in return for warrants on about 14% of TeraWulf.","Anthropic at Justified, Kentucky (a former aluminum smelter): 401 MW for 20 years, about $19B, implied about $197 per kW-month; KBW estimates an 18.3% yield on cost. Delivery from late 2027.","Sold its stake in a Texas joint venture to Fluidstack for about $530M against $450M invested."],
+ cap:["$3.2B of 7.75% secured notes due 2030, issued by a ring-fenced subsidiary (WULF Compute) and rated Ba2/BB, with a lockbox, amortization and a debt service reserve.","$2.525B of convertible notes (about $2.1B on the balance sheet).","The roughly $3.5–4B Kentucky financing, led by Morgan Stanley, had not priced by 20 October, and the investment-grade backer for the Anthropic lease is still unnamed.","Q3 results on 6 November."],
+ risk:["Nearly all contracted growth traces back to Anthropic, directly or through Fluidstack.","About $4B of Kentucky capex not yet financed; working capital of -$957M at 30 June.","Dilution: shares rose from 420M to 499M in seven months, with warrants, stock units and converts on top. Short interest is about 28% of float.","New York has paused permits for new sites of 50 MW or more, which hits expansion rather than existing leases.","Both New York sites are leased from entities controlled by management."],
+ kona:"The closest listed analogue to Kona's path. It started with a 60 MW lease to a guaranteed tenant that prepaid, then used a hyperscaler backstop to borrow at 7.75% in a ring-fenced subsidiary. In October's selloff its shares fell about 25% while those backed notes reportedly held near par. See the case study on the Kona tab.",
+ flag:"The bond price (102.25, about 7.1% yield on 16 October) comes from a single data source. The Anthropic lease structure (triple-net, escalators) is not disclosed. Fluidstack's megawatts differ by source.",
+ src:[["Q2 2026 10-Q","https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000166/wulf-20260630.htm"],["Q2 2026 results","https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000162/a_wulfearningsreleaseq22026.htm"],["Muskie expansion","https://www.sec.gov/Archives/edgar/data/0001083301/000162828026064757/muskieexpansionpr.htm"],["Moody's on WULF Compute","https://www.moodys.com/web/en/us/solutions/ratings/digital-infrastructure/wulf-compute-case-study.html"],["Core42 lease call","https://www.sec.gov/Archives/edgar/data/1083301/000095014224002999/eh240572111_ex9901.htm"],["Anthropic lease economics (KBW)","https://blockspace.media/insight/terawulf-anthropic-lease-economics-2026/"]]},
+{n:"Cipher Digital",seg:"s2",st:"Nasdaq: CIFR · $6.5B market cap",one:"Texas build-to-suit landlord, formerly Cipher Mining. Finances each site with its own non-recourse notes.",
+ model:["Build-to-suit hyperscale leases. Pivot from mining nearly complete."],
+ scale:["907 MW operating or contracted. Portfolio of 5.3 GW across 11 sites.","Build cost $9–11M per MW. Three leases expected to average about $793M of annual net operating income."],
+ cust:["AWS at Black Pearl: 300 MW, 15 years, about $5.5B, an implied $102 per kW-month. AWS absorbs build cost above $9.5M per MW.","Fluidstack at Barber Lake with a Google backstop; a second 10-year lease with an AI lab took the site above $9B."],
+ cap:["Non-recourse project notes: $2.0B at 6.125%, $1.73B at 7.125%, $810M at 6.0%.","Management does not expect to need more equity."],
+ risk:["About 95% Texas concentration and grid-study uncertainty.","Backstops cover tenant default, not construction delay."],
+ kona:"Shows cost-overrun sharing written into a lease, and how project-level notes keep each site's risk separate. The coupon gap between the AWS site and the Fluidstack site is the price of a direct hyperscaler tenant.",
+ flag:"Barber Lake size and backstop amount differ between sources.",
+ src:[["Q2 2026 update","https://www.globenewswire.com/news-release/2026/08/04/3338166/0/en/cipher-digital-provides-second-quarter-2026-business-update.html"],["Barber Lake amendment","https://www.sec.gov/Archives/edgar/data/0001819989/000181998926000043/barberlakeleaseamendmentpr.htm"],["AWS lease","https://www.datacenterdynamics.com/en/news/aws-signs-300mw-hosting-deal-to-lease-capacity-from-cipher-mining/"]]},
+{n:"Applied Digital",seg:"s2",st:"Nasdaq: APLD · $7.4B market cap",one:"Builds purpose-designed campuses in the Dakotas and Louisiana on 15-year take-or-pay leases.",
+ model:["Build-to-suit landlord. Spun its GPU cloud into a separate company in May 2026."],
+ scale:["1,410 MW contracted across five campuses; 175 MW live.","Hosting net operating income margin of 91%.","Lowest yield of the listed group: about $1.19M of first-year income per MW, about 10%."],
+ cust:["CoreWeave 400 MW for about $11B, an implied $153 per kW-month.","Investment-grade hyperscalers on four more campuses at an implied $138–139 per kW-month."],
+ cap:["Project notes at 6.75% to 9.25%.","Macquarie preferred equity at about a 12.75% coupon plus a 10–15% interest in the projects. UBS puts blended cost of capital near 20%."],
+ risk:["Expensive structured equity.","Heavy 2027 delivery schedule across four campuses."],
+ kona:"A warning on structured equity: a 91% margin lease can still earn a thin spread when the gap is filled with 12.75% preferred plus project equity.",
+ flag:"Campus MW split differs between sources. The Oracle tenant name comes from one summary.",
+ src:[["FY26 Q4 results","https://www.globenewswire.com/news-release/2026/07/27/3333871/0/en/Applied-Digital-Reports-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results.html"],["UBS summary","https://404kresearch.substack.com/p/north-american-ai-power-landlords"]]},
+{n:"Galaxy (Helios)",seg:"s2",st:"Nasdaq: GLXY · $9.0B market cap",one:"A single West Texas campus leased to CoreWeave, inside a crypto financial-services firm.",
+ model:["Single-tenant build-to-suit landlord at a former mining site."],
+ scale:["526 MW of IT load leased; Galaxy now expects to deliver 800 gross MW to CoreWeave at Helios 1, with Phase 2 (260 MW) from Q2 2027. Helios 2 has 830 MW approved and no tenant.","Phase I (133 MW) delivered at about $80M per quarter, an implied $200 per kW-month.","Project-level EBITDA margin above 90%."],
+ cust:["CoreWeave for 15 years with two five-year extensions and 3–5% annual escalators on Phase II. No hyperscaler backstop."],
+ cap:["Phase II: $3.5B of secured notes at 9.875%, the most expensive project debt in the group. Interest starts before Phase II rent."],
+ risk:["Single tenant without investment-grade support."],
+ kona:"The cost of an unbacked tenant, in one number: 9.875% here against about 6.1–6.2% for Hut 8's Google-backed and investment-grade leases.",
+ flag:"Build cost per MW is not disclosed.",
+ src:[["Q2 2026 release","https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/glxy-20260630xpressrelease.htm"],["Phase II notes","https://cryptoslate.com/the-brutal-346m-math-behind-galaxys-high-stakes-race-to-build-coreweaves-texas-ai-mega-center/"]]},
+{n:"VoltaGrid",seg:"s3",st:"Private · backed by Blackstone and Halliburton",one:"Owns and operates modular gas-engine power plants and sells the output as a service to data centers.",
+ model:["Energy-as-a-service. Modular Jenbacher engine nodes of up to 20 MW, combinable to 200 MW under a minor-source air permit.","Markets firm power with no battery reliance."],
+ scale:["Order book about 7.5 GW through 2030.","Got xAI's first Memphis site running in about four months with mobile units."],
+ cust:["Oracle 2.3 GW in Texas with firm gas from Energy Transfer. Vantage more than 1 GW. xAI."],
+ cap:["$5.0B refinancing in November 2025: $2.0B of second-lien notes at 7.375% plus a $3.0B asset-backed line.","$1B of equity in May 2026."],
+ risk:["Engine supply and delivery pace.","Contract terms and prices are not disclosed."],
+ kona:"The pure energy-only model at scale, on the same engine class Kona uses. It shows the product: firm power, fast, sold to a tenant who brings everything else.",
+ flag:"Operating MW, price and capex per MW are not disclosed. Order book figures conflict between sources.",
+ src:[["Equity raise","https://www.datacenterdynamics.com/en/news/voltagrid-raises-1bn-from-blackstone-and-halliburton-to-expand-power-system-offering-for-data-centers/"],["Oracle contract","https://www.powermag.com/oracle-taps-voltagrid-for-2-3-gw-modular-gas-fleet-to-power-ai-data-centers-across-texas/"],["Refinancing","https://www.stblaw.com/about-us/news/view/2025/11/10/simpson-thacher-advises-on-$5-billion-debt-refinancing-by-voltagrid"]]},
+{n:"Williams",seg:"s3",st:"NYSE: WMB",one:"Pipeline company that builds gas supply and on-site generation for hyperscalers under fixed-term contracts.",
+ model:["Integrated gas, pipeline and generation behind the meter, contracted for 10–12.5 years.","Mixes turbines, engines and batteries at each plant."],
+ scale:["Five projects, more than 2.6 GW announced, more than 6 GW in backlog.","Neo: 682 MW for $2.3B, about $3,370 per kW including gas infrastructure.","Management cites about a 5x build multiple, roughly 20% returns."],
+ cust:["Meta at Socrates in Ohio (400 MW). Others undisclosed. Customers now discussing 15–20 year terms."],
+ cap:["Blackstone Credit and others committed $5.34B for 49% of a joint venture holding all five projects."],
+ risk:["Pricing is not disclosed, so returns are management's figures."],
+ kona:"The best public benchmark for what power alone earns: about $56 per kW-month implied, before fuel. It also shows that selling a minority of the project company to an infrastructure investor is a financing route.",
+ flag:"The $56 per kW-month figure is arithmetic on the stated build multiple, not a disclosed price.",
+ src:[["Blackstone joint venture","https://www.williams.com/2026/07/13/williams-announces-5-34-billion-investment-in-power-innovation-joint-venture-from-blackstone/"],["Project list","https://www.argusmedia.com/en/news-and-insights/latest-market-news/2786994-williams-to-supply-gas-power-to-meet-ohio-demand"],["Q1 2026 call","https://www.fool.com/earnings/call-transcripts/2026/05/05/williams-wmb-q1-2026-earnings-transcript/"]]}
+];
+let segFilter="all";
+function renderPlayers(){
+  const box=$("#playerlist");box.textContent="";
+  P.filter(p=>segFilter==="all"||p.seg===segFilter).forEach(p=>{
+    const d=el("details","player"),s=el("summary");
+    const left=el("div");left.append(el("div","seg "+p.seg,SEG[p.seg]),el("div","name",p.n));
+    const right=el("div","status",p.st);
+    s.append(left,right,el("p","one",p.one));d.append(s);
+    const b=el("div","pbody");
+    [["Business model",p.model],["Scale and financials",p.scale],["Customers and contracts",p.cust],["Capital structure",p.cap],["Risks",p.risk]].forEach(([t,arr])=>{
+      const c=el("div");c.append(el("div","eyebrow",t));const ul=el("ul");arr.forEach(x=>ul.append(el("li",null,x)));c.append(ul);b.append(c)});
+    const k=el("div","wide kona");k.append(el("div","eyebrow","Why it matters for Kona"),el("div",null,p.kona));b.append(k);
+    const f=el("div","wide flagbox");f.append(el("div","eyebrow","Check before use"),el("div",null,p.flag));b.append(f);
+    const sr=el("div","wide src");sr.append("Sources: ");p.src.forEach(([t,u])=>sr.append(link(t,u)));b.append(sr);
+    d.append(b);box.append(d)});
+}
+[["all","All"],["s1",SEG.s1],["s2",SEG.s2],["s3",SEG.s3]].forEach(([k,l])=>{
+  const c=el("button","chip",l);c.setAttribute("aria-pressed",k==="all");
+  c.onclick=()=>{segFilter=k;document.querySelectorAll("#segchips .chip").forEach(x=>x.setAttribute("aria-pressed",x===c));renderPlayers()};
+  $("#segchips").append(c)});
+renderPlayers();
+
+[["Fluidstack","s1","Asset-light neocloud that places GPUs in sites hosted by converted miners, with nearly 1 GW secured. Anthropic is the anchor and Google backstops its leases. Raised $1.5B at $18B on 28 Sept 2026. Now also buying into sites as an owner."],
+ ["Volta","s1","Founded early 2026. Signed a $10B, six-year Anthropic deal for 133 MW at a Bitdeer-operated hydro site in Norway. Valued at $2.4B with Nvidia among backers."],
+ ["Together AI","s1","Inference and fine-tuning platform. About 30–40% of revenue is per-token and the rest GPU rental, at about 45% gross margin. Rents capacity from other neoclouds. $1.0B run-rate in February 2026."],
+ ["TensorWave","s1","AMD-only GPU cloud. Raised $350M at $1.55B. Signed 222 MW with Fermi America for 15 years."],
+ ["Voltage Park / Lightning AI","s1","Merged in January 2026 at a $2.5B valuation, claiming 35,000 GPUs across six US sites."],
+ ["Vultr","s1","General-purpose independent cloud with a growing GPU business. AMD is an investor."],
+ ["Hut 8","s2","949 MW contracted on triple-net take-or-pay leases worth $26.6B. Best financing in the group: $3.25B at 6.19% and $4.25B at 6.13%, backed by Google and an investment-grade tenant."],
+ ["Core Scientific","s2","About 1.1 GW leased to CoreWeave and AMD. Moving from tenant-funded capex (60–65% yields, not repeatable) to self-funded 15-year leases at about 12%. Has a $3B minimum market-cap covenant."],
+ ["Riot Platforms","s2","191 MW at Rockdale to a frontier AI lab for 20 years, $9.1B, about $199 per kW-month."],
+ ["Bitdeer","s2","121 MW in Norway leased to Volta for 16 years, $4.7B, about $202 per kW-month."],
+ ["Vantage, Aligned, Related Digital","s2","Private hyperscale developers. Vantage's Frontier campus in Texas carries about $22B of bank debt. Aligned sold for $40B in July 2026. Related financed a $16B Oracle campus in Michigan."],
+ ["Tract","s2","Pure powered land: master-planned, entitled sites with power, sold or leased to builders. No 2026 pricing found."],
+ ["Fermi America","s3","Integrated power and shell at Amarillo. Lost an investment-grade prospect in December 2025, then signed TensorWave for 222 MW at an implied $163 per kW-month. In October AMD agreed credit support for that lease, with a framework to 650 MW: a chip supplier standing behind a neocloud tenant. Still needs project financing; thin cash and management turnover."],
+ ["Pacifico (GW Ranch)","s3","Fully off-grid private grid in West Texas, permitted for 7.65 GW of gas. No tenant or financing disclosed."],
+ ["Joule Capital","s3","Utah campus on Caterpillar engines with battery storage. No tenant disclosed."],
+ ["New Era Energy & Digital","s3","Permian gas-to-compute developer with no tenant yet. Its Macquarie loan commits only $20M of $290M until a lease is signed."],
+ ["Soluna","s3","192 MW behind the meter at wind sites with power near $40 per MWh. Moving from mining to AI hosting."],
+ ["Bloom Energy","s3","Fuel cells delivered in months. Oracle agreement for up to 2.8 GW. Brookfield financing partnership reported at $25B."],
+ ["Chevron / Engine No. 1","s3","20-year power contract with Microsoft for a co-located West Texas gas plant of about 2.5 GW. Investment decision targeted for end of 2026."],
+ ["Engine and turbine makers","s3","Caterpillar has orders out to 2030. Wärtsilä is reportedly sold out through 2028. GE Vernova holds 116 GW of backlog and reservations, with talks out to 2032."]
+].forEach(([n,s,t])=>{const tr=el("tr");const a=el("td");a.append(el("b",null,n));const b=el("td");b.append(el("span","seg "+s,SEG[s]));tr.append(a,b,el("td",null,t));$("#watch tbody").append(tr)});
+
+/* ---------- generic table helper ---------- */
+function table(id,head,rows,numCols=[]){
+  const t=$(id),th=el("thead"),tr=el("tr");head.forEach((x,i)=>{const c=el("th",numCols.includes(i)?"num":null,x);tr.append(c)});th.append(tr);
+  const tb=el("tbody");rows.forEach(r=>{const row=el("tr");r.forEach((x,i)=>{const c=el("td",numCols.includes(i)?"num":null);if(i===0){c.append(el("b",null,x))}else c.textContent=x;row.append(c)});tb.append(row)});
+  t.append(th,tb)}
+
+/* ---------- models ---------- */
+table("#modeltable",["Model","What you sell","Revenue per MW per year","Capex per MW","Contract","Who does it"],[
+ ["Energy only","Firm power behind the meter","About $0.7M before fuel (Williams, implied)","$1.2–2.0M engines; $2.6–3.4M integrated","10–20 years, fixed-term","VoltaGrid, Williams"],
+ ["Powered land or shell","Entitled site, power, building shell","No reliable 2026 pricing","Low","Sale or long lease","Tract, LandBridge"],
+ ["Turnkey lease","Finished hall, 10–20 year lease","$1.2–2.6M ($100–220 per kW-month)","$9–16M","Take-or-pay, 3–5% escalators","TeraWulf, Cipher, Hut 8, Galaxy"],
+ ["Hosting for a neocloud","Power and hall to a GPU owner who has the end customer","Same range; top of range for 2026 lab deals","$9–16M","10–20 years, often with a backstop","TeraWulf/Fluidstack, Bitdeer/Volta"],
+ ["GPU cloud","GPU capacity by the hour or on contract","$15M (Crusoe) to $20–25M (Nebius) on term deals; $40–50M under 6 months","About $60M: $40M compute plus $20M site (Crusoe)","3–7 years; prepayments of 45–60% of capex","CoreWeave, Nebius, IREN"],
+ ["Tokens and inference","Model output or managed endpoints","$5–15M on top of rental (Crusoe)","GPU cloud capex plus software","Usage-based","Nebius, Crusoe, Together AI"]]);
+table("#stacktable",["Item","$M per MW","Notes"],[
+ ["Data center with behind-the-meter gas plant","19.2","Crusoe's illustrative build-up"],
+ ["of which labor","4.7","Capitalized construction labor; about 9,000 workers a day at Abilene"],
+ ["of which materials","3.9","Steel, concrete and the rest of the shell"],
+ ["of which gas plant","3.0","Turbine prices have gone from about $1M to $3M per MW"],
+ ["of which tenant fit-out","2.6","Equipment inside the data hall"],
+ ["of which electrical equipment","1.8","Switchgear, transformers, UPS, distribution"],
+ ["of which mechanical equipment","1.7","Chillers, fan walls, cooling distribution"],
+ ["of which soft costs","1.5","Insurance, financing during construction, siting, commissioning"],
+ ["IT equipment","40","Illustrative GB300 bill of materials"],
+ ["of which GPUs","30",""],
+ ["of which networking","4",""],
+ ["of which CPUs and storage","3","CPUs are now short because agents need them for orchestration"],
+ ["of which in-room capex","3",""],
+ ["of which deployment labor and shipping","1",""],
+ ["Total upfront","59","Crusoe groups it as $19M site and power, $30M GPUs, $10M other AI infrastructure"]],[1]);
+table("#paybacktable",["Case","Revenue per MW per year","Operating cost per MW per year","Simple payback on $59M"],[
+ ["Rent the chips (IaaS)","About $15M","About $1.1M: power, networking, labor, GPU insurance","About 4 years"],
+ ["Add managed AI services","$15–30M (up to a 100% premium over IaaS)","About $1.1M plus the services team","About 2 years at the top of the range"]],[1]);
+table("#lineitems",["Group","Item","$M per MW"],[
+ ["Electrical","Switchgear","About 0.5"],["Electrical","Transformers","About 0.1"],["Electrical","Power distribution center","About 0.1"],["Electrical","UPS (battery ride-through)","About 0.7"],
+ ["Mechanical","Chillers","About 0.5"],["Mechanical","Fan walls","About 0.3"],["Mechanical","Cooling distribution units","About 0.2"],
+ ["Base building","Steel","About 0.4"],["Base building","Site work","About 1.8"],["Base building","Concrete and foundations","About 0.5"],
+ ["Power","Gas power plant","1.8–3.0"],["Power","Backup generators","About 0.2"],
+ ["Listed total","","About 7.1–8.3"]],[2]);
+table("#paybacktable",["Case","Revenue per MW per year","Operating cost","Payback"],[
+ ["Rent the chips","About $15M","$1–2M, before engineering staff","About 4 years"],
+ ["Add managed inference","Up to $30M in an optimistic case","Higher","About 2 years"]],[1]);
+table("#leasetable",["Landlord","Tenant","MW","Term","Implied $/kW-month","Credit behind it"],[
+ ["Bitdeer, Norway","Volta, for an AI lab","121","16 yr","202","Venture-backed tenant"],
+ ["Galaxy Helios I","CoreWeave","133","15 yr","200","CoreWeave alone"],
+ ["Riot Rockdale","Frontier AI lab","191","20 yr","199","Not disclosed"],
+ ["TeraWulf Kentucky","Anthropic","401","20 yr","197","Investment-grade support expected"],
+ ["Fermi Amarillo","TensorWave","222","15 yr","163","Venture-backed tenant"],
+ ["TeraWulf Lake Mariner","Fluidstack","360","About 10 yr","155","Google backstop"],
+ ["Applied Digital ND","CoreWeave","400","15 yr","153","CoreWeave alone"],
+ ["Core Scientific","AMD","530","15 yr","147","AMD"],
+ ["Applied Digital","Hyperscalers","1,010","15 yr","138–139","Investment grade"],
+ ["TeraWulf Lake Mariner","Core42","60","10 yr","125","G42 parent guarantee; $90M prepaid"],
+ ["Core Scientific","CoreWeave","590","12 yr","100–115","Tenant funded the build"],
+ ["Cipher Black Pearl","AWS","300","15 yr","102","AWS"]],[2,3,4]);
+table("#powertable",["Technology","Installed $/kW","Cost $/MWh","Efficiency","Lead time"],[
+ ["Reciprocating engines","1,200–2,000","About 80","8,000–9,000 Btu/kWh, up to 46%","12–24 months"],
+ ["Aeroderivative turbines","1,000–1,200 equipment","About 91 open cycle","38–42%","12–24 months to 3–5 years; sources conflict"],
+ ["Frame / combined cycle","2,000–2,600","About 81","55–65%","5–7 years for heavy frames"],
+ ["Solid-oxide fuel cells","2,500–4,750","117; 90 with tax credit","About 60% electrical","3–12 months"]],[1,2]);
+table("#gputable",["GPU","Neocloud on-demand $/GPU-hour","Hyperscaler","Spot"],[
+ ["H100","Median 3.38; range 2.30–6.16","About 7.89","2.15"],
+ ["H200","Median 5.40; range 4.29–6.31","10.85","2.45–2.62"],
+ ["B200","7.15–8.55; up 79% in three months per one index","14.24","3.95"],
+ ["B300","7.10–17.80","Not listed","4.30"]],[1,2,3]);
+
+/* ---------- financing ---------- */
+table("#buyers",["Buyer","Commitments","Terms and signals"],[
+ ["Anthropic","$518B in its draft prospectus as reported, about 80% non-cancellable. Largest: Broadcom-related leases $161B, Google $111B, Amazon $110B, Microsoft $31B.","Leases of 15–20 years through landlords and neoclouds. SpaceX/xAI capacity is cancellable on 90 days' notice. Positive adjusted operating income for a second quarter, per the FT."],
+ ["OpenAI","Cut to about $600B through 2030, from $1.4T","Dropped the Abilene expansion, paused Stargate UK. Nvidia guarantees up to $105B of lease and power payments on one Ohio campus."],
+ ["Microsoft","More than $60B to neoclouds","Pays large prepayments (about $7B upfront to Nebius). Can terminate tranches for late delivery. Walked from a 1.35 GW letter of intent at Nscale."],
+ ["Meta","CoreWeave about $35B cumulative; Nebius up to $27B","More than half of the Nebius deal is an optional backstop. Reported to be reselling surplus capacity."],
+ ["Google","Capex guidance $195–205B","Acts as backstop for Fluidstack leases instead of leasing directly. Buying capacity from SpaceX/xAI on a 90-day exit. Prefers grid-connected sites; uses its own generation mainly to bridge until the utility delivers."],
+ ["Oracle","$288B of leases not yet commenced, 15–19 year terms","Leases run three times longer than its roughly five-year OpenAI contract."],
+ ["Jane Street, AMD, others","Jane Street $6B with CoreWeave and about $13B with Crusoe; AMD 530 MW at Core Scientific","Second-tier buyers are real but few have disclosed terms."]]);
+table("#debt",["Deal","Pricing","What stands behind it"],[
+ ["Hut 8 project debt","6.13–6.19% fixed","Google-backed and investment-grade leases; 95% loan-to-cost"],
+ ["CoreWeave, March 2026","SOFR + 225","One investment-grade customer, matched term"],
+ ["Nscale Texas and N. Carolina","SOFR + 237.5","Microsoft-backed, parent residual guarantee"],
+ ["Nebius asset-backed loan","SOFR + 250","Contracted capacity"],
+ ["Lambda, October 2026","6.78% fixed, Baa1","GPUs plus contracts with two investment-grade customers"],
+ ["Lambda term loan","SOFR + 300","SPV with an investment-grade contract, fully amortizing"],
+ ["Cipher project notes","6.0–7.125% fixed","AWS at the low end, Fluidstack with Google at the high end"],
+ ["CoreWeave, May 2026","SOFR + 450","Two non-investment-grade customers"],
+ ["Nscale GPU credit","SOFR + 500","Mixed customers; default waived April 2026"],
+ ["CoreWeave, August 2026 (DDTL 5.5)","SOFR + 550 at 97, about 9.4% all-in","Three-year contracts against a five-year loan; lenders carry the re-renting risk in years 4–5"],
+ ["Macquarie to Nscale","SOFR + 550–750","Lender return floor of 1.18x to 1.40x"],
+ ["IREN, non-investment-grade","9.0%","Blue Owl and PIMCO"],
+ ["SpaceX inaugural notes, June 2026","5.855% weighted average, BBB-tier, $25B","The whole company: Starlink cash flow, not the data centers"],
+ ["Galaxy Phase II notes","9.875% fixed","CoreWeave lease with no backstop"],
+ ["Applied Digital preferred","12.75% plus 10–15% of the project","Structured equity from Macquarie"]]);
+[["Short-contract GPU loans (CoreWeave DDTL 5.5)","A $2.6B loan arranged by JPMorgan and MUFG and sold to more than 100 funds, including Prudential and BlackRock. A CoreWeave subsidiary owns the chips and rents them on about three-year contracts at $20–25M per MW a year. Customer rent repays the loan in years 1–3; re-renting the chips has to repay the rest in years 4–5. If rent stops, lenders take the chips and the contracts. What is new is that lenders, not CoreWeave, now carry renewal risk. A deal model shared with this guide puts the gain to CoreWeave at rent of $22.5M per MW against $16.5M on a five-year contract, payback of 2.75 years against 3.5, and a 28% annual return against 23%. That model assumes $40M of equipment per MW, 15% prepaid and chips re-rented at half price, and has not been checked here."],
+ ["GPU-backed term loans (DDTLs)","How a delayed-draw term loan works: lenders commit a total limit for a set period, and the borrower (usually a project subsidiary) draws it in tranches as milestones are met, here as GPUs are delivered and contracts start. Covenants are tested before each draw. Interest runs only on drawn amounts, though a commitment fee on the undrawn part is common (0.5% on CoreWeave's August facility). Repayment amortizes or comes as a bullet. For GPUs the loan is secured on the hardware and the customer contract and sized to amortize inside the contract, typically 3–6 years. Advance rates are reported at 60–80% with debt service cover of at least 1.3x. Example: CoreWeave's DDTL 5.5 committed $2.6B and had $1.2B drawn by August 2026."],
+ ["Lease-backed project bonds","A special-purpose company owns the campus, a hyperscaler leases it, and bonds are sold against the lease. Meta's Louisiana campus raised $27.3B rated A+, with a residual value guarantee if Meta does not renew."],
+ ["Campus construction loans","Bank syndicates fund construction against a signed lease, then refinance into bonds or securitizations. Vantage's Texas campus carries about $22B."],
+ ["Backstops and guarantees","A stronger party guarantees a weaker tenant. Google for Fluidstack; Nvidia for OpenAI's Ohio campus and for CoreWeave's unsold capacity. The guarantor often takes warrants in the landlord."],
+ ["Chip-maker revenue floors","Nvidia's 2026 programme guarantees a minimum hourly rate (about $2.33 in examples) over six years with revenue sharing above it. This is the main route to bank debt without a strong tenant."],
+ ["Prepayments","Customers fund capex directly. Nebius covers 50–60% of capex this way; IREN 45–55%. The cheapest capital in the market, available only with a signed customer."]
+].forEach(([t,d])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));$("#structures").append(c)});
+[["Meta Hyperion, Louisiana","A new company owns the campus: Blue Owl funds 80%, Meta 20%. It raised about $27B of amortizing bonds rated A+, one notch below Meta, despite debt at about 90% of assets and debt service cover of 1.12x. Meta leases on rolling four-year terms from 2029 and must cover any shortfall against a minimum value if it leaves. The bonds yielded 6.58%, at least 100 bps more than Meta would pay directly. Meta discloses a maximum exposure of $46B in a footnote.","The rating comes from the tenant's promise, not the building. Off-balance-sheet treatment has a price, and the tenant pays it through rent."],
+ ["IREN Horizon, Texas","IREN put the GPUs and the Microsoft contract (five-year average term) in a bankruptcy-remote subsidiary that raised $3.65B: a $1.55B delayed-draw loan at SOFR + 225 bps and $2.1B of notes at 5.96%, released in four tranches as sites are delivered. With a $1.94B Microsoft prepayment, that funded 96% of the $5.8B GPU cost. Fitch rated it single A. IREN counts its all-in cost at 3.31% by treating the prepayment as free.","Cheap debt is paid for in price. The contract works out to about $2.91 per GPU-hour against about $6.70 spot for a B300, and total infrastructure cost of about $8.8B exceeds the profit the deal books. IREN is left holding the residual value of the hardware and the site."],
+ ["PORTS-Pike, Ohio","SB Energy is building a campus where OpenAI takes 8 GW on a 20-year lease from 2028. OpenAI is not a strong credit, so Nvidia guarantees its lease on 4.25 GW, capped at $105B, with an option to cover all 8 GW. OpenAI pays a fee, the guarantee steps down over time, and it falls away if OpenAI reaches a set credit rating. OpenAI also received warrants in SB Energy.","A chip-maker guarantee turns an unrated operator into a financeable one. SemiAnalysis expects such guarantees to reach $338B by 2031 and to be extended to neoclouds. This is the support most likely to be within reach of a small developer."],
+ ["Broadcom, Apollo and Blackstone","A special-purpose vehicle buys about 1 GW of AI racks from Broadcom and leases them to Anthropic for five years, in a $35B deal. Broadcom covers the shortfall if Anthropic cannot pay and the racks cannot be resold, with a stated maximum loss of $29B. Senior debt with the guarantee yielded 5.75%; junior debt without it yielded 8.5%.","The guarantee is worth 275 bps inside a single deal. Insurance capital is the buyer, so structures are shaped to what insurers can hold."]
+].forEach(([t,d,l])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));const k=el("div","kona");k.append(el("div","eyebrow","Lesson"),el("div",null,l));c.append(k);$("#cases").append(c)});
+[["No investment-grade tenant","Private credit facilities of roughly $20–500M at higher cost and lower advance rates. The New Era example shows the terms: of a $290M Macquarie loan, only $20M is committed until a lease is signed, and the power contract needs a $116M letter of credit."],
+ ["Development finance precedents","IFC lent Raxio $100M for African data centers in 2025. DFC lent Africa Data Centres up to $300M in 2022. IDB Invest is weighing $300M for Scala in Brazil. No DFC or export-credit data center deal in Latin America was found for 2025–26."],
+ ["Latin America bank deals","Scala Chile raised $328M from MUFG, SMBC, BNP and Natixis against 23 MW contracted. ODATA raised $1.02B. Both had hyperscale tenants signed."],
+ ["Generation equipment","Engines cost about $600–900 per kW at equipment level. Brookfield and Bloom have a $25B fuel-cell financing partnership. No disclosed engine-vendor financing terms were found."]
+].forEach(([t,d])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));$("#small").append(c)});
+["AI-related debt issuance was near $250B in the first five months of 2026.",
+ "Moody's counts $969B of hyperscaler lease commitments, $662B not yet commenced, and warns that AI leases are getting shorter while renewal options stay off the balance sheet.",
+ "Moody's also notes that a finished building is not a cash-generating asset: energization and commissioning delays are what squeeze debt cover.",
+ "October 2026 repricing: CoreWeave's unsecured bonds fell to about 80 cents (yields near 15%) and its default swaps hit records, after an equity raise, Oracle's force majeure on Project Jupiter, a downward correction to reported OpenAI revenue (closer to $50B than $68B) and a hot inflation print. Its business had not changed; its cost of new money had.",
+ "Lenders now price by tenant: Wells Fargo puts AWS- or Nvidia-backed data center bonds at about 6.8–7.2% and CoreWeave- or Oracle-backed at 8–9% or more, with the 10-year Treasury above 5.3%. Some project bonds for Meta, Oracle and Microsoft sites trade below par (single secondary source for exact prices), and Firmus and AirTrunk pulled or delayed listings.",
+ "Stress so far is in pricing, not defaults. CoreWeave's August loan widened by more than 100 bps in syndication. Blue Owl declined a $10B Oracle project. Nscale needed a covenant waiver.",
+ "No major GPU-backed or campus financing defaulted in 2026 in the sources reviewed.",
+ "The refinancing wall runs 2026–2028, with 2027 the largest year.",
+ "Hyperscaler capex overtook operating cash flow around Q3 2026, per Epoch AI. Reaching about $2T a year by 2030 implies roughly $5T of cumulative spend, which equity and corporate bonds cannot cover alone.",
+ "Owners are moving chips off balance sheet: Amazon is reported to be negotiating an $8B sale-leaseback of Grace Blackwell systems through an SPV. JPMorgan expects $30–40B a year of data center securitization.",
+ "There is no true GPU asset-backed security yet. Every GPU financing so far is a term loan or facility. Securitization needs fungible capacity, standard contracts, ratings and a secondary market, and more than 100 startups are reported to be working on pieces of it.",
+ "Permitting has become state politics. New York paused permits for sites of 50 MW or more in July 2026. Texas ordered a grid audit in August and paused environmental permits for AI and crypto sites in September. Moratorium bills failed in about ten other states.",
+ "SemiAnalysis says neocloud power contracting stalled from Q3 2025 as credit tightened. CoreWeave went from 1.3 GW contracted to about 3.5 GW and then paused. It expects Nvidia guarantees to unlock neocloud deals.",
+ "Two readings of the railroad parallel. Net Interest stresses the layering of instruments. Blackstone's Jon Gray argues the difference is that railroads built supply ahead of demand on heavy leverage, while today demand runs ahead of supply and most contracts sit with lightly leveraged companies. Blackstone is a large investor in this buildout.",
+ "Crusoe's CEO accepts that about half of planned data centers may never be built. Permits, land, grid interconnection and air permits are what stop them.",
+ "Used H100s sell at about 45% of new cost in year three. Operators depreciate over 5 to 6 years; Moody's assumes 4 to 6. Google says its seven- and eight-year-old TPUs still run at full utilization, and it replaces whole pods only once they are depreciated and newer chips win on power efficiency."
+].forEach(x=>$("#health").append(el("li",null,x)));
+
+/* ---------- Kona ---------- */
+table("#konatable",["Model","Fit for Kona","What it needs","Main obstacle"],[
+ ["Energy only","Strong today. Uses what Kona already has: gas, engines, site.","A tenant on site who needs firm power; a dollar-denominated take-or-pay contract priced per kW of capacity","Lowest revenue per MW. Power is only 5–10% of a data center's operating cost, so this captures a small slice of the value."],
+ ["Powered land or shell","Weak alone. Useful as a component of a hosting deal.","A builder willing to fit out in Neuquén","No pricing benchmarks and few buyers for remote land."],
+ ["Hosting for a neocloud","Best next step. Tenant brings GPUs and the end customer; Kona brings power and a modular hall.","A GPU owner with a contract that tolerates distance; ideally a backstop","Tenant credit. Without a guarantee, debt prices near 10%."],
+ ["Turnkey lease to a hyperscaler or lab","Aspirational at current scale.","100 MW or more, investment-grade tenant, proven delivery","Market leases are 120–700 MW. Smallest listed comps are about 50 MW."],
+ ["GPU cloud","Only with contracted demand and prepayments.","Signed customer covering about half of GPU capex upfront; GPU supply; export clearance","About $40M per MW of capital, and SOFR + 500–750 debt without a strong customer."],
+ ["Tokens and inference","Later, but less blocked by distance than it looks.","Software platform, fibre, a customer base","Software and customers. Crusoe argues compute time, not network distance, dominates serving time."]]);
+table("#konamath",["Model","Revenue per year","Capital needed","Read"],[
+ ["Energy only","About $13M","$24–68M","Financeable with equipment-style debt"],
+ ["Hosting or turnkey lease","$24–53M","$180–400M","Needs project debt against a lease"],
+ ["GPU cloud","$300–500M","About $1.2B","Needs a customer who prepays"],
+ ["GPU cloud plus inference","Up to $600M","About $1.2B plus software","Crusoe's optimistic case"]],[1,2]);
+table("#disagree",["Question","One side","Other side","For Kona"],[
+ ["Sell power, or move up to compute?","Power is 5–10% of a data center's operating cost, so the money is in the bit-watt spread (Lubershane, EIP). Managed GPU clusters are the highest-margin layer today (Lochmiller, Crusoe).","Lenders finance proven generation far more readily than GPUs (Yeh, ex-DOE Loan Programs Office). Neoclouds without strong credit are struggling to fund growth (SemiAnalysis).","Start where money is available, power and space, but write contracts that leave room to move up as credit allows."],
+ ["Is off-grid permanent or a bridge?","Going off-grid on empty land is the most plausible answer if grid builds hit a ceiling (Shayle Kann).","Off-grid is a bridge; staying off-grid permanently is a bad idea (Sivaram, Emerald AI). Google prefers the grid and uses its own power to bridge (Vahdat). Off-grid needs about 2.6 GW of generation for a 1 GW campus (Janous).","Vaca Muerta has no grid to bridge to, so Kona is permanent off-grid by design. Price the overbuild in, and sell to buyers that do not need a later grid connection."],
+ ["How long does the power shortage last?","The US will add more grid capacity in about two years than in decades, so the speed premium fades after about 2028 (Kann).","Buyers who expect relief in 2027–28 will still be short in 2029–30 (Janous). Turbines for 2028 are sold out (SemiAnalysis).","Lock in long, take-or-pay contracts while the premium lasts."],
+ ["How big must a site be?","Most buyers want 100 MW or more; the smallest a desperate buyer will take is about 50 MW (Janous).","Useful inference runs at 10 MW-class sites (Vahdat). One operator plans revenue from 2–5 MW sites (Third Prime overview).","Below 50 MW, target neoclouds, inference and batch buyers, not hyperscale leases. Plan a path to a 50 MW block."],
+ ["Will compute contracts get longer or shorter?","Landlords sign 10–20 year leases and lenders size loans inside them; chip-maker guarantees and prepayments exist to stretch terms (Financing tab). Creditors prefer long contracts, which is CoreWeave's bind (Rubinstein).","SpaceX rents whole sites on 90-day exits and CoreWeave quotes $40M per MW on 3–6 month deals; buyers pay more for less commitment. Musk: the smart move is short contracts and a bet on useful intelligence per watt rising; payback on new compute is heading toward a year or less (Nebius 1y10m, Huang under a year).","Price Kona's power and space two ways: a long take-or-pay at a lower rate for the bank, and a short-term premium tier for capacity the bank is not relying on."],
+ ["How much reliability to build?","Off-grid reliability needs N+1 generation or more; four-nines from your own plant means about 2x the capacity (Janous, Vahdat).","Users often prefer twice the capacity at 99% uptime. Meta builds about 10 MW of backup per 100 MW (Vahdat, SemiAnalysis).","Offer a standard tier and a cheaper lower-uptime tier, and let the tenant choose."]]);
+table("#wulftimeline",["When","Step","Why it mattered"],[
+ ["2021","Founded by Paul Prager and Nazar Khan to mine bitcoin on low-cost power at Lake Mariner, New York, and at a joint venture beside Talen's Susquehanna nuclear plant.","Secured sites with large grid connections before AI demand arrived."],
+ ["2024","A 2 MW pilot, then a 20 MW AI building. Sold the nuclear joint-venture stake for about $92M, about 3.4x its cost.","Recycled capital from the old business into the new one."],
+ ["Dec 2024","First lease: Core42, 60 MW at $125 per kW-month, 3% escalators, $90M prepaid, G42 guarantee.","A first deal of Kona's size, made bankable by a guarantee and a prepayment."],
+ ["Aug 2025","Fluidstack leases backed by Google for about $3.2B, in return for warrants on about 14% of TeraWulf. $3.2B of 7.75% notes from a ring-fenced subsidiary.","A hyperscaler's backstop turned a venture-backed tenant into debt rated Ba2/BB."],
+ ["2026","Bought a Kentucky aluminum smelter site for $200M plus a minority stake; leased 401 MW to Anthropic for 20 years; sold a Texas joint-venture stake for about $530M against $450M; doubled Kentucky power at Muskie to 1 GW.","Moved from one site to a pipeline, selling stakes to fund the next build."],
+ ["Oct 2026","Shares fell about 25% in the AI credit selloff; the Google-backed notes reportedly held near par. The about $4B Kentucky financing has not priced.","Backed debt held up; the unfinanced build is now the pressure point."]]);
+[["Copy: start small, with a guarantee and a prepayment","TeraWulf's first lease was 60 MW, about Kona's scale, and it worked because G42 guaranteed it and the tenant prepaid $90M. That is a template for Kona's first phase."],
+ ["Copy: pay for a stronger party behind the tenant","Google's backstop cost TeraWulf warrants on about 14% of the company, but it made a Fluidstack lease financeable at 7.75%. Kona should expect to give up equity-like upside for the same support from a hyperscaler or chip maker."],
+ ["Copy: put each site in a ring-fenced subsidiary","A subsidiary with a lockbox, amortization and a debt service reserve earned a Ba2 rating. It held its value when the shares fell."],
+ ["Copy: bill power separately","Tenants pay TeraWulf's actual power cost, usually with a mark-up, on top of rent. For Kona, a separate power line lets it keep the margin on cheap gas instead of folding it into rent."],
+ ["Does not transfer: grid sites and US tenants","TeraWulf's sites came with high-voltage lines and substations, and its tenants and backers are US companies. Kona builds its own power, in a country with about 600 bps of risk premium."],
+ ["Does not transfer: scale","After the first deal, TeraWulf's leases ran 200–400 MW. Kona would need several phases, or a partner, to reach that."]
+].forEach(([t,d])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));$("#wulflessons").append(c)});
+[["Transfers: power first, chips second","Musk's stated goal is to hold more power, cooling and electrical gear than GPUs, because chips are the expensive, fast-depreciating part. Colossus went from a mobile-turbine bridge (69 units) to a permitted 1.2 GW plant plus 900 MW with Solaris and 3.3 GWh of batteries. Kona's sequence should be the same: generation and switchgear that outlive three chip generations, then whoever brings the chips."],
+ ["Transfers: scarcity pricing with short exits","Colossus 1 rents for about $50M per MW-year, twice the public neocloud range, on contracts either side can end on 90 days' notice. Buyers pay up for capacity that exists now and keep the option to leave. Kona can sell the same way to a regional buyer: a premium for firm power available in 2027, with a short first term and renewal rights, rather than a 15-year lease it cannot get financed."],
+ ["Transfers: a hyperscaler will buy a block from anyone with power","Google calls its $920M-a-month SpaceX contract 'bridge capacity'. The buyer Kona wants most is already buying from a non-hyperscaler landlord with gas turbines and a lawsuit. The bar is delivery, not pedigree."],
+ ["Does not transfer: the balance sheet and the equipment queue","SpaceX funds a $480B build with $100B of cash and BBB bonds at 5.9%; Kona pays 600 bps of country risk before any project spread. SpaceX also sits ahead of Kona in every engine, turbine and Megapack queue, which argues for ordering long-lead power equipment before signing a tenant."]
+].forEach(([t,d])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));$("#spacexlessons").append(c)});
+table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
+ ["2.00","16–18","Near the low end of what stranded gas might cost"],
+ ["3.50","28–32","Argentine contract gas, 2025 data"],
+ ["4.00","32–36","Reference case used for US projects"]],[0,1]);
+[["Sell energized capacity into the 2027 power gap.","Third Prime's October overview names power as the constraint most likely to strand chips in 2027: GPUs delivered on schedule into buildings with no electricity. Oracle has already issued a force majeure notice on a 2.45 GW New Mexico site over gas pipeline and air-permit delays. Firm power that exists is Kona's strongest selling point to GPU owners with chips on order. Lock in long, take-or-pay contracts while the premium lasts, because it may fade once US grid additions catch up."],
+ ["Build modular, and match reliability to the workload.","Factory-built units of 0.5–2 MW suit a site of Kona's size and remoteness, where skilled labor is the scarce input. Crusoe backs up only core storage and networking to the highest standard, and learned from mining that most cost sits in redundancy the workload may not need. Google's infrastructure chief puts the other side plainly: four-nines reliability from your own generation means building about twice the capacity you sell. Price and design each tier deliberately. Prefabrication cuts the labor problem: one US developer ships about 85% of each 40 MW building on trucks and builds it in about nine months, with crews on 30–90 day rotations at remote sites. Converting straight from medium voltage to 800-volt DC at the rack could remove much of the transformer and switchgear count, though that technology is early."],
+ ["Sell power and space before compute.","Sign a hosting customer for the capacity the secured engines can serve. Price in dollars, take-or-pay, paid offshore if possible. This is the path lenders can underwrite at Kona's current size."],
+ ["Make the tenant's credit the product.","The spread between a backed and an unbacked lease is 300 bps or more. A guarantee, a prepayment, or a chip-maker revenue floor is worth more than a higher headline rent. Expect to pay for it in price: Microsoft's IREN contract works out to about $2.91 per GPU-hour against about $6.70 spot. Watch the term mismatch too: a neocloud tenant funded like CoreWeave's DDTL 5.5 has customer contracts of about three years, while Kona's lease would run 10 years or more. Ask for a prepayment, a parent guarantee, or a shorter first term with renewal rights. October's credit selloff sharpens this: CoreWeave's parent now pays about 15% for new unsecured money, and debt raised against an unbacked neocloud tenant is close to unavailable. AMD's credit support for Fermi's TensorWave lease shows a chip supplier can stand behind a tenant."],
+ ["Use the first contract to finance the next block.","Crusoe, TeraWulf and Cipher all financed each phase against the contract from the last. Aim for modular blocks that can be delivered in months."],
+ ["Own GPUs only against a signed customer.","Follow the Nscale and IREN rule: no GPU purchase until demand is contracted, with the customer prepaying about half."],
+ ["Add tokens once there is a platform partner.","Managed services are where margin is highest and what keeps older chips earning. Distance matters less than it seems, since most serving time is spent computing. The gap is software and customers, which argues for a partner over building it alone."]
+].forEach(([t,d])=>{const li=el("li"),w=el("div");w.append(el("b",null,t+" "),document.createTextNode(d));li.append(w);$("#konasteps").append(li)});
+[["Helps: US permitting friction","New York has paused permits for sites of 50 MW or more and Texas has paused environmental permits for AI sites. The ERCOT interconnection queue has reached 474 GW, about 90% of it data centers, per Third Prime's October overview. That raises the value of capacity that already has power, wherever it is.",null],
+ ["Helps: a new own-power rule","A September 2026 energy resolution reportedly requires new loads of about 80 MW or more to source at least 80% of energy from new generation. That favours developers who bring their own power. Single source; check the Boletín Oficial.","https://www.riotimesonline.com/argentina-data-centers-mines-own-power-supply-rule-2026/"],
+ ["Helps: US export credit","EXIM signed a framework for up to $7B through 2027 covering energy, minerals and digital connectivity. No data center borrower has been named. CAF has said it is interested in evaluating data center financing.","https://www.exim.gov/news/exim-signs-7-billion-argentina-build-future-framework-prioritize-energy-security-and-critical"],
+ ["Mixed: Stargate Argentina","A year on, still no construction, no concrete investment and no RIGI filing (October 2026). OpenAI says it is only a possible buyer. The site search had narrowed to Neuquén, which would validate the region if it ever proceeds. Vista's CEO is now also pitching Vaca Muerta as a data center hub.","https://econosur.org/insights/cono-sur/argentina-paraguay-ai-data-centers/"],
+ ["Blocks: RIGI thresholds","RIGI needs a $200M minimum investment. Of 16 approved projects, none is a data center. A larger regime for AI data centers ($1B minimum, 15% tax) stalled in the Senate in September.","https://chequeado.com/el-explicador/mega-data-centers-de-ia-que-propone-el-super-rigi-y-como-otros-paises-buscan-atraer-estas-inversiones/"],
+ ["Blocks: currency and country risk","Dividends can be remitted only on earnings from fiscal 2025 onward. The country risk spread peaked at 655 bps on 2 October and has settled near 600, which analysts see as a floor until the 2027 election.","https://www.noticiasnqn.com.ar/noticias/2026/09/28/354544-el-riesgo-pais-supero-los-640-puntos-y-alcanzo-su-maximo-de-2026"],
+ ["Open: GPU export rules","The AI Diffusion Rule was rescinded in 2025 with no replacement. A reported draft would require host-government involvement for very large clusters.","https://www.gtlaw.com/en/insights/2026/9/navigating-gpu-export-controls-and-ai-use-restrictions-in-data-center-operations"]
+].forEach(([t,d,u])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));if(u){const s=el("div","src");s.append(link("Source",u));c.append(s)}$("#arg").append(c)});
+[["Offtakers: asset-light neoclouds","Companies that own GPUs and customer contracts but need hosts: the Fluidstack and Volta model. They are used to remote sites and third-party power."],
+ ["Offtakers: small-site inference operators","Third Prime's overview cites a developer converting powered real estate into 2–5 MW sites that projects more than $1B of annual revenue from 100 MW. That is an unverified operator projection, but it describes buyers sized for Kona's blocks."],
+ ["Offtakers: regional serving capacity","Google builds inference close to users on every continent, in sites from a single rack to tens of megawatts, and says older training clusters cannot cover serving demand. A South American serving footprint is a real need. It requires storage and networking alongside the accelerators, and fibre."],
+ ["Offtakers: older fleets","Google runs seven- and eight-year-old TPUs at full utilization, and older GPUs still rent above their launch prices. Owners of previous-generation hardware need cheaper, lower-density homes that do not require liquid cooling."],
+ ["Offtakers: latency-tolerant workloads","Training and batch inference care about cost per MW, not distance. Frontier labs reach such sites through intermediaries, as Anthropic does in Norway."],
+ ["Offtakers: regional and energy buyers","Latin American enterprises, sovereign programmes, and Vaca Muerta operators who need compute or firm power nearby."],
+ ["Lenders: equipment and vendor finance","Engine makers and lessors for the generation fleet. The asset is movable, which helps in a high-risk country."],
+ ["Lenders: private credit","Macquarie-style facilities exist for developers without tenants, but most of the commitment waits for a signed lease."],
+ ["Lenders: development and export credit","EXIM, DFC, IDB Invest, IFC, CAF. Precedents are in Africa, Brazil and Mexico. Pair with political risk insurance."]
+].forEach(([t,d])=>{const c=el("div","card");c.append(el("h3",null,t),el("p",null,d));$("#targets").append(c)});
+["What does Kona's delivered gas actually cost, and under what contract length?",
+ "Is there fibre to the site adequate for a training tenant, and what does it cost to add?",
+ "Can a tenant pay offshore in dollars under current currency rules?",
+ "Would a GPU owner's export counsel clear shipment to Neuquén today?",
+ "At what size does a second phase reach the RIGI threshold, alone or with a partner?",
+ "Which party could provide a guarantee or revenue floor for a first tenant?",
+ "What uptime will a first tenant require, and how much generation overbuild does that imply?",
+ "Should the hall take mixed racks? Agents are driving demand for CPUs and storage next to accelerators, which needs different density and networking.",
+ "Can the first phase reach about 50 MW, the floor several large buyers set?",
+ "Which long-lead electrical gear (generator step-up transformers, switchgear) must be ordered now, and from where?",
+ "What backup covers a gas supply interruption: more engines, batteries, or stored diesel?"
+].forEach(x=>$("#openq").append(el("li",null,x)));
+
+/* ---------- library ---------- */
+[{t:"Capital Wars: CoreWeave and the Economics of a Data Center Build",by:"Marc Rubinstein, Net Interest · 23 Oct 2026",u:"https://www.netinterest.co/",why:"Treats a neocloud as a non-bank financial: the business is the spread between what new GPUs earn and what the money to buy them costs, and CoreWeave's spread is the barometer for the whole AI build.",
+  pts:["Cost of funds first: about $42B of debt at an average 7.8%, a third in DDTLs tied to contracts and chips (DDTL 1.0 at 15% in 2023; DDTL 5.5 at about 9% with three-year contracts against a five-year loan), half in unsecured notes and converts. The 9.75% notes now yield over 15%, so new corporate money costs that.","Revenue second: about $10M per MW today, with price rises of 25% in July and 10% in October. At $13M per MW on a 200 MW five-year contract and a 75–80% EBITDA margin, the unlevered return is about 15%, if debt costs about 10% at 80% of spend. Higher rates eat the spread.","Payback is compressing across the industry: CoreWeave 2.5 years at IPO, Nebius 1 year 10 months on new Q2 deals, Huang under a year, Musk a possible six months in 2027. SpaceX's compute revenue per average MW went from $8.5M to $19.5M between Q2 and Q3.","Capacity is the constraint: 8 GW by 2030 means about $300B of capex, with $80B unfunded just to reach the 4.2 GW committed. A three-month delay on 1 GW costs about $3.25B; NextDC, Nscale and Oracle's Project Jupiter show how delays happen.","Three levers: shorter contracts (CoreWeave's 3–6 month deals at $40M per MW, which creditors dislike), customer prepayments (Nebius 50–60% of capex, Oracle $20–25B of 2027 capex, CoreWeave 15–25% on 70% of contracts and falling), and residual value in owned GPUs ($46.7B of PP&E; an A100 contract runs into 2029). Most chips are pledged to DDTLs, so the residual is not CoreWeave's to use yet.","Nvidia is the backstop: $2B of equity in January and a commitment to buy unsold capacity through April 2032. Weisenthal's question of whether neoclouds are Nvidia's off-balance-sheet vehicles, as SIVs were Citi's in 2007, is the right one."],
+  chg:"Added CoreWeave's cost-of-funds detail, capex arithmetic and prepayment trend to its profile; added the SpaceX Q3 revenue-per-MW data point; sharpened the contract-length row on the Kona tab with the payback evidence; and built the Kinetic Yard contract return calculator on the Model tab from the same per-contract structure, with a payback chart."},
+{t:"SpaceX Q2 2026 earnings call, and Fortune on its compute business",by:"SpaceX (11 Aug 2026 call) · Fortune (19 Jul 2026)",u:"https://www.fool.com/earnings/call-transcripts/2026/08/11/spacex-spcx-q2-2026-earnings-call-transcript/",why:"The largest gas-powered, behind-the-meter compute operator explaining how it prices, powers and funds capacity it rents to Anthropic and Google.",
+  pts:["Nameplate compute 1.4 GW at June 2026, over 2 GW by year-end, 'closer to 10 GW than 5' by end-2027; 15–20 GW of power and cooling targeted so that power, not chips, is the surplus.","Pricing frame of $30–50 per watt per year, with the Economics 101 argument that a shortage sets the price; Colossus 1 to Anthropic works out near $50M per MW-year.","AI infrastructure revenue $2.2B in Q2 against $1.9B of depreciation: adjusted EBITDA positive, operating loss $1.3B. CFO: compute capex behaves more like cost of goods sold than a long-lived asset, and new deployments pay back in under a year.","Contracts: $14.1B contracted plus $6.7B of six-month deals; most can be ended on 90 days' notice; about 10% of compute kept for Grok.","Funding: $85.7B IPO, $25B of BBB bonds at 5.855%, a $40B Apollo-led package sought in October; the CFO expects no further equity.","Memory supply (about +20% a year against +200% demand) is the constraint management names, not GPUs or power."],
+  chg:"Added SpaceX to Players, the SpaceX corporate bond to the price-of-money ladder and the debt table, a SpaceX read-across block and a contract-length row on the Kona tab, and SPCX to coverage so Josh picks up the early-November Q3 report."},
+{t:"CoreWeave: $34B of Equity and Bonds Yielding 15%...How? (Part 1)",by:"JunkBondInvestor (Substack) · 20 Oct 2026",u:"https://www.junkbondinvestor.com/p/coreweave-crwv-34-billion-of-equity",why:"The clearest explanation so far of how a neocloud's debt is layered, and why its bonds can price like distress while its equity is worth $34B.",
+  pts:["Debt is about $42B pro forma, at an average cash cost under 8%. The 15% is what new unsecured money would cost now, not what CoreWeave pays.","Most debt sits in project subsidiaries (boxes) holding contracts and GPUs, but the parent guarantees nearly all of it and funds the equity in each new box. Only about $3.8B is non-recourse.","Backlog is not cash: revenue starts only when capacity is delivered, contracts run 3–5 years, and what chips earn after that is the wide-open question. EBITDA margin of 58.6% against an operating margin of 5.0% shows how much depreciation matters.","GPUs do not cover the bonds: they are pledged to box lenders first, lose value fast, and are worth most installed and under contract.","The bonds sold off on funding cost, customer credit and residual-value worries, not on operations. Capital markets access is the business."],
+  chg:"Updated CoreWeave's profile (market cap, credit, structure), added the October repricing and tenant-based bond pricing to Market health, and sharpened Kona's tenant-credit step. The same week's briefings supplied the Lambda, IREN, Galaxy, Fermi, Anthropic revenue and Argentina updates. Part 2 on unit economics is still to come."},
+{t:"How DDTL 5.5 works",by:"Explainer graphic you shared · October 2026",u:null,why:"CoreWeave's August 2026 $2.6B loan, which lets it finance chips rented on three-year contracts instead of only five-year ones.",
+  pts:["Lenders now fund the gap between a three-year customer contract and a five-year loan, and carry the risk that the chips can be re-rented in years 4–5.","Shorter contracts rent for more ($20–25M per MW against $16.5M on five years), so the structure raises CoreWeave's return while shifting renewal risk to lenders."],
+  chg:"Added the structure to Financing, the ~9.4% all-in cost to the debt table, and a term-mismatch caution to Kona's credit step. The deal model's figures are labeled as unverified."},
+ {t:"Catalyst with Shayle Kann: 16 episodes",by:"Latitude Media podcast, host Shayle Kann (Energy Impact Partners) · episodes from 2023 to Sept 2026",u:null,why:"The energy side of the buildout. 16 of the 51 episodes you sent were on data centers, power and financing; the rest (solar, EVs, nuclear, carbon markets and others) were left out. Several guests are founders backed by EIP, the host's firm; those are flagged.",
+  pts:["Read the disagreement table on the Kona tab first: it is the main thing these episodes add."],
+  chg:"Added the Where the sources disagree table to Kona, off-grid cost and equipment price inflation to Models, the neocloud credit stall to Market health, three glossary terms, and points on contract length, prefabrication and backup to the Kona sequence and open questions."},
+ {t:"Who's Winning the AI Energy Arms Race?",by:"Catalyst · Jeremie Eliahou Ontiveros, SemiAnalysis · 9 Jul 2026",u:"https://www.youtube.com/watch?v=b5YnPsBxgjA",why:"",
+  pts:["Data center construction is growing about 50% a year; the grid adds a fraction of that, and utility dates keep slipping (1 GW by 2027 becoming 100 MW by 2029).","A 1 GW campus costs about $50B to build, $60–70B if leased. Meta builds with almost no backup; Google is the most sophisticated buyer.","Neocloud contracting stalled from Q3 2025 as credit tightened; he expects Nvidia to start guaranteeing neocloud deals. Turbines for 2028 are sold out; the Oracle/OpenAI Texas site runs on 2.3 GW of 4 MW gas engines with flywheels."]},
+ {t:"Can Data Centers Recover from the AI Backlash?",by:"Catalyst · Brian Janous, Cloverleaf Infrastructure · 4 Sep 2026",u:"https://www.youtube.com/watch?v=e3SkfcVvARU",why:"",
+  pts:["Local grievances (rates, water, secrecy) are fixable; general hostility to AI and Big Tech is not. Polling turned negative from about September 2025.","He is skeptical of off-grid builds: about 2.6 GW of generation for a 1 GW campus, and neighbors oppose gas plants more than data centers.","Most compute still goes to campuses of 100 MW or more; about 50 MW is the floor. He expects shortage into 2029–30."]},
+ {t:"Can Data Centers Lower Your Electric Bill?",by:"Catalyst · Andy Lubershane, EIP · 11 Sep 2026",u:"https://www.youtube.com/watch?v=sU8dV-pgHWM",why:"",
+  pts:["Locally, a big data center usually holds rates flat or lowers them; nationally, it drives up equipment costs for everyone.","Conductors, transformers and switchgear have roughly doubled in price, gas plants 2–3x; combined-cycle quotes run $3,600–4,000 per kW.","Power is 5–10% of a data center's operating cost, so operators can pay far more for it to win local support."]},
+ {t:"The Hidden Energy Trends of 2026",by:"Catalyst · Shayle Kann, solo · 17 Sep 2026",u:"https://www.youtube.com/watch?v=hp0Qjarb24g",why:"",
+  pts:["Backlash spread faster than expected and is bipartisan; he expects Texas large loads to slip 6–12 months, not years.","Bloom is his unsung winner: buyers pay for long operating records and easier air permits.","His contrarian call: in about two years the US adds more grid capacity than in any year in decades."]},
+ {t:"Who Benefits from the AI Power Bottleneck?",by:"Catalyst · Shanu Mathew, Lazard · 4 Dec 2025",u:"https://www.youtube.com/watch?v=2eEsCOPJHkw",why:"",
+  pts:["Check who gains from each scarcity claim: hyperscalers, powered-land developers, equipment makers and Nvidia all benefit from the story.","Warning sign of easing: well-located powered sites selling without a premium.","Equipment and construction firms are the clearest winners, with record backlogs and pricing power."]},
+ {t:"How Google's Head of AI Infrastructure Spends $180 Billion a Year",by:"Catalyst · Amin Vahdat, Google · 2 Jun 2026",u:"https://www.youtube.com/watch?v=j5LFPS877bI",why:"Same guest as the Sequoia interview further down; this one adds more on reliability and power.",
+  pts:["When compute is the main cost, users often prefer twice the capacity at 99% uptime over 99.99%.","Useful inference runs at 10 MW-class sites; Google wants a medium number of medium-sized sites plus a few huge ones.","Google has about 1 GW of demand-response agreements with utilities, and uses on-site generation only as a bridge."]},
+ {t:"When to Colocate Data Centers with Generation",by:"Catalyst · Brian Janous, Cloverleaf · 12 Sep 2025",u:"https://www.youtube.com/watch?v=GSMRhkbV2m4",why:"",
+  pts:["100 MW of IT load becomes about 150 MW of generation once cooling and N+1 are counted, yet one operator averages only 40–50% of nameplate.","Off-grid power in Texas costs about $150–200 per MWh at about $2,700 per kW, against about $20 per MWh real-time for a grid-connected neighbor.","He prefers partial grid service topped up with on-site generation, batteries or demand response."]},
+ {t:"The Case for Colocating Data Centers and Generation",by:"Catalyst · Sheldon Kimber, Intersect Power · 13 Feb 2025",u:"https://www.youtube.com/watch?v=j5K2nsqBzhw",why:"About 20 months old.",
+  pts:["Partnership with Google and TPG to build renewables plus gas next to data centers; Panhandle sites of 1–3 GW.","For 1 GW: about $5–6B of power, $2.5B of powered shell, $30B of chips. Chips dominate, so nobody curtails to save on power.","Renewables and storage cover 75–80% of hours, engines the rest."]},
+ {t:"An Energy-First Approach to Data Centers",by:"Catalyst Frontier Forum · Chase Lochmiller, Crusoe · 22 Oct 2024",u:"https://www.youtube.com/watch?v=SqD3T3OIAow",why:"About two years old; Crusoe has since moved to campus scale.",
+  pts:["Crusoe began with modular data centers at oil wells burning flare gas, the closest precedent to Kona.","Training does not need low latency, so it can go to the energy, as aluminum smelting went to Iceland.","Chip power rose from about 300 W (A100) to 1,200 W (GB200), driving liquid cooling."]},
+ {t:"The New Power Map for AI Infrastructure",by:"Catalyst Frontier Forum · KR Sridhar, Bloom Energy · 21 Oct 2025",u:"https://www.youtube.com/watch?v=vdEbabUNLyw",why:"Largely a vendor pitch.",
+  pts:["Bloom's own survey: respondents planning on-site power with no grid rose from 1% to 29% in about 18 months.","AI load swings from 10% to 100% in milliseconds; he pitches 800-volt DC feeds and microgrids.","He predicts about 90% of AI load will be inference within 3–4 years, with 5–30 MW city sites needing on-site power."]},
+ {t:"Can This Tech Make Data Centers Flexible?",by:"Catalyst · Varun Sivaram, Emerald AI (EIP-backed) · 9 Apr 2026",u:"https://www.youtube.com/watch?v=WZX2RXLhMok",why:"",
+  pts:["Flexibility pays only when it buys faster or larger grid connection; saving on the power bill alone does not justify curtailing.","Emerald claims AI workloads can flex 18–55% of power; Google has about 1 GW of flexible capacity contracted.","He calls permanent off-grid operation a bad idea and treats on-site gas as a bridge."]},
+ {t:"The End of Diesel Generators?",by:"Catalyst · Richard Wang, Voya Energy (EIP-backed) · 27 Aug 2026",u:"https://www.youtube.com/watch?v=HZ3U95R0b-I",why:"A pitch for aluminum-air generators.",
+  pts:["Diesel backup costs about $500–1,000 per kW and stores 48–96 hours of fuel on site, but draws NOx, noise and permit limits.","Gas backup carries a shared-failure risk: pipelines fail in the same storms that take down the grid."]},
+ {t:"The Electrician Shortage Slowing the AI Boom",by:"Catalyst · Raymond Hawkins, Compass Data Centers · 6 Aug 2026",u:"https://www.youtube.com/watch?v=sFKmPU-pXP4",why:"",
+  pts:["Constraints in order: power, community opposition, then labor. Electrician costs have roughly tripled in ten years.","About 85% of each building arrives on trucks; a 40 MW building takes about nine months.","Remote sites run crews on 30–90 day rotations from work camps."]},
+ {t:"The Electric Transformer Shortage",by:"Catalyst · Tim Mills, ERMCO · 28 Jun 2024",u:"https://www.youtube.com/watch?v=byLgDBxRw_I",why:"Over two years old; lead times have likely moved.",
+  pts:["Lead times went from 12–14 weeks before COVID to up to two years for pad-mount units and 100–125+ weeks for large power transformers.","Core steel has a single US producer at full capacity; new lines take 1–2 years."]},
+ {t:"The Rise of Grid Power Electronics",by:"Catalyst · Drew Baglino, Heron Power (EIP-backed) · 19 Feb 2026",u:"https://www.youtube.com/watch?v=86TlNe8GvdA",why:"",
+  pts:["Solid-state transformers in 100–200 kW modules could replace bulky 60 Hz units; a failure loses 100 kW, not a 4 MW skid.","Converting from 34 kV straight to 800-volt DC at the rack could remove about 70% of electrical equipment and floor space (company claim)."]},
+ {t:"Financing First-of-a-Kind Climate Assets",by:"Catalyst · David Yeh, formerly DOE Loan Programs Office and CIBC · 22 Dec 2023",u:"https://www.youtube.com/watch?v=M506AeP3RrI",why:"Nearly three years old; federal programs have changed since.",
+  pts:["Lenders want proven, off-the-shelf equipment, long offtake (ideally a 20-year contract) and debt service cover near 2x.","Mainstream infrastructure money tends to arrive around the third project, so build a repeatable template from the first."]},
+ {t:"The Physics and Economics of Frontier AI",by:"Amin Vahdat (Google AI infrastructure) on Sequoia's Training Data, with Sonya Huang · 6 Oct 2026 · 64 min",u:"https://www.youtube.com/watch?v=bGph8GwB3Sk",why:"How a hyperscaler designs, powers and sizes AI data centers. The power and site-sizing discussion starts around the 40-minute mark.",
+  pts:["Goodput, not FLOPS: what matters is useful work delivered through real failures. At 100,000 accelerators something fails several times a day, often several times an hour.","Google must double token-generation capacity every six months. Most gains come from models and software; hardware adds about 2x a year.","Google split its 2026 TPU into an inference chip (8i) and a training chip (8t), because it projects inference at 30–60% of demand over the chips' life. Each can still run the other's work.","Long-horizon agents remove the human pause between requests, so CPU, networking and storage demand is rising alongside accelerators. That forces a choice between mixed buildings and separate ones linked by networking.","Power is the most fundamental constraint. Google prefers grid connection planned years ahead, pays for the grid upgrades, and uses its own solar, batteries or generation to bridge shortfalls. Four-nines reliability from its own generation would mean building about twice the capacity.","Training concentrates near gigawatt scale. Serving is spread worldwide in sites from one rack to tens of megawatts, needs storage alongside compute, and is not cheaper per megawatt.","Seven- and eight-year-old TPUs run at full utilization; pods are replaced after about six years.","Google is pursuing orbital data centers as a moonshot: about 1.4x the solar intensity and near-constant sun, but harder cooling and repair. By 2036 he expects factory-built racks of multiple megawatts that plug into water, power and fibre."],
+  chg:"Added goodput to the glossary and Google's grid preference to the buyers table. Added the redundancy cost to Kona's modular step, regional serving and older fleets as offtaker types, and two open questions on uptime and rack mix."},
+ {t:"The AI compute buildout",by:"Third Prime industry overview · October 2026 · 14 pages",u:null,why:"The firm's own view of demand, supply, financing and where early-stage openings are. The widest frame in this library.",
+  pts:["Demand: Google tokens up about 7x in a year; OpenRouter up 5x in six months. Forecasts for 2030 range from about 1,440 (Goldman) to 4,000 (Evercore) quadrillion tokens a year, both more than 10x today.","Anthropic's run-rate went from about $1B to a reported pace above $100B in under two years. OpenAI is reported near $70B. Its $518B of commitments are about 80% non-cancellable.","Big-four hyperscaler capex about $725B in 2026; all AI capex about $850B, which buys roughly 17 GW at $50B per GW.","Inference is profitable at the operator level. A gigawatt costs about $8B a year to amortize and may generate $50–100B of lab revenue. Labs face low switching costs, fast-following open models and more disciplined buyers, so aggregate demand is a safer bet than any one lab.","Supply: TSMC adds capacity only against firm orders; HBM per GPU has risen from 80GB (H100) to 288GB (Rubin). Power is the constraint most likely to strand chips in 2027.","Older GPUs are holding value: the H100 rental index is up from $2.00 to $2.81 since December, weakening the depreciation bear case for now.","Financing shifts to leases, asset-backed debt and off-balance-sheet structures. No true GPU asset-backed security exists yet.","Ten seed themes, including revenue per gigawatt, power conversion for 800V DC racks, thermals and grid access. Risks: returns, power, debt, lab concentration and Taiwan."],
+  chg:"Added a demand point to Start here and widened the cost per gigawatt to $35–60B. Updated Anthropic's commitments with the prospectus split, and added off-balance-sheet, securitization and state permitting points to Market health. Added the 2027 power gap as Kona's lead step, US permitting friction to the Argentina factors, and small-site inference operators as an offtaker type. Note one difference: it reports Crusoe's round as $3B at $30B, while Crusoe's own release says $3.9B at $30.9B."},
+ {t:"Building AI Factories",by:"Chase Lochmiller (Crusoe) at Stanford MS&E435, with Apoorv Agrawal · June 2026 · 50 min",u:"https://www.youtube.com/watch?v=GcCGzfKdCd0",why:"The best single source on unit economics. Watch this first.",
+  pts:["Cost per MW, from his slides: $19.2M for the data center with a behind-the-meter gas plant (labor $4.7M is the largest item), $40M of IT equipment ($30M of it GPUs), $59M in total.","Renting the chips earns about $15M per MW a year (based on a five-year GB300 contract price) against about $1.1M of operating cost, a four-year payback. Managed AI services can add up to 100%, bringing payback toward two years.","The bottleneck today is energized shells where chips can be plugged in. Chip supply has eased. Skilled labor is short: $4.7M per MW of construction labor.","Gas turbines have gone from about $1M to $3M per MW. He expects the electrical stack to be rebuilt around solid-state and 900-volt DC designs.","Abilene was chosen for stranded wind power with negative prices. Not everything on a campus needs full backup; core storage and networking do.","Modular Spark units of 0.5–2 MW cut site cost by 30–50% and open up small power sources."],
+  chg:"Added the cost stack, payback and line-item tables to Models (line items from the Abilene slide you shared). Replaced my inferred GPU capital figure with Crusoe's, which raised the Kona GPU cloud estimate from $800M to about $1.2B for 20 MW."},
+ {t:"Why Everyone Gets GPU Depreciation and AI Energy Costs Wrong",by:"Chase Lochmiller on 20VC with Harry Stebbings · 3 Oct 2026 · 65 min",u:"https://www.youtube.com/watch?v=Ko7nU1Img40",why:"Strategy and contract structure. The business discussion starts about ten minutes in.",
+  pts:["Crusoe sells three products: data centers, GPUs and tokens. The aim is a vertically integrated supermajor, on the oil industry model, so that margin shifting between layers is hedged.","Contract mix: roughly five-year deals with strong credits that pay back within the term; shorter deals at higher margin with renewal risk; managed inference, shortest and highest margin. GPU rentals are typically take-or-pay.","Managed GPU clusters are the highest-margin layer right now, because of the supply shortage.","Six-year depreciation. H100 rental prices are above where they were at launch three years ago. Managed services hide the chip from the customer, which keeps older chips earning.","AI workloads need not sit in traditional hubs, since most serving time is computation. Capacity will be distributed to wherever energy is cheap and abundant.","About half of planned data centers may never be built. Energy and labor are the binding constraints.","More money is spent on closed models, but more tokens are generated on open ones."],
+  chg:"Expanded the Crusoe profile. Softened my view that distance is the main obstacle to inference at Kona, and added modular build and reliability tiering to the Kona sequence."},
+ {t:"Where's the Beef?",by:"Jon Gray (Blackstone) to investors · Sept 2026 · 31 min",u:"https://www.youtube.com/watch?v=4rhShOPHl50",why:"The demand-side bull case from the largest data center landlord. It is a presentation to Blackstone's own investors, so read it as advocacy.",
+  pts:["Hyperscaler capex doubled from $415B to $820B this year, about 2.5% of US GDP.","Blackstone leased 1 GW in 2024, 2 GW in 2025 and expects at least 6 GW this year, nearly $100B of capex before tenants add chips.","An AI factory costs about $55B per gigawatt including power and chips.","Hyperscalers raised capex ninefold in five years while chip makers did not double theirs. A GE Vernova turbine ordered now arrives in 2030 or 2031.","Evidence of payoff from Blackstone's portfolio: spend with Anthropic across 1,400 companies rose from $25M to $525M of run-rate in a year, with company examples of returns.","Supply-side obstacles: entitlements, moratoriums, power, chips and capital. Risks: cyber incidents, new architectures, Taiwan, valuations.","Blackstone says it concentrates on the most senior part of the capital stack, in compute."],
+  chg:"Added the per-gigawatt cost to Start here and Blackstone's reading of the railroad parallel to Market health."},
+ {t:"The Art of Doing Financial Engineering",by:"Marc Rubinstein, Net Interest · 3 Oct 2026 · paid newsletter",u:null,why:"How four landmark financings actually work, and where the risk ends up.",
+  pts:["Covers Meta Hyperion, IREN Horizon, the Nvidia guarantee at PORTS-Pike, and the Broadcom, Apollo and Blackstone vehicle for Anthropic.","Guarantees across nine AI companies total $278B and mostly sit in footnotes."],
+  chg:"Added as four case studies in Financing."}
+].forEach(x=>{const c=el("div","brief");const h=el("h3");if(x.u)h.append(link(x.t,x.u));else h.textContent=x.t;
+  c.append(el("div","eyebrow",x.by),h);if(x.why){const w=el("p",null,x.why);w.style.margin="0";c.append(w)}
+  const ul=el("ul","plain");x.pts.forEach(p=>ul.append(el("li",null,p)));c.append(ul);
+  if(x.chg){const k=el("div","kona");k.append(el("div","eyebrow","What it changed here"),el("div",null,x.chg));c.append(k)}$("#lib").append(c)});
+
+/* ---------- db access: live artifact database, or a static snapshot (data.json) on the shared site ---------- */
+let _dbp=null;
+function getDb(){
+  if(_dbp)return _dbp;
+  _dbp=(async()=>{
+    try{const d=await window.claude?.use?.("db");if(d){window.__liveDb=true;return d}}catch(e){}
+    try{const r=await fetch("data.json",{cache:"no-store"});if(!r.ok)return null;const data=await r.json();
+      const col=name=>{const arr=Object.entries(data[name]||{}).map(([id,d])=>({id,data:()=>d}));let desc=null;
+        const q={orderBy(f,dir){desc=f;return q},limit(){return q},onSnapshot(cb){const docs=desc?arr.slice().sort((a,b)=>String(b.data()[desc]||"").localeCompare(String(a.data()[desc]||""))):arr;cb({docs});return()=>{}}};return q};
+      return {collection:col,doc(){return{set:async()=>{throw new Error("read-only")},update:async()=>{throw new Error("read-only")}}},__static:true,__snapshot:data.__snapshot||""}}catch(e){return null}
+  })();
+  return _dbp;
+}
+/* ---------- earnings desk + themes (db) ---------- */
+const SEGL={neocloud:["s1","Neocloud"],developer:["s2","Developer"],energy:["s3","Energy"],financing:["s4","Financing"]};
+const T=(x)=>x==null?"":String(x);
+function segSpan(sg){const v=SEGL[sg]||["s4",T(sg)];return el("span","seg "+v[0],v[1])}
+let scDocs=[],scFilter="all";
+function renderScorecard(){
+  const latest={};scDocs.forEach(d=>{const b=d.data()||{};const k=T(b.ticker||d.id);if(!latest[k]||T(b.period)>T(latest[k].period))latest[k]=b});
+  const rows=Object.values(latest).filter(b=>scFilter==="all"||b.segment===scFilter).sort((a,b)=>T(a.segment).localeCompare(T(b.segment))||T(a.name).localeCompare(T(b.name)));
+  const tb=$("#scorecard tbody");tb.textContent="";$("#scempty").hidden=rows.length>0;$("#scorecard").parentElement.hidden=rows.length===0;
+  rows.forEach(b=>{const tr=el("tr");const c=el("td");c.append(el("b",null,T(b.name||b.ticker)),el("br"),segSpan(b.segment));tr.append(c);
+    [b.period,b.active_mw,b.contracted_mw,b.revenue_m].forEach((v,i)=>tr.append(el("td",i?"num":"num",T(v))));
+    [b.margin,b.debt_cost,b.rate].forEach(v=>tr.append(el("td",null,T(v))));
+    const n=el("td");n.append(document.createTextNode(T(b.notes)));const u=safeUrl(b.url);if(u){n.append(" ");n.append(link(T(b.source||"Source"),u))}tr.append(n);tb.append(tr)});
+}
+[["all","All"],["neocloud","Neocloud"],["developer","Developer"],["energy","Energy"],["financing","Financing"]].forEach(([k,l])=>{const c=el("button","chip",l);c.setAttribute("aria-pressed",k==="all");c.onclick=()=>{scFilter=k;document.querySelectorAll("#scchips .chip").forEach(x=>x.setAttribute("aria-pressed",x===c));renderScorecard()};$("#scchips").append(c)});
+function listBlock(title,arr){const d=el("div");d.append(el("div","eyebrow",title));const ul=el("ul","plain");arr.forEach(x=>ul.append(el("li",null,T(x))));d.append(ul);return d}
+function renderReports(docs){
+  const box=$("#reports");box.querySelectorAll("details").forEach(x=>x.remove());$("#repempty").hidden=docs.length>0;
+  docs.forEach(d=>{const b=d.data()||{};const det=el("details","player"),sm=el("summary");
+    const left=el("div");const hd=el("div","rowhead");const vd=T(b.verdict);const kindL={preview:"Preview",precall:"Pre-call",postcall:"Post-call",results:"Results"}[b.kind]||"";hd.append(segSpan(b.segment),el("span","pill",kindL));if(b.kind!=="preview"&&vd)hd.append(el("span","pill"+(/strength|intact|confirm/i.test(vd)?" up":/weaken|depart/i.test(vd)?" down":""),vd));left.append(hd,el("div","name",T(b.name||b.ticker)+" · "+T(b.period)));
+    sm.append(left,el("div","status",T(b.date)),el("p","one",T(b.headline)));det.append(sm);
+    const body=el("div","pbody");
+    const pdfs=[["pdf_brief","Two-page brief (PDF)"],["pdf_report","Five-page report (PDF)"]].filter(([k])=>b[k]&&(safeUrl(b[k])||/^\/_blob\//.test(T(b[k]))));
+    if(pdfs.length){const w=el("div","wide rowhead");pdfs.forEach(([k,l])=>w.append(link(l,T(b[k]))));body.append(w)}
+    if(b.consensus_thesis||b.versus||(Array.isArray(b.changes)&&b.changes.length)){const w=el("div","wide kona");
+      if(b.consensus_thesis){w.append(el("div","eyebrow","Consensus thesis"),el("div",null,T(b.consensus_thesis)))}
+      if(b.versus){w.append(el("div","eyebrow","Versus expectations"),el("div",null,T(b.versus)))}
+      if(Array.isArray(b.changes)&&b.changes.length){w.append(el("div","eyebrow","Biggest changes"));const ul=el("ul","plain");b.changes.forEach(x=>ul.append(el("li",null,T(x))));w.append(ul)}
+      if(Array.isArray(b.monitor)&&b.monitor.length){w.append(el("div","eyebrow","What to monitor next quarter"));const ul=el("ul","plain");b.monitor.forEach(x=>ul.append(el("li",null,T(x))));w.append(ul)}
+      body.append(w)}
+    if(Array.isArray(b.brief)&&b.brief.length){const w=el("div","wide");w.append(el("div","eyebrow","Brief"));b.brief.forEach(p=>w.append(el("p",null,T(p))));body.append(w)}
+    if(Array.isArray(b.kpis)&&b.kpis.length){const w=el("div","wide");w.append(el("div","eyebrow","Key numbers"));const tbx=el("div","tablebox"),t=el("table"),th=el("thead"),tr=el("tr");["Metric","Prior","This quarter","Consensus","Note"].forEach(h=>tr.append(el("th",null,h)));th.append(tr);const tb=el("tbody");b.kpis.forEach(k=>{const r=el("tr");[k.metric,k.prior,k.current,k.consensus,k.note].forEach((v,i)=>{const c=el("td",i&&i<4?"num":null);if(i===0)c.append(el("b",null,T(v)));else c.textContent=T(v);r.append(c)});tb.append(r)});t.append(th,tb);tbx.append(t);w.append(tbx);body.append(w)}
+    (Array.isArray(b.sections)?b.sections:[]).forEach(sec=>{const w=el("div","wide");w.append(el("div","eyebrow",T(sec.title)));if(sec.body)T(sec.body).split(/\n\n+/).forEach(p=>w.append(el("p",null,p)));
+      if(sec.table&&Array.isArray(sec.table.rows)){const tbx=el("div","tablebox"),t=el("table");if(Array.isArray(sec.table.head)){const th=el("thead"),tr=el("tr");sec.table.head.forEach(h=>tr.append(el("th",null,T(h))));th.append(tr);t.append(th)}const tb=el("tbody");sec.table.rows.forEach(r=>{const row=el("tr");(Array.isArray(r)?r:[r]).forEach((v,i)=>{const c=el("td");if(i===0)c.append(el("b",null,T(v)));else c.textContent=T(v);row.append(c)});tb.append(row)});t.append(tb);tbx.append(t);w.append(tbx)}
+      body.append(w)});
+    if(Array.isArray(b.questions)&&b.questions.length){const w=el("div","wide");w.append(el("div","eyebrow","Questions for management"));const ul=el("ul","plain");b.questions.forEach(q=>{const li=el("li");li.append(el("b",null,"("+T(q.style)+") "),document.createTextNode(T(q.question)));if(q.why){li.append(el("br"));const s=el("span","src",T(q.why));li.append(s)}ul.append(li)});w.append(ul);body.append(w)}
+    if(Array.isArray(b.risks)&&b.risks.length)body.append(listBlock("Emerging risks",b.risks));
+    if(Array.isArray(b.watch)&&b.watch.length)body.append(listBlock("Indicators to track",b.watch));
+    if(b.kona){const k=el("div","wide kona");k.append(el("div","eyebrow","For Kona"),el("div",null,T(b.kona)));body.append(k)}
+    if(b.checks){const f=el("div","wide flagbox");f.append(el("div","eyebrow","What the checker verified"),el("div",null,T(b.checks)));body.append(f)}
+    if(Array.isArray(b.sources)&&b.sources.length){const sr=el("div","wide src");sr.append("Sources: ");b.sources.forEach(x=>{const u=safeUrl(x.url);if(u)sr.append(link(T(x.title||"Source"),u))});body.append(sr)}
+    det.append(body);box.append(det)});
+}
+let canWrite=false,dbRef=null;
+function renderCoverage(docs){
+  const box=$("#coverage");box.querySelectorAll(".card").forEach(x=>x.remove());$("#covempty").hidden=docs.length>0;
+  const order={neocloud:1,developer:2,energy:3,financing:4};
+  docs.slice().sort((a,b)=>{const x=a.data()||{},y=b.data()||{};return (order[x.segment]||9)-(order[y.segment]||9)||T(x.name).localeCompare(T(y.name))}).forEach(d=>{
+    const b=d.data()||{};const c=el("div","card");const hd=el("div","rowhead");hd.append(el("h3",null,T(b.name||d.id)+" ("+d.id+")"),segSpan(b.segment));if(b.next_report)hd.append(el("span","pill up","Reports "+T(b.next_report)));c.append(hd);
+    if(b.model)c.append(el("p",null,T(b.model)));
+    if(canWrite){const ta=el("textarea","thesis");ta.id="thesis-"+d.id;ta.setAttribute("aria-label","Your thesis on "+T(b.name||d.id));ta.value=T(b.thesis);ta.placeholder="Your thesis: what you expect, and what would change your mind.";const btn=el("button","act","Save thesis");const msg=el("span","src");
+      btn.onclick=async()=>{btn.disabled=true;msg.textContent="Saving…";try{await dbRef.doc("companies/"+d.id).update({thesis:ta.value});msg.textContent="Saved"}catch(e){msg.textContent="Could not save: "+(e&&e.code||"error")}btn.disabled=false};
+      const row=el("div","rowhead");row.append(btn,msg);c.append(ta,row)}
+    else if(b.thesis){const k=el("div","kona");k.append(el("div","eyebrow","Thesis"),el("div",null,T(b.thesis)));c.append(k)}
+    box.append(c)});
+}
+function renderThemes(docs){
+  const box=$("#themes");box.querySelectorAll(".brief").forEach(x=>x.remove());$("#themeempty").hidden=docs.length>0;
+  docs.slice().sort((a,b)=>((a.data()||{}).order||99)-((b.data()||{}).order||99)).forEach(d=>{const b=d.data()||{};const c=el("div","brief");
+    const hd=el("div","rowhead");const st=T(b.status||"unclear");hd.append(el("h3",null,T(b.title||d.id)),el("span","pill"+(st==="strengthening"?" up":st==="weakening"?" down":""),st));c.append(hd);
+    if(b.question)c.append(el("div","eyebrow",T(b.question)));
+    if(b.summary)c.append(el("p",null,T(b.summary)));
+    const ev=Array.isArray(b.evidence)?b.evidence.slice().sort((x,y)=>T(y.date).localeCompare(T(x.date))):[];
+    const mk=(e)=>{const i=el("div","ev");const h=el("div","rowhead");h.append(el("span","eyebrow",T(e.date)+" · "+T(e.company)),el("span","pill"+(e.direction==="supports"?" up":e.direction==="against"?" down":""),T(e.direction||"neutral")));i.append(h,el("div",null,T(e.claim)));if(e.numbers)i.append(el("div","src",T(e.numbers)));const u=safeUrl(e.url);if(u){const s=el("div","src");s.append(link(T(e.source||"Source"),u));i.append(s)}return i};
+    ev.slice(0,6).forEach(e=>c.append(mk(e)));
+    if(ev.length>6){const det=el("details");det.append(el("summary",null,"Show "+(ev.length-6)+" older items"));ev.slice(6).forEach(e=>det.append(mk(e)));c.append(det)}
+    if(b.updated)c.append(el("div","src","Updated "+T(b.updated)));
+    box.append(c)});
+}
+(async()=>{
+  const db=await getDb();
+  if(!db){["#scempty","#repempty","#covempty","#themeempty"].forEach(s=>{$(s).textContent="Unavailable in this view. Open the page signed in to see the agents' work."});return}
+  if(db.__static){if(db.__snapshot){const st=document.querySelector(".stamp");if(st)st.textContent+=" · agent data as of "+db.__snapshot}}else{dbRef=db;
+  try{const u=await window.claude?.use?.("user");if(u){const w=await u.can("data.write");canWrite=w===null?!!(await u.canEdit()):!!w}}catch(e){}}
+  db.collection("metrics").onSnapshot(s=>{scDocs=s.docs;renderScorecard()},()=>{});
+  db.collection("reports").orderBy("date","desc").limit(60).onSnapshot(s=>renderReports(s.docs),()=>{});
+  db.collection("companies").onSnapshot(s=>renderCoverage(s.docs),()=>{});
+  db.collection("themes").onSnapshot(s=>renderThemes(s.docs),()=>{});
+  db.collection("scenarios").onSnapshot(s=>renderScenarios(s.docs),()=>{});
+})();
+
+/* ---------- charts (inline SVG) ---------- */
+const NS="http://www.w3.org/2000/svg";
+function sv(tag,attrs,text){const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);if(text!=null)n.textContent=text;return n}
+function fmtM(v){if(v==null||isNaN(v))return"–";const a=Math.abs(v);if(a>=1000)return (v/1000).toFixed(a>=10000?0:1)+"B";return a>=100?v.toFixed(0):a>=10?v.toFixed(1):v.toFixed(2)}
+function fmtP(v){return Number.isInteger(v)?String(v):String(+v.toFixed(2))}
+function pct(v,d=1){return v==null||isNaN(v)?"–":(v*100).toFixed(d)+"%"}
+/* horizontal bars: rows=[{label,value,cat,note}], cats={key:[name,cssVar]} */
+function hbars(box,title,rows,cats,unit,note){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const W=780,rowH=30,top=10,left=330,right=70,H=top+rows.length*rowH+30;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const max=Math.max(...rows.map(r=>r.value))*1.08,sc=v=>left+(W-left-right)*v/max;
+  const ticks=5;for(let i=0;i<=ticks;i++){const v=max/ticks*i;const x=sc(v);svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-26,class:"grid"}));svg.append(sv("text",{x:x,y:H-10,class:"tick","text-anchor":"middle"},v.toFixed(0)+unit))}
+  rows.forEach((r,i)=>{const y=top+i*rowH;const g=sv("g",{class:"mark"});const w=Math.max(2,sc(r.value)-left);
+    const rect=sv("rect",{x:left,y:y+6,width:w,height:rowH-12,rx:3,fill:`var(${cats[r.cat][1]})`});rect.append(sv("title",{},`${r.label}: ${r.value}${unit}${r.note?" · "+r.note:""}`));g.append(rect);
+    g.append(sv("text",{x:left-8,y:y+rowH/2+4,class:"lbl","text-anchor":"end"},r.label));
+    g.append(sv("text",{x:left+w+6,y:y+rowH/2+4,class:"val"},fmtP(r.value)+unit));svg.append(g)});
+  box.append(svg);
+  const lg=el("div","legend");Object.values(cats).forEach(([n,c])=>{const s=el("span");const d=el("i");d.style.background=`var(${c})`;s.append(d,n);lg.append(s)});box.append(lg);
+  if(note)box.append(el("div","src",note));
+}
+/* vertical grouped/stacked bars: cats=[{name,cssVar}], data=[{label,values:[...]}], stacked */
+function vbars(box,title,cats,data,opt={}){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const W=opt.W||720,H=opt.W?Math.round(opt.W*0.5):300,top=14,bottom=40,left=58,right=14;const n=data.length;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const tot=d=>opt.stacked?d.values.reduce((a,b)=>a+Math.max(0,b),0):Math.max(...d.values);
+  let max=Math.max(0.0001,...data.map(tot),opt.refLine||0)*1.1;
+  const sy=v=>top+(H-top-bottom)*(1-v/max),bw=(W-left-right)/n;
+  const ticks=4;for(let i=0;i<=ticks;i++){const v=max/ticks*i,y=sy(v);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"grid"}));svg.append(sv("text",{x:left-6,y:y+4,class:"tick","text-anchor":"end"},opt.fmt?opt.fmt(v):fmtM(v)))}
+  data.forEach((d,i)=>{const x0=left+i*bw;let acc=0;const gw=opt.stacked?bw*0.62:bw*0.72/cats.length;
+    d.values.forEach((v,j)=>{if(v<=0&&opt.stacked)return;const g=sv("g",{class:"mark"});
+      let x,y,h,w;if(opt.stacked){w=gw;x=x0+(bw-w)/2;h=sy(0)-sy(v);y=sy(acc+v);acc+=v}else{w=gw;x=x0+bw*0.14+j*gw;h=sy(0)-sy(Math.max(0,v));y=sy(Math.max(0,v))}
+      const r=sv("rect",{x:x,y:y,width:w,height:Math.max(0,h-(opt.stacked?2:0)),rx:opt.stacked?0:3,fill:`var(${cats[j].cssVar})`});r.append(sv("title",{},`${d.label} · ${cats[j].name}: ${opt.fmt?opt.fmt(v):"$"+fmtM(v)+"M"}`));g.append(r);svg.append(g)});
+    svg.append(sv("text",{x:x0+bw/2,y:H-bottom+16,class:"tick","text-anchor":"middle"},d.label))});
+  if(opt.refLine){const y=sy(opt.refLine);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"ref"}));svg.append(sv("text",{x:W-right,y:y-5,class:"tick","text-anchor":"end"},opt.refLabel||""))}
+  svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
+  box.append(svg);
+  if(cats.length>1){const lg=el("div","legend");cats.forEach(c=>{const s=el("span");const d=el("i");d.style.background=`var(${c.cssVar})`;s.append(d,c.name);lg.append(s)});box.append(lg)}
+  if(opt.note)box.append(el("div","src",opt.note));
+}
+/* lines: series=[{name,cssVar,values}], labels */
+function lines(box,title,series,labels,opt={}){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const W=opt.W||720,H=opt.W?Math.round(opt.W*0.5):300,top=14,bottom=40,left=58,right=14;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const all=series.flatMap(s=>s.values).filter(v=>v!=null);let max=Math.max(0.0001,...all)*1.1,min=Math.min(0,...all)*1.1;
+  const sy=v=>top+(H-top-bottom)*(1-(v-min)/(max-min)),n=labels.length,sx=i=>left+(W-left-right)*(n>1?i/(n-1):0);
+  const ticks=4;for(let i=0;i<=ticks;i++){const v=min+(max-min)/ticks*i,y=sy(v);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"grid"}));svg.append(sv("text",{x:left-6,y:y+4,class:"tick","text-anchor":"end"},fmtM(v)))}
+  const step=Math.max(1,Math.ceil(n/12));labels.forEach((l,i)=>{if(i%step===0||i===n-1)svg.append(sv("text",{x:sx(i),y:H-bottom+16,class:"tick","text-anchor":"middle"},l))});
+  svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
+  series.forEach(s=>{const d=s.values.map((v,i)=>(i?"L":"M")+sx(i).toFixed(1)+" "+sy(v).toFixed(1)).join(" ");svg.append(sv("path",{d:d,class:"line",stroke:`var(${s.cssVar})`}));
+    const last=s.values.length-1;svg.append(sv("text",{x:sx(last)-4,y:sy(s.values[last])-8,class:"lbl","text-anchor":"end"},s.name));
+    s.values.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:5,class:"dot",fill:`var(${s.cssVar})`});c.append(sv("title",{},`${labels[i]} · ${s.name}: $${fmtM(v)}M`));svg.append(c)})});
+  if(opt.marker!=null){const x=sx(opt.marker);svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-bottom,class:"ref"}));svg.append(sv("text",{x:x+4,y:H-bottom-6,class:"tick"},opt.markerLabel||""))}
+  box.append(svg);
+  const lg=el("div","legend");series.forEach(s=>{const sp=el("span");const d=el("i");d.style.background=`var(${s.cssVar})`;sp.append(d,s.name);lg.append(sp)});box.append(lg);
+  if(opt.note)box.append(el("div","src",opt.note));
+}
+
+/* ---------- JunkBondInvestor-style charts ---------- */
+hbars($("#viz-ladder"),"Yield at pricing on 2026 AI infrastructure debt, by what backs the rent",[
+ {label:"Broadcom–Anthropic racks, senior (Broadcom guarantee)",value:5.75,cat:"ig"},
+ {label:"IREN Horizon notes (Microsoft contract, A)",value:5.96,cat:"ig"},
+ {label:"CoreWeave $8.5B facility (A3, SOFR+225)",value:6.15,cat:"ig",note:"at 3.9% SOFR"},
+ {label:"SpaceX inaugural notes, corporate (BBB)",value:5.86,cat:"ig",note:"Starlink cash flow, not GPUs, behind it"},
+ {label:"Meta Hyperion bonds (A+)",value:6.58,cat:"ig"},
+ {label:"Crusoe DDTL (Baa1, two IG customers)",value:6.78,cat:"ig"},
+ {label:"Broadcom–Anthropic racks, junior (no guarantee)",value:8.5,cat:"un"},
+ {label:"CoreWeave DDTL 5.5 (SOFR+550 at 97)",value:9.4,cat:"un",note:"3-year contracts, 5-year loan"},
+ {label:"Galaxy Phase II notes (CoreWeave lease, no backstop)",value:9.875,cat:"un"},
+ {label:"Applied Digital preferred (plus 10–15% of project)",value:12.75,cat:"un"},
+ {label:"CoreWeave unsecured notes, secondary (≈80 cents)",value:15,cat:"un"}],
+ {ig:["Investment-grade promise behind the rent","--c1"],un:["Weaker or no credit support","--c2"]},"%");
+vbars($("#viz-margins"),"CoreWeave Q2 2026: two margins",[{name:"Margin",cssVar:"--c1"}],[{label:"Adjusted EBITDA margin",values:[58.6]},{label:"Adjusted operating margin",values:[5.0]}],{W:520,fmt:v=>v.toFixed(0)+"%",note:"The 54-point gap is depreciation on GPUs."});
+vbars($("#viz-cash"),"CoreWeave 2027 consensus, $B",[{name:"$B",cssVar:"--c1"}],[{label:"Operating cash flow",values:[18]},{label:"Capex",values:[48]},{label:"Debt maturing",values:[6.2]}],{W:520,fmt:v=>v.toFixed(0),note:"About $30B of 2027 capex must come from new money, on top of refinancing."});
+
+/* ---------- Kona financing model ---------- */
+const FIELDS=[
+ ["Block",[["mw","Critical IT capacity","MW",1,0.5],["capexSite","Site, power and hall capex","$M per MW",0.1,0],["capexIT","IT equipment capex (GPUs, network)","$M per MW",0.5,0],["buildQ","Construction period","quarters",1,1],["rampQ","Ramp to full utilization after start","quarters",1,0],["horizon","Model horizon","years",1,3],["tv","Terminal value at horizon","x final-year EBITDA",0.5,0]]],
+ ["Contract",[["rev","Headline revenue at full utilization","$M per MW per year",0.05,0],["opex","Operating cost (fuel, staff, maintenance, insurance)","$M per MW per year",0.05,0],["escal","Escalation of rent and cost","% per year",0.5,-5],["term","Contract term","years",1,1],["renew","Price after the term, relative to initial","%",5,0],["prepay","Customer prepayment","% of capex",5,0]]],
+ ["Senior delayed-draw loan",[["adv","Advance rate","% of capex",5,0],["sofr","Base rate (SOFR)","%",0.1,0],["spread","Spread","bps",25,0],["fee","Commitment fee on undrawn","% per year",0.1,0],["grace","Interest-only period after start","quarters",1,0],["amort","Repayment","level | sculpt | bullet",null,null],["amortY","Level amortization period","years",1,1],["dscr","Target debt service cover (sculpted) and covenant","x",0.05,1],["tenor","Tenor, from first draw","years",1,1]]],
+ ["Junior capital",[["junior","Junior loan or preferred","% of capex",5,0],["jrate","Junior coupon","%",0.25,0],["jtenor","Junior repayment period, level from start","years",1,1]]]];
+const PRESETS={
+ energy:{label:"Energy only",mw:20,capexSite:2.6,capexIT:0,buildQ:4,rampQ:1,horizon:12,tv:0,rev:0.95,opex:0.42,escal:2,term:10,renew:90,prepay:0,adv:60,sofr:3.9,spread:450,fee:0.5,grace:0,amort:"level",amortY:8,dscr:1.3,tenor:9,junior:0,jrate:12,jtenor:6},
+ hosting:{label:"Hosting, unbacked tenant",mw:20,capexSite:12,capexIT:0,buildQ:6,rampQ:2,horizon:15,tv:0,rev:2.3,opex:0.45,escal:3,term:10,renew:85,prepay:5,adv:55,sofr:3.9,spread:650,fee:0.5,grace:2,amort:"sculpt",amortY:7,dscr:1.35,tenor:7,junior:0,jrate:12.75,jtenor:6},
+ backed:{label:"Hosting, backed tenant",mw:20,capexSite:12,capexIT:0,buildQ:6,rampQ:2,horizon:15,tv:0,rev:1.9,opex:0.45,escal:3,term:15,renew:85,prepay:15,adv:70,sofr:3.9,spread:300,fee:0.5,grace:2,amort:"sculpt",amortY:10,dscr:1.3,tenor:10,junior:0,jrate:12,jtenor:6},
+ gpu:{label:"GPU cloud, DDTL 5.5 style",mw:20,capexSite:19.2,capexIT:40,buildQ:4,rampQ:1,horizon:7,tv:0,rev:22.5,opex:1.1,escal:0,term:3,renew:50,prepay:15,adv:65,sofr:3.9,spread:550,fee:0.5,grace:0,amort:"level",amortY:5,dscr:1.3,tenor:6,junior:0,jrate:12.75,jtenor:5},
+ gpu5:{label:"GPU cloud, 5-year contract",mw:20,capexSite:19.2,capexIT:40,buildQ:4,rampQ:1,horizon:7,tv:0,rev:16.5,opex:1.1,escal:0,term:5,renew:50,prepay:15,adv:70,sofr:3.9,spread:300,fee:0.5,grace:0,amort:"level",amortY:5,dscr:1.3,tenor:6,junior:0,jrate:12.75,jtenor:5}};
+const PRESET_NOTES={
+ energy:"Engines and switchyard only, priced near Williams' implied $0.7M per MW before fuel plus fuel pass-through; equipment-style debt at SOFR + 450.",
+ hosting:"A $190–200 per kW-month lease to a venture-backed neocloud, like Bitdeer–Volta or Galaxy–CoreWeave, funded with private credit at SOFR + 650 and a 55% advance.",
+ backed:"A $155 per kW-month lease with a hyperscaler backstop, like TeraWulf–Fluidstack, funded at SOFR + 300 with a 70% advance and a 15% prepayment.",
+ gpu:"Crusoe's $59M per MW cost stack rented at $22.5M per MW on three-year contracts against a five-year loan at SOFR + 550, re-rented at half price in years four and five: the DDTL 5.5 model shared with this guide.",
+ gpu5:"The same chips on a five-year contract at $16.5M per MW with investment-grade-style debt: the case DDTL 5.5 was built to beat."};
+let MP={...PRESETS.hosting},mpreset="hosting";
+function runModel(p){
+  const Q=Math.round(p.horizon*4),bq=Math.max(1,Math.round(p.buildQ));
+  const capexTot=p.mw*(p.capexSite+p.capexIT);
+  const seniorC=capexTot*p.adv/100,prepayC=capexTot*p.prepay/100,juniorC=capexTot*p.junior/100;
+  const r=(p.sofr+p.spread/100)/100,jr=p.jrate/100;
+  let bal=0,jbal=0,cumEq=0,cumPr=0,peakEq=0;const rows=[];let minD=null,breaches=0,balloon=0;
+  const termQ=Math.round(p.term*4),tenorQ=Math.round(p.tenor*4),graceQ=Math.round(p.grace),amortQ=Math.max(1,Math.round(p.amortY*4)),jtenorQ=Math.max(1,Math.round(p.jtenor*4)),rampQ=Math.round(p.rampQ);
+  for(let q=0;q<Q;q++){
+    const building=q<bq,opQ=q-bq;const row={q:q,year:Math.floor(q/4)+1,label:"Y"+(Math.floor(q/4)+1)+"Q"+(q%4+1)};
+    let capex=0,sDraw=0,jDraw=0,ppDraw=0,eqDraw=0,rev=0,opex=0,ppCredit=0,cfads=0,interest=0,fee=0,principal=0,jint=0,jprin=0,cfe=0,shortfall=0;
+    if(building){capex=capexTot/bq;sDraw=capex*p.adv/100;jDraw=capex*p.junior/100;ppDraw=capex*p.prepay/100;eqDraw=capex-sDraw-jDraw-ppDraw;bal+=sDraw;jbal+=jDraw;
+      fee=Math.max(0,seniorC-bal)*p.fee/100/4;interest=bal*r/4;jint=jbal*jr/4;eqDraw+=interest+fee+jint}
+    else{
+      const ramp=rampQ>0?Math.min(1,(opQ+1)/rampQ):1,esc=Math.pow(1+p.escal/100,Math.floor(opQ/4)),price=opQ<termQ?1:p.renew/100;
+      rev=p.mw*p.rev/4*ramp*esc*price;opex=p.mw*p.opex/4*esc;ppCredit=opQ<termQ?prepayC/termQ:0;cfads=rev-ppCredit-opex;
+      interest=bal*r/4;jint=jbal*jr/4;
+      if(bal>0&&opQ>=graceQ){if(p.amort==="level")principal=Math.min(bal,seniorC/amortQ);else if(p.amort==="sculpt")principal=Math.min(bal,Math.max(0,cfads/p.dscr-interest));else principal=0}
+      if(q+1===tenorQ&&bal>0){balloon=Math.max(0,bal-principal);if(p.amort==="bullet")principal=bal}
+      if(jbal>0){jprin=Math.min(jbal,juniorC/jtenorQ)}
+      const ds=interest+principal;row.dscr=ds>0?cfads/ds:null;
+      if(row.dscr!=null&&!(q+1===tenorQ&&p.amort==="bullet")){if(minD==null||row.dscr<minD)minD=row.dscr;if(row.dscr<p.dscr)breaches++}
+      cfe=cfads-ds-jint-jprin;if(cfe<0){shortfall=-cfe;eqDraw+=shortfall;cfe=0}
+      bal-=principal;jbal-=jprin;
+    }
+    if(q===Q-1&&p.tv>0){const ann=rows.slice(-3).reduce((a,x)=>a+x.cfads+x.ppCredit,0)+cfads+ppCredit;row.tv=Math.max(0,p.tv*ann-bal-jbal);cfe+=row.tv}
+    cumEq+=-eqDraw+cfe;cumPr+=-capex+cfads+ppCredit+(row.tv||0);peakEq=Math.min(peakEq,cumEq);
+    Object.assign(row,{capex,sDraw,jDraw,ppDraw,eqDraw,rev,opex,ppCredit,cfads,interest,fee,principal,jint,jprin,cfe,shortfall,bal,jbal,cumEq,cumPr,eqCF:-eqDraw+cfe,prCF:-capex+cfads+ppCredit+(row.tv||0)});
+    rows.push(row);
+  }
+  const irr=fl=>{let lo=-0.99,hi=1;const npv=x=>fl.reduce((a,c,i)=>a+c/Math.pow(1+x,i),0);if(npv(lo)*npv(hi)>0)return null;for(let i=0;i<80;i++){const m=(lo+hi)/2;if(npv(m)>0)lo=m;else hi=m}return Math.pow(1+(lo+hi)/2,4)-1};
+  const eqIRR=irr(rows.map(x=>x.eqCF)),prIRR=irr(rows.map(x=>x.prCF));
+  const pb=key=>{for(let i=bq;i<rows.length;i++){if(rows[i][key]>=0)return (i+1)/4}return null};
+  const totEq=rows.reduce((a,x)=>a+x.eqDraw,0),totSh=rows.reduce((a,x)=>a+x.shortfall,0),totDist=rows.reduce((a,x)=>a+x.cfe,0);
+  return {rows,capexTot,seniorC,prepayC,juniorC,equity0:Math.max(0,capexTot-seniorC-prepayC-juniorC),totEq,totSh,totDist,peakEq:-peakEq,eqIRR,prIRR,eqPayback:pb("cumEq"),prPayback:pb("cumPr"),minD,breaches,balloon,rate:r,bq};
+}
+function renderInputs(){
+  const box=$("#inputs");box.textContent="";
+  FIELDS.forEach(([grp,fs])=>{const g=el("div","mgroup");g.append(el("div","eyebrow",grp));fs.forEach(([k,lab,unit,step,min])=>{const w=el("label","field");w.append(el("span","flab",lab));
+    let inp;if(k==="amort"){inp=el("select");[["level","Level amortization"],["sculpt","Sculpted to target cover"],["bullet","Bullet at tenor"]].forEach(([v,t])=>{const o=el("option",null,t);o.value=v;inp.append(o)});inp.value=MP[k]}
+    else{inp=el("input");inp.type="number";inp.step=step;if(min!=null)inp.min=min;inp.value=MP[k]}
+    inp.id="in-"+k;inp.oninput=()=>{MP[k]=k==="amort"?inp.value:parseFloat(inp.value);if(k!=="amort"&&isNaN(MP[k]))return;mpreset=null;document.querySelectorAll("#presets .chip").forEach(c=>c.setAttribute("aria-pressed","false"));recalc()};
+    w.append(inp,el("span","funit",unit));g.append(w)});box.append(g)});
+}
+function tile(k,v,s){const t=el("div","tile");t.append(el("div","eyebrow",k),el("div","tv",v));if(s)t.append(el("div","src",s));return t}
+function recalc(){
+  const m=runModel(MP);const R=m.rows;
+  const tiles=$("#tiles");tiles.textContent="";
+  tiles.append(tile("Total capex","$"+fmtM(m.capexTot)+"M",`${MP.mw} MW at $${(MP.capexSite+MP.capexIT).toFixed(1)}M per MW`),
+    tile("Senior loan","$"+fmtM(m.seniorC)+"M",`${(m.rate*100).toFixed(2)}% all-in · ${MP.adv}% advance`),
+    tile("Equity in","$"+fmtM(m.totEq)+"M",`$${fmtM(m.equity0)}M of capex + $${fmtM(m.totEq-m.equity0)}M interest, fees and shortfalls`),
+    tile("Equity IRR",m.eqIRR==null?"n.a.":pct(m.eqIRR),m.eqPayback?`payback in ${m.eqPayback.toFixed(2)} years`:"not paid back in horizon"),
+    tile("Project IRR (unlevered)",m.prIRR==null?"n.a.":pct(m.prIRR),m.prPayback?`simple payback ${m.prPayback.toFixed(2)} years`:"not paid back in horizon"),
+    tile("Minimum debt service cover",m.minD==null?"n.a.":m.minD.toFixed(2)+"x",m.breaches?`${m.breaches} quarters below ${MP.dscr}x`:`covenant ${MP.dscr}x held`));
+  const flags=[];if(m.balloon>0.5)flags.push(MP.amort==="bullet"?`The bullet of $${fmtM(m.balloon)}M at year ${MP.tenor} is paid from equity here; in practice it would be refinanced.`:`$${fmtM(m.balloon)}M is still outstanding at tenor (year ${MP.tenor}). The model assumes it is refinanced on the same terms and keeps amortizing; that refinancing is the main risk in the structure.`);
+  if(m.totSh>0.5)flags.push(`Equity has to top up debt service by $${fmtM(m.totSh)}M in total; lenders would read that as a default risk, not a plan.`);
+  if(MP.term<MP.tenor)flags.push(`The contract (${MP.term} years) is shorter than the loan (${MP.tenor} years): rent after year ${MP.term} is assumed at ${MP.renew}% of the initial price. Lenders carry that renewal risk, which is why DDTL 5.5 cost 325 bps more than the investment-grade facility.`);
+  if(m.eqIRR!=null&&m.eqIRR<m.rate)flags.push("Equity earns less than the debt costs: leverage is destroying value in this case.");
+  const fb=$("#modelflags");fb.textContent="";fb.hidden=!flags.length;if(flags.length){fb.append(el("div","eyebrow","Watch"));flags.forEach(f=>fb.append(el("div",null,f)))}
+  const years=[...new Set(R.map(x=>x.year))];const Y=years.map(y=>{const rs=R.filter(x=>x.year===y);const s=k=>rs.reduce((a,x)=>a+x[k],0);const d=rs.map(x=>x.dscr).filter(x=>x!=null);return{y,rev:s("rev"),opex:s("opex"),pp:s("ppCredit"),cfads:s("cfads"),int:s("interest")+s("fee"),prin:s("principal"),jun:s("jint")+s("jprin"),cfe:s("cfe"),eq:s("eqDraw"),capex:s("capex"),bal:rs[rs.length-1].bal,jbal:rs[rs.length-1].jbal,cum:rs[rs.length-1].cumEq,dscr:d.length?Math.min(...d):null}});
+  const op=Y.filter(y=>y.rev>0);
+  vbars($("#viz-rent"),"Where each year's cash rent goes, $M",[{name:"Operating cost",cssVar:"--c4"},{name:"Interest and fees",cssVar:"--c2"},{name:"Principal",cssVar:"--c1"},{name:"Junior",cssVar:"--c5"},{name:"Cash to equity",cssVar:"--c3"}],op.map(y=>({label:"Y"+y.y,values:[y.opex,y.int,y.prin,y.jun,y.cfe]})),{W:520,stacked:true,note:"Cash rent is headline rent less the prepayment credit. Shortfalls funded by equity are not shown."});
+  lines($("#viz-debt"),"Senior debt outstanding and cumulative cash to equity, $M",[{name:"Senior debt",cssVar:"--c1",values:Y.map(y=>y.bal)},{name:"Cumulative equity cash",cssVar:"--c3",values:Y.map(y=>y.cum)}],Y.map(y=>"Y"+y.y),{W:520,marker:m.eqPayback?Math.ceil(m.eqPayback)-1:null,markerLabel:m.eqPayback?"equity payback":""});
+  vbars($("#viz-dscr"),"Debt service cover by year (minimum quarter), x",[{name:"DSCR",cssVar:"--c1"}],op.filter(y=>y.dscr!=null&&y.dscr<50).map(y=>({label:"Y"+y.y,values:[Math.min(y.dscr,10)]})),{fmt:v=>v.toFixed(1)+"x",refLine:MP.dscr,refLabel:"covenant "+MP.dscr+"x",note:"Capped at 10x for display. The balloon quarter is excluded."});
+  const at=$("#annual");at.textContent="";table("#annual",["Year","Capex","Equity in","Cash rent","Operating cost","CFADS","Interest + fees","Principal","Junior","Cash to equity","Min DSCR","Senior balance","Cumulative equity"],Y.map(y=>["Y"+y.y,...[y.capex,y.eq,y.rev-y.pp,y.opex,y.cfads,y.int,y.prin,y.jun,y.cfe].map(v=>Math.abs(v)<0.005?"–":fmtM(v)),y.dscr==null?"–":y.dscr>50?">50x":y.dscr.toFixed(2)+"x",fmtM(y.bal),fmtM(y.cum)]),[1,2,3,4,5,6,7,8,9,10,11,12]);
+  const qt=$("#quarterly");qt.textContent="";table("#quarterly",["Quarter","Capex","Senior draw","Prepay","Equity in","Rent","Op cost","CFADS","Interest","Fee","Principal","Junior","Cash to equity","DSCR","Senior bal"],R.map(x=>[x.label,...[x.capex,x.sDraw,x.ppDraw,x.eqDraw,x.rev-x.ppCredit,x.opex,x.cfads,x.interest,x.fee,x.principal,x.jint+x.jprin,x.cfe].map(v=>Math.abs(v)<0.005?"–":fmtM(v)),x.dscr==null?"–":x.dscr>50?">50x":x.dscr.toFixed(2)+"x",fmtM(x.bal)]),[1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
+  $("#modelnotes").textContent="All figures in $M, nominal, before tax. "+(mpreset&&PRESET_NOTES[mpreset]?"Case: "+PRESET_NOTES[mpreset]:"Custom inputs.")+" Interest during construction, commitment fees and any debt-service shortfalls are funded by equity. Project IRR is on capex against CFADS plus prepayment credits, with no terminal value unless set.";
+  try{localStorage.setItem("kona-model",JSON.stringify({MP,mpreset}))}catch(e){}
+}
+function applyPreset(k){mpreset=k;MP={...PRESETS[k]};document.querySelectorAll("#presets .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===k));renderInputs();recalc()}
+Object.entries(PRESETS).forEach(([k,v])=>{const c=el("button","chip",v.label);c.dataset.k=k;c.setAttribute("aria-pressed",k===mpreset);c.onclick=()=>applyPreset(k);$("#presets").append(c)});
+try{const s=JSON.parse(localStorage.getItem("kona-model"));if(s&&s.MP&&typeof s.MP.mw==="number"){MP={...PRESETS.hosting,...s.MP};mpreset=s.mpreset||null;document.querySelectorAll("#presets .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===mpreset))}}catch(e){}
+renderInputs();recalc();
+/* scenarios saved to the guide */
+function slug(s){return String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"").slice(0,40)||"scenario"}
+function renderScenarios(docs){
+  const bar=$("#scenbar");bar.textContent="";
+  if(canWrite&&dbRef){const nm=el("input","scen");nm.placeholder="Scenario name";nm.setAttribute("aria-label","Scenario name");const b=el("button","act","Save scenario to guide");const msg=el("span","src");
+    b.onclick=async()=>{const n=nm.value.trim();if(!n){msg.textContent="Give it a name first.";return}try{await dbRef.doc("scenarios/"+slug(n)).set({name:n,params:MP,mpreset:mpreset||null,updated:new Date().toISOString().slice(0,10)});msg.textContent="Saved."}catch(e){msg.textContent="Could not save: "+(e&&e.code||"error")}};bar.append(nm,b,msg)}
+  if(docs&&docs.length){const w=el("div","chips");w.append(el("span","eyebrow","Saved scenarios"));docs.forEach(d=>{const b=d.data()||{};const c=el("button","chip",T(b.name||d.id)+(b.updated?" · "+T(b.updated):""));c.onclick=()=>{if(b.params&&typeof b.params.mw==="number"){MP={...PRESETS.hosting};for(const k in PRESETS.hosting){if(b.params[k]!=null)MP[k]=k==="amort"?String(b.params[k]):Number(b.params[k])}mpreset=b.mpreset&&PRESETS[b.mpreset]?b.mpreset:null;document.querySelectorAll("#presets .chip").forEach(x=>x.setAttribute("aria-pressed",x.dataset.k===mpreset));renderInputs();recalc()}};w.append(c)});bar.append(w)}
+}
+renderScenarios([]);
+/* ---------- Kona contract return calculator (per-contract unlevered IRR) ---------- */
+const CALC_PRESETS={
+ gpu:{label:"GPU cloud contract",deal:1000,baseArr:10,paArr:13,margin:77.5,capexMw:30,dur:5,life:6,debt:80,rate:10,resid:0,tax:25,
+   note:"A CoreWeave-style contract at new-contract pricing: $10M per MW base, $13M price-adjusted, $30M per MW of chips, 80% debt at 10%. Kona's own-power stack would put capex nearer $59M per MW."},
+ gpuKona:{label:"GPU cloud on Kona power",deal:1000,baseArr:10,paArr:13,margin:80,capexMw:59,dur:5,life:7,debt:65,rate:9.4,resid:50,tax:25,
+   note:"The same contract on Crusoe's $59M per MW cost stack (site and gas plant $19M, IT $40M), DDTL 5.5-style debt at 65% and 9.4%, chips re-rented at half price after the contract."},
+ hosting:{label:"Hosting lease",deal:460,baseArr:2.3,paArr:2.3,margin:80,capexMw:12,dur:10,life:20,debt:55,rate:10.4,resid:85,tax:25,
+   note:"A 20 MW, 10-year lease at about $190 per kW-month ($2.3M per MW per year) on a $12M per MW powered hall, private credit at 55% and SOFR + 650, renewed at 85% of the initial rent for the rest of a 20-year life."},
+ energy:{label:"Energy only",deal:190,baseArr:0.95,paArr:0.95,margin:55,capexMw:2.6,dur:10,life:20,debt:60,rate:8.4,resid:90,tax:25,
+   note:"20 MW of firm power sold behind the meter at about $0.95M per MW per year including fuel, on $2.6M per MW of engines and switchgear, with equipment-style debt at 60% and SOFR + 450."}};
+const CALC_SPEC=[
+ ["paArr","Price-adjusted revenue per MW ($M per year)",0.25,60,0.05,"What the contract actually pays, after any discount or premium to the base price"],
+ ["margin","EBITDA margin (%)",30,95,0.5,"Hosting and GPU contracts run 75–80%; energy-only is lower because fuel is in opex"],
+ ["capexMw","Capex per MW ($M)",1,80,0.5,"Chips only, or site plus power plus chips"],
+ ["debt","Debt funding (% of capex)",0,100,1,"Advance rate; 55–80% in 2026 deals"],
+ ["rate","Interest rate (%)",0,25,0.25,"All-in cost of the facility"],
+ ["resid","Residual value (% of annual price)",0,120,1,"Revenue after the contract as a share of the contract rate, until the end of useful life"]];
+const CALC_FIXED=[["deal","Original deal size ($M)",1],["baseArr","Base revenue per MW ($M per year)",0.05],["dur","Contract duration (years)",1],["life","Useful life (years)",1],["tax","Cash tax rate (%)",1]];
+let CS={...CALC_PRESETS.hosting},cpreset="hosting";
+function calcIrr(cfs){const npv=r=>cfs.reduce((a,c,t)=>a+c/Math.pow(1+r,t),0);let lo=-0.99,hi=5,flo=npv(lo),fhi=npv(hi);if(flo*fhi>0)return null;for(let i=0;i<200;i++){const m=(lo+hi)/2,fm=npv(m);if(Math.abs(fm)<1e-9)return m;if(flo*fm<0){hi=m;fhi=fm}else{lo=m;flo=fm}}return (lo+hi)/2}
+function calcModel(p){
+  const dur=Math.max(1,Math.round(p.dur)),life=Math.max(1,Math.round(p.life));
+  const mw=p.deal/p.baseArr/dur,capex=mw*p.capexMw,paDeal=p.paArr*mw*dur,annual=paDeal/dur;
+  const N=Math.max(dur,life),yrs=[...Array(N+1).keys()];
+  const m=p.margin/100,t=p.tax/100,r=p.rate/100,debt0=capex*p.debt/100,amort=debt0/dur,dep=capex/life;
+  const rev=[],opex=[],ebitda=[],intr=[],svc=[],bal=[],outf=[],pre=[],tax=[],post=[],lev=[];
+  yrs.forEach(y=>{
+    if(y===0){rev.push(null);opex.push(null);ebitda.push(null);intr.push(null);svc.push(null);bal.push(debt0);outf.push(capex-debt0);pre.push(-capex);tax.push(null);post.push(-capex);lev.push(-(capex-debt0));return}
+    const R=y<=dur?annual:(y<=life?annual*p.resid/100:0),E=R*m;
+    rev.push(R);opex.push(-(R-E));ebitda.push(E);
+    const I=y<=dur?bal[y-1]*r:null,D=y<=dur?amort:null;
+    intr.push(I);svc.push(D);bal.push(bal[y-1]-(D||0));outf.push((I||0)+(D||0));pre.push(E);
+    const T=Math.max(0,(E-(y<=life?dep:0))*t);tax.push(T);post.push(E-T);lev.push(E-T-(I||0)-(D||0));
+  });
+  let cum=0,pb=null;const cumArr=[];
+  for(let y=0;y<post.length;y++){const prev=cum;cum+=post[y];cumArr.push(cum);if(y>0&&pb===null&&cum>=0){pb=(y-1)+(-prev)/post[y]}}
+  return {mw,capex,paDeal,annual,yrs,rev,opex,ebitda,intr,svc,bal,outf,pre,tax,post,lev,cumArr,debt0,origRC:p.deal/capex,paRC:paDeal/capex,pirr:calcIrr(pre),uirr:calcIrr(post),lirr:calcIrr(lev),payback:pb};
+}
+function calcFmt(v){if(v==null)return"";const r=Math.round(v);if(Math.abs(v)<0.5)return"0";const s=Math.abs(r).toLocaleString("en-US");return r<0?"("+s+")":s}
+function calcPct(v){return v==null||!isFinite(v)?"n/a":(v*100).toFixed(1)+"%"}
+function calcBuildInputs(){
+  const box=$("#calcinputs");box.textContent="";
+  CALC_SPEC.forEach(([k,lab,min,max,step,hint])=>{const w=el("div","crow");const l=el("label","field");l.append(el("span","flab",lab));
+    const n=el("input");n.type="number";n.min=min;n.max=max;n.step=step;n.id="cn-"+k;l.append(n);
+    const r=el("input");r.type="range";r.min=min;r.max=max;r.step=step;r.id="cr-"+k;r.setAttribute("aria-label",lab);
+    const set=v=>{v=parseFloat(v);if(!isFinite(v))return;CS[k]=v;n.value=v;r.value=v;cpreset=null;document.querySelectorAll("#calcpresets .chip").forEach(c=>c.setAttribute("aria-pressed","false"));calcRender()};
+    n.oninput=e=>set(e.target.value);r.oninput=e=>set(e.target.value);
+    w.append(l,r,el("div","funit",hint));box.append(w)});
+  const fb=$("#calcfixed");fb.textContent="";
+  CALC_FIXED.forEach(([k,lab,step])=>{const l=el("label","field");l.append(el("span","flab",lab));const n=el("input");n.type="number";n.step=step;n.min=0;n.id="cf-"+k;
+    n.oninput=()=>{const v=parseFloat(n.value);if(!isFinite(v)||v<=0)return;CS[k]=v;cpreset=null;document.querySelectorAll("#calcpresets .chip").forEach(c=>c.setAttribute("aria-pressed","false"));calcRender()};l.append(n);fb.append(l)});
+}
+function calcSync(){CALC_SPEC.forEach(([k])=>{$("#cn-"+k).value=CS[k];$("#cr-"+k).value=CS[k]});CALC_FIXED.forEach(([k])=>{$("#cf-"+k).value=CS[k]})}
+function calcRender(){
+  if(!(CS.baseArr>0))return;const o=calcModel(CS);
+  const tl=$("#calctiles");tl.textContent="";
+  tl.append(tile("Unlevered IRR, post-tax",calcPct(o.uirr),"on capex against EBITDA less cash tax"),tile("Unlevered IRR, pre-tax",calcPct(o.pirr),""),tile("Levered IRR, post-tax",calcPct(o.lirr),"on the equity share, after debt service"),tile("Revenue ÷ capex",o.paRC.toFixed(2)+"x","price-adjusted deal ÷ capex"),tile("Payback, post-tax",o.payback==null?"not reached":o.payback.toFixed(1)+" yrs","years of unlevered free cash flow"));
+  const dv=$("#calcderived");dv.textContent="";[["Derived capacity",o.mw.toFixed(1)+" MW"],["Derived capex","$"+calcFmt(o.capex)+"M"],["Price-adjusted deal size","$"+calcFmt(o.paDeal)+"M"],["Original revenue ÷ capex",o.origRC.toFixed(2)+"x"]].forEach(([a,b])=>{const d=el("div","drow");d.append(el("span",null,a),el("b",null,b));dv.append(d)});
+  /* payback chart: annual unlevered FCF bars + cumulative line */
+  const box=$("#viz-payback");box.textContent="";box.append(el("div","vtitle","Payback: unlevered free cash flow by year and cumulative, $M"));
+  const W=720,H=300,top=16,bottom=40,left=64,right=16,n=o.yrs.length;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":"Payback chart"});
+  const vals=[...o.post,...o.cumArr];let max=Math.max(0,...vals)*1.1,min=Math.min(0,...vals)*1.1;if(max===min)max=min+1;
+  const sy=v=>top+(H-top-bottom)*(1-(v-min)/(max-min)),bw=(W-left-right)/n,sx=i=>left+i*bw+bw/2;
+  for(let i=0;i<=4;i++){const v=min+(max-min)/4*i,y=sy(v);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"grid"}));svg.append(sv("text",{x:left-6,y:y+4,class:"tick","text-anchor":"end"},calcFmt(v)))}
+  o.post.forEach((v,i)=>{const g=sv("g",{class:"mark"});const y0=sy(0),y1=sy(v);const rc=sv("rect",{x:sx(i)-bw*0.3,y:Math.min(y0,y1),width:bw*0.6,height:Math.abs(y0-y1),rx:3,fill:"var(--c1)"});rc.append(sv("title",{},`Y${i} unlevered FCF: ${calcFmt(v)}`));g.append(rc);svg.append(g);svg.append(sv("text",{x:sx(i),y:H-bottom+16,class:"tick","text-anchor":"middle"},"Y"+i))});
+  svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
+  const d=o.cumArr.map((v,i)=>(i?"L":"M")+sx(i).toFixed(1)+" "+sy(v).toFixed(1)).join(" ");svg.append(sv("path",{d:d,class:"line",stroke:"var(--c3)"}));
+  o.cumArr.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:5,class:"dot",fill:"var(--c3)"});c.append(sv("title",{},`Cumulative through Y${i}: ${calcFmt(v)}`));svg.append(c)});
+  if(o.payback!=null){const x=left+o.payback*bw+bw/2;svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-bottom,class:"ref"}));svg.append(sv("text",{x:x+5,y:top+12,class:"tick"},"payback "+o.payback.toFixed(1)+" yrs"))}
+  box.append(svg);const lg=el("div","legend");[["Unlevered FCF, post-tax","--c1"],["Cumulative","--c3"]].forEach(([nm,c])=>{const s=el("span");const i=el("i");i.style.background=`var(${c})`;s.append(i,nm);lg.append(s)});box.append(lg);
+  box.append(el("div","src","Year 0 is the capex outlay. The dashed line marks where cumulative unlevered free cash flow turns positive."+(o.payback==null?" Not reached within useful life.":"")));
+  /* cash flow table */
+  const t=$("#calccf");t.textContent="";const th=el("thead"),hr=el("tr");hr.append(el("th",null,""));o.yrs.forEach(y=>hr.append(el("th","num","Y"+y)));hr.append(el("th","num","Total / IRR"));th.append(hr);t.append(th);
+  const tb=el("tbody");const sum=a=>a.reduce((x,y)=>x+(y||0),0);const only0=v=>o.yrs.map(y=>y===0?v:null);
+  const line=(lab,arr,last,cls)=>{const tr=el("tr");if(cls)tr.className=cls;const c=el("td");c.append(el("b",null,lab));tr.append(c);arr.forEach(v=>tr.append(el("td","num",calcFmt(v))));tr.append(el("td","num",last==null?"":last));tb.append(tr)};
+  line("Revenue",o.rev,calcFmt(sum(o.rev)));line("Opex",o.opex);line("EBITDA",o.ebitda,calcFmt(sum(o.ebitda)),"sep");
+  line("Debt funding",only0(o.debt0));line("Interest expense",o.intr);line("Debt service",o.svc);line("Total debt",o.bal);line("Equity funding",only0(o.capex-o.debt0));line("Outflows: equity at Y0, then debt service",o.outf);
+  line("Unlevered FCF, pre-tax",o.pre,calcPct(o.pirr));line("Cash taxes",o.tax);line("Unlevered FCF, post-tax",o.post,calcPct(o.uirr),"sep");line("Cumulative unlevered FCF",o.cumArr);line("Cash to equity after debt service",o.lev,calcPct(o.lirr));
+  t.append(tb);
+  /* sensitivity */
+  const st=$("#calcsens");st.textContent="";const stepA=Math.max(0.1,+(CS.paArr*0.1).toFixed(2)),stepC=Math.max(0.5,+(CS.capexMw*0.1).toFixed(2));
+  const arrs=[-2,-1,0,1,2].map(i=>+(CS.paArr+i*stepA).toFixed(2)),caps=[-2,-1,0,1,2].map(i=>+(CS.capexMw+i*stepC).toFixed(2));
+  const sh=el("thead"),shr=el("tr");shr.append(el("th",null,"Revenue/MW \\ Capex/MW"));caps.forEach(c=>shr.append(el("th","num","$"+c+"M")));sh.append(shr);st.append(sh);
+  const sb=el("tbody");arrs.forEach((a,i)=>{const tr=el("tr");const h=el("td");h.append(el("b",null,"$"+a+"M"));tr.append(h);caps.forEach((c,j)=>{const v=(a>0&&c>0)?calcModel({...CS,paArr:a,capexMw:c}).uirr:null;const td=el("td","num",calcPct(v));if(v!=null){const x=Math.max(-1,Math.min(1,(v-0.15)/0.08));td.style.background=x>=0?`color-mix(in srgb, var(--c3) ${Math.round(x*45)}%, transparent)`:`color-mix(in srgb, var(--c2) ${Math.round(-x*45)}%, transparent)`}if(i===2&&j===2)td.style.outline="2px solid var(--accent)";tr.append(td)});sb.append(tr)});st.append(sb);
+  try{localStorage.setItem("kona-calc",JSON.stringify({CS,cpreset}))}catch(e){}
+}
+function calcApply(k){cpreset=k;const {label,note,...rest}=CALC_PRESETS[k];CS={...rest};document.querySelectorAll("#calcpresets .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===k));calcSync();calcRender();$("#calcnote").textContent=note}
+Object.entries(CALC_PRESETS).forEach(([k,v])=>{const c=el("button","chip",v.label);c.dataset.k=k;c.setAttribute("aria-pressed",k===cpreset);c.onclick=()=>calcApply(k);$("#calcpresets").append(c)});
+$("#calcpresets").after(Object.assign(el("p","src"),{id:"calcnote"}));
+$("#calcreset").onclick=()=>calcApply("hosting");
+calcBuildInputs();
+try{const s=JSON.parse(localStorage.getItem("kona-calc"));if(s&&s.CS&&typeof s.CS.deal==="number"){CS={...CALC_PRESETS.hosting,...s.CS};delete CS.label;delete CS.note;cpreset=s.cpreset||null;document.querySelectorAll("#calcpresets .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===cpreset));$("#calcnote").textContent=cpreset&&CALC_PRESETS[cpreset]?CALC_PRESETS[cpreset].note:"Custom inputs."}else{$("#calcnote").textContent=CALC_PRESETS.hosting.note}}catch(e){$("#calcnote").textContent=CALC_PRESETS.hosting.note}
+calcSync();calcRender();
+
+
+
+/* ---------- briefings (db) ---------- */
+function safeUrl(u){return typeof u==="string"&&/^https:\/\//.test(u)?u:null}
+function renderBriefs(docs){
+  const box=$("#briefs");box.querySelectorAll(".brief").forEach(x=>x.remove());
+  $("#briefempty").hidden=docs.length>0;
+  docs.forEach(d=>{const b=d.data()||{};const c=el("div","brief");
+    c.append(el("div","eyebrow",String(b.date||d.id)),el("h3",null,String(b.title||"Weekly briefing")));
+    if(b.kona){const k=el("div","kona");k.append(el("div","eyebrow","For Kona"),el("div",null,String(b.kona)));c.append(k)}
+    (Array.isArray(b.items)?b.items:[]).forEach(it=>{const i=el("div","item");
+      const s=({neocloud:"s1",developer:"s2",energy:"s3",financing:"s4"})[it.segment]||"s4";
+      i.append(el("div","seg "+s,String(it.segment||"")),el("b",null,String(it.headline||"")),el("div",null,String(it.summary||"")));
+      const u=safeUrl(it.url);if(u){const sr=el("div","src");sr.append(link(String(it.source||"Source"),u));i.append(sr)}
+      c.append(i)});
+    if(b.stale){const f=el("div","flagbox");f.append(el("div","eyebrow","Guide figures now out of date"),el("div",null,String(b.stale)));c.append(f)}
+    box.append(c)});
+}
+(async()=>{
+  const db=await getDb();
+  if(!db){$("#briefempty").textContent="Briefings are unavailable in this view. Open the page signed in to see the weekly digest.";return}
+  db.collection("briefings").orderBy("date","desc").limit(30).onSnapshot(s=>renderBriefs(s.docs),()=>{$("#briefempty").hidden=false;$("#briefempty").textContent="Briefings could not be loaded. Reload to try again."});
+})();
+</script>

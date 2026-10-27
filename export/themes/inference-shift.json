@@ -1,0 +1,66 @@
+{
+  "evidence": [
+    {
+      "claim": "Muse, Meta's consumer agent, is 'very compute intensive'. Meta targets more than 10x cost efficiency in a year through off-peak capacity, smaller models and inference optimization, and wants to serve as much high-margin inference as possible.",
+      "company": "Meta Platforms",
+      "date": "2026-10-21",
+      "direction": "supports",
+      "numbers": "Muse >10mn users in US/Canada in ~6 weeks, ~25% daily use; total serving costs expected to rise.",
+      "segment": "financing",
+      "source": "Meta 3Q26 call (Zuckerberg, Li)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/21/meta-meta-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Split its 2026 TPU into inference and training chips, projecting inference at 30–60% of demand; serving clusters run from one rack to tens of MW.",
+      "company": "Google",
+      "date": "2026-10-06",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Sequoia Training Data",
+      "url": "https://www.youtube.com/watch?v=bGph8GwB3Sk"
+    },
+    {
+      "claim": "Brian Janous says the smallest site a desperate buyer will accept is about 50 MW.",
+      "company": "Buyers",
+      "date": "2026-09-04",
+      "direction": "against",
+      "segment": "neocloud",
+      "source": "Catalyst",
+      "url": "https://www.youtube.com/watch?v=e3SkfcVvARU"
+    },
+    {
+      "claim": "Agents have created a CPU shortage, since CPUs orchestrate agent workloads.",
+      "company": "Crusoe",
+      "date": "2026-06-17",
+      "direction": "supports",
+      "segment": "neocloud",
+      "source": "Stanford MS&E435",
+      "url": "https://www.youtube.com/watch?v=GcCGzfKdCd0"
+    },
+    {
+      "claim": "CoreWeave's ~$21bn expansion with Meta (through Dec 2032, Vera Rubin) is framed as capacity to scale Meta's inference workloads.",
+      "company": "Meta Platforms",
+      "date": "2026-04-09",
+      "direction": "supports",
+      "numbers": "~$21bn on top of the ~$14.2bn Sept 2025 deal.",
+      "segment": "financing",
+      "source": "CoreWeave release via Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260409138818/en/CoreWeave-and-Meta-Announce-$21-Billion-Expanded-AI-Infrastructure-Agreement"
+    },
+    {
+      "claim": "Predicts about 90% of AI load will be inference within 3–4 years, with 5–30 MW city sites (vendor claim).",
+      "company": "Bloom Energy",
+      "date": "2025-10-21",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Catalyst",
+      "url": "https://www.youtube.com/watch?v=vdEbabUNLyw"
+    }
+  ],
+  "order": 9,
+  "question": "Are agents and inference changing what sites need: size, CPUs, storage, location?",
+  "status": "strengthening",
+  "summary": "Inference is taking a growing share and needs different sites: smaller, spread out, with more CPUs and storage beside the accelerators. That widens the market for sites of tens of megawatts, though large tenants still prefer 50 MW or more.",
+  "title": "Inference changing site design",
+  "updated": "2026-10-22"
+}

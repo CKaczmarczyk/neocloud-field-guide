@@ -1,0 +1,54 @@
+{
+  "evidence": [
+    {
+      "claim": "3Q26 10-Q: air permits for larger installations are taking longer than expected, and construction, land-use and gas permits have also been delayed; Bloom generally cannot sell its Energy Servers to a financier until permits are in hand.",
+      "company": "Bloom Energy",
+      "date": "2026-10-22",
+      "direction": "supports",
+      "numbers": "Permits now gate revenue recognition for financier-bought systems; Jupiter (Oracle, New Mexico) was not mentioned on the call; hearing set for 7 December (press).",
+      "segment": "energy",
+      "source": "Bloom 3Q26 10-Q, risk factors",
+      "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm"
+    },
+    {
+      "claim": "Paused state environmental permits for new data centers of 50 MW or more for up to a year.",
+      "company": "New York",
+      "date": "2026-07-14",
+      "direction": "supports",
+      "segment": "policy",
+      "source": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
+    },
+    {
+      "claim": "Ordered a grid audit in August and paused environmental permits for AI and crypto data centers in September.",
+      "company": "Texas",
+      "date": "2026-09-21",
+      "direction": "supports",
+      "segment": "policy",
+      "source": "Third Prime October overview"
+    },
+    {
+      "claim": "Brian Janous says polling turned sharply negative from about September 2025; gas plants draw more opposition than data centers.",
+      "company": "US",
+      "date": "2026-09-04",
+      "direction": "supports",
+      "segment": "policy",
+      "source": "Catalyst",
+      "url": "https://www.youtube.com/watch?v=e3SkfcVvARU"
+    },
+    {
+      "claim": "Moratorium bills failed in about ten states, including vetoes in Maine and Vermont.",
+      "company": "US states",
+      "date": "2026-10-01",
+      "direction": "against",
+      "segment": "policy",
+      "source": "Third Prime October overview"
+    }
+  ],
+  "order": 7,
+  "question": "Is opposition slowing builds, and where?",
+  "status": "strengthening",
+  "summary": "Opposition is now bipartisan state politics: New York and Texas have paused permits, and polling turned negative from late 2025. Most states are likely to settle on negotiated concessions; moratorium bills have failed in about ten.",
+  "title": "Permitting and community backlash",
+  "updated": "2026-10-23"
+}

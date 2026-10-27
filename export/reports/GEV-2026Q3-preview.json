@@ -1,0 +1,482 @@
+{
+  "brief": [
+    "Verdict ahead of the print: the reported quarter should show revenue of about $12.0bn, up about 20% on 3Q25's $9,969mn, with adjusted EBITDA of $1.7bn to $1.8bn (margin about 14%). The stock will trade on gas orders and GW signed, pricing on those orders, and what management says about 2027 to 2031 slot demand after a 10.6% fall on 22 October that sources attribute to a sector rotation, not company news.",
+    "Where expectations sit. Yahoo Finance shows 3Q26 revenue consensus of $12.0bn from 18 analysts (range $11.87bn to $12.38bn) and EPS of $4.17 from 14 analysts (range $3.08 to $5.28). Zacks has $4.03 and $12.1bn, Benzinga $4.02 and $12.02bn, MarketBeat $3.99 and $11.99bn, and Fiscal.ai (via Stocktwits) $3.42 and $12.41bn. BofA's Andrew Obin expects orders of $21bn, against a consensus of $22.2bn that his note cites, plus revenue of $12.4bn and adjusted EBITDA of $1.8bn. TIKR cites EBITDA consensus of about $1.7bn. FY26 revenue consensus is $46.22bn, near the top of the $45.5bn to $46.5bn guide, and FY27 is $52.67bn.",
+    "What the company guided for 3Q26 (2Q26 call, 22 July): Power revenue up 17% to 19% with EBITDA margin of about 17% to 18% (3Q is seasonally the lowest quarter for services); Electrification revenue of $3.8bn to $4.0bn with margin modestly above 2Q's 18.4%; Wind revenue down low double digits with EBITDA about break-even; and positive company FCF. Gas output steps up from about 3 GW to about 5 GW a quarter from 3Q26 (20 GW annualized). H1 FCF was $9,897mn, so the FY guide implies only $1.6bn to $2.6bn in the second half.",
+    "Three debates. First, the orders cadence: H1 signed 40 GW of gas contracts, and management guided 20 GW for the second half, which Strazik now calls likely conservative, while BofA models 13 GW in 3Q and 14 GW in 4Q. Second, pricing versus cyclicality: first-half orders were priced more than 20% above 4Q25, but GLJ argues the 2027 delivery vintage was priced before the increases and that industry capacity of 104 to 113 GW in 2030 to 2031 exceeds orders. Third, cash quality: H1 contract liabilities rose $14.2bn to $39.9bn on down payments, and consensus FCF falls from about $12bn in 2026 to about $7.4bn in 2027 (TIKR).",
+    "What would move the stock. Positive: orders above $22bn, gas GW above 13 with a higher year-end target, $/kW at or above the guided range, and a firm 2031/2032 slot update. Negative: orders near BofA's $21bn with weak SRA conversion, any sign of data center customers deferring or cancelling slots, Wind losses worse than break-even, or a cautious tone on 2027 FCF. The stock closed at $827.42 on 22 October and traded at $799.43 at about 9:35 am ET on 23 October. No earnings-specific implied move was found; one-day options on 22 October implied about 4.0%.",
+    "Kona read-through. Heavy-duty frames are sold out for years, and GE Vernova itself sells aeroderivatives as 'the bridge' because they ship and commission faster. At tens of MW, Kona is competing for aeroderivative and reciprocating-engine slots, not HA frames, and it should expect cash-committed reservations at higher $/kW."
+  ],
+  "changes": [
+    "The stock fell 10.6% on 22 October to $827.42 (from $925.92), in a broad AI-power selloff with no company-specific news, per Investing.com and MarketBeat. It is now about 31% below its $1,195.94 52-week high.",
+    "Venture Global signed a frame agreement with GE Vernova and Baker Hughes on 9 October for up to 16 gas power islands of 720 MW each. Eight are reserved with GE Vernova (5.76 GW); the first purchase order is expected by end-2026, with deliveries through 2034 (TIKR).",
+    "At Morgan Stanley's Laguna conference in mid-September, CEO Scott Strazik said 2032 slots are already selling, in single-digit GW with cash committed. He expects 'a very strong third quarter orders performance' and called the 20 GW second-half outlook likely conservative (TIKR).",
+    "Estimates and targets have drifted lower. Zacks cut its 3Q26 EPS consensus 3.32% over 30 days to $4.03. JPMorgan cut its target from $1,330 to $1,150 (9 October) and Susquehanna from $1,300 to $1,270 (14 October). GLJ Research initiated at Sell with a $470 target (14 September).",
+    "CFO succession: Ken Parks retires on 2 April 2027, and Claire McDonough (Rivian CFO) joins on 1 November 2026 and becomes CFO on 1 January 2027 (8-K of 27 August 2026)."
+  ],
+  "checks": "Filing figures: I downloaded the 2Q26 release (8-K Ex. 99.1), the 2Q26 10-Q, the 3Q25 release and the 27 August 2026 8-K from EDGAR with the required User-Agent, converted them to text, and string-matched 86 figures in code. They covered company and segment revenue, EBITDA and margins, orders, FCF, cash, borrowings and note coupons, credit facilities, ratings, RPO by type and segment, contract liabilities, gas GW and units, share count, tariff estimate, guidance, and the CFO succession dates. All matched except one capex string ('$(386)') that is formatted differently in the text; capex was confirmed separately in the FCF table. Call guidance (3Q segment outlook, pricing, sold-out-through-2030, 5 GW a quarter, $200bn backlog in 2027, 80/20 customer mix) was string-matched against GE Vernova's own 2Q26 call transcript PDF. The December 2025 2028 frame was read from the GE Vernova press release, but only once. Consensus: on 23 October I reopened Yahoo (all revenue and EPS figures confirmed), the Zacks article of 21 October ($4.03, $12.1bn, -3.32%, ESP +5.47%, Rank #3), Benzinga ($4.02, $12.02bn), MarketBeat ($3.99, $11.99bn), StockAnalysis forecast and price history (closes of $925.92 on 21 October and $827.42 on 22 October; $799.43 intraday on 23 October), BofA via Longbridge, TIKR (Laguna quotes, about $1.7bn EBITDA consensus, FCF path), Stocktwits (Susquehanna, Koyfin, Fiscal.ai), Utility Dive (BNP) and TheRightTrader (bond). Each figure used was confirmed from the page. Read once only: Investing.com, MarketBeat, GuruFocus and TipRanks selloff articles; TIKR on Venture Global; Power Engineering (April 2026); Turbomachinery; Jefferies via Investing.com; GLJ via Yahoo/Stocktwits; Options Analysis Suite. Derived numbers were recomputed in Python: second-half revenue and FCF needed, implied 4Q, implied Wind second-half EBITDA, EBITDA margin on consensus, order growth and book-to-bill, the 22 October move and distance from the high, market cap (266.3mn shares), net cash, P/E multiples, target upside, Power 3Q range on the originally reported base, and Venture Global GW. Single source: the $22.2bn orders consensus (BofA note); the about $1.7bn EBITDA consensus (TIKR, provider unnamed); the FY27 FCF of about $7.4bn (TIKR); the Strazik Laguna quotes (TIKR summary, not a transcript); BNP's $/kW and the 130 to 140 GW market expectation (Utility Dive); GLJ's arguments (secondhand summaries). Not found: consensus for 3Q backlog, Power segment revenue or margin, 3Q FCF, and gas GW; an earnings-specific implied move; any CDS or traded bond price (the bond figure is a model estimate). The 3Q26 release had not been filed when this card was built (latest EDGAR filing checked: 8-K of 27 August 2026), and no post-results material was read.",
+  "consensus_thesis": "Investors own GE Vernova as the leading heavy-duty gas turbine supplier in a market that is mostly sold out through 2030, and the stock is a call on pricing and services built on that position. At $827.42 (about $220bn market cap, about 33.5x Yahoo's FY27 EPS of $24.69), the valuation pays for revenue rising from about $46bn in FY26 to about $53bn in FY27 and toward the 2028 frame of 20% adjusted EBITDA margin, plus a decades-long HA and aeroderivative services stream. Positioning has de-rated: the stock is about 31% below its $1,195.94 high, with a Sell initiation and target cuts around it, though the Street is still overwhelmingly Buy. Credit is not the debate: about $10.3bn of net cash, BBB/BBB+ ratings on positive outlook, and an estimated (not traded) spread of about 87bp on the 2056 notes price GEV as a solid investment-grade name.",
+  "date": "2026-10-23",
+  "headline": "3Q26 will be judged less on a roughly $12.0bn revenue quarter than on gas turbine orders and slot conversions (BofA expects 13 GW; management promised at least 125 GW under contract by year-end) and on whether pricing holds at the high end of +10 to 20 points, after the stock fell 10.6% on 22 October in a sector-wide AI-power selloff.",
+  "kind": "preview",
+  "kona": "GE Vernova's heavy-duty frames are mostly sold out through 2030, and new reservations run four to five years out. Pricing on 2H26 orders is guided to the high end of +10 to 20 points over 4Q25, and BNP estimates about $790/kW for heavy-duty, $950/kW for HA combined cycle and $1,800/kW for aeroderivatives. At tens of MW, Kona is not competing for HA slots. Its realistic options are aeroderivatives, which GE Vernova itself sells as the bridge (they ship about 24 months before heavy-duty and commission in about six months), and reciprocating engines (Wärtsilä has booked a data center order for an early-2028 COD; INNIO Jenbacher and Caterpillar have GW-scale data center frameworks, per Power Engineering), with fuel cells as the non-combustion option. Kona should expect cash-committed slot reservations rather than free options, so it should negotiate refundability and delivery-date liquidated damages in the reservation and plan modular, redeployable units that a lender or power buyer can underwrite.",
+  "kpis": [
+    {
+      "consensus": "$12.0bn (Yahoo, 18 analysts, range $11.87bn to $12.38bn); Zacks $12.1bn; Benzinga $12.02bn; MarketBeat $11.99bn; Fiscal.ai $12.41bn; BofA estimate $12.4bn",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "The FY26 guide of $45.5bn to $46.5bn needs $25.1bn to $26.1bn in the second half. Yahoo's 4Q26 consensus is $13.88bn.",
+      "prior": "$11,104mn (2Q26); $9,969mn (3Q25)"
+    },
+    {
+      "consensus": "About $1.7bn (TIKR, 27 September, provider not named); BofA estimate $1.8bn; implied margin about 14%",
+      "current": "",
+      "metric": "Adjusted EBITDA / margin",
+      "note": "The FY guide is 12% to 14%, and H1 was 10.5%. Management guided 3Q26 margin up year on year.",
+      "prior": "$1,250mn, 11.3% (2Q26); $811mn, 8.1% (3Q25)"
+    },
+    {
+      "consensus": "$4.17 (Yahoo, 14 analysts, range $3.08 to $5.28); Zacks $4.03; Benzinga $4.02; MarketBeat $3.99; Fiscal.ai $3.42",
+      "current": "",
+      "metric": "Diluted EPS",
+      "note": "GE Vernova reports GAAP EPS only, so consensus mixes bases. Zacks ESP is +5.47%, and the estimate was cut 3.32% over 30 days.",
+      "prior": "$2.47 (2Q26, missed $3.17 consensus); $1.64 (3Q25)"
+    },
+    {
+      "consensus": "n.a. for 3Q26; FY26 $12.07bn (StockAnalysis/S&P Global); FY27 about $7.4bn (TIKR)",
+      "current": "",
+      "metric": "Free cash flow",
+      "note": "Management guided positive 3Q FCF. The FY guide of $11.5bn to $12.5bn implies $1.6bn to $2.6bn in the second half.",
+      "prior": "$5,107mn (2Q26); $9,897mn in H1; $732mn (3Q25)"
+    },
+    {
+      "consensus": "$22.2bn (consensus cited in BofA note, 20 October; single source); BofA estimate $21bn (+44% year on year, 1.70x book-to-bill)",
+      "current": "",
+      "metric": "Orders",
+      "note": "BofA by segment: Power $13.4bn, Electrification $6.2bn, Wind $1.5bn.",
+      "prior": "$24.2bn (2Q26, +88% organic); $14.6bn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Backlog (RPO), equipment and services",
+      "note": "Management targets about $200bn in 2027 (2Q26 call). 36% of equipment RPO is expected to be recognized within one year.",
+      "prior": "$176,284mn at 30 June 2026: equipment $87,821mn, services $88,463mn (Power $111,649mn; Electrification $44,563mn)"
+    },
+    {
+      "consensus": "n.a.; BofA estimate 13 GW signed in 3Q26 and 14 GW in 4Q26; BNP says the market looks for 130 to 140 GW at year-end",
+      "current": "",
+      "metric": "Gas GW under contract (backlog plus slot reservations)",
+      "note": "The guide is at least 125 GW by end-2026. 2Q signed 20 GW (18 GW SRAs plus 2 GW orders), converted 10 GW and shipped 3 GW.",
+      "prior": "116 GW at 30 June (53 GW backlog plus 63 GW SRAs), up from 100 GW"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Gas turbine orders and shipments (units, GW)",
+      "note": "Output steps from about 3 GW to about 5 GW a quarter from 3Q26.",
+      "prior": "2Q26 orders: 113 units, 12.1 GW (52 heavy-duty including 15 HA, plus 61 aeroderivatives); shipments 29 units, 3.3 GW"
+    },
+    {
+      "consensus": "n.a.; guide: revenue up 17% to 19%, margin about 17% to 18%",
+      "current": "",
+      "metric": "Power segment revenue / EBITDA margin",
+      "note": "On the originally reported 3Q25 base, the guide implies about $5.66bn to $5.76bn; the 2026 segment realignment recast was not checked. FY guide: organic growth 18% to 20%, margin 17% to 19%.",
+      "prior": "$5,477mn, 18.8% (2Q26); 3Q25 $4,838mn, 13.3% as originally reported"
+    },
+    {
+      "consensus": "n.a.; guide $3.8bn to $4.0bn, margin modestly above 18.4%",
+      "current": "",
+      "metric": "Electrification revenue / margin",
+      "note": "FY guide: $14.5bn to $15.0bn including about $3.1bn from Prolec GE; margin 18% to 20%.",
+      "prior": "$3,637mn, 18.4% (2Q26)"
+    },
+    {
+      "consensus": "n.a.; guide about break-even",
+      "current": "",
+      "metric": "Wind segment EBITDA",
+      "note": "The FY guide of about $400mn of losses implies about $257mn of positive EBITDA in the second half.",
+      "prior": "$(275)mn (2Q26); $(657)mn in H1"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash, debt and down payments",
+      "note": "Net cash is about $10.3bn. The $3.0bn revolver is undrawn. Contract liabilities rose $14.2bn in H1 on down payments.",
+      "prior": "Cash, cash equivalents and restricted cash $13,120mn ($0.4bn restricted); borrowings $2,849mn; contract liabilities and deferred income $39,944mn (current)"
+    }
+  ],
+  "monitor": [
+    "Gas GW signed in 3Q26 (BofA 13 GW), SRA-to-order conversion, and whether the 'at least 125 GW' year-end target is raised toward the 130 to 140 GW that BNP Paribas says the market expects.",
+    "Orders against the $22.2bn consensus cited by BofA, and pricing on gas equipment orders against management's guide of the high end of +10 to 20 points over 4Q25.",
+    "The FY26 guide (revenue $45.5bn to $46.5bn, adjusted EBITDA margin 12% to 14%, FCF $11.5bn to $12.5bn) and any early read on FY27 FCF as down payments normalize."
+  ],
+  "name": "GE Vernova",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "In July you said second-half gas equipment orders would be priced at the high end of 10 to 20 points above 4Q25, and in September Scott said the 20 GW second-half outlook was likely conservative. BofA models 13 GW in 3Q, and BNP says the market wants 130 to 140 GW at year-end against your 125 GW. How many GW did you sign in 3Q, split between SRAs and firm orders? How many SRA GW converted? What was the $/kW change on 3Q gas equipment orders versus 4Q25? Will you raise the year-end GW target, and to what number?",
+      "style": "equity",
+      "why": "The multiple rests on the gas pricing cycle. GW signed and $/kW are the cleanest test of whether pricing is still rising or has plateaued, which separates the 'secular compounder' view from GLJ's 'cyclical turbine maker' view."
+    },
+    {
+      "question": "Contract liabilities rose $14.2bn in H1 to $39.9bn, mostly down payments on orders and slot reservations, and H1 FCF of $9.9bn was more than all of 2025. Consensus has FCF falling from about $12bn in 2026 to about $7.4bn in 2027, and your current ratio is 0.85. How much of the down-payment balance unwinds in 2027 as 20 to 24 GW a year ships? What is your floor for 2027 FCF? Will you commit to a 2027 FCF range when you guide, and when will that be?",
+      "style": "credit",
+      "why": "Much of GE Vernova's cash is customer money. If down payments reverse as units ship while new SRAs slow, FCF and the buyback capacity built on it fall at the same time, and that is the first thing that would pressure liquidity metrics and the rating path."
+    },
+    {
+      "question": "About 20% of gas customers are data center related, and MarketBeat attributes the 22 October selloff to worries about how AI campuses will be financed. Of the 63 GW of SRAs at 30 June, what share sits with non-investment-grade developers or special-purpose vehicles rather than utilities and hyperscalers? What share of the reservation fee is non-refundable? Has any customer cancelled or deferred a slot this year, yes or no, and how many GW?",
+      "style": "credit",
+      "why": "SRAs carry reservation fees but not full obligations. Counterparty credit determines whether the 125 GW is bankable backlog or an option that weaker data center sponsors can walk away from in a downturn."
+    },
+    {
+      "question": "You hold about $10.3bn of net cash, have about $3bn left on the $10bn buyback, carry BBB (S&P) and BBB+ (Fitch) ratings on positive outlook, and a new CFO arrives on 1 November. What leverage or minimum cash level do you run the business to? Are you targeting an A rating, and on what timeline? Will the next buyback authorization be sized off FCF that includes down payments or off FCF excluding them?",
+      "style": "credit",
+      "why": "Bondholders price GEV as solid investment grade. The risk to them is capital return or M&A funded with cash that customers prepaid, just as the down-payment cycle peaks."
+    },
+    {
+      "question": "GLJ argues that units shipping in 2027 were priced in 2024, before the increases, and that backlog margin on the 2027 vintage is about 3 points lower than on 2028 shipments. Power's 2028 frame is a 22% segment margin, against 18.8% in 2Q26 and a 3Q guide of 17% to 18%. What is the gross margin gap between gas equipment shipping in 2027 and in 2029 to 2030? What Power segment margin do you expect for 2027?",
+      "style": "equity",
+      "why": "FY27 consensus revenue of $52.67bn already matches the 2028 revenue target. The upside case therefore depends on margin rising as the higher-priced vintages ship, so the timing of that margin step matters more than revenue."
+    },
+    {
+      "question": "You shipped 16 aeroderivatives in 2Q and booked 61, and you describe aeros as the bridge that ships about 24 months before a heavy-duty unit and commissions in about six months. For a new customer ordering today, what is the earliest delivery slot for an LM2500XPRESS or LM6000, and how does its $/kW compare with HA combined cycle? Will you add aeroderivative capacity beyond the 30 GW plan if customers put up cash?",
+      "style": "equity",
+      "why": "Aeroderivatives are the fastest way to bring gas power to data centers. Their lead time and price set the bar for small and mid-size behind-the-meter projects, and they compete directly with reciprocating engines and fuel cells."
+    }
+  ],
+  "risks": [
+    "Orders or GW below the $22.2bn consensus and BofA's 13 GW, or slower SRA-to-order conversion, would challenge the 'sold out through 2030' narrative.",
+    "Pricing plateau or cyclicality: capacity is rising to 24 GW (2028) and 30 GW (2030), and GLJ sees industry capacity of 104 to 113 GW against 88 to 90 GW of orders in 2030 to 2031.",
+    "Data center counterparty and financing risk: about 20% of gas customers are data center related, and SRAs are not full firm orders.",
+    "Cash reversal: FY27 FCF consensus of about $7.4bn versus about $12bn in FY26 as down payments unwind; any further capital return ahead of that.",
+    "Wind (offshore project costs, Vineyard Wind claims), tariffs estimated at $100mn to $200mn in 2026, and execution risk on the step to 5 GW a quarter of gas output."
+  ],
+  "sections": [
+    {
+      "body": "GE Vernova sells and services power generation and grid equipment in three segments. Power (gas, nuclear, hydro; $5.5bn of revenue and 18.8% EBITDA margin in 2Q26) sells heavy-duty HA and aeroderivative gas turbines with long service agreements. Customers reserve production slots years ahead under slot reservation agreements (SRAs) with cash down payments, then convert them to firm orders. Electrification ($3.6bn, 18.4%, including Prolec GE since 2 February 2026) sells transformers, switchgear, HVDC and grid software. Wind ($2.0bn, -13.6%) is loss-making. The model is largely funded by customers: H1 2026 contract liabilities rose $14.2bn on down payments, which drove FCF of $9.9bn. Services RPO of $88.5bn is the long-dated annuity.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 15 to 23 October 2026. GE Vernova reports GAAP EPS only, so EPS consensus varies by provider. No consensus was found for 3Q backlog, Power segment revenue or margin, or 3Q FCF; the orders consensus is cited only in BofA's note.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$12.0bn (18; $11.87bn to $12.38bn)",
+            "Yahoo Finance, 23 Oct",
+            "2Q26 $11,104mn; 3Q25 $9,969mn"
+          ],
+          [
+            "3Q26 EPS",
+            "$4.17 (14; $3.08 to $5.28)",
+            "Yahoo Finance, 23 Oct",
+            "2Q26 $2.47; 3Q25 $1.64"
+          ],
+          [
+            "3Q26 EPS / revenue, other providers",
+            "Zacks $4.03 / $12.1bn; Benzinga $4.02 / $12.02bn; MarketBeat $3.99 / $11.99bn; Fiscal.ai $3.42 / $12.41bn",
+            "21 to 23 Oct (Fiscal.ai via Stocktwits, 15 Oct)",
+            ""
+          ],
+          [
+            "3Q26 adjusted EBITDA",
+            "About $1.7bn; BofA $1.8bn",
+            "TIKR, 27 Sep; BofA via Longbridge, 20 Oct",
+            "2Q26 $1,250mn (11.3%); 3Q25 $811mn (8.1%)"
+          ],
+          [
+            "3Q26 orders",
+            "$22.2bn; BofA $21bn",
+            "Cited in BofA note, 20 Oct (single source)",
+            "2Q26 $24.2bn; 3Q25 $14.6bn"
+          ],
+          [
+            "3Q26 gas GW signed",
+            "n.a.; BofA 13 GW (4Q 14 GW)",
+            "BofA via Longbridge, 20 Oct",
+            "2Q26 20 GW; guide at least 125 GW at year-end"
+          ],
+          [
+            "Year-end gas GW under contract",
+            "Market looks for 130 to 140 GW",
+            "BNP Paribas via Utility Dive, 23 Jul",
+            "116 GW at 30 June"
+          ],
+          [
+            "4Q26 revenue / EPS",
+            "$13.88bn / $6.44",
+            "Yahoo, 23 Oct",
+            "4Q25 $10.96bn / $13.39"
+          ],
+          [
+            "FY26 revenue / EPS",
+            "$46.22bn / $30.74 (Yahoo); $46.3bn / $15.17 non-GAAP (S&P Global)",
+            "Yahoo 23 Oct; StockAnalysis 21 Oct",
+            "Guide $45.5bn to $46.5bn; adjusted EBITDA margin 12% to 14%"
+          ],
+          [
+            "FY26 FCF",
+            "$12.07bn",
+            "StockAnalysis (S&P Global), 21 Oct",
+            "Guide $11.5bn to $12.5bn"
+          ],
+          [
+            "FY27 revenue / EPS / FCF",
+            "$52.67bn ($49.1bn to $55.66bn) / $24.69 / about $7.4bn",
+            "Yahoo 23 Oct; FCF TIKR 27 Sep",
+            "2028 frame: $52bn revenue, 20% adjusted EBITDA margin, $22bn+ cumulative FCF 2025 to 2028 (December 2025, excluding Prolec)"
+          ],
+          [
+            "Price target",
+            "$1,224 average, $1,235 median, $940 to $1,450 (37 analysts)",
+            "StockAnalysis (S&P Global), 21 Oct",
+            "Close $827.42 on 22 Oct"
+          ],
+          [
+            "Implied move",
+            "n.a. for the earnings event; 4.0% one-day (23 Oct expiry), 16.56% to 20 Nov expiry",
+            "Options Analysis Suite, 22 Oct",
+            ""
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Gas slots sold out",
+            "Heavy-duty capacity mostly sold out through 2030, more than half of 2031 sold by year-end, 2032 opening",
+            "Gas GW signed (BofA 13 GW); year-end target of at least 125 GW raised toward 130 to 140 GW",
+            "Management; BofA; BNP; Jefferies"
+          ],
+          [
+            "P2 Pricing power",
+            "$/kW keeps rising; 2H26 orders at the high end of +10 to 20 points over 4Q25",
+            "Disclosed price change on 3Q gas orders; Power margin of 17% to 18% or better",
+            "Management; Jefferies; BNP $/kW estimates (challenged by GLJ)"
+          ],
+          [
+            "P3 Orders and backlog compounding",
+            "Orders well above revenue; backlog toward about $200bn in 2027",
+            "Orders against $22.2bn (single source); RPO up from $176.3bn",
+            "BofA; management"
+          ],
+          [
+            "P4 Cash and capital return",
+            "FY26 FCF of about $12bn funds buybacks while the balance sheet stays IG",
+            "Positive 3Q FCF; FY26 guide held; tone on FY27 FCF (about $7.4bn consensus)",
+            "Management; S&P Global consensus; TIKR"
+          ],
+          [
+            "P5 Margin path to 2028",
+            "Adjusted EBITDA margin rises from 12% to 14% in FY26 to 20% by 2028",
+            "3Q adjusted EBITDA of about $1.7bn to $1.8bn (about 14%); Wind about break-even",
+            "December 2025 investor update; TIKR; BofA"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Gas capacity mostly sold out through 2030; 2032 slots already selling with cash committed (Strazik, September)",
+            "GLJ Sell at $470: a cyclical turbine maker priced as a compounder at about 38.9x forward EV/EBITDA"
+          ],
+          [
+            "First-half orders priced more than 20% above 4Q25; services RPO of $88.5bn and a growing HA fleet",
+            "Capacity rising to 30 GW by 2030, and GLJ sees an industry capacity surplus in 2030 to 2031; BNP says 'the jury's out' on 30 GW"
+          ],
+          [
+            "$13.1bn cash, about $10.3bn net cash, BBB/BBB+ on positive outlook; FY26 FCF guide raised to $11.5bn to $12.5bn",
+            "FCF is flattered by down payments; consensus FY27 FCF falls to about $7.4bn"
+          ],
+          [
+            "Electrification orders: data center orders over $5bn in H1; equipment backlog $40.6bn",
+            "EPS missed by 22% in 2Q26; Wind losses; AI-capex and data center financing fears drove a 10.6% one-day fall"
+          ],
+          [
+            "Street still Buy-heavy: 30 of 37 Buy or better (Koyfin via Stocktwits); average target about $1,224",
+            "Targets cut by JPMorgan ($1,150) and Susquehanna ($1,270); Zacks Rank #3 with EPS estimates trimmed"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Orders cadence: is the second half really 20 GW-plus, as Strazik implied, or closer to BofA's 13 GW in 3Q, and does GE Vernova lift the at-least-125 GW year-end target toward the 130 to 140 GW the market expects? 2) Pricing versus cycle: does $/kW keep rising as SRAs convert, or does the rise to 24 GW and then 30 GW of capacity cap pricing for 2030-plus slots, as GLJ argues? 3) Cash quality: how much of FY26's roughly $12bn of FCF is down payments that reverse in 2027, and what does that mean for buybacks? 4) Data center demand durability: whether AI-capex and financing worries, which sources blame for the 22 October fall, show up as slower SRAs or cancellations.",
+      "title": "Live debates"
+    },
+    {
+      "body": "3Q26 EPS consensus runs from $3.42 (Fiscal.ai) through $3.99 (MarketBeat), $4.02 (Benzinga) and $4.03 (Zacks) to $4.17 (Yahoo), because providers mix GAAP and adjusted bases. Revenue runs from $11.99bn (MarketBeat) to $12.41bn (Fiscal.ai). Fiscal.ai's year-ago EPS of $1.42 conflicts with the $1.64 in the 3Q25 release. FY26 EPS is $30.74 on Yahoo, which likely includes the $3,992mn Prolec GE remeasurement gain, against $15.17 at S&P Global and $15.04 at MarketBeat. Average price targets range from $1,164.87 (MarketBeat; 2 Strong Buy, 26 Buy, 5 Hold, 2 Sell) through $1,217.44 (TipRanks) to $1,223.98 (Koyfin) and $1,224 (S&P Global; no Sells). On orders, BofA's $21bn is below the $22.2bn consensus it cites, while the CEO promised 'a very strong third quarter orders performance'. On the selloff, Investing.com cites Brent near $112 and profit-taking, MarketBeat cites worries about AI financing after Meta's spending outlook, and GuruFocus finds no single cause; all agree there was no company news. An AAII page labelled 3Q showed 2Q26 actuals, and Zacks' 'key metrics' preview found online is from October 2025, so neither was used. On Venture Global, TIKR's own text conflicts on whether eight of 16 or eight of the remaining 15 islands are reserved; 5.76 GW equals eight units.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June 2026: cash, cash equivalents and restricted cash of $13,120mn ($0.4bn restricted); total borrowings of $2,849mn, mainly the February 2026 $2.6bn senior notes ($600mn 4.250% due 2031, $1,000mn 4.875% due 2036, $1,000mn 5.500% due 2056) plus $305mn of other borrowings and finance leases; net cash about $10.3bn. Credit facilities total $6.0bn ($3.0bn revolver and $3.0bn letter-of-credit and bank-guarantee facility, maturing 2 April 2029), and nothing was drawn. Ratings: S&P BBB and Fitch BBB+, both on positive outlook. Current contract liabilities and deferred income are $39,944mn (up from $25,774mn at 31 December 2025), so customers' prepaid cash exceeds the cash balance, and the current ratio is 0.85 (MarketBeat). Capital return: $3,645mn of buybacks in H1 (4.3mn shares at an average of $854), $6,963mn under the $10bn program to date, and a $0.50 quarterly dividend. The 5.5% 2056 notes are estimated at about 91.0 (yield about 6.17%, spread about 87bp versus +78bp at issue) on 22 October by TheRightTrader; this is a model estimate, not a trade price. No CDS quote was found.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: GW signed, SRA conversion and $/kW versus the year-end target; down-payment unwind and the 2027 FCF floor (credit); counterparty quality and refundability of data center SRAs (credit); leverage, ratings target and buyback funding under the new CFO (credit); the margin gap between 2027 and 2029-2030 delivery vintages; aeroderivative lead times and $/kW.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "GE Vernova 2Q26 earnings release (8-K Ex. 99.1, 22 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm"
+    },
+    {
+      "title": "GE Vernova 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm"
+    },
+    {
+      "title": "GE Vernova 3Q25 earnings release (8-K Ex. 99.1, 22 October 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681025000159/gevpressrelease3q25.htm"
+    },
+    {
+      "title": "GE Vernova 8-K, CFO succession (27 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000153/gev-20260825.htm"
+    },
+    {
+      "title": "GE Vernova 2Q26 earnings call transcript (22 July 2026)",
+      "url": "https://www.gevernova.com/sites/default/files/gev_webcast_transcript_07222026.pdf"
+    },
+    {
+      "title": "GE Vernova: raises multi-year outlook (9 December 2025)",
+      "url": "https://gevernova.com/news/press-releases/ge-vernova-raises-multi-year-financial-outlook-doubles-dividend-increases-buyback-authorization"
+    },
+    {
+      "title": "GE Vernova: to announce 3Q26 results on 28 October",
+      "url": "https://www.gevernova.com/news/press-releases/ge-vernova-announce-third-quarter-2026-financial-results-october-28"
+    },
+    {
+      "title": "Yahoo Finance GEV analysis (consensus)",
+      "url": "https://finance.yahoo.com/quote/GEV/analysis/"
+    },
+    {
+      "title": "StockAnalysis GEV forecast (S&P Global targets, FY estimates)",
+      "url": "https://stockanalysis.com/stocks/gev/forecast/"
+    },
+    {
+      "title": "StockAnalysis GEV price history",
+      "url": "https://stockanalysis.com/stocks/gev/history/"
+    },
+    {
+      "title": "Zacks via Yahoo: GE Vernova earnings expected to grow (21 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-gev-earnings-expected-130011741.html"
+    },
+    {
+      "title": "Barchart via Yahoo: GEV Q3 2026 earnings preview (22 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gev-stock-earnings-preview-expect-111506417.html"
+    },
+    {
+      "title": "Benzinga GEV earnings forecasts",
+      "url": "https://www.benzinga.com/quote/GEV/earnings-forecasts"
+    },
+    {
+      "title": "MarketBeat GEV Q3 2026 earnings page",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-10-28-ge-vernova-stock/"
+    },
+    {
+      "title": "Longbridge: BofA GE Vernova Q3 preview, orders growth of 44% (20 October 2026)",
+      "url": "https://longbridge.com/en/news/302459408"
+    },
+    {
+      "title": "Stocktwits: Susquehanna target cut ahead of Q3 (15 October 2026)",
+      "url": "https://stocktwits.com/news-articles/markets/equity/gev-stock-slips-overnight-this-analyst-sees-nearly-35-upside-ahead-of-q3-results/cZxWNZdRBA9"
+    },
+    {
+      "title": "TIKR: $470 Sell rating vs CEO on 2032 slots (27 September 2026)",
+      "url": "https://www.tikr.com/blog/a-470-sell-rating-calls-ge-vernova-a-cyclical-turbine-maker-its-ceo-says-2032-slots-are-already-selling"
+    },
+    {
+      "title": "TIKR: GE Vernova and Venture Global deal (15 October 2026)",
+      "url": "https://www.tikr.com/blog/ge-vernova-and-venture-global-sign-a-power-deal-worth-up-to-17-2-billion-heres-whats-firm"
+    },
+    {
+      "title": "Yahoo/Stocktwits: GLJ Research Sell initiation (15 September 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gev-stock-plunges-sell-rating-044852357.html"
+    },
+    {
+      "title": "Investing.com: why GE Vernova stock is tumbling (22 October 2026)",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-ge-vernova-stock-tumbling-today-93CH-4967194"
+    },
+    {
+      "title": "MarketBeat: GEV shares down 10.9% (22 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/price-ge-vernova-nyse-gev-shares-down-109-should-you-sell-2026-10-22/"
+    },
+    {
+      "title": "GuruFocus: GE Vernova slides 10.43% (22 October 2026)",
+      "url": "https://www.gurufocus.com/news/9137127/ge-vernova-stocks-slide-1043-as-aipower-modeling-deepens"
+    },
+    {
+      "title": "TipRanks: GE Vernova stock is taking a hit (22 October 2026)",
+      "url": "https://www.tipranks.com/news/ge-vernova-stock-is-taking-a-hit-whats-driving-the-selloff-and-what-wall-street-sees-next"
+    },
+    {
+      "title": "Defense World/MarketBeat: GEV set to release earnings (21 October 2026)",
+      "url": "https://www.defenseworld.net/2026/10/21/ge-vernova-gev-set-to-release-earnings-on-wednesday.html"
+    },
+    {
+      "title": "Investing.com: Jefferies reiterates GE Vernova on gas turbine demand (17 September 2026)",
+      "url": "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-ge-vernova-stock-rating-on-gas-turbine-demand-93CH-4905244"
+    },
+    {
+      "title": "Utility Dive: GE Vernova gas turbine backlog climbs to 116 GW (23 July 2026)",
+      "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/"
+    },
+    {
+      "title": "Turbomachinery: gas turbine backlog hits 116 GW (July 2026)",
+      "url": "https://www.turbomachinerymag.com/view/ge-vernova-gas-turbine-backlog-hits-116-gw-as-power-orders-more-than-double"
+    },
+    {
+      "title": "Power Engineering: turbine slots tighten through 2030 (23 April 2026)",
+      "url": "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
+    },
+    {
+      "title": "Power Engineering: engines and aeroderivatives in a larger role (16 April 2026)",
+      "url": "https://www.power-eng.com/gas/data-center-power-crunch-lifts-engines-aeroderivatives-into-larger-role/"
+    },
+    {
+      "title": "TheRightTrader: GE Vernova 5.5% 2056 notes (estimated price)",
+      "url": "https://therighttrader.com/bonds/ge-vernova/5-5-2056"
+    },
+    {
+      "title": "Options Analysis Suite: GEV expected move (22 October 2026)",
+      "url": "https://www.optionsanalysissuite.com/stocks/gev/expected-move"
+    }
+  ],
+  "ticker": "GEV",
+  "verdict": "Preview",
+  "versus": "Pending — reports 28 October 2026 before the open",
+  "watch": [
+    "Gas GW signed, SRA conversions and the year-end target (at least 125 GW versus the 130 to 140 GW the market expects, per BNP).",
+    "Orders against $22.2bn and $/kW on gas equipment orders against the high end of the +10 to 20 point guide.",
+    "Power margin against the 17% to 18% guide, and Wind against break-even.",
+    "FY26 guide changes and any first word on FY27 FCF and the 2028 frame.",
+    "Any update on 2031 and 2032 slot sales, Venture Global purchase orders, and aeroderivative availability."
+  ]
+}

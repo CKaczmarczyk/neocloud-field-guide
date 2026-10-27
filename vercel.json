@@ -1,0 +1,1 @@
+{"buildCommand":"python3 build_site.py","outputDirectory":"site","framework":null,"rewrites":[{"source":"/_blob/:id","destination":"/_blob/:id.pdf"}],"headers":[{"source":"/data.json","headers":[{"key":"Cache-Control","value":"no-cache"}]}]}

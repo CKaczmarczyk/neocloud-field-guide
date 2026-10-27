@@ -1,0 +1,16 @@
+{
+  "active_mw": "1400 (nameplate)",
+  "contracted_mw": "n.a.",
+  "date": "2026-08-04",
+  "debt_cost": "5.855% weighted average on $25B BBB-tier notes, June 2026 (corporate, not asset-backed)",
+  "margin": "EBITDA 45% / operating -49%",
+  "name": "SpaceX (SpaceXAI)",
+  "notes": "First positive AI adjusted EBITDA ($1,146M). Depreciation $1,885M. Q2 AI capex $15.8B. Nameplate GW is capacity, not billing MW.",
+  "period": "2026Q2",
+  "rate": "About $50M per MW-year implied on Colossus 1 to Anthropic; management frame $30-50 per watt per year",
+  "revenue_m": "2561 (AI segment; 2194 AI infrastructure)",
+  "segment": "neocloud",
+  "source": "SpaceX Q2 2026 earnings release",
+  "ticker": "SPCX",
+  "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/earningsreleaseq22608042.htm"
+}

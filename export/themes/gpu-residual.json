@@ -1,0 +1,56 @@
+{
+  "evidence": [
+    {
+      "claim": "Meta still depreciates most servers over 5.5 years (unchanged since Jan 2025). Server depreciation is accelerating, and a large construction-in-progress balance is not yet depreciating. No analyst has asked about useful lives.",
+      "company": "Meta Platforms",
+      "date": "2026-10-22",
+      "direction": "neutral",
+      "numbers": "Servers/network depreciation $5.34bn in 3Q26 vs $3.60bn in 3Q25; CIP $89.50bn vs $50.52bn at YE25.",
+      "segment": "financing",
+      "source": "Meta 3Q26 10-Q Note 6; FY25 10-K Note 1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+    },
+    {
+      "claim": "Raised prices about 25% in July and signed an A100 contract into 2029, but renewals so far cover a small part of the fleet; adjusted EBITDA margin 58.6% against operating margin 5.0% shows how much depreciation weighs.",
+      "company": "CoreWeave",
+      "date": "2026-10-20",
+      "direction": "neutral",
+      "segment": "neocloud",
+      "source": "JunkBondInvestor",
+      "url": "https://www.junkbondinvestor.com/p/coreweave-crwv-34-billion-of-equity"
+    },
+    {
+      "claim": "Amin Vahdat says seven- and eight-year-old TPUs still run at full utilization; pods are replaced after about six years.",
+      "company": "Google",
+      "date": "2026-10-06",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Sequoia Training Data",
+      "url": "https://www.youtube.com/watch?v=bGph8GwB3Sk"
+    },
+    {
+      "claim": "Its newest loan runs five years against three-year contracts, so lenders now carry the re-renting risk in years 4–5.",
+      "company": "CoreWeave",
+      "date": "2026-08-11",
+      "direction": "neutral",
+      "segment": "neocloud",
+      "source": "TheEnergyMag",
+      "url": "https://www.theenergymag.com/news/2026-08-11/coreweave-ai-2-6-billion-wider-spread"
+    },
+    {
+      "claim": "Lochmiller says H100 rental prices are now above where they were at launch three years ago; Crusoe depreciates over six years.",
+      "company": "Crusoe",
+      "date": "2026-06-17",
+      "direction": "supports",
+      "segment": "neocloud",
+      "source": "Stanford MS&E435",
+      "url": "https://www.youtube.com/watch?v=GcCGzfKdCd0"
+    }
+  ],
+  "order": 2,
+  "question": "What do GPUs earn once their first contract ends, and does that justify six-year depreciation?",
+  "status": "mixed",
+  "summary": "So far older chips are holding value: H100 rents are above launch prices and Google runs seven-year-old TPUs flat out. But only a small part of fleets has come up for renewal; the test comes when 2027–28 supply is online and the first big block of contracts rolls off.",
+  "title": "What chips earn after their first contract",
+  "updated": "2026-10-22"
+}

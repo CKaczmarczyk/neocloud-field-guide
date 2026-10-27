@@ -1,0 +1,9 @@
+{
+  "drivers": [],
+  "model": "Bloom Energy makes solid-oxide fuel cell systems (\"Energy Servers\") in Fremont, California and Delaware. They run mainly on pipeline natural gas and can be delivered in months as islanded on-site primary power for AI data centers. Most revenue is a one-time product sale priced per kW. The buyer is either the end user (Oracle, AEP for Google, Aligned) or a financing vehicle, such as the Brookfield joint ventures ($25bn framework) or Industrial Development Funding ($2.6bn), which owns the equipment and sells power to the end user under PPAs or leases. Bloom also earns smaller recurring revenue from service contracts (stack replacement, fleet performance guarantees) and from legacy electricity sales. Earnings power rises with shipped MW times price per kW, factory utilization and cost-down; Bloom's own capital needs are low (factory capex plus working capital), and it is funded by cash on hand and $2.5bn of 0% convertible notes due 2030. The main risks are customer concentration, delays in gas supply and air permits at large sites (Oracle's Project Jupiter), supply of scandium and other inputs, and warranty and performance-guarantee exposure.",
+  "name": "Bloom Energy",
+  "next_report": "2026-10-22",
+  "segment": "energy",
+  "thesis": "",
+  "ticker": "BE"
+}
