@@ -183,7 +183,7 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
 <!-- PLAYERS -->
 <section class="panel" id="p-players" hidden>
   <div class="block">
-    <h2>Thirteen companies to know in depth</h2>
+    <h2>Fourteen companies to know in depth</h2>
     <p class="lede">Open a company for its model, scale, contracts, capital structure and risks. Each ends with why it matters for Kona.</p>
     <div class="chips" id="segchips"></div>
   </div>
@@ -506,7 +506,7 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
 const $=(s,r=document)=>r.querySelector(s);
 const el=(t,c,txt)=>{const e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e};
 const link=(t,u)=>{const a=el("a",null,t);a.href=u;a.target="_blank";a.rel="noopener";return a};
-const SEG={s1:"Neocloud / GPU cloud",s2:"Developer / landlord",s3:"Energy-first",s4:"Financing"};
+const SEG={s1:"Neocloud / GPU cloud",s2:"Developer / landlord",s3:"Energy-first",s4:"Buyer / financing"};
 
 /* ---------- tabs ---------- */
 const TABS=[["start","Start here"],["players","Players"],["models","Models"],["finance","Financing & offtake"],["kona","Kona"],["model","Model"],["earnings","Earnings"],["themes","Themes"],["library","Library"],["briefings","Briefings"]];
@@ -667,7 +667,16 @@ const P=[
  risk:["Pricing is not disclosed, so returns are management's figures."],
  kona:"The best public benchmark for what power alone earns: about $56 per kW-month implied, before fuel. It also shows that selling a minority of the project company to an infrastructure investor is a financing route.",
  flag:"The $56 per kW-month figure is arithmetic on the stated build multiple, not a disclosed price.",
- src:[["Blackstone joint venture","https://www.williams.com/2026/07/13/williams-announces-5-34-billion-investment-in-power-innovation-joint-venture-from-blackstone/"],["Project list","https://www.argusmedia.com/en/news-and-insights/latest-market-news/2786994-williams-to-supply-gas-power-to-meet-ohio-demand"],["Q1 2026 call","https://www.fool.com/earnings/call-transcripts/2026/05/05/williams-wmb-q1-2026-earnings-transcript/"]]}
+ src:[["Blackstone joint venture","https://www.williams.com/2026/07/13/williams-announces-5-34-billion-investment-in-power-innovation-joint-venture-from-blackstone/"],["Project list","https://www.argusmedia.com/en/news-and-insights/latest-market-news/2786994-williams-to-supply-gas-power-to-meet-ohio-demand"],["Q1 2026 call","https://www.fool.com/earnings/call-transcripts/2026/05/05/williams-wmb-q1-2026-earnings-transcript/"]]},
+{n:"Anthropic",seg:"s4",st:"S-1 filed October 2026 · the marginal buyer of compute · figures from the filing via Peter Gostev's visual guide",one:"The customer at the top of the chain. Its compute commitments ($265.6B of minimum purchases plus $321.4B of uncommenced leases at June 2026) are the collateral behind half the financings in this guide, and its S-1 is the first full look at the economics of the party that pays the rent.",
+ model:["Sells intelligence by the token: consumption 80% of revenue, subscriptions 20%; 48% of revenue billed through cloud marketplaces; US 72%, international 28%.","Buys compute from everyone: minimum cloud spend of $44.9B with Microsoft (Nov 2026–May 2033), about $114.5B with Google (Apr 2026–Jul 2033) and $110B with Amazon (May 2026–Apr 2036), plus leases through landlords and neoclouds (CoreWeave, Fluidstack, TeraWulf, Riot, Hut 8, SpaceX's Colossus 1).","Runs TPU, Trainium, Nvidia and AMD at once; about 70% of compute expense goes to research and internal use, about 30% to serving customers (Gostev's estimate)."],
+ scale:["Revenue $41M (2023), $386M (2024), $4.6B (2025); quarterly revenue $4.7B in Q1 2026 and $11.6B in Q2 2026, up 14.7x year on year. Remaining performance obligations $10.8B at June 2026.","Compute and infrastructure expense $5.6B in Q2 2026 (from $1.4B a year earlier); revenue per compute dollar rose from $0.57 to $2.08. Calculated gross margin 85% in H1 2026, but at least 73% of compute sits outside cost of revenue (in R&D).","GAAP operating income turned positive in Q2 2026: $974M, an 8% margin (19% adding back $1.3B of stock compensation); incremental operating margin 39% quarter on quarter. Operating cash flow $3.9B in H1 2026.","Customers paying over $100k a year: about 20 (Dec 2023) to more than 11,900 (Sep 2026); net revenue retention about 900%; top five customers fell from about 36% to about 21% of revenue. Headcount about 5,300; revenue per employee over $6.6M."],
+ cust:["Fixed or minimum purchase commitments: $54.6B at December 2025, about $265.6B at June 2026. Uncommenced lease obligations: about $50.2B to about $321.4B over the same six months. Both are long-dated and partly conditional, not cash due today.","Cash property and equipment is still small ($1.2B net, 43% under construction, 36% finance-leased): Anthropic rents its compute rather than owning it, which is why its commitments are the landlords' and neoclouds' revenue."],
+ cap:["$131.7B of cash and short-term investments at June 2026 after $110.8B of H1 financing, mostly the Series H preferred at $589 a share (gross proceeds $65.2B); 82% sits in money-market funds. Interest income $762M in Q2.","Debt: a $15B revolver (Sep 2026, undrawn at June) and $77B of conditional supplier note facilities, none drawn: Broadcom or its designated partner $42B, Google $20B, Amazon $15B. Draws depend on eligible equipment rent and compute milestones.","The Broadcom-linked notes carry 9% paid-in-kind interest, converting at a 10% discount to the share price; 13% and a 15% discount if revenue conditions are unmet. That is vendor finance from a chip supplier to a lab, priced like a neocloud's unsecured debt.","$26.6B of unrecognized stock compensation, $2.9B of it an IPO-triggered catch-up; donation-matching expense of about $2B in Q3 2026."],
+ risk:["The commitment book is roughly 25x trailing-twelve-month revenue; the filing's own point is that exposure is not failure while demand outgrows committed cost, but a 30% revenue miss against fixed cost removes most of the spread.","Supplier notes at 9–13% PIK and $77B of conditional facilities mean the suppliers, not banks, are the marginal lender to the lab.","Concentration in reverse: the landlords and neoclouds in this guide depend on this one customer continuing to pay; its 90-day exits at SpaceX show it keeps options.","Compute allocated to research (about 70%) is the part that cannot be contracted to anyone else if a model cycle is lost."],
+ kona:"This is the credit everyone is underwriting. For Kona it answers two questions: the buyer is real (operating profit, $131.7B of cash, 11,900 customers over $100k) and its commitments are to whoever can deliver powered capacity, including small landlords through Fluidstack-style aggregators. The S-1 also shows what it will pay for: 15–20 year leases through intermediaries, and 90-day terms where it has options. Kona should be in the first category or priced for the second.",
+ flag:"All figures are from Peter Gostev's visual guide to the S-1 (62 charts with page references), not from the filing itself; the compute-allocation split is his estimate. Josh should verify against the S-1 when Anthropic is added to coverage.",
+ src:[["Anthropic S-1, visual guide by Peter Gostev","https://ant-s1.surge.sh/"]]},
 ];
 let segFilter="all";
 function renderPlayers(){
@@ -685,7 +694,7 @@ function renderPlayers(){
     const sr=el("div","wide src");sr.append("Sources: ");p.src.forEach(([t,u])=>sr.append(link(t,u)));b.append(sr);
     d.append(b);box.append(d)});
 }
-[["all","All"],["s1",SEG.s1],["s2",SEG.s2],["s3",SEG.s3]].forEach(([k,l])=>{
+[["all","All"],["s1",SEG.s1],["s2",SEG.s2],["s3",SEG.s3],["s4",SEG.s4]].forEach(([k,l])=>{
   const c=el("button","chip",l);c.setAttribute("aria-pressed",k==="all");
   c.onclick=()=>{segFilter=k;document.querySelectorAll("#segchips .chip").forEach(x=>x.setAttribute("aria-pressed",x===c));renderPlayers()};
   $("#segchips").append(c)});
@@ -814,7 +823,7 @@ table("#gputable",["GPU","Neocloud on-demand $/GPU-hour","Hyperscaler","Spot"],[
 
 /* ---------- financing ---------- */
 table("#buyers",["Buyer","Commitments","Terms and signals"],[
- ["Anthropic","$518B in its draft prospectus as reported, about 80% non-cancellable. Largest: Broadcom-related leases $161B, Google $111B, Amazon $110B, Microsoft $31B.","Leases of 15–20 years through landlords and neoclouds. SpaceX/xAI capacity is cancellable on 90 days' notice. Positive adjusted operating income for a second quarter, per the FT."],
+ ["Anthropic","S-1 at June 2026: about $265.6B of fixed or minimum purchase commitments and about $321.4B of leases not yet commenced. Minimum cloud spend: Google about $114.5B to 2033, Amazon $110B to 2036, Microsoft $44.9B to 2033. Earlier reporting of $518B over a decade (Broadcom-related leases $161B) is superseded by the filing.","Leases of 15–20 years through landlords and neoclouds. SpaceX/xAI capacity is cancellable on 90 days' notice. Positive adjusted operating income for a second quarter, per the FT."],
  ["OpenAI","Cut to about $600B through 2030, from $1.4T","Dropped the Abilene expansion, paused Stargate UK. Nvidia guarantees up to $105B of lease and power payments on one Ohio campus."],
  ["Microsoft","More than $60B to neoclouds","Pays large prepayments (about $7B upfront to Nebius). Can terminate tranches for late delivery. Walked from a 1.35 GW letter of intent at Nscale."],
  ["Meta","CoreWeave about $35B cumulative; Nebius up to $27B","More than half of the Nebius deal is an optional backstop. Reported to be reselling surplus capacity."],
@@ -835,6 +844,7 @@ table("#debt",["Deal","Pricing","What stands behind it"],[
  ["Macquarie to Nscale","SOFR + 550–750","Lender return floor of 1.18x to 1.40x"],
  ["IREN, non-investment-grade","9.0%","Blue Owl and PIMCO"],
  ["SpaceX inaugural notes, June 2026","5.855% weighted average, BBB-tier, $25B","The whole company: Starlink cash flow, not the data centers"],
+ ["Anthropic supplier notes (Broadcom-linked facility, $42B of $77B conditional)","9% paid-in-kind, convertible at a 10% discount; 13% and 15% if revenue conditions are unmet","A chip supplier lending to the lab against compute milestones: vendor finance at neocloud-unsecured prices"],
  ["Galaxy Phase II notes","9.875% fixed","CoreWeave lease with no backstop"],
  ["Applied Digital preferred","12.75% plus 10–15% of the project","Structured equity from Macquarie"]]);
 [["Short-contract GPU loans (CoreWeave DDTL 5.5)","A $2.6B loan arranged by JPMorgan and MUFG and sold to more than 100 funds, including Prudential and BlackRock. A CoreWeave subsidiary owns the chips and rents them on about three-year contracts at $20–25M per MW a year. Customer rent repays the loan in years 1–3; re-renting the chips has to repay the rest in years 4–5. If rent stops, lenders take the chips and the contracts. What is new is that lenders, not CoreWeave, now carry renewal risk. A deal model shared with this guide puts the gain to CoreWeave at rent of $22.5M per MW against $16.5M on a five-year contract, payback of 2.75 years against 3.5, and a 28% annual return against 23%. That model assumes $40M of equipment per MW, 15% prepaid and chips re-rented at half price, and has not been checked here."],
@@ -960,7 +970,10 @@ table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
 ].forEach(x=>$("#openq").append(el("li",null,x)));
 
 /* ---------- library ---------- */
-[{t:"Anthropic's inference revenue per megawatt",by:"SemiAnalysis (@SemiAnalysis_), on Anthropic's S-1 · 27 Oct 2026",u:"https://x.com/SemiAnalysis_",why:"The one number that sets the ceiling of the bit-watt spread: what the model owner earns per megawatt of the sites everyone below it is financing.",
+[{t:"Anthropic S-1: a visual guide",by:"Peter Gostev · 62 charts with page references to the filing · October 2026",u:"https://ant-s1.surge.sh/",why:"The first full set of numbers on the party that pays the rent: revenue, compute cost, commitments, cash and the supplier financing behind the buildout.",
+  pts:["Revenue $4.6B in 2025, $11.6B in the June 2026 quarter alone; consumption 80% of revenue; 48% billed through cloud marketplaces; top five customers down to about 21%.","Compute expense $5.6B a quarter; revenue per compute dollar $0.57 to $2.08 in a year; at least 73% of compute is classified outside cost of revenue, so the 85% gross margin flatters.","Operating income positive in Q2 2026 ($974M, 8%); operating cash flow $3.9B in H1; $131.7B of cash after $110.8B of H1 financing.","Commitments: $265.6B of minimum purchases and $321.4B of uncommenced leases at June 2026, up from $54.6B and $50.2B six months earlier; minimum cloud spend of $44.9B (Microsoft), about $114.5B (Google) and $110B (Amazon) through 2033–36.","$77B of undrawn conditional supplier note facilities (Broadcom $42B, Google $20B, Amazon $15B) at 9% PIK, rising to 13%, convertible at a discount: the suppliers are the marginal lender.","Property and equipment is only $1.2B net: Anthropic rents its compute, so these commitments are the industry's revenue."],
+  chg:"Added Anthropic as the fourteenth Players profile (new 'Buyer / financing' filter), replaced the $518B figure on the buyers table with the S-1 commitments, added the supplier notes to the debt table, and revised the Start-here point."},
+{t:"Anthropic's inference revenue per megawatt",by:"SemiAnalysis (@SemiAnalysis_), on Anthropic's S-1 · 27 Oct 2026",u:"https://x.com/SemiAnalysis_",why:"The one number that sets the ceiling of the bit-watt spread: what the model owner earns per megawatt of the sites everyone below it is financing.",
   pts:["Inference revenue per megawatt rose from about $16M to over $60M in a year across Anthropic's whole fleet.","Revenue grew 1,368% year over year in the June quarter against compute and infrastructure expense up 300%.","SemiAnalysis asks how much is Anthropic and how much is market-wide efficiency: Blackwell is about 50x Hopper on their measure.","Anthropic runs TPU, Trainium, Nvidia and AMD at once; new hardware is always faster, but the company with the best engineers and model gets the most out of it."],
   chg:"Added the figure to the capex point on Start here and to the 'sell power or move up' row on the Kona tab, and logged it to the inference-shift and gpu-residual themes."},
 {t:"Buy compute for years, sell intelligence by the token",by:"Sridhar Ramaswamy (@RamaswmySridhar), 16-post thread · 27 Oct 2026",u:"https://x.com/RamaswmySridhar",why:"The cleanest statement of what kind of risk an AI lab's compute book is, by analogy to five industries, with the Anthropic S-1 figures that size it.",
