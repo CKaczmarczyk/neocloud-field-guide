@@ -125,6 +125,10 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
 .crow:first-child{border-top:0;padding-top:0}
 .crow input[type=range]{width:100%;accent-color:var(--accent)}
 .derived{display:flex;flex-direction:column;gap:4px}
+.verdict{font-size:15.5px;line-height:1.5;padding:12px 14px;background:var(--surface);border-left:3px solid var(--accent);margin:0 0 12px}
+.verdict b{font-family:var(--mono);font-weight:500}
+#allinputs{margin-top:12px}
+.tile.good .tv{color:var(--accent)}.tile.bad .tv{color:var(--flag)}
 .drow{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;border-top:1px solid var(--line);padding-top:4px}
 .drow b{font-family:var(--mono);font-weight:500}
 #calccf tr.sep td,#calccf tr.sep th{border-top:2px solid var(--line)}
@@ -136,7 +140,7 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
 <header class="top">
   <h1>Neocloud Field Guide</h1>
   <p>Who sells AI compute, who builds and powers the sites, how it gets financed, and what that implies for how Kona should make money.</p>
-  <div class="stamp">Research gathered 4 Oct 2026, updated 27 Oct · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
+  <div class="stamp">Research gathered 4 Oct 2026, updated 28 Oct · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
 </header>
 
 <nav class="tabs" role="tablist" id="tabs"></nav>
@@ -151,6 +155,7 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
       <li><b>Anthropic is the marginal buyer of 2026.</b> Its S-1 shows $265.6B of future fixed or minimum compute purchases and $321.4B of leases not yet commenced at June 2026, against $16.3B of first-half revenue; compute cost fell to 55% of sales from 201% a year earlier. It signed with CoreWeave, Nscale, Lambda (reported), Volta, Fluidstack, TeraWulf, Riot and Hut 8. Meta is the other large buyer.</li>
       <li><b>Cost of debt follows the tenant, not the hardware.</b> Debt backed by an investment-grade contract prices at SOFR + 225–300 bps. The same GPUs against weaker customers price at SOFR + 500–750 bps, sometimes with lender return floors.</li>
       <li><b>Landlords signed 2026 leases at about $140–200 per kW-month.</b> Development yields run 10–14% on build costs of $9–16M per MW. Only about 15% of the capacity contracted by the listed ex-miners is operating.</li>
+      <li><b>Power equipment, not chips, sets the schedule.</b> Of $100 of AI capex, $20 is power and $50 is chips (BNP), but engines take 18–36 months, transformers 17–35 and medium-voltage switchgear 12–24, while a GB200 rack ships in weeks. Behind-the-meter OEMs are about two-thirds booked for 2028. A 24-month site has to order its engines and transformer before it has a tenant; the Build tab lays out every item and its window.</li>
       <li><b>Bringing your own power is now mainstream.</b> Goldman projects 67 GW behind the meter by 2030. Turbines are sold out for years, so reciprocating engines and fuel cells carry the near-term load at an all-in cost of roughly $100–165 per MWh in the US.</li>
       <li><b>A gigawatt costs $35–60B, and most of it is chips.</b> Crusoe's CEO puts the site and power plant near $20M per MW and the compute near $40M. NVIDIA says $50–60B, Blackstone $55B, Foxconn about $47B for Vera Rubin, Bernstein about $35B. Renting the chips earns about $15M per MW a year; adding managed inference can lift that toward $30M. The lab above them earns far more: Anthropic's S-1 shows inference revenue per megawatt rising from about $16M to over $60M in a year across its whole fleet, with revenue up 1,368% against compute cost up 300% (SemiAnalysis, 27 Oct 2026).</li>
     </ol>
@@ -248,6 +253,43 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
       <a href="https://getdeploying.com/gpu-price-index">GPU Rental Price Index</a>
       <a href="https://savrn.com/ai-index/pricing/gpus">Savrn</a>
       <a href="https://blockspace.media/insight/nebius-revenue-surges-ai-cloud-margins-q2-2026/">Blockspace on Nebius</a></p>
+  </div>
+</section>
+<!-- BUILD -->
+<section class="panel" id="p-build" hidden>
+  <div class="block">
+    <h2>Where a dollar of AI capex goes</h2>
+    <p class="lede">BNP Paribas's illustrative split of $100 of AI data-center spending. Half is chips, a fifth is power. The pieces that gate the schedule, power and the shell, are a quarter of the money but almost all of the lead time: a GPU rack ships in months, a transformer in two years.</p>
+    <div class="viz" id="viz-capexsplit"></div>
+    <div class="tablebox"><table id="capexsplit"></table></div>
+    <div class="src">Source: BNP Paribas Equity Research, "Following the AI capex money", Aug 2026. Illustrative; shares vary with the GPU generation, cooling design and whether power is bought from a grid or built on site. Dollar figures per MW are the guide's own estimates on the Models tab.</div>
+  </div>
+
+  <div class="block">
+    <h2>Equipment lead times, 2026</h2>
+    <p class="lede">Months from purchase order to delivery for what goes into a data center, as a range. The grey bars are Apollo's survey of commercial construction lead times (the chart CK sent); the coloured bars are what the desk could find for the AI-specific and power items that chart leaves out: turbines, engines, batteries, GPUs, memory and optics. Hover a bar for the note and source.</p>
+    <div class="chips" id="leadchips"></div>
+    <div class="viz" id="viz-leadtimes"></div>
+    <div class="src" id="leadnote"></div>
+  </div>
+
+  <div class="block">
+    <h2>Bill of materials with sourcing notes</h2>
+    <p class="lede">Every line the desk could find a 2026 lead time or sold-out date for, with vendors and a note on what it means for a gas-powered site in Neuquén. Trend compares 2026 to 2024: ▲ longer, ▼ shorter, ▬ unchanged.</p>
+    <div class="tablebox"><table id="bomtable"><thead><tr><th>Item</th><th>Category</th><th class="num">Lead time, months</th><th>Trend</th><th>Availability and price</th><th>Vendors</th><th>Kona note</th></tr></thead><tbody></tbody></table></div>
+  </div>
+
+  <div class="block">
+    <h2>Critical path for a gas-powered site</h2>
+    <p class="lede">What has to be ordered when for a 50 MW first block to be energized about 24 months after site control. The bars are the procurement windows that the lead times above imply, counted back from the target energization date; anything to the left of month zero has to be ordered before a tenant is signed.</p>
+    <div class="viz" id="viz-gantt"></div>
+    <div class="grid2" id="buildcards"></div>
+  </div>
+
+  <div class="block">
+    <h2>Published build timelines</h2>
+    <p class="lede">How long recent AI builds took from ground-break or site control to first power, and what let the fast ones go fast.</p>
+    <div class="tablebox"><table id="buildtimes"></table></div>
   </div>
 </section>
 
@@ -407,21 +449,38 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
   </div>
   <div class="block">
     <h2>Kona financing model</h2>
-    <p class="lede">A project-finance model for one Kona block. Pick a monetization case, then change any input; everything below recomputes. It builds the block over a construction period, funds each dollar of capex from prepayment, a delayed-draw senior loan, optional junior capital and equity, then runs rent against operating cost, interest, fees and amortization quarter by quarter. Scenarios can be saved to the guide.</p>
+    <p class="lede">A project-finance model for one Kona block. Pick a case, drag the levers, and read the verdict. Everything else, including the tables and the full input list, recomputes underneath. Scenarios can be saved to the guide.</p>
     <div class="chips" id="presets"></div>
-    <div class="mgrid" id="inputs"></div>
+    <p class="verdict" id="verdict"></p>
+    <div class="tiles" id="tiles"></div>
+    <div class="grid2">
+      <div class="mgroup"><div class="eyebrow">Key levers</div><div id="levers"></div></div>
+      <div>
+        <div class="viz" id="viz-su"></div>
+        <div class="viz" id="viz-jcurve"></div>
+      </div>
+    </div>
+    <details id="allinputs"><summary class="chip">All inputs (build, contract, senior loan, junior capital)</summary><div class="mgrid" id="inputs" style="margin-top:12px"></div></details>
     <div class="rowhead" id="scenbar"></div>
   </div>
 
   <div class="block">
-    <h2>Results</h2>
-    <div class="tiles" id="tiles"></div>
+    <h2>What the lenders see</h2>
+    <div class="flagbox" id="modelflags" hidden></div>
     <div class="grid2">
       <div class="viz" id="viz-rent"></div>
-      <div class="viz" id="viz-debt"></div>
+      <div class="viz" id="viz-dscr"></div>
     </div>
-    <div class="viz" id="viz-dscr"></div>
-    <div class="flagbox" id="modelflags" hidden></div>
+    <div class="grid2">
+      <div class="viz" id="viz-debt"></div>
+      <div class="viz" id="viz-tornado"></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <h2>Cases side by side</h2>
+    <p class="lede">The five Kona cases run through the same engine, plus whatever is on the levers now. Equity IRR is the number to compare; minimum cover and the balloon say whether a lender would sign it.</p>
+    <div class="tablebox"><table id="compare"></table></div>
   </div>
 
   <div class="block">
@@ -509,7 +568,7 @@ const link=(t,u)=>{const a=el("a",null,t);a.href=u;a.target="_blank";a.rel="noop
 const SEG={s1:"Neocloud / GPU cloud",s2:"Developer / landlord",s3:"Energy-first",s4:"Buyer / financing"};
 
 /* ---------- tabs ---------- */
-const TABS=[["start","Start here"],["players","Players"],["models","Models"],["finance","Financing & offtake"],["kona","Kona"],["model","Model"],["earnings","Earnings"],["themes","Themes"],["library","Library"],["briefings","Briefings"]];
+const TABS=[["start","Start here"],["players","Players"],["models","Models"],["build","Build"],["finance","Financing & offtake"],["kona","Kona"],["model","Model"],["earnings","Earnings"],["themes","Themes"],["library","Library"],["briefings","Briefings"]];
 function show(id){
   TABS.forEach(([k])=>{$("#p-"+k).hidden=k!==id;$("#t-"+k).setAttribute("aria-selected",k===id)});
   try{localStorage.setItem("nfg-tab",id)}catch(e){}
@@ -970,7 +1029,10 @@ table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
 ].forEach(x=>$("#openq").append(el("li",null,x)));
 
 /* ---------- library ---------- */
-[{t:"Anthropic S-1: a visual guide",by:"Peter Gostev · 62 charts with page references to the filing · October 2026",u:"https://ant-s1.surge.sh/",why:"The first full set of numbers on the party that pays the rent: revenue, compute cost, commitments, cash and the supplier financing behind the buildout.",
+[{t:"What it takes to build a data center: lead times and the capex split",by:"Apollo Global Management lead-time survey and BNP Paribas Equity Research 'Following the AI capex money' (Aug 2026), sent by CK; desk research verified 28 Oct 2026",u:"https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/",why:"CK asked for every item needed to develop a data center and how long each takes to source, in the style of Apollo's chart.",
+  pts:["BNP: of $100 of AI capex, $50 is chips, $20 power, $15 networking, $7.5 cooling and $7.5 shell and land. Power is a fifth of the money and almost all of the schedule.","Desk findings: reciprocating engines 18–36 months (implied from order-to-COD dates, no OEM publishes), substation transformers 17–25, GSUs 23–35, MV switchgear 12–24, Megapacks sold out for 2027, chillers 6–18, modular halls 3–5. GB300 and Rubin are allocated through 2026; GB200 and MI355X are available now.","Behind-the-meter engine and turbine OEMs are about 65% booked for 2028 and a third for 2029 (Jefferies); GE Vernova is selling 2031 heavy-duty slots.","Vaca Muerta gas cleared at $2.25/MMBtu for 2028–2035; Argentina's Resolution SE 264/2026 makes loads of about 80 MW and up bring 80% new energy and 115% firm capacity, which favours self-generation.","Published builds: Colossus 1 in 122 days on an existing shell; Abilene 16 months to first 105 MW; Hut 8 River Bend about 18 months; Cipher tracks percentage of equipment secured as its schedule metric."],
+  chg:"Added the Build tab: capex split, a filterable range-bar chart of 2026 lead times against Apollo's survey, a 30-line bill of materials with vendors and Kona notes, a critical-path schedule for a 50 MW block and a table of published build timelines."},
+{t:"Anthropic S-1: a visual guide",by:"Peter Gostev · 62 charts with page references to the filing · October 2026",u:"https://ant-s1.surge.sh/",why:"The first full set of numbers on the party that pays the rent: revenue, compute cost, commitments, cash and the supplier financing behind the buildout.",
   pts:["Revenue $4.6B in 2025, $11.6B in the June 2026 quarter alone; consumption 80% of revenue; 48% billed through cloud marketplaces; top five customers down to about 21%.","Compute expense $5.6B a quarter; revenue per compute dollar $0.57 to $2.08 in a year; at least 73% of compute is classified outside cost of revenue, so the 85% gross margin flatters.","Operating income positive in Q2 2026 ($974M, 8%); operating cash flow $3.9B in H1; $131.7B of cash after $110.8B of H1 financing.","Commitments: $265.6B of minimum purchases and $321.4B of uncommenced leases at June 2026, up from $54.6B and $50.2B six months earlier; minimum cloud spend of $44.9B (Microsoft), about $114.5B (Google) and $110B (Amazon) through 2033–36.","$77B of undrawn conditional supplier note facilities (Broadcom $42B, Google $20B, Amazon $15B) at 9% PIK, rising to 13%, convertible at a discount: the suppliers are the marginal lender.","Property and equipment is only $1.2B net: Anthropic rents its compute, so these commitments are the industry's revenue."],
   chg:"Added Anthropic as the fourteenth Players profile (new 'Buyer / financing' filter), replaced the $518B figure on the buyers table with the S-1 commitments, added the supplier notes to the debt table, and revised the Start-here point."},
 {t:"Anthropic's inference revenue per megawatt",by:"SemiAnalysis (@SemiAnalysis_), on Anthropic's S-1 · 27 Oct 2026",u:"https://x.com/SemiAnalysis_",why:"The one number that sets the ceiling of the bit-watt spread: what the model owner earns per megawatt of the sites everyone below it is financing.",
@@ -1389,19 +1451,95 @@ function renderInputs(){
   FIELDS.forEach(([grp,fs])=>{const g=el("div","mgroup");g.append(el("div","eyebrow",grp));fs.forEach(([k,lab,unit,step,min])=>{const w=el("label","field");w.append(el("span","flab",lab));
     let inp;if(k==="amort"){inp=el("select");[["level","Level amortization"],["sculpt","Sculpted to target cover"],["bullet","Bullet at tenor"]].forEach(([v,t])=>{const o=el("option",null,t);o.value=v;inp.append(o)});inp.value=MP[k]}
     else{inp=el("input");inp.type="number";inp.step=step;if(min!=null)inp.min=min;inp.value=MP[k]}
-    inp.id="in-"+k;inp.oninput=()=>{MP[k]=k==="amort"?inp.value:parseFloat(inp.value);if(k!=="amort"&&isNaN(MP[k]))return;mpreset=null;document.querySelectorAll("#presets .chip").forEach(c=>c.setAttribute("aria-pressed","false"));recalc()};
+    inp.id="in-"+k;inp.oninput=()=>{if(setInput(k,inp.value))recalc()};
     w.append(inp,el("span","funit",unit));g.append(w)});box.append(g)});
+  renderLevers();
 }
-function tile(k,v,s){const t=el("div","tile");t.append(el("div","eyebrow",k),el("div","tv",v));if(s)t.append(el("div","src",s));return t}
+function tile(k,v,s,cls){const t=el("div","tile"+(cls?" "+cls:""));t.append(el("div","eyebrow",k),el("div","tv",v));if(s)t.append(el("div","src",s));return t}
+/* key levers: slider + number for the inputs that move the answer */
+const LEVERS=[["mw","Capacity, MW",5,100,5],["capexSite","Site, power and hall capex, $M per MW",0,30,0.5],["capexIT","IT capex, $M per MW",0,60,1],["rev","Revenue, $M per MW per year",0,30,0.1],["opex","Operating cost, $M per MW per year",0,3,0.05],["term","Contract term, years",1,20,1],["prepay","Customer prepayment, % of capex",0,50,5],["adv","Senior advance rate, % of capex",0,90,5],["spread","Senior spread, bps",0,1000,25],["tenor","Senior tenor, years",1,15,1]];
+function setInput(k,v){MP[k]=k==="amort"?v:parseFloat(v);if(k!=="amort"&&isNaN(MP[k]))return false;mpreset=null;document.querySelectorAll("#presets .chip").forEach(c=>c.setAttribute("aria-pressed","false"));
+  const a=$("#in-"+k),b=$("#lr-"+k),c=$("#ln-"+k);[a,b,c].forEach(x=>{if(x&&x.value!=String(v))x.value=v});return true}
+function renderLevers(){const box=$("#levers");box.textContent="";
+  LEVERS.forEach(([k,lab,min,max,step])=>{const w=el("div","crow");const l=el("label","field");l.append(el("span","flab",lab));
+    const n=el("input");n.type="number";n.min=min;n.step=step;n.id="ln-"+k;n.value=MP[k];l.append(n);
+    const r=el("input");r.type="range";r.min=min;r.max=max;r.step=step;r.id="lr-"+k;r.value=MP[k];r.setAttribute("aria-label",lab);
+    n.oninput=e=>{if(setInput(k,e.target.value))recalc()};r.oninput=e=>{if(setInput(k,e.target.value))recalc()};
+    w.append(l,r);box.append(w)})}
+/* stacked horizontal bars: rows=[{label,parts:[{name,value,cssVar}]}] */
+function hstack(box,title,rows,opt={}){
+  box.textContent="";box.append(el("div","vtitle",title));const fv=opt.fmt||(v=>"$"+fmtM(v)+"M");
+  const W=opt.W||520,rowH=opt.rowH||44,top=6,left=opt.left||70,right=16,H=top+rows.length*rowH+6;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const max=Math.max(0.0001,...rows.map(r=>r.parts.reduce((a,p)=>a+Math.max(0,p.value),0)));const sc=v=>(W-left-right)*v/max;
+  rows.forEach((r,i)=>{const y=top+i*rowH;svg.append(sv("text",{x:left-8,y:y+rowH/2+4,class:"lbl","text-anchor":"end"},r.label));let x=left;
+    r.parts.forEach((p,j)=>{if(p.value<=0)return;const w=sc(p.value);const g=sv("g",{class:"mark"});const col=opt.mono?r.cssVar:p.cssVar;const rect=sv("rect",{x:x,y:y+8,width:Math.max(1,w-2),height:rowH-16,fill:`var(${col})`,opacity:opt.mono?[1,.78,.58,.42,.3][j%5]:1});rect.append(sv("title",{},`${p.name}: ${fv(p.value)} (${(p.value/max*100).toFixed(0)}%)`));g.append(rect);
+      const full=`${p.name} ${fv(p.value)}`,short=fv(p.value);const lab=w>full.length*6.6+16?full:w>short.length*7+14?short:null;
+      if(lab)g.append(sv("text",{x:x+w/2-1,y:y+rowH/2+4,class:"tick","text-anchor":"middle",style:(opt.mono&&j>1)?"fill:var(--ink)":"fill:#fff"},lab));svg.append(g);x+=w})});
+  box.append(svg);
+  if(!opt.mono){const lg=el("div","legend");const seen=new Set();rows.forEach(r=>r.parts.forEach(p=>{if(p.value<=0||seen.has(p.name))return;seen.add(p.name);const sp=el("span");const d=el("i");d.style.background=`var(${p.cssVar})`;sp.append(d,p.name);lg.append(sp)}));box.append(lg)}
+  if(opt.note)box.append(el("div","src",opt.note))}
+/* J-curve: signed annual bars + cumulative line + payback marker */
+function jcurve(box,title,bars,cum,labels,opt={}){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const W=520,H=270,top=14,bottom=36,left=58,right=14,n=labels.length;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const all=bars.concat(cum);let max=Math.max(0.0001,...all)*1.1,min=Math.min(0,...all)*1.1;
+  const sy=v=>top+(H-top-bottom)*(1-(v-min)/(max-min)),bw=(W-left-right)/n,sx=i=>left+i*bw+bw/2;
+  const ticks=4;for(let i=0;i<=ticks;i++){const v=min+(max-min)/ticks*i,y=sy(v);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"grid"}));svg.append(sv("text",{x:left-6,y:y+4,class:"tick","text-anchor":"end"},String(Math.round(v))))}
+  bars.forEach((v,i)=>{const g=sv("g",{class:"mark"});const r=sv("rect",{x:left+i*bw+bw*0.2,y:sy(Math.max(0,v)),width:bw*0.6,height:Math.abs(sy(v)-sy(0)),rx:2,fill:v<0?"var(--c2)":"var(--c3)"});r.append(sv("title",{},`${labels[i]} equity cash flow: ${v<0?"−":""}$${fmtM(Math.abs(v))}M`));g.append(r);svg.append(g)});
+  svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
+  svg.append(sv("path",{d:cum.map((v,i)=>(i?"L":"M")+sx(i).toFixed(1)+" "+sy(v).toFixed(1)).join(" "),class:"line",stroke:"var(--c1)"}));
+  cum.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:4,class:"dot",fill:"var(--c1)"});c.append(sv("title",{},`${labels[i]} cumulative: ${v<0?"−":""}$${fmtM(Math.abs(v))}M`));svg.append(c)});
+  const step=Math.max(1,Math.ceil(n/12));labels.forEach((l,i)=>{if(i%step===0||i===n-1)svg.append(sv("text",{x:sx(i),y:H-bottom+16,class:"tick","text-anchor":"middle"},l))});
+  if(opt.marker!=null){const x=sx(opt.marker);svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-bottom,class:"ref"}));svg.append(sv("text",{x:x+4,y:top+10,class:"tick"},opt.markerLabel||""))}
+  box.append(svg);const lg=el("div","legend");[["Equity in","--c2"],["Cash to equity","--c3"],["Cumulative","--c1"]].forEach(([nm,c])=>{const sp=el("span");const d=el("i");d.style.background=`var(${c})`;sp.append(d,nm);lg.append(sp)});box.append(lg);
+  if(opt.note)box.append(el("div","src",opt.note))}
+/* tornado: rows=[{label,lo,hi,loLab,hiLab}] in IRR points around base */
+function tornado(box,title,base,rows,note){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const W=520,rowH=30,top=22,left=215,right=50,H=top+rows.length*rowH+10;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const span=Math.max(0.5,...rows.flatMap(r=>[Math.abs(r.lo-base),Math.abs(r.hi-base)].filter(x=>isFinite(x))))*1.45;const cx=left+(W-left-right)/2,sc=v=>(W-left-right)/2*(v-base)/span;
+  svg.append(sv("line",{x1:cx,x2:cx,y1:top-6,y2:H-6,class:"axis"}));svg.append(sv("text",{x:cx,y:10,class:"tick","text-anchor":"middle"},"base "+pct(base/100)));
+  rows.forEach((r,i)=>{const y=top+i*rowH;svg.append(sv("text",{x:left-8,y:y+rowH/2+4,class:"lbl","text-anchor":"end"},r.label));
+    [[r.lo,r.loLab],[r.hi,r.hiLab]].forEach(([v,lab])=>{if(v==null||!isFinite(v))return;const d=sc(v);const g=sv("g",{class:"mark"});const rect=sv("rect",{x:Math.min(cx,cx+d),y:y+7,width:Math.max(1,Math.abs(d)),height:rowH-14,rx:2,fill:v<base?"var(--c2)":"var(--c3)"});rect.append(sv("title",{},`${lab}: equity IRR ${pct(v/100)} (${v-base>=0?"+":"−"}${Math.abs(v-base).toFixed(1)} pts)`));g.append(rect);
+      g.append(sv("text",{x:cx+d+(d<0?-4:4),y:y+rowH/2+4,class:"val","text-anchor":d<0?"end":"start"},(v-base>=0?"+":"−")+Math.abs(v-base).toFixed(1)));svg.append(g)})});
+  box.append(svg);if(note)box.append(el("div","src",note))}
+function verdictText(m){
+  const ppTxt=m.prepayC>0.5?`, the customer prepays $${fmtM(m.prepayC)}M`:"";const jTxt=m.juniorC>0.5?`, junior capital adds $${fmtM(m.juniorC)}M`:"";
+  const eq=`equity puts in $${fmtM(m.equity0)}M of capex plus $${fmtM(Math.max(0,m.totEq-m.equity0))}M of interest, fees and top-ups`;
+  const ret=m.eqIRR==null?"Equity does not earn a return in the horizon":`Equity earns <b>${pct(m.eqIRR)}</b>${m.eqPayback?` and is paid back in <b>${m.eqPayback.toFixed(1)} years</b>`:" and is not paid back inside the horizon"}; the project itself earns ${m.prIRR==null?"nothing":"<b>"+pct(m.prIRR)+"</b>"} unlevered`;
+  let weak="Cover holds through the loan.";if(m.totSh>0.5)weak=`Weakest point: equity has to top up debt service by $${fmtM(m.totSh)}M.`;else if(m.breaches){const lastB=Math.max(...m.rows.map((r,i)=>r.dscr!=null&&r.dscr<MP.dscr?i:-1));const inRamp=lastB<m.bq+Math.round(MP.rampQ)+Math.round(MP.grace);weak=`Weakest point: cover falls to ${m.minD.toFixed(2)}x, below the ${MP.dscr}x covenant, in ${m.breaches} quarter${m.breaches>1?"s":""}${inRamp?" during ramp-up, which a lender would carry as an interest-only period":""}.`}else if(m.balloon>0.5)weak=`Weakest point: $${fmtM(m.balloon)}M is still owed at tenor and has to be refinanced.`;else if(m.eqIRR!=null&&m.eqIRR<m.rate)weak="Weakest point: equity earns less than the debt costs.";
+  return `A <b>${MP.mw} MW</b> block costs <b>$${fmtM(m.capexTot)}M</b> ($${(MP.capexSite+MP.capexIT).toFixed(1)}M per MW). Lenders fund <b>$${fmtM(m.seniorC)}M</b> at ${(m.rate*100).toFixed(1)}%${ppTxt}${jTxt}, and ${eq}. ${ret}. ${weak}`}
+function compareCases(){
+  const rows=Object.entries(PRESETS).map(([k,v])=>[v.label,runModel(v),k===mpreset]);if(!mpreset)rows.push(["Current levers",runModel(MP),true]);
+  const t=$("#compare");t.textContent="";table("#compare",["Case","Capex, $M","Senior, $M","Equity in, $M","Equity IRR","Equity payback, yrs","Project IRR","Min DSCR","Balloon at tenor, $M"],rows.map(([n,m,cur])=>[(cur?"▶ ":"")+n,fmtM(m.capexTot),fmtM(m.seniorC),fmtM(m.totEq),m.eqIRR==null?"n.a.":pct(m.eqIRR),m.eqPayback?m.eqPayback.toFixed(1):">"+Math.round(m.rows.length/4),m.prIRR==null?"n.a.":pct(m.prIRR),m.minD==null?"–":m.minD.toFixed(2)+"x",m.balloon>0.5?fmtM(m.balloon):"–"]),[1,2,3,4,5,6,7,8])}
+function sensitivities(m){
+  const base=m.eqIRR==null?null:m.eqIRR*100;if(base==null)return null;const run=o=>{const r=runModel({...MP,...o}).eqIRR;return r==null?null:r*100};
+  const rows=[
+   {label:"Revenue ±10%",lo:run({rev:MP.rev*0.9}),hi:run({rev:MP.rev*1.1}),loLab:"Revenue −10%",hiLab:"Revenue +10%"},
+   {label:"Capex ±10%",lo:run({capexSite:MP.capexSite*1.1,capexIT:MP.capexIT*1.1}),hi:run({capexSite:MP.capexSite*0.9,capexIT:MP.capexIT*0.9}),loLab:"Capex +10%",hiLab:"Capex −10%"},
+   {label:"Senior spread ±200 bps",lo:run({spread:MP.spread+200}),hi:run({spread:Math.max(0,MP.spread-200)}),loLab:"Spread +200 bps",hiLab:"Spread −200 bps"},
+   {label:"Operating cost ±20%",lo:run({opex:MP.opex*1.2}),hi:run({opex:MP.opex*0.8}),loLab:"Opex +20%",hiLab:"Opex −20%"},
+   {label:"Build ±2 quarters",lo:run({buildQ:MP.buildQ+2}),hi:run({buildQ:Math.max(1,MP.buildQ-2)}),loLab:"Build +2 quarters",hiLab:"Build −2 quarters"},
+   {label:"Advance rate ±10 pts",lo:run({adv:Math.max(0,MP.adv-10)}),hi:run({adv:Math.min(95,MP.adv+10)}),loLab:"Advance −10 pts",hiLab:"Advance +10 pts"},
+   {label:"Renewal price ±20 pts",lo:run({renew:Math.max(0,MP.renew-20)}),hi:run({renew:MP.renew+20}),loLab:"Renewal −20 pts",hiLab:"Renewal +20 pts"},
+   {label:"Contract term ±2 years",lo:run({term:Math.max(1,MP.term-2)}),hi:run({term:MP.term+2}),loLab:"Term −2 years",hiLab:"Term +2 years"}];
+  rows.forEach(r=>{r.lo=r.lo==null?base:r.lo;r.hi=r.hi==null?base:r.hi});rows.sort((a,b)=>Math.abs(b.hi-b.lo)-Math.abs(a.hi-a.lo));return {base,rows}}
 function recalc(){
   const m=runModel(MP);const R=m.rows;
   const tiles=$("#tiles");tiles.textContent="";
-  tiles.append(tile("Total capex","$"+fmtM(m.capexTot)+"M",`${MP.mw} MW at $${(MP.capexSite+MP.capexIT).toFixed(1)}M per MW`),
-    tile("Senior loan","$"+fmtM(m.seniorC)+"M",`${(m.rate*100).toFixed(2)}% all-in · ${MP.adv}% advance`),
-    tile("Equity in","$"+fmtM(m.totEq)+"M",`$${fmtM(m.equity0)}M of capex + $${fmtM(m.totEq-m.equity0)}M interest, fees and shortfalls`),
-    tile("Equity IRR",m.eqIRR==null?"n.a.":pct(m.eqIRR),m.eqPayback?`payback in ${m.eqPayback.toFixed(2)} years`:"not paid back in horizon"),
-    tile("Project IRR (unlevered)",m.prIRR==null?"n.a.":pct(m.prIRR),m.prPayback?`simple payback ${m.prPayback.toFixed(2)} years`:"not paid back in horizon"),
-    tile("Minimum debt service cover",m.minD==null?"n.a.":m.minD.toFixed(2)+"x",m.breaches?`${m.breaches} quarters below ${MP.dscr}x`:`covenant ${MP.dscr}x held`));
+  const eqCls=m.eqIRR==null?"bad":m.eqIRR>=0.18?"good":m.eqIRR<m.rate?"bad":null,dCls=m.minD==null?null:m.breaches?"bad":m.minD>=MP.dscr+0.2?"good":null;
+  tiles.append(tile("Equity IRR",m.eqIRR==null?"n.a.":pct(m.eqIRR),m.eqPayback?`paid back in ${m.eqPayback.toFixed(1)} years`:"not paid back in horizon",eqCls),
+    tile("Project IRR, unlevered",m.prIRR==null?"n.a.":pct(m.prIRR),m.prPayback?`simple payback ${m.prPayback.toFixed(1)} years`:"not paid back in horizon"),
+    tile("Equity in","$"+fmtM(m.totEq)+"M",`$${fmtM(m.equity0)}M of capex + $${fmtM(Math.max(0,m.totEq-m.equity0))}M interest, fees, top-ups`),
+    tile("Senior loan","$"+fmtM(m.seniorC)+"M",`${(m.rate*100).toFixed(2)}% all-in · ${MP.adv}% advance · ${MP.tenor}-yr tenor`),
+    tile("Minimum cover",m.minD==null?"n.a.":m.minD.toFixed(2)+"x",m.breaches?`${m.breaches} quarter${m.breaches>1?"s":""} below ${MP.dscr}x`:`covenant ${MP.dscr}x held`,dCls),
+    tile("Cash to equity, total","$"+fmtM(m.totDist)+"M",`${(m.totDist/Math.max(0.001,m.totEq)).toFixed(2)}x money multiple`));
+  $("#verdict").innerHTML=verdictText(m);
+  const idc=Math.max(0,m.totEq-m.equity0-m.totSh);
+  hstack($("#viz-su"),"Sources and uses, $M",[{label:"Sources",parts:[{name:"Senior loan",value:m.seniorC,cssVar:"--c1"},{name:"Prepayment",value:m.prepayC,cssVar:"--c4"},{name:"Junior",value:m.juniorC,cssVar:"--c5"},{name:"Equity",value:m.equity0+idc,cssVar:"--c3"}]},{label:"Uses",parts:[{name:"Site, power, hall",value:MP.mw*MP.capexSite,cssVar:"--c1"},{name:"IT equipment",value:MP.mw*MP.capexIT,cssVar:"--c2"},{name:"Interest and fees in build",value:idc,cssVar:"--c4"}]}],{note:"Equity includes interest and commitment fees paid during construction. Debt-service top-ups after start are excluded."});
   const flags=[];if(m.balloon>0.5)flags.push(MP.amort==="bullet"?`The bullet of $${fmtM(m.balloon)}M at year ${MP.tenor} is paid from equity here; in practice it would be refinanced.`:`$${fmtM(m.balloon)}M is still outstanding at tenor (year ${MP.tenor}). The model assumes it is refinanced on the same terms and keeps amortizing; that refinancing is the main risk in the structure.`);
   if(m.totSh>0.5)flags.push(`Equity has to top up debt service by $${fmtM(m.totSh)}M in total; lenders would read that as a default risk, not a plan.`);
   if(MP.term<MP.tenor)flags.push(`The contract (${MP.term} years) is shorter than the loan (${MP.tenor} years): rent after year ${MP.term} is assumed at ${MP.renew}% of the initial price. Lenders carry that renewal risk, which is why DDTL 5.5 cost 325 bps more than the investment-grade facility.`);
@@ -1410,7 +1548,10 @@ function recalc(){
   const years=[...new Set(R.map(x=>x.year))];const Y=years.map(y=>{const rs=R.filter(x=>x.year===y);const s=k=>rs.reduce((a,x)=>a+x[k],0);const d=rs.map(x=>x.dscr).filter(x=>x!=null);return{y,rev:s("rev"),opex:s("opex"),pp:s("ppCredit"),cfads:s("cfads"),int:s("interest")+s("fee"),prin:s("principal"),jun:s("jint")+s("jprin"),cfe:s("cfe"),eq:s("eqDraw"),capex:s("capex"),bal:rs[rs.length-1].bal,jbal:rs[rs.length-1].jbal,cum:rs[rs.length-1].cumEq,dscr:d.length?Math.min(...d):null}});
   const op=Y.filter(y=>y.rev>0);
   vbars($("#viz-rent"),"Where each year's cash rent goes, $M",[{name:"Operating cost",cssVar:"--c4"},{name:"Interest and fees",cssVar:"--c2"},{name:"Principal",cssVar:"--c1"},{name:"Junior",cssVar:"--c5"},{name:"Cash to equity",cssVar:"--c3"}],op.map(y=>({label:"Y"+y.y,values:[y.opex,y.int,y.prin,y.jun,y.cfe]})),{W:520,stacked:true,note:"Cash rent is headline rent less the prepayment credit. Shortfalls funded by equity are not shown."});
-  lines($("#viz-debt"),"Senior debt outstanding and cumulative cash to equity, $M",[{name:"Senior debt",cssVar:"--c1",values:Y.map(y=>y.bal)},{name:"Cumulative equity cash",cssVar:"--c3",values:Y.map(y=>y.cum)}],Y.map(y=>"Y"+y.y),{W:520,marker:m.eqPayback?Math.ceil(m.eqPayback)-1:null,markerLabel:m.eqPayback?"equity payback":""});
+  jcurve($("#viz-jcurve"),"Equity cash flow by year and cumulative, $M",Y.map(y=>y.cfe-y.eq),Y.map(y=>y.cum),Y.map(y=>"Y"+y.y),{marker:m.eqPayback?Math.ceil(m.eqPayback)-1:null,markerLabel:m.eqPayback?"payback":"",note:"Red bars are equity going in (capex share, construction interest, top-ups); green bars are cash coming out. The line is the running total; it crosses zero at payback."});
+  lines($("#viz-debt"),"Senior and junior balance outstanding, $M",[{name:"Senior debt",cssVar:"--c1",values:Y.map(y=>y.bal)},{name:"Junior",cssVar:"--c5",values:Y.map(y=>y.jbal)}].filter(s=>s.values.some(v=>v>0.01)),Y.map(y=>"Y"+y.y),{W:520,marker:Math.min(Y.length-1,Math.max(0,Math.ceil(MP.tenor)-1)),markerLabel:"tenor",note:m.balloon>0.5?`$${fmtM(m.balloon)}M is still owed at tenor.`:"Fully repaid inside tenor."});
+  const sens=sensitivities(m);if(sens)tornado($("#viz-tornado"),"What moves equity IRR, percentage points",sens.base,sens.rows,"Each input shocked one at a time, everything else held. Red is worse, green better. The longest bars are the terms to negotiate hardest.");else{$("#viz-tornado").textContent="";$("#viz-tornado").append(el("div","vtitle","What moves equity IRR"),el("div","src","No equity return in this case; change the levers."))}
+  compareCases();
   vbars($("#viz-dscr"),"Debt service cover by year (minimum quarter), x",[{name:"DSCR",cssVar:"--c1"}],op.filter(y=>y.dscr!=null&&y.dscr<50).map(y=>({label:"Y"+y.y,values:[Math.min(y.dscr,10)]})),{fmt:v=>v.toFixed(1)+"x",refLine:MP.dscr,refLabel:"covenant "+MP.dscr+"x",note:"Capped at 10x for display. The balloon quarter is excluded."});
   const at=$("#annual");at.textContent="";table("#annual",["Year","Capex","Equity in","Cash rent","Operating cost","CFADS","Interest + fees","Principal","Junior","Cash to equity","Min DSCR","Senior balance","Cumulative equity"],Y.map(y=>["Y"+y.y,...[y.capex,y.eq,y.rev-y.pp,y.opex,y.cfads,y.int,y.prin,y.jun,y.cfe].map(v=>Math.abs(v)<0.005?"–":fmtM(v)),y.dscr==null?"–":y.dscr>50?">50x":y.dscr.toFixed(2)+"x",fmtM(y.bal),fmtM(y.cum)]),[1,2,3,4,5,6,7,8,9,10,11,12]);
   const qt=$("#quarterly");qt.textContent="";table("#quarterly",["Quarter","Capex","Senior draw","Prepay","Equity in","Rent","Op cost","CFADS","Interest","Fee","Principal","Junior","Cash to equity","DSCR","Senior bal"],R.map(x=>[x.label,...[x.capex,x.sDraw,x.ppDraw,x.eqDraw,x.rev-x.ppCredit,x.opex,x.cfads,x.interest,x.fee,x.principal,x.jint+x.jprin,x.cfe].map(v=>Math.abs(v)<0.005?"–":fmtM(v)),x.dscr==null?"–":x.dscr>50?">50x":x.dscr.toFixed(2)+"x",fmtM(x.bal)]),[1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
@@ -1421,6 +1562,120 @@ function applyPreset(k){mpreset=k;MP={...PRESETS[k]};document.querySelectorAll("
 Object.entries(PRESETS).forEach(([k,v])=>{const c=el("button","chip",v.label);c.dataset.k=k;c.setAttribute("aria-pressed",k===mpreset);c.onclick=()=>applyPreset(k);$("#presets").append(c)});
 try{const s=JSON.parse(localStorage.getItem("kona-model"));if(s&&s.MP&&typeof s.MP.mw==="number"){MP={...PRESETS.hosting,...s.MP};mpreset=s.mpreset||null;document.querySelectorAll("#presets .chip").forEach(c=>c.setAttribute("aria-pressed",c.dataset.k===mpreset))}}catch(e){}
 renderInputs();recalc();
+
+/* ---------- Build tab: capex split, lead times, bill of materials, critical path ---------- */
+/* range bars: rows=[{label,lo,hi,cat,note,src}], cats={key:[name,cssVar]}, opt={unit,min,refs:[{x,label}],sort} */
+function rbars(box,title,rows,cats,opt={}){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const unit=opt.unit||" mo",W=780,rowH=opt.rowH||24,top=12,left=opt.left||300,right=90,H=top+rows.length*rowH+32;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  const xmin=opt.min!=null?opt.min:0,xmax=(opt.max!=null?opt.max:Math.max(...rows.map(r=>r.hi)))*1.04;const sc=v=>left+(W-left-right)*(v-xmin)/(xmax-xmin);
+  const span=xmax-xmin,stepT=span>60?12:span>30?6:span>12?3:1;for(let v=Math.ceil(xmin/stepT)*stepT;v<=xmax;v+=stepT){const x=sc(v);svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-28,class:"grid"}));svg.append(sv("text",{x:x,y:H-12,class:"tick","text-anchor":"middle"},v+unit))}
+  (opt.refs||[]).forEach(r=>{const x=sc(r.x);svg.append(sv("line",{x1:x,x2:x,y1:top-4,y2:H-28,class:"ref"}));svg.append(sv("text",{x:x+4,y:top+6,class:"tick"},r.label))});
+  rows.forEach((r,i)=>{const y=top+i*rowH;const g=sv("g",{class:"mark"});const x0=sc(r.lo),x1=Math.max(sc(r.hi),x0+3);
+    const rect=sv("rect",{x:x0,y:y+5,width:x1-x0,height:rowH-10,rx:3,fill:`var(${cats[r.cat][1]})`,opacity:r.cat==="apollo"?0.55:0.95});rect.append(sv("title",{},`${r.label}: ${fmtP(r.lo)}–${fmtP(r.hi)}${unit}${r.note?" · "+r.note:""}`));g.append(rect);
+    g.append(sv("text",{x:left-8,y:y+rowH/2+4,class:"lbl","text-anchor":"end"},r.label));
+    g.append(sv("text",{x:x1+6,y:y+rowH/2+4,class:"val"},r.valText||(fmtP(r.lo)+"–"+fmtP(r.hi))));svg.append(g)});
+  box.append(svg);
+  const lg=el("div","legend");const used=new Set(rows.map(r=>r.cat));Object.entries(cats).forEach(([k,[n,c]])=>{if(!used.has(k))return;const s=el("span");const d=el("i");d.style.background=`var(${c})`;if(k==="apollo")d.style.opacity=0.55;s.append(d,n);lg.append(s)});box.append(lg);
+  if(opt.note)box.append(el("div","src",opt.note));
+}
+const LCAT={gen:["Generation and storage","--c2"],power:["Electrical","--c1"],cooling:["Cooling","--c4"],it:["IT equipment","--c3"],site:["Site, permits, connections, construction","--c5"],apollo:["Apollo survey of commercial construction lead times","--c1"]};
+/* lead-time rows: label, lo, hi (months), cat, trend (▲ longer ▼ shorter ▬ flat ? unknown), availability and price, vendors, kona note, source url */
+const LEAD=[
+ /* Apollo chart, as sent by CK */
+ ["Copper wire",0.9,1.8,"apollo"],["Aluminium",0.9,1.8,"apollo"],["Panelboards",1.8,3.0,"apollo"],["Exhaust air handling units",2.8,3.7,"apollo"],["Rooftop units under 50 ton",2.8,4.2,"apollo"],["Cooling towers",3.7,4.2,"apollo"],["Roofing",2.8,4.4,"apollo"],["Air handling units, commercial",3.7,4.6,"apollo"],["Energy recovery units",3.7,4.6,"apollo"],["Millwork",3.0,4.8,"apollo"],["Rooftop units over 50 ton",3.0,5.1,"apollo"],["Chillers, air-cooled",3.2,5.3,"apollo"],["Packaged rooftop heat pumps",3.9,5.5,"apollo"],["Heat recovery skids",4.6,5.5,"apollo"],["Modular air-to-water heat pumps",3.9,6.5,"apollo"],["CRAC units",4.2,6.5,"apollo"],["Chillers, water-cooled under 1,000 t",4.2,6.9,"apollo"],["Air handling units, custom",4.2,6.9,"apollo"],["Chillers, water-cooled over 1,000 t",6.5,7.4,"apollo"],["Power distribution units",5.5,7.4,"apollo"],["Switchboards",5.1,8.3,"apollo"],["Steel",5.1,8.5,"apollo"],["Curtainwall",5.3,9.0,"apollo"],["UPS",8.3,9.7,"apollo"],["Switchgear, low voltage",8.3,13.8,"apollo"],["Switchgear, medium voltage",8.8,14.5,"apollo"],["Generators",13.8,23.1,"apollo"],["Pad-mounted transformers",15.7,26.1,"apollo"],
+ /* desk findings, 2026 */
+ ["Heavy-duty gas turbine, new order",36,60,"gen","▲","GE Vernova quotes about three years for new orders and is selling 2031 slots; EPRI and Wood Mackenzie put average order-to-delivery near five years. GEV has 116 GW contracted or reserved; Siemens Energy 69 GW backlog plus 26 GW of reservations. About $790/kW for a frame unit, $950/kW in combined cycle (BNP); Wood Mackenzie sees average turbine prices up 195% versus 2019 by end-2027.","GE Vernova, Siemens Energy, Mitsubishi Power","Irrelevant at 20–100 MW. A heavy-duty frame is a 2029–2031 conversation and only makes sense at 300 MW and up.","https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/"],
+ ["Aeroderivative gas turbine, new order",24,42,"gen","▲","LM6000 and SGT-A35 were quoted at three to five years at an October 2025 show; GEV aims to pull LM2500XPRESS to 12–18 months by 2027. Jefferies: behind-the-meter OEMs about 65% booked for 2028, a third for 2029. Roughly $1,800/kW equipment-only (BNP); new orders priced 10–20 points higher per kW in H1 2026 than Q4 2025.","GE Vernova, Siemens Energy, Baker Hughes (NovaLT sold out through 2028)","Crusoe took 29 LM2500XPRESS units (about 1 GW). For Kona the aero is the premium path: fast to install once in hand, but new slots are 2028.","https://www.utilitydive.com/news/natural-gas-equipment-generation-bottleneck-data-centers/812931/"],
+ ["Aeroderivative, refurbished core",12,24,"gen","▬","ProEnergy PE6000 (rebuilt CF6 cores) delivering in 2027; mobile units (TM2500, SGT-400 cores in Dynamis trailers, Solar Titan) install in 11–14 days once the machine is in hand, but new fleet orders are 2027–28.","ProEnergy, Dynamis, VoltaGrid, Solar Turbines","The 2027 path to turbine power if recip slots are gone: a refurbished aero or a leased mobile fleet, at a price premium.","https://www.aol.com/articles/data-centers-look-old-airplane-180002578.html"],
+ ["Reciprocating gas engines",18,36,"gen","▲","No OEM publishes months; implied from 2026 orders (Wärtsilä April 2026 orders reach COD early 2028 to late 2029; INNIO–VoltaGrid 1.5 GW by 2028). Caterpillar's large-engine backlog is up more than 3.5x since January 2024 and it is tripling capacity through 2029. About $1,500/kW installed at 5 MW class (Thunder Said); $800–1,200/kW cited by trade press.","Caterpillar, Wärtsilä, INNIO Jenbacher and Waukesha, MWM, Cummins","Kona's prime mover. Wärtsilä has Argentine oilfield and 2026 Brazilian references; Caterpillar and Jenbacher sell through regional dealers. Lock a slot before land or gas: 2028 slots exist today, 2029 are filling.","https://www.power-eng.com/gas/data-center-power-crunch-lifts-engines-aeroderivatives-into-larger-role/"],
+ ["Fuel cells (Bloom), after allocation",2,3,"gen","▼","Oracle's system was delivered in 55 days; CoreWeave under 90. The wait is for allocation, not manufacturing: Bloom is doubling to 2 GW a year by end-2026 and Oracle alone holds up to 2.8 GW through 2030. $2,500–5,000/kW; opex $0.08–0.12/kWh on gas.","Bloom Energy","No air permit for combustion, which matters in the US; in Neuquén the gas is cheap enough that the fuel cell premium is hard to justify.","https://www.sec.gov/Archives/edgar/data/0001664703/000162828026066890/ex991_q326financialresults.htm"],
+ ["Battery storage (Megapack)",15,27,"gen","▲","Tesla said on its Q3 2026 call it is almost sold out of Megapacks for 2027, so new orders are 2028 deliveries. Capacity about 110 GWh a year with Texas starting Q3 2026. Implied ASP about $210/kWh; turnkey quotes $250–580/kWh. xAI runs 168 Megapacks at Colossus; Tesla sizes about 1 MW / 2 MWh per MW of IT to cut AI load swings by 70%+.","Tesla, Fluence (two hyperscaler MSAs), BYD, Sungrow","Behind-the-meter engines need a buffer against GPU load steps; without batteries the engines must be oversized. Fluence, BYD and Sungrow lead times were not found and may be shorter.","https://teslanorth.com/2026/10/22/tesla-megapack-sold-out-2027/"],
+ ["Generator step-up transformer, 50–150 MVA",23,35,"power","▲","100–150+ weeks; some large power transformers 120–210 weeks (NEMA testimony, April 2026). Prices up 77% for power transformers and 45% for GSUs since 2019; $15–21k per MVA. New US plants from Hitachi (2028), Siemens Energy Charlotte (early 2027), Prolec GE and HD Hyundai.","Hitachi Energy, Siemens Energy, Prolec GE, HD Hyundai, Virginia Transformer","Design around it: engines generating at 13.8 kV onto a collection bus with several pad-mounts avoids a GSU altogether.","https://www.nextmsc.com/industry-deep-dive/us-transformer-switchgear-prices-lead-times-2026"],
+ ["Substation transformer, 5–50 MVA",17,25,"power","▲","75–110 weeks. Lead times for large units lengthened again in 2026 (NLR, NEMA, FT); distribution units improved slightly. Transformer PPI up 91% since January 2020 and 8.7% in the year to July 2026.","Hitachi Energy, Siemens Energy, Prolec GE, SPX","The second-longest item after the engines. Order in the same month as the engines or not at all.","https://powermag.com/transformers-in-2026-shortage-scramble-or-self-inflicted-crisis/"],
+ ["Pad-mount transformer, 0–5 MVA",9,15,"power","▲","40–65 weeks; three-phase units still tightening while single-phase eased. Apollo's survey shows 16–26 months for the same category, so quotes vary widely by vendor and size.","Prolec GE, Eaton, ABB, Hitachi","Several pad-mounts beat one GSU on lead time; it costs more copper and more switchgear.","https://terrapincg.com/news/switchgear-transformer-generator-lead-times-2026"],
+ ["Switchgear, medium voltage",12,24,"power","▲","5–15 kV metal-enclosed 52–72 weeks; 15–27 kV metal-clad 60–80 weeks; 38 kV 78–104 weeks, versus about 24 weeks pre-pandemic. Switchgear PPI up 13% in the year to August 2026 and 89% since 2020. Siemens is building a $185M plant in Georgia; Vertiv doubled E&I capacity and is doubling again.","Schneider Electric, ABB, Eaton, Siemens, Vertiv, Hitachi","Becomes the gate once engines and transformers are locked. Place the order with a slot deposit within 60 days of the generation decision.","https://www.industrialsage.com/switchgear-lead-times-2026/"],
+ ["Backup generators, diesel over 3.5 MW",21,25,"power","▲","90–110 weeks for data-center-class units; 1.5–2 MW 50–66 weeks; gas gensets 1–3 MW 54–78 weeks. About $800–1,000/kW installed.","Caterpillar, Cummins, Rehlko (Kohler), Rolls-Royce mtu","A gas site with N+1 engines usually carries no separate diesel fleet; tenants with hyperscaler-grade SLAs will ask anyway.","https://globalpwr.com/blog/generator-lead-times-in-2026"],
+ ["UPS and transfer switches",7,14,"power","▲","Static UPS 500–1,500 kVA 30–48 weeks; modular 2 MVA+ 40–60 weeks; rotary (DRUPS) 14–18+ months; automatic transfer switches 24–40 weeks. The least constrained link in the electrical chain.","Vertiv, Schneider Electric, Eaton, ABB","Order after the switchgear. Many GPU tenants now accept battery ride-through at the rack or Megapack level instead of a full UPS.","https://terrapincg.com/news/switchgear-transformer-generator-lead-times-2026"],
+ ["Chillers and cooling plant, data-center class",6,18,"cooling","▲","Trane: 6–9 months for equipment, with customers ordering 12–18 months ahead (was 9–12); Vertiv: 12–18 months on large projects (was 9–15), 2026 capacity largely covered, $15B backlog into 2027; Johnson Controls $18B backlog. Liquid cooling adds $1–2M per MW to the build.","Vertiv, Trane (Stellar, LiquidStack), Johnson Controls, Carrier, Schneider/Motivair","Order at the power decision, not at tenant signing. Factory-built chiller plants ship with their own documentation, which simplifies Argentine customs.","https://s2.q4cdn.com/950394465/files/doc_events/2026/May/20/Trane-Technologies-Wolfe-Conference-Transcript.pdf"],
+ ["Liquid cooling: CDUs, cold plates, rear doors",12,18,"cooling","▲","No CDU-specific range published; Vertiv's 12–18 month large-project figure is the best proxy. In-rack cooling runs about $50k per GB300 rack, 20% more than GB200. Arista has pre-bought cold-plate and quick-disconnect capacity for liquid-cooled switches.","Vertiv, CoolIT, Boyd, Schneider/Motivair, Nvidia reference designs","Single source. The CDU is specified by the tenant's rack choice, so it cannot be ordered before the tenant is known unless the hall is built to a reference design.","https://www.datacenterfrontier.com/machine-learning/article/55357689/vertivs-ai-infrastructure-surge-record-orders-liquid-cooling-expansion-and-grid-scale-power-reshape-data-center-growth"],
+ ["GPU racks: GB200 NVL72",1,4,"it","▼","Now the trailing product and available: about $3.0M per rack ($2.8–3.4M; $39–47k per GPU), $8–10.50 per GPU-hour to rent. Nvidia's stakes in CoreWeave, Lambda and Nebius shape who gets allocation.","Nvidia via Dell, Supermicro, Foxconn, Quanta, Wistron","The chip a Kona tenant could actually install in 2027 without an anchor allocation.","https://www.wing.vc/content/how-much-does-an-nvidia-nvl72-cost"],
+ ["GPU racks: GB300 NVL72",6,12,"it","▲","Reserved-capacity only; 2026 is allocated and no provider lists an hourly rate. Actual August 2026 purchase orders just under $5.0M per rack without CDU (about $69k per GPU slot). Huang cites about $1T of Blackwell and Rubin orders through 2027. The range is the desk's estimate from allocation statements, not a quoted lead time.","Dell (first to ship, to CoreWeave), Supermicro, Wistron, Foxconn","Comes with the tenant, not before it. Order only when energization is within about six months, because depreciation starts at the invoice.","https://www.wing.vc/content/how-much-does-an-nvidia-nvl72-cost"],
+ ["GPU racks: Vera Rubin NVL72",12,18,"it","▲","In full production since May 2026, with H2 2026 volume (5–7k racks) going to hyperscalers and top neoclouds; realistic delivery for a new customer is 2027. Nvidia carries $279B of supply commitments. Morgan Stanley estimates about $7.8M per rack. Desk estimate, not a quoted lead time.","Nvidia; Foxconn, Quanta, Wistron, Wiwynn, Dell, Supermicro","Only reachable through a tenant's allocation. Rack price has roughly doubled across two generations: $3.0M, $5.0M, $7.8M.","https://startupfortune.com/nvidia-confirms-vera-rubin-is-shipping-but-not-the-630-billion-number/"],
+ ["AMD MI355X / MI450",3,9,"it","▼","MI355X generally available on Oracle and Vultr since August 2026, others by quote; MI450 Helios samples in H2 2026, volume about Q2 2027. Rental $4.25–8.60 per GPU-hour. Purchase price not found.","AMD, Oracle, Crusoe, TensorWave","The pressure-relief valve: available when Nvidia is not, at lower rent. Few neocloud tenants want it yet.","https://www.nextplatform.com/2026/02/23/amd-says-helios-racks-and-mi400-series-gpus-on-track-for-2h-2026/"],
+ ["Memory: HBM and server DRAM",12,24,"it","▲","Allocation, not a lead time. Micron: all 2026 HBM contracted, most of 2027 sold, more than 75% of 2027 output committed, 2028 talks under way. SK Hynix tight through 2027, possibly 2030. Server DRAM rose 60–70% in Q1 2026 alone; Q4 2026 DRAM +10–15%, NAND +15–20% (TrendForce). Lenovo and Arista call it a two-year problem clearing around 2028.","SK Hynix, Samsung, Micron","Hidden escalator on every server, switch and NIC. Budget 15–25% on non-GPU server content for 2027 deliveries and specify DIMM sizes in the contract.","https://tech-insider.org/micron-ceo-2027-memory-supply-sold-out-2026/"],
+ ["Optical transceivers, 800G and 1.6T",5,9,"it","▲","Well past 20 weeks and DSP-limited. Innolight's orders cover the rest of 2026 and run into 2027 with 2028 guidance; 800G+ is more than 60% of data-center optics shipments in 2026 versus 20% in 2024. Nvidia put $2B into Coherent in March 2026.","Innolight, Eoptolink, Coherent, Lumentum","Small money, long pole inside the IT fit-out. The tenant's integrator normally carries it.","https://www.remio.ai/post/zhongji-innolight-says-orders-now-reach-2028-but-the-optical-boom-faces-a-new-te"],
+ ["Network switches",6,12,"it","▲","Most at 24 weeks or more, some nearly doubled; Arista says fixes made in H1 2026 show in H2 and it has secured memory for 2026.","Nvidia Spectrum-X and Quantum, Arista, Broadcom Tomahawk via Celestica and Accton","Specified by the tenant; the landlord only needs to know the power and cooling envelope.","https://www.networkworld.com/article/4205721/arista-hits-first-3b-quarter-as-ai-networking-demand-continues-and-supply-pressures-show-signs-of-improvement.html"],
+ ["Network cards (ConnectX-7/8)",12,15,"it","▲","52+ weeks, driven by hyperscaler bulk buying ahead of Nvidia price rises. Single source.","Nvidia/Mellanox, Broadcom","Longest item in the IT fit-out; a reason GPU racks arrive without their fabric.","https://atgbics.com/blogs/news/why-are-nic-lead-times-reaching-52-weeks"],
+ ["Server CPUs (Xeon, EPYC)",2,8,"it","▲","Xeon 8–22 weeks in North America, six to eight months in Asia; EPYC quoted 3–4.5 months, running past seven. Was two weeks in 2024. Agentic workloads push CPU-to-GPU ratios from 1:8 toward 1:1. Intel list prices up 10%.","Intel, AMD","Inference and agent workloads need more CPU per GPU than training did; a Kona inference tenant will carry more of this.","https://info.fusionww.com/blog/server-cpu-shortage-2026"],
+ ["Prefabricated hall modules",3,5,"site","▼","12–20 weeks from order for modules; 6–10 months for a project including site works; 8–14 months for the first phase of a greenfield modular campus. Compass runs a 17-week hall cycle; Crusoe Spark units take about three months each. $8–12M per MW modular versus $11.3M stick-built; oversized-module shipping $15–50k a unit.","Vertiv (SmartMod, MegaMod), Schneider Electric, Compass, Flexnode, Crusoe Spark, Celestica, Flex","Kona's default. Modules arrive with the equipment already behind one customs file and need little local trade labour, which Neuquén does not have in data-center quantities.","https://www.datacentres.com/news/factory-built-and-fast-modular-construction-cuts-data-centre-delivery-times-by-4-slot1-2026-09-02"],
+ ["Stick-built hall, ground-break to powered rack",18,30,"site","▲","12–18 months of construction plus 2–6 of commissioning in the US; 24–36 months for greenfield. US average $11.3M per MW (range $8–18M), up 6% in a year and 47% since 2020; AI-ready design adds 15–25% to shell and core; TeraWulf guides $8–10M per critical MW. Steel, concrete and copper up 10–20% since 2023; US data-center construction wages up 15–25% in a year.","Turner, DPR, Holder, Clayco, Rosendin (US); no Argentine data-center GC found","Only if a tenant wants a conventional hall. Latin American labour and precast lead times were not found.","https://www.datacentres.com/news/data-centre-construction-costs-11m-per-mw"],
+ ["Fiber route, new build",6,18,"site","▬","Underground fiber to a data center runs $60–120k per mile with permitting and engineering of 12–24 months in dense US markets. In Neuquén, Telcosur, Bibop/Davitel and CALFIBRA have built into Añelo and Rincón de los Sauces and ARSAT's federal backbone passes nearby; no capacity, dual-path or latency figures are public.","Telcosur, CALFIBRA, Bibop/Davitel, ARSAT (Argentina)","The unresolved item. Commission a route study at site control; inference tenants care about latency to Buenos Aires and São Paulo more than training tenants do.","https://www.globaldatacenterhub.com/p/why-fiber-to-data-center-projects"],
+ ["Air permit, US synthetic minor",6,18,"site","▲","Design under 50 tons a year of NOx with SCR to stay out of PSD review (12–24+ months). EPA's January 2026 turbine rule exempts low-use units from Title V and caps temporary turbines at 24 months; xAI's 69 temporary Southaven units must be retired by July 2027 after a 12-month exemption, with NAACP litigation and Sierra Club notices on two Texas VoltaGrid sites. Argentina requires a provincial environmental impact assessment for thermal plants; no timeline is published.","—","Argentina does not have the US air-permit fight, but the provincial EIA and the RIGI approval are their own long-lead items and should start at site control.","https://www.jdsupra.com/legalnews/epa-s-new-turbine-rules-provide-air-9433112/"],
+ ["Gas lateral and interconnection",6,15,"site","▬","Regulated lateral approval 6–12 months after application including the environmental report, then construction; intrastate Texas lines are faster. For 5–25 MMcf/d the pipe is rarely the constraint; the precedent agreement and credit support are. Vaca Muerta long-term gas cleared at $2.25/MMBtu in October 2026 (2028–2035) against $3.50 under Plan Gas; associated gas rising toward 60–70 MMm³/d by 2030.","Williams, Energy Transfer, Kinder Morgan (US); Pampa, YPF, TGS (Argentina)","Kona's advantage: gas is cheap, local and increasingly stranded. Resolution SE 264/2026 now requires loads of about 80 MW and up to bring 80% new energy and 115% firm capacity, which favours self-generation.","https://www.noticiasnqn.com.ar/noticias/2026/10/19/357224-pampa-energia-acordo-la-compra-de-gas-neuquino-hasta-2035-a-us-2_25-por-millon-de-btu"],
+ ["Site entitlement, US",4,36,"site","▬","Texas 4–8 months, Georgia 4–10, Arizona and Ohio 6–12, Virginia 8–18, California 12–36. Land to power-on 18–36 months and widening.","—","Neuquén has adhered to RIGI and promotes sub-$200M projects; the RIGI window now runs to 8 July 2027 and exempts import duties on new capital goods tied to the approved plan, not consumables.","https://www.datacentres.com/news/the-30-month-gauntlet-inside-data-centre-entitlement-and-the-rise-of-structured--slot3-2026-09-07"],
+ ["Grid interconnection, large load (US)",24,84,"site","▲","ERCOT's first batch study began in September 2026 and allocates megawatts by year from 2028 to 2032, so a new entrant energizes from the grid in 2028 at the earliest; 474 GW in the queue, about 90% data centers, $50k per MW security. US average about 48 months; northern Virginia about 84 months for 100 MW. PJM treats more than 50 MW as a large load with curtailment and an expedited track since August 2026.","ERCOT, PJM, MISO; CAMMESA in Argentina","Why Kona exists: behind-the-meter is the only path under 24 months in the US, and Argentina's new large-load rule points the same way.","https://www.ercot.com/files/docs/2026/07/29/ERCOT-Senate-July-29-Panel-1-Assessing-The-Grid.pdf"]
+];
+const CAPEX=[
+ ["Semiconductors",50,[["Accelerators (GPUs, TPUs)",25,"--c3"],["Memory (HBM, DRAM)",15,"--c2"],["CPUs, other silicon, server assembly",10,"--c1"]],"Allocation: GB300 and Rubin are sold through 2026, HBM through 2027","Comes with the tenant. Kona should never own this line unless a tenant's credit sits behind it."],
+ ["Power",20,[["Grid connection and own generation",10,"--c2"],["Power distribution (transformers, switchgear)",6.5,"--c1"],["On-site electrical routing",3.5,"--c4"]],"Longest lead times in the stack: engines 18–36 months, transformers 17–35, switchgear 12–24","Kona's core. A fifth of the money carries most of the schedule and all of the moat."],
+ ["Networking",15,[["Optical transceivers",5.5,"--c3"],["Switches",4.5,"--c1"],["Network processors",3,"--c2"],["Cabling",2,"--c4"]],"Optics 5–9 months, NICs 12+, switches 6–12","Tenant's scope. The landlord supplies fiber entry, meet-me room and dark fiber to the backbone."],
+ ["Cooling",7.5,[["Chillers and cooling towers",2.5,"--c4"],["Coolant distribution units",2,"--c1"],["Cold plates",1.5,"--c3"],["Other",1.5,"--c2"]],"Plant 6–18 months; CDUs follow the tenant's rack choice","Split scope: Kona builds the plant to a reference design, the tenant brings the in-rack loop."],
+ ["Facilities and construction",7.5,[["Shell",4,"--c1"],["Fit-out",2.5,"--c4"],["Land",1,"--c5"]],"Modules 3–5 months; stick-built 18–30","Smallest line and the one Kona can compress most with factory-built halls."]];
+/* critical path for a 50 MW first block, months from site control (0) to energized (24) */
+const PATH=[
+ ["Gas supply agreement and site control",-2,3,"site","Precedent agreement with Pampa, YPF or a producer; land under option."],
+ ["RIGI application, provincial EIA, CAMMESA filing",0,14,"site","Start on day one. No published Argentine timelines; the RIGI window closes 8 July 2027."],
+ ["Reciprocating engines: slot deposit to delivery",-6,20,"gen","24-month lead assumed. Must be ordered before a tenant is signed."],
+ ["Substation transformer or pad-mount set",-4,20,"power","Order in the same month as the engines; 13.8 kV collection bus avoids a GSU."],
+ ["Battery buffer (if used)",-2,20,"gen","Megapack is a 2028 delivery today; Fluence, BYD, Sungrow may be shorter."],
+ ["Medium-voltage switchgear",2,20,"power","18-month lead; slot deposit within 60 days of the generation decision."],
+ ["Chiller plant and cooling modules",5,20,"cooling","Order at power FID, not at tenant signing; factory-built."],
+ ["Fiber route study and build",0,18,"site","Dual path to Buenos Aires; latency matters for inference tenants."],
+ ["Tenant signed; rack and cooling design frozen",8,10,"it","Target window. Everything above is at risk if this slips."],
+ ["UPS, transfer switches, PDUs",8,20,"power","Shorter items ordered against the tenant's design."],
+ ["Prefabricated halls, civil works, erection",10,22,"site","Modules 3–5 months; site works in parallel."],
+ ["CDUs, in-rack cooling (tenant's rack choice)",10,21,"cooling","Specified by the rack; ordered once the design is frozen."],
+ ["GPU racks and fabric (tenant's allocation)",17,23,"it","Deliver inside six months of energization; depreciation starts at the invoice."],
+ ["Commissioning and first power",22,24,"power","Engines, switchgear and cooling plant are all on site by month 20."]];
+const BUILDS=[
+ ["xAI Colossus 1, Memphis","122 days to first training run; 19 days from first rack","Existing factory shell, live substation, rented gensets and turbines; 168 Megapacks","https://www.techtarget.com/ai/feature/Colossus-data-center-buildouts-Can-they-ever-be-duplicated"],
+ ["xAI Colossus 2, Memphis and Southaven","Land clearing Feb 2025 to first ~200 MW about Oct 2025: ~8 months; ~13 months to building 1 fully operational","Behind-the-meter gas turbines under temporary permits, now ordered retired by July 2027","https://epoch.ai/data/ai-data-centers/directory/colossus-2"],
+ ["Crusoe / Stargate Abilene","Land clearing May 2024 to first 105 MW Sept 2025: 16 months; buildings 3–4 at ~24 months","Greenfield; own gas generation; 29 LM2500XPRESS units ordered for later phases","https://epoch.ai/data/ai-data-centers/directory/openai-stargate-abilene"],
+ ["IREN Horizon 1, Childress","50 MW GB300 hall delivered to Microsoft Aug 2026; four Horizons in 2026","Existing 750 MW grid site converted from bitcoin; liquid-cooled","https://iren.gcs-web.com/news-releases/news-release-details/iren-delivers-horizon-1-microsoft-and-achieves-nvidia-exemplar"],
+ ["Cipher Black Pearl and Barber Lake","Black Pearl phase 1 two months early (Aug 2026); Barber Lake 168 MW rent Oct 2026 with equipment 100% secured; Stingray H1 2027 at 75% secured","Reports procurement percentage, not construction, as the schedule metric","https://www.marketbeat.com/instant-alerts/cipher-mining-q2-earnings-call-highlights-2026-08-04/"],
+ ["Hut 8 River Bend","Lease Dec 2025 to first delivery from Q2 2027: ~18 months","180 kW per rack direct liquid cooling design","https://www.datacentres.com/news/factory-built-and-fast-modular-construction-cuts-data-centre-delivery-times-by-4-slot1-2026-09-02"],
+ ["TeraWulf Lake Mariner","CB-3 delivered Jul 2026; CB-4 H2 2026; CB-5 early 2027; guides $8–10M per critical MW","Existing grid site; Google-backstopped Fluidstack leases","https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000162/a_wulfearningsreleaseq22026.htm"],
+ ["Fermi Matador","86 MW of grid power on site; 1.1 GW of combined-cycle turbines due Q3 2026; no tenant as of May 2026","Power without a tenant is as stranded as a tenant without power","https://www.marketbeat.com/instant-alerts/fermi-q1-earnings-call-highlights-2026-05-14/"]];
+(function buildTab(){
+  if(!$("#p-build"))return;
+  /* capex split */
+  hstack($("#viz-capexsplit"),"Where $100 of AI data-center capex goes (BNP Paribas, Aug 2026)",CAPEX.map((c,i)=>({label:c[0]+" $"+fmtP(c[1]),cssVar:["--c3","--c1","--c2","--c4","--c5"][i],parts:c[2].map(([n,v])=>({name:n,value:v}))})),{fmt:v=>"$"+fmtP(v),W:780,left:230,rowH:46,mono:true,note:"Each row is one category; the shades are its components, from the largest down. Hover for names where the bar is too short to label."});
+  table("#capexsplit",["Category","Share of $100","Components","Lead-time gate","Kona scope"],CAPEX.map(c=>[c[0],"$"+fmtP(c[1]),c[2].map(([n,v])=>`${n} $${fmtP(v)}`).join(" · "),c[3],c[4]]),[1]);
+  /* lead-time chart with filter */
+  let leadF="desk";const rowsFor=()=>LEAD.filter(r=>leadF==="all"||(leadF==="desk"?r[3]!=="apollo":r[3]===leadF)).map(r=>({label:r[0],lo:r[1],hi:r[2],cat:r[3],note:r[5]?r[5].split(". ")[0]:""})).sort((a,b)=>a.hi-b.hi||a.lo-b.lo);
+  const drawLead=()=>{rbars($("#viz-leadtimes"),"Procurement lead time, months from order to delivery",rowsFor(),LCAT,{note:leadF==="apollo"?"Apollo Global Management survey of commercial construction lead times, as sent by CK. Note these are generic construction figures: Apollo's 16–26 months for pad-mount transformers and 14–23 for generators are longer than the data-center-specific quotes in the desk's findings, and its chillers (3–7 months) are shorter.":"Desk findings, verified 28 Oct 2026. Where no vendor publishes months, the range is implied from announced order and delivery dates and is marked as such in the table below. GPU and memory bars are allocation windows, not quoted lead times."})};
+  [["desk","Desk findings, 2026"],["all","All"],["apollo","Apollo survey"],["gen","Generation"],["power","Electrical"],["cooling","Cooling"],["it","IT"],["site","Site and permits"]].forEach(([k,l])=>{const c=el("button","chip",l);c.setAttribute("aria-pressed",k===leadF);c.onclick=()=>{leadF=k;document.querySelectorAll("#leadchips .chip").forEach(x=>x.setAttribute("aria-pressed",x===c));drawLead()};$("#leadchips").append(c)});
+  drawLead();
+  $("#leadnote").textContent="Read the two charts together: Apollo's survey is what a general contractor sees for an office or warehouse; the desk's findings are what an AI site sees in 2026. The gap is widest in power equipment, where data-center demand has roughly doubled lead times since 2024 and the only items that got shorter are the GPUs that are one generation old.";
+  /* bill of materials */
+  const tb=$("#bomtable tbody");LEAD.filter(r=>r[3]!=="apollo").forEach(r=>{const tr=el("tr");const c=el("td");c.append(el("b",null,r[0]));const u=safeUrl(r[8]);if(u){c.append(el("br"));c.append(link("Source",u))}tr.append(c);
+    tr.append(el("td",null,LCAT[r[3]][0]));const lt=el("td","num",fmtP(r[1])+"–"+fmtP(r[2]));tr.append(lt);
+    const tcell=el("td");tcell.append(el("span","pill "+(r[4]==="▲"?"down":r[4]==="▼"?"up":""),r[4]==="▲"?"▲ longer":r[4]==="▼"?"▼ shorter":"▬ flat"));tr.append(tcell);
+    tr.append(el("td",null,r[5]),el("td",null,r[6]),el("td",null,r[7]));tb.append(tr)});
+  /* critical path */
+  rbars($("#viz-gantt"),"Order-to-delivery windows for a 50 MW first block, months from site control",PATH.map(p=>({label:p[0],lo:p[1],hi:p[2],cat:p[3],note:p[4],valText:(p[1]<0?"−"+Math.abs(p[1]):p[1])+" → "+p[2]})),LCAT,{min:-8,max:26,left:340,refs:[{x:0,label:"site control"},{x:9,label:"tenant"},{x:24,label:"energized"}],note:"Illustrative schedule using the desk's mid-range lead times. The engines and the transformer are ordered before site control and six to nine months before a tenant exists; that is the capital-at-risk SpaceX and Crusoe both accepted, and the reason the Kona financing model carries a construction equity line."});
+  const cards=[["Order power before the tenant","The engines (18–36 months) and the main transformer (17–35) are the only items that cannot be ordered against a signed lease and still make a 24-month schedule. Slot deposits are 10–30% of price; the Kona model treats them as construction equity. Behind-the-meter OEMs are about 65% booked for 2028 and a third for 2029, so the window for a 2028 energization is closing this year."],
+   ["Design around the GSU","Generating at 13.8 kV onto a collection bus with several pad-mount transformers (9–15 months) removes the 23–35 month generator step-up unit from the path. It costs more copper and more switchgear, which is itself 12–24 months, so the switchgear order follows the engine order within 60 days."],
+   ["Factory-built, not stick-built","Modular halls and chiller plants ship in 3–5 months with their own documentation, need little local trade labour and clear Argentine customs as capital goods under RIGI. Stick-built halls take 18–30 months and depend on precast, steel and crews that Neuquén does not have in data-center quantities."],
+   ["GPUs last, through the tenant","GB300 and Rubin are allocated through 2026 and reachable only through a tenant or an OEM with allocation; GB200 and MI355X are available now. Racks should land inside six months of energization, since depreciation starts at the invoice. Memory, NICs and optics are the hidden escalators: budget 15–25% on non-GPU server content for 2027."]];
+  cards.forEach(([h,t])=>{const c=el("div","card");c.append(el("h3",null,h),el("p",null,t));$("#buildcards").append(c)});
+  /* build timelines */
+  const bt=$("#buildtimes");const th=el("thead"),hr=el("tr");["Build","Timeline","What set the pace",""].forEach(x=>hr.append(el("th",null,x)));th.append(hr);const body=el("tbody");
+  BUILDS.forEach(b=>{const tr=el("tr");const c=el("td");c.append(el("b",null,b[0]));tr.append(c,el("td",null,b[1]),el("td",null,b[2]));const s=el("td");const u=safeUrl(b[3]);if(u)s.append(link("Source",u));tr.append(s);body.append(tr)});bt.append(th,body);
+})();
+
 /* scenarios saved to the guide */
 function slug(s){return String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"").slice(0,40)||"scenario"}
 function renderScenarios(docs){
