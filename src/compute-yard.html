@@ -445,6 +445,11 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
       <div class="viz" id="viz-cash"></div>
     </div>
     <p class="lede">The gap between the two margins is depreciation on chips that have to be replaced, and the gap between operating cash and capex is filled with new money every year. When the price of that money jumps, as it did in October, the equity story is unchanged but the credit math is not. Figures from CoreWeave's Q2 2026 results and 2027 consensus as cited by JunkBondInvestor.</p>
+    <div class="grid2">
+      <div class="viz" id="viz-cwq"></div>
+      <div class="viz" id="viz-cwcapex"></div>
+    </div>
+    <p class="src">Five quarters from CoreWeave's Q2 2026 earnings presentation (11 Aug 2026), $M. Revenue doubled in a year; depreciation and interest together rose from $826M to $2,033M a quarter and now absorb 79% of revenue, which is why adjusted operating income is 5% of revenue and the GAAP net loss is $626M on $2.6B of sales. Capex of $9.4B in the quarter was 6.2 times adjusted EBITDA; the difference is what the Financing tab is about. Also in the deck: 1.5 GW active and about 4.2 GW contracted by 11 August, 51 sites, the first publicly syndicated DDTL ($3.1B), $1B from Jane Street, more than $10B of unsecured and convertible debt including a first Eurobond, and the first Vera Rubin NVL72 bring-up.</p>
   </div>
 
   <div class="block" id="calcblock">
@@ -1060,7 +1065,10 @@ table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
 ].forEach(x=>$("#openq").append(el("li",null,x)));
 
 /* ---------- library ---------- */
-[{t:"CoreWeave DDTL 4.0: $8.5 billion facility overview",by:"CoreWeave, Inc. · 7-slide term-sheet summary · March 2026 · sent by CK",u:"https://investors.coreweave.com/",why:"The term sheet behind the cheapest bar on the price-of-money ladder: what an A3 rating, a non-recourse structure and a 102% loan-to-cost look like in writing.",
+[{t:"CoreWeave Q2 2026 earnings presentation",by:"CoreWeave, Inc. · 11 August 2026 · 23 slides · sent by CK",u:"https://investors.coreweave.com/",why:"The quarter the guide's CoreWeave figures come from, in the company's own layout, with five quarters of the lines that matter for credit: depreciation, interest and capex.",
+  pts:["Revenue $2,575M, up 112%; adjusted EBITDA $1,510M (59%); adjusted operating income $128M (5%); net loss $626M after $640M of net interest; adjusted net loss $567M (22%).","Backlog $104.2B at 30 June, up 246%, before more than $25B of net new commitments in early Q3; 40% within 24 months, 39% in months 25–48, 21% beyond.","Capex $9.4B in the quarter and $16.1B in the half, about six times adjusted EBITDA; depreciation and amortization $1,393M, up from $559M a year earlier.","1.5 GW active across 51 sites, 3.7 GW contracted at quarter end and about 4.2 GW by 11 August; eight data centers added in 2026.","Financing in the quarter: the $3.1B DDTL, the first publicly syndicated delayed-draw facility backed by HPC infrastructure; $1B from Jane Street; more than $10B of unsecured and convertible debt including a first Eurobond; Nasdaq-100 inclusion. First Vera Rubin NVL72 bring-up."],
+  chg:"Added two five-quarter charts (revenue, EBITDA, depreciation, interest, operating income; capex against EBITDA) to the margins block on the Models tab and recorded the deck's figures on the scorecard record for Q2 2026."},
+{t:"CoreWeave DDTL 4.0: $8.5 billion facility overview",by:"CoreWeave, Inc. · 7-slide term-sheet summary · March 2026 · sent by CK",u:"https://investors.coreweave.com/",why:"The term sheet behind the cheapest bar on the price-of-money ladder: what an A3 rating, a non-recourse structure and a 102% loan-to-cost look like in writing.",
   pts:["$8.5B, six-year tenor to March 2032, SOFR + 225 floating or about 5.9% fixed; 175 bps inside DDTL 3.0 and about 750 bps inside DDTL 1.0.","Moody's A3 / DBRS A (low), the first investment-grade rated facility of its kind; non-recourse to the parent with a bad-boy guarantee limited to GPU installation.","90% loan-to-cost during installation; after customer acceptance the test switches to 1.2x DSCR, implying about 102% loan-to-cost and roughly $1B of extra borrowing at stabilization.","Collateral is the equipment, the borrower's equity and accounts, the customer contract and the data-center leases, which is why landlords to DDTL borrowers sign consents and non-disturbance agreements.","Borrower is CoreWeave Compute Acquisition Co. VIII: one special-purpose vehicle per financing, the ABS-style template the deck says is repeatable."],
   chg:"Added a term-sheet block to the Financing tab with a Kona read, expanded the DDTL 4.0 row in the debt table, and reset the Kona model's investment-grade GPU case to the actual DDTL 4.0 terms (90% LTC, SOFR + 225, 1.2x sculpt, six-year tenor)."},
 {t:"CoreWeave Investor Presentation, March 2026",by:"CoreWeave, Inc. · 28 slides, FY2025 results and illustrative unit economics · sent by CK",u:"https://investors.coreweave.com/",why:"CoreWeave's own account of how a DDTL-financed contract pays out, what sets the loan's price, and why margins compress while deployments ramp: the company's side of the JunkBondInvestor argument.",
@@ -1715,6 +1723,11 @@ const BUILDS=[
   BUILDS.forEach(b=>{const tr=el("tr");const c=el("td");c.append(el("b",null,b[0]));tr.append(c,el("td",null,b[1]),el("td",null,b[2]));const s=el("td");const u=safeUrl(b[3]);if(u)s.append(link("Source",u));tr.append(s);body.append(tr)});bt.append(th,body);
 })();
 
+/* CoreWeave Q2 2026 earnings deck: five quarters */
+(function cwQ(){if(!$("#viz-cwq"))return;const q=["Q2'25","Q3'25","Q4'25","Q1'26","Q2'26"];
+  vbars($("#viz-cwq"),"CoreWeave, five quarters, $M",[{name:"Revenue",cssVar:"--c1"},{name:"Adjusted EBITDA",cssVar:"--c3"},{name:"Depreciation and amortization",cssVar:"--c2"},{name:"Interest expense, net",cssVar:"--c4"},{name:"Adjusted operating income",cssVar:"--c5"}],[[1212,753,559,267,200],[1365,838,630,311,217],[1572,898,821,388,88],[2078,1157,1147,536,21],[2575,1510,1393,640,128]].map((v,i)=>({label:q[i],values:v})),{W:520,note:"Adjusted EBITDA margin 62%, 61%, 57%, 56%, 59%; adjusted operating margin 16%, 16%, 6%, 1%, 5%."});
+  vbars($("#viz-cwcapex"),"Capex against adjusted EBITDA, $B per quarter",[{name:"Capex",cssVar:"--c2"},{name:"Adjusted EBITDA",cssVar:"--c3"}],[[2.9,0.75],[1.9,0.84],[8.2,0.90],[6.8,1.16],[9.4,1.51]].map((v,i)=>({label:q[i],values:v})),{W:520,fmt:v=>"$"+v.toFixed(1)+"B",note:"Capex is additions to property and equipment including finance leases, less the change in construction in progress. $16.1B in the first half of 2026 against $2.7B of adjusted EBITDA."});
+})();
 /* CoreWeave March 2026 deck: waterfall, ramp, deployment P&L */
 function waterfall(box,title,steps,opt={}){
   box.textContent="";box.append(el("div","vtitle",title));
