@@ -348,6 +348,18 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
     <p class="src">Scale, per the same essay: KKR estimates public investment-grade markets can supply about $1.7T of the $7.6–8.0T of AI capex expected through 2030. Guarantees across nine AI companies already total $278B, on top of $1.21T of signed leases not yet commenced.</p>
   </div>
   <div class="block">
+    <h2>Anatomy of an investment-grade DDTL: CoreWeave's DDTL 4.0 term sheet</h2>
+    <p class="lede">The $8.5B facility at the top of the price-of-money ladder, from CoreWeave's own March 2026 summary. It is the template every neocloud and every landlord is now trying to copy, and it shows exactly which features the A3 rating buys and which the customer's credit buys.</p>
+    <div class="grid2">
+      <div class="tablebox"><table id="ddtl4"></table></div>
+      <div>
+        <div class="card"><h3>How the leverage metric swaps</h3><p>During installation the loan is sized at 90% of cost ($7.5B). Once the customer accepts each site, the governing test becomes a 1.2x debt service cover, which at these rents sizes the loan at about 102% of cost, unlocking roughly $1B more. The sponsor's equity is therefore returned at stabilization and the parent's funding need for the deal falls to nearly zero. This is the mechanism that lets CoreWeave claim asset-level loans fund "the majority of capex".</p></div>
+        <div class="card" style="margin-top:12px"><h3>What it means for Kona</h3><p>Three terms matter. First, the collateral package pledges the data-center leases alongside the contract and the equipment: a landlord to a DDTL borrower will be asked for lender consents, step-in rights and a non-disturbance agreement, so Kona's lease should be drafted to be pledgeable from the start. Second, the parent gives only a "bad-boy" guarantee covering GPU installation, so the tenant's parent is not on the hook for rent once the chips are in; what stands behind Kona's rent is the underlying AI customer, which is the point of the tenant-credit theme. Third, the pricing path, DDTL 1.0 at roughly SOFR + 975 to 4.0 at SOFR + 225 in two years, is the clearest evidence that this market reprices on the customer's rating and the operator's record, not on the asset.</p></div>
+      </div>
+    </div>
+    <p class="src">Source: CoreWeave, "DDTL 4.0: $8.5 Billion First-of-a-Kind Facility", March 2026, sent by CK. The fixed-rate tranche is set at drawdown by reference to SOFR + 225. The 750 bps improvement versus DDTL 1.0 and 175 bps versus DDTL 3.0 are the company's figures. Seven months later DDTL 5.5 priced at SOFR + 550 against a non-investment-grade customer: same template, different credit.</p>
+  </div>
+  <div class="block">
     <h2>What a small or emerging-market developer can get</h2>
     <div class="grid2" id="small"></div>
   </div>
@@ -907,9 +919,10 @@ table("#buyers",["Buyer","Commitments","Terms and signals"],[
  ["Google","Capex guidance $195–205B","Acts as backstop for Fluidstack leases instead of leasing directly. Buying capacity from SpaceX/xAI on a 90-day exit. Prefers grid-connected sites; uses its own generation mainly to bridge until the utility delivers."],
  ["Oracle","$288B of leases not yet commenced, 15–19 year terms","Leases run three times longer than its roughly five-year OpenAI contract."],
  ["Jane Street, AMD, others","Jane Street $6B with CoreWeave and about $13B with Crusoe; AMD 530 MW at Core Scientific","Second-tier buyers are real but few have disclosed terms."]]);
+table("#ddtl4",["Term","DDTL 4.0"],[["Borrower","CoreWeave Compute Acquisition Co. VIII, LLC, a wholly owned subsidiary of the parent"],["Size","$8.5 billion, the largest HPC infrastructure financing to date at the time"],["Tenor","About six years, to 31 March 2032"],["Recourse","Non-recourse to the parent; customary 'bad-boy' guarantee covering GPU installation and related performance obligations"],["Rating","Moody's A3 / DBRS A (low): the first investment-grade rated facility of its kind"],["Pricing","Floating tranche SOFR + 225 bps; fixed tranche about 5.9%, set at drawdown"],["Advance rate","Installation period: 90% loan-to-cost. Stabilization: 1.2x DSCR after acceptance by the customer, site by site, implying up to about 102% loan-to-cost"],["Amortization","Monthly payments after stabilization triggers, full repayment by maturity"],["Customer","One investment-grade AI enterprise under a long-term contract"],["Collateral","First-priority security over the borrower's assets including the cloud equipment, collateral accounts and the borrower's equity, the customer contract, and the corresponding data-center leases"],["Versus earlier DDTLs","175 bps cheaper than DDTL 3.0; about 750 bps cheaper than DDTL 1.0"]]);
 table("#debt",["Deal","Pricing","What stands behind it"],[
  ["Hut 8 project debt","6.13–6.19% fixed","Google-backed and investment-grade leases; 95% loan-to-cost"],
- ["CoreWeave, March 2026","SOFR + 225","One investment-grade customer, matched term"],
+ ["CoreWeave DDTL 4.0, March 2026 ($8.5B)","SOFR + 225 floating, about 5.9% fixed","One investment-grade AI customer; A3 / A (low); non-recourse with a bad-boy guarantee; 90% loan-to-cost in installation, 1.2x DSCR after acceptance (up to ~102% LTC); six-year tenor to March 2032"],
  ["Nscale Texas and N. Carolina","SOFR + 237.5","Microsoft-backed, parent residual guarantee"],
  ["Nebius asset-backed loan","SOFR + 250","Contracted capacity"],
  ["Lambda, October 2026","6.78% fixed, Baa1","GPUs plus contracts with two investment-grade customers"],
@@ -1047,7 +1060,10 @@ table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
 ].forEach(x=>$("#openq").append(el("li",null,x)));
 
 /* ---------- library ---------- */
-[{t:"CoreWeave Investor Presentation, March 2026",by:"CoreWeave, Inc. · 28 slides, FY2025 results and illustrative unit economics · sent by CK",u:"https://investors.coreweave.com/",why:"CoreWeave's own account of how a DDTL-financed contract pays out, what sets the loan's price, and why margins compress while deployments ramp: the company's side of the JunkBondInvestor argument.",
+[{t:"CoreWeave DDTL 4.0: $8.5 billion facility overview",by:"CoreWeave, Inc. · 7-slide term-sheet summary · March 2026 · sent by CK",u:"https://investors.coreweave.com/",why:"The term sheet behind the cheapest bar on the price-of-money ladder: what an A3 rating, a non-recourse structure and a 102% loan-to-cost look like in writing.",
+  pts:["$8.5B, six-year tenor to March 2032, SOFR + 225 floating or about 5.9% fixed; 175 bps inside DDTL 3.0 and about 750 bps inside DDTL 1.0.","Moody's A3 / DBRS A (low), the first investment-grade rated facility of its kind; non-recourse to the parent with a bad-boy guarantee limited to GPU installation.","90% loan-to-cost during installation; after customer acceptance the test switches to 1.2x DSCR, implying about 102% loan-to-cost and roughly $1B of extra borrowing at stabilization.","Collateral is the equipment, the borrower's equity and accounts, the customer contract and the data-center leases, which is why landlords to DDTL borrowers sign consents and non-disturbance agreements.","Borrower is CoreWeave Compute Acquisition Co. VIII: one special-purpose vehicle per financing, the ABS-style template the deck says is repeatable."],
+  chg:"Added a term-sheet block to the Financing tab with a Kona read, expanded the DDTL 4.0 row in the debt table, and reset the Kona model's investment-grade GPU case to the actual DDTL 4.0 terms (90% LTC, SOFR + 225, 1.2x sculpt, six-year tenor)."},
+{t:"CoreWeave Investor Presentation, March 2026",by:"CoreWeave, Inc. · 28 slides, FY2025 results and illustrative unit economics · sent by CK",u:"https://investors.coreweave.com/",why:"CoreWeave's own account of how a DDTL-financed contract pays out, what sets the loan's price, and why margins compress while deployments ramp: the company's side of the JunkBondInvestor argument.",
   pts:["Illustrative five-year contract: of 100% of revenue, 16% goes to the lease and power, 9% to opex, 8% to interest, 41% to principal and 10% to parent-funded capex, leaving 16% for the parent, at 80% loan-to-cost, 6.5% and a 75% margin. At DDTL 5.5's 9.4% the residual is nearer 12%.","Weighted average interest rate 14.9% (2023), 12.2% (2024), 9.0% (2025) on $21.6B of debt; DDTL price is set by contract quality, customer credit and execution.","Backlog $66.8B at year-end 2025, 42% recognized within 24 months, 80% within 48; weighted average contract life about five years; 850 MW active, 3.1 GW contracted, 43 sites.","A new deployment loses $39 per $100 of stabilized revenue in month one and $25 in month two before earning $25 at stabilization; aggregate margin troughs at 5% when deployments overlap. Long-term adjusted operating margin target 25–30%.","Six-year GAAP useful life against roughly five-year contracts; V100s in use eight years after release, H100 pricing within 10% over 2025. Delivery timeline: landlord 12–18 months, CoreWeave 1–2."],
   chg:"Added a CoreWeave unit-economics block to the Models tab (waterfall, ramp chart, deployment P&L, two cards), a 'CoreWeave deck' preset to the contract calculator, and the company's delivery timeline to the Build tab's published-builds table."},
 {t:"What it takes to build a data center: lead times and the capex split",by:"Apollo Global Management lead-time survey and BNP Paribas Equity Research 'Following the AI capex money' (Aug 2026), sent by CK; desk research verified 28 Oct 2026",u:"https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/",why:"CK asked for every item needed to develop a data center and how long each takes to source, in the style of Apollo's chart.",
@@ -1317,6 +1333,7 @@ renderFin();
 const NS="http://www.w3.org/2000/svg";
 function sv(tag,attrs,text){const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);if(text!=null)n.textContent=text;return n}
 function fmtM(v){if(v==null||isNaN(v))return"–";const a=Math.abs(v);if(a>=1000)return (v/1000).toFixed(a>=10000?0:1)+"B";return a>=100?v.toFixed(0):a>=10?v.toFixed(1):v.toFixed(2)}
+function money(v){const f=fmtM(v);return "$"+f+(/B$/.test(f)?"":"M")}
 function fmtP(v){return Number.isInteger(v)?String(v):String(+v.toFixed(2))}
 function pct(v,d=1){return v==null||isNaN(v)?"–":(v*100).toFixed(d)+"%"}
 /* horizontal bars: rows=[{label,value,cat,note}], cats={key:[name,cssVar]} */
@@ -1346,7 +1363,7 @@ function vbars(box,title,cats,data,opt={}){
   data.forEach((d,i)=>{const x0=left+i*bw;let acc=0;const gw=opt.stacked?bw*0.62:bw*0.72/cats.length;
     d.values.forEach((v,j)=>{if(v<=0&&opt.stacked)return;const g=sv("g",{class:"mark"});
       let x,y,h,w;if(opt.stacked){w=gw;x=x0+(bw-w)/2;h=sy(0)-sy(v);y=sy(acc+v);acc+=v}else{w=gw;x=x0+bw*0.14+j*gw;h=sy(0)-sy(Math.max(0,v));y=sy(Math.max(0,v))}
-      const r=sv("rect",{x:x,y:y,width:w,height:Math.max(0,h-(opt.stacked?2:0)),rx:opt.stacked?0:3,fill:`var(${cats[j].cssVar})`});r.append(sv("title",{},`${d.label} · ${cats[j].name}: ${opt.fmt?opt.fmt(v):"$"+fmtM(v)+"M"}`));g.append(r);svg.append(g)});
+      const r=sv("rect",{x:x,y:y,width:w,height:Math.max(0,h-(opt.stacked?2:0)),rx:opt.stacked?0:3,fill:`var(${cats[j].cssVar})`});r.append(sv("title",{},`${d.label} · ${cats[j].name}: ${opt.fmt?opt.fmt(v):money(v)}`));g.append(r);svg.append(g)});
     svg.append(sv("text",{x:x0+bw/2,y:H-bottom+16,class:"tick","text-anchor":"middle"},d.label))});
   if(opt.refLine){const y=sy(opt.refLine);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"ref"}));svg.append(sv("text",{x:W-right,y:y-5,class:"tick","text-anchor":"end"},opt.refLabel||""))}
   svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
@@ -1366,7 +1383,7 @@ function lines(box,title,series,labels,opt={}){
   svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
   series.forEach(s=>{const d=s.values.map((v,i)=>(i?"L":"M")+sx(i).toFixed(1)+" "+sy(v).toFixed(1)).join(" ");svg.append(sv("path",{d:d,class:"line",stroke:`var(${s.cssVar})`}));
     const last=s.values.length-1;svg.append(sv("text",{x:sx(last)-4,y:sy(s.values[last])-8,class:"lbl","text-anchor":"end"},s.name));
-    s.values.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:5,class:"dot",fill:`var(${s.cssVar})`});c.append(sv("title",{},`${labels[i]} · ${s.name}: $${fmtM(v)}M`));svg.append(c)})});
+    s.values.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:5,class:"dot",fill:`var(${s.cssVar})`});c.append(sv("title",{},`${labels[i]} · ${s.name}: ${money(v)}`));svg.append(c)})});
   if(opt.marker!=null){const x=sx(opt.marker);svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-bottom,class:"ref"}));svg.append(sv("text",{x:x+4,y:H-bottom-6,class:"tick"},opt.markerLabel||""))}
   box.append(svg);
   const lg=el("div","legend");series.forEach(s=>{const sp=el("span");const d=el("i");d.style.background=`var(${s.cssVar})`;sp.append(d,s.name);lg.append(sp)});box.append(lg);
@@ -1424,13 +1441,13 @@ const PRESETS={
  hosting:{label:"Hosting, unbacked tenant",mw:20,capexSite:12,capexIT:0,buildQ:6,rampQ:2,horizon:15,tv:0,rev:2.3,opex:0.45,escal:3,term:10,renew:85,prepay:5,adv:55,sofr:3.9,spread:650,fee:0.5,grace:2,amort:"sculpt",amortY:7,dscr:1.35,tenor:7,junior:0,jrate:12.75,jtenor:6},
  backed:{label:"Hosting, backed tenant",mw:20,capexSite:12,capexIT:0,buildQ:6,rampQ:2,horizon:15,tv:0,rev:1.9,opex:0.45,escal:3,term:15,renew:85,prepay:15,adv:70,sofr:3.9,spread:300,fee:0.5,grace:2,amort:"sculpt",amortY:10,dscr:1.3,tenor:10,junior:0,jrate:12,jtenor:6},
  gpu:{label:"GPU cloud, DDTL 5.5 style",mw:20,capexSite:19.2,capexIT:40,buildQ:4,rampQ:1,horizon:7,tv:0,rev:22.5,opex:1.1,escal:0,term:3,renew:50,prepay:15,adv:65,sofr:3.9,spread:550,fee:0.5,grace:0,amort:"level",amortY:5,dscr:1.3,tenor:6,junior:0,jrate:12.75,jtenor:5},
- gpu5:{label:"GPU cloud, 5-year contract",mw:20,capexSite:19.2,capexIT:40,buildQ:4,rampQ:1,horizon:7,tv:0,rev:16.5,opex:1.1,escal:0,term:5,renew:50,prepay:15,adv:70,sofr:3.9,spread:300,fee:0.5,grace:0,amort:"level",amortY:5,dscr:1.3,tenor:6,junior:0,jrate:12.75,jtenor:5}};
+ gpu5:{label:"GPU cloud, IG tenant (DDTL 4.0 terms)",mw:20,capexSite:19.2,capexIT:40,buildQ:4,rampQ:1,horizon:7,tv:0,rev:16.5,opex:1.1,escal:0,term:5,renew:50,prepay:0,adv:90,sofr:3.9,spread:225,fee:0.5,grace:0,amort:"sculpt",amortY:5,dscr:1.2,tenor:6,junior:0,jrate:12.75,jtenor:5}};
 const PRESET_NOTES={
  energy:"Engines and switchyard only, priced near Williams' implied $0.7M per MW before fuel plus fuel pass-through; equipment-style debt at SOFR + 450.",
  hosting:"A $190–200 per kW-month lease to a venture-backed neocloud, like Bitdeer–Volta or Galaxy–CoreWeave, funded with private credit at SOFR + 650 and a 55% advance.",
  backed:"A $155 per kW-month lease with a hyperscaler backstop, like TeraWulf–Fluidstack, funded at SOFR + 300 with a 70% advance and a 15% prepayment.",
  gpu:"Crusoe's $59M per MW cost stack rented at $22.5M per MW on three-year contracts against a five-year loan at SOFR + 550, re-rented at half price in years four and five: the DDTL 5.5 model shared with this guide.",
- gpu5:"The same chips on a five-year contract at $16.5M per MW with investment-grade-style debt: the case DDTL 5.5 was built to beat."};
+ gpu5:"The same chips on a five-year contract at $16.5M per MW financed on CoreWeave's DDTL 4.0 terms: 90% loan-to-cost at SOFR + 225, sculpted to a 1.2x cover, six-year tenor, no prepayment. Only available with an investment-grade customer behind the contract; the case DDTL 5.5 was built to beat."};
 let MP={...PRESETS.hosting},mpreset="hosting";
 function runModel(p){
   const Q=Math.round(p.horizon*4),bq=Math.max(1,Math.round(p.buildQ));
@@ -1489,7 +1506,7 @@ function renderLevers(){const box=$("#levers");box.textContent="";
     w.append(l,r);box.append(w)})}
 /* stacked horizontal bars: rows=[{label,parts:[{name,value,cssVar}]}] */
 function hstack(box,title,rows,opt={}){
-  box.textContent="";box.append(el("div","vtitle",title));const fv=opt.fmt||(v=>"$"+fmtM(v)+"M");
+  box.textContent="";box.append(el("div","vtitle",title));const fv=opt.fmt||(v=>money(v));
   const W=opt.W||520,rowH=opt.rowH||44,top=6,left=opt.left||70,right=16,H=top+rows.length*rowH+6;
   const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
   const max=Math.max(0.0001,...rows.map(r=>r.parts.reduce((a,p)=>a+Math.max(0,p.value),0)));const sc=v=>(W-left-right)*v/max;
@@ -1508,10 +1525,10 @@ function jcurve(box,title,bars,cum,labels,opt={}){
   const all=bars.concat(cum);let max=Math.max(0.0001,...all)*1.1,min=Math.min(0,...all)*1.1;
   const sy=v=>top+(H-top-bottom)*(1-(v-min)/(max-min)),bw=(W-left-right)/n,sx=i=>left+i*bw+bw/2;
   const ticks=4;for(let i=0;i<=ticks;i++){const v=min+(max-min)/ticks*i,y=sy(v);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"grid"}));svg.append(sv("text",{x:left-6,y:y+4,class:"tick","text-anchor":"end"},String(Math.round(v))))}
-  bars.forEach((v,i)=>{const g=sv("g",{class:"mark"});const r=sv("rect",{x:left+i*bw+bw*0.2,y:sy(Math.max(0,v)),width:bw*0.6,height:Math.abs(sy(v)-sy(0)),rx:2,fill:v<0?"var(--c2)":"var(--c3)"});r.append(sv("title",{},`${labels[i]} equity cash flow: ${v<0?"−":""}$${fmtM(Math.abs(v))}M`));g.append(r);svg.append(g)});
+  bars.forEach((v,i)=>{const g=sv("g",{class:"mark"});const r=sv("rect",{x:left+i*bw+bw*0.2,y:sy(Math.max(0,v)),width:bw*0.6,height:Math.abs(sy(v)-sy(0)),rx:2,fill:v<0?"var(--c2)":"var(--c3)"});r.append(sv("title",{},`${labels[i]} equity cash flow: ${v<0?"−":""}${money(Math.abs(v))}`));g.append(r);svg.append(g)});
   svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));
   svg.append(sv("path",{d:cum.map((v,i)=>(i?"L":"M")+sx(i).toFixed(1)+" "+sy(v).toFixed(1)).join(" "),class:"line",stroke:"var(--c1)"}));
-  cum.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:4,class:"dot",fill:"var(--c1)"});c.append(sv("title",{},`${labels[i]} cumulative: ${v<0?"−":""}$${fmtM(Math.abs(v))}M`));svg.append(c)});
+  cum.forEach((v,i)=>{const c=sv("circle",{cx:sx(i),cy:sy(v),r:4,class:"dot",fill:"var(--c1)"});c.append(sv("title",{},`${labels[i]} cumulative: ${v<0?"−":""}${money(Math.abs(v))}`));svg.append(c)});
   const step=Math.max(1,Math.ceil(n/12));labels.forEach((l,i)=>{if(i%step===0||i===n-1)svg.append(sv("text",{x:sx(i),y:H-bottom+16,class:"tick","text-anchor":"middle"},l))});
   if(opt.marker!=null){const x=sx(opt.marker);svg.append(sv("line",{x1:x,x2:x,y1:top,y2:H-bottom,class:"ref"}));svg.append(sv("text",{x:x+4,y:top+10,class:"tick"},opt.markerLabel||""))}
   box.append(svg);const lg=el("div","legend");[["Equity in","--c2"],["Cash to equity","--c3"],["Cumulative","--c1"]].forEach(([nm,c])=>{const sp=el("span");const d=el("i");d.style.background=`var(${c})`;sp.append(d,nm);lg.append(sp)});box.append(lg);
@@ -1528,11 +1545,11 @@ function tornado(box,title,base,rows,note){
       g.append(sv("text",{x:cx+d+(d<0?-4:4),y:y+rowH/2+4,class:"val","text-anchor":d<0?"end":"start"},(v-base>=0?"+":"−")+Math.abs(v-base).toFixed(1)));svg.append(g)})});
   box.append(svg);if(note)box.append(el("div","src",note))}
 function verdictText(m){
-  const ppTxt=m.prepayC>0.5?`, the customer prepays $${fmtM(m.prepayC)}M`:"";const jTxt=m.juniorC>0.5?`, junior capital adds $${fmtM(m.juniorC)}M`:"";
-  const eq=`equity puts in $${fmtM(m.equity0)}M of capex plus $${fmtM(Math.max(0,m.totEq-m.equity0))}M of interest, fees and top-ups`;
+  const ppTxt=m.prepayC>0.5?`, the customer prepays ${money(m.prepayC)}`:"";const jTxt=m.juniorC>0.5?`, junior capital adds ${money(m.juniorC)}`:"";
+  const eq=`equity puts in ${money(m.equity0)} of capex plus ${money(Math.max(0,m.totEq-m.equity0))} of interest, fees and top-ups`;
   const ret=m.eqIRR==null?"Equity does not earn a return in the horizon":`Equity earns <b>${pct(m.eqIRR)}</b>${m.eqPayback?` and is paid back in <b>${m.eqPayback.toFixed(1)} years</b>`:" and is not paid back inside the horizon"}; the project itself earns ${m.prIRR==null?"nothing":"<b>"+pct(m.prIRR)+"</b>"} unlevered`;
-  let weak="Cover holds through the loan.";if(m.totSh>0.5)weak=`Weakest point: equity has to top up debt service by $${fmtM(m.totSh)}M.`;else if(m.breaches){const lastB=Math.max(...m.rows.map((r,i)=>r.dscr!=null&&r.dscr<MP.dscr?i:-1));const inRamp=lastB<m.bq+Math.round(MP.rampQ)+Math.round(MP.grace);weak=`Weakest point: cover falls to ${m.minD.toFixed(2)}x, below the ${MP.dscr}x covenant, in ${m.breaches} quarter${m.breaches>1?"s":""}${inRamp?" during ramp-up, which a lender would carry as an interest-only period":""}.`}else if(m.balloon>0.5)weak=`Weakest point: $${fmtM(m.balloon)}M is still owed at tenor and has to be refinanced.`;else if(m.eqIRR!=null&&m.eqIRR<m.rate)weak="Weakest point: equity earns less than the debt costs.";
-  return `A <b>${MP.mw} MW</b> block costs <b>$${fmtM(m.capexTot)}M</b> ($${(MP.capexSite+MP.capexIT).toFixed(1)}M per MW). Lenders fund <b>$${fmtM(m.seniorC)}M</b> at ${(m.rate*100).toFixed(1)}%${ppTxt}${jTxt}, and ${eq}. ${ret}. ${weak}`}
+  let weak="Cover holds through the loan.";if(m.totSh>0.5)weak=`Weakest point: equity has to top up debt service by ${money(m.totSh)}.`;else if(m.breaches){const lastB=Math.max(...m.rows.map((r,i)=>r.dscr!=null&&r.dscr<MP.dscr?i:-1));const inRamp=lastB<m.bq+Math.round(MP.rampQ)+Math.round(MP.grace);weak=`Weakest point: cover falls to ${m.minD.toFixed(2)}x, below the ${MP.dscr}x covenant, in ${m.breaches} quarter${m.breaches>1?"s":""}${inRamp?" during ramp-up, which a lender would carry as an interest-only period":""}.`}else if(m.balloon>0.5)weak=`Weakest point: ${money(m.balloon)} is still owed at tenor and has to be refinanced.`;else if(m.eqIRR!=null&&m.eqIRR<m.rate)weak="Weakest point: equity earns less than the debt costs.";
+  return `A <b>${MP.mw} MW</b> block costs <b>${money(m.capexTot)}</b> ($${(MP.capexSite+MP.capexIT).toFixed(1)}M per MW). Lenders fund <b>${money(m.seniorC)}</b> at ${(m.rate*100).toFixed(1)}%${ppTxt}${jTxt}, and ${eq}. ${ret}. ${weak}`}
 function compareCases(){
   const rows=Object.entries(PRESETS).map(([k,v])=>[v.label,runModel(v),k===mpreset]);if(!mpreset)rows.push(["Current levers",runModel(MP),true]);
   const t=$("#compare");t.textContent="";table("#compare",["Case","Capex, $M","Senior, $M","Equity in, $M","Equity IRR","Equity payback, yrs","Project IRR","Min DSCR","Balloon at tenor, $M"],rows.map(([n,m,cur])=>[(cur?"▶ ":"")+n,fmtM(m.capexTot),fmtM(m.seniorC),fmtM(m.totEq),m.eqIRR==null?"n.a.":pct(m.eqIRR),m.eqPayback?m.eqPayback.toFixed(1):">"+Math.round(m.rows.length/4),m.prIRR==null?"n.a.":pct(m.prIRR),m.minD==null?"–":m.minD.toFixed(2)+"x",m.balloon>0.5?fmtM(m.balloon):"–"]),[1,2,3,4,5,6,7,8])}
@@ -1554,15 +1571,15 @@ function recalc(){
   const eqCls=m.eqIRR==null?"bad":m.eqIRR>=0.18?"good":m.eqIRR<m.rate?"bad":null,dCls=m.minD==null?null:m.breaches?"bad":m.minD>=MP.dscr+0.2?"good":null;
   tiles.append(tile("Equity IRR",m.eqIRR==null?"n.a.":pct(m.eqIRR),m.eqPayback?`paid back in ${m.eqPayback.toFixed(1)} years`:"not paid back in horizon",eqCls),
     tile("Project IRR, unlevered",m.prIRR==null?"n.a.":pct(m.prIRR),m.prPayback?`simple payback ${m.prPayback.toFixed(1)} years`:"not paid back in horizon"),
-    tile("Equity in","$"+fmtM(m.totEq)+"M",`$${fmtM(m.equity0)}M of capex + $${fmtM(Math.max(0,m.totEq-m.equity0))}M interest, fees, top-ups`),
-    tile("Senior loan","$"+fmtM(m.seniorC)+"M",`${(m.rate*100).toFixed(2)}% all-in · ${MP.adv}% advance · ${MP.tenor}-yr tenor`),
+    tile("Equity in",money(m.totEq),`${money(m.equity0)} of capex + ${money(Math.max(0,m.totEq-m.equity0))} interest, fees, top-ups`),
+    tile("Senior loan",money(m.seniorC),`${(m.rate*100).toFixed(2)}% all-in · ${MP.adv}% advance · ${MP.tenor}-yr tenor`),
     tile("Minimum cover",m.minD==null?"n.a.":m.minD.toFixed(2)+"x",m.breaches?`${m.breaches} quarter${m.breaches>1?"s":""} below ${MP.dscr}x`:`covenant ${MP.dscr}x held`,dCls),
-    tile("Cash to equity, total","$"+fmtM(m.totDist)+"M",`${(m.totDist/Math.max(0.001,m.totEq)).toFixed(2)}x money multiple`));
+    tile("Cash to equity, total",money(m.totDist),`${(m.totDist/Math.max(0.001,m.totEq)).toFixed(2)}x money multiple`));
   $("#verdict").innerHTML=verdictText(m);
   const idc=Math.max(0,m.totEq-m.equity0-m.totSh);
   hstack($("#viz-su"),"Sources and uses, $M",[{label:"Sources",parts:[{name:"Senior loan",value:m.seniorC,cssVar:"--c1"},{name:"Prepayment",value:m.prepayC,cssVar:"--c4"},{name:"Junior",value:m.juniorC,cssVar:"--c5"},{name:"Equity",value:m.equity0+idc,cssVar:"--c3"}]},{label:"Uses",parts:[{name:"Site, power, hall",value:MP.mw*MP.capexSite,cssVar:"--c1"},{name:"IT equipment",value:MP.mw*MP.capexIT,cssVar:"--c2"},{name:"Interest and fees in build",value:idc,cssVar:"--c4"}]}],{note:"Equity includes interest and commitment fees paid during construction. Debt-service top-ups after start are excluded."});
-  const flags=[];if(m.balloon>0.5)flags.push(MP.amort==="bullet"?`The bullet of $${fmtM(m.balloon)}M at year ${MP.tenor} is paid from equity here; in practice it would be refinanced.`:`$${fmtM(m.balloon)}M is still outstanding at tenor (year ${MP.tenor}). The model assumes it is refinanced on the same terms and keeps amortizing; that refinancing is the main risk in the structure.`);
-  if(m.totSh>0.5)flags.push(`Equity has to top up debt service by $${fmtM(m.totSh)}M in total; lenders would read that as a default risk, not a plan.`);
+  const flags=[];if(m.balloon>0.5)flags.push(MP.amort==="bullet"?`The bullet of ${money(m.balloon)} at year ${MP.tenor} is paid from equity here; in practice it would be refinanced.`:`${money(m.balloon)} is still outstanding at tenor (year ${MP.tenor}). The model assumes it is refinanced on the same terms and keeps amortizing; that refinancing is the main risk in the structure.`);
+  if(m.totSh>0.5)flags.push(`Equity has to top up debt service by ${money(m.totSh)} in total; lenders would read that as a default risk, not a plan.`);
   if(MP.term<MP.tenor)flags.push(`The contract (${MP.term} years) is shorter than the loan (${MP.tenor} years): rent after year ${MP.term} is assumed at ${MP.renew}% of the initial price. Lenders carry that renewal risk, which is why DDTL 5.5 cost 325 bps more than the investment-grade facility.`);
   if(m.eqIRR!=null&&m.eqIRR<m.rate)flags.push("Equity earns less than the debt costs: leverage is destroying value in this case.");
   const fb=$("#modelflags");fb.textContent="";fb.hidden=!flags.length;if(flags.length){fb.append(el("div","eyebrow","Watch"));flags.forEach(f=>fb.append(el("div",null,f)))}
@@ -1570,7 +1587,7 @@ function recalc(){
   const op=Y.filter(y=>y.rev>0);
   vbars($("#viz-rent"),"Where each year's cash rent goes, $M",[{name:"Operating cost",cssVar:"--c4"},{name:"Interest and fees",cssVar:"--c2"},{name:"Principal",cssVar:"--c1"},{name:"Junior",cssVar:"--c5"},{name:"Cash to equity",cssVar:"--c3"}],op.map(y=>({label:"Y"+y.y,values:[y.opex,y.int,y.prin,y.jun,y.cfe]})),{W:520,stacked:true,note:"Cash rent is headline rent less the prepayment credit. Shortfalls funded by equity are not shown."});
   jcurve($("#viz-jcurve"),"Equity cash flow by year and cumulative, $M",Y.map(y=>y.cfe-y.eq),Y.map(y=>y.cum),Y.map(y=>"Y"+y.y),{marker:m.eqPayback?Math.ceil(m.eqPayback)-1:null,markerLabel:m.eqPayback?"payback":"",note:"Red bars are equity going in (capex share, construction interest, top-ups); green bars are cash coming out. The line is the running total; it crosses zero at payback."});
-  lines($("#viz-debt"),"Senior and junior balance outstanding, $M",[{name:"Senior debt",cssVar:"--c1",values:Y.map(y=>y.bal)},{name:"Junior",cssVar:"--c5",values:Y.map(y=>y.jbal)}].filter(s=>s.values.some(v=>v>0.01)),Y.map(y=>"Y"+y.y),{W:520,marker:Math.min(Y.length-1,Math.max(0,Math.ceil(MP.tenor)-1)),markerLabel:"tenor",note:m.balloon>0.5?`$${fmtM(m.balloon)}M is still owed at tenor.`:"Fully repaid inside tenor."});
+  lines($("#viz-debt"),"Senior and junior balance outstanding, $M",[{name:"Senior debt",cssVar:"--c1",values:Y.map(y=>y.bal)},{name:"Junior",cssVar:"--c5",values:Y.map(y=>y.jbal)}].filter(s=>s.values.some(v=>v>0.01)),Y.map(y=>"Y"+y.y),{W:520,marker:Math.min(Y.length-1,Math.max(0,Math.ceil(MP.tenor)-1)),markerLabel:"tenor",note:m.balloon>0.5?`${money(m.balloon)} is still owed at tenor.`:"Fully repaid inside tenor."});
   const sens=sensitivities(m);if(sens)tornado($("#viz-tornado"),"What moves equity IRR, percentage points",sens.base,sens.rows,"Each input shocked one at a time, everything else held. Red is worse, green better. The longest bars are the terms to negotiate hardest.");else{$("#viz-tornado").textContent="";$("#viz-tornado").append(el("div","vtitle","What moves equity IRR"),el("div","src","No equity return in this case; change the levers."))}
   compareCases();
   vbars($("#viz-dscr"),"Debt service cover by year (minimum quarter), x",[{name:"DSCR",cssVar:"--c1"}],op.filter(y=>y.dscr!=null&&y.dscr<50).map(y=>({label:"Y"+y.y,values:[Math.min(y.dscr,10)]})),{fmt:v=>v.toFixed(1)+"x",refLine:MP.dscr,refLabel:"covenant "+MP.dscr+"x",note:"Capped at 10x for display. The balloon quarter is excluded."});
