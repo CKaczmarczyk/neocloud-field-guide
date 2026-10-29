@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "3Q26 10-Q discloses for the first time that some TPU system contracts require Google to repurchase sold hardware at pre-set prices over a multi-year term: maximum potential payments $6.6bn; Google says the discount makes exercise uneconomic.",
+      "company": "Alphabet",
+      "date": "2026-10-29",
+      "direction": "neutral",
+      "numbers": "A residual-value floor on accelerators sold to customers; management called servers 6-year assets on the call. Inventory, mostly TPU systems, rose to $13.3bn from $2.4bn at year-end.",
+      "segment": "financing",
+      "source": "Alphabet 3Q26 10-Q; 3Q26 call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+    },
+    {
+      "claim": "SemiAnalysis reads Anthropic's revenue-per-megawatt jump partly as hardware: Blackwell is about 50x Hopper on their efficiency measure. Anthropic runs TPU, Trainium, Nvidia and AMD at once and says the software determines who gets the most from new chips. A 50x generational step is what a Hopper fleet's re-rent value is up against.",
+      "company": "Anthropic",
+      "date": "2026-10-27",
+      "direction": "against",
+      "numbers": "Blackwell about 50x Hopper (SemiAnalysis measure)",
+      "segment": "financing",
+      "source": "SemiAnalysis on Anthropic's S-1, 27 Oct 2026 (not yet checked against the filing)",
+      "url": "https://x.com/SemiAnalysis_"
+    },
+    {
       "claim": "Meta still depreciates most servers over 5.5 years (unchanged since Jan 2025). Server depreciation is accelerating, and a large construction-in-progress balance is not yet depreciating. No analyst has asked about useful lives.",
       "company": "Meta Platforms",
       "date": "2026-10-22",
@@ -72,5 +92,5 @@
   "status": "mixed",
   "summary": "Older chips are still holding value on management's telling: Crusoe says A100 and H100 rents exceed launch levels, and SpaceX says new compute pays back in under a year. But these are statements, not renewal data, and only a small part of fleets has come up for renewal; the test comes when 2027-28 supply is online and the first big block of contracts rolls off. Status unchanged.",
   "title": "What chips earn after their first contract",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
 }

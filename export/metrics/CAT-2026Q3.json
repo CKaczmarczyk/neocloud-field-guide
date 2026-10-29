@@ -1,0 +1,16 @@
+{
+  "active_mw": "",
+  "contracted_mw": "",
+  "date": "2026-10-29",
+  "debt_cost": "No new MP&E financing in 3Q; Financial Products debt $34,551mn match-funded; no dated bond price or rating action found on 29 Oct",
+  "margin": "Power & Energy segment 24.4% / company adj. operating 20.6% (about 20.0% ex $128mn IEEPA refunds)",
+  "name": "Caterpillar",
+  "notes": "Revenue is Power & Energy segment (Power Generation $3,421mn, +30% YoY; company $20,682mn). Backlog $78bn company-wide (call), +$5.9bn QoQ; lead times: large gas prime to 2029, turbines into 2030. Caterpillar does not disclose $/kW or MW, so those fields are blank (equipment supplier). First CAT scorecard row; vs 2Q26 filings: P&E sales +6.6%, margin 24.6% to 24.4%, backlog +8.2%; nothing moved more than 25% except Cat Financial allowance (+13%, not over threshold).",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "8784",
+  "segment": "energy",
+  "source": "Caterpillar 3Q26 8-K Ex. 99.1 and 99.2; 3Q26 call (Gloom transcript) for backlog",
+  "ticker": "CAT",
+  "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm"
+}

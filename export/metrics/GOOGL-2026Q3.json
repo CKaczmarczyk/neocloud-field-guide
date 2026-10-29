@@ -1,0 +1,16 @@
+{
+  "active_mw": "",
+  "contracted_mw": "",
+  "date": "2026-10-29",
+  "debt_cost": "5.55% weighted coupon, 15-year weighted maturity, on $25.1bn of US dollar notes issued in 3Q26 (A$ notes 5.82%); Aa2/AA+ senior unsecured; August deal priced T+33bp (2028) to T+130bp (2066)",
+  "margin": "EBITDA n.a. / operating 36.2% (Google Cloud segment); Alphabet operating 31.8%",
+  "name": "Alphabet",
+  "notes": "Revenue_m = Google Cloud segment (GCP plus TPU system sales). Alphabet does not disclose MW or a capacity price. Cloud +103% YoY, +24% QoQ; backlog $560.8bn. Capex $51.36bn (121% of OCF), FCF -$9.07bn. Off balance sheet: leases not yet commenced $130.5bn (+53% QoQ), backstops $75.7bn ($48.0bn executed), guarantees $22.8bn incl. $6.6bn TPU repurchase. First GOOGL scorecard row. Flags vs 2Q26 filings (>25%): leases not yet commenced +53%, FCF -$5.86bn to -$9.07bn, long-term debt +27%; Cloud revenue +24% QoQ.",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "30709",
+  "segment": "financing",
+  "source": "Alphabet 3Q26 8-K Ex. 99.1 and 10-Q",
+  "ticker": "GOOGL",
+  "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+}

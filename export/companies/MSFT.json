@@ -1,8 +1,9 @@
 {
   "drivers": [],
-  "model": "Largest buyer of neocloud capacity and a major lessor of data centers; its capex and lease commitments drive demand.",
+  "model": "MSFT business-model profile (AI compute lens), 29 October 2026. Sources: FY26 10-K and recast 8-K (28 Oct 2026), 1Q FY27 release and 10-Q, 2 Sep 2026 segment 8-K.\n1. Engine: Microsoft turns enterprise software cash flow and a AAA balance sheet into owned, leased and rented (neocloud) AI capacity, and sells it as Azure consumption and Copilot/M365 seats.\n2. Revenue map: Azure revenue = capacity online x utilization x price per token or GPU-hour ($33.2bn in 1Q FY27, +48%); Agents and Infra segment $76.8bn. Backlog: commercial RPO $677bn, 2.3-year duration, ~30% due in 12 months. OpenAI is ~24% owned and supplied 10.8% of 1Q revenue ($10.0bn).\n3. Costs: depreciation of short-lived servers (~3/4 of capex) and 25-year buildings; finance and operating leases; power.\n4. Capital and funding: 1Q capex incl. finance leases $45.2bn vs OCF $58.0bn; CY26 ~$170bn. Funded by OCF, finance leases ($71.0bn), operating leases ($27.5bn) and $364.6bn of leases not yet commenced; from 29 Oct 2026 also bonds ($25bn+, Aaa/AAA).\n5. Sensitivities: Azure growth vs capacity delivery; third-party (neocloud) delivery timing; GPU useful life; OpenAI credit; component (memory) prices.\n6. Competitive position: largest enterprise distribution; Maia/Cobalt chips; cost of capital far below neoclouds; competes with AWS, Google Cloud, Oracle.\n7. What would break it: Azure growth falling below capex growth for several quarters; OpenAI failing to pay or cutting commitments; lease and bond obligations rising faster than OCF; a rating downgrade.",
   "name": "Microsoft",
-  "next_report": "2026-10-28",
+  "next_report": "2027-01-27",
+  "next_report_note": "Estimated: Microsoft reports 2Q FY27 in late January 2027; date not yet announced (set 29 Oct 2026).",
   "segment": "financing",
   "thesis": "",
   "ticker": "MSFT"

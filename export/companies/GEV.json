@@ -1,8 +1,9 @@
 {
   "drivers": [],
-  "model": "Leading gas turbine maker; its backlog and lead times set how fast new gas generation can reach data centers.",
+  "model": "Engine: GE Vernova sells gas turbines (heavy-duty HA and aeroderivatives), grid equipment and wind turbines, takes cash down payments years ahead through slot reservation agreements (SRAs), and earns a decades-long services annuity on the installed base. Revenue map: Power (3Q26 $6.1bn, 21.4% segment EBITDA margin) = GW shipped (about 5 GW a quarter, toward 20 GW a year, 24 GW in 2028, 30 GW in 2030) x price per kW (FY26 orders about 50% above 2025) plus services (services RPO $92.7bn); Electrification ($3.9bn, 19.1%; Prolec GE from Feb 2026, Trench Group from late 2027) = grid equipment orders, about 1.4x book-to-bill; Wind ($2.7bn, roughly break-even) is the drag. Costs: materials and labor inflation, capacity capex ($6bn 2025-28), R&D ($5bn 2025-28), D&A $439mn a quarter. Funding: customer-funded; current contract liabilities $45.7bn vs $16.8bn cash at 30 Sep 2026; $2.6bn of senior notes; net cash $13.9bn; Fitch A-, S&P BBB positive; Trench ($9.0bn) to be funded about half debt. Sensitivities: price per kW on new slots, SRA conversion, down-payment flows (FCF), data center demand (about 20% of gas customers), Wind project costs, tariffs. Competitive position: one of three heavy-duty OEMs (with Siemens Energy and Mitsubishi Power), largest installed base; aeros compete with reciprocating engines and fuel cells for fast, small sites. What would break it: industry capacity overtaking demand around 2030 and pricing normalizing; SRA cancellations by weaker data center sponsors; deposits reversing faster than new SRAs arrive, cutting FCF while capital return stays high; execution slips at 5 GW a quarter. Sources: 3Q26 10-Q and release (28 Oct 2026); FY25 10-K not refreshed.",
   "name": "GE Vernova",
-  "next_report": "2026-10-28",
+  "next_report": "2027-01-27",
+  "next_report_note": "Estimated, not announced: management said the Capital Markets Day date will be set 'at the January earnings call'; 4Q25 was reported in late January.",
   "segment": "energy",
   "thesis": "",
   "ticker": "GEV"

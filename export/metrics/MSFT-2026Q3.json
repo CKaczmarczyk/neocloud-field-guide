@@ -1,0 +1,16 @@
+{
+  "active_mw": "",
+  "contracted_mw": "",
+  "date": "2026-10-29",
+  "debt_cost": "New-issue talk T+50-55bp (2-year) to T+130-135bp (40-year), Aaa/AAA, at least $25bn in 10 tranches launched 29 Oct 2026 (initial talk, not final pricing); first US bonds since 2017",
+  "margin": "EBITDA n.a. / operating 49.8% (company); Agents and Infra segment 52.8%",
+  "name": "Microsoft",
+  "notes": "First Microsoft row. Revenue_m = Azure revenue (cloud segment proxy); total revenue $92,279mn. Microsoft does not disclose MW. Capex incl. finance leases $45.2bn (below the >$50bn plan on delayed third-party capacity); CY26 view ~$170bn (from ~$175bn). Commercial RPO $677bn (flat QoQ). Leases not yet commenced $364.6bn (+10.8% QoQ). OpenAI revenue $10.0bn (10.8% of total). Rate blank: no capacity price disclosed. Microsoft quarter is fiscal 1Q FY27.",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "33165",
+  "segment": "financing",
+  "source": "Microsoft 1Q FY27 8-K Ex.99.1 and 10-Q; 424B2 (29 Oct 2026); call; bond talk from Yahoo/Investing.com",
+  "ticker": "MSFT",
+  "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm"
+}

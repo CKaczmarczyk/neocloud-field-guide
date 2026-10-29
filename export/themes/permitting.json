@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Galaxy says remaining TCEQ permits do not gate Helios construction or energization and the Texas permitting freeze will not affect Helios timelines; permits for current builds are in hand.",
+      "company": "Galaxy Digital",
+      "date": "2026-10-27",
+      "direction": "neutral",
+      "numbers": "ERCOT Batch Zero gave conditional classification to ~4.2 GW across five Galaxy projects (>1.6 GW at Helios I-II); Caspian's reconsideration was denied; 2.6 GW sits in study load, with clarity around April 2027 and audit results in December.",
+      "segment": "developer",
+      "source": "Galaxy 3Q26 call (Motley Fool transcript)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/27/galaxy-digital-glxy-q3-2026-earnings-call-transcript/"
+    },
+    {
       "claim": "3Q26 10-Q: air permits for larger installations are taking longer than expected, and construction, land-use and gas permits have also been delayed; Bloom generally cannot sell its Energy Servers to a financier until permits are in hand.",
       "company": "Bloom Energy",
       "date": "2026-10-22",
@@ -73,6 +83,16 @@
       "segment": "policy",
       "source": "Utility Dive",
       "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
+    },
+    {
+      "claim": "Asked about permitting and counterparty credit for slots out to 2029-30, the CEO said Caterpillar is 'not seeing significant changes' in customer project timing, but declined to say what share of slots hyperscalers back.",
+      "company": "Caterpillar",
+      "date": "2026-10-29",
+      "direction": "against",
+      "numbers": "No deferrals disclosed; backlog grew $5.9bn QoQ. Management's words and the numbers agree for now, but disclosure is thin.",
+      "segment": "energy",
+      "source": "Caterpillar 3Q26 call (Wells Fargo question; transcript)",
+      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
     }
   ],
   "order": 7,
@@ -80,5 +100,5 @@
   "status": "strengthening",
   "summary": "Opposition is now national politics: Amazon dropped a Virginia campus, Memphis paused applications for 135 days, and Trump is telling developers to pay communities and make their own power. Moratorium bills mostly fail, but local pauses and withdrawals are rising, and cash offers have not reliably won votes.",
   "title": "Permitting and community backlash",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
 }

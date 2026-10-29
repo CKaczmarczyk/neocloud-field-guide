@@ -1,0 +1,16 @@
+{
+  "active_mw": "133 (Helios I Phase I, billing)",
+  "contracted_mw": "526 (all CoreWeave parent); 830 MW Helios II approved, uncontracted",
+  "date": "2026-10-28",
+  "debt_cost": "Phase II senior secured notes due 2031 at 9.875% (latest financing); Phase III debt targeted 1H27",
+  "margin": "EBITDA 86.9% (segment adj. EBITDA $68.7mn after overhead) / operating n.d.; segment GAAP result -$0.4mn after $75.4mn notes interest",
+  "name": "Galaxy Digital",
+  "notes": "Revenue is Data Centers leasing revenue only (2Q26 was $18.9mn, partial quarter: +318% QoQ, flagged >25%); prior row had revenue n/a and margin as company lease-level >90%, so margin is now segment-level after overhead (definition change). Rate ~$200 to ~$198, within range. Data Centers operating cash flow -$129.1mn; parent net contribution $439mn. Call: leases with CoreWeave parent; Helios II summer deal not signed; exit-2027 run-rate $800-850mn.",
+  "period": "2026Q3",
+  "rate": "~$198 per kW-month realized (3Q26 leasing revenue / 133 MW); ~$197 on $315mn Phase I base",
+  "revenue_m": "79.1",
+  "segment": "developer",
+  "source": "Galaxy 3Q26 8-K Ex.99.1 and Ex.99.3; 27 Oct 2026 call",
+  "ticker": "GLXY",
+  "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/glxy-20260930xpressrelease.htm"
+}

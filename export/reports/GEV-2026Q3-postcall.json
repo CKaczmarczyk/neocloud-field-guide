@@ -1,0 +1,712 @@
+{
+  "changes": [
+    "Pricing is showing up in margin faster than modeled: Power segment EBITDA margin 21.4% vs a 17% to 18% guide, and management says 2H26 is the right base for 2027. FY26 gas pricing per kW is about 50% above 2025.",
+    "Backlog quality improved while the headline GW pace slowed: 13 GW of SRAs converted to firm orders, so gas backlog (64 GW) now exceeds SRAs (58 GW); only 11 GW was newly signed. Year-end target raised to at least 130 GW, the bottom of the 130 to 140 GW the market wanted.",
+    "Cash is now customer-funded on a large scale: current contract liabilities $45.7bn (+$5.7bn QoQ) are 2.7x the $16.8bn cash balance, and about $5.3bn of 3Q FCF of $5.4bn came from working capital. FY26 FCF guide raised to $16bn to $17bn.",
+    "Capital deployment stepped up: $9.0bn Trench Group deal (13x 2028E EBITDA, about half debt, close late 2027) and the buyback doubled to $20bn ($10.1bn remaining).",
+    "Credit improved before the print: Fitch upgraded GEV to A- (stable) on 12 August, which the preview card missed; S&P is BBB, positive outlook."
+  ],
+  "checks": "Filings: downloaded the 3Q26 8-K Ex. 99.1 and 10-Q from EDGAR and the webcast slides from gevernova.com, converted to text, and string-matched 94 figures in code (company and segment revenue, EBITDA, margins, orders, FCF, OCF, capex, RPO by type, contract liabilities, cash, borrowings, ratings, share count, gas GW and units, guidance, buybacks, Trench price, multiple, funding and standalone financials); 92 matched as strings and the other 2 (capex '(647)', Power services RPO '76,431') were confirmed by eye with different formatting. 2Q26 and 3Q25 comparatives come from the preview card (itself string-matched to filings) and the slides' trending tables. Derived numbers recomputed in Python: growth rates, beats vs consensus, book-to-bill 2.3x, implied 4Q revenue, EBITDA, FCF and Wind, net cash, contract liabilities less cash, Trench multiples and implied debt, market cap and P/E, buyback average. Transcript: Investing.com and Benzinga were blocked (rate limit, 403), so call content comes from one source (Earnings Whispers), read twice; quotes are short paraphrases. Single source: the 50% per kW pricing, 80/20 customer mix, data center orders of about $1.4bn in 3Q and over $6bn YTD, the Arcaro exchange, 4Q GW and price per kW comments, about $4.5bn Trench debt (consistent with the slides' 50/50 split). Share price $874.36 at 11:09 ET from Yahoo; a MoneyCheck figure of $895.08 conflicted with Yahoo's day range and was not used. No fresh subagent was available, so every figure was listed against its source and reconfirmed in code. Field Guide preview not edited.",
+  "consensus_thesis": "Investors own GE Vernova as the leading heavy-duty gas turbine supplier in a market mostly sold out through 2030, paying for pricing, services and a margin path to 20% by 2028, with credit not in debate.",
+  "date": "2026-10-28",
+  "headline": "The consensus view holds and should move up: pricing is converting to margin a year ahead of the 2028 frame, but a growing share of the cash that funds buybacks and Trench is customer down payments, so the 2027 FCF bridge is now the main open question for equity and credit.",
+  "kind": "postcall",
+  "kona": "GE Vernova is pricing 2026 gas equipment about 50% per kW above 2025 and still takes cash down payments with 'no change in cash terms', so Kona should assume equipment deposits are equity-funded and prices keep rising until 2030 capacity arrives. Aeroderivatives are being absorbed fast (127 ordered in 9M26 vs 45 a year earlier), so Kona should lock engine or aero slots now with refundable deposits and delivery damages; its off-grid design also sidesteps the high-voltage grid gear shortage behind the Trench deal.",
+  "monitor": [
+    "4Q gas GW signed (management: modestly above 3Q's 11 GW) and whether year-end GW under contract clears 130 GW.",
+    "January call: FY27 guide, especially FCF as down payments unwind, and the Capital Markets Day date with a 2030 frame.",
+    "4Q price per kW (guided lower on fewer aeroderivatives) and Electrification data center orders after a softer 3Q (about $1.4bn vs about $2.7bn in 2Q)."
+  ],
+  "name": "GE Vernova",
+  "pdf_brief": "/_blob/337d1b79ef05d448366f53ff8c57dbee",
+  "pdf_report": "/_blob/8948ac79ccb6dfb44db01316a6950e73",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumed",
+          "Quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Gas slots sold out",
+            "Mostly sold out through 2030; 3Q GW signed about 13 GW (BofA); year-end target raised toward 130-140 GW",
+            "11 GW signed (8 SRA, 3 orders), 13 GW converted, 5 GW shipped; 122 GW under contract; target at least 130 GW; 2032 slots selling",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P2 Pricing power",
+            "2H26 orders at high end of +10-20 pts vs 4Q25",
+            "3Q orders priced more than 20% above 4Q25; FY26 price per kW about +50% vs 2025; 4Q price per kW lower on mix",
+            "Confirmed",
+            "Call"
+          ],
+          [
+            "P3 Orders and backlog",
+            "Orders about $22.2bn; RPO toward about $200bn in 2027",
+            "Orders $29.3bn; RPO $196.7bn (+$20.4bn QoQ); above $200bn expected in 4Q26, a year early",
+            "Confirmed",
+            "Release; 10-Q"
+          ],
+          [
+            "P4 Cash and capital return",
+            "FY26 FCF about $12bn funds buybacks; IG balance sheet",
+            "FY26 FCF guide $16-17bn; buyback to $20bn; Trench half debt; Fitch A-. FY27 FCF not addressed",
+            "Confirmed (FY27 unresolved)",
+            "Release; 10-Q"
+          ],
+          [
+            "P5 Margin path to 2028",
+            "Adjusted EBITDA margin 12-14% in FY26 rising to 20% by 2028",
+            "3Q 15.4%; FY guide 13.5-14.5%; implied 4Q about $2.2-2.8bn; Wind positive at $72mn",
+            "Confirmed",
+            "Release"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: Price realization and margin in backlog; backlog over SRAs; Electrification as a second engine (Trench, Prolec, data center orders); capital deployment (M&A plus $20bn buyback); a 2030 frame at a Capital Markets Day. Emphasized less or dropped: The 'GW signed' headline (11 GW, down from 20 GW in 2Q); the 2027 $200bn backlog target (pulled into 4Q26); Wind losses (Vineyard Wind settled); tariffs (now under $100mn for 2026, from $100mn to $200mn). KPIs: More important: backlog GW vs SRA GW, price per kW, contract liabilities vs cash, Power margin. Less: total GW signed per quarter, which now nets against 5 GW a quarter of shipments. Risks: Up: cash quality (down payments), M&A execution and leverage (Trench). Down: Wind claims, tariffs. Unchanged: data center counterparty risk (management says no change in cash terms).",
+      "title": "Key changes: emphasis, KPIs, risks"
+    },
+    {
+      "body": "Trevor: analysts pressed on whether 2H26 Power margins are the 2027 base and on SRA conversion; only Arcaro touched customer financing, and nobody asked about the down-payment unwind or FY27 FCF. Answers were mostly direct; 2030 targets were deferred to a Capital Markets Day.",
+      "table": {
+        "head": [
+          "Topic",
+          "2Q26 (22 Jul)",
+          "3Q26 (28 Oct)",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Orders, GW and SRA conversion",
+            "DeBlase, Arcaro, Dumoulin-Smith",
+            "Mitchell",
+            "Persistent"
+          ],
+          [
+            "Pricing",
+            "-",
+            "DeBlase",
+            "New"
+          ],
+          [
+            "Margins and 2027 base",
+            "-",
+            "Ritchie, Virgo, Mehrotra",
+            "Rising"
+          ],
+          [
+            "Capacity and supply",
+            "DeBlase, Coe, Ritchie",
+            "-",
+            "Fading"
+          ],
+          [
+            "Customer credit and financing",
+            "-",
+            "Arcaro",
+            "New"
+          ],
+          [
+            "Data centers and electrification",
+            "Kaplowitz",
+            "Wertheimer",
+            "Persistent"
+          ],
+          [
+            "M&A (Trench)",
+            "-",
+            "Coe",
+            "New"
+          ],
+          [
+            "Services",
+            "-",
+            "Kaplowitz, Mehrotra",
+            "New"
+          ],
+          [
+            "Aeroderivatives and new tech",
+            "Dendrinos, Thakkar, Ocalan",
+            "Thakkar",
+            "Persistent"
+          ],
+          [
+            "Wind",
+            "-",
+            "Obin",
+            "New"
+          ],
+          [
+            "Cash, down payments and FY27 FCF",
+            "-",
+            "-",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "table": {
+        "head": [
+          "Analyst",
+          "Quarter",
+          "Question (trimmed)",
+          "Answer",
+          "Rating",
+          "Later evidence"
+        ],
+        "rows": [
+          [
+            "David Arcaro, Morgan Stanley (chosen: presses on demand and financing)",
+            "2Q26",
+            "Is 2026 the peak year for gas turbine orders?",
+            "Did not call a peak; pointed to at least 125 GW by year-end and growth into 2027",
+            "Deflected",
+            "3Q signed 11 GW (vs 20 GW in 2Q) but year-end target raised to at least 130 GW"
+          ],
+          [
+            "",
+            "3Q26",
+            "Any customer financing strain, SRA exits or slower conversion?",
+            "No; no change in cash terms required to secure equipment",
+            "Direct",
+            "SRAs fell 63 to 58 GW via 13 GW of conversions, not exits (release)"
+          ]
+        ]
+      },
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "Flags: [↑] better, [↓] worse, [~] within ±5% or normal range, [?] unavailable. For contract liabilities, higher is more customer cash but a future reversal. 2025 segment figures are as recast for the 2026 realignment (company slides). Data center orders from the call (single source).",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Orders",
+            "$29.3bn",
+            "$24.2bn",
+            "$14.6bn",
+            "[↑] / [↑]",
+            "+21% / +96% organic"
+          ],
+          [
+            "Revenue",
+            "$12,642mn",
+            "$11,104mn",
+            "$9,969mn",
+            "[↑] / [↑]",
+            "+14% / +27%"
+          ],
+          [
+            "Adjusted EBITDA",
+            "$1,943mn",
+            "$1,250mn",
+            "$811mn",
+            "[↑] / [↑]",
+            "+55% / +140%"
+          ],
+          [
+            "Adjusted EBITDA margin",
+            "15.4%",
+            "11.3%",
+            "8.1%",
+            "[↑] / [↑]",
+            "+410bp / +730bp"
+          ],
+          [
+            "Diluted EPS (GAAP)",
+            "$4.81",
+            "$2.47",
+            "$1.64",
+            "[↑] / [↑]",
+            "+95% / +193%"
+          ],
+          [
+            "Free cash flow",
+            "$5,409mn",
+            "$5,107mn",
+            "$732mn",
+            "[~] / [↑]",
+            "9M $15,307mn"
+          ],
+          [
+            "RPO (backlog)",
+            "$196,721mn",
+            "$176,284mn",
+            "$135,269mn",
+            "[↑] / [↑]",
+            "+$20.4bn / +45%"
+          ],
+          [
+            "  Equipment RPO",
+            "$104,054mn",
+            "$87,821mn",
+            "$54,092mn",
+            "[↑] / [↑]",
+            "+92% YoY"
+          ],
+          [
+            "  Services RPO",
+            "$92,667mn",
+            "$88,463mn",
+            "$81,177mn",
+            "[~] / [↑]",
+            "+14% YoY"
+          ],
+          [
+            "Power revenue / margin",
+            "$6,067mn / 21.4%",
+            "$5,477mn / 18.8%",
+            "$4,863mn / 13.4%",
+            "[↑] / [↑]",
+            "+800bp YoY"
+          ],
+          [
+            "Electrification revenue / margin",
+            "$3,862mn / 19.1%",
+            "$3,637mn / 18.4%",
+            "$2,565mn / 15.1%",
+            "[↑] / [↑]",
+            "Prolec in 2026"
+          ],
+          [
+            "Wind segment EBITDA",
+            "$72mn",
+            "$(275)mn",
+            "$(61)mn",
+            "[↑] / [↑]",
+            "First positive since 1Q25"
+          ],
+          [
+            "Gas GW under contract",
+            "122 GW",
+            "116 GW",
+            "n.a.",
+            "[~] / [?]",
+            "Backlog 64, SRA 58"
+          ],
+          [
+            "Gas GW signed (SRA + orders)",
+            "11 GW",
+            "20 GW",
+            "n.a.",
+            "[↓] / [?]",
+            "13 GW converted"
+          ],
+          [
+            "Gas turbine orders (units / GW)",
+            "112 / 16.6 GW",
+            "113 / 12.1 GW",
+            "29 / 7.4 GW",
+            "[↑] / [↑]",
+            "21 HA, 57 aero"
+          ],
+          [
+            "Gas turbine shipments (units / GW)",
+            "32 / 5.3 GW",
+            "29 / 3.3 GW",
+            "20 / 4.0 GW",
+            "[↑] / [↑]",
+            "Run-rate 5 GW/qtr"
+          ],
+          [
+            "Elec. data center orders",
+            "about $1.4bn",
+            "about $2.7bn",
+            "n.a.",
+            "[↓] / [?]",
+            "YTD >$6bn (call)"
+          ],
+          [
+            "Contract liabilities (current)",
+            "$45,669mn",
+            "$39,944mn",
+            "n.a.",
+            "[↑] / [?]",
+            "+$19.9bn YTD"
+          ],
+          [
+            "Cash incl. restricted",
+            "$16,764mn",
+            "$13,120mn",
+            "n.a.",
+            "[↑] / [?]",
+            "Net cash $13.9bn"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improving, and mostly structural. Power margin gains come from repriced backlog shipping, which persists; the Wind turn includes the Vineyard Wind settlement and tariff recoveries, which do not.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance (FY26)",
+          "vs prior",
+          "vs consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "$46.5-47.5bn",
+            "Raised from $45.5-46.5bn",
+            "Above $46.22bn",
+            "Power volume and price",
+            "Implies 4Q $13.4-14.4bn vs $13.88bn"
+          ],
+          [
+            "Adj. EBITDA margin",
+            "13.5-14.5%",
+            "Raised from 12-14%",
+            "Above",
+            "Price, volume, productivity",
+            "Implies 4Q EBITDA $2.2-2.8bn"
+          ],
+          [
+            "Free cash flow",
+            "$16-17bn",
+            "Raised from $11.5-12.5bn",
+            "Well above $12.07bn",
+            "Down payments on orders and SRAs",
+            "Implies 4Q $0.7-1.7bn; FY27 open"
+          ],
+          [
+            "Power",
+            "Organic growth 19-21%; margin 19-21%",
+            "Raised from 18-20% / 17-19%",
+            "n.a.",
+            "Better-priced shipments from 2H26",
+            "2H26 the 2027 base (Ritchie)"
+          ],
+          [
+            "Electrification",
+            "$14.5-15.0bn; margin 18-20%, toward high end",
+            "Maintained; margin nudged up",
+            "n.a.",
+            "Volume, productivity",
+            "Pricing positive, slowing (DeBlase)"
+          ],
+          [
+            "Wind",
+            "Revenue down MSD; EBITDA loss $400-500mn",
+            "Revenue better; loss wider than about $400mn",
+            "n.a.",
+            "Offshore costs, tariff recoveries",
+            "Implies 4Q +$85-185mn"
+          ],
+          [
+            "Gas GW under contract",
+            "At least 130 GW at year-end",
+            "Raised from at least 125 GW",
+            "Bottom of 130-140 GW (BNP)",
+            "4Q signing modestly above 3Q",
+            "Needs 8 GW net in 4Q"
+          ],
+          [
+            "Backlog",
+            "Above $200bn in 4Q26",
+            "Pulled forward from 2027",
+            "n.a.",
+            "Equipment growth at Power",
+            "-"
+          ],
+          [
+            "Buyback",
+            "$20bn authorization",
+            "Doubled from $10bn",
+            "n.a.",
+            "Cash generation",
+            "Sized while Trench needs $4.5bn cash"
+          ]
+        ]
+      },
+      "title": "Guidance analysis"
+    },
+    {
+      "body": "5-10 year view: the gas franchise looks like a decade of services annuity built on an installed base being placed now at record prices. The risk is the cycle: once capacity (24 GW in 2028, 30 GW in 2030) meets demand, pricing normalizes, and the market will then pay for services and grid equipment rather than turbine scarcity.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Manufacturing capacity",
+            "Strong",
+            "Improving",
+            "Shipments 5.3 GW in 3Q vs 3.3 GW in 2Q; 5 GW a quarter run-rate reached",
+            "Revenue converts on schedule; capacity, not demand, sets growth"
+          ],
+          [
+            "Technology and installed base",
+            "Strong",
+            "Stable",
+            "21 HA units ordered in 3Q; services RPO $92.7bn, +14% YoY",
+            "Services annuity grows behind every unit shipped"
+          ],
+          [
+            "Customer lock-in",
+            "Strong",
+            "Improving",
+            "Backlog GW now above SRA GW; cash down payments unchanged",
+            "More of the 122 GW is firm, less optional"
+          ],
+          [
+            "Pricing power",
+            "Very strong",
+            "Plateauing at a high level",
+            "More than 20% above 4Q25 in both H1 and 3Q; 4Q price per kW lower on mix",
+            "Margin rises as vintages ship even if price stops rising"
+          ],
+          [
+            "Grid integration (Electrification)",
+            "Building",
+            "Improving",
+            "Prolec closed; Trench adds bushings and instrument transformers at about 33-36% margin",
+            "Second engine; reduces supply bottlenecks in HV gear"
+          ]
+        ]
+      },
+      "title": "Strategic / moat evolution"
+    },
+    {
+      "body": "Pricing is peaking. Concern and response: Management says 3Q orders were priced more than 20% above 4Q25 and FY26 is about 50% per kW above 2025. Evidence: The 'more than 20%' figure is the same as in H1, so the step-up vs 4Q25 did not widen in 3Q; 4Q price per kW is guided lower on mix. Price is high and holding, not still accelerating. FCF is customer money. Concern and response: Parks attributed the $5.3bn working capital benefit to down payments on orders and SRAs. Evidence: Contract liabilities rose $19.9bn YTD; 9M FCF of $15.3bn would be negative without it. No FY27 FCF number was given and no analyst asked. Data center demand is fragile. Concern and response: Arcaro asked about financing strain; Strazik said no exits and no change in cash terms. Evidence: SRAs fell 5 GW but conversions (13 GW) explain it; Electrification data center orders fell to about $1.4bn from about $2.7bn in 2Q (single source).",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Cash quality: down-payment reversal",
+            "Monitoring",
+            "Contract liabilities $45.7bn vs $16.8bn cash; WC was about 98% of 3Q FCF",
+            "Up",
+            "FY27 FCF could fall sharply as units ship; buyback and Trench draw on customer cash"
+          ],
+          [
+            "Gas signing pace and cycle",
+            "Monitoring",
+            "11 GW signed vs 13 GW expected; SRAs 63 to 58 GW",
+            "Stable",
+            "Net GW now grows only by signings minus about 5 GW/qtr shipped"
+          ],
+          [
+            "M&A and leverage",
+            "Not flagged",
+            "Trench $9.0bn, about $4.5bn new debt, close late 2027, termination fee if blocked",
+            "New",
+            "Still net cash and below 1x debt/EBITDA; integration on top of Prolec"
+          ],
+          [
+            "Data center counterparty",
+            "Monitoring",
+            "20% of gas customers are data centers; 'no change in cash terms'",
+            "Stable",
+            "Refundability of SRA deposits still undisclosed"
+          ],
+          [
+            "Wind and tariffs",
+            "Elevated",
+            "Vineyard Wind settled; tariffs under $100mn",
+            "Down",
+            "Fewer one-off drags; FY Wind loss still $400-500mn"
+          ],
+          [
+            "Management transition",
+            "Monitoring",
+            "New CFO (Jan 2027) and new Wind leader",
+            "Stable",
+            "FY27 guide comes from an incoming CFO"
+          ]
+        ]
+      },
+      "title": "Major risks and changes"
+    },
+    {
+      "body": "Trench: $9.0bn (EUR 8.0bn at 1.12), 13x 2028E adjusted EBITDA of $0.7bn before $50-100mn of cost synergies by 2030, 18x 2026E. Funded about half cash and half debt (about $4.5bn new debt, about $0.2bn a year of interest); debt to EBITDA stays below 1x. Revenue $1.4bn (2026E) to $1.9bn (2028E). Per share: at $874.36 (11:09 ET today, +2.3%) the market cap is about $231bn, 35.4x pre-results FY27 consensus EPS of $24.69. Diluted share count fell 2.5% YoY on buybacks. Credit stays strong (net cash, A-), but the cash funding capital return is mostly customer prepayments. The question for bondholders is what minimum cash GEV will hold once deposits unwind.",
+      "table": {
+        "head": [
+          "Item",
+          "3Q26",
+          "2Q26",
+          "Note"
+        ],
+        "rows": [
+          [
+            "Operating cash flow",
+            "$6,057mn",
+            "n.a.",
+            "9M $16,737mn"
+          ],
+          [
+            "Capex",
+            "$647mn",
+            "n.a.",
+            "9M $1,430mn; $6bn plan 2025-28"
+          ],
+          [
+            "Free cash flow",
+            "$5,409mn",
+            "$5,107mn",
+            "FY26 guide $16-17bn"
+          ],
+          [
+            "Contract liabilities (current)",
+            "$45,669mn",
+            "$39,944mn",
+            "Power $33,163mn"
+          ],
+          [
+            "Cash incl. restricted",
+            "$16,764mn",
+            "$13,120mn",
+            "$0.4bn restricted"
+          ],
+          [
+            "Borrowings",
+            "$2,826mn",
+            "$2,849mn",
+            "4.25% 2031, 4.875% 2036, 5.5% 2056 notes"
+          ],
+          [
+            "Net cash",
+            "$13,938mn",
+            "about $10.3bn",
+            "Before Trench"
+          ],
+          [
+            "Buybacks / dividend",
+            "$1,630mn / $0.50",
+            "$2,350mn / $0.50",
+            "Oct to 23rd: $1,316mn; $10.1bn left of $20bn"
+          ],
+          [
+            "Shares outstanding",
+            "264.7mn",
+            "n.a.",
+            "Diluted weighted 268mn vs 275mn a year ago"
+          ],
+          [
+            "Ratings",
+            "S&P BBB (pos.), Fitch A- (stable)",
+            "BBB / BBB+",
+            "Fitch upgrade 12 Aug 2026"
+          ]
+        ]
+      },
+      "title": "Capital, funding and per-share impact"
+    },
+    {
+      "body": "Five signals: 4Q GW signed vs 11 GW and year-end vs 130 GW; FY27 FCF guide and contract-liability trend; Price per kW in 4Q vs 3Q (mix-adjusted); Electrification data center orders vs about $1.4bn in 3Q; Trench regulatory path and any change to buyback pace. Key risks building: Customer-funded cash being deployed into M&A and buybacks; GW-signed pace slowing as conversions take over; Electrification data center orders softer. Confirmation signals: FY27 FCF guide above about $10bn with deposits still rising; 4Q GW at or above 12 GW; Power margin at or above 21% in 4Q. Conviction tripwires: A quarter where contract liabilities fall while SRAs also fall; any SRA cancellation by a data center customer; price per kW down on like-for-like units; Power margin back below 19%.",
+      "table": {
+        "head": [
+          "Style",
+          "Question for owners",
+          "Asked on the call? Why it matters"
+        ],
+        "rows": [
+          [
+            "Credit",
+            "Contract liabilities are $45.7bn against $16.8bn of cash and 3Q working capital was about $5.3bn of $5.4bn FCF. How much of the deposit balance reverses in 2027, what is the FY27 FCF floor, and what minimum cash will you hold after Trench and a $20bn buyback?",
+            "Not asked. Sets buyback capacity and the bondholder cushion."
+          ],
+          [
+            "Credit",
+            "What share of the 58 GW of SRAs sits with non-investment-grade data center sponsors, and how much of each reservation fee is non-refundable?",
+            "Partly asked (Arcaro); refundability not addressed. Decides whether SRAs are backlog or options."
+          ],
+          [
+            "Equity",
+            "3Q pricing was 'more than 20%' above 4Q25, the same phrase as H1. What was the like-for-like heavy-duty price change from 2Q to 3Q, and how do 2029-2030 slots price vs 2027?",
+            "Partly answered (DeBlase): strong, no number. Tests whether pricing has plateaued."
+          ],
+          [
+            "Equity",
+            "With 5 GW a quarter shipping, net GW only grows if signings beat about 5 GW a quarter. What net GW growth do you expect in 2027?",
+            "Partly answered (Mitchell): 4Q modestly above 11 GW; 2027 to grow."
+          ],
+          [
+            "Credit",
+            "If Trench approvals slip past late 2027, does the buyback pace change, and is A- now the rating floor you manage to?",
+            "Partly answered: below 1x debt/EBITDA; no ratings target."
+          ],
+          [
+            "Equity",
+            "For an aeroderivative ordered today, what is the earliest delivery slot and its price per kW vs HA combined cycle?",
+            "Partly answered (Thakkar): demand strong, 4Q lighter; no lead time. Sets the bar for small BTM projects."
+          ]
+        ]
+      },
+      "title": "Monitoring checklist"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "GE Vernova 3Q26 earnings release (8-K Ex. 99.1, 28 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+    },
+    {
+      "title": "GE Vernova 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm"
+    },
+    {
+      "title": "GE Vernova 3Q26 webcast presentation",
+      "url": "https://www.gevernova.com/sites/default/files/gev_webcast_presentation_10282026.pdf"
+    },
+    {
+      "title": "GE Vernova release (company site)",
+      "url": "https://www.gevernova.com/news/ge-vernova-reports-strong-third-quarter-2026-financial-performance"
+    },
+    {
+      "title": "Earnings Whispers: GEV 3Q26 call transcript",
+      "url": "https://earningswhispers.com/transcript/GEV/Q32026"
+    },
+    {
+      "title": "roic.ai: GEV 2Q26 call transcript (Q&A history)",
+      "url": "https://www.roic.ai/quote/GEV/transcripts"
+    },
+    {
+      "title": "Yahoo Finance GEV quote (share price, 28 October 2026)",
+      "url": "https://finance.yahoo.com/quote/GEV/"
+    },
+    {
+      "title": "Yahoo Finance: GE Vernova stock gains on earnings beat (28 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ge-vernova-stock-gains-earnings-105934112.html"
+    },
+    {
+      "title": "Field Guide preview: reports/GEV-2026Q3-preview (consensus anchor, 23 October 2026)",
+      "url": "https://claude.ai/artifact/M94NPJSfJg1ZxyR3uuWyyC"
+    }
+  ],
+  "ticker": "GEV",
+  "verdict": "Strengthening",
+  "versus": "Quarter: beat. Revenue $12.6bn vs $12.0bn consensus (+5%); adjusted EBITDA $1.94bn vs about $1.7bn to $1.8bn; EPS $4.81 vs $4.17 (Yahoo); orders $29.3bn vs $22.2bn (+32%). One miss: 11 GW of gas signed vs BofA's 13 GW. Outlook: above. FY26 revenue, margin and FCF raised; FCF guide of $16bn to $17bn vs $12.07bn consensus."
+}

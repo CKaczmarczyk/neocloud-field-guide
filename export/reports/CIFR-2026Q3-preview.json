@@ -1,0 +1,415 @@
+{
+  "brief": [
+    "Verdict ahead of the print: 3Q26 is still a mining-plus-first-rent quarter, so the numbers are small and loss-making; the stock and the converts will trade on Barber Lake (delivery and cost), parent funding, and whether management signs the next lease without issuing shares near $8.",
+    "Where expectations sit. MarketBeat (26 October) shows 3Q26 consensus EPS of -$0.24 and revenue of $38.44mn (TradingView the same); Zacks (12 October) had -$0.31 and $37.99mn, down 47% from 3Q25's $71.7mn. No 3Q adjusted EBITDA consensus was found. FY26 revenue consensus is $216.23mn (Zacks) to about $219mn (TIKR), against $59.7mn in H1, which implies about $157mn to $159mn in the second half. 2Q26 missed: revenue $24.8mn against $31.86mn expected, adjusted EBITDA -$30.0mn, EPS -$0.65 (including a $150.5mn warrant loss).",
+    "What the quarter should show. Black Pearl's first capacity was delivered in early August, two months early, with rent commenced, so 3Q gets about two months of first-phase rent. Bitcoin mining continues only at Odessa (207 MW, about 346 BTC mined in 2Q on a fixed-price Luminant PPA; TIKR says the site's power supply contract ends in July 2027). Barber Lake has no rent in 3Q: the September amendment moved first rent into 4Q26, phased through 1Q27. Interest expense was $66.7mn in 2Q against interest income of $35.9mn on restricted construction cash.",
+    "Three debates. First, Barber Lake: halls deliver on the amended dates, and the estimate at completion ($2,941mn to $2,966mn, original $2,157mn) stops rising, given Cipher carries the first $359.3mn of overruns and must add about $750mn of equity. Second, funding and dilution: about $2.16bn of converts (2031 at $16.03, 2032 at $15.31) sit far above the share price, the 2030 exchange already issued about 40.7mn shares, settlement defaults moved to shares, and the CFO said a large new project would likely need equity. Third, the next lease: Odessa's power supply contract ends in July 2027 (TIKR) and the CEO says up to 477 MW at Odessa, Reveille and Ulysses can move outside the ERCOT batch process, but no new campus lease has been announced since Stingray in March.",
+    "What would move the stock. Positive: Barber Lake Halls 1 and 2 confirmed on track for 4Q rent with no new cost; Black Pearl's revised schedule no later in aggregate; a signed Odessa or Ulysses lease funded at the project level. Negative: a higher estimate at completion, any Black Pearl rent pushed into 2027, use of the ATM or a new equity raise, or silence on the next lease.",
+    "Kona read-through. Cipher shows what tenant change orders cost a landlord without full pass-through: it carries the first 17% of overruns on a $2.2bn project. Kona should make tenants pay for design changes from the first dollar and tie delivery milestones to tenant-approved design freezes."
+  ],
+  "changes": [
+    "Barber Lake (Fluidstack, Google backstop) was amended on 24 to 25 September: term doubled to 20 years with a binding 10-year follow-on commitment from an unnamed leading AI lab (about $5.2bn more contracted revenue, total over $9bn), but deliveries moved to phased halls from 4Q26 to 1Q27 (Halls 3 and 4 now 4Q26 to 1Q27, Hall 5 1Q27) against the 10-Q's September 2026 delivery and the August expectation of October rent.",
+    "The October deck shows Barber Lake's estimate at completion at $2,941mn to $2,966mn against an original budget of $2,157mn (36% to 38% over); Cipher bears the first $359.3mn of overruns, the tenant rentalizes 50% above that, and Cipher must add about $750mn of project equity.",
+    "Cipher sold $850mn of 0.00% converts due 2032 (conversion price about $15.31, holder put November 2030, capped call to $28.35 costing about $89.7mn) and exchanged about $165.9mn of 1.75% 2030 converts for about 40.7mn shares; on 16 October it switched the default settlement of the 2030 and 2031 converts to physical (shares).",
+    "The stock fell from $13.00 on 12 October to $7.71 on 26 October (StockAnalysis closes), with TIKR reporting a 31% fall in the week of the deal; Cantor cut its target from $28 to $19 (Buy kept). Consensus revenue for 2026 is about $216mn to $219mn, and 2027 about $850mn (TIKR).",
+    "The October deck says Black Pearl is 'implementing updated phased delivery schedule with tenant', after first capacity was delivered two months early in August with rent commenced."
+  ],
+  "checks": "No subagent was available, so I listed every figure with its source and rechecked each one. Filings: I downloaded the 2Q26 release and business update deck, the 2Q26 10-Q, the FY25 10-K, the 25 September Barber Lake 8-K, the 13 October convert deck and launch release, the 14 October pricing release and the 16 October 8-K (settlement-method notices) from EDGAR, converted them to text and string-matched 68 figures in code. Two deck figures ($1,733mn and $2,000mn of notes) were formatted without a dollar sign and were confirmed by a separate search. The figures covered 2Q revenue, adjusted EBITDA, EPS, interest, warrant loss, cash and debt by tranche, ratings, fair values, conversion rates and prices, Barber Lake terms, the EAC, the delivery schedule, the October deck's contracted figures and the 10-K's 244 MW and completion guarantees. Report date and call time: company release via StockTitan. Consensus and market data, reopened on 28 October: MarketBeat (EPS -$0.2358, revenue $38.44mn, FY -$1.36 and -$0.12, 1/15/3/1 ratings, $28.65 target, Cantor $28 to $19 on 16 October, 2Q misses); Zacks via Yahoo ( -$0.31, $37.99mn, -47.02%, FY $216.23mn and -$1.36); TIKR 23 October (31% weekly fall, $30 mean target, 22 analysts, $219mn and $850mn, 6.7x versus 11.4x, Chanos, $750mn); TIKR 10 October ($13.52, $24.50, $18 to $59, NTM EBITDA $212mn to $306mn, 477 MW from the CEO, Odessa power contract to July 2027, CFO comments). Read once only: TradingView, Trefis (two articles), Terrain, StockAnalysis closes (28 October read), MarketChameleon ($8.23 delayed on 28 October, $8.48 close on 27 October, IV 121.5%) and the Bitfury Form 4. Derived figures recomputed in Python: note fair values as a percent of par (104.2, 101.5, 100.4), pro forma debt of about $6.70bn and converts of about $2.16bn, about 456mn pro forma shares (StockAnalysis 415.03mn plus 40.7mn, an approximation) and about $3.75bn market cap at $8.23, the 36% to 38% EAC overrun, 17% for $359.3mn over the budget, -66% since 30 June and -73% from the high, convert premiums of 86% and 95%, and interest at 2.7x revenue. Not found: a 3Q adjusted EBITDA consensus, current bond or CDS prices, MW billing at Black Pearl and whether the greenshoe was exercised. Material is reasonably full, so the card is not labelled provisional, but quarterly consensus rests on few providers.",
+  "consensus_thesis": "Investors own Cipher as a Texas build-to-suit landlord whose 700 gross MW of leases with investment-grade or backstopped tenants ($16.6bn of contracted revenue, 17.3-year weighted lease term, about $843mn average annualized NOI per the October 2026 deck) turn into rent as halls are delivered. At $8.23 on 28 October (about $3.75bn market cap on our pro forma count of about 456mn shares, against about $6.7bn of debt principal pro forma), the stock has fallen 66% since 30 June and 73% from its $30.14 high after the Barber Lake overrun, the $850mn convert and a sector selloff, so the market is now pricing contracted rent with heavy doubts about cost, dilution and funding, not the 3.4 GW pipeline. Positioning is contested: the Street is still Buy-heavy (MarketBeat: 16 of 20 Buy or better, average target $28.65) but Cantor cut to $19 and short seller Jim Chanos has attacked the financings. Bonds: no current trade price was found; the 10-Q carried the three secured project notes at 100.4 to 104.2 of par on 30 June, and the new 0% 2032 converts (conversion price $15.31) sit about 86% above the share price, so they now trade as credit.",
+  "date": "2026-10-28",
+  "headline": "3Q26 revenue (consensus about $38.4mn) is almost irrelevant; Cipher will be judged on whether Barber Lake's first halls bill rent in 4Q26 on the amended schedule, what the project now costs to finish after a 36% to 38% overrun, and how the parent funds roughly $2.16bn of out-of-the-money converts plus the next lease without more common equity at about $8 a share.",
+  "kind": "preview",
+  "kona": "Cipher shows the cost of tenant-driven change orders without full pass-through: on a $2.2bn campus it absorbs the first $359.3mn (about 17% of budget) and adds about $750mn of equity, even with a Google-backstopped tenant. Kona should have the tenant pay for design changes from the first dollar, freeze the design before long-lead orders, and link milestone penalties to a tenant-approved design. Cipher's secured project notes priced at 6.0% to 7.125% only because investment-grade or Google-backstopped rent sits behind them. Without that credit, Kona should expect lenders to require prepayments or guarantees, or a much lower advance rate. Cipher is also building gas laterals for about 2.5 GW of behind-the-meter capacity, which tells Kona that off-grid gas sites are becoming a mainstream landlord option rather than a niche.",
+  "kpis": [
+    {
+      "consensus": "$38.44mn (MarketBeat and TradingView, 26 October); Zacks $37.99mn (12 October); Trefis about $38.9mn",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "3Q26 is the first quarter with HPC rent (Black Pearl from August). FY26 consensus $216.23mn (Zacks) to about $219mn (TIKR).",
+      "prior": "$24.8mn (2Q26); $34.8mn (1Q26); $71.7mn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "HPC lease revenue",
+      "note": "Deferred revenue of $25.5mn for tenant change orders is recognized over the lease term.",
+      "prior": "nil (no lease had commenced at 30 June per 10-Q)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Bitcoin mining revenue",
+      "note": "Black Pearl mining was shut for the HPC conversion; Odessa's power supply contract ends July 2027 (TIKR).",
+      "prior": "$24.8mn (2Q26); about 346 BTC mined at Odessa"
+    },
+    {
+      "consensus": "n.a. for 3Q26; NTM EBITDA consensus about $306mn at 30 September (TIKR)",
+      "current": "",
+      "metric": "Adjusted EBITDA",
+      "note": "Cipher switched its primary non-GAAP measure to adjusted EBITDA from 1Q26.",
+      "prior": "-$30.0mn (2Q26); -$48.2mn (1Q26); $32.3mn (2Q25)"
+    },
+    {
+      "consensus": "-$0.24 (MarketBeat -$0.2358; TradingView -$0.24); Zacks -$0.31",
+      "current": "",
+      "metric": "EPS (GAAP)",
+      "note": "Warrant and power-contract marks can swamp GAAP EPS. FY26 EPS consensus -$1.36 (MarketBeat, Zacks).",
+      "prior": "-$0.65 (2Q26, including $150.5mn warrant loss); -$0.12 (3Q25 per MarketBeat)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Contracted HPC capacity and revenue",
+      "note": "Was $11.4bn and about $793mn NOI in the August deck before the Barber Lake extension.",
+      "prior": "700 gross MW; $16.6bn contracted revenue; 17.3-year WALT; about $843mn average annualized NOI (30 September, October deck)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "MW billing rent",
+      "note": "Barber Lake first rent now 4Q26, phased to 1Q27. Black Pearl is moving to an updated phased schedule.",
+      "prior": "Black Pearl first capacity (size not disclosed) from August; Barber Lake nil"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Interest expense / interest income",
+      "note": "Interest income falls as restricted construction cash is spent.",
+      "prior": "$66.7mn / $35.9mn (2Q26)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Debt and cash",
+      "note": "Pro forma for the October deals, debt principal about $6.70bn (our arithmetic, before any greenshoe).",
+      "prior": "Debt principal $6,016mn and cash $4,560mn ($832mn parent, $3,728mn restricted project cash) at 30 June"
+    }
+  ],
+  "monitor": [
+    "MW billing rent at 30 September and the 31 December target by site (Black Pearl phases; Barber Lake Halls 1 to 5), plus any rent credits under the amended milestones.",
+    "Updated Barber Lake estimate at completion versus $2,941mn to $2,966mn, parent equity still to fund, and whether the parent completion guarantees and the Google backstop cover the extended term.",
+    "Parent liquidity after the convert (greenshoe of up to $150mn; option window ended about 28 October), convert put dates (October 2029, November 2030) and any statement on common equity for the next lease."
+  ],
+  "name": "Cipher Digital",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "On 4 August you said Barber Lake would deliver in September with rent in October and 100% of equipment secured; the 25 September amendment moved Halls 3 to 5 into 4Q26 to 1Q27. How many critical IT MW were billing rent across the company on 30 September, and how many will be on 31 December, by site and hall? What annualized rent does that represent at year-end? If Hall 5 slips past 31 March 2027, does the tenant owe anything, or do you owe rent credits?",
+      "style": "equity",
+      "why": "Consensus has FY27 revenue near $850mn, which needs every hall billing early in 2027. MW billing is the cleanest test of pillar P1 and of management's credibility on dates."
+    },
+    {
+      "question": "Barber Lake's estimate at completion is $2,941mn to $2,966mn against a $2,157mn budget, and you are adding about $750mn of equity behind $1,733mn of Cipher Compute 7.125% notes. What is the EAC at 30 September, how much parent equity is still to be funded, and how much is still exposed under the parent completion guarantees your 10-K describes? Does Google's backstop cover the extended 20-year term or only the original Fluidstack lease, and if the EAC rises again, who pays first?",
+      "style": "credit",
+      "why": "The overrun moves value from shareholders to the project and may put parent cash behind project debt. Whether the backstop covers the extension decides how lenders price any refinancing."
+    },
+    {
+      "question": "You now have about $2.16bn of converts (2031 at about $16.03, 2032 at about $15.31) with holder puts in October 2029 and November 2030, against a share price near $8, and on 16 October you switched default settlement to shares. If the stock stays here, how will you meet those puts in cash? What parent cash will you hold at 31 December after the Barber Lake equity, and what liquidity floor will you keep?",
+      "style": "credit",
+      "why": "Out of the money, the converts are unsecured parent debt sitting behind about $4.5bn of secured project notes. The answer shows whether the parent needs equity, asset sales or a refinancing before 2029."
+    },
+    {
+      "question": "The October deck says Black Pearl is 'implementing updated phased delivery schedule with tenant', two months after you delivered first capacity early. What changed: are the remaining Phase I halls or Phase II now earlier or later, and how many MW will be billing at Black Pearl on 31 December and 30 June 2027? Is the change tenant-driven, and is it priced into rent or cost-sharing?",
+      "style": "equity",
+      "why": "Black Pearl is the largest near-term source of rent. A quiet schedule change could move 2027 revenue as much as Barber Lake did."
+    },
+    {
+      "question": "In August the CFO said current sites could be built without equity but a several-hundred-MW to 1 GW project would likely need it. The stock has fallen about 66% since 30 June, and Odessa's power contract ends in July 2027. For the next lease at Odessa, Reveille or Ulysses, what share of the project would be parent equity, and would you raise it with common stock below $10, with a JV partner, or with tenant prepayments? Will you commit to no ATM issuance below a stated price?",
+      "style": "equity",
+      "why": "Per-share NOI depends on how the next project is funded. At current prices, equity-funded growth dilutes holders more than it adds."
+    },
+    {
+      "question": "In 2Q, interest expense was $66.7mn against $35.9mn of interest income on restricted construction cash. As that cash is spent, when does project-level NOI cover interest at each of Cipher Compute, Black Pearl Compute and Stingray Compute? What debt service coverage ratios do you expect in the first full year of rent for each?",
+      "style": "credit",
+      "why": "This tests whether the project notes stay self-funding through ramp-up or need parent support. It decides how the market prices the next project bond."
+    }
+  ],
+  "risks": [
+    "Further Barber Lake delay or a higher estimate at completion; Cipher bears the first $359.3mn of overruns and about $750mn of added project equity.",
+    "Black Pearl's 'updated phased delivery schedule' pushes rent later than the market models.",
+    "Dilution: physical settlement default on converts, the 40.7mn-share exchange, Bitfury forward-sale deliveries, and possible equity for the next lease.",
+    "Parent credit: about $2.16bn of converts with holder puts in October 2029 and November 2030 sit far out of the money; interest expense exceeds revenue until rent ramps.",
+    "Pipeline risk: ERCOT batch process timing for 2028 sites and no new campus lease since March 2026; Odessa's power contract ends July 2027."
+  ],
+  "sections": [
+    {
+      "body": "Cipher develops, owns and operates Texas data center campuses and leases them on 10-year to 20-year terms to hyperscalers and AI tenants who bring their own GPUs. Rent starts hall by hall as capacity is delivered. Each campus sits in a project subsidiary financed with high-yield secured notes against the lease (Cipher Compute for Barber Lake, Black Pearl Compute, Stingray Compute), with parent equity funded by converts. Legacy bitcoin mining continues at Odessa on a fixed-price PPA. Contracted: Barber Lake 300 MW gross (Fluidstack, Google backstop, now 20 years), Black Pearl 300 MW gross (investment-grade hyperscaler, 15 years), Stingray (investment-grade hyperscaler, 15 years, delivery 1H27); together 700 gross MW.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 12 to 26 October 2026. No 3Q adjusted EBITDA consensus was found; quarterly consensus covers few analysts and moves with mining assumptions.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$38.44mn",
+            "MarketBeat, 26 Oct; TradingView",
+            "2Q26 $24.8mn; 3Q25 $71.7mn"
+          ],
+          [
+            "3Q26 revenue (alt.)",
+            "$37.99mn (-47% YoY); about $38.9mn",
+            "Zacks via Yahoo, 12 Oct; Trefis, 21 Oct",
+            ""
+          ],
+          [
+            "3Q26 EPS",
+            "-$0.24 (-$0.2358)",
+            "MarketBeat, 26 Oct; TradingView",
+            "2Q26 -$0.65 (missed -$0.25); 3Q25 -$0.12"
+          ],
+          [
+            "3Q26 EPS (alt.)",
+            "-$0.31",
+            "Zacks via Yahoo, 12 Oct",
+            ""
+          ],
+          [
+            "3Q26 adjusted EBITDA",
+            "n.a.",
+            "",
+            "2Q26 -$30.0mn"
+          ],
+          [
+            "NTM adjusted EBITDA",
+            "about $306mn (from about $212mn at 30 June)",
+            "TIKR, 10 Oct",
+            ""
+          ],
+          [
+            "FY26 revenue / EPS",
+            "$216.23mn / -$1.36; about $219mn",
+            "Zacks, 12 Oct; MarketBeat 26 Oct (EPS); TIKR 10 and 23 Oct",
+            "H1 revenue $59.7mn"
+          ],
+          [
+            "FY27 revenue / EPS",
+            "about $850mn / -$0.12",
+            "TIKR, 10 and 23 Oct; MarketBeat, 26 Oct",
+            ""
+          ],
+          [
+            "Contracted revenue / NOI",
+            "$16.6bn; about $843mn average annualized NOI",
+            "Company October 2026 deck (as of 30 Sep)",
+            "August deck $11.4bn; about $793mn"
+          ],
+          [
+            "Price target",
+            "Average $28.65 (20 ratings: 1 Strong Buy, 15 Buy, 3 Hold, 1 Sell); about $30 mean (22 analysts, range $18 to $59)",
+            "MarketBeat 26 Oct; TIKR 10 and 23 Oct",
+            "Cantor $28 to $19 (16 Oct)"
+          ],
+          [
+            "Share price",
+            "$8.23 (28 Oct, delayed); close $8.48 (27 Oct), $7.71 (26 Oct)",
+            "MarketChameleon; StockAnalysis",
+            "$24.50 (30 Jun); 52-week high $30.14"
+          ],
+          [
+            "Implied volatility",
+            "30-day IV 121.5%",
+            "MarketChameleon, 27 Oct",
+            ""
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Rent starts on schedule",
+            "Black Pearl rent ramps from August; Barber Lake first rent in 4Q26 and all halls by 1Q27",
+            "MW billing at 30 Sep and year-end target; 3Q revenue against $38.4mn; any rent credits (none to date per the October deck)",
+            "Management; TIKR; Trefis"
+          ],
+          [
+            "P2 Tenant credit is investment-grade",
+            "Black Pearl and Stingray tenants are IG hyperscalers; Barber Lake is backstopped by Google and extended by a leading AI lab",
+            "Whether the Google backstop and the AI lab's 10-year term are firm and how they rank; any naming of the AI lab",
+            "Management; Trefis (bull case)"
+          ],
+          [
+            "P3 Build costs are contained",
+            "Overruns are a Barber Lake one-off, shared with the tenant above $359.3mn; Black Pearl and Stingray have contractual cost protections",
+            "Updated EAC against $2,941mn to $2,966mn; Black Pearl and Stingray cost to complete",
+            "Management; challenged by TIKR and Terrain"
+          ],
+          [
+            "P4 Funded without common equity",
+            "Existing sites fully funded (project bonds plus convert proceeds); new projects may need equity",
+            "Parent cash after the $750mn Barber Lake equity; greenshoe; ATM use; any equity guidance",
+            "Management (CFO, August); challenged by Trefis, TIKR, Chanos"
+          ],
+          [
+            "P5 Pipeline becomes leases",
+            "Odessa, Reveille (70 MW, 3Q27) and Ulysses (200 MW, 4Q27) are signed; Colchis 1 GW energizes in 2028",
+            "New lease or LOI announced; ERCOT Batch Zero status",
+            "Management (CEO expects all to be signed); TIKR (single source for 477 MW)"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "$16.6bn contracted with investment-grade or backstopped tenants; WALT 17.3 years after the Barber Lake extension",
+            "Barber Lake EAC up 36% to 38%; Cipher eats the first $359.3mn and adds about $750mn of equity"
+          ],
+          [
+            "Black Pearl delivered two months early and paying rent",
+            "Revenue still falling as mining winds down; interest expense ($66.7mn) was 2.7x 2Q revenue"
+          ],
+          [
+            "Committed project debt is fixed-rate and funds builds to completion (CFO via TIKR)",
+            "Convert-on-convert funding; 40.7mn shares issued in the exchange; settlement defaults moved to shares (Chanos: 'not zero-cost')"
+          ],
+          [
+            "Forward price to sales 6.7x against a 3-year average of 11.4x (TIKR); Cantor still sees more than 100% upside",
+            "Debt about 137% to 154% of market value (Trefis); stock fell more than peers in the week of the deal"
+          ],
+          [
+            "About 3.4 GW of near-term grid pipeline plus 2.5 GW of BTM potential via gas laterals",
+            "No new campus lease since March; ERCOT batch timing; Bitfury forward-sale share deliveries add supply"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Barber Lake: do Halls 1 and 2 bill in 4Q26 and Halls 3 to 5 by 1Q27, and has the EAC stopped rising? 2) Funding and dilution: with the stock near $8, how does the parent fund the remaining Barber Lake equity and the next project, and do the 2031 and 2032 converts become a refinancing problem at their 2029 and 2030 puts? 3) Next lease: does management sign Odessa, Reveille or Ulysses before Odessa's power supply contract ends in July 2027, and on what funding mix? 4) Black Pearl: what does the 'updated phased delivery schedule' change in rent timing?",
+      "title": "Live debates"
+    },
+    {
+      "body": "3Q26 EPS consensus is -$0.24 at MarketBeat and TradingView but -$0.31 at Zacks (12 October); revenue runs $37.99mn (Zacks) to about $38.9mn (Trefis). Average targets differ: $28.65 (MarketBeat, 20 ratings) against about $30 (TIKR, 22 analysts). Trefis gives the report date as about 11 November in one place and 2 November in another, and TradingView lists a 9:30 a.m. ET call; the company says before the open on 2 November with an 8:00 a.m. ET call. On Barber Lake, Trefis (16 and 21 October) still describes October rent, which the 25 September amendment superseded; TIKR says hall deliveries shifted to 1Q27, while the deck shows Halls 1 and 2 still in 4Q26. Trefis puts Barber Lake Phase 1 at about 168 critical IT MW; the 10-K describes 244 gross MW for Phase I and 300 gross MW in total. Debt-to-market-value is 137.3% (Trefis, 15 October close) or 153.7% (Trefis, 21 October).",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June (August deck and 10-Q): cash $4,560mn, of which $832mn at the parent and $3,728mn restricted project cash; debt principal $6,016mn: Cipher Compute 7.125% secured notes due November 2030 $1,733mn (Ba3/BB-, amortizing with the Google backstop), Black Pearl Compute 6.125% notes due February 2031 $2,000mn (Ba2/BB-), Stingray Compute 6.000% notes due June 2031 $810mn (Ba2/BB-), 1.75% converts due 2030 $173mn and 0.00% converts due 2031 $1,300mn (conversion price about $16.03, holder put October 2029); $200mn revolver undrawn. The 10-Q carried the secured notes at fair values equal to about 104.2, 101.5 and 100.4 of par. In October: $850mn of 0.00% converts due November 2032 (conversion price about $15.31, put November 2030, capped call to $28.35, net proceeds about $835.1mn before the $89.7mn capped call), and about $165.9mn of 2030 converts exchanged for about 40.7mn shares, leaving about $6.6mn. Pro forma debt principal is about $6.70bn and convert principal about $2.16bn (our arithmetic, before any greenshoe of up to $150mn). Stockholders' equity was $562.1mn at 30 June. No current bond or CDS quote was found.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: Barber Lake MW and rent by year-end against the amended schedule; Barber Lake cost to complete, completion guarantee and Google backstop (credit); parent funding of the converts and their puts (credit); Black Pearl's revised phase dates; next lease and the equity question; project cash coverage of interest once interest income falls (credit).",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Cipher Digital: date of 3Q26 business update (GlobeNewswire via StockTitan, 20 October 2026)",
+      "url": "https://www.stocktitan.net/news/CIFR/cipher-digital-announces-date-of-third-quarter-2026-business-update-ieebc0f9cvt8.html"
+    },
+    {
+      "title": "Cipher 2Q26 release (8-K Ex. 99.1, 4 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/q226_earningsxprxdraftxvf.htm"
+    },
+    {
+      "title": "Cipher 2Q26 business update deck (8-K Ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000038/cipherdigital_businessup.htm"
+    },
+    {
+      "title": "Cipher 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+    },
+    {
+      "title": "Cipher FY25 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+    },
+    {
+      "title": "Barber Lake lease amendment release (8-K, 25 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000043/barberlakeleaseamendmentpr.htm"
+    },
+    {
+      "title": "Project Compass convert investor presentation (8-K Ex. 99.1, 13 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000119312526419743/d134900dex991.htm"
+    },
+    {
+      "title": "Convert pricing release (8-K Ex. 99.1, 14 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000119312526421035/d77312dex991.htm"
+    },
+    {
+      "title": "Convert issuance and settlement-method notices (8-K, 16 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000119312526424297/d313847d8k.htm"
+    },
+    {
+      "title": "MarketBeat: Cipher expected to post earnings on Monday (26 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/upcoming-cipher-mining-cifr-expected-to-post-earnings-on-monday-2026-10-26/"
+    },
+    {
+      "title": "TradingView: CIFR Q3'26 revenue estimate",
+      "url": "https://www.tradingview.com/news/tradingview:4f9b57bd4a19e:0-cifr-q3-26-earnings-revenue-estimate-is-38-44m-usd/"
+    },
+    {
+      "title": "Zacks via Yahoo: Cipher suffers a larger drop (12 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cipher-digital-inc-cifr-suffers-211504395.html"
+    },
+    {
+      "title": "TIKR: Cipher lost 31% in a week; Cantor sees 112% upside (23 October 2026)",
+      "url": "https://www.tikr.com/blog/cipher-digital-lost-31-in-a-week-cantor-fitzgerald-still-sees-112-upside"
+    },
+    {
+      "title": "TIKR: Cipher has lost 45% since June 30 (10 October 2026)",
+      "url": "https://www.tikr.com/de/blog/cipher-digital-stock-has-lost-45-since-june-30-heres-why-its-next-lease-matters-more-than-rising-yields"
+    },
+    {
+      "title": "TIKR: Cipher sinks 12% on $850mn convert (13 October 2026)",
+      "url": "https://www.tikr.com/blog/cipher-digital-sinks-12-on-850-million-zero-coupon-convertible-note-offering"
+    },
+    {
+      "title": "Terrain: Cipher issues $850mn of converts",
+      "url": "https://terrainlabs.ai/s/cifr-cipher-digital-new-debt-trr8"
+    },
+    {
+      "title": "Trefis: Should you wait before buying Cipher (21 October 2026)",
+      "url": "https://www.trefis.com/stock/cifr/articles/619688/should-you-wait-before-buying-cipher-digital-stock/2026-10-21"
+    },
+    {
+      "title": "Trefis: What changed for Cipher stock (16 October 2026)",
+      "url": "https://www.trefis.com/stock/cifr/articles/619005/what-changed-for-cipher-digital-stock-and-what-did-not/2026-10-16"
+    },
+    {
+      "title": "StockAnalysis CIFR price history",
+      "url": "https://stockanalysis.com/stocks/cifr/history/"
+    },
+    {
+      "title": "MarketChameleon CIFR summary (price, IV)",
+      "url": "https://marketchameleon.com/Overview/CIFR/Summary/"
+    },
+    {
+      "title": "Bitfury Form 4 (forward-sale delivery, 26 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000112329226001436/form4.xml"
+    }
+  ],
+  "ticker": "CIFR",
+  "verdict": "Preview",
+  "versus": "Pending — reports 3Q26 before the open on Monday 2 November 2026; call 8:00 a.m. ET",
+  "watch": [
+    "MW billing at 30 September and 31 December, by site.",
+    "Barber Lake estimate at completion, parent equity to go, and status of the completion guarantees and Google backstop.",
+    "Black Pearl revised phase dates.",
+    "Greenshoe exercise, parent cash, any ATM use or equity commentary.",
+    "Next lease: Odessa, Reveille, Ulysses; Colchis Batch Zero status."
+  ]
+}

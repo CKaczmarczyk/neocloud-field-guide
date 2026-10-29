@@ -1,0 +1,729 @@
+{
+  "changes": [
+    "Cloud beat and doubled: revenue $30.7bn (+103%), operating margin 36.2% (35.6% in 2Q26), backlog $560.8bn (+$46.9bn QoQ). TPU system sales were a 'meaningful contributor' but are not sized.",
+    "Search slowed: Search & other $63.35bn, +12.0% against +16.8% in 2Q26 and flat QoQ; advertising $82.0bn vs $83.4bn expected (Reuters/LSEG). The stock fell about 13% to $281.95 by mid-morning on 29 October.",
+    "Cash burn deepened: capex $51.4bn (121% of operating cash flow), FCF -$9.1bn after -$5.9bn in 2Q26, with a $10.9bn YTD TPU inventory build and a $5.2bn EC fine. The unchanged guide implies 4Q capex of $63bn to $73bn.",
+    "Off-balance-sheet commitments jumped: leases not yet commenced $130.5bn (+53% QoQ), backstops $75.7bn ($48.0bn executed, $27.7bn to come, $10bn of it for the Blackstone JV Crux AI), energy-equipment guarantees $16.2bn (from $7.6bn), purchase commitments $924.4bn.",
+    "Funding kept flowing: $28.7bn of notes (5.55% weighted coupon, 15-year average life on the dollar tranches) and $12.4bn of ATM stock in the quarter; long-term debt $125.1bn against $46.5bn at year-end."
+  ],
+  "checks": "Figures were string-matched in code (verify.py, 98 checks, 0 missing) against text extracted from the 3Q26 8-K Ex. 99.1 and 3Q26 10-Q (EDGAR), the 2Q26 Ex. 99.1, and the Quartr transcripts for 3Q26, 2Q26 and 3Q25 (via StockAnalysis). Derived numbers recomputed in Python: growth rates, Cloud margins (36.2%, 35.6%, 23.7%), Search growth (12.0% vs 16.8%), capex/OCF (121%), implied 4Q capex ($195bn-$205bn less 9M $131.95bn = $63.0bn-$73.0bn), QoQ changes in backlog (+$46.9bn), leases (+$45.3bn, +53%), backstops, guarantees, purchase commitments (+14.0%), net cash (about $139bn), EPS ex-marks ($2.12 + $0.55 = $2.67), beats and misses vs consensus, and the share move (-13.2%). Consensus: Yahoo/Zacks/BofA from the preview card (not edited); LSEG revenue $128.2bn, ads $83.4bn, EPS $3.02 and near-breakeven FCF from Reuters via Investing.com (single source). Investing.com's own transcript article compares GAAP EPS $2.12 with $3.02 and gives a $322.22 close; both were not used. Price: $324.89 close on 28 Oct and $281.95 intraday on 29 Oct from StockAnalysis (intraday, not a close). No dated post-earnings bond or CDS level was found. Trevor's topic counts are his own classification of five transcripts (3Q25 to 3Q26). The 3Q25 token figure (under 8bn) is inferred from 'more than four times'; 2Q26 about 22bn from the preview. No fresh subagent was used (this was itself a fork); every figure was listed against its source and confirmed in code. Pages rendered to PNG and checked: report 5 pages, brief 2.",
+  "consensus_thesis": "Investors own Alphabet as the only hyperscaler with its own full stack (TPUs, Gemini, Cloud) and pay for Cloud growing near 90% off a $514bn backlog, with external TPU sales a second engine in 2027 that justifies about $200bn of 2026 capex and $300bn or more in 2027, funded mainly by operating cash flow and Aa2/AA+ debt.",
+  "date": "2026-10-29",
+  "headline": "The consensus view should shift from 'Cloud pays for the build' to 'Cloud is growing into a build that Search, debt and off-balance-sheet support now carry': long-term compounding holds on Cloud and TPUs, but credit quality weakens at the margin as commitments grow faster than cash generation.",
+  "kind": "postcall",
+  "kona": "Google's support for third-party sites is being industrialized: $75.7bn of backstops, including $10bn reserved for Crux AI, a Blackstone joint venture selling TPU compute-as-a-service, and $16.2bn of guarantees that pre-fund counterparties' power equipment. For Kona the most realistic route to Google credit is now to host TPU systems for a Crux-type venture or an approved tenant, and to ask for an equipment guarantee on gensets rather than a lease backstop alone. The new $6.6bn TPU repurchase guarantee shows that residual-value floors are negotiable; Kona should seek one if it ever owns accelerators.",
+  "monitor": [
+    "January call: the 2027 capex number (Street about $300bn to $330bn), its funding mix and any FCF floor.",
+    "4Q Cloud margin as third-party bridging capacity ramps (management guided to near-term headwinds).",
+    "Search growth after FX and lapping (management: about 2 points of lapping drag in 4Q) and ad load in AI Mode."
+  ],
+  "name": "Alphabet",
+  "pdf_brief": "/_blob/2299fb2770c1528e3283793381e62105",
+  "pdf_report": "/_blob/3fb628c42ae160ff4b341aef5c3ca1df",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumed",
+          "Quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Cloud hypergrowth",
+            "Cloud about $29.2bn (+89% to 92%); backlog above $514bn",
+            "$30.7bn (+103%); backlog $560.8bn; 2,600 customers above 100bn tokens; capacity still constrained",
+            "Confirmed",
+            "Release; 10-Q; call"
+          ],
+          [
+            "P2 Cloud margin holds",
+            "Mid-30s despite rented capacity; 'modest' pressure in 3Q",
+            "36.2%, but bridging capacity arrived only at quarter end; headwinds now guided for 4Q",
+            "Unresolved",
+            "Release; call"
+          ],
+          [
+            "P3 TPU second engine",
+            "External TPU sales become a large 2027 line",
+            "Meaningful contributor; about 100 TPU customers; new Oracle and Crux AI channels; inventory $13.3bn; no revenue figure",
+            "Unresolved",
+            "Call; 10-Q"
+          ],
+          [
+            "P4 Capex funded, earns a return",
+            "About $200bn in 2026, OCF and Aa2 debt first, no new equity",
+            "FCF -$9.1bn vs near breakeven expected; 4Q capex implied $63bn to $73bn; $28.7bn notes and $12.4bn ATM in 3Q; 2027 frame deferred",
+            "Challenged",
+            "Release; 10-Q; Reuters"
+          ],
+          [
+            "P5 Off-balance-sheet manageable",
+            "Backstops and leases collateralized by usable assets",
+            "Leases not yet commenced +$45.3bn to $130.5bn; backstops $75.7bn; guarantees $22.8bn incl. $6.6bn TPU buybacks; no analyst asked",
+            "Challenged",
+            "10-Q"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: TPU systems as a platform sold through others (Oracle, Crux AI, Cirrascale); Gemini 4 Argon and Carbon; agentic commerce (UCP, Universal Cart); ROIC 'meaningfully above' cost of capital. Emphasized less or dropped: Search acceleration (now framed as lapping and FX); the 'modest' Cloud margin wording; any FCF target; the SpaceX GPU deal (not mentioned on the call). More important: inventory (TPU working capital), leases not yet commenced, backstop and guarantee totals, Search growth. Less important: headline EPS, which swings with the SpaceX mark (-$8.7bn in 3Q). Up: funding and refinancing, off-balance-sheet exposure, Search monetization in AI Mode, GPU/TPU residual value (repurchase guarantees). Down: Cloud demand, model competitiveness (Gemini 4 leads the Artificial Analysis index, per management).",
+      "title": "What management emphasized"
+    },
+    {
+      "body": "3Q26 answers: Search slowdown (Anmuth, Nowak) direct: FX, the EU de minimis change, World Cup timing and lower AI Mode monetization. TPU margins (Sandler, Post) deflected: 'we do not provide' product financials. Cloud growth ex-TPU (Shmulik) deflected: 'again very strong'. Capex intensity as labs build their own (Sandler) partial: TPU sales described as an inventory cycle, not capex. Pre-emption: the CFO addressed ROIC and FCF in prepared remarks, and no analyst followed up.",
+      "table": {
+        "head": [
+          "Topic (questions touching it)",
+          "3Q25",
+          "4Q25",
+          "1Q26",
+          "2Q26",
+          "3Q26",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Search monetization and agentic",
+            "6",
+            "5",
+            "5",
+            "2",
+            "5",
+            "Persistent"
+          ],
+          [
+            "TPUs and custom silicon",
+            "1",
+            "1",
+            "2",
+            "4",
+            "4",
+            "Rising"
+          ],
+          [
+            "Cloud and TPU margins, deal economics",
+            "1",
+            "0",
+            "2",
+            "2",
+            "2",
+            "Persistent"
+          ],
+          [
+            "Compute capacity and allocation",
+            "0",
+            "1",
+            "2",
+            "1",
+            "2",
+            "Persistent"
+          ],
+          [
+            "Capex, ROIC and returns",
+            "1",
+            "2",
+            "2",
+            "2",
+            "1",
+            "Fading"
+          ],
+          [
+            "Funding, FCF, capital structure",
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "Fading"
+          ],
+          [
+            "Backstops, leases, power, concentration",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "Never asked"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "table": {
+        "head": [
+          "Analyst",
+          "Quarter",
+          "Question (trimmed)",
+          "Answer in brief",
+          "Rating",
+          "Later evidence"
+        ],
+        "rows": [
+          [
+            "Doug Anmuth, JPMorgan (chosen: most often on funding)",
+            "1Q26",
+            "Can the capex path service the backlog?",
+            "Capex rises to meet demand; detail later",
+            "Partial",
+            "Backlog $561bn; capex $51.4bn in 3Q"
+          ],
+          [
+            "",
+            "2Q26",
+            "Optimal capital structure; cost of debt vs equity",
+            "OCF first, then debt; no more equity except ATM for SBC taxes",
+            "Direct",
+            "$12.4bn ATM in 3Q; $17.4bn YTD SBC payments"
+          ],
+          [
+            "",
+            "3Q26",
+            "Productivity from new models; Search slowdown",
+            "Answered on FX and AI Mode; no funding question",
+            "Direct",
+            "Funding left unasked"
+          ],
+          [
+            "Ross Sandler, Barclays",
+            "3Q26",
+            "TPU revenue recognition, margin, capex hand-off to labs",
+            "No product financials; inventory before revenue",
+            "Deflected",
+            "Inventory $13.3bn; $6.6bn repurchase guarantees"
+          ]
+        ]
+      },
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "Flags: for cost, capex, debt, commitments and share count, [↓] means worse for shareholders. 3Q25 backlog from the 3Q25 call; YE25 = 31 December 2025 where the 3Q25 figure is not comparable. Sources: 3Q26 and 2Q26 8-K Ex. 99.1, 3Q26 10-Q, call transcripts.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "$127.58bn",
+            "$119.80bn",
+            "$102.35bn",
+            "[~] +6.5% / [↑] +24.7%",
+            "Steady"
+          ],
+          [
+            "Search & other",
+            "$63.35bn",
+            "$63.27bn",
+            "$56.57bn",
+            "[~] +0.1% / [↓] +12.0%",
+            "Slowing (16.8% in 2Q)"
+          ],
+          [
+            "YouTube ads",
+            "$11.21bn",
+            "$11.06bn",
+            "$10.26bn",
+            "[~] +1.4% / [~] +9.2%",
+            "Flat growth"
+          ],
+          [
+            "Google Cloud revenue",
+            "$30.71bn",
+            "$24.77bn",
+            "$15.16bn",
+            "[↑] +24.0% / [↑] +102.6%",
+            "Accelerating"
+          ],
+          [
+            "Cloud operating income (margin)",
+            "$11.12bn (36.2%)",
+            "$8.81bn (35.6%)",
+            "$3.59bn (23.7%)",
+            "[↑] / [↑]",
+            "Rising"
+          ],
+          [
+            "Operating margin, Alphabet",
+            "31.8%",
+            "34.0%",
+            "30.5%",
+            "[↓] -2.2pp / [~] +1.3pp",
+            "Mixed"
+          ],
+          [
+            "Depreciation",
+            "$8.37bn",
+            "$7.10bn",
+            "$5.61bn",
+            "[↓] +17.8% / [↓] +49.2%",
+            "Rising"
+          ],
+          [
+            "Capex",
+            "$51.36bn",
+            "$44.92bn",
+            "$23.95bn",
+            "[↓] +14.3% / [↓] +114.4%",
+            "Rising"
+          ],
+          [
+            "Operating cash flow",
+            "$42.29bn",
+            "$39.07bn",
+            "$48.41bn",
+            "[↑] +8.2% / [↓] -12.6%",
+            "Below 2025"
+          ],
+          [
+            "Free cash flow",
+            "-$9.07bn",
+            "-$5.86bn",
+            "$24.46bn",
+            "[↓] / [↓]",
+            "Negative 2 quarters"
+          ],
+          [
+            "Inventory (mostly TPU systems)",
+            "$13.31bn",
+            "$9.99bn",
+            "$2.44bn (YE25)",
+            "[?] +33%",
+            "Building"
+          ],
+          [
+            "Cloud backlog",
+            "$560.8bn",
+            "$513.9bn",
+            "$155bn",
+            "[↑] +9.1% / [↑] 3.6x",
+            "Rising"
+          ],
+          [
+            "Leases not yet commenced",
+            "$130.5bn",
+            "$85.2bn",
+            "n.a.",
+            "[↓] +53%",
+            "Rising"
+          ],
+          [
+            "Data center backstops (executed / to come)",
+            "$48.0bn / $27.7bn",
+            "$43.8bn / $24.1bn",
+            "$16.9bn (YE25)",
+            "[↓] +$7.8bn total",
+            "Rising"
+          ],
+          [
+            "Financial guarantees (energy / TPU buyback)",
+            "$16.2bn / $6.6bn",
+            "$7.6bn / n.d.",
+            "n.a.",
+            "[↓] new TPU line",
+            "Rising"
+          ],
+          [
+            "Purchase commitments",
+            "$924.4bn",
+            "$811.0bn",
+            "n.a.",
+            "[↓] +14.0%",
+            "Rising"
+          ],
+          [
+            "Long-term debt",
+            "$125.10bn",
+            "$98.17bn",
+            "$46.55bn (YE25)",
+            "[↓] +27%",
+            "Rising"
+          ],
+          [
+            "Cash and marketable securities",
+            "$265.10bn",
+            "$242.47bn",
+            "$126.84bn (YE25)",
+            "[↑] +9.3%",
+            "Rising"
+          ],
+          [
+            "Diluted EPS (excl. equity marks)",
+            "$2.12 ($2.67)",
+            "$9.11 (about $2.85)",
+            "$2.87",
+            "[?] marks distort",
+            "Down"
+          ],
+          [
+            "Diluted shares",
+            "12,368mn",
+            "12,309mn",
+            "12,203mn",
+            "[↓] +0.5% / +1.4%",
+            "Rising"
+          ],
+          [
+            "First-party API tokens per minute",
+            "about 32bn",
+            "about 22bn",
+            "under 8bn",
+            "[↑] +40% / 4x+",
+            "Rising"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improving in Cloud, slowing in Search, and more capital-hungry overall.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "FY26 capex",
+            "$195bn to $205bn",
+            "Maintained",
+            "Street about $202bn",
+            "Demand across Cloud, Search, research",
+            "Implies 4Q $63bn to $73bn, above 3Q's $51.4bn"
+          ],
+          [
+            "FY27 capex",
+            "'Increase significantly'; detail on 4Q call",
+            "Maintained, number deferred",
+            "Street about $300bn to $330bn",
+            "Supply constrained; long-range ROIC plans",
+            "Saltsburg (Check Capital): a $300bn figure 'could scare'"
+          ],
+          [
+            "Cloud margin",
+            "Near-term headwinds as third-party capacity ramps in 4Q",
+            "Pushed out (was 'modest' pressure in 3Q)",
+            "n.a.",
+            "Bridging capacity came online only at the end of 3Q",
+            "Margin test moves to 4Q"
+          ],
+          [
+            "TPU systems",
+            "Scale in 4Q, 'meaningful' ramp in 2027",
+            "Maintained",
+            "n.a.",
+            "Inventory built only against signed contracts",
+            "Upside case; size still unknown"
+          ],
+          [
+            "Search growth",
+            "FX headwind and about 2 points of lapping drag in 4Q",
+            "New",
+            "Ads missed by $1.4bn (LSEG)",
+            "AI Mode monetizes lower for now; ads expanding",
+            "Wagner (Aptus): stock trades lower until AI is additive"
+          ],
+          [
+            "FCF and funding",
+            "FCF 'under pressure'; ROIC above cost of capital",
+            "Maintained",
+            "LSEG near breakeven for 3Q",
+            "TPU inventory, EC fine, capex",
+            "No funding guide; no analyst asked"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5 to 10 years: Alphabet is turning into a compute utility with a consumer ads business attached. The moat widens if TPUs become an industry platform sold through others, and narrows if Search margins fall faster than Cloud and TPU margins rise.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Full stack (chips, models, cloud)",
+            "Strong",
+            "Up",
+            "Gemini 4 Carbon tops Artificial Analysis (per management); TPU 8t/8i; TorchTPU with Meta",
+            "Supports pricing and Cloud share"
+          ],
+          [
+            "Customer credit and diversity",
+            "Strong, concentrating",
+            "Mixed",
+            "18 Cloud lines above $1bn; but Anthropic, Apple, Crux AI ($16.8bn related-party backlog) carry TPU demand",
+            "Backlog quality depends on a few labs"
+          ],
+          [
+            "Cost of capital vs peers",
+            "Strong",
+            "Down",
+            "Notes at 5.55% weighted coupon; ATM in use; record hyperscaler CDS in October (press)",
+            "Cheapest money in the sector, but getting dearer"
+          ],
+          [
+            "Capacity and power access",
+            "Constrained",
+            "Flat",
+            "Renting third-party capacity; $16.2bn of guarantees for counterparties' power equipment",
+            "Power is the bottleneck, bought with guarantees"
+          ],
+          [
+            "Distribution (Search, Android, YouTube)",
+            "Strong",
+            "Down",
+            "Query growth at a 5-year high but Search revenue +12%; AI Mode monetizes lower",
+            "Core cash engine slowing as capex doubles"
+          ]
+        ]
+      },
+      "title": "Moat evolution"
+    },
+    {
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Funding and FCF",
+            "FCF -$5.9bn; 'no more equity'",
+            "FCF -$9.1bn; ATM $12.4bn; 4Q capex $63bn to $73bn",
+            "Up",
+            "More issuance in 2027; credit spreads matter for equity"
+          ],
+          [
+            "Off-balance-sheet build",
+            "Leases $85.2bn; backstops $67.9bn",
+            "Leases $130.5bn; backstops $75.7bn; guarantees $22.8bn",
+            "Up",
+            "Lease-adjusted leverage rises well ahead of revenue"
+          ],
+          [
+            "Search monetization",
+            "+17% growth",
+            "+12%; ads below consensus",
+            "Up",
+            "Cash engine for capex weakens"
+          ],
+          [
+            "TPU residual value",
+            "Not disclosed",
+            "$6.6bn repurchase guarantees on sold TPUs",
+            "New",
+            "Hardware risk returns to Google if prices fall"
+          ],
+          [
+            "Lab concentration",
+            "Anthropic 3.5 GW from 2027",
+            "Crux AI $16.8bn backlog (related party); Anthropic direct and via Broadcom",
+            "Up",
+            "Backlog tied to a few counterparties"
+          ],
+          [
+            "Cloud demand",
+            "Constrained",
+            "Constrained; +103%",
+            "Down",
+            "Demand not the issue"
+          ]
+        ]
+      },
+      "title": "Major risks"
+    },
+    {
+      "table": {
+        "head": [
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "FCF is negative and capex is still rising.",
+            "ROIC 'meaningfully above' cost of capital; TPU inventory is a cash cycle, not capex.",
+            "Inventory up $10.9bn YTD; capex/OCF 121%; no ROIC figure given."
+          ],
+          [
+            "Rented capacity will dilute Cloud margins.",
+            "Bridging capacity arrived late; headwinds 'near term'.",
+            "3Q margin 36.2%; short-term lease commitment about $6.0bn; 4Q is the test."
+          ],
+          [
+            "Backstops make Google the sector's guarantor.",
+            "Not addressed on the call.",
+            "10-Q: $48.0bn executed (terms up to 15 years) plus $27.7bn to come, $10bn of it for Crux AI."
+          ]
+        ]
+      },
+      "title": "Concern, response, evidence"
+    },
+    {
+      "body": "Commitments at 30 September (10-Q): leases not yet commenced $130.5bn (2026 to 2031, terms 1 to 26 years); purchase commitments $924.4bn ($213.4bn due within 12 months); backstops $75.7bn; financial guarantees $22.8bn; equity funding commitments $21.9bn. Notes face value $127.5bn; 3Q dollar notes at 5.55% weighted coupon, 15-year average life; Aa2/AA+. Net cash about $139bn (cash and securities less debt), including $90.4bn of marketable equity, mostly SpaceX ($75.2bn, partly restricted). Next dollar: senior unsecured near T+33 to T+130 bps at the August deal; no dated post-earnings bond or CDS level found. Per share: diluted count +1.4% YoY; no buybacks since 2025.",
+      "table": {
+        "head": [
+          "Quarter",
+          "OCF",
+          "Capex",
+          "Capex/OCF",
+          "FCF",
+          "Debt issued",
+          "Equity raised",
+          "LT debt (end)"
+        ],
+        "rows": [
+          [
+            "3Q25",
+            "$48.4bn",
+            "$24.0bn",
+            "49%",
+            "$24.5bn",
+            "$6.6bn",
+            "0",
+            "n.a."
+          ],
+          [
+            "4Q25",
+            "$52.4bn",
+            "$27.9bn",
+            "53%",
+            "$24.6bn",
+            "n.a.",
+            "0",
+            "$46.5bn"
+          ],
+          [
+            "1H26",
+            "$84.9bn",
+            "$80.6bn",
+            "95%",
+            "$4.3bn",
+            "$56.2bn",
+            "$30.5bn common + $19.1bn preferred",
+            "$98.2bn"
+          ],
+          [
+            "3Q26",
+            "$42.3bn",
+            "$51.4bn",
+            "121%",
+            "-$9.1bn",
+            "$29.0bn",
+            "$12.4bn (ATM)",
+            "$125.1bn"
+          ]
+        ]
+      },
+      "title": "Capital, funding and per-share impact"
+    },
+    {
+      "body": "Five signals: 2027 capex number and funding mix on the January call; 4Q Cloud margin with bridging capacity; Search growth ex-FX in 4Q; Change in backstops, leases not yet commenced and guarantees; TPU revenue or unit disclosure; inventory turning to revenue. Key risks building: Cash: FCF negative two quarters with 4Q capex stepping up. Balance sheet: about $229bn of leases, backstops and guarantees outside reported debt. Search: slower growth as AI Mode scales. Confirmation signals: Cloud margin holds above 33% in 4Q; TPU inventory converts to revenue in 1H27; Search re-accelerates once ads scale in AI Mode. Conviction tripwires: 2027 capex above $330bn without an FCF floor; any further equity beyond the ATM; a backstop being called; Cloud margin below 30%.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Type",
+          "Question",
+          "Why it matters / was it asked"
+        ],
+        "rows": [
+          [
+            "Credit",
+            "Backstops rose to $75.7bn: $48.0bn executed plus $27.7bn you must still put in place, $10bn for Crux AI. How many counterparties and MW does that cover, what share is with unrated neoclouds, and do your rating agencies count it as debt? Yes or no.",
+            "Asked? No. It is the largest debt-like item outside the balance sheet and sets how far Google's credit reaches across the sector."
+          ],
+          [
+            "Credit",
+            "Leases not yet commenced rose $45.3bn in one quarter to $130.5bn. How much commences in 2027, and what is lease-adjusted net leverage at year-end 2027 on your plan?",
+            "Asked? No. Commencements turn into finance-lease debt and fixed costs ahead of revenue."
+          ],
+          [
+            "Credit",
+            "You told us in July you would not return to equity markets beyond the ATM for employee tax. You sold $12.4bn in 3Q. What is the 2027 debt issuance range, and is there a leverage ceiling that would trigger more equity?",
+            "Asked? No. Sets the bond supply overhang and dilution risk."
+          ],
+          [
+            "Equity",
+            "Your guide implies 4Q capex of $63bn to $73bn after $51.4bn in 3Q. What share is servers vs buildings and power, and how much is TPU systems for sale (inventory) rather than your own fleet?",
+            "Asked in part (Sandler): answered as an inventory cycle, no numbers."
+          ],
+          [
+            "Equity",
+            "You disclosed $6.6bn of guarantees to repurchase sold TPU hardware. At what discount to cost, over what term, and how does that compare with expected TPU resale values after a first contract?",
+            "Asked? No. It is a residual-value floor that moves chip risk back to Google."
+          ],
+          [
+            "Equity",
+            "Cloud margin was 36.2% because bridging capacity arrived late. What is the 4Q cost of that capacity and its MW, and when does owned capacity replace it?",
+            "Asked in part (Shmulik): deflected."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "Alphabet 3Q26 earnings release (8-K Ex. 99.1, 28 Oct 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+    },
+    {
+      "title": "Alphabet 3Q26 Form 10-Q (29 Oct 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+    },
+    {
+      "title": "Alphabet 2Q26 earnings release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
+    },
+    {
+      "title": "StockAnalysis (Quartr): Alphabet 3Q26 earnings call transcript",
+      "url": "https://stockanalysis.com/stocks/googl/transcripts/712854-q3-2026/"
+    },
+    {
+      "title": "StockAnalysis (Quartr): Alphabet 2Q26, 1Q26, 4Q25, 3Q25 call transcripts",
+      "url": "https://stockanalysis.com/stocks/googl/transcripts/"
+    },
+    {
+      "title": "Reuters via Investing.com: Alphabet stock sinks as search woes cause revenue miss",
+      "url": "https://www.investing.com/news/stock-market-news/alphabets-heavy-cloud-spending-drives-biggerthanexpected-cash-burn-4980612"
+    },
+    {
+      "title": "StockAnalysis: GOOGL price history",
+      "url": "https://stockanalysis.com/stocks/googl/history/"
+    },
+    {
+      "title": "Field Guide preview card: reports/GOOGL-2026Q3-preview (23 Oct 2026)",
+      "url": "https://claude.ai/artifact/M94NPJSfJg1ZxyR3uuWyyC"
+    }
+  ],
+  "ticker": "GOOGL",
+  "verdict": "Monitoring",
+  "versus": "Quarter: miss. Revenue $127.6bn was 0.5% below LSEG ($128.2bn) and in line with Yahoo ($127.85bn); EPS excluding the $0.55 equity-mark loss was $2.67 against $3.00 to $3.02; Cloud beat ($30.7bn vs $29.16bn). Outlook: in line on capex (FY26 $195bn to $205bn unchanged, 2027 deferred to January), below on Search and Cloud margin."
+}

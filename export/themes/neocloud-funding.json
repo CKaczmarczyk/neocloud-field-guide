@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Hood: 1Q capex incl. finance leases was $45.2bn because some third-party capacity deliveries were delayed; CY26 capex view cut to about $170bn from about $175bn, with spend moving to 2H. Demand still exceeds supply.",
+      "company": "Microsoft",
+      "date": "2026-10-28",
+      "direction": "against",
+      "numbers": "$45.2bn vs StreetAccount $50.7bn and Microsoft's own 'over $50bn'. After hours CoreWeave fell 5.8%, Nebius 6.3%, IREN 5.3%, Applied Digital 4.3%. Microsoft lost nothing (Azure +48%); the neoclouds carry the delivery slip.",
+      "segment": "financing",
+      "source": "Microsoft 1Q FY27 call; Yahoo Finance (Stocktwits)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/crwv-nbis-iren-apld-stocks-033548877.html"
+    },
+    {
+      "claim": "Galaxy says lenders are 'a lot more conservative' than developers; it will fund Helios Phase III with equity first, seek debt in 1H27, and need not tap credit markets until 1Q-2Q27.",
+      "company": "Galaxy Digital",
+      "date": "2026-10-27",
+      "direction": "supports",
+      "numbers": "Parent put a net $439mn into the Data Centers segment in 3Q26; Phase II notes cost 9.875%; segment notes interest $75.4mn exceeded segment adj. EBITDA $68.7mn.",
+      "segment": "developer",
+      "source": "Galaxy 3Q26 call; 3Q26 financial supplement (Ex.99.3)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/exhibit993-glxyhistorica.htm"
+    },
+    {
       "claim": "Musk predicts stranded compute in half-built data centers and consolidation among more than 200 neoclouds, saying debt markets have almost shut for firms without substantial non-AI revenue.",
       "company": "Neoclouds (Musk)",
       "date": "2026-10-25",
@@ -120,5 +140,5 @@
   "status": "weakening",
   "summary": "October repriced weak-credit compute and the second half of the month did not reverse it: CoreWeave hit new lows near $54 with bonds above 15%, banks refused to underwrite Volta's GPU loan (sold at about 11.5%), Microsoft walked from Nscale's UK flagship just before its IPO, and Musk says lenders have nearly shut off neoclouds without other revenue. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open.",
   "title": "Neocloud funding access",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
 }

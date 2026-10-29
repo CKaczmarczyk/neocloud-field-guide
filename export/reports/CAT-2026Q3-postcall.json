@@ -1,0 +1,760 @@
+{
+  "changes": [
+    "Backlog reached a record $78bn (call), up $5.9bn on the quarter and about $38bn (96%) on the year, with growth in all three segments. Book-to-bill was about 1.3x (derived), down from about 1.5x in 2Q.",
+    "Lead times moved out again: large gas prime engine orders now run to 2029 and turbines into 2030, against 'late 2028' in August. 58% of backlog ships within 12 months (59% in 2Q).",
+    "Margin is flat underneath: adjusted operating margin excluding tariff refunds was about 20.0%, the same as 2Q. Power & Energy margin was 24.4% (24.6% in 2Q); price of $216mn was mostly offset by capacity costs.",
+    "Guide held, 2027 deferred to January. 4Q sales are guided to 'moderate' growth; the FY range implies $19.1bn to $21.8bn. Shares fell 7.6% to $658.90 by 10:17 ET.",
+    "Customers are paying earlier: customer advances added $1.4bn of cash in the quarter, while inventories rose $1.6bn to $22.2bn."
+  ],
+  "checks": "Post-call. Primary sources downloaded from SEC EDGAR and converted to text: 3Q26 8-K Ex. 99.1 and Ex. 99.2 (29 Oct 2026) and 2Q26 Ex. 99.1 (4 Aug 2026). Call transcript from Gloom (one source; Benzinga returned 403), plus Gloom's 3Q25-2Q26 transcripts for the Q&A matrix. 118 figures and phrases were string-matched in code (verify.py) against those texts and the preview card; one paraphrase ('would not quantify hyperscalers') differs in wording from the transcript and was kept as a paraphrase. Derived numbers recomputed in Python (derive.py): growth rates, ex-refund margins (3Q 19.95%, 2Q 19.99%), IEEPA EPS effect (~$0.21 at the 23% tax rate on 460.9mn shares), book-to-bill (1.30x 3Q, 1.48x 2Q), Q3 standalone cash flows (9M less H1), implied 4Q revenue range, debt totals, market cap and P/E. Single source or caveated: backlog $78bn, 58%/59%, lead times, $3.8bn MP&E FCF, ~$700mn capex and all call remarks (transcript only; slides at investors.caterpillar.com returned 403); the 'test' outage remark is garbled in the transcript; 3Q25 MP&E FCF (~$3.2bn) and 3Q25 backlog (~$40bn) are derived from call deltas; FY25 revenue of $67,589mn uses the preview's 4Q25 $19.13bn. Price $658.90 at 10:17 ET from Yahoo chart data (previous close $713.38 per StockAnalysis and Yahoo). No bond price or rating action dated today was found. No fresh subagent was available inside this run, so every number was listed against its source and reconfirmed in code. Preview card not edited.",
+  "consensus_thesis": "Investors own Caterpillar as the diversified way into AI data center power: gas gensets and Solar turbines sold years out, capacity rising toward nearly 3x 2024 for large engines, and revenue of about $79.6bn in FY26 and $88.7bn in FY27, with credit not in debate.",
+  "date": "2026-10-29",
+  "headline": "The consensus view holds but should stop paying for upside to 2026: demand and backlog keep growing, yet Caterpillar is capacity-bound and margin is flat once tariff refunds are removed, so the case now rests on 2027 capacity and pricing that management will frame only in January; credit quality holds.",
+  "kind": "postcall",
+  "kona": "Caterpillar now books large gas prime engines into 2029 and turbines into 2030, but smaller gensets have much shorter lead times, some diesel slots are still open in 2028, and management says capacity is fungible across uses. At tens of MW, Kona should design around smaller units sourced through dealers and rental fleets rather than queue for large engines, and budget for deposits: Caterpillar's customer advances rose $1.4bn in the quarter. OEM vendor financing remains a precedent to ask for, but Cat Financial's allowance rose 13% in the quarter, so Kona should not plan on it.",
+  "monitor": [
+    "January call: FY27 guide, capacity added in dollars or MW, and whether margin moves off the bottom of the band.",
+    "4Q backlog and book-to-bill against about 1.3x, and any update on prime power GW (not given this quarter).",
+    "First 10 MW engine shipments in 4Q26, and Cat Financial's allowance ($332mn, up $38mn) against any data center developer exposure."
+  ],
+  "name": "Caterpillar",
+  "pdf_brief": "/_blob/069d64be4f980fa328f2a2465ecce150",
+  "pdf_report": "/_blob/c4f61ba08e845f2db7d67669e242b591",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumed",
+          "Quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Data center demand durable",
+            "Backlog above $72.1bn; no deferrals",
+            "Backlog $78bn; 'not seeing significant changes' in customer timing; no data center share disclosed",
+            "Confirmed",
+            "Call"
+          ],
+          [
+            "P2 Power Generation compounding",
+            "Growth near 2Q's 29%",
+            "Power Generation +30% to $3,421mn; sales to users +75%",
+            "Confirmed",
+            "Release; Ex 99.2"
+          ],
+          [
+            "P3 Capacity ramp on time",
+            "10 MW restart ships 4Q26",
+            "Restart on track for 4Q; plans 'on schedule'; but 'no slack', a brief test outage in 3Q",
+            "Confirmed",
+            "Call"
+          ],
+          [
+            "P4 Margin and operating leverage",
+            "Adjusted margin above 17.5%; EPS about $7.03",
+            "20.6% reported; about 20.0% ex refunds, flat QoQ; EPS beat came from refunds; FY margin near bottom of band",
+            "Challenged",
+            "Release; call"
+          ],
+          [
+            "P5 Cash return",
+            "MP&E FCF top half of $6-15bn",
+            "9M MP&E FCF $9.5bn; guide held; Q3 buybacks slowed to $1.2bn",
+            "Confirmed",
+            "Release; call"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: Capacity as the pacing factor ('no slack in the system'); frame agreements and pipeline beyond the backlog; backlog will be 'lumpy'; repurposing plants (Winston-Salem for 3600-series engines); the Major Projects rental JV. Less or dropped: No updated prime power GW (asked; not given). The 2030 Power Generation 'more than 3x 2024' target was not repeated. The backlog dollar figure was given on the call, not in the release. KPIs more important: Book-to-bill, backlog conversion (58% within 12 months), customer advances, capacity added per quarter. Risks up: 4Q and 2027 estimate risk; freight and energy cost inflation; production ramp (brief test outage, large mining trucks); Cat Financial allowance up 13% QoQ. Risks down: Customer deferrals (none reported); tariff cost ($600mn in 4Q, about $200mn lower YoY); restructuring cut to about $300mn.",
+      "title": "What changed in emphasis"
+    },
+    {
+      "body": "Pre-empted in prepared remarks: 4Q dealer destock ($1.6bn), capacity as the pacing factor, tariff and freight costs. Not asked: Cat Financial vendor financing, buybacks, deposits and cancellation terms.",
+      "table": {
+        "head": [
+          "Topic",
+          "3Q25",
+          "4Q25",
+          "1Q26",
+          "2Q26",
+          "3Q26",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Capacity and delivery timing",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y (3)",
+            "Persistent"
+          ],
+          [
+            "Backlog, orders, book-to-bill",
+            "Y",
+            "Y",
+            "-",
+            "Y",
+            "Y (3)",
+            "Rising"
+          ],
+          [
+            "Pricing and escalators",
+            "Y",
+            "Y",
+            "Y",
+            "-",
+            "Y",
+            "Persistent"
+          ],
+          [
+            "Margin framework",
+            "Y",
+            "-",
+            "Y",
+            "Y",
+            "Y",
+            "Persistent"
+          ],
+          [
+            "Prime vs backup mix",
+            "-",
+            "Y",
+            "Y",
+            "-",
+            "Y",
+            "Persistent"
+          ],
+          [
+            "Customer concentration and credit",
+            "-",
+            "-",
+            "-",
+            "-",
+            "Y",
+            "New"
+          ],
+          [
+            "2027 growth and 4Q sequential",
+            "-",
+            "-",
+            "-",
+            "-",
+            "Y (2)",
+            "New"
+          ],
+          [
+            "Capex and funding, Cat Financial",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "Absent"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "table": {
+        "head": [
+          "Analyst (firm)",
+          "3Q26 question",
+          "Answer",
+          "Rating"
+        ],
+        "rows": [
+          [
+            "Wertheimer (Melius)",
+            "Prime power GW update; is 2028 sold out?",
+            "Quoting active; big gas prime orders to 2029; some diesel 2028 slots open; no GW",
+            "Partial"
+          ],
+          [
+            "Zakaria (JPMorgan)",
+            "When does the backlog step down?",
+            "Orders into 2029-30; 58% within 12 months; would like machine backlog to come in",
+            "Partial"
+          ],
+          [
+            "Cook (Truist)",
+            "When back to mid-range margin; 2027 capacity in $",
+            "'Next couple of years'; 2027 in January; no capacity figure",
+            "Partial"
+          ],
+          [
+            "Raso (Evercore)",
+            "Why is 4Q barely up sequentially?",
+            "Capacity-paced, 'no slack', CI destock; 2027 in January",
+            "Partial"
+          ],
+          [
+            "Feniger (BofA)",
+            "2027 above the 6-9% CAGR?",
+            "Capacity rises each quarter, 'not a cliff'; 2027 in January",
+            "Deflected"
+          ],
+          [
+            "Revich (Wells Fargo)",
+            "Slot timing shifts; hyperscaler share given credit angst",
+            "No significant changes; will not quantify hyperscalers vs others",
+            "Partial"
+          ],
+          [
+            "Dobre (Baird)",
+            "Book-to-bill 1.7 to 1.3: slippage?",
+            "Production rising; lumpy prime orders; do not use one metric",
+            "Deflected"
+          ],
+          [
+            "Menges (Citi)",
+            "Turbine vs gas vs diesel mix to 2030",
+            "No change in discussions; capacity fungible",
+            "Partial"
+          ],
+          [
+            "Volkmann (Jefferies)",
+            "10 MW restart",
+            "First units 4Q26; 'on track'",
+            "Direct"
+          ]
+        ]
+      },
+      "title": "3Q26 Q&A ratings (Trevor)"
+    },
+    {
+      "table": {
+        "head": [
+          "Analyst",
+          "Quarter",
+          "Question (trimmed)",
+          "Answer",
+          "Rating",
+          "Later evidence"
+        ],
+        "rows": [
+          [
+            "Jerry Revich, Wells Fargo (chosen: presses most on counterparty credit)",
+            "1Q26",
+            "Prime power architecture; GW booked",
+            "Site-specific; no GW figure",
+            "Deflected",
+            "3Q26: still no GW"
+          ],
+          [
+            "",
+            "3Q26",
+            "Slot shifts; hyperscaler share",
+            "No significant changes; no split",
+            "Partial",
+            "Watch 4Q backlog"
+          ],
+          [
+            "Mig Dobre, Baird (bear on data center durability)",
+            "4Q25",
+            "Order and backlog strength",
+            "Backlog $51bn, broad-based",
+            "Direct",
+            "Backlog $78bn"
+          ],
+          [
+            "",
+            "3Q26",
+            "Book-to-bill slowing",
+            "Lumpy; one metric misleads",
+            "Deflected",
+            "Derived 1.30x confirms"
+          ]
+        ]
+      },
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "Flags: [↑] better, [↓] worse, [~] within ±5% or normal range, [?] unavailable. For cost, debt, inventory and allowance lines, [↓] means worse for shareholders. 2Q26 ex-refund margin and book-to-bill are derived. 3Q25 backlog = $78bn less 'approximately $38bn' (call).",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Sales and revenues",
+            "$20,682mn",
+            "$20,543mn",
+            "$17,638mn",
+            "+0.7% [~] / +17.3% [↑]",
+            "Record quarter"
+          ],
+          [
+            "Adjusted operating margin",
+            "20.6%",
+            "21.9%",
+            "17.5%",
+            "[~] / +3.1pp [↑]",
+            "Up YoY"
+          ],
+          [
+            "Adj. margin ex IEEPA refunds",
+            "20.0%",
+            "20.0%",
+            "n.a.",
+            "[~] / [?]",
+            "Flat QoQ"
+          ],
+          [
+            "Adjusted EPS",
+            "$7.20",
+            "$8.17",
+            "$4.95",
+            "[↓] / +45% [↑]",
+            "2Q had $392mn refund"
+          ],
+          [
+            "Power & Energy sales",
+            "$8,784mn",
+            "$8,238mn",
+            "$7,463mn",
+            "+6.6% [↑] / +17.7% [↑]",
+            "Rising"
+          ],
+          [
+            "Power & Energy margin",
+            "24.4%",
+            "24.6%",
+            "21.9%",
+            "[~] / +2.5pp [↑]",
+            "Plateau"
+          ],
+          [
+            "Power Generation sales",
+            "$3,421mn",
+            "$3,098mn",
+            "$2,634mn",
+            "+10.4% [↑] / +29.9% [↑]",
+            "Rising"
+          ],
+          [
+            "Power Gen sales to users",
+            "+75%",
+            "+72%",
+            "+33%",
+            "[↑]",
+            "Accelerating"
+          ],
+          [
+            "Backlog",
+            "$78bn",
+            "$72.1bn",
+            "~$40bn",
+            "+8.2% [↑] / +96% [↑]",
+            "4th straight rise"
+          ],
+          [
+            "Backlog due in 12 months",
+            "58%",
+            "59%",
+            "-",
+            "[~]",
+            "Lengthening"
+          ],
+          [
+            "Book-to-bill, MP&E (derived)",
+            "~1.3x",
+            "~1.5x",
+            "-",
+            "[↓]",
+            "Slowing"
+          ],
+          [
+            "MP&E free cash flow",
+            "$3.8bn",
+            "$5.1bn",
+            "~$3.2bn",
+            "[↓] / +19% [↑]",
+            "9M $9.5bn"
+          ],
+          [
+            "Inventories",
+            "$22,214mn",
+            "$20,627mn",
+            "-",
+            "+7.7% [↓]",
+            "Building"
+          ],
+          [
+            "Customer advances (current)",
+            "$5,329mn",
+            "$4,777mn",
+            "-",
+            "+11.6% [↑]",
+            "Building"
+          ],
+          [
+            "Financial Products debt",
+            "$34,551mn",
+            "$34,456mn",
+            "-",
+            "[~]",
+            ""
+          ],
+          [
+            "Cat Financial allowance",
+            "$332mn (0.91%)",
+            "$294mn (0.84%)",
+            "-",
+            "+13% [↓]",
+            "Rising"
+          ],
+          [
+            "Cat Financial past dues",
+            "1.31%",
+            "1.31%",
+            "1.47%",
+            "[~] / [↑]",
+            "Low since 1998"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: steady. Volume and price grew, but capacity costs absorbed most of the price in Power & Energy, so earnings power per dollar of sales did not improve this quarter.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "FY26 sales",
+            "Up mid-to-high teens",
+            "Maintained",
+            "Yahoo FY $79.6bn (+17.8%) inside",
+            "Strong sales to users, backlog, capacity 'on schedule'",
+            "Raso: implies 4Q barely up QoQ"
+          ],
+          [
+            "4Q26 sales",
+            "Moderate growth YoY",
+            "New",
+            "Below Yahoo 4Q $21.42bn (+12%)",
+            "Tough comp; capacity-paced; CI destock $1.6bn (~$1bn YoY headwind)",
+            "Expect 4Q estimate cuts"
+          ],
+          [
+            "FY26 adj. margin ex refunds",
+            "Near bottom of target range",
+            "Maintained",
+            "n.a.",
+            "Strategic investment, tariffs, freight",
+            "Cook: midpoint in 'next couple of years'"
+          ],
+          [
+            "4Q P&E margin",
+            "Similar to 3Q (24.4%)",
+            "New",
+            "n.a.",
+            "Price and volume vs capacity depreciation, freight",
+            "Plateau, not expansion"
+          ],
+          [
+            "FY26 MP&E FCF",
+            "Top half of $6-15bn",
+            "Maintained",
+            "n.a.",
+            "9M $9.5bn; 4Q needs about $1.0bn for $10.5bn",
+            "Low bar"
+          ],
+          [
+            "Tariffs",
+            "~$2.2bn FY; ~$600mn 4Q",
+            "Maintained",
+            "n.a.",
+            "Excludes ~$520mn YTD refunds; none assumed in 4Q",
+            "-"
+          ],
+          [
+            "Restructuring",
+            "~$300mn",
+            "Lowered to low end of $300-350mn",
+            "n.a.",
+            "-",
+            "-"
+          ],
+          [
+            "10 MW engine restart",
+            "First units 4Q26",
+            "Maintained",
+            "n.a.",
+            "'On track', ramps through 2027",
+            "-"
+          ],
+          [
+            "FY27",
+            "Deferred to January",
+            "-",
+            "Yahoo $88.67bn / $32.59",
+            "Capacity rises each quarter, 'not a cliff'",
+            "Feniger: above 6-9% CAGR?"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5-10 year view: Caterpillar's position in on-site power is durable because it sells both engines and turbines through dealers and earns services for decades. The risk is cyclical, not competitive: capacity added through 2029 meets demand that management itself calls lumpy.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Manufacturing capacity",
+            "Tight",
+            "Improving slowly",
+            "'No slack'; Winston-Salem, Wamego, 10 MW restart; engines to ~3x 2024 by 2030",
+            "Revenue capped by output, not demand"
+          ],
+          [
+            "Product breadth (recips plus turbines)",
+            "Strong",
+            "Stable",
+            "Can string turbines and recips behind the meter; capacity 'pretty fungible'",
+            "Wins mixed-architecture prime power"
+          ],
+          [
+            "Customer lock-in",
+            "Strong",
+            "Strengthening",
+            "Frame agreements beyond backlog; orders to 2029-30; services tail after 2030",
+            "Long visibility; lumpy bookings"
+          ],
+          [
+            "Pricing power",
+            "Good",
+            "Stable",
+            "P&E price $216mn (2.9% of 3Q25 sales) but offset by costs; escalators on far orders",
+            "Price protects, does not expand, margin"
+          ],
+          [
+            "Dealer and rental network",
+            "Strong",
+            "Strengthening",
+            "Major Projects JV; rental fleet loading",
+            "Faster routes to small buyers"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Concern: Book-to-bill is slowing Response: Production is rising and prime orders arrive in large, lumpy blocks Evidence: Derived 1.30x vs ~1.5x in 2Q and ~1.7x earlier; backlog still +$5.9bn. Concern: Data center counterparties and permits Response: No significant changes in project timing; Caterpillar can move slots between customers Evidence: No disclosure of hyperscaler share; Revich's question left unquantified. Concern: Margin should rise with volume Response: Investing for growth; midpoint over 'next couple of years' Evidence: Ex-refund margin flat QoQ; P&E 24.4% vs 24.6%.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Estimate risk 4Q26 and 2027",
+            "Low",
+            "Medium",
+            "Up",
+            "4Q consensus above guide; stock -7.6% on an in-line print"
+          ],
+          [
+            "Capacity and production ramp",
+            "Medium",
+            "Medium",
+            "Up",
+            "'No slack'; brief test outage; mining truck ramp"
+          ],
+          [
+            "Margin quality (tariffs, freight)",
+            "Medium",
+            "Medium",
+            "Flat",
+            "Ex-refund margin flat at ~20%; bottom of band"
+          ],
+          [
+            "Data center demand and permitting",
+            "Medium",
+            "Medium",
+            "Flat",
+            "No deferrals; hyperscaler share not disclosed"
+          ],
+          [
+            "Cat Financial credit",
+            "Low",
+            "Low",
+            "Up slightly",
+            "Allowance +$38mn vs $28mn write-offs; vendor financing on AIP"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "body": "Caterpillar funds its own growth. MP&E free cash flow of $9.5bn in 9M covered capex and most of the $9.9bn returned to shareholders; buybacks slowed to $1.2bn in 3Q after $6.5bn in H1. Customers are funding part of the build: customer advances added $4.0bn of cash in 9M, against $1.6bn a year earlier. Cat Financial is match-funded and its debt barely moved. No dated bond price or rating action was found today, so no spread is quoted. The next dollar for capacity comes from operating cash and customer deposits, not debt.",
+      "table": {
+        "head": [
+          "Item",
+          "3Q26",
+          "2Q26",
+          "9M26",
+          "9M25"
+        ],
+        "rows": [
+          [
+            "MP&E operating cash flow",
+            "$4,523mn",
+            "n.a.",
+            "$11,534mn",
+            "$7,745mn"
+          ],
+          [
+            "MP&E capex (incl. leased equipment)",
+            "~$700mn",
+            "n.a.",
+            "$2,009mn",
+            "$1,944mn"
+          ],
+          [
+            "MP&E free cash flow",
+            "$3.8bn",
+            "$5.1bn",
+            "$9.5bn",
+            "-"
+          ],
+          [
+            "Customer advances (cash flow)",
+            "+$1,426mn",
+            "n.a.",
+            "+$4,002mn",
+            "+$1,649mn"
+          ],
+          [
+            "Inventories (cash flow)",
+            "-$1,565mn",
+            "n.a.",
+            "-$4,118mn",
+            "-$2,015mn"
+          ],
+          [
+            "Financial Products debt",
+            "$34,551mn",
+            "$34,456mn",
+            "",
+            ""
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "Signals: 1) Backlog and book-to-bill in 4Q (bar: backlog above $78bn; book-to-bill above 1.0x). 2) FY27 guide in January: sales growth vs the 6-9% CAGR target, margin off the bottom of the band. 3) Power & Energy margin above 24.6% once capacity depreciation is in the base. 4) Customer advances vs inventories: deposits still outrunning inventory build. 5) Cat Financial allowance and any disclosure of data center developer lending. Risks building: Estimate cuts for 4Q; capacity costs absorbing price; Cat Financial allowance rising while past dues are flat. Confirmation: Backlog keeps growing while 58% or more converts within 12 months; 10 MW units ship in 4Q; FY27 margin guide above FY26. Tripwires: Backlog falls QoQ in P&E; a named data center deferral or cancellation; P&E margin below 22%; vendor financing losses.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "$78bn of backlog plus frame agreements, but no P&E or data center split: what share of P&E backlog has non-refundable deposits or cancellation fees? (Revich asked in part; deflected.)",
+            "Firm demand vs options is the bear case."
+          ],
+          [
+            "P&E earned $216mn of price but margin was flat QoQ at 24.4%: what incremental margin on 2027 capacity, and when does depreciation stop outrunning price? (Cook; deferred to January.)",
+            "Structural margin or volume over a rising cost base."
+          ],
+          [
+            "Credit: Cat Financial's allowance rose $38mn to $332mn against $28mn of write-offs and flat past dues. How much is lent or committed to data center developers, including AIP's 2 GW? (Not asked.)",
+            "Moves data center risk into a leveraged finance arm."
+          ],
+          [
+            "Credit: advances added $1.4bn and inventories $1.6bn in 3Q. On a cancellation, how much of the advance is kept and how much inventory is project-specific? (Not asked.)",
+            "Deposits fund the build today and unwind if projects slip."
+          ],
+          [
+            "Buybacks fell to $1.2bn in 3Q from $6.5bn in H1 while Sanford adds $1bn: what is 2027 capex, and which gives way if orders fall 30%? (Not asked.)",
+            "Cash return at the peak vs capex commitments."
+          ],
+          [
+            "With 'no slack' and a 3Q brief test outage, how many MW of large engines and turbines will ship per quarter in 2027? (Raso, Feniger; deferred.)",
+            "Revenue is output-bound; consensus needs a number."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "Caterpillar 3Q26 earnings release, 8-K Ex. 99.1 (29 Oct 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm"
+    },
+    {
+      "title": "Caterpillar 3Q26 retail sales statistics, 8-K Ex. 99.2",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex992toformcat3q2026retail.htm"
+    },
+    {
+      "title": "Caterpillar 2Q26 earnings release, 8-K Ex. 99.1 (4 Aug 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000040/ex991toformcat2q2026earnin.htm"
+    },
+    {
+      "title": "3Q26 earnings call transcript (Gloom)",
+      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
+    },
+    {
+      "title": "Prior call transcripts 3Q25-2Q26 (Gloom)",
+      "url": "https://gloom.sh/stocks/cat/transcripts/q2-2026"
+    },
+    {
+      "title": "Consensus thesis card, Field Guide reports/CAT-2026Q3-preview (26 Oct 2026)",
+      "url": "https://claude.ai/artifact/M94NPJSfJg1ZxyR3uuWyyC"
+    },
+    {
+      "title": "Investing.com: shares fall premarket; consensus",
+      "url": "https://www.investing.com/news/earnings/caterpillar-earnings-beat-estimates-amid-rapid-ai-buildout-4982612"
+    },
+    {
+      "title": "24/7 Wall St.: premarket price and consensus",
+      "url": "https://247wallst.com/investing/2026/10/29/caterpillar-beat-earnings-and-still-dropped-9-the-ai-power-trade-just-hit-the-same-wall-as-software/"
+    },
+    {
+      "title": "Yahoo Finance chart data (price $658.90 at 10:17 ET)",
+      "url": "https://finance.yahoo.com/quote/CAT/"
+    }
+  ],
+  "ticker": "CAT",
+  "verdict": "Intact",
+  "versus": "Quarter in line: revenue $20.68bn vs $20.69bn consensus; adjusted EPS $7.20 vs $7.03 (Yahoo), but about $0.21 came from $128mn of IEEPA tariff refunds, so about $6.99 underlying. Outlook in line: FY26 guide maintained, not raised; the 'moderate' 4Q growth guide sits below 4Q consensus of $21.42bn."
+}

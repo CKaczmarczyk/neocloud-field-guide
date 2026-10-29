@@ -1,0 +1,9 @@
+{
+  "model": "AI lab selling intelligence by the token (consumption 80%, subscriptions 20%, 48% via cloud marketplaces). Buys compute under minimum cloud commitments (Google ~$114.5B to 2033, Amazon $110B to 2036, Microsoft $44.9B to 2033) and leases through landlords and neoclouds; $265.6B of minimum purchases and $321.4B of uncommenced leases at June 2026 against $11.6B of Q2 revenue. Rents rather than owns compute (PP&E $1.2B). Funded by $131.7B of cash after the Series H, a $15B revolver and $77B of conditional supplier notes (Broadcom $42B at 9-13% PIK, Google $20B, Amazon $15B). Watch: revenue per compute dollar (Q2 2026 $2.08), commitments vs trailing revenue, supplier-note draws, customer concentration, compute allocated to research vs serving. Hyperscaler/buyer mode applies: this is the credit behind most of the guide's financings.",
+  "name": "Anthropic (S-1 filer)",
+  "next_report": "",
+  "note": "Pre-IPO; S-1 figures via Peter Gostev's visual guide (ant-s1.surge.sh), to be verified against the filing. Run Josh's preview when the IPO prices or the first quarterly report is due.",
+  "segment": "financing",
+  "thesis": "",
+  "ticker": "ANTHROPIC"
+}

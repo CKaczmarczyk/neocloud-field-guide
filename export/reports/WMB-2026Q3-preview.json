@@ -1,0 +1,412 @@
+{
+  "brief": [
+    "Verdict ahead of the print: a steady fee-based quarter with one month of Momentum; the stock will trade on Power Innovation commercialization, the 2027 outlook and leverage, not on the 3Q headline.",
+    "Where expectations sit. Zacks has 3Q26 adjusted EPS of $0.56 (+14.3% year on year) and revenue of $3.2bn (+9%); TheRightTrader shows $0.56 from 8 analysts and $2.9bn from 6; MarketBeat shows $0.541 and $2.99bn (26 October). 3Q25 actuals were adjusted EPS $0.49, adjusted EBITDA $1,920mn and revenue $2,923mn. No published 3Q adjusted EBITDA consensus was found. FY26 adjusted EPS consensus is $2.41 (S&P Global) to $2.42 (MarketBeat); FY27 is $2.64 to $2.67.",
+    "What the company guided. FY26 adjusted EBITDA $8.3bn to $8.5bn including Momentum; H1 delivered $4,175mn, so the second half needs $4.125bn to $4.325bn. Growth capex is $7.3bn to $7.9bn, and year-end leverage about 3.9x (about 3.75x on a full-year Momentum basis). On the 2Q call the CFO flagged hurricane season, weak summer gas prices and rig activity as 3Q swing factors.",
+    "Three debates. First, the pace of Power Innovation: five projects totalling about 2.6 GW are signed, management cites a backlog of 6 GW-plus and expected more commercialization by year-end, and turbines are locked up only for the current backlog. Second, leverage and funding: Momentum's $3.5bn cash and debt, FY26 growth capex alone 70% to 84% above 2025's total capital investments of $4.3bn, and $2.75bn of new notes, against a 3.5x to 4.0x range. Third, counterparty and structure: the power projects serve a large investment-grade company (10-K) under 10-year to 12.5-year mostly fixed-price PPAs, and Blackstone owns 49% at a 6.35% target return.",
+    "What would move the stock. Positive: a sixth or seventh Power Innovation project with a new counterparty, FY26 guidance at the top of the range, and a 2027 outlook above consensus EPS of about $2.64 to $2.67. Negative: no new power deals, a guide toward the bottom of the range on marketing or hurricane impacts, leverage above 4x, or Socrates North slipping into 2027.",
+    "Kona read-through. Socrates is the closest US analogue to Kona: off-grid gas generation (per its Ohio filing it is not physically connected to the grid) built from small Solar and Siemens turbines plus Caterpillar engines and sold under a 10-year, mostly fixed-price PPA. Its capital came at a 6.35% cost of equity because an investment-grade tenant sits behind it."
+  ],
+  "changes": [
+    "Momentum Midstream closed on 3 September (Zacks): up to $5.5bn, about $3.5bn of cash and debt and about $2bn of stock, at about 8.5x projected 2027 EBITDA. On 3 September Williams registered the resale of up to 26.9mn shares by the sellers, released over 180 days with trading limits.",
+    "Williams issued $2.75bn of senior notes on 8 September (5.000% 2029, 5.600% 2033, 5.800% 2036 and 6.400% 2056) at spreads of 55bp to 115bp, to repay commercial paper and fund capex.",
+    "In July, Blackstone, with Apollo and KKR, committed $5.34bn for 49% of the five Power Innovation projects (about 2.6 GW) at a 6.35% target return. About $3.75bn was received in July and the rest is due through early 2027; Williams can buy the stake out from about July 2033.",
+    "Socrates South (New Albany, Ohio) entered service in late July, the first Power Innovation delivery, about 14 months from site handover. Socrates North is due in 4Q26, for 556 MW in total.",
+    "In August, Williams raised FY26 adjusted EBITDA guidance to $8.3bn to $8.5bn (from $8.05bn to $8.35bn in February), raised growth capex to $7.3bn to $7.9bn (from $6.1bn to $6.7bn in February), and lifted its 2025 to 2030 EBITDA CAGR target to 11%-plus from 10%-plus."
+  ],
+  "checks": "Report date confirmed from Williams' own 13 October release on williams.com: results after the close on Monday 2 November, call on Tuesday 3 November at 9:30 a.m. ET. This matches the Field Guide's next_report of 2026-11-02, so no correction was needed. No subagent was available, so I rechecked every figure myself. Filings: I downloaded the 2Q26, 3Q25 and 4Q25 releases, the 2Q26 10-Q, the FY25 10-K, the 13 July JV release and presentation, the 3 September resale 8-K, and the 8 to 10 September notes 8-Ks from EDGAR, converted them to text and string-matched 60 figures in code. Two strings ($359mn West and $203mn cash) were formatted differently and were confirmed by a separate search. The figures covered adjusted EBITDA, EPS, AFFO, coverage, leverage, capex, debt and cash, guidance history, JV terms, project MW and dates, the 26,874,496 resale shares and note prices. Spreads, re-offer yields and ratings came from the 8 September FWP. Consensus, reopened on 28 October: Zacks via TradingView ($0.56, +14.3%, $3.2bn, +9%, ESP +1.65%, Rank #3, 2Q missed $0.52, Momentum closed 3 September); MarketBeat ($0.541, $2.99bn, FY $2.42 and $2.67, P/E 28.57, averages $72.18 and $73.02, 3/18/1 ratings, $86.06 target, 2Q in line); StockAnalysis forecast ($85.25 average, $69 to $103, 17/6/2 ratings, FY26 EPS $2.41 from 9 analysts); TradingView bonds (6.400% 2056 at 100.60, yield to worst 6.35%, with no as-of date). Read once only: TheRightTrader ($0.56 from 8 analysts, $2.9bn from 6), the StockAnalysis price history (close of $71.75 on 26 October; no 27 October close found), StockAnalysis FY27 summary figures, Barchart (31 July), the Motley Fool 2Q call transcript, Power Engineering (20% pre-tax return, November 2025) and Watkins research (Socrates equipment and off-grid design). Derived figures recomputed in Python: second-half EBITDA of $4.125bn to $4.325bn (+4.4% to +9.4% on 2H25's $3,953mn), about $8.98bn of power project growth capex (from $4.4bn = 49%) and about $3.47mn per MW over 2,588 MW, gross debt of $30.8bn, $1.93bn of resale shares at $71.75, -10% from the high, and 70% to 84% capex growth. Not found: a quarterly adjusted EBITDA consensus, a dated bond or CDS quote, and Yahoo consensus (the page was stale).",
+  "consensus_thesis": "Investors own Williams as a regulated, fee-based gas pipeline compounder (Transco) whose contracted growth has stepped up to an 11%-plus adjusted EBITDA CAGR for 2025 to 2030, from LNG and power demand, with Power Innovation behind-the-meter generation for hyperscalers as the AI option on top. At $71.75 on 26 October (about $87.8bn market cap, P/E about 28.6x and a 2.9% dividend yield per MarketBeat), the valuation pays a premium midstream multiple for visible, contracted growth. Positioning is a consensus long: 23 of 25 analysts rate it Buy or Strong Buy (S&P Global via StockAnalysis, average target $85.25), though the stock is about 10% below its $80.08 high and below its 50-day and 200-day averages. Credit is not the debate: Baa2/BBB+/BBB, September 2026 notes priced at 55bp to 115bp over Treasuries, and the 6.400% 2056 notes quoted near 100.6 (yield to worst about 6.35%, undated TradingView quote).",
+  "date": "2026-10-28",
+  "headline": "3Q26 should be a steady pipeline quarter (consensus adjusted EPS $0.54 to $0.56 against $0.49 a year ago, first month of Momentum); the debate is whether Power Innovation adds projects beyond the five signed (2.6 GW) by year-end as management promised, and whether leverage holds near 3.9x after Momentum and a doubled capex budget.",
+  "kind": "preview",
+  "kona": "Socrates is the closest US analogue to Kona: off-grid, gas-fired generation for a data center, built from small Solar and Siemens turbines plus Caterpillar reciprocating engines and derated to about 200 MW net from about 275 MW to 285 MW nameplate (Ohio filing via Watkins research). It was built in about 14 months from site handover and sells under a 10-year, mostly fixed-price PPA. That sets a template for Kona's selling-power option: a capacity-style PPA of 10 years or more with an investment-grade buyer, redundancy built into nameplate, and dedicated gas supply. The financing lesson is sharper. Williams raised 49% of project equity at a 6.35% target return because an investment-grade hyperscaler sits behind the PPA, and the implied all-in cost is about $3.5mn per MW including laterals (our estimate from JV terms). Without that offtaker credit, Kona should expect a much higher cost of equity and should price its PPA to recover capital within the primary term.",
+  "kpis": [
+    {
+      "consensus": "$0.56 (Zacks; TheRightTrader, 8 analysts); $0.541 (MarketBeat, 26 October)",
+      "current": "",
+      "metric": "Adjusted EPS",
+      "note": "Zacks ESP +1.65%, Rank #3; estimate unchanged over 30 days. Williams missed in 3 of the 4 quarters before 1Q26 (Barchart).",
+      "prior": "$0.50 (2Q26); $0.49 (3Q25)"
+    },
+    {
+      "consensus": "$3.2bn (Zacks); $2.99bn (MarketBeat); $2.9bn (TheRightTrader, 6 analysts)",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "Revenue includes commodity sales and derivative marks; EBITDA is the better measure.",
+      "prior": "$3,053mn (2Q26); $2,923mn (3Q25)"
+    },
+    {
+      "consensus": "n.a. for 3Q26; FY26 guide $8.3bn to $8.5bn",
+      "current": "",
+      "metric": "Adjusted EBITDA",
+      "note": "The guide implies $4.125bn to $4.325bn in the second half versus $3,953mn in 2H25. Momentum contributes from 3 September.",
+      "prior": "$1,921mn (2Q26); $1,920mn (3Q25); H1 $4,175mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Transmission, Power & Gulf Modified EBITDA",
+      "note": "First quarter including Socrates South revenue (in service late July).",
+      "prior": "$959mn (2Q26), +$68mn year on year"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "West Modified EBITDA",
+      "note": "Haynesville exposure rises with Momentum.",
+      "prior": "$359mn (2Q26)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Available funds from operations / dividend coverage",
+      "note": "Quarterly dividend is $0.525.",
+      "prior": "$1,450mn; 2.26x (2Q26). 3Q25 $1,449mn; 2.37x"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Capital investments (excluding acquisitions)",
+      "note": "FY26 growth capex guide $7.3bn to $7.9bn, excluding reimbursable long-lead power equipment.",
+      "prior": "$1,642mn (2Q26); $3,284mn in H1"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Debt-to-adjusted EBITDA",
+      "note": "Year-end about 3.9x including Momentum (2Q call); target range 3.5x to 4.0x.",
+      "prior": "3.67x at 30 June"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Power Innovation capacity",
+      "note": "Management cites a 6 GW-plus backlog (July release).",
+      "prior": "5 projects, 2,588 MW: Socrates 556 MW (South in service late July, North 4Q26), Apollo 490 MW (2H27), Aquila 520 MW (2H27 to 1H28), Socrates the Younger 340 MW (2H28), Neo 682 MW (2H28)"
+    }
+  ],
+  "monitor": [
+    "Power Innovation: any new project beyond the five (2.6 GW), contracted share of the '6+ GW backlog', turbine and balance-of-plant slots, and Socrates North timing.",
+    "FY26 adjusted EBITDA within $8.3bn to $8.5bn (implies $4.125bn to $4.325bn in the second half, up 4% to 9% on 2H25's $3.953bn) and the first read on 2027.",
+    "Leverage against the year-end target of about 3.9x (3.67x at 30 June) and the 4.0x ceiling, plus funding of 2027 capex."
+  ],
+  "name": "Williams",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "In August Chad said he expected more Power Innovation commercialization by year-end, and Larry said turbines are locked up only for the current backlog. Today five projects total about 2.6 GW against a backlog you describe as 6 GW-plus. How many GW are under signed agreements beyond the five, how many counterparties are in late-stage talks, and for which in-service years have you secured generation and balance-of-plant equipment? Will you announce at least one new project before year-end, yes or no?",
+      "style": "equity",
+      "why": "Power Innovation is the part of the story the premium multiple pays for. A gap between the 6 GW-plus backlog and the 2.6 GW signed tests pillar P2 directly."
+    },
+    {
+      "question": "Leverage was 3.67x at 30 June, and you guided about 3.9x at year-end with Momentum, against a 4.0x ceiling, after $2.75bn of new notes and growth capex of $7.3bn to $7.9bn. Where will leverage end 2026, and what 2027 growth capex does the 11%-plus CAGR assume? Have S&P and Moody's confirmed that they give the Blackstone JV full equity treatment, as your July presentation states? If you sign more power projects, will you fund them through a new JV or with corporate debt?",
+      "style": "credit",
+      "why": "Williams' cost of capital rests on its BBB+/Baa2 rating. Any gap between Williams' leverage measure and the agencies' would show up first in spreads and later in the rating."
+    },
+    {
+      "question": "Your 10-K describes the power projects as serving 'a large, investment-grade company' under contracts of up to 12.5 years, mostly fixed-price. What share of each project's capital, about $9bn in total by our reading of the JV terms, is recovered within the primary term? What termination payment or credit support applies if the customer cuts AI capex? Are the PPAs take-or-pay on capacity, or is any revenue tied to dispatch?",
+      "style": "credit",
+      "why": "Concentration in one hyperscaler and residual value after 10 to 12.5 years are the main credit risks in a business that otherwise rests on regulated pipelines."
+    },
+    {
+      "question": "Socrates South entered service in late July and North is due in 4Q, for 556 MW in total. What did Socrates contribute to 3Q Modified EBITDA, net of Blackstone's 49%, and what is its full-year run-rate once North is in service? Is the project at or above the roughly 20% pre-tax return you cited in late 2025, and what was the all-in cost per kW?",
+      "style": "equity",
+      "why": "Socrates is the first measured return on Power Innovation. It shows whether BTM power earns pipeline-like returns after the JV promote."
+    },
+    {
+      "question": "H1 adjusted EBITDA was $4,175mn, so the $8.3bn to $8.5bn guide needs $4.125bn to $4.325bn in the second half, against $3,953mn in 2H25. Where in the range are you tracking after one month of Momentum, the hurricane season and weak summer gas prices? Which segment is the swing factor, and will you give a 2027 EBITDA range on this call or in February?",
+      "style": "equity",
+      "why": "It tests pillar P1 and whether the 11%-plus CAGR starts from the top or the bottom of the 2026 range."
+    }
+  ],
+  "risks": [
+    "Power Innovation stalls at five projects with one counterparty; equipment (turbines, balance of plant) limits new awards.",
+    "Leverage drifts toward or above 4x as capex rises and Momentum is integrated; rating agencies treat the Blackstone JV less favorably than Williams does.",
+    "Customer concentration: the power projects depend on one large investment-grade company under 10-year to 12.5-year contracts, with a residual value question at the end of the term.",
+    "Near term: hurricanes, weak summer gas prices and marketing results (Sequent) could push FY26 toward the bottom of the $8.3bn to $8.5bn range.",
+    "Equity overhang from up to 26.9mn Momentum consideration shares released over 180 days; the stock trades on a premium multiple and below its moving averages."
+  ],
+  "sections": [
+    {
+      "body": "Williams moves about one-third of US natural gas through regulated interstate pipelines (Transco, Northwest Pipeline) and earns mostly fee-based revenue from gathering, processing and storage in the Northeast, Haynesville (now enlarged by Momentum) and the Rockies. Growth comes from contracted pipeline expansions with long-term firm transportation agreements, sold at a regulated or negotiated return. Power Innovation adds a second engine: Williams builds gas supply laterals and on-site generation for data centers and sells power under 10-year to 12.5-year, mostly fixed-price PPAs. Five projects (about 2.6 GW) are signed, 49% funded by Blackstone at a 6.35% target return.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 26 to 28 October 2026. Yahoo Finance's WMB analysis page showed 2024 data when read and was not used. No quarterly adjusted EBITDA consensus was found.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 adjusted EPS",
+            "$0.56 (+14.3% YoY)",
+            "Zacks via TradingView; TheRightTrader (8 analysts)",
+            "2Q26 $0.50; 3Q25 $0.49"
+          ],
+          [
+            "3Q26 adjusted EPS (alt.)",
+            "$0.541",
+            "MarketBeat, 26 Oct",
+            ""
+          ],
+          [
+            "3Q26 revenue",
+            "$3.2bn (Zacks); $2.99bn (MarketBeat); $2.9bn (TheRightTrader, 6)",
+            "As above",
+            "2Q26 $3,053mn; 3Q25 $2,923mn"
+          ],
+          [
+            "3Q26 adjusted EBITDA",
+            "n.a.",
+            "",
+            "2Q26 $1,921mn; 3Q25 $1,920mn"
+          ],
+          [
+            "FY26 adjusted EBITDA",
+            "Guide $8.3bn to $8.5bn",
+            "2Q26 release, 3 Aug",
+            "Feb guide $8.05bn to $8.35bn; FY25 $7,750mn"
+          ],
+          [
+            "FY26 adjusted EPS",
+            "$2.41 (9 analysts, range $2.30 to $2.65); $2.42",
+            "S&P Global via StockAnalysis, 22 Oct; MarketBeat, 26 Oct",
+            "FY25 $2.10"
+          ],
+          [
+            "FY27 adjusted EPS / revenue",
+            "about $2.64 / $14.11bn (summary figures, read once); EPS $2.67",
+            "S&P Global via StockAnalysis; MarketBeat",
+            ""
+          ],
+          [
+            "FY26 growth capex",
+            "Guide $7.3bn to $7.9bn",
+            "2Q26 release",
+            "Feb guide $6.1bn to $6.7bn"
+          ],
+          [
+            "Leverage",
+            "Guide about 3.9x at year-end; about 3.75x full-year Momentum basis",
+            "2Q26 call (CFO)",
+            "3.67x at 30 Jun"
+          ],
+          [
+            "Long-term growth",
+            "11%-plus adjusted EBITDA CAGR, 2025 to 2030",
+            "2Q26 call",
+            "Was 10%-plus"
+          ],
+          [
+            "Price target",
+            "$85.25 average (25; low $69, high $103); $86.06 (22 ratings)",
+            "S&P Global via StockAnalysis, 22 Oct; MarketBeat, 26 Oct",
+            ""
+          ],
+          [
+            "Share price",
+            "$71.75 close (26 Oct); 52-week range $56.19 to $80.08",
+            "StockAnalysis",
+            "$74.57 (13 Oct)"
+          ],
+          [
+            "6.400% notes due 2056",
+            "about 100.6; yield to worst about 6.35%",
+            "TradingView (undated, read 28 Oct)",
+            "Issued 8 Sep at 99.800, +115bp"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Contracted growth compounds at 11%-plus",
+            "Transco and Gulf expansions plus Momentum deliver double-digit EBITDA growth through 2030",
+            "3Q adjusted EBITDA against 3Q25's $1,920mn; FY26 guide held or raised within $8.3bn to $8.5bn; first 2027 framework",
+            "Management; Wells Fargo (questioned the math); Zacks"
+          ],
+          [
+            "P2 Power Innovation scales beyond 2.6 GW",
+            "More projects and new counterparties commercialized by year-end from a 6 GW-plus backlog",
+            "Any new project, GW and counterparty; turbine and balance-of-plant slots; Socrates North on time",
+            "Management; JPMorgan and Truist questions on the 2Q call"
+          ],
+          [
+            "P3 Leverage stays within 3.5x to 4.0x",
+            "Blackstone equity and the September notes keep leverage near 3.9x at year-end despite Momentum and capex",
+            "Leverage at 30 September against 3.67x at 30 June; funding plan for 2027",
+            "Management (CFO); Goldman question on funding options"
+          ],
+          [
+            "P4 Power projects earn pipeline-like returns",
+            "BTM power returns of about 20% pre-tax, improved by the JV promote",
+            "Socrates EBITDA contribution; any update on returns or build cost (about $3.5mn per MW all-in, our estimate from JV terms)",
+            "Management (via Power Engineering, November 2025, single source)"
+          ],
+          [
+            "P5 Transco projects stay on schedule",
+            "SESE partial early 2027, full 3Q27; NESE on time and on budget",
+            "In-service and cost updates",
+            "Management; UBS question on the 2Q call"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Growth target raised to 11%-plus from about 8% in February, on contracted projects only",
+            "Premium valuation: P/E about 28.6x (MarketBeat); stock below its 50-day ($72.18) and 200-day ($73.02) averages"
+          ],
+          [
+            "Socrates built in about 14 months from site handover; turbines locked for the current backlog",
+            "Only one named type of power counterparty ('a large, investment-grade company'); 6 GW-plus backlog not split between signed and in negotiation"
+          ],
+          [
+            "Blackstone JV equity at 6.35% with a 10% promote and buyout right from about 2033",
+            "Leverage rising to about 3.9x at year-end; FY26 growth capex alone 70% to 84% above 2025's total capital investments; $2.75bn of new notes"
+          ],
+          [
+            "Momentum at about 8.5x 2027 EBITDA adds Haynesville scale toward Gulf LNG",
+            "Missed EPS in 3 of 4 quarters before 1Q26 (Barchart); Zacks says 2Q26 missed $0.52"
+          ],
+          [
+            "Strong Buy consensus (S&P Global 23 of 25 Buy or better)",
+            "Socrates is off-grid with no grid backup (Ohio filing via Watkins research); equity overhang from Momentum shares"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Power Innovation pace: does Williams announce projects beyond the five (2.6 GW) by year-end, with new counterparties, or does equipment timing cap it at the current backlog? 2) Leverage and funding: with Momentum, about $7.6bn of growth capex at the guide midpoint and a 4x ceiling, how much room is left before more JV equity or asset sales? 3) 2027 outlook: does the first 2027 framework support FY27 EPS consensus of about $2.64 to $2.67 and the 11%-plus CAGR, given hurricane, gas price and marketing swings?",
+      "title": "Live debates"
+    },
+    {
+      "body": "3Q26 EPS consensus is $0.56 at Zacks and TheRightTrader but $0.541 at MarketBeat; revenue runs from $2.9bn (TheRightTrader) through $2.99bn (MarketBeat) to $3.2bn (Zacks). MarketBeat calls 2Q26 EPS in line at $0.50, while Zacks says it missed $0.52. Average targets: $85.25 (S&P Global, 25 analysts) against $86.06 (MarketBeat, 22). Socrates is described as 200 MW (2Q call: phase one), 400 MW (Power Engineering, November 2025) and 556 MW (10-Q, North plus South); the 10-Q figure is used. Watkins research says the 6 GW-plus target includes pipeline projects; Williams calls it a backlog without a split. Yahoo's analysis page showed 2024 estimates and was discarded.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: cash $203mn; commercial paper $475mn; long-term debt $28,121mn plus $2,197mn due within one year (about $30.8bn gross); debt-to-adjusted EBITDA 3.67x. Ratings Baa2 (Moody's), BBB+ (S&P), BBB (Fitch) per the September FWP. September: $2.75bn of notes, $500mn 5.000% 2029 (+55bp), $1.0bn 5.600% 2033 (+92bp), $750mn 5.800% 2036 (+102bp) and $500mn 6.400% 2056 (+115bp, re-offer yield 6.415%), to repay commercial paper and fund capex. Blackstone JV: $5.34bn committed for 49% of five power projects ($4.4bn for 49% of expected growth capex plus about $0.9bn of consideration); about $3.75bn received in July, the rest through early 2027; full equity treatment per Williams. Momentum: about $3.5bn of cash and debt plus about $2bn of stock. Dividend $0.525 quarterly; 2Q AFFO coverage 2.26x. The 6.400% 2056 notes were quoted near 100.6 (yield to worst about 6.35%) on an undated TradingView page. No CDS quote was found.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: commercialization beyond the five power projects and equipment slots; year-end leverage, rating agency treatment of the JV and 2027 funding (credit); PPA termination protection and capital recovery (credit); Socrates economics and returns; second-half bridge to the FY26 guide.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "Williams: to report 3Q26 results on Nov. 2; call Nov. 3 (13 October 2026)",
+      "url": "https://www.williams.com/2026/10/13/williams-to-report-third-quarter-2026-financial-results-on-nov-2-earnings-conference-call-and-webcast-scheduled-for-nov-3/"
+    },
+    {
+      "title": "Williams 2Q26 release (8-K Ex. 99.1, 3 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000024/wmb_20260630xer.htm"
+    },
+    {
+      "title": "Williams 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000026/wmb-20260630.htm"
+    },
+    {
+      "title": "Williams FY25 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000006/wmb-20251231.htm"
+    },
+    {
+      "title": "Williams 3Q25 release (8-K Ex. 99.1, 3 November 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726325000143/wmb_20250930xer.htm"
+    },
+    {
+      "title": "Williams 4Q25 release and 2026 guidance (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000003/wmb_20251231xer.htm"
+    },
+    {
+      "title": "Blackstone Power Innovation JV release and presentation (8-K, 13 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000119312526301533/d152507dex991.htm"
+    },
+    {
+      "title": "Momentum share resale registration (8-K, 3 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000119312526381926/d111572d8k.htm"
+    },
+    {
+      "title": "Senior notes pricing release (8-K Ex. 99.1, 8 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000107263/000119312526387359/d113424dex991.htm"
+    },
+    {
+      "title": "Senior notes term sheet (FWP, 8 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000107263/000119312526385621/d41068dfwp.htm"
+    },
+    {
+      "title": "Williams 2Q26 earnings call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/10/williams-wmb-q2-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "Zacks via TradingView: Williams to report Q3 earnings",
+      "url": "https://www.tradingview.com/news/zacks:4589e99b1094b:0-williams-to-report-q3-earnings-what-surprise-awaits-investors/"
+    },
+    {
+      "title": "MarketBeat: Williams projected to announce earnings on Monday (26 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/upcoming-williams-companies-wmb-projected-to-announce-earnings-on-monday-2026-10-26/"
+    },
+    {
+      "title": "TheRightTrader WMB earnings calendar",
+      "url": "https://therighttrader.com/earnings-calendar/wmb"
+    },
+    {
+      "title": "StockAnalysis WMB forecast (S&P Global)",
+      "url": "https://stockanalysis.com/stocks/wmb/forecast/"
+    },
+    {
+      "title": "StockAnalysis WMB price history",
+      "url": "https://stockanalysis.com/stocks/wmb/history/"
+    },
+    {
+      "title": "TradingView WMB bonds",
+      "url": "https://kr.tradingview.com/symbols/NYSE-WMB/bonds"
+    },
+    {
+      "title": "Barchart: Williams buildout faces its first real Momentum test (31 July 2026)",
+      "url": "https://www.barchart.com/story/news/3585783/williams-companies-infrastructure-buildout-faces-its-first-real-momentum-test"
+    },
+    {
+      "title": "Power Engineering: Williams pushes deeper into power generation (6 November 2025)",
+      "url": "https://www.power-eng.com/gas/williams-pushes-deeper-into-power-generation-as-data-center-demand-accelerates/"
+    },
+    {
+      "title": "Watkins research: Williams Power Innovation (BTM)",
+      "url": "https://www.jaredwatkins.com/research/datacenters/behind-meter-power/williams-companies-btm/"
+    }
+  ],
+  "ticker": "WMB",
+  "verdict": "Preview",
+  "versus": "Pending — reports 3Q26 after the close on Monday 2 November 2026; call Tuesday 3 November, 9:30 a.m. ET",
+  "watch": [
+    "New Power Innovation projects, counterparties and GW; equipment slots secured.",
+    "Socrates North in-service date and Socrates' EBITDA contribution.",
+    "FY26 guide position and first 2027 framework.",
+    "Leverage at 30 September and year-end; rating agency commentary.",
+    "Transco expansions: SESE partial in-service early 2027, NESE on time, Power Express and Delta Access."
+  ]
+}

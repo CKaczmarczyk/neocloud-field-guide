@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "3Q26: 11 GW of gas equipment signed (8 GW SRAs, 3 GW orders), 13 GW of SRAs converted, 5 GW shipped; GW under contract 116 to 122; year-end target raised to at least 130 GW. 2032 slots are selling.",
+      "company": "GE Vernova",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "Signed GW fell from 20 GW in 2Q and missed BofA's 13 GW; the market had looked for 130-140 GW at year-end, so the new target is the bottom of that range. Backlog (64 GW) now exceeds SRAs (58 GW).",
+      "segment": "energy",
+      "source": "GE Vernova 3Q26 release; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+    },
+    {
+      "claim": "Management: 3Q gas orders priced more than 20% above 4Q25 and FY26 price per kW about 50% above 2025; 'no change in our cash terms' for customers. Power segment EBITDA margin 21.4% vs a 17-18% guide.",
+      "company": "GE Vernova",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "The 'more than 20%' step-up vs 4Q25 is the same as stated for H1, so price is high and holding rather than still accelerating; 4Q price per kW guided lower on fewer aeroderivatives (call, single source).",
+      "segment": "energy",
+      "source": "GE Vernova 3Q26 call (Earnings Whispers transcript); release",
+      "url": "https://earningswhispers.com/transcript/GEV/Q32026"
+    },
+    {
+      "claim": "Aeroderivative orders: 57 units in 3Q26 vs 9 a year earlier, 127 in 9M26 vs 45; management says aero demand is strong but 4Q volume will be lighter than the 2Q-3Q run rate.",
+      "company": "GE Vernova",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "Only 13 aeros shipped in 3Q (39 in 9M), so the fast-to-deliver bridge units are being booked roughly 3x faster than they ship.",
+      "segment": "energy",
+      "source": "GE Vernova 3Q26 10-Q; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm"
+    },
+    {
       "claim": "Josh preview: gas prime genset lead times run into late 2028, with price escalators on distant orders; Cat Financial provided vendor financing on a 2 GW order.",
       "company": "Caterpillar",
       "date": "2026-10-26",
@@ -113,6 +143,16 @@
       "segment": "energy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=GSMRhkbV2m4"
+    },
+    {
+      "claim": "Backlog hit a record $78bn (up about $38bn YoY); large gas prime engine orders now run to 2029 and turbines into 2030, and management says prime power demand 'continues to trend higher'.",
+      "company": "Caterpillar",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Power Generation sales $3,421mn, +30% YoY; sales to users +75%. But adjusted margin ex tariff refunds was flat QoQ at about 20%: price is being absorbed by capacity costs, and the stock fell about 8% on an unchanged guide.",
+      "segment": "energy",
+      "source": "Caterpillar 3Q26 release and call (transcript, single source for backlog)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm"
     }
   ],
   "order": 4,
@@ -120,5 +160,5 @@
   "status": "strengthening",
   "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, and SpaceX plans 20 GW of its own power and cooling. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
 }

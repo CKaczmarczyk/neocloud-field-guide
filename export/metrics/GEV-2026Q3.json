@@ -1,0 +1,16 @@
+{
+  "active_mw": "",
+  "contracted_mw": "",
+  "date": "2026-10-28",
+  "debt_cost": "Latest financing: Feb 2026 senior notes 4.250% 2031, 4.875% 2036, 5.500% 2056; Fitch A- (stable, upgraded 12 Aug 2026), S&P BBB (positive). About $4.5bn new debt planned for Trench.",
+  "margin": "Adj. EBITDA 15.4% / Power segment 21.4%",
+  "name": "GE Vernova",
+  "notes": "Gas power: 122 GW under contract (64 GW backlog, 58 GW SRAs), 11 GW signed, 5.3 GW shipped; target at least 130 GW by year-end. Pricing: 3Q gas orders more than 20% above 4Q25, FY26 about +50% per kW vs 2025 (call; GEV discloses no $/kW, so rate blank). MW fields blank: equipment supplier, not a compute operator. Revenue is total company (Power $6,067mn). Orders $29.3bn; RPO $196.7bn; FCF $5.4bn; net cash $13.9bn; contract liabilities $45.7bn. First GEV scorecard row, so no prior-quarter comparison in the table; vs 2Q26 filings: adj. EBITDA +55%, RPO +12%, GW signed 20 to 11 (-45%), cash +28% (moved more than 25%: EBITDA, GW signed, cash).",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "12642",
+  "segment": "energy",
+  "source": "GE Vernova 3Q26 8-K Ex. 99.1 and 10-Q; call (Earnings Whispers) for pricing",
+  "ticker": "GEV",
+  "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+}

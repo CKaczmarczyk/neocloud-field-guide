@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Anthropic's inference revenue per megawatt went from about $16M to over $60M in a year across its fleet; June-quarter revenue up 1,368% against compute expense up 300%. The value per megawatt of a site is set by the model and software on it, not the hall: the lab earns about 30x the landlord's rent on the same megawatt.",
+      "company": "Anthropic",
+      "date": "2026-10-27",
+      "direction": "supports",
+      "numbers": "$16M to $60M+ per MW per year; revenue +1,368% vs compute cost +300%",
+      "segment": "financing",
+      "source": "SemiAnalysis on Anthropic's S-1, 27 Oct 2026 (not yet checked against the filing)",
+      "url": "https://x.com/SemiAnalysis_"
+    },
+    {
       "claim": "A listed cloud provider took a 20 MW, 10-year colocation lease from Q2 2027 for more than $400M over the term.",
       "company": "Duos Technologies",
       "date": "2026-10-21",
@@ -72,5 +82,5 @@
   "status": "strengthening",
   "summary": "Inference is taking a growing share and needs different sites: smaller, spread out, with more CPUs and storage beside the accelerators. That widens the market for sites of tens of megawatts, though large tenants still prefer 50 MW or more.",
   "title": "Inference changing site design",
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
 }

@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Agreed to buy Trench Group (bushings, instrument transformers, coils) for $9.0bn, 13x 2028E EBITDA, to vertically integrate a supplier and add high-voltage capacity; Electrification equipment backlog $42.2bn, +60% YoY.",
+      "company": "GE Vernova",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "Paying 18x 2026E EBITDA for a component maker signals grid equipment, not just turbines, is a binding constraint; close only in late 2027.",
+      "segment": "energy",
+      "source": "GE Vernova 3Q26 release and webcast slides",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+    },
+    {
+      "claim": "Gas turbine shipments reached 5.3 GW in 3Q26 (3.3 GW in 2Q), the planned 5 GW a quarter run rate, while gas equipment backlog grew from 53 to 64 GW.",
+      "company": "GE Vernova",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "Even at 20 GW a year of output, backlog of 64 GW plus 58 GW of SRAs is about six years of production, so new gas capacity ordered today arrives around 2030 or later.",
+      "segment": "energy",
+      "source": "GE Vernova 3Q26 release and 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+    },
+    {
       "claim": "Josh preview: Galaxy's 830 MW of approved grid power at Helios is still unleased because it energizes only in late 2028 and Texas has gated large loads.",
       "company": "Galaxy",
       "date": "2026-10-22",
@@ -73,6 +93,16 @@
       "segment": "policy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=b5YnPsBxgjA"
+    },
+    {
+      "claim": "CEO says Power & Energy output is paced by capacity with 'no slack in the system'; 4Q guided only to moderate growth; 58% of backlog ships within 12 months (59% in 2Q).",
+      "company": "Caterpillar",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Book-to-bill about 1.3x (derived: MP&E sales $19.65bn plus $5.9bn backlog growth). Lead times lengthened from late 2028 (August) to 2029 for large gas engines.",
+      "segment": "energy",
+      "source": "Caterpillar 3Q26 call (transcript)",
+      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
     }
   ],
   "order": 3,
@@ -80,5 +110,5 @@
   "status": "strengthening",
   "summary": "Utility dates are slipping and the gap is now costing signed deals: Microsoft dropped Nscale's UK flagship over a 2030s grid date, and Galaxy's 830 MW cannot be leased until it energizes in late 2028. Oracle's trucked gas shows the same gap in the US. The counterview is that US grid additions surge from about 2028.",
   "title": "Power arriving after the chips",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
 }

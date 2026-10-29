@@ -1,0 +1,739 @@
+{
+  "changes": [
+    "Helios II reset: Galaxy walked away from a summer deal because the wrap offered did not give investment-grade protection to debt and equity. The search now targets IG hyperscalers or credit-enhanced tenants, with no fixed date (2028 data halls, power around mid-2028).",
+    "CoreWeave exposure clarified: the Helios I leases sit with CoreWeave's parent, behind site-level GPU lenders; the load is allocated to an IG hyperscaler for now. Cash rent and the -$152mn working-capital swing went undiscussed.",
+    "Ramp and funding confirmed: exit-2027 run-rate $800-850mn; Phase II $675mn is a GAAP clarification, not new economics; Phase III equity-funded with debt in 1H27; December exchangeable repaid from resources.",
+    "Power: ERCOT Batch Zero conditionally classified ~4.2 GW across five projects (>1.6 GW at Helios I-II); 2.6 GW sits in study load; clarity around April 2027."
+  ],
+  "checks": "Post-call, 28 Oct 2026. No subagent tool was available in this run, so every figure was listed and reconfirmed against its source: 3Q26 8-K exhibits re-downloaded from EDGAR (Ex.99.1 release, Ex.99.2 deck, Ex.99.3 supplement) and grep-confirmed for 79.1, 68.7, 75.4, 152.2, 514.4, 267.2, 2,753, 3,505, 441.3, 454.7, 395.0, 0.83; Data Centers cash flows (OCF -129,078; PP&E -489,697; end cash 759,655), notes payable (441,316 + 6,307,116 = 6,748.4), net income (344,272 - 21,500 = 322.8) and shares (191.88mn A + 196.60mn B = 388.5mn) read from the tables. Other KPI rows carried from the precall, which a fresh subagent checked on 27 Oct. Call content from the Motley Fool transcript (LLM-assisted; short quotes confirmed on page: Novogratz, Ferraro, Paquette); Benzinga failed to load and Seeking Alpha blocked access. Conflict: the Fool transcript renders the exit-2027 run-rate as '$80 million to $150 million', impossible given Phase I alone is $315mn annualized; Investing.com reports $800-850mn, used here as a likely transcription error (two sources, conflicting). Exit-2027 run-rate is not in the deck or release. Recomputed in calc.py: $198/kW-month realized ($197 base), 86.9% margin, 72-79% Phase II billing, $439.4mn net parent funding, $0.81/$0.71 per share, ~$302mn/$346mn interest, 17.5%/16.9% yield on cost, $6.75bn market value, +9.6% on 27 Oct. Prices: GLXY $17.38 at 10:02 ET 28 Oct, $17.18 close 27 Oct, $15.68 close 26 Oct (Yahoo chart API). No 10-Q on EDGAR as of 28 Oct.",
+  "consensus_thesis": "Investors own Galaxy as a crypto franchise with a contracted Helios annuity underneath; at about $17 the price roughly equals contracted Helios value, so the debate is whether CoreWeave's credit stress makes that annuity worth less than the sell side assumes.",
+  "date": "2026-10-28",
+  "headline": "No change to the consensus view in direction: the call confirmed the Phase I annuity and the 2027 ramp and showed discipline on Helios II credit, but pushed the Helios II catalyst out and left cash rent from CoreWeave unaddressed, so long-term compounding holds while credit quality still rests on one sub-investment-grade parent.",
+  "kind": "postcall",
+  "kona": "The call shows how a landlord prices tenant credit: Galaxy walked away from a Helios II deal because an investment-grade wrap did not protect its debt and equity, and it now admits its CoreWeave leases sit at the parent, behind site-level GPU lenders. Kona should ask any GPU tenant for direct or wrapped credit at the entity that owns the chips, or prepaid rent covering debt service through the build, and price construction carry into rent (Galaxy's ~$198 per kW-month, grid-powered and near-triple-net, is a ceiling). Galaxy's own uncontracted 830 MW will not energize before mid-2028, so time-to-power remains Kona's edge.",
+  "monitor": [
+    "10-Q (due within weeks): cash rent received from CoreWeave, the deferred or straight-line rent balance, and what drove the -$152mn Data Centers working-capital outflow.",
+    "Texas audit results (December) and Batch Zero allocations (around April 2027): they set Helios II-IV timing and the next tenant conversation.",
+    "Phase III debt in 1H27 (loan-to-cost, coupon vs 9.875% on Phase II) and repayment of the $445mn exchangeable in December from cash."
+  ],
+  "name": "Galaxy Digital",
+  "pdf_brief": "/_blob/0bf35c69e8f62e8f09d62452dc078ab7",
+  "pdf_report": "/_blob/c788aab5ca551cd65e8a3fa41ef2306d",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter and call showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "1 Phase I annuity",
+            "~$80mn a quarter at >90% lease-level margin from 3Q26",
+            "Leasing revenue $79.1mn; segment adj. EBITDA $68.7mn (86.9% after overhead); segment operating cash flow -$129.1mn; cash rent not discussed on call",
+            "Confirmed (revenue); cash unresolved",
+            "Release; Ex.99.3; call"
+          ],
+          [
+            "2 Phase II on time and funded",
+            "First halls 2Q27; notes cover the build; no new equity",
+            "On schedule, within budget, 'fully funded'; much of remaining spend in 1H27; parent put a net $439mn into the segment in 3Q26",
+            "Confirmed, with parent support",
+            "Release; Ex.99.3; call"
+          ],
+          [
+            "3 CoreWeave pays",
+            "Lease cash flows safe despite tenant stress",
+            "Leases with CoreWeave parent (behind GPU lenders); load allocated to an IG hyperscaler (per CoreWeave); no disclosure of cash rent, security or amendments",
+            "Unresolved",
+            "Call (Ferraro)"
+          ],
+          [
+            "4 Helios II catalyst",
+            "830 MW tenant within about six months",
+            "Summer deal not signed on terms offered; no LOI; broader IG-only process; no fixed date, 2028 data halls the backstop",
+            "Challenged",
+            "Call (Novogratz, Ferraro)"
+          ],
+          [
+            "5 Crypto drives EPS",
+            "EPS swings with crypto; -$0.13 to +$0.04",
+            "Treasury & Corporate adj. EBITDA $395mn of $455mn; adj. EPS $0.83",
+            "Confirmed",
+            "Release"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "table": {
+        "head": [
+          "Shift",
+          "Detail"
+        ],
+        "rows": [
+          [
+            "Emphasized more",
+            "Tenant credit discipline ('investment-grade protection for both our debt and our equity'); look-through to CoreWeave's end customer; ERCOT Batch Zero and the Texas audit as gating items"
+          ],
+          [
+            "Emphasized less / dropped",
+            "A near-term Helios II signing (precall release: 'continues to advance discussions'); the 15-year average phase revenue (now run-rate at full turnover)"
+          ],
+          [
+            "New disclosure",
+            "Data Centers cash-flow statement (release); leases are with CoreWeave's parent; $230mn Helios II equipment committed; exit-2027 run-rate $800-850mn (call only)"
+          ],
+          [
+            "KPIs more important",
+            "Cash rent and working capital; parent contributions; Batch Zero status by site; Phase III loan-to-cost"
+          ],
+          [
+            "Risks up / down",
+            "Up: Helios II timing, structural subordination to CoreWeave's GPU lenders. Down: exchangeable refinancing, Phase II economics doubt, Texas permits gating current builds"
+          ]
+        ]
+      },
+      "title": "Emphasis and disclosure shifts"
+    },
+    {
+      "body": "Matrix: every topic is 'new' (first transcript held). Nine of fourteen questions touched Helios, funding or power; five were crypto or tokenization. Nobody asked about cash rent, the working-capital outflow or tenant security, and management did not pre-empt them. Prepared remarks pre-empted the Phase II revenue footnote and the exchangeable. Trevor's watch-list. Analyst chosen: Jonathan Petersen (Jefferies), the most credit-focused questioner (lender appetite and covenants); also tracking James Yaro (Goldman Sachs) on capital priorities. 3Q26: Petersen asked whether tighter lender terms affect existing facilities or the next raise; answer partial (existing facilities unaffected, lenders 'a lot more conservative', no terms). Later evidence to log: Phase III debt terms in 1H27. Open items: cash rent and receivable; tenant security; Phase III loan-to-cost; exchangeable repaid in cash; Helios II tenant credit; December audit.",
+      "table": {
+        "head": [
+          "Topic (3Q26 call)",
+          "Analyst (firm)",
+          "Answer",
+          "Rating"
+        ],
+        "rows": [
+          [
+            "Power and sites / tenant: why Helios II deal dropped",
+            "W. Kops for P. Moley (Piper Sandler)",
+            "Market shifted; competitor delays; wraps fell short",
+            "Direct"
+          ],
+          [
+            "Capex and funding: priorities, December notes",
+            "J. Yaro (Goldman Sachs)",
+            "Business, buffer, then buybacks; repay from resources",
+            "Direct"
+          ],
+          [
+            "Customer credit: CoreWeave structure, Helios II timing",
+            "J. Faucette (Morgan Stanley)",
+            "Parent-level leases; IG end customer; timing tied to Texas milestones",
+            "Direct / partial"
+          ],
+          [
+            "Delivery timing; capex and funding: Helios II date, Phase III",
+            "E. Engel (Compass Point)",
+            "No fixed date, 2028 backstop; Phase III equity-funded",
+            "Partial"
+          ],
+          [
+            "Power and permits",
+            "B. Knoblauch (Cantor)",
+            "Permits for current builds in hand; freeze not gating",
+            "Direct"
+          ],
+          [
+            "Cost of debt: lender appetite, covenants",
+            "J. Petersen (Jefferies)",
+            "Existing facilities unaffected; lenders more conservative; no terms",
+            "Partial"
+          ],
+          [
+            "Pricing: Helios revenue assumptions",
+            "M. Kim (Bloomberg)",
+            "No change to Phase II economics; GAAP clarification",
+            "Direct"
+          ],
+          [
+            "Supply: long-lead equipment",
+            "B. Papanastasiou (Chardan)",
+            "$230mn committed; tight, not prohibitive",
+            "Direct"
+          ],
+          [
+            "Capex and funding: credit markets",
+            "M. Toner (ATB Cormark)",
+            "Macro view; no need to tap markets before 1Q-2Q27",
+            "Partial"
+          ]
+        ]
+      },
+      "title": "Analyst focus and Trevor's watch-list"
+    },
+    {
+      "body": "For cost, debt and dilution lines [↓] means worse for shareholders. Sources: 3Q26 release (Ex.99.1) and financial supplement (Ex.99.3); 2Q26 from the 2Q26 release. n.a. = not disclosed.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Data center leasing revenue ($mn)",
+            "79.1",
+            "18.9",
+            "0",
+            "[↑] / [↑]",
+            "First full quarter"
+          ],
+          [
+            "Implied rent ($/kW-month, 133 MW)",
+            "198",
+            "n.a.",
+            "n.a.",
+            "[?] / [?]",
+            "Phase I base ~$197"
+          ],
+          [
+            "Data Centers adj. EBITDA ($mn)",
+            "68.7",
+            "11.5",
+            "3.7",
+            "[↑] / [↑]",
+            "86.9% of leasing revenue"
+          ],
+          [
+            "Data Centers notes interest ($mn)",
+            "75.4",
+            "7.4",
+            "0",
+            "[↓] / [↓]",
+            "Phase II carry"
+          ],
+          [
+            "Data Centers operating cash flow ($mn)",
+            "-129.1",
+            "-2.9",
+            "n.a.",
+            "[↓] / [?]",
+            "Working capital -152.2"
+          ],
+          [
+            "Parent contributions, net ($mn)",
+            "439.4",
+            "142.1",
+            "n.a.",
+            "[↓] / [?]",
+            "Rising"
+          ],
+          [
+            "Data Centers capex ($mn)",
+            "757",
+            "448",
+            "n.a.",
+            "[↑] / [?]",
+            "+69% QoQ"
+          ],
+          [
+            "Delivered / contracted IT (MW)",
+            "133 / 526",
+            "133 / 526",
+            "0 / n.a.",
+            "[~] / [↑]",
+            "Next step 2Q27"
+          ],
+          [
+            "Net income ($mn)",
+            "322.8",
+            "-85.3",
+            "505.1",
+            "[↑] / [↓]",
+            "Crypto-driven"
+          ],
+          [
+            "Adjusted EPS ($)",
+            "0.83",
+            "-0.09",
+            "1.12",
+            "[↑] / [↓]",
+            "Swings with marks"
+          ],
+          [
+            "Adjusted EBITDA ($mn)",
+            "454.7",
+            "-77.3",
+            "629.6",
+            "[↑] / [↓]",
+            "Volatile"
+          ],
+          [
+            "Treasury & Corporate adj. EBITDA ($mn)",
+            "395.0",
+            "-78.2",
+            "375.8",
+            "[↑] / [↑]",
+            "BTC-led"
+          ],
+          [
+            "Digital Assets adj. EBITDA ($mn)",
+            "-9.0",
+            "-10.5",
+            "250.2",
+            "[~] / [↓]",
+            "Loss-making"
+          ],
+          [
+            "Average loan book ($bn)",
+            "1.8",
+            "1.4",
+            "1.8",
+            "[↑] / [~]",
+            "Rising"
+          ],
+          [
+            "Cash, stablecoins and T-bills ($bn)",
+            "4.9",
+            "2.5",
+            "n.a.",
+            "[↑] / [?]",
+            "Incl. note proceeds"
+          ],
+          [
+            "Notes payable, carrying ($mn)",
+            "6,748",
+            "3,263",
+            "1,150",
+            "[↓] / [↓]",
+            "Phase II notes"
+          ],
+          [
+            "Total equity ($bn)",
+            "3.0",
+            "2.7",
+            "3.2",
+            "[↑] / [↓]",
+            "Buybacks offset income"
+          ],
+          [
+            "Class A + B shares (mn)",
+            "388.5",
+            "391.4",
+            "n.a.",
+            "[↑] / [?]",
+            "Buybacks"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: Data Centers on plan at the revenue line and still cash-negative while Phase II is built; the firm-level beat is cyclical (crypto marks).",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "Phase I leasing revenue",
+            "~$80mn a quarter",
+            "Delivered $79.1mn",
+            "In line",
+            "First full quarter",
+            "No pushback"
+          ],
+          [
+            "Exit-2027 leasing run-rate",
+            "$800-850mn annualized",
+            "New (call)",
+            "n.a.",
+            "Current Phase II delivery schedule",
+            "Needs 72-79% of Phase II billing"
+          ],
+          [
+            "Phase II delivery",
+            "First halls 2Q27",
+            "Maintained",
+            "In line",
+            "Much of remaining spend 1H27",
+            "Not challenged"
+          ],
+          [
+            "Phase II base revenue",
+            "$675mn at full turnover",
+            "Redefined (was $690mn avg)",
+            "n.a.",
+            "GAAP lease-accounting clarification",
+            "Bloomberg asked; accepted"
+          ],
+          [
+            "Phase III funding",
+            "Equity-funded; debt 1H27",
+            "Maintained",
+            "n.a.",
+            "Structure set by markets",
+            "Lenders 'more conservative'"
+          ],
+          [
+            "Helios II tenant",
+            "No date; 2028 halls, mid-2028 power",
+            "Later (was near-term talks)",
+            "Below hopes",
+            "Will not trade terms for timing",
+            "Pressed by 3 analysts"
+          ],
+          [
+            "Exchangeable notes ($445mn, Dec)",
+            "Repay without refinancing",
+            "Maintained",
+            "n.a.",
+            "Cash on hand",
+            "Accepted"
+          ],
+          [
+            "Share repurchase",
+            "New $200mn, opportunistic",
+            "New",
+            "n.a.",
+            "After business needs and buffer",
+            "Competes with build"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5-10 year view: Helios is a scarce powered campus with a good build record. Compounding depends on a second, investment-grade tenant for Helios II and on refinancing the 2031 notes against long remaining lease terms; the call showed management will trade time for tenant credit, which helps the second and delays the first.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power access",
+            "Strong",
+            "Improving",
+            ">1.6 GW Helios I-II conditional Batch Zero; 2.6 GW study load; audit in Dec",
+            "Scarce asset; timing set by ERCOT"
+          ],
+          [
+            "Site pipeline",
+            "Large, early",
+            "Stable",
+            "830 MW Helios II uncontracted; $230mn equipment committed",
+            "Value needs a second tenant"
+          ],
+          [
+            "Tenant quality",
+            "Single, stressed",
+            "Stable",
+            "526 MW with CoreWeave parent; IG end customer today, can change",
+            "Caps the annuity multiple"
+          ],
+          [
+            "Cost of capital",
+            "High",
+            "Stable",
+            "9.875% Phase II notes; Phase III equity first; lenders tighter",
+            "Thin spread over ~17% yield on cost"
+          ],
+          [
+            "Execution speed",
+            "Good",
+            "Stable",
+            "Phase I on time; Phase II on budget",
+            "Supports re-leasing value"
+          ],
+          [
+            "Contract discipline",
+            "Good",
+            "Improving",
+            "Walked away from a wrap it judged weak",
+            "Slower, better Helios II"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Tenant credit (CoreWeave)",
+            "Debated",
+            "Parent-level leases behind GPU lenders; cash rent and security undisclosed",
+            "Up (clarified)",
+            "Drives equity and note value"
+          ],
+          [
+            "Helios II leasing",
+            "Talks advancing",
+            "Summer deal dropped; IG-only search; no date",
+            "Up",
+            "Catalyst moves into 2027"
+          ],
+          [
+            "Funding and carry",
+            "Phase II funded",
+            "Segment cash-negative; Phase III equity-first; lenders tighter",
+            "Unchanged",
+            "Parent liquidity tied to crypto"
+          ],
+          [
+            "Power and permitting",
+            "Texas audit",
+            "Batch Zero conditional; permits not gating; Caspian denied",
+            "Down",
+            "Helios III/IV and Caspian later"
+          ],
+          [
+            "Refinancing",
+            "$445mn exchangeables",
+            "Repay from resources; credit markets not needed until 1Q-2Q27",
+            "Down",
+            "Removes near-term overhang"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "table": {
+        "head": [
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "Is rent being paid in cash?",
+            "Not addressed on the call; no analyst asked.",
+            "Segment operating cash flow -$129.1mn, working capital -$152.2mn; 10-Q needed."
+          ],
+          [
+            "Is the tenant credit worse than the lease suggests?",
+            "Leases are with CoreWeave's parent; the load serves an IG hyperscaler.",
+            "Parent-level claim ranks behind site-level GPU financings; end-customer allocation can change (Ferraro)."
+          ]
+        ]
+      },
+      "title": "Concern, response, evidence"
+    },
+    {
+      "table": {
+        "head": [
+          "Site",
+          "MW (IT)",
+          "Tenant",
+          "Annual revenue",
+          "Capex",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Helios I Ph. I",
+            "133",
+            "CoreWeave (parent)",
+            "$315mn",
+            "$1.8bn",
+            "DB loan up to $1.4bn, SOFR+4.75%",
+            "Paying rent; refi optional"
+          ],
+          [
+            "Helios I Ph. II",
+            "260",
+            "CoreWeave (parent)",
+            "$675mn",
+            "$4.0bn est.",
+            "$3.5bn 9.875% notes 2031 + parent",
+            "Building; 2Q27"
+          ],
+          [
+            "Helios I Ph. III",
+            "133",
+            "CoreWeave (parent)",
+            "n.d.",
+            "n.d.",
+            "Parent equity; debt 1H27",
+            "2028"
+          ],
+          [
+            "Helios II",
+            "830 gross",
+            "None",
+            "n.a.",
+            "$230mn committed",
+            "n.a.",
+            "2028 halls"
+          ],
+          [
+            "Caspian, Selene, Helios III",
+            "2.6 GW study load",
+            "None",
+            "n.a.",
+            "n.a.",
+            "n.a.",
+            "ERCOT; ~Apr 2027"
+          ]
+        ]
+      },
+      "title": "Helios by phase"
+    },
+    {
+      "body": "Per share: annualized Phase I leasing revenue of ~$316mn is ~$0.81 a share and segment adjusted EBITDA ~$0.71 (388.5mn A+B shares). 3Q26 notes interest annualizes to ~$302mn and a full year of Phase II notes alone is ~$346mn, so interest exceeds segment EBITDA until Phase II rents. Yield on cost ~17.5% (Phase I) and ~16.9% (Phase II) vs 9.875% debt. Shares -0.7% QoQ on buybacks; market value ~$6.8bn at $17.38.",
+      "table": {
+        "head": [
+          "Data Centers cash flows ($mn)",
+          "3Q26",
+          "2Q26"
+        ],
+        "rows": [
+          [
+            "Operating cash flow",
+            "-129.1",
+            "-2.9"
+          ],
+          [
+            "  of which working capital",
+            "-152.2",
+            "-7.0"
+          ],
+          [
+            "PP&E purchased (cash) / non-cash additions",
+            "-489.7 / 267.2",
+            "-395.6 / 52.3"
+          ],
+          [
+            "Purchase of investments (T-bills)",
+            "-2,753.2",
+            "0"
+          ],
+          [
+            "Notes issued, net / repaid",
+            "3,505.5 / -41.7",
+            "173.0 / 0"
+          ],
+          [
+            "Contributions from / distributions to parent",
+            "514.4 / -75.0",
+            "142.1 / 0"
+          ],
+          [
+            "Segment cash, end of period",
+            "759.7",
+            "228.0"
+          ]
+        ]
+      },
+      "title": "Data Centers cash flows and per share"
+    },
+    {
+      "body": "Signals: (1) cash rent and deferred-rent balance in the 10-Q; (2) segment operating cash flow turning positive before Phase II rent; (3) December audit and April 2027 Batch Zero allocations; (4) Phase III debt terms vs 9.875%; (5) a Helios II LOI and the counterparty's rating.\nRisks building: parent cash funding the build while the buyback runs; CoreWeave parent credit and subordination to GPU lenders; Helios II slipping past mid-2028.\nConfirmation: cash rent disclosed and current; Phase III debt at or below Phase II cost; an investment-grade Helios II tenant on terms no weaker than Phase I.\nTripwires: any CoreWeave lease amendment, deferral or rent concession; CoreWeave reallocating Helios I load away from the IG customer; a Phase II slip; ATM sales near $17.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Question for owners",
+          "Why it matters",
+          "Asked on the call?"
+        ],
+        "rows": [
+          [
+            "How much cash rent did CoreWeave pay in 3Q26, and what is the -$152mn working-capital item?",
+            "Credit; pillar 1",
+            "No. Not asked or pre-empted; 10-Q must answer."
+          ],
+          [
+            "How much more parent equity goes into Phase III before debt, and at what loan-to-cost and coupon?",
+            "Credit; pillar 2",
+            "Partly. Equity-funded, debt 1H27, lenders tighter; no terms."
+          ],
+          [
+            "Apart from the revenue redefinition, has any CoreWeave lease term been amended this year: yes or no?",
+            "Equity; pillar 3",
+            "Partly. 'No change' to Phase II economics; no yes/no on amendments."
+          ],
+          [
+            "Why a $200mn buyback with $445mn of exchangeables due and the build cash-negative? Minimum liquidity?",
+            "Credit, dilution",
+            "Yes. Business, buffer, buybacks; notes repaid from resources; no number."
+          ],
+          [
+            "What dollar security backs the 526 MW, and is any of it investment-grade?",
+            "Credit; pillar 3",
+            "Partly. Parent-level leases; IG end customer; no security disclosed."
+          ],
+          [
+            "Any Helios II LOI, and would you sign another neocloud without an IG wrap?",
+            "Equity; pillar 4",
+            "Yes. No LOI; summer terms rejected; IG or IG-enhanced only."
+          ],
+          [
+            "CoreWeave's GPU lenders rank ahead of your parent-level claim. What does Galaxy recover if CoreWeave restructures?",
+            "Credit; pillar 3",
+            "New for 4Q26."
+          ]
+        ]
+      },
+      "title": "Questions for owners (pre-call questions and how the call answered them)"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Galaxy 3Q26 8-K (27 Oct 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/glxy-20261027.htm"
+    },
+    {
+      "title": "Galaxy 3Q26 earnings release (Ex.99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/glxy-20260930xpressrelease.htm"
+    },
+    {
+      "title": "Galaxy 3Q26 quarterly update presentation (Ex.99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/exhibit992-glxyq32026ove.htm"
+    },
+    {
+      "title": "Galaxy 3Q26 financial supplement (Ex.99.3)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000108/exhibit993-glxyhistorica.htm"
+    },
+    {
+      "title": "Motley Fool: Galaxy Digital (GLXY) Q3 2026 earnings call transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/27/galaxy-digital-glxy-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "Investing.com: Galaxy Q3 2026 slides and call summary (run-rate wording)",
+      "url": "https://ng.investing.com/news/stock-market-news/galaxy-digital-q3-2026-slides-dual-strategy-drives-323m-profit-93CH-2760533"
+    },
+    {
+      "title": "Galaxy 2Q26 overview deck (Ex.99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000084/exhibit992-q22026overvie.htm"
+    },
+    {
+      "title": "Field Guide preview: GLXY-2026Q3-preview (consensus card)",
+      "url": "https://claude.ai/artifact/M94NPJSfJg1ZxyR3uuWyyC"
+    }
+  ],
+  "ticker": "GLXY",
+  "verdict": "Intact",
+  "versus": "Quarter: beat. Adjusted EPS $0.83 vs a -$0.13 to +$0.04 range, but $395mn of the $455mn adjusted EBITDA came from crypto and private marks. Data Centers in line: leasing revenue $79.1mn vs the ~$80mn guide. Outlook: in line on the ramp (exit-2027 leasing run-rate $800-850mn, per call) but below hopes on Helios II timing. Shares +9.6% on 27 October to $17.18; $17.38 at 10:02 ET today."
+}

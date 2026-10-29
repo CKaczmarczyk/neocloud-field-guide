@@ -1,6 +1,76 @@
 {
   "evidence": [
     {
+      "claim": "Microsoft launched at least $25bn of Aaa/AAA bonds in 10 tranches (2-40 years), its first US deal since 2017, a day after saying debt markets were available but 'not yet tapped'.",
+      "company": "Microsoft",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Initial talk T+50-55bp (2-year) to T+130-135bp (40-year), versus GPU debt without a hyperscaler wrapper at 11%+. Leases not yet commenced rose $35.5bn in one quarter to $364.6bn, so Microsoft's covenant is what landlords and neocloud lenders are underwriting.",
+      "segment": "financing",
+      "source": "Microsoft 424B2 (29 Oct 2026); Yahoo Finance (Investing.com); Microsoft 10-Q",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/microsoft-seeks-least-25-billion-123509895.html"
+    },
+    {
+      "claim": "3Q26 10-Q: data center backstops total $75.7bn: $48.0bn executed with third-party providers as credit derivatives (from $43.8bn at 30 June, $16.9bn at year-end) plus $27.7bn Google must still put in place, $10.0bn of it for Crux AI, its Blackstone joint venture.",
+      "company": "Alphabet",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Executed backstops up $4.2bn QoQ; the committed pipeline up $3.6bn. Terms up to 15 years, with the right to take over or sublease leases on default. No analyst asked about them on the call.",
+      "segment": "financing",
+      "source": "Alphabet 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+    },
+    {
+      "claim": "Financial guarantees supporting counterparties' procurement of long-lead power equipment for Google's energy agreements rose to $16.2bn (terms to January 2049) from $7.6bn at 30 June.",
+      "company": "Alphabet",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "More than doubled in a quarter: Google's credit now underwrites power equipment as well as leases.",
+      "segment": "financing",
+      "source": "Alphabet 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+    },
+    {
+      "claim": "Asked by Morgan Stanley about customer financing strain or SRA exits, CEO said 'No' and that there is 'no change in our cash terms'; about 20% of gas customers are data centers.",
+      "company": "GE Vernova",
+      "date": "2026-10-28",
+      "direction": "neutral",
+      "numbers": "SRAs fell 63 to 58 GW, but the release attributes it to 13 GW of conversions to firm orders, not exits. Current contract liabilities rose to $45.7bn: the OEM is protected by cash deposits, so tenant credit risk sits with developers and their lenders, not the supplier. Refundability of deposits is not disclosed.",
+      "segment": "energy",
+      "source": "GE Vernova 3Q26 call (single source transcript); release; 10-Q",
+      "url": "https://earningswhispers.com/transcript/GEV/Q32026"
+    },
+    {
+      "claim": "Galaxy declined to sign a Helios II lease over the summer because the investment-grade wrap offered did not protect both its debt and equity; it now seeks only IG hyperscalers or IG-enhanced tenants, with no fixed date.",
+      "company": "Galaxy Digital",
+      "date": "2026-10-27",
+      "direction": "supports",
+      "numbers": "830 MW stays uncontracted; data halls 2028 as backstop. Landlord chose time over weaker credit while its stock trades on tenant credit.",
+      "segment": "developer",
+      "source": "Galaxy 3Q26 call (Motley Fool transcript)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/27/galaxy-digital-glxy-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "All three Helios I leases (526 MW) are with CoreWeave's parent, so Galaxy's claim sits behind site-level GPU financings; CoreWeave says the load is allocated to a large IG hyperscaler, but that can change.",
+      "company": "Galaxy Digital / CoreWeave",
+      "date": "2026-10-27",
+      "direction": "supports",
+      "numbers": "Data Centers operating cash flow -$129.1mn on $79.1mn of leasing revenue (working capital -$152.2mn); cash rent not discussed on the call.",
+      "segment": "developer",
+      "source": "Galaxy 3Q26 call; 3Q26 financial supplement (Ex.99.3)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/10/27/galaxy-digital-glxy-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "JunkBondInvestor's Credit Weekly: the 20 AI data center high-yield bonds ($45.6B) have widened about 136 bps since mid-September and trade about 150 bps wide of single-Bs despite BB ratings. TeraWulf, with a Google backstop behind its Fluidstack rent, is tightest at 222 bps; the three landlords leasing to CoreWeave (Galaxy 788, Core Scientific 507, Applied Digital 368) widened about 150 bps in a month, twice the rest. Dispersion is explained by who pays the rent, construction progress, location and parent support.",
+      "company": "Landlord bond cohort (20 issuers)",
+      "date": "2026-10-25",
+      "direction": "supports",
+      "numbers": "Average spread 471 bps, average yield 9.5%, average price 93.0; all maturities 2030-31 (81% in 2031).",
+      "segment": "financing",
+      "source": "JunkBondInvestor Credit Weekly, 25 Oct 2026 (Bloomberg data as of 23 Oct)",
+      "url": "https://www.junkbondinvestor.com/"
+    },
+    {
       "claim": "Musk says SpaceX closed $40B of GPU debt on its investment-grade rating and Starlink and launch revenue, while lenders have nearly shut out AI data center firms without other revenue.",
       "company": "SpaceX (SpaceXAI)",
       "date": "2026-10-25",
@@ -148,5 +218,5 @@
   "status": "strengthening",
   "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. Musk's claim that only borrowers with non-AI revenue can still raise money fits the pattern, though his $40B close is unconfirmed. Status unchanged: this week added more evidence in the same direction.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-10-26"
+  "updated": "2026-10-29"
 }
