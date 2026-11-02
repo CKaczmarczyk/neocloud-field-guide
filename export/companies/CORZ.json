@@ -1,6 +1,12 @@
 {
-  "drivers": [],
-  "model": "Converted mining sites into colocation for CoreWeave and AMD, moving from tenant-funded to self-funded 15-year leases.",
+  "drivers": [
+    "Billing MW against 590 MW CoreWeave",
+    "CoreWeave credit",
+    "AMD project financing and equity",
+    "Dalton Phase Two and Pecos timing",
+    "Warrants and material weakness"
+  ],
+  "model": "Economic engine: Core Scientific converted mining sites into colocation, earning rent on billing MW under long leases. Tenants: CoreWeave 590 MW; AMD 377 MW direct plus 152 MW supported neocloud, 15 years, about $14bn, with rights on up to 2 GW more. Costs: power, operations, depreciation, interest. Funding: $3.30bn 7.75% secured notes due 2031; project bonds planned for about $6bn AMD build at $11mn-$12mn per MW. Sensitivities: CoreWeave credit, delivery, spreads, labor. Would break the model: CoreWeave default, AMD build unfunded, reservations unused. Sources: 2Q26 release, call, Needham via Yahoo.",
   "name": "Core Scientific",
   "next_report": "2026-11-05",
   "segment": "developer",

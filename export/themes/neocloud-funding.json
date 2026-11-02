@@ -1,6 +1,46 @@
 {
   "evidence": [
     {
+      "claim": "Cipher's project notes marked down to 100.5, 97.9 and 95.6 of par at 30 September from 104.2, 101.5 and 100.4 at 30 June, despite investment-grade or backstopped rent.",
+      "company": "Cipher Digital",
+      "date": "2026-11-02",
+      "direction": "for",
+      "numbers": "Stingray 6.0% notes at 95.6 imply a yield near 7% (our estimate); 41mn new shares in October; $724mn pro forma unrestricted liquidity.",
+      "segment": "developer",
+      "source": "Cipher 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000050/cifr-20260930.htm"
+    },
+    {
+      "claim": "Jassy said neocloud capacity is 'about 3,500 basis points worse in operating margin' than long-leased capacity, and most AWS capacity is owned or long-leased.",
+      "company": "Amazon",
+      "date": "2026-10-30",
+      "direction": "against",
+      "numbers": "Amazon disclosed no third-party MW; leases not yet commenced rose $27.7bn to $164.9bn in 3Q, so leasing grows while the buyer calls neocloud capacity margin-dilutive.",
+      "segment": "financing",
+      "source": "Amazon 3Q26 call (StockAnalysis; Investing.com)",
+      "url": "https://stockanalysis.com/stocks/amzn/transcripts/720308-q3-2026/"
+    },
+    {
+      "claim": "Selloff after Microsoft capex miss and Alphabet cash burn; Evercore sees hyperscalers burning about $200B over the next year.",
+      "company": "CoreWeave / Nebius",
+      "date": "2026-10-30",
+      "direction": "supports",
+      "numbers": "CoreWeave -11% to $54.34; Nebius -9% to $156.73, though Nebius remains up 87% YTD versus CoreWeave down 24%.",
+      "segment": "neocloud",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/10/30/coreweave-sinks-11-nebius-tumbles-9-as-hyperscaler-spending-jitters-rattle-ai-cloud-stocks-cloudflare-plunges-12-snowflake-drops-9/"
+    },
+    {
+      "claim": "ASIC told a Senate hearing it is examining the collapse of the A$44B Firmus float, including what banks told buyers about demand. (single source)",
+      "company": "Firmus",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Filings suggest billions in chip commitments in doubt; US$550M due this year on one site and share handovers if no listing by end-November.",
+      "segment": "neocloud",
+      "source": "ABC News (Australia)",
+      "url": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+    },
+    {
       "claim": "Hood: 1Q capex incl. finance leases was $45.2bn because some third-party capacity deliveries were delayed; CY26 capex view cut to about $170bn from about $175bn, with spend moving to 2H. Demand still exceeds supply.",
       "company": "Microsoft",
       "date": "2026-10-28",
@@ -39,6 +79,16 @@
       "segment": "neocloud",
       "source": "The Motley Fool",
       "url": "https://www.fool.com/investing/2026/10/23/coreweave-is-down-xx-in-a-week-heres-the-price-at/"
+    },
+    {
+      "claim": "JPMorgan Private Bank says lenders now want cash-flow proof. (single source, secondary summary)",
+      "company": "Neoclouds (JPMorgan note)",
+      "date": "2026-10-23",
+      "direction": "supports",
+      "numbers": "$266B AI bonds in 2026; CoreWeave CDS record 1,194.5 bps; its 2031 notes touched 16% then near 14%.",
+      "segment": "financing",
+      "source": "Startup Fortune",
+      "url": "https://startupfortune.com/jpmorgan-says-lenders-now-demand-proof-ai-firms-can-repay-debt/"
     },
     {
       "claim": "The one neocloud-scale operator with an investment-grade balance sheet: $25B of BBB-tier notes at 5.855% in June, backed by Starlink cash flow rather than GPUs, and a reported $40B Apollo-led package (about $10B loans, $30B IG debt) to buy Nvidia chips, closing in 2027. The CFO expects no further equity after the $85.7B IPO.",
@@ -138,7 +188,7 @@
   "order": 5,
   "question": "Can neoclouds keep raising money below what their assets earn?",
   "status": "weakening",
-  "summary": "October repriced weak-credit compute and the second half of the month did not reverse it: CoreWeave hit new lows near $54 with bonds above 15%, banks refused to underwrite Volta's GPU loan (sold at about 11.5%), Microsoft walked from Nscale's UK flagship just before its IPO, and Musk says lenders have nearly shut off neoclouds without other revenue. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open.",
+  "summary": "October repriced weak-credit compute and the last week did not reverse it: CoreWeave fell 11% to $54.34 on 30 October with CDS touching a record 1,194.5 bps, Firmus's failed A$44B float now faces an ASIC review with chip payments due, and Nscale still has no price range against a $30-35B target as investors push $16-19B. Microsoft's capex miss and Alphabet's -$9.1B free cash flow raise doubt about the buyers themselves. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open.",
   "title": "Neocloud funding access",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

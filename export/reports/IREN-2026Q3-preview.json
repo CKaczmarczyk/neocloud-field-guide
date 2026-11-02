@@ -1,0 +1,287 @@
+{
+  "brief": [
+    "Verdict ahead of the print: revenue is not the test; ARR timing and funding are.",
+    "Kona: benchmark GPU financing and prepayment terms by tenant credit."
+  ],
+  "changes": [
+    "Report date set: 5 November 2026, for the quarter to 30 September (fiscal 1Q FY27; recorded as 2026Q3 by calendar).",
+    "FY27 capex guided to $25bn to $30bn against about $14bn secured and about $8bn more targeted in GPU financing and prepayments.",
+    "Operating ARR about $1bn as of 26 August; over $4bn targeted by 31 December, mostly late in the quarter.",
+    "Stock down about 42% in a month to 2 November, amid a sector selloff after a Gartner survival forecast."
+  ],
+  "checks": "Built before results. Date from company release via StockTitan and Manila Times; FY26 figures from the 27 August release; call items from the Investing.com transcript extract; consensus from Equibles (single source, marked in the card); prices from 24/7 Wall St. dated 2 November. Market cap at $22.96 derived in code from TopOne's $10.3bn at $25.43 (about 405mn shares), so approximate. No bond or CDS quote or adjusted EBITDA consensus found. Not independently rechecked by a subagent.",
+  "consensus_thesis": "Investors own IREN as a former miner with owned power that is turning into a GPU cloud, with over $4bn of contracted ARR for 2026 capacity against a market cap near $9.3bn at $22.96 on 2 November (about 405mn shares implied by TopOne's $10.3bn at $25.43). The stock has fallen about 40% in a month in a sector selloff over debt-funded builds, so the market is paying for the contracts while doubting the funding. Positioning is contested: 15 of 20 ratings are Buy or better with a $77.81 average target, yet short interest was about 20.7% on 30 September. No bond or CDS quote was found; the last marks are the 6.0% Microsoft GPU financing and the 9.0% Mackenzie facility.",
+  "date": "2026-11-02",
+  "headline": "Fiscal 1Q FY27 revenue (consensus about $221mn) matters less than whether $4bn of contracted ARR goes live by December and how IREN closes a $3bn to $8bn funding gap against $25bn to $30bn of FY27 capex, with the stock near $23 and about 21% of shares sold short.",
+  "kind": "preview",
+  "kona": "IREN shows how GPU financing prices by tenant: about 6% and 96% of capex with prepayments for Microsoft, against 9.0% and about 90% for non-investment-grade deployments. If Kona owns GPUs, expect the higher band or worse without an investment-grade contract. IREN's prepayments at 45% to 55% of GPU capex are the benchmark to ask of tenants.",
+  "kpis": [
+    {
+      "consensus": "$221.3mn",
+      "current": "",
+      "metric": "Revenue",
+      "note": "AI cloud $70.5mn, mining $66.7mn in 4Q FY26",
+      "prior": "$137.2mn (4Q FY26)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Operating ARR",
+      "note": "Target over $4bn by December",
+      "prior": "about $1bn (26 Aug)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Capex",
+      "note": "",
+      "prior": "FY27 guide $25bn-$30bn"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash / debt",
+      "note": "",
+      "prior": "$7.6bn incl. restricted / about $7.59bn (30 Jun)"
+    }
+  ],
+  "monitor": [
+    "Operating ARR at 30 September and today; Horizons 2 to 4 acceptance dates.",
+    "Funding: new GPU financing, prepayments, first data center financing, and any equity.",
+    "New contracts for 2027 capacity, with price per MW and term."
+  ],
+  "name": "IREN",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "In August you guided $25bn to $30bn of capex against about $14bn secured and about $8bn targeted. How much of the target closed since 30 June, at what price, and what funds the remaining $3bn to $8bn? Will you rule out common equity below $30?",
+      "style": "credit",
+      "why": "With the stock near $23, the funding mix decides per-share value."
+    },
+    {
+      "question": "Operating ARR was about $1bn in August against over $4bn by December. What is it today, on what date did Microsoft accept Horizon 2, and what share of December ARR bills for more than 30 days in the quarter?",
+      "style": "equity",
+      "why": "Consensus $392mn next quarter depends on this timing."
+    },
+    {
+      "question": "The Microsoft financing cost about 6% and Mackenzie 9.0%. What rate would you pay today on a non-investment-grade contract, and what advance rate? What is the first data center financing's size and recourse?",
+      "style": "credit",
+      "why": "Tests whether contracts still earn above funding cost as credit widens."
+    },
+    {
+      "question": "You price above $20mn per IT MW on 3-year terms. At six-year GPU depreciation, what residual do you assume at contract end, and what operating margin results? Give the margin on Horizon 1.",
+      "style": "equity",
+      "why": "EBITDA hides the depreciation that decides returns."
+    },
+    {
+      "question": "Microsoft is near half of December ARR. How much of 2027 capacity is signed with others, and name the MW and tenant type by date.",
+      "style": "equity",
+      "why": "Concentration affects financing cost."
+    }
+  ],
+  "risks": [
+    "Late-December commissioning pushes revenue into March.",
+    "Funding gap met with equity at depressed prices.",
+    "Rising GPU financing costs for non-investment-grade tenants.",
+    "Microsoft concentration.",
+    "Mining wind-down and Texas large-load policy."
+  ],
+  "sections": [
+    {
+      "body": "IREN owns powered sites (Childress, Sweetwater, Mackenzie and others) and the GPUs on them, and sells AI cloud on 3-year to 5-year contracts with large prepayments. Revenue = active IT MW x price per MW-year (recent 3-year contracts above $20mn per IT MW; talks near $25mn, per FY26 release). Mining is being decommissioned by end December 2026.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus rests on one aggregator; no second source was reached (TalkMarkets failed to load).",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "1Q FY27 revenue",
+            "$221.3mn (13 analysts; $200.0mn to $244.6mn)",
+            "Equibles, as of 17 Oct",
+            "4Q FY26 $137.2mn"
+          ],
+          [
+            "2Q FY27 revenue",
+            "$392.0mn",
+            "Equibles",
+            "n.a."
+          ],
+          [
+            "FY27 revenue",
+            "$2.81bn (17 analysts)",
+            "Equibles",
+            "FY26 $707.0mn"
+          ],
+          [
+            "1Q FY27 EPS",
+            "-$0.665 (two analysts)",
+            "Equibles",
+            "n.a."
+          ],
+          [
+            "FY27 EPS",
+            "-$3.42 (four analysts)",
+            "Equibles",
+            "Was -$0.94 sixty days earlier"
+          ],
+          [
+            "Adjusted EBITDA",
+            "n.a.",
+            "",
+            "4Q FY26 $19.2mn (14%)"
+          ],
+          [
+            "FY27 capex",
+            "No consensus; guide $25bn-$30bn",
+            "Company, Aug",
+            "FY26 PP&E plus hardware $4.3bn"
+          ],
+          [
+            "Target",
+            "$77.81 average; 2 Strong Buy, 13 Buy, 5 Hold",
+            "24/7 Wall St., 27 Oct",
+            ""
+          ],
+          [
+            "Share price",
+            "$22.96, down 4%",
+            "24/7 Wall St., 2 Nov, 9:55 ET",
+            "$25.43 on 26 Oct"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 ARR goes live on time",
+            "$4bn operating by December; Horizons 2 to 4 delivered",
+            "Operating ARR update; Q2 consensus $392mn needs December capacity",
+            "Company; Equibles flags late-quarter slip to about $381mn"
+          ],
+          [
+            "P2 Funding gap closes without heavy dilution",
+            "$14bn secured, $8bn targeted, remainder from data center financing and corporate sources",
+            "New facilities and prices; shares (up 39% YoY)",
+            "Company; challenged by TopOne, 24/7 Wall St."
+          ],
+          [
+            "P3 2027 capacity contracts",
+            "Late-stage talks cover a significant part of 2027",
+            "Signed contract, MW, $ per MW, tenant",
+            "Company"
+          ],
+          [
+            "P4 Pricing holds",
+            "Above $20mn per IT MW on 3-year deals",
+            "Price and term on new contracts",
+            "Company; Cantor asked on the last call"
+          ],
+          [
+            "P5 Depreciation and returns hold",
+            "GPU life near six years (TopOne, single source)",
+            "Operating margin vs EBITDA as AI revenue ramps",
+            "TopOne"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "About 2.6x contracted ARR by market cap at $25.43",
+            "$25bn-$30bn capex is about 3x market cap"
+          ],
+          [
+            "Owned land and power give financing options",
+            "Microsoft near half of December ARR"
+          ],
+          [
+            "2026 capacity largely sold out",
+            "Rising credit costs across peers; 9.0% on Mackenzie"
+          ],
+          [
+            "Mining impairments mostly behind",
+            "Reported storage and cooling issues (24/7 Wall St., single source)"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Does December capacity land early enough for $392mn in the next quarter? 2) How is the $3bn to $8bn gap funded, and at what dilution? 3) Do 2027 contracts arrive at $20mn to $25mn per IT MW with investment-grade tenants? 4) Does mining shutdown pace depress 1Q revenue more than Horizon 1 adds?",
+      "title": "Live debates"
+    },
+    {
+      "body": "Equibles forecasts $239.9mn for 1Q against $221.3mn consensus. FY27 EPS: Equibles shows a loss of $3.42, while Zacks (1 September) expected a profit, likely stale. Debt-to-equity 1.87 appears in press only.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: cash $5,895.6mn plus restricted $1,724.0mn; debt about $7.59bn excluding finance leases. $3.6bn Microsoft GPU financing at about 6%; $2.4bn Mackenzie facility at 9.0% fixed (Blue Owl, PIMCO funds); $2.8bn new GPU financings in total. About $19bn raised in 12 months, including about $3bn of equity (FY26 call).",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "neocloud",
+  "sources": [
+    {
+      "title": "IREN to release Q1 FY27 results on 5 November (StockTitan)",
+      "url": "https://www.stocktitan.net/news/IREN/iren-to-release-q1-fy27-results-on-november-5-5kte3kvsf6am.html"
+    },
+    {
+      "title": "IREN reports FY26 results",
+      "url": "https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html"
+    },
+    {
+      "title": "FY26 call transcript (Investing.com)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-iren-q4-2026-revenue-misses-as-ai-cloud-expands-93CH-4880306"
+    },
+    {
+      "title": "Equibles Q1 FY27 preview",
+      "url": "https://equibles.com/research/iren-limited-iren-q1-fy27-earnings-preview-and-forecast"
+    },
+    {
+      "title": "TopOne Markets, 27 October",
+      "url": "https://www.top1markets.com/news/iren-stock-ai-cloud-arr-capex-neocloud-selloff"
+    },
+    {
+      "title": "24/7 Wall St., 27 October",
+      "url": "https://247wallst.com/investing/2026/10/27/iren-limited-fell-by-33-in-2026-but-3-analysts-believe-it-will-nearly-quadruple-in-price-from-here/"
+    },
+    {
+      "title": "24/7 Wall St., 2 November (price)",
+      "url": "https://247wallst.com/investing/2026/11/02/cipher-digital-falls-5-on-revenue-miss-and-keefe-bruyette-target-cut-terawulf-and-iren-drop-4/"
+    }
+  ],
+  "ticker": "IREN",
+  "verdict": "Preview",
+  "versus": ""
+}

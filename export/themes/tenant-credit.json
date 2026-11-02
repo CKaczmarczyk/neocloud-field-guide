@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Cipher's Barber Lake overruns shows how lease structure allocates risk: hyperscaler leases have capex allowances, while Cipher bears the first $359.3mn at the Fluidstack site, in exchange for a 10-year AI lab term; Google's warrants carry a value test at lease commencement.",
+      "company": "Cipher Digital",
+      "date": "2026-11-02",
+      "direction": "mixed",
+      "numbers": "$13.0mn per IT MW vs $10.4mn; yield 15.2% with extension, 12.9% without; $435mn warrant floor, about $182mn at $6.93 (approximate).",
+      "segment": "developer",
+      "source": "Cipher 3Q26 deck, 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000050/cifr-20260930.htm"
+    },
+    {
+      "claim": "Amazon drew its $17.5bn term loan at SOFR + 0.625-0.875% and disclosed a new secured supplier loan facility of up to about $80bn for technology infrastructure, secured on purchased assets, from Q1 2027.",
+      "company": "Amazon",
+      "date": "2026-10-30",
+      "direction": "supports",
+      "numbers": "An AA buyer borrows near SOFR + 75bp unsecured; GPU debt without such a credit pays 11% or more. Even Amazon now pledges equipment, but its spread rests on its credit, not the asset.",
+      "segment": "financing",
+      "source": "Amazon 3Q26 10-Q, Note 5",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000040/amzn-20260930.htm"
+    },
+    {
       "claim": "Microsoft launched at least $25bn of Aaa/AAA bonds in 10 tranches (2-40 years), its first US deal since 2017, a day after saying debt markets were available but 'not yet tapped'.",
       "company": "Microsoft",
       "date": "2026-10-29",
@@ -41,6 +61,16 @@
       "url": "https://earningswhispers.com/transcript/GEV/Q32026"
     },
     {
+      "claim": "Oracle pledged to cap new capital-markets funding at $20B through May 2030; Microsoft sold $25B of bonds with orders up to $115B. (single source)",
+      "company": "Oracle / Microsoft",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "Oracle five-year CDS about 274 bps, down 22 in a day from a record 288 on 15 October; Microsoft tranches widened only 2-3 bps from issue.",
+      "segment": "financing",
+      "source": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/international/2026/11/02/oracle-credit-risk-eases-on-borrowing-cap-as-microsoft-bond"
+    },
+    {
       "claim": "Galaxy declined to sign a Helios II lease over the summer because the investment-grade wrap offered did not protect both its debt and equity; it now seeks only IG hyperscalers or IG-enhanced tenants, with no fixed date.",
       "company": "Galaxy Digital",
       "date": "2026-10-27",
@@ -59,6 +89,16 @@
       "segment": "developer",
       "source": "Galaxy 3Q26 call; 3Q26 financial supplement (Ex.99.3)",
       "url": "https://www.fool.com/earnings/call-transcripts/2026/10/27/galaxy-digital-glxy-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Filing confirms a binding about $40B commitment: an Apollo-managed entity buys Nvidia Vera Rubin chips and leases them to SpaceX for about 5 to 5.25 years; close expected by year-end.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-26",
+      "direction": "supports",
+      "numbers": "Rate undisclosed, so the investment-grade pricing Musk implied cannot be checked.",
+      "segment": "financing",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
     },
     {
       "claim": "JunkBondInvestor's Credit Weekly: the 20 AI data center high-yield bonds ($45.6B) have widened about 136 bps since mid-September and trade about 150 bps wide of single-Bs despite BB ratings. TeraWulf, with a Google backstop behind its Fluidstack rent, is tightest at 222 bps; the three landlords leasing to CoreWeave (Galaxy 788, Core Scientific 507, Applied Digital 368) widened about 150 bps in a month, twice the rest. Dispersion is explained by who pays the rent, construction progress, location and parent support.",
@@ -216,7 +256,7 @@
   "order": 1,
   "question": "Does the tenant's credit, not the asset, set what developers and neoclouds pay to borrow?",
   "status": "strengthening",
-  "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. Musk's claim that only borrowers with non-AI revenue can still raise money fits the pattern, though his $40B close is unconfirmed. Status unchanged: this week added more evidence in the same direction.",
+  "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. This week SpaceX's about $40B Apollo lease confirmed Musk's claim that a borrower with non-AI revenue can still raise at scale (rate undisclosed), and Oracle's pledge to cap borrowing cut its CDS by 22 bps in a day, which shows credit now responds to balance-sheet discipline. Status unchanged.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

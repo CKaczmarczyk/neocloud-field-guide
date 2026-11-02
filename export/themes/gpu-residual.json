@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Asked about useful lives, Amazon said it is finding ways to extend useful lives and reach break-even sooner; Jassy said in-AWS chips earn revenue over 5-6 years versus upfront revenue if sold externally (from late 2027).",
+      "company": "Amazon",
+      "date": "2026-10-30",
+      "direction": "supports",
+      "numbers": "No life change was disclosed; AWS D&A rose 63% YoY to $9.23bn, 20.1% of AWS revenue. Management statement, not renewal data.",
+      "segment": "financing",
+      "source": "Amazon 3Q26 call (StockAnalysis); 10-Q segment note",
+      "url": "https://stockanalysis.com/stocks/amzn/transcripts/720308-q3-2026/"
+    },
+    {
       "claim": "3Q26 10-Q discloses for the first time that some TPU system contracts require Google to repurchase sold hardware at pre-set prices over a multi-year term: maximum potential payments $6.6bn; Google says the discount makes exercise uneconomic.",
       "company": "Alphabet",
       "date": "2026-10-29",
@@ -19,6 +29,16 @@
       "segment": "financing",
       "source": "SemiAnalysis on Anthropic's S-1, 27 Oct 2026 (not yet checked against the filing)",
       "url": "https://x.com/SemiAnalysis_"
+    },
+    {
+      "claim": "Apollo-managed entity will own Vera Rubin chips leased to SpaceX for about 5 to 5.25 years.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-26",
+      "direction": "neutral",
+      "numbers": "Who bears residual value after the lease is not disclosed.",
+      "segment": "financing",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
     },
     {
       "claim": "Meta still depreciates most servers over 5.5 years (unchanged since Jan 2025). Server depreciation is accelerating, and a large construction-in-progress balance is not yet depreciating. No analyst has asked about useful lives.",
@@ -90,7 +110,7 @@
   "order": 2,
   "question": "What do GPUs earn once their first contract ends, and does that justify six-year depreciation?",
   "status": "mixed",
-  "summary": "Older chips are still holding value on management's telling: Crusoe says A100 and H100 rents exceed launch levels, and SpaceX says new compute pays back in under a year. But these are statements, not renewal data, and only a small part of fleets has come up for renewal; the test comes when 2027-28 supply is online and the first big block of contracts rolls off. Status unchanged.",
+  "summary": "Older chips are still holding value on management's telling: Crusoe says A100 and H100 rents exceed launch levels, and SpaceX says new compute pays back in under a year. But these are statements, not renewal data, and only a small part of fleets has come up for renewal; the test comes when 2027-28 supply is online and the first big block of contracts rolls off. SpaceX's Apollo lease runs about 5 to 5.25 years with Apollo owning the chips, a structure worth watching once its residual terms are known. Status unchanged.",
   "title": "What chips earn after their first contract",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

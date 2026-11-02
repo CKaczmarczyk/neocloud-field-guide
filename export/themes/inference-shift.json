@@ -75,6 +75,16 @@
       "segment": "energy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=vdEbabUNLyw"
+    },
+    {
+      "claim": "Bedrock token volume grew nearly 17x and Fortune 500 Bedrock spend nearly 7x YoY; Jassy said most Bedrock runs on Trainium and Bedrock could become as large as EC2.",
+      "company": "Amazon",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "AWS grew 39.3% to $46.0bn; AI mix carries lower margins than core AWS per management, yet AWS margin held at 38.7%.",
+      "segment": "financing",
+      "source": "Amazon 3Q26 release and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm"
     }
   ],
   "order": 9,
@@ -82,5 +92,5 @@
   "status": "strengthening",
   "summary": "Inference is taking a growing share and needs different sites: smaller, spread out, with more CPUs and storage beside the accelerators. That widens the market for sites of tens of megawatts, though large tenants still prefer 50 MW or more.",
   "title": "Inference changing site design",
-  "updated": "2026-10-27"
+  "updated": "2026-10-30"
 }

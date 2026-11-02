@@ -1,0 +1,283 @@
+{
+  "brief": [
+    "Verdict ahead of the print: the ramp should show; CoreWeave credit and AMD funding will drive the stock.",
+    "Kona: benchmark on build cost per MW and tenant credit support."
+  ],
+  "changes": [
+    "Report date set: before the open on 5 November 2026, call 8:30 a.m. ET.",
+    "Needham (14 October): management said sector spreads widened more than expected and a stock offering is possible but raises the bar for new projects.",
+    "$600mn credit package closed in August, freeing about $300mn of restricted cash (Needham note).",
+    "Cantor cut its target to $30 from $39; KBW cut again on 2 November."
+  ],
+  "checks": "Built before results. Date from the company release. 2Q figures from the company release; call items from the Investing.com transcript extract; Needham items from a Yahoo article dated 14 October; consensus from MarketBeat and TradingView; shares from StockAnalysis (26 October); price from 24/7 Wall St. dated 2 November. Consensus target $31.36 is from a headline only (page failed to load). Covenant is unverified. No bond or CDS quote for CORZ found. Not independently rechecked by a subagent.",
+  "consensus_thesis": "Investors own Core Scientific as a colocation landlord with about 1.1 GW leased and over $24bn of potential contracted revenue, moving from CoreWeave-only to AMD-backed tenancy. At $12.90 on 2 November (about $4.1bn on 321.34mn shares), the market prices doubt over CoreWeave credit, whose CDS were back above 800 bps in September, and over funding of the AMD build. Positioning is contested: about 27% of float short, while targets run from Cantor's $30 to Needham's $35. The 7.75% 2031 secured notes are the last price point; no current quote was found.",
+  "date": "2026-11-02",
+  "headline": "3Q26 revenue (consensus about $197mn) should reflect the CoreWeave ramp, but the stock and credit will trade on CoreWeave exposure, how the $6bn AMD build is financed as spreads widen, and whether equity is needed near $13 a share.",
+  "kind": "preview",
+  "kona": "Core Scientific's AMD deal at $11mn to $12mn per MW, financed mainly with project bonds, is a current build-cost and structure benchmark. Its AMD credit support for a neocloud tenant (about 150 MW, 15 years, no equity step-in rights) shows how a smaller operator can borrow a stronger balance sheet, a structure Kona could seek for a non-investment-grade tenant.",
+  "kpis": [
+    {
+      "consensus": "$196.85mn",
+      "current": "",
+      "metric": "Revenue",
+      "note": "Colocation $136.7mn in 2Q",
+      "prior": "$164.2mn (2Q26)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Billing MW",
+      "note": "",
+      "prior": "395 MW (2Q); 437 MW mid-July"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Adjusted EBITDA",
+      "note": "",
+      "prior": "$41.1mn (2Q26)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Debt / cash",
+      "note": "",
+      "prior": "$4,298mn / $1,770mn (30 Jun)"
+    }
+  ],
+  "monitor": [
+    "MW billing at 30 September against 437 MW in mid-July and the 590 MW CoreWeave total.",
+    "AMD project financing: size, price, recourse and timing, and any equity.",
+    "Dalton Phase Two start at year-end and Pecos in 1H27."
+  ],
+  "name": "Core Scientific",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "CoreWeave was about 77% of first-half revenue and its CDS traded above 800 bps in September, and your 10-Q says recourse depends on its condition at default. What would you do with 590 MW if it missed a payment, how long to re-lease, and what do the 7.75% notes' terms require?",
+      "style": "credit",
+      "why": "Decides whether the secured notes rest on the site or the tenant."
+    },
+    {
+      "question": "You told Needham spreads widened more than expected. What yield would the first AMD project bond clear at today, what advance rate on $11mn to $12mn per MW, and how much parent equity for 530 MW? Will you issue common stock near $13?",
+      "style": "credit",
+      "why": "Funding cost against lease yield decides whether growth adds value."
+    },
+    {
+      "question": "You guided a 'meaningful step-up' in billing. How many MW billed on 30 September and today, and on what dates does Dalton Phase Two start and finish?",
+      "style": "equity",
+      "why": "Direct test of management's delivery record."
+    },
+    {
+      "question": "Is any covenant tied to market cap or liquidity, and at today's price how much headroom do you have?",
+      "style": "credit",
+      "why": "A covenant near the current cap would bind funding."
+    },
+    {
+      "question": "AMD has reservation rights on up to 2 GW. How long do they last, is anything paid, and when would capacity revert if unused?",
+      "style": "equity",
+      "why": "Reserved capacity blocks other tenants."
+    }
+  ],
+  "risks": [
+    "CoreWeave credit and concentration.",
+    "AMD financing at wider spreads; equity need.",
+    "Labor and equipment inflation.",
+    "Material weakness in reporting.",
+    "Covenant headroom (to check)."
+  ],
+  "sections": [
+    {
+      "body": "Converted mining sites into colocation. Rent = billing MW x $/kW-month. CoreWeave leases 590 MW across six sites; AMD leases 377 MW directly and supports 152 MW for a neocloud over 15 years, about $14bn of base revenue, with reservation rights on up to 2 GW more. Mining is winding down; management calls 2027 a clean year.",
+      "title": "Business model"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$196.85mn",
+            "MarketBeat, TradingView",
+            "2Q26 $164.2mn; 3Q25 $81.1mn"
+          ],
+          [
+            "3Q26 EPS",
+            "-$0.05 (-$0.0456) / -$0.04",
+            "MarketBeat; TradingView",
+            "2Q26 -$3.32 on warrants"
+          ],
+          [
+            "Adjusted EBITDA",
+            "n.a.",
+            "",
+            "2Q26 $41.1mn"
+          ],
+          [
+            "Billing MW",
+            "n.a.; 'meaningful step-up' guided",
+            "2Q call",
+            "395 MW in 2Q; 437 MW mid-July"
+          ],
+          [
+            "Capex",
+            "n.a.",
+            "",
+            "2Q26 $797.5mn"
+          ],
+          [
+            "Targets",
+            "Consensus $31.36; Needham $35; Cantor $30",
+            "Daily Political headline, 20 Oct; Yahoo; TheFly",
+            "Prior Cantor $39"
+          ],
+          [
+            "Share price",
+            "$12.90, down about 3%",
+            "24/7 Wall St., 2 Nov, 9:55 ET",
+            "$14.43 on 29 Oct"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 CoreWeave ramp delivers",
+            "Billing rises well above 437 MW; Dalton Phase Two from year-end",
+            "Billing MW at 30 September; colocation revenue vs $136.7mn",
+            "Company; Needham"
+          ],
+          [
+            "P2 CoreWeave credit holds",
+            "Payment continues; CDS are noise",
+            "Any lease change; receivables; comments on recourse",
+            "Needham excludes spreads; 10-Q flags enforcement limits"
+          ],
+          [
+            "P3 AMD diversifies",
+            "530 MW delivers in 2027 and 2028 on $14bn",
+            "Pecos progress; expansion rights",
+            "Company; Needham"
+          ],
+          [
+            "P4 Project debt funds the AMD build",
+            "About $6bn from project bonds",
+            "Bond timing and rate; statement on equity",
+            "Company; challenged by Needham note"
+          ],
+          [
+            "P5 Clean numbers",
+            "Warrant noise fades; material weakness fixed",
+            "Remediation status; warrant mark",
+            "Yahoo/Insider Monkey (single source)"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "About 1.1 GW leased, over $24bn potential revenue",
+            "CoreWeave was about 77% of 1H revenue and all colocation revenue"
+          ],
+          [
+            "Delivered ahead of schedule at four of five CoreWeave campuses",
+            "$6bn AMD build; $3.3bn of 7.75% notes already out"
+          ],
+          [
+            "AMD is investment-grade with reservation rights",
+            "Material weakness and restatement"
+          ],
+          [
+            "Colocation margin 59%",
+            "About 27% of float short; warrants about $1,975mn of liabilities"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) How much is CoreWeave's credit a risk to rent? 2) Can project bonds fund AMD at acceptable spreads, and is equity needed? 3) Does AMD exercise its reservations? 4) Margin once mining ends.",
+      "title": "Live debates"
+    },
+    {
+      "body": "EPS consensus -$0.0456 (MarketBeat) vs -$0.04 (TradingView); TradingView lists a 9:30 a.m. call, the company 8:30 a.m. ET. KBW: Yahoo article cites a downgrade to Hold, and 24/7 Wall St. reports target cuts on 2 November. The CORZ scorecard row notes a $3bn minimum market-cap covenant (guide research, not reverified here); $4.1bn today would leave little room, so check on the call.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: cash $1,769.7mn, restricted cash $781.7mn, long-term debt $4,298.0mn, warrant liabilities about $1,975mn, stockholders' deficit $2,419.4mn. $3.30bn 7.75% senior secured notes due 2031 issued in May. Capex 2Q $797.5mn. Up to about $1bn may go to about 500 MW of speculative build (2Q call).",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Core Scientific schedules 3Q26 release",
+      "url": "https://investors.corescientific.com/news-events/press-releases/detail/145/core-scientific-inc-schedules-third-quarter-fiscal-year-2026-earnings-release-conference-call-and-webcast"
+    },
+    {
+      "title": "Core Scientific 2Q26 results",
+      "url": "https://investors.corescientific.com/news-events/press-releases/detail/139/core-scientific-announces-second-quarter-2026-results"
+    },
+    {
+      "title": "2Q26 call transcript (Investing.com)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-core-scientific-posts-strong-q2-2026-ramp-shares-fall-93CH-4817081"
+    },
+    {
+      "title": "MarketBeat 3Q26 estimates",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-5-core-scientific-inc-stock/"
+    },
+    {
+      "title": "TradingView 3Q26 estimates",
+      "url": "https://www.tradingview.com/news/tradingview:812eec0e1fa04:0-corz-q3-26-earnings-revenue-estimate-is-196-85m-usd/"
+    },
+    {
+      "title": "Needham reiterates $35 (Yahoo, 14 October)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/needham-reiterates-35-core-scientific-150224709.html"
+    },
+    {
+      "title": "CORZ vs CIFR and WULF (Yahoo, 31 October)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/core-scientific-corz-vs-cifr-211620311.html"
+    },
+    {
+      "title": "StockAnalysis CORZ",
+      "url": "https://stockanalysis.com/stocks/corz/"
+    },
+    {
+      "title": "24/7 Wall St., 2 November (price)",
+      "url": "https://247wallst.com/investing/2026/11/02/cipher-digital-falls-5-on-revenue-miss-and-keefe-bruyette-target-cut-terawulf-and-iren-drop-4/"
+    }
+  ],
+  "ticker": "CORZ",
+  "verdict": "Preview",
+  "versus": ""
+}

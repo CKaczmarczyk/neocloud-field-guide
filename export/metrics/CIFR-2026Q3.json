@@ -1,0 +1,16 @@
+{
+  "active_mw": "18 critical IT delivered (Black Pearl); Barber Lake 51 MW RFS notice after quarter end",
+  "contracted_mw": "700 gross",
+  "date": "2026-11-02",
+  "debt_cost": "0% converts due 2032 at $15.31 conversion (latest financing, unrated); project notes 6.0-7.125% with 30 Sep fair values 95.6-100.5 of par",
+  "margin": "EBITDA -37.3% / operating -269%",
+  "name": "Cipher Digital",
+  "notes": "First HPC rent $5.9mn; mining still 78% of revenue. Flags: revenue +7.5% QoQ, within range. Definition: prior row used ~493 critical IT contracted, this row uses gross; prior margin was net loss. NOI $864mn vs prior $793mn uses a longer averaging window (not like for like). Cost now ~$13.0mn per IT MW.",
+  "period": "2026Q3",
+  "rate": "Implied term average per gross kW-month: Barber Lake ~$126 (modified gross), Black Pearl ~$102, Stingray ~$111",
+  "revenue_m": "26.7",
+  "segment": "developer",
+  "source": "Cipher 3Q26 8-K release and deck; 10-Q; 2 Nov call",
+  "ticker": "CIFR",
+  "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/exh991-q326_earningsxprxvf.htm"
+}

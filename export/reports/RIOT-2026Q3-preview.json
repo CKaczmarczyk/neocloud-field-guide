@@ -1,0 +1,537 @@
+{
+  "brief": [
+    "Verdict ahead of the print: 3Q26 is still a mining quarter, so revenue (consensus about $160mn) and GAAP EPS (about -$0.34) matter less than funding: the $573mn bridge due 31 December, the backstop behind the Anthropic lease, the late $180mn AMD term loan and whether Corsicana becomes a lease without new shares.",
+    "Where expectations sit. Zacks has 3Q revenue of $160.65mn (-10.9% YoY) and EPS of -$0.33; MarketBeat and TradingView $160.39mn and -$0.34; TIKR about $159mn and EBITDA of about $10mn (single source). FY26 revenue consensus is $670mn to $678mn against $341.5mn in H1, implying about $168mn in 4Q. FY27 is $806mn, FY28 about $1.21bn. 2Q26 beat on revenue ($174.2mn) but missed on EPS (-$0.68 against about -$0.30).",
+    "What the quarter should show. The first full quarter of AMD's 25 MW (2Q operating lease revenue $4.9mn; the contract averages about $7.8mn a quarter over 10 years), mining at 44.4 EH/s with summer power credits (3Q25: $30.6mn), and bitcoin sold to fund capex. No 3Q production update was found.",
+    "Three debates. First, backstop and bridge: KBW expects the hardware provider to furnish credit support because Anthropic is unlikely to be investment-grade soon; the CFO promised investment-grade financing economics, but nothing is signed and the bridge matures on 31 December. Second, equity-free funding: net equity of $30mn to $280mn assumes the AMD term loan; bitcoin near $80,000 and the repaid Coinbase loan change the treasury. Third, Corsicana: up to 756 MW under a non-binding LOI as Morgan Stanley cuts pipeline values.",
+    "What would move the stock. Positive: a signed takeout at investment-grade pricing with a named backstop, the AMD loan closed, a Corsicana lease. Negative: a bridge extension without takeout, ATM sales, a later AI lab schedule or higher capex, another EBITDA miss.",
+    "Kona read-across: an AI lab tenant without its own investment-grade rating needs a third-party backstop before project lenders advance 80% to 90%; build that into the term sheet and do not order long-lead equipment on a short bridge without a committed takeout."
+  ],
+  "changes": [
+    "On 10 August Riot signed a 20-year, 191 MW lease with a frontier AI lab at Rockdale (about $9.1bn, $16.1bn with extensions; 96 MW December 2027, 95 MW June 2028); the 10-Q's XBRL tags name Anthropic PBC.",
+    "A $573mn Morgan Stanley delayed-draw bridge (SOFR + 2.75%, non-recourse) funds long-lead equipment and matures on 31 December 2026 per the 14 August 8-K; the investment-grade backstop and takeout financing were still being finalized.",
+    "Riot prepaid the $200mn Coinbase bitcoin-backed loan on 21 September, releasing the 5,821 pledged BTC; the roughly $180mn AMD term loan expected by 30 September had not been announced by 26 October (TIKR).",
+    "The stock fell from about $20.15 on 30 September to $12.60 intraday on 30 October as Morgan Stanley ($43 to $35.50), Cantor ($30 to $24) and Piper ($25 to $19) cut targets on AI credit, rates and pipeline values; ratings stayed Buy.",
+    "Corsicana's full 1 GW campus is under a non-binding single-tenant LOI for up to 756 critical IT MW, disclosed in August, with no update since."
+  ],
+  "checks": "No subagent was available, so every figure was listed with its source and rechecked. Filings: downloaded from EDGAR the 2Q26 release (8-K Ex. 99.1) and deck (Ex. 99.2), the 2Q26 10-Q, the FY25 10-K and release, the 1Q26 release, and the 8-Ks of 31 December 2025 (ATM), 16 January (AMD lease), 27 April (Coinbase amendment), 14 August (Morgan Stanley facility), 25 September (Coinbase prepayment), 7 October and 14 October (code of ethics, BitGo custody). Converted to text and string-matched 93 figures in code with none missing: revenue by segment, EBITDA reconciliation, BTC mined, held and pledged, cost to mine, power credits, lease terms and values, delivery dates, capex ranges, NOI range, funding plan, facility terms and maturity, convert principal, conversion rate and fair value, debt principal, shares, cash flow, PPA blocks and useful lives. Anthropic as tenant confirmed from the 10-Q XBRL member LeaseAgreementWithAnthropicPbcMember. Report date and call: company release of 20 October via riotplatforms.com, finviz and Investing News (call only, 8:00 a.m. ET 4 November; release timing not stated; prior quarters released same day as the call). Consensus and market data, each read once: Zacks via Yahoo 1 and 19 October (the two agree on -$0.33, $160.65mn, FY $670.18mn), MarketBeat 28 October, TradingView, TipRanks, TIKR (8, 20 and 26 October), StockAnalysis forecast (20 October) and quote, Stocktwits (9 October), KBW via Yahoo (27 October), B. Riley via Yahoo (11 August), Investing.com 2Q26 transcript, heygotrade (29 October close $13.74), CoinGlass (30 October 10:11 a.m. ET $12.60; previous close $13.73 consistent with heygotrade), Equibles (FINRA short interest), DefiLlama. Derived figures recomputed in Python: $/kW-month (AI lab $199 on $457mn a year; AMD $104 and $106), capex per MW ($11.0mn to $12.0mn; AMD $3.6mn), yield on cost (15.9% to 19.6%), NOI margin check (80% to 90%), market cap ($4.73bn at $12.60), convert shares (about 40.0mn) and the 130% trigger ($19.32), implied H2 and 4Q revenue, YoY changes, price moves (-37.5% since 30 September, -58% from the high), short interest (14.3%), equity ranges and the Corsicana minimum of about $110/kW-month. Not found: a 3Q production update, BTC price at 30 September, the bridge draw, backstop provider, AMD term loan status, any current convert or CDS quote, and a 3Q adjusted EBITDA consensus beyond TIKR. Material is reasonably full on numbers but thin on dedicated previews (mainly TIKR), so the card is not labelled provisional; pillars P2 and P5 rest partly on single sources.",
+  "consensus_thesis": "Investors own Riot as a power-rich Texas landlord: about 1.7 GW of approved grid power, 241 MW leased to AMD and a frontier AI lab (Anthropic, per the 10-Q's XBRL tags and KBW) for about $9.8bn of contracted revenue, and a non-binding LOI for up to 756 MW at Corsicana, all funded by bitcoin sales and project debt rather than new shares. At $12.60 intraday on 30 October (about $4.7bn market cap on 375.26mn shares), the stock is down about 37% since 30 September and 58% from its $30.32 June high after a sector selloff on AI credit and rates, while the Street is still almost uniformly positive (21 of 22 Buy or better, mean target about $30.93), so the market is paying for contracted Rockdale rent but doubting the backstop, the bridge refinancing and the value of unleased power. Positioning is contested (short interest about 14% of shares at 15 October). Credit: the only traded debt is the $594.4mn 0.75% 2030 convert (conversion price about $14.86, now out of the money); no current bond or CDS quote was found, and the market's credit test is the $573mn non-recourse bridge due 31 December 2026.",
+  "date": "2026-10-30",
+  "headline": "3Q26 is still a mining quarter (consensus revenue about $160mn, EPS about -$0.34), so the print matters less than three funding facts: whether Riot replaces the $573mn Morgan Stanley bridge due 31 December with investment-grade-priced project debt behind a backstop for its Anthropic lease, whether the $180mn AMD term loan expected by 30 September has closed, and whether Corsicana moves from LOI to lease without new equity.",
+  "kind": "preview",
+  "kona": "Riot's Anthropic lease shows what an AI lab will pay for powered, approved capacity (about $199/kW-month over 20 years, 80% to 90% NOI margin, about 16% to 20% yield on cost), but also that lenders will not advance 80% to 90% of cost against a lab that is not investment-grade: Riot needs a third-party backstop, which KBW expects to come from the hardware provider, and has bridged with a short non-recourse loan due 31 December. For Kona, any lab or neocloud tenant should bring credit support (chip vendor, hyperscaler or parent guarantee) as a condition of the lease, and Kona should not commit long-lead orders on bridge money without a committed takeout. Riot's AMD retrofit (about $3.6mn per MW, about $104/kW-month) shows a small first tenant on existing infrastructure can de-risk the platform before a large build. Riot's selling point, power already approved outside the ERCOT queue, is the same argument Kona makes for off-grid gas in Vaca Muerta.",
+  "kpis": [
+    {
+      "consensus": "$160.65mn (Zacks); $160.39mn (MarketBeat, TradingView); about $159mn (TIKR)",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "FY26 consensus $670.18mn (Zacks) to $678.46mn (StockAnalysis).",
+      "prior": "$174.2mn (2Q26); $167.2mn (1Q26); $180.2mn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Data center operating lease revenue",
+      "note": "First full quarter of AMD's 25 MW; AMD's 10-year contract averages about $7.8mn a quarter (our arithmetic).",
+      "prior": "$4.9mn (2Q26), 84% gross margin; $0.9mn (1Q26)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Tenant fit-out revenue",
+      "note": "Cost-plus pass-through; exclude from run-rate.",
+      "prior": "$18.3mn (2Q26), 13% gross margin; $32.2mn (1Q26)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Bitcoin mining revenue / BTC mined",
+      "note": "Cost to mine $49,912 ex depreciation (69.6% of production value).",
+      "prior": "$113.7mn and 1,587 BTC (2Q26); $160.8mn and 1,406 BTC (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Power credits",
+      "note": "3Q carries 4CP and summer demand-response credits.",
+      "prior": "$10.1mn (2Q26); $30.6mn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Engineering revenue / backlog",
+      "note": "90% of backlog from data centers.",
+      "prior": "$37.3mn / $177.1mn (2Q26)"
+    },
+    {
+      "consensus": "About $10mn EBITDA (TIKR, single source)",
+      "current": "",
+      "metric": "Adjusted EBITDA",
+      "note": "EBITDA missed consensus three quarters running (TIKR).",
+      "prior": "-$69.7mn (2Q26); $495.3mn (2Q25, incl. power contract items)"
+    },
+    {
+      "consensus": "-$0.33 to -$0.34",
+      "current": "",
+      "metric": "EPS (GAAP)",
+      "note": "Bitcoin and power-contract marks swamp GAAP EPS.",
+      "prior": "-$0.68 (2Q26); +$0.26 (3Q25)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Critical IT MW leased / billing",
+      "note": "35 MW billing expected after November 2026.",
+      "prior": "241 MW leased; 25 MW billing (30 June)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Liquidity",
+      "note": "Coinbase $200mn repaid 21 September.",
+      "prior": "$548.9mn cash (incl. $77.5mn restricted) plus 11,380 BTC ($666.0mn) at 30 June"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Debt principal",
+      "note": "Plus Morgan Stanley bridge draws (up to $573mn) after June.",
+      "prior": "$853.7mn at 30 June"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Shares outstanding",
+      "note": "2030 converts add about 40mn shares if share-settled.",
+      "prior": "378.0mn (30 June); 375.26mn (7 August)"
+    }
+  ],
+  "monitor": [
+    "Bridge refinancing before 31 December 2026: takeout size, pricing and the backstop provider.",
+    "Parent liquidity at 30 September and 31 December (BTC held, cash, AMD term loan, ATM use) against the $30mn to $280mn net equity need.",
+    "MW billing: 35 MW after the November AMD delivery, and any change to the December 2027 and June 2028 AI lab dates or the Corsicana LOI."
+  ],
+  "name": "Riot Platforms",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "The 14 August 8-K says the $573mn Morgan Stanley bridge matures on 31 December 2026, while the 10-Q described a 15 October maturity subject to extension. How much was drawn at 30 September and today, is a takeout facility committed, and at what size, spread, loan-to-cost, tenor and recourse? If it is not closed by 31 December, what are the extension terms, and would the parent have to put in cash or guarantee anything?",
+      "style": "credit",
+      "why": "Pillar P3. The bridge is non-recourse but funds long-lead equipment for the 96 MW due in December 2027; a missed takeout forces an extension, bitcoin sales or equity, which is the main bear case in the press (TIKR)."
+    },
+    {
+      "question": "In August you said the investment-grade backstop for the 191 MW lease would conclude 'fairly quickly'. KBW says the hardware provider is expected to furnish credit support and does not expect Anthropic to be rated investment-grade soon. Who is the backstop provider, does it cover the full 20-year rent or a fixed amount or period, and how do lenders rate it? If the backstop is not signed, can either side terminate or re-price the lease?",
+      "style": "credit",
+      "why": "Pillar P2. The backstop decides whether the $1.7bn to $2.1bn of project debt prices as investment-grade or high-yield, which moves the 16% to 20% yield on cost by several points net of funding."
+    },
+    {
+      "question": "The CFO expected the roughly $180mn AMD term loan to close before 30 September, and it is meant to fund most of the AI lab equity. Has it closed, at what rate, and if not, why? After prepaying the $200mn Coinbase loan, how many bitcoin and how much cash did you hold at 30 September, did you use the $500mn ATM in the quarter, and will you commit to no common equity for the Rockdale build?",
+      "style": "credit",
+      "why": "Pillar P3. Net equity of $30mn to $280mn assumes the $180mn loan; without it the equity need rises to $210mn to $460mn while bitcoin, the treasury that funds it, trades near $80,000."
+    },
+    {
+      "question": "Operating lease revenue was $4.9mn in 2Q with 25 MW delivered in mid-May. What was it in 3Q with a full quarter, is the 10 MW for AMD on track for November, and how much of the $2.1bn to $2.3bn AI lab budget and contingency had been committed at 30 September? Will you give a schedule of MW billing at each year-end through 2028?",
+      "style": "equity",
+      "why": "Pillar P1. TIKR flags that a quarter that barely improves on $4.9mn would undercut the 2028 rent ramp that consensus ($1.21bn 2028 revenue) relies on."
+    },
+    {
+      "question": "The Corsicana LOI covers up to 756 critical IT MW and more than $1bn of annual rent, which implies at least about $110/kW-month against about $199 for Rockdale's 191 MW. Has it become binding, what are the gating items and the date, and would the tenant bring its own credit support? Morgan Stanley cut its target on lower values for unleased sites; what do higher rates and spreads do to your Corsicana economics?",
+      "style": "equity",
+      "why": "Pillar P4. Corsicana is most of the pipeline value; an LOI that slips while credit tightens is what the October target cuts priced."
+    },
+    {
+      "question": "Holders of the $594.4mn 2030 converts could convert in 3Q26. Did any convert, and how did you settle? With the stock near $12.60, below the $14.86 conversion price, how do you plan to refinance or settle them, and how does mining fit once the 150 MW fixed-price block of the Rockdale PPA ends in October 2027 and halls convert to rent?",
+      "style": "credit",
+      "why": "Pillar P5 and dilution. Share-settled conversions add up to about 40mn shares; the end of the cheap power block raises the cost to mine just as capex peaks in 2Q to 3Q27."
+    }
+  ],
+  "risks": [
+    "Backstop and takeout: the investment-grade backstop for the Anthropic lease is not finalized and the $573mn bridge matures on 31 December 2026.",
+    "Funding gap: the $180mn AMD term loan is late; bitcoin, the main equity source, has fallen; the $500mn ATM is available and would dilute near $13.",
+    "Delivery and cost: AI lab capex of $2.1bn to $2.3bn peaks in 2Q to 3Q27 against December 2027 and June 2028 rent dates.",
+    "Pipeline: Corsicana is a non-binding LOI and unleased power is being re-rated lower as AI credit tightens (Morgan Stanley, Cantor, Piper).",
+    "Mining economics: cost to mine including depreciation at 126.5% of BTC value, and the 150 MW fixed-price PPA block ends October 2027."
+  ],
+  "sections": [
+    {
+      "body": "Riot is converting about 1.7 GW of approved Texas grid power from bitcoin mining into build-to-suit data center leases. Rent = leased critical IT MW x $/kW-month x 12 with escalators; fit-out revenue is cost-plus pass-through. Contracted: AMD 50 MW at Rockdale (25 MW billing since May 2026 at about $104/kW-month; 10 MW due November 2026, 15 MW May 2027) and a frontier AI lab, named Anthropic PBC in the 10-Q XBRL tags, 191 MW for about $9.1bn over 20 years (about $199/kW-month; 96 MW December 2027, 95 MW June 2028), about $9.8bn in total. Build cost is $11mn to $12mn per MW new-build ($2.1bn to $2.3bn for the AI lab) and about $3.6mn per MW for the AMD retrofit. Management targets an 80% to 90% NOI margin, implying a 16% to 20% yield on cost (our arithmetic: $365mn to $411mn NOI over $2.1bn to $2.3bn). Mining (44.4 EH/s, 1,587 BTC in 2Q26, cost to mine $49,912 ex depreciation) and the bitcoin treasury fund the equity; project debt at 80% to 90% loan-to-cost is to fund the rest once an investment-grade backstop is in place. Corsicana (1 GW, about 400 MW built) is under a non-binding single-tenant LOI for up to 756 critical IT MW. Engineering (ESS Metron, E4A) supplies switchgear in-house. Full profile in companies/RIOT model.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 1 to 28 October 2026. Quarterly consensus is driven by mining assumptions; the 3Q EBITDA figure is a single source. No consensus exists for MW billing, backstop or financing terms.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$160.65mn (-10.9% YoY)",
+            "Zacks via Yahoo, 1 and 19 Oct",
+            "2Q26 $174.2mn; 3Q25 $180.2mn"
+          ],
+          [
+            "3Q26 revenue (alt.)",
+            "$160.39mn; about $159mn",
+            "MarketBeat 28 Oct and TradingView; TIKR 26 Oct",
+            "2Q26 beat ($154.31mn est., TradingView)"
+          ],
+          [
+            "3Q26 EPS (GAAP)",
+            "-$0.33 (Zacks); -$0.3354 (MarketBeat); -$0.34 (TradingView, TipRanks)",
+            "1 to 28 Oct",
+            "2Q26 -$0.68 vs about -$0.30; 3Q25 +$0.26"
+          ],
+          [
+            "3Q26 EBITDA",
+            "about $10mn (single source)",
+            "TIKR, 26 Oct",
+            "2Q26 adjusted EBITDA -$69.7mn; EBITDA missed three quarters running (TIKR)"
+          ],
+          [
+            "FY26 revenue",
+            "$670.18mn (Zacks); $678.46mn, range $585.4mn to $746.2mn (StockAnalysis)",
+            "Zacks 19 Oct; StockAnalysis 20 Oct",
+            "H1 $341.5mn, so H2 about $329mn and 4Q about $168mn implied (our arithmetic)"
+          ],
+          [
+            "FY26 EPS",
+            "-$2.70 (Zacks); -$1.68 (StockAnalysis)",
+            "19 Oct; 20 Oct",
+            "H1 about -$2.12 (1Q -$1.44 per Zacks, 2Q -$0.68)"
+          ],
+          [
+            "FY27 revenue / EPS",
+            "$805.88mn / -$0.88",
+            "StockAnalysis, 20 Oct",
+            "2027 capex about $2.4bn and FCF about -$1.8bn (TIKR, 8 Oct)"
+          ],
+          [
+            "FY28 revenue",
+            "about $1.21bn (11 analysts); EBITDA margin about 33%",
+            "TIKR, 26 Oct",
+            "Down 1.55% since 30 Sep; 2029 and 2030 averages down 16% and 27% on thin coverage"
+          ],
+          [
+            "Contracted data center revenue",
+            "$9.8bn on 241 MW",
+            "Company 2Q26 release and deck",
+            "AMD $311mn initial 25 MW; AI lab $9.1bn"
+          ],
+          [
+            "Price target",
+            "Mean $30.93, median $30, range $22 to $42 (22 analysts: 14 Strong Buy, 7 Buy, 1 Hold); TIKR mean $29.84, low $13",
+            "StockAnalysis 20 Oct; TIKR 26 Oct",
+            "Piper $25 to $19 (20 Oct); Cantor $30 to $24 (16 Oct); Citi $32 (14 Oct); Morgan Stanley $43 to $35.50 (9 Oct); B. Riley $28 to $33 (29 Sep)"
+          ],
+          [
+            "Share price",
+            "$12.60 intraday 30 Oct (-8.2%); close $13.74 on 29 Oct",
+            "CoinGlass 10:11 a.m. ET; heygotrade",
+            "About $20.15 on 30 Sep (implied from Zacks 1 Oct); high $30.32 (22 Jun)"
+          ],
+          [
+            "Short interest",
+            "53.6mn shares, about 14.3% of shares outstanding, 3.0 days to cover",
+            "FINRA via Equibles, settled 15 Oct",
+            ""
+          ],
+          [
+            "Valuation",
+            "EV about 7x next-12-month revenue",
+            "TIKR, 26 Oct",
+            "Peers: CORZ about 8x, IREN about 4x"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Rockdale delivers on schedule",
+            "AMD 10 MW in November 2026 and 15 MW in May 2027; AI lab 96 MW in December 2027 and 191 MW by June 2028, within $2.1bn to $2.3bn",
+            "3Q operating lease revenue against 2Q's $4.9mn (first full quarter of 25 MW; the AMD 10-year contract averages about $7.8mn a quarter, our arithmetic); November 10 MW confirmed; AI lab capex spent and contingency",
+            "Management; B. Riley; TIKR (rent run-rate test)"
+          ],
+          [
+            "P2 Tenant credit gets an investment-grade backstop",
+            "A backstop for the Anthropic lease is finalized 'fairly quickly' (CFO, August) and supports investment-grade financing economics",
+            "Backstop provider named and signed; scope (full 20-year rent or partial) and rating. KBW (27 Oct) expects the hardware provider to furnish credit support and does not see Anthropic rated investment-grade soon",
+            "Management; KBW (structure); challenged by Morgan Stanley's AI-credit target cut"
+          ],
+          [
+            "P3 Funded without common equity",
+            "Bridge refinanced by project debt at 80% to 90% LTC before 31 December; AMD $180mn term loan closes; bitcoin covers the $30mn to $280mn net equity",
+            "Takeout signed, size, spread, recourse; AMD term loan closed (expected by 30 Sep, not announced); BTC held at 30 Sep after the Coinbase payoff; any ATM use ($500mn available)",
+            "Management (CFO); B. Riley; challenged by TIKR (bridge maturity) and Cantor (rates, refinancing)"
+          ],
+          [
+            "P4 Corsicana becomes a lease",
+            "The single-tenant LOI for up to 756 critical IT MW converts into a lease worth more than $1bn of annual rent",
+            "Any binding lease, tenant or timetable; CEO warned the process 'can still take a number of twists and turns'",
+            "Management; B. Riley; challenged by Morgan Stanley (pipeline values cut) and TIKR"
+          ],
+          [
+            "P5 Mining bridges the gap",
+            "Mining and the bitcoin treasury carry overhead and equity until rent ramps, without forced selling",
+            "3Q BTC mined, cost to mine against $49,912, 4CP and demand-response credits (3Q25: $30.6mn), BTC sold and held; consensus revenue about $160mn",
+            "Zacks, MarketBeat (numbers); single-source on how long the treasury lasts"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "$9.8bn contracted with AMD and Anthropic; the AI lab lease implies about $199/kW-month and an 18% yield on cost (B. Riley)",
+            "The AI lab tenant is not investment-grade; financing needs a backstop that was 'in finalization' in August and has not been announced"
+          ],
+          [
+            "Power already approved and outside the ERCOT batch process; owned land at Rockdale",
+            "$573mn non-recourse bridge matures 31 December 2026 while takeout terms are undisclosed (TIKR)"
+          ],
+          [
+            "AMD's first 25 MW delivered on time and on budget; 84% operating lease gross margin",
+            "AMD term loan expected by 30 September not announced by 26 October (TIKR); EBITDA missed three quarters running"
+          ],
+          [
+            "Corsicana LOI could add more than $1bn of annual rent (CEO, B. Riley)",
+            "Corsicana is non-binding; Morgan Stanley cut its target on lower values for unleased pipeline sites as AI credit tightens"
+          ],
+          [
+            "Street targets about 140% above the price; Coinbase loan prepaid, freeing pledged BTC",
+            "Heavy negative FCF through 2027 (about -$1.8bn, TIKR); mining cost including depreciation at 126.5% of BTC value; equity issuance near $13 would dilute"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Backstop and bridge: who stands behind Anthropic's rent, at what cost of debt, and is the takeout signed before the bridge matures on 31 December? 2) Equity-free funding: with the AMD term loan late, the Coinbase loan repaid and BTC near $80,000, how much liquidity is left for the $30mn to $280mn net equity and 2027 capex, and will the ATM be used? 3) Corsicana: does the LOI become a lease, and what is unleased power worth as AI credit tightens? 4) The quarter itself: does first-full-quarter AMD rent and mining margin show the bridge to 2028 rent is carrying, or another EBITDA miss?",
+      "title": "Live debates"
+    },
+    {
+      "body": "Bridge maturity: the 14 August 8-K says loans mature 31 December 2026; the 10-Q (filed 10 August) says 15 October 2026, subject to extension in connection with a refinancing; TIKR and press use 31 December. Report timing: the company gives only the 8:00 a.m. ET call on 4 November; MarketBeat shows 4 November after the close (inconsistent with the call), TradingView and Futu say before the open on 4 November, StockAnalysis lists 3 November. FY26 EPS consensus: -$2.70 (Zacks) against -$1.68 (StockAnalysis); 3Q EPS -$0.33 to -$0.34. 2Q26 revenue estimate was $154.31mn (TradingView) or $150.47mn (Zacks). Morgan Stanley's new target is $35.50 in the Stocktwits text and $36 in its table and on StockAnalysis. Tenant: the company says only 'a leading frontier AI lab'; the 10-Q XBRL tags, KBW and B. Riley identify Anthropic. Market cap: $5.42bn (heygotrade, older price) against about $4.7bn at today's price. TIKR's FY25 revenue figure ($647mn) matches the reported actual.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June (10-Q, release): cash $471.4mn plus $77.5mn restricted; 11,380 BTC (5,821 pledged) worth $666.0mn at $58,527; total liquidity about $1.2bn. Debt principal $853.7mn: 0.75% converts due 2030 $594.4mn (conversion price about $14.86; fair value about $1.2bn; holders could convert in 3Q26 because the stock had been above 130% of the conversion price, about $19.32; Riot intends to settle in shares), Coinbase bitcoin-backed loan $200mn at 6.15% (prepaid in full on 21 September, liens released), revolvers $54.3mn, note $5.0mn. Stockholders' equity $2,192.6mn. H1: operating cash flow -$272.8mn; property and equipment $176.2mn; 9,665 BTC sold for $732.5mn; no equity issued; ATM $500mn unused. After June: $573mn Morgan Stanley delayed-draw loan (SOFR + 2.75%, non-recourse, matures 31 December 2026 per the 8-K); amount drawn not disclosed. Debt principal excluding Coinbase is about $654mn plus bridge draws (our arithmetic). Custody moved from NYDIG to BitGo in October.",
+      "table": {
+        "head": [
+          "Site",
+          "MW",
+          "Tenant",
+          "Lease value",
+          "Capex",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Rockdale AMD phases 1-2",
+            "25",
+            "AMD",
+            "About $311mn over 10 years",
+            "$89.8mn",
+            "Balance sheet; about $180mn term loan pending",
+            "Billing since May 2026"
+          ],
+          [
+            "Rockdale AMD phases 3-4",
+            "25",
+            "AMD",
+            "50 MW averages $63.6mn a year",
+            "About $81mn",
+            "$69mn DDTL (85% LTC) plus about $12mn equity",
+            "10 MW November 2026; 15 MW May 2027"
+          ],
+          [
+            "Rockdale AI lab",
+            "191",
+            "Anthropic (XBRL, KBW)",
+            "About $9.1bn over 20 years; about $457mn a year",
+            "$2.1bn to $2.3bn",
+            "$573mn bridge; takeout at 80% to 90% LTC after backstop",
+            "96 MW December 2027; 95 MW June 2028"
+          ],
+          [
+            "Rockdale remainder",
+            "About 150 (AMD options)",
+            "AMD options",
+            "n.a.",
+            "n.a.",
+            "n.a.",
+            "Mining until leased"
+          ],
+          [
+            "Corsicana",
+            "Up to 756 IT (1 GW grid)",
+            "Single tenant, LOI",
+            "More than $1bn a year at full deployment (CEO)",
+            "n.a.",
+            "n.a.",
+            "Non-binding LOI"
+          ],
+          [
+            "Kentucky",
+            "About 192",
+            "Self-mining",
+            "n.a.",
+            "n.a.",
+            "n.a.",
+            "Mining"
+          ]
+        ]
+      },
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: bridge refinancing before 31 December (credit); backstop provider and scope (credit); AMD term loan, parent liquidity and equity (credit); rent ramp and AI lab capex; Corsicana LOI to lease; 2030 converts and mining after the PPA block ends.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Riot announces 3Q26 earnings conference call (20 October 2026)",
+      "url": "https://www.riotplatforms.com/riot-announces-third-quarter-2026-earnings-conference-call/"
+    },
+    {
+      "title": "Investing News: Riot 3Q26 call announcement",
+      "url": "https://investingnews.com/riot-announces-third-quarter-2026-earnings-conference-call/"
+    },
+    {
+      "title": "Riot 2Q26 release (8-K Ex. 99.1, 10 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093406/riot-20260810xex99d1.htm"
+    },
+    {
+      "title": "Riot 2Q26 earnings deck (8-K Ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093406/riot-20260810xex99d2.htm"
+    },
+    {
+      "title": "Riot 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/riot-20260630x10q.htm"
+    },
+    {
+      "title": "Riot FY25 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926022322/riot-20251231x10k.htm"
+    },
+    {
+      "title": "Morgan Stanley $573mn facility (8-K, 14 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926097330/riot-20260810x8k.htm"
+    },
+    {
+      "title": "Coinbase loan prepayment (8-K, 25 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926111003/riot-20260921x8k.htm"
+    },
+    {
+      "title": "BitGo custody agreement (8-K, 14 October 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926115855/riot-20261007x8k.htm"
+    },
+    {
+      "title": "AMD lease and Rockdale land release (8-K Ex. 99.1, 16 January 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926004551/riot-20260116xex99d1.htm"
+    },
+    {
+      "title": "ATM sales agreement (8-K, 31 December 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465925125324/riot-20251230x8k.htm"
+    },
+    {
+      "title": "MarketBeat: Riot 3Q26 earnings date and estimates",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-4-riot-blockchain-inc-stock/"
+    },
+    {
+      "title": "TradingView: RIOT Q3'26 revenue estimate $160.39mn",
+      "url": "https://www.tradingview.com/news/tradingview:385decc3d946a:0-riot-q3-26-earnings-revenue-estimate-is-160-39m-usd/"
+    },
+    {
+      "title": "Zacks via Yahoo: Riot beats stock market upswing (19 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/riot-platforms-inc-riot-beats-205004543.html"
+    },
+    {
+      "title": "Zacks via Yahoo: Riot stock dips while market gains (1 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/riot-platforms-inc-riot-stock-205002916.html"
+    },
+    {
+      "title": "TIKR: Riot fell 38% since September 30; what November 4 has to show (26 October 2026)",
+      "url": "https://www.tikr.com/blog/riot-platforms-fell-38-since-september-30-and-the-streets-mean-target-now-sits-138-above-it-heres-what-november-4-has-to-show"
+    },
+    {
+      "title": "TIKR: Riot fell 11% on October 16 after Cantor cut (20 October 2026)",
+      "url": "https://www.tikr.com/blog/riot-platforms-stock-fell-11-on-october-16-after-cantor-cut-its-target-heres-where-the-stock-could-go"
+    },
+    {
+      "title": "TIKR via Yahoo: Riot's $573mn bridge loan comes due December 31 (8 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/riot-platforms-573-million-bridge-130227491.html"
+    },
+    {
+      "title": "StockAnalysis: RIOT forecast and analyst actions",
+      "url": "https://stockanalysis.com/stocks/riot/forecast/"
+    },
+    {
+      "title": "Stocktwits: Morgan Stanley cuts MARA, RIOT, GLXY targets (9 October 2026)",
+      "url": "https://stocktwits.com/news-articles/Markets/Equity/mara-riot-glxy-price-targets-cut-at-morgan-stanley-on-ai-credit-concerns-analyst-still-sees-over-100-upside/cZD6HOyRBn9"
+    },
+    {
+      "title": "KBW via Yahoo: Anthropic's AMD and overseas lease plans; backstops still required (27 October 2026)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/kbw-sees-anthropic-8217-amd-134352150.html"
+    },
+    {
+      "title": "B. Riley keeps Riot at Buy after $9.1bn Rockdale lease (11 August 2026)",
+      "url": "https://finance.yahoo.com/technology/ai/articles/b-riley-keeps-riot-buy-133607142.html"
+    },
+    {
+      "title": "Investing.com: Riot 2Q26 earnings call transcript",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-riot-platforms-posts-q2-2026-loss-as-data-center-push-gains-93CH-4850509"
+    },
+    {
+      "title": "CoinGlass: RIOT quote (30 October 2026)",
+      "url": "https://www.coinglass.com/de/stocks/RIOT"
+    },
+    {
+      "title": "heygotrade: RIOT quote (29 October 2026 close)",
+      "url": "https://www.heygotrade.com/en/us-stock/riot/"
+    },
+    {
+      "title": "Equibles: RIOT short interest (FINRA, 15 October 2026)",
+      "url": "https://equibles.com/stocks/riot/shortinterest"
+    },
+    {
+      "title": "TipRanks: RIOT earnings",
+      "url": "https://www.tipranks.com/stocks/riot/earnings"
+    },
+    {
+      "title": "24/7 Wall St: crypto stocks slide as bitcoin hovers near $80,000 (26 October 2026)",
+      "url": "https://247wallst.com/investing/2026/10/26/cryptocurrency-stocks-slide-as-bitcoin-hovers-near-80000-riot-strategy-and-mara-drop-4/"
+    }
+  ],
+  "ticker": "RIOT",
+  "verdict": "Preview",
+  "versus": "Pending: 3Q26 results expected on Wednesday 4 November 2026 (release timing not stated by the company; prior quarters released the same day as the call), call 8:00 a.m. ET",
+  "watch": [
+    "Takeout financing and backstop: provider, scope, size, spread, LTC, recourse, closing date.",
+    "AMD term loan status; BTC and cash at 30 September; any ATM sales.",
+    "3Q operating lease revenue and the November 10 MW AMD delivery.",
+    "AI lab capex committed and contingency remaining.",
+    "Corsicana LOI to lease: tenant, MW, timing, credit support."
+  ]
+}

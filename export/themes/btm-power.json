@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "Cipher is developing gas laterals for up to 2.5 GW, in talks on about 1 GW; an independent power producer would supply equipment and sell to the tenant under a PPA, with yields expected in line with grid sites.",
+      "company": "Cipher Digital",
+      "date": "2026-11-02",
+      "direction": "for",
+      "numbers": "Gas availability targeted 2027; energization 2027-2028; about 1,000 MW in discussion.",
+      "segment": "developer",
+      "source": "Cipher 3Q26 deck and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/cipherdigital_businessup.htm"
+    },
+    {
+      "claim": "Federal court denied the motion to dismiss the NAACP suit over Southaven turbines, holding the plant is not a mobile source exempt from permitting; liability is undecided.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-30",
+      "direction": "against",
+      "numbers": "Injunction request pending; state notice carries about $6.1M in potential penalties, small next to the cost of a halt.",
+      "segment": "energy",
+      "source": "DeSoto County News",
+      "url": "https://desotocountynews.com/mississippi-news/xai-southaven-turbines-motion-denied"
+    },
+    {
+      "claim": "Backlog hit a record $78bn (up about $38bn YoY); large gas prime engine orders now run to 2029 and turbines into 2030, and management says prime power demand 'continues to trend higher'.",
+      "company": "Caterpillar",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Power Generation sales $3,421mn, +30% YoY; sales to users +75%. But adjusted margin ex tariff refunds was flat QoQ at about 20%: price is being absorbed by capacity costs, and the stock fell about 8% on an unchanged guide.",
+      "segment": "energy",
+      "source": "Caterpillar 3Q26 release and call (transcript, single source for backlog)",
+      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm"
+    },
+    {
       "claim": "3Q26: 11 GW of gas equipment signed (8 GW SRAs, 3 GW orders), 13 GW of SRAs converted, 5 GW shipped; GW under contract 116 to 122; year-end target raised to at least 130 GW. 2032 slots are selling.",
       "company": "GE Vernova",
       "date": "2026-10-28",
@@ -143,22 +173,12 @@
       "segment": "energy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=GSMRhkbV2m4"
-    },
-    {
-      "claim": "Backlog hit a record $78bn (up about $38bn YoY); large gas prime engine orders now run to 2029 and turbines into 2030, and management says prime power demand 'continues to trend higher'.",
-      "company": "Caterpillar",
-      "date": "2026-10-29",
-      "direction": "supports",
-      "numbers": "Power Generation sales $3,421mn, +30% YoY; sales to users +75%. But adjusted margin ex tariff refunds was flat QoQ at about 20%: price is being absorbed by capacity costs, and the stock fell about 8% on an unchanged guide.",
-      "segment": "energy",
-      "source": "Caterpillar 3Q26 release and call (transcript, single source for backlog)",
-      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/ex991toformcat3q2026earnin.htm"
     }
   ],
   "order": 4,
   "question": "How fast are on-site and gas-to-compute builds scaling, and at what cost?",
   "status": "strengthening",
-  "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, and SpaceX plans 20 GW of its own power and cooling. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
+  "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, SpaceX plans 20 GW of its own power and cooling, and Cipher is laying gas laterals for up to 2.5 GW under an independent power producer model. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. The Southaven ruling adds a legal catch: temporary turbines are not exempt from air permits as mobile sources. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

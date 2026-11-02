@@ -1,0 +1,456 @@
+{
+  "brief": [
+    "Provisional, limited preview material. 3Q26 is another bitcoin-driven quarter with no lease rent: consensus is $76.47mn revenue and -$0.75 EPS (TradingView and MarketBeat, 28 October), against 2Q26 at $74.9mn and -$1.27 (a miss against -$0.55). Maxim is at -$1.57. No adjusted EBITDA consensus was found.",
+    "What investors own: 949 MW of 15-year triple-net leases ($26.6bn base-term value, more than $1.75bn NOI) with Google-backed or AA- tenants, and $7.5bn of non-recourse IG bonds (6.192% River Bend, 6.129% Beacon Point, Baa2). Rent starts with River Bend's first hall in 2Q27 and Beacon Point's in 3Q27.",
+    "What the market doubts: the stock is at $60.89 (30 October open), down about 57% from its high and about 34% since 29 September in the neocloud selloff, with targets cut at Cantor, Piper and B. Riley. The average target is still about $147 to $153.",
+    "Three debates: how Beacon Point Phase 2 is funded without much equity near $61; whether the 1Q27 to 3Q27 milestones and the fixed-price budgets hold; and whether a contracted, IG-funded landlord should de-rate with the neoclouds.",
+    "What would move the stock. Positive: a Phase 2 bond on Phase 1 terms with little parent equity, reaffirmed dates with no budget change, a new lease. Negative: ATM issuance or a large parent equity need, revolver draws for project equity, a slip at either campus, or bitcoin sales that cut the reserve."
+  ],
+  "changes": [
+    "Beacon Point Phase 2 was signed on 20 July: 352 MW, 15 years, $9.8bn base-term value and about $655mn average annual NOI with the same AA- or higher tenant, taking the portfolio to 949 MW and $26.6bn. First hall is due in 2Q28; financing is not yet arranged.",
+    "A $1.07bn four-year senior secured parent revolver closed on 24 September (SOFR+175bp initial, LC sublimit, minimum liquidity of 40% of commitments from 1Q27). It is the first parent bank facility, secured on substantially all parent assets.",
+    "The stock fell from $92.86 on 29 September to $60.89 at the 30 October open as the neocloud selloff (Gartner forecast, CoreWeave bond stress on 14 October) spread. Cantor ($180 to $151), Piper ($143 to $123) and B. Riley ($163 to $134) cut targets but kept Buy or Overweight.",
+    "Press reports name the Beacon Point tenant as Nvidia (FT, 28 July) and link the capacity to an Anthropic and Lambda deal (CoinDesk citing the WSJ, 1 September). The company has not confirmed either.",
+    "Coupons on $7.5bn of project notes start in November 2026, about $115mn a quarter (our arithmetic), while 2Q interest income of $27.1mn on unspent proceeds will fall as construction draws the cash."
+  ],
+  "checks": "No subagent was available, so I listed every figure with its source and rechecked each one. Filings: I downloaded from EDGAR the 2Q26, 1Q26 and 3Q25 releases, the 2Q26 10-Q, the FY25 10-K, the July 2026 Phase 2 lease release, the April and June note pricing releases and bond investor decks, the December 2025 River Bend lease release, the September 2026 revolver 8-K and release, the February 2026 ATM amendment and the 30 September 13D/A. I converted them to text and string-matched 81 figures in code, all found. The figures covered 2Q revenue, segment revenue, adjusted EBITDA, EPS, D&A, G&A, stock comp, interest expense and income, BTC marks, cash, restricted cash, BTC holdings and price, debt by tranche, coupons, fair values, effective rates, amortization dates, the Baa2 rating, the AA- tenant threshold, contract values, NOI, escalators, renewal values, delivery dates, the pipeline by stage, revolver terms and covenants, ATM usage, the Coatue conversion, shares, capex, DSCRs and deck rent lines. Consensus and market data were read once each (single source unless stated): TradingView (FactSet: $76.47mn, -$0.75, history); MarketBeat alert of 28 October (-$0.7482, $76.47mn, FY -$2.93/-$6.62, ratings 4/18/1/1, $148.09, $67.34 open, 2Q miss); MarketBeat earnings page (-$0.7215, $75.53mn, its 3Q25 figures contradicted by the filing); MarketBeat 30 October (B. Riley $163 to $134, $60.89 open, $7.51bn, $146.77); MarketBeat 14 October (Maxim estimates); StockAnalysis (S&P Global targets and FY26/FY27 estimates, updated 16 October; closes to 26 October); Boerse Express (Piper $143 to $123, Cantor $180 to $151, BTC wallet transfer); Weiss; Motley Fool; The Next Web (FT); KuCoin (CoinDesk); the Motley Fool transcript (call content, including about 54% of ABTC and 99% NOI margin). Derived figures recomputed in Python: 949 MW, $26.6bn and $1,764mn NOI as sums; average base-term rent of $158.7 and $154.7 per kW-month; first full-year deck rent of $126.9 and $129.0 per kW-month; debt per MW of $13.3mn and $12.1mn; about $3.42bn River Bend cost at 95% loan-to-cost; market cap $7.51bn (123.26mn x $60.89); -56.8% from the high and -34.4% from 29 September; implied H2 revenue of $149.6mn; coupons of $461.7mn a year and $115.4mn a quarter; parent BTC of about $557mn at $59,847; implied BTC price of about $82,000 from the OnchainLens transfer; B. Riley upside of 120.07%, which matches MarketBeat; ATM remaining $695.7mn; minimum liquidity of $428mn; fair values of 101.2 and 101.5 of par; 3Q revenue consensus -8.4% YoY and +2.1% QoQ. Not found: 3Q adjusted EBITDA consensus, an FY27 revenue consensus beyond StockAnalysis's unlabeled figure, current bond or CDS prices, today's closing price (only the 30 October open of $60.89), today's bitcoin price, project budgets, the River Bend notes rating, and any dedicated preview note (Seeking Alpha and CNBC pages blocked). Because of that, the card is labelled provisional.",
+  "consensus_thesis": "Provisional, limited preview material. Investors own Hut 8 as the best-financed listed AI landlord: 949 MW leased for 15 years triple-net to investment-grade or Google-backed tenants ($26.6bn base-term value, more than $1.75bn of average annual NOI from 2027 to 2028), funded by $7.5bn of non-recourse investment-grade project bonds with no general recourse debt at the parent. At $60.89 on 30 October (about $7.5bn market cap), the stock has fallen about 57% from its $140.80 high and about 34% since 29 September in the neocloud selloff, so it now trades below the sell-side average target of about $147 to $153 (22 of 24 at Buy) by more than half; the market doubts sector funding and execution more than Hut 8's contracts. The bonds sat at about 101 to 102 of par on 30 June (10-Q fair values); no current bond or CDS price was found.",
+  "date": "2026-10-30",
+  "headline": "Provisional, limited preview material. 3Q26 is another bitcoin quarter (consensus revenue about $76mn, EPS about -$0.75) with no rent until 2Q27. The stock, down about 57% from its high in the neocloud selloff, will trade on how Beacon Point Phase 2 is funded without much equity near $61, on holding the 1Q27 to 3Q27 hall dates, and on the cost of carrying $7.5bn of bonds before rent starts.",
+  "kind": "preview",
+  "kona": "Hut 8 shows the terms the best counterparty credit can get: 15-year triple-net, take-or-pay leases with Google or an AA- tenant behind them supported 95% loan-to-cost, fully amortizing project bonds at about 6.1% to 6.2%, sized at only about 1.3x DSCR and with no refinancing risk. Kona's power and lease contracts cannot match that without a comparable guarantor, so Kona should expect lower advance rates or a demand for prepayments. Two features carry over. First, the power-first sequence: Beacon Point was underwritten for bitcoin load and re-let to an AI tenant once the power was secured, and that is the option Kona keeps by firming up gas and generation before choosing a model. Second, Hut 8 set up a parent revolver with a letter-of-credit sublimit so it did not have to post cash for interconnection and vendor deposits; Kona should line up LC capacity for turbine and equipment deposits early. Management also called behind-the-meter generation the fastest route to power but leaves it out of the pipeline, so off-grid gas is not yet priced into Hut 8's valuation.",
+  "kpis": [
+    {
+      "consensus": "$76.47mn (TradingView, MarketBeat alert); $75.53mn (MarketBeat page)",
+      "current": "",
+      "metric": "Total revenue",
+      "note": "Still almost all Compute (ASIC mining via ABTC, AI cloud). FY26 consensus $295.5mn implies about $149.6mn in H2.",
+      "prior": "$74.9mn (2Q26); $71.0mn (1Q26); $83.5mn (3Q25)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Compute revenue",
+      "note": "Moves with bitcoin price, hashrate and ABTC's fleet.",
+      "prior": "$72.5mn (2Q26)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Lease rent",
+      "note": "First rent expected with River Bend's first hall in 2Q27.",
+      "prior": "nil"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Adjusted EBITDA",
+      "note": "Definition changed in 2Q26; the 3Q25 figure of $109.0mn used the old definition.",
+      "prior": "$10.4mn (2Q26, new definition excluding BTC marks); 2Q25 recast $4.2mn"
+    },
+    {
+      "consensus": "-$0.75 (TradingView); -$0.72 (MarketBeat page); Maxim -$1.57",
+      "current": "",
+      "metric": "EPS (GAAP)",
+      "note": "Bitcoin marks and interest swing GAAP EPS.",
+      "prior": "-$1.27 (2Q26); $0.43 diluted (3Q25)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Interest expense / income",
+      "note": "First full quarter of both notes; coupons about $115mn a quarter before any capitalization (our arithmetic).",
+      "prior": "$51.2mn / $27.1mn (2Q26)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Capex (purchases of PP&E)",
+      "note": "Mostly funded from restricted bond proceeds.",
+      "prior": "$616.2mn (H1 2026)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Contracted IT MW / value / NOI",
+      "note": "597 MW and $16.8bn at the 1Q26 release.",
+      "prior": "949 MW; $26.6bn; more than $1.75bn (after the July lease)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Pipeline",
+      "note": "Excludes the 1,000 MW River Bend ROFO and BTM.",
+      "prior": "8,660 MW at 30 June (8,375 MW at 6 May)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Parent liquidity",
+      "note": "Minimum liquidity covenant of about $428mn from 1Q27.",
+      "prior": "Cash $233.6mn; 9,314 BTC; revolver $1.07bn (new); FalconX $200mn due April 2027"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Shares outstanding",
+      "note": "Coatue conversion added 9.7mn shares in May; about $696mn ATM unused.",
+      "prior": "123.19mn (30 June); 123.26mn (31 July)"
+    }
+  ],
+  "monitor": [
+    "Beacon Point Phase 2 financing: size, loan-to-cost, coupon, parent equity, and any ATM or bitcoin use.",
+    "Construction against plan: capex in 3Q, percent complete, and whether the dates hold (Beacon Point energization 1Q27, River Bend first hall 2Q27, Beacon Point first hall 3Q27).",
+    "Parent liquidity at 30 September: cash, Hut 8 bitcoin, revolver draws and LCs, against the $428mn minimum-liquidity test from 1Q27."
+  ],
+  "name": "Hut 8",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "On 4 August you said you had the balance sheet to fund the Beacon Point Phase 2 equity and would 'share more in the coming weeks'. Twelve weeks later the only new financing is a $1.07bn parent revolver. What is Phase 2's total project cost, what loan-to-cost do you expect, how much parent equity is needed and by when? Will any of it come from the ATM at about $61, against a 200-day average near $82, or from bitcoin? If the bond market will not give Phase 2 Phase 1's terms, what is the fallback?",
+      "style": "credit",
+      "why": "Tests pillar P3. Phase 2 is a $9.8bn lease with no committed funding; equity at today's price is the dilution the bull case assumes away."
+    },
+    {
+      "question": "Your bonds pay about $462mn a year in coupons from November, and the first rent arrives in 2Q27. What share of 3Q interest was capitalized, how much interest income will restricted cash earn as it is spent, and what are the debt service reserves in months of coupon? Separately, from 31 March 2027 the revolver requires parent liquidity of 40% of commitments, about $428mn. What was drawn and what letters of credit were outstanding at 30 September, and does parent bitcoin count toward that test?",
+      "style": "credit",
+      "why": "Shows whether the projects stand alone until rent starts and how much parent cash is tied up before stabilization; tests P3 and P5."
+    },
+    {
+      "question": "River Bend's first hall is due in 2Q27 and Beacon Point energizes in 1Q27. What percent of each budget was spent at 30 September, how much contingency is left, and has the redesign of Beacon Point to NVIDIA DSX, which added 57% more IT capacity, changed the budget or dates? Which liquidated damages or tenant termination rights apply if a hall is late by one or two quarters?",
+      "style": "equity",
+      "why": "Tests P1. Rent and the bond amortization schedules both depend on these dates, and a peer (Cipher) has just shown how far change orders can raise costs."
+    },
+    {
+      "question": "704 of your 949 contracted MW sit with one tenant. Press reports name Nvidia as the tenant and link the capacity to Lambda and Anthropic. Without naming anyone, is the tenant's lease obligation direct and unconditional at the rated parent, can it be assigned or subleased without your consent, and does any parent guarantee step down over the 15 years?",
+      "style": "credit",
+      "why": "Tests P2. The Baa2 rating and the 1.34x DSCR rest on that credit, so concentration is the main risk for both bondholders and the equity."
+    },
+    {
+      "question": "The pipeline is 8,660 MW with 1,880 MW in exclusivity, and Fluidstack holds a ROFO on up to 1,000 MW more at River Bend. Which site is closest to a signed lease, how many MW, and by what date? Will you finance it on the River Bend model with no parent equity, or will it need common stock?",
+      "style": "equity",
+      "why": "Tests P4. Price targets of $96 to $275 assume more leases; with no lease since July, the stock is trading on the existing 949 MW."
+    },
+    {
+      "question": "How many bitcoin did Hut 8, excluding ABTC, hold at 30 September? Did any of the coins moved from a linked wallet in October go to sales or new collateral? What is your floor on parent bitcoin while you fund Phase 2?",
+      "style": "equity",
+      "why": "Tests P5. Parent bitcoin, about $557mn at the June mark, is the cheapest equity source for the campuses, and its value moves with a volatile asset."
+    }
+  ],
+  "risks": [
+    "Phase 2 and future campuses funded with parent equity at about $61, or with costlier debt if the IG bond market reprices data center risk.",
+    "Construction delay or overrun at River Bend or Beacon Point; rent and amortization schedules have little slack (DSCR about 1.3x).",
+    "Tenant concentration: 704 of 949 MW with one tenant, and River Bend depends on the Google backstop behind Fluidstack.",
+    "Carrying cost: about $462mn of annual coupons from November 2026 before first rent in 2Q27, with interest income falling as cash is spent.",
+    "Bitcoin price: parent reserve, ABTC results and GAAP marks; FalconX loan has margin calls at 130% collateral."
+  ],
+  "sections": [
+    {
+      "body": "One-sentence engine: Hut 8 originates grid power ahead of demand, then builds turnkey AI data centers and leases them for 15 years, triple-net and take-or-pay, to investment-grade or Google-backstopped tenants, financing each campus with fully amortizing, tenor-matched, non-recourse investment-grade project bonds, while a legacy bitcoin business (about 54% of American Bitcoin, ABTC) supplies today's revenue and a bitcoin treasury (per 2Q26 release, 10-Q and call). Revenue map: (1) Lease rent = delivered critical IT MW x $/kW-month x 12, with 3.0% annual escalators; rent starts only as halls are handed over. Contracted: River Bend, Louisiana, 245 MW to Fluidstack with a Google backstop, $7.0bn base term, about $454mn average annual NOI, first hall 2Q27 and the rest over 2027 (December 2025 release); Beacon Point Phase 1, Texas, 352 MW, $9.8bn, about $655mn NOI, energization 1Q27, first hall 3Q27; Beacon Point Phase 2, 352 MW, $9.8bn, about $655mn NOI, first hall 2Q28, same AA- or higher tenant (July 2026 release, June notes release). Total 949 MW, $26.6bn base-term value, more than $1.75bn average annual NOI (2Q26 release). Average base-term rent works out to about $159 per kW-month at River Bend and $155 at Beacon Point; first full-year rent in the bond decks is about $127 (River Bend 2028, $373mn) and $129 (Beacon Point Phase 1 2029, $545mn) per kW-month (our arithmetic). Management cites about 99% NOI margins because operating costs pass through (2Q26 call). Renewal options (three 5-year) lift potential value to $17.7bn at River Bend and $50.2bn at Beacon Point. (2) Compute (2Q26 $72.5mn of $74.9mn revenue): ASIC mining, mostly via consolidated ABTC (BTC mined x price), plus Highrise AI cloud and Hut 8 Canada traditional cloud. (3) Power ($1.2mn) and Digital Infrastructure colocation ($1.3mn); the King Mountain JV share ($27.0mn of colocation revenue in 2Q) sits in equity earnings. Cost structure: today, cost of revenue ($26.9mn in 2Q26), D&A ($39.7mn), G&A ($76.1mn including $51.2mn stock comp), bitcoin marks ($138.6mn loss in 2Q), interest expense ($51.2mn) against interest income on restricted bond proceeds ($27.1mn). Straight-line depreciation; data center useful lives not reviewed here. Once leases start, triple-net pass-through leaves interest and depreciation as the main costs. Capital and funding: River Bend $3.25bn 6.192% senior secured notes due 2042, amortizing from May 2028, about 95% loan-to-cost, $184mn of equity returned to Hut 8 and no further equity expected (1Q26 release); Beacon Point Phase 1 $4.25bn 6.129% notes due 2042, Baa2, amortizing from May 2030, priced 20bp inside River Bend. Both are non-recourse, issued by single-asset subsidiaries, sized at about 1.31x and 1.34x DSCR in the bond decks. Beacon Point Phase 2 is not yet financed. Parent: $233.6mn cash and 9,314 BTC (about $557mn at the 30 June mark) at 30 June; $200mn FalconX BTC-backed term loan at 7.00% due April 2027; new $1.07bn four-year secured revolver (SOFR+175bp, LC sublimit, minimum liquidity of 40% of commitments from 1Q27 until stabilization); $1.0bn ATM with about $696mn unused (no sales in 2Q). Shares 123.26mn at 31 July. Sensitivities: hall delivery dates (rent and debt service depend on them), build cost against fixed GC pricing, tenant credit and concentration (704 of 949 MW with one tenant), cost of the Phase 2 and later financings, bitcoin price (treasury, ABTC, GAAP marks), ERCOT and Entergy power rules. GPU prices matter only indirectly, through tenant appetite. Competitive position: power-first greenfield originator with an 8,660 MW pipeline (5,400 diligence, 1,880 exclusivity, 50 development, 1,330 construction); the first single-sponsor data center to issue investment-grade construction bonds; peers include Cipher, TeraWulf, IREN, Applied Digital, Galaxy and Core Scientific. What would break it: (1) a hall slip that pushes rent past debt service dates or triggers tenant remedies; (2) a cost overrun the fixed-price contracts do not cover, needing parent equity; (3) Phase 2 or the next campus financed with dilutive equity or costlier debt; (4) weakening of the single Beacon Point tenant or the Google backstop; (5) no new leases, leaving the 8.7 GW pipeline as a cost.",
+      "title": "Business model"
+    },
+    {
+      "body": "Consensus as of 12 to 30 October 2026. No 3Q adjusted EBITDA consensus was found, and quarterly consensus moves with bitcoin assumptions. No dedicated preview notes were readable (Seeking Alpha blocked), so the card rests on consensus pages, rating-change reports and press.",
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$76.47mn",
+            "TradingView (FactSet); MarketBeat alert, 28 Oct",
+            "2Q26 $74.9mn; 3Q25 $83.5mn (filing)"
+          ],
+          [
+            "3Q26 revenue (alt.)",
+            "$75.53mn",
+            "MarketBeat earnings page, read 30 Oct",
+            ""
+          ],
+          [
+            "3Q26 EPS (GAAP)",
+            "-$0.75 (-$0.7482); -$0.72",
+            "TradingView; MarketBeat alert 28 Oct; MarketBeat page",
+            "2Q26 -$1.27 vs -$0.55 expected; 3Q25 $0.43 diluted"
+          ],
+          [
+            "3Q26 EPS (single analyst)",
+            "-$1.57 (from -$1.62)",
+            "Maxim Group (A. Klee), 12 Oct, via MarketBeat",
+            ""
+          ],
+          [
+            "3Q26 adjusted EBITDA",
+            "n.a.",
+            "",
+            "2Q26 $10.4mn (new definition, excludes BTC marks)"
+          ],
+          [
+            "FY26 revenue",
+            "$295.5mn average (range $225.2mn to $339.2mn)",
+            "StockAnalysis (S&P Global), updated 16 Oct",
+            "H1 $145.9mn, so H2 implied about $149.6mn"
+          ],
+          [
+            "FY26 EPS",
+            "-$2.93; -$3.42; Maxim -$3.86",
+            "MarketBeat 30 Oct; StockAnalysis 16 Oct; Maxim 12 Oct",
+            ""
+          ],
+          [
+            "FY27 revenue / EPS",
+            "about $574mn / -$5.15 (label unclear); MarketBeat EPS -$6.62; Maxim -$14.72",
+            "StockAnalysis; MarketBeat 28 Oct; Maxim",
+            "River Bend first hall 2Q27; Beacon Point first hall 3Q27"
+          ],
+          [
+            "Contracted capacity and value",
+            "949 MW; $26.6bn; more than $1.75bn NOI",
+            "Company 2Q26 release",
+            ""
+          ],
+          [
+            "Price target",
+            "$146.77 to $148.09 average (24 ratings: 4 Strong Buy, 18 Buy, 1 Hold, 1 Sell); $152.78 average, median $143, range $96 to $275 (23 analysts)",
+            "MarketBeat 28 and 30 Oct; StockAnalysis 16 Oct",
+            "Cuts in October: Cantor $180 to $151, Piper $143 to $123, B. Riley $163 to $134"
+          ],
+          [
+            "Share price",
+            "$60.89 open 30 Oct (down 8.4% intraday); $67.34 open 28 Oct; $62.97 close 26 Oct",
+            "MarketBeat 30 Oct; MarketBeat 28 Oct; StockAnalysis",
+            "52-week range $31.67 to $140.80; 50-day average $84.56"
+          ],
+          [
+            "Market cap",
+            "about $7.51bn",
+            "MarketBeat 30 Oct; our check 123.26mn x $60.89",
+            ""
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Halls deliver on schedule",
+            "River Bend first hall 2Q27, rest over 2027; Beacon Point energization 1Q27, first hall 3Q27; Phase 2 2Q28",
+            "Reaffirmed dates; capex in 3Q (H1 was $616.2mn); percent complete; any tenant change orders",
+            "Management; Maxim (raised estimates after a River Bend visit, title only); Cantor, Piper"
+          ],
+          [
+            "P2 Tenant credit is investment-grade",
+            "100% leased to or backstopped by IG counterparties: Google backs River Bend; Beacon Point tenant rated AA- or higher",
+            "Any naming of the Beacon Point tenant (FT reported Nvidia; CoinDesk/WSJ link the capacity to Lambda and Anthropic); termination or delay rights",
+            "Company; FT via The Next Web; Weiss"
+          ],
+          [
+            "P3 Growth without common equity",
+            "Campuses funded with non-recourse IG bonds at about 95% LTC; parent has no general recourse debt",
+            "Phase 2 financing structure and parent equity (promised 'in the coming weeks' on 4 August, not yet announced); revolver draws; ATM use",
+            "Management; Weiss ('entirely different risk profile from CoreWeave')"
+          ],
+          [
+            "P4 Pipeline converts to leases",
+            "8,660 MW pipeline, 1,880 MW in exclusivity, Fluidstack ROFO on up to 1,000 MW more at River Bend",
+            "A new lease or LOI; movement from exclusivity to development; BTM sites",
+            "Management; sell-side targets ($96 to $275) price in further leases; single-source views"
+          ],
+          [
+            "P5 Bitcoin is a funding reserve, not the thesis",
+            "9,314 BTC at the parent and about 54% of ABTC can be monetized to fund equity",
+            "Parent BTC count at 30 September (a linked wallet moved 1,966.6 BTC in seven days per OnchainLens, 16 October); any sales or pledges",
+            "Management (call); Boerse Express"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "$26.6bn of 15-year triple-net, take-or-pay rent with IG or Google-backed tenants; about 99% NOI margin",
+            "Three halls, two campuses, one tenant for 704 MW; rent only from 2Q27; no tolerance for slips"
+          ],
+          [
+            "$7.5bn raised as non-recourse IG bonds at 6.13% to 6.19%, tenor-matched, no refinancing risk",
+            "Beacon Point Phase 2 (about $9.8bn lease) is unfunded; promised details have not appeared"
+          ],
+          [
+            "Parent has no general recourse debt; new $1.07bn revolver adds liquidity",
+            "Revolver is secured on substantially all parent assets and adds a minimum-liquidity covenant from 1Q27"
+          ],
+          [
+            "22 of 24 analysts at Buy; average target about $147 to $153, more than twice the price",
+            "Stock fell about 57% from its $140.80 high and about 34% since 29 September with the neocloud selloff; beta 4.62"
+          ],
+          [
+            "8.7 GW pipeline; management calls BTM generation the fastest route to power",
+            "GAAP losses keep widening as interest expense rises before rent; consensus FY27 EPS is still negative"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Funding of Beacon Point Phase 2: how much it costs, how much parent equity it needs, and whether that comes from the new revolver, bitcoin, ABTC or the ATM at about $61 a share (the ATM's average issue price was $49.71). 2) Delivery and cost: whether Beacon Point energizes in 1Q27 and River Bend hands over its first hall in 2Q27, and whether costs hold within the fixed-price contracts after the tenant redesign to NVIDIA DSX at Beacon Point. 3) Sector de-rating against contracted credit: whether a landlord with IG tenants and non-recourse IG debt should trade with CoreWeave-type neoclouds (Hut 8 fell 10.5% on 14 October per Weiss), and what would separate it. A fourth, smaller debate is the next lease and who the Beacon Point tenant is.",
+      "title": "Live debates"
+    },
+    {
+      "body": "3Q26 EPS consensus is -$0.75 at TradingView and MarketBeat's alert (-$0.7482) but -$0.72 on MarketBeat's earnings page; Maxim alone is at -$1.57. Revenue is $76.47mn (TradingView, MarketBeat alert) against $75.53mn (MarketBeat page). MarketBeat lists 3Q25 at -$0.07 EPS and $80.72mn revenue; the 3Q25 release shows $0.43 diluted EPS and $83.5mn, which TradingView matches. We use the filing. FY26 EPS ranges from -$2.93 (MarketBeat) through -$3.42 (StockAnalysis) to -$3.86 (Maxim). Average targets are $146.77 or $148.09 (MarketBeat, 24 ratings) against $152.78 (StockAnalysis, 23 analysts, 16 Strong Buy, 6 Buy, 1 Hold). TradingView lists a 9:30 a.m. ET call; the company says 8:30 a.m. ET. Beacon Point tenant: the FT (via The Next Web, 28 July) says Nvidia, citing five people; CoinDesk (1 September, citing the WSJ) links the capacity to Lambda and Anthropic. Neither is confirmed by the company. On the 2Q call the CEO said River Bend is being built for Anthropic (River Bend's tenant is Fluidstack). Cost: an aggregator (24 October) says Beacon Point's two phases cost about $17bn, and Boerse Express calls River Bend a $10bn development; neither figure is in company filings. Our arithmetic from the 95% loan-to-cost puts River Bend Phase 1 nearer $3.4bn.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June (10-Q): cash $233.6mn; restricted cash $6,787.1mn (mainly unspent bond proceeds and reserves); bitcoin 17,316 BTC (9,314 Hut 8, 8,002 ABTC) worth about $1.04bn at $59,847; loans and notes $7,638.4mn book ($234.7mn current), comprising the River Bend notes $3.25bn at 6.192% (fair value $3.30bn, about 101.5 of par, effective rate 6.41%), the Beacon Point notes $4.25bn at 6.129% (fair value $4.30bn, about 101.2, effective 6.27%, Baa2) and the FalconX $200mn 7.00% term loan due April 2027; ABTC miner purchase liability $371.7mn non-current. Hut 8 stockholders' equity $1,442.6mn. H1 purchases of property and equipment $616.2mn. Since then: the Coatue note ($159.3mn) converted into 9,715,476 shares in May; on 24 September a $1.07bn four-year senior secured revolver closed (12 banks, JPMorgan agent, SOFR+150 to 200bp with 175bp at closing, LC sublimit of $1.07bn for interconnection and vendor collateral), secured on substantially all parent assets and with a minimum liquidity of 40% of commitments (about $428mn) from 31 March 2027 until stabilization, then 25%. Two Prime facility $200mn undrawn at 30 June. ATM: $304.3mn sold at $49.71 average under the $1.0bn program, none in 2Q, so about $696mn is left. Debt service: semi-annual coupons begin 15 November (River Bend) and 30 November (Beacon Point) 2026; together about $462mn a year, or about $115mn a quarter (our arithmetic). How much is capitalized during construction is not disclosed in what we read. Co-founder Michael Ho entered a prepaid variable share forward with JPMorgan on 29 September (13D/A; 6.33mn shares, 5.13%). No current bond or CDS quotes were found.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field: Phase 2 funding and equity (credit); carrying cost before rent, and the revolver liquidity test (credit); construction progress, contingency and remedies; Beacon Point tenant credit and concentration (credit); the next lease and how it is funded; parent bitcoin as a funding reserve.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Hut 8 schedules 3Q26 release and call (PR Newswire via Investing News Network, 8 October 2026)",
+      "url": "https://investingnews.com/hut-8-schedules-third-quarter-2026-earnings-release-and-conference-call/"
+    },
+    {
+      "title": "Hut 8 2Q26 release (8-K Ex. 99.1, 4 August 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090041/tm2621890d1_ex99-1.htm"
+    },
+    {
+      "title": "Hut 8 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926090025/hut-20260630x10q.htm"
+    },
+    {
+      "title": "Hut 8 1Q26 release (8-K Ex. 99.1, 6 May 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/hut-20260506xex99d1.htm"
+    },
+    {
+      "title": "Hut 8 3Q25 release (8-K Ex. 99.1, 4 November 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925105883/hut-20251104xex99d1.htm"
+    },
+    {
+      "title": "Hut 8 FY25 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm"
+    },
+    {
+      "title": "Beacon Point Phase 2 lease release (8-K Ex. 99.1, 20 July 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926084862/tm2620835d1_ex99-1.htm"
+    },
+    {
+      "title": "Beacon Point $4.25bn notes pricing (8-K Ex. 99.1, 4 June 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926070744/tm2616926d1_ex99-1.htm"
+    },
+    {
+      "title": "Beacon Point notes investor presentation (8-K Ex. 99.1, June 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926070393/tm2616869d1_ex99-1.htm"
+    },
+    {
+      "title": "River Bend $3.25bn notes pricing (8-K Ex. 99.1, 27 April 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926049810/tm2612880d1_ex99-1.htm"
+    },
+    {
+      "title": "River Bend notes investor presentation (8-K Ex. 99.1, April 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926049090/tm2612485d1_ex99-1.htm"
+    },
+    {
+      "title": "River Bend lease release (8-K Ex. 99.1, 17 December 2025)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217xex99d1.htm"
+    },
+    {
+      "title": "$1.07bn revolver release (8-K Ex. 99.1, 28 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926111154/tm2625691d1_ex99-1.htm"
+    },
+    {
+      "title": "$1.07bn revolver 8-K (terms and covenants)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926111154/tm2625691d1_8k.htm"
+    },
+    {
+      "title": "Schedule 13D/A, Michael Ho prepaid variable forward (30 September 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926112495/xslSCHEDULE_13D_X02/primary_doc.xml"
+    },
+    {
+      "title": "MarketBeat: Hut 8 expected to post earnings on Wednesday (28 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/upcoming-hut-8-hut-expected-to-post-earnings-on-wednesday-2026-10-28/"
+    },
+    {
+      "title": "MarketBeat: Q3 2026 earnings page",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-4-hut-8-mining-corp-stock-2/"
+    },
+    {
+      "title": "MarketBeat: B. Riley lowers target (30 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/analyst-hut-8-nasdaq-hut-stock-price-target-lowered-at-b-riley-financial-2026-10-30/"
+    },
+    {
+      "title": "MarketBeat: Maxim estimates (14 October 2026)",
+      "url": "https://www.marketbeat.com/instant-alerts/estimates-hut-8-stock-gets-stronger-eps-forecast-from-maxim-group-2026-10-14/"
+    },
+    {
+      "title": "TradingView: HUT Q3'26 revenue estimate (FactSet)",
+      "url": "https://www.tradingview.com/news/tradingview:8e29fd1eda80c:0-hut-q3-26-earnings-revenue-estimate-is-76-47m-usd/"
+    },
+    {
+      "title": "StockAnalysis: HUT forecast",
+      "url": "https://stockanalysis.com/stocks/hut/forecast/"
+    },
+    {
+      "title": "StockAnalysis: HUT price history",
+      "url": "https://stockanalysis.com/stocks/hut/history/"
+    },
+    {
+      "title": "Boerse Express: Piper Sandler cut (22 October 2026)",
+      "url": "https://www.boerse-express.com/news/articles/hut-8-aktie-piper-sandler-schnitt-955420"
+    },
+    {
+      "title": "Weiss Ratings: which neocloud stock is most at risk",
+      "url": "https://weissratings.com/en/weiss-ratings-daily/which-neocloud-stock-is-most-at-risk-coreweave-applied-digital-nebius-iren-and-hut-8-ranked"
+    },
+    {
+      "title": "Motley Fool via Yahoo: neocloud stock collapse (17 October 2026)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/neocloud-stock-collapse-buying-opportunity-115000612.html"
+    },
+    {
+      "title": "The Next Web: FT reports Nvidia as Beacon Point tenant (28 July 2026)",
+      "url": "https://thenextweb.com/news/nvidia-50bn-texas-data-centre"
+    },
+    {
+      "title": "KuCoin/CoinDesk: Hut 8 Texas site and Anthropic's $35bn Lambda deal (1 September 2026)",
+      "url": "https://www.kucoin.com/news/flash/hut-8-s-texas-site-powers-anthropic-s-35b-ai-deal"
+    },
+    {
+      "title": "Motley Fool: Hut 8 2Q26 earnings call transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/hut-8-hut-q2-2026-earnings-call-transcript/"
+    }
+  ],
+  "ticker": "HUT",
+  "verdict": "Preview",
+  "versus": "Pending: reports 3Q26 before the open on Wednesday 4 November 2026; call 8:30 a.m. ET.",
+  "watch": [
+    "Phase 2 financing announcement and parent equity.",
+    "3Q capex, percent complete and reaffirmed delivery dates.",
+    "Parent BTC count, revolver draws and LCs at 30 September.",
+    "Any new lease, LOI or movement of exclusivity MW.",
+    "Tenant disclosure and any lease amendments."
+  ]
+}

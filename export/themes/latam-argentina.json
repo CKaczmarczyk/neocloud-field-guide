@@ -1,6 +1,46 @@
 {
   "evidence": [
     {
+      "claim": "AP: Milei pitches a regulation-free AI haven; Pampa seeks developers for a gas-powered site near Vaca Muerta and Crusoe sought talks with energy officials.",
+      "company": "Argentina",
+      "date": "2026-11-02",
+      "direction": "neutral",
+      "numbers": "Incentive of 15% income tax for $1B-plus projects awaits the Senate; some investors wait for the 2027 election.",
+      "segment": "policy",
+      "source": "AP via La Nacion",
+      "url": "https://www.lanacion.com.ar/usa/argentinas-milei-pitches-a-regulation-free-ai-haven-at-the-end-of-the-world-nid02112026/"
+    },
+    {
+      "claim": "JP Morgan country risk closed at 787 bps, its 2026 high; about 779 on 2 November. Analysts say normal market access has not returned.",
+      "company": "Argentina",
+      "date": "2026-10-30",
+      "direction": "against",
+      "numbers": "+80 bps on the week, +180 in October, +385 from the 402 low on 10 July. Infobae cites 791 for the same close.",
+      "segment": "financing",
+      "source": "Rankia; La Nacion",
+      "url": "https://www.rankia.com.ar/noticias/bolsa/7534427-riesgo-pais-hoy-2-noviembre-2026-787-puntos-nuevo-maximo-ano"
+    },
+    {
+      "claim": "EXIM weighs raising its Argentina line to $10B from $7B; DFC studying about $20B, per AmCham.",
+      "company": "EXIM / DFC",
+      "date": "2026-10-30",
+      "direction": "supports",
+      "numbers": "Ceilings, not disbursements; $6B of the EXIM line is a non-binding LNG term sheet, and its charter expires 31 December.",
+      "segment": "financing",
+      "source": "Shale24",
+      "url": "https://www.shale24.com/en/oil-and-gas/exim-weighs-expanding-its-line-for-argentina-to-us10-billion-us-backing-could-reach-us30-billion-amcham-says-n1951"
+    },
+    {
+      "claim": "Bloomberg Linea: still a letter of intent, with no definitive contract and no RIGI filing as of April; site chosen in Confluencia, Neuquen.",
+      "company": "Stargate Argentina",
+      "date": "2026-10-23",
+      "direction": "against",
+      "numbers": "About $18B of the $25B would be Nvidia chips, per Sur Energy.",
+      "segment": "neocloud",
+      "source": "Bloomberg Linea",
+      "url": "https://www.bloomberglinea.com/latinoamerica/argentina/que-paso-con-el-data-center-de-openai-en-argentina-a-un-ano-del-anuncio-de-us25000-millones/"
+    },
+    {
       "claim": "Crusoe will build its first Latin American AI cloud beside Paraguay's Itaipú substation: a path to 106 MW of IT load, options to about 280 MW, first deployment mid-2027, serving US cloud customers.",
       "company": "Crusoe / Araico",
       "date": "2026-10-22",
@@ -66,8 +106,8 @@
   ],
   "order": 8,
   "question": "Is Argentina, or Latin America, becoming investable for AI compute?",
-  "status": "mixed",
-  "summary": "Latin America is becoming investable, Argentina less so for now. Crusoe's Itaipú site in Paraguay is the first neocloud build in the region aimed at US customers, while Argentina's country risk jumped to 675 bps and local credit is shut. Stargate Argentina has stalled, the Super RIGI awaits the Senate, and Vaca Muerta producers keep pitching the basin. Status stays mixed, with the split now between the region and the country.",
+  "status": "weakening",
+  "summary": "Moved to weakening from mixed because the Argentine side is what changed and it worsened: country risk closed at 787 bps on 30 October, up 180 in a month and 385 from July, and analysts say market access has not returned, ahead of a 2027 election investors are waiting on. The offsets are official and not yet approved: EXIM may raise its line to $10B, DFC is studying about $20B, Argentina LNG targets FID on 26 November. The region remains better than the country, with Crusoe in Paraguay; Milei's no-regulation pitch has drawn visitors but Stargate is still only a letter of intent and the Super RIGI awaits the Senate. An LNG FID, an EXIM charter renewal or a Senate vote would argue for moving back.",
   "title": "Argentina and Latin America",
-  "updated": "2026-10-26"
+  "updated": "2026-11-02"
 }

@@ -1,14 +1,14 @@
 {
   "evidence": [
     {
-      "claim": "Microsoft recorded $10.0bn of revenue from OpenAI in 1Q FY27, including revenue-share payments; the OpenAI receivable rose to $7.2bn from $6.0bn. Management did not give RPO growth excluding OpenAI and deflected a question on model mix.",
-      "company": "Microsoft",
-      "date": "2026-10-28",
+      "claim": "Jassy called the $578bn backlog 'well-diversified' and listed new AWS deals with Meta, NVIDIA, OpenAI and others.",
+      "company": "Amazon",
+      "date": "2026-10-30",
       "direction": "supports",
-      "numbers": "OpenAI was 10.8% of 1Q revenue vs 7.3% of FY26 revenue, while commercial RPO was flat QoQ at $677bn and bookings fell 12% (single source). Fortune separately reports Anthropic committed at least $44.9bn of Microsoft compute through May 2033 (single source).",
+      "numbers": "No customer split was given. Amazon's Anthropic holdings rose to $238.7bn ($92.5bn preferred plus $146.2bn notes at fair value, +$48.3bn QoQ) and it completed the $50bn OpenAI investment ($21.3bn in 3Q); words and numbers diverge.",
       "segment": "financing",
-      "source": "Microsoft 1Q FY27 10-Q; call; Fortune",
-      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+      "source": "Amazon 3Q26 10-Q; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000040/amzn-20260930.htm"
     },
     {
       "claim": "Cloud backlog reached $560.8bn (+$46.9bn QoQ), including $16.8bn with Crux AI, a related-party joint venture. On the call Google named Anthropic (direct and via Broadcom), Apple, and new lab customers as TPU buyers; about 100 customers use TPUs.",
@@ -21,6 +21,16 @@
       "url": "https://stockanalysis.com/stocks/googl/transcripts/712854-q3-2026/"
     },
     {
+      "claim": "Microsoft recorded $10.0bn of revenue from OpenAI in 1Q FY27, including revenue-share payments; the OpenAI receivable rose to $7.2bn from $6.0bn. Management did not give RPO growth excluding OpenAI and deflected a question on model mix.",
+      "company": "Microsoft",
+      "date": "2026-10-28",
+      "direction": "supports",
+      "numbers": "OpenAI was 10.8% of 1Q revenue vs 7.3% of FY26 revenue, while commercial RPO was flat QoQ at $677bn and bookings fell 12% (single source). Fortune separately reports Anthropic committed at least $44.9bn of Microsoft compute through May 2033 (single source).",
+      "segment": "financing",
+      "source": "Microsoft 1Q FY27 10-Q; call; Fortune",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+    },
+    {
       "claim": "Anthropic's S-1 shows $265.6B of future fixed or minimum compute purchases and $321.4B of leases not yet commenced as of June 2026, separate long-dated buckets, some conditional. First-half 2026 revenue was $16.3B with compute expense at 55% of sales, down from 201% a year earlier. One lab's committed book now exceeds the entire landlord bond market many times over.",
       "company": "Anthropic",
       "date": "2026-10-27",
@@ -29,6 +39,26 @@
       "segment": "financing",
       "source": "Anthropic S-1 as summarized by Sridhar Ramaswamy, 27 Oct 2026 (figures not yet checked against the filing)",
       "url": "https://x.com/RamaswmySridhar"
+    },
+    {
+      "claim": "S-1 discloses Anthropic Direct: third parties secure land and power and operate dedicated sites, Anthropic leases them; $125.2B of five-year lease payments excluding interest.",
+      "company": "Anthropic",
+      "date": "2026-10-26",
+      "direction": "supports",
+      "numbers": "Total commitments $542-567B against $11.6B of Q2 revenue; compute cost $5.6B in that quarter. MW and counterparties undisclosed.",
+      "segment": "neocloud",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/10/26/anthropics-s1-ipo-reveals-the-inner-workings-of-its-fast-evolving-compute-strategy/"
+    },
+    {
+      "claim": "Commitment rose to up to $120.5B through 2029 with about $3.1B a month at full delivery. (exit terms single source)",
+      "company": "Anthropic / SpaceX",
+      "date": "2026-10-26",
+      "direction": "supports",
+      "numbers": "Non-cancelable periods reportedly end January and March 2027, then 90-day exits either way, so the headline overstates firm revenue.",
+      "segment": "neocloud",
+      "source": "Cape Fear Advisors; Fortune",
+      "url": "https://capefearadvisors.substack.com/p/anthropic-and-spacex-one-relationship"
     },
     {
       "claim": "SpaceX's compute business rests on two tenants: Anthropic (all of Colossus 1, $1.25B a month through May 2029, up to $84.5B per Anthropic's prospectus) and Google ($920M a month to June 2029, called 'bridge capacity'). Most agreements can be ended on 90 days' notice.",
@@ -99,7 +129,7 @@
   "order": 6,
   "question": "How exposed is the buildout to two labs?",
   "status": "strengthening",
-  "summary": "Exposure keeps rising: Anthropic carries at least $518B of compute commitments, Nscale's backlog is about 85% Microsoft and Anthropic, and Anthropic is now borrowing against its own chip leases at above 10%. Revenue figures are softer than headlines suggested for both labs.",
+  "summary": "Exposure keeps rising and is changing shape: Anthropic's public S-1 puts compute commitments at $542B to $567B and adds Anthropic Direct, $125.2B of five-year leases on dedicated third-party sites, while the SpaceX deal grew to up to $120.5B. Those commitments are less firm than the headlines: the SpaceX deal reportedly allows 90-day exits from early 2027 (single source). Nscale's backlog is about 85% Microsoft and Anthropic. Lab demand now reaches landlords directly, widening both the tenant pool and the concentration.",
   "title": "Concentration on Anthropic and OpenAI",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

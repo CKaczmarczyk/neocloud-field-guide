@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-02",
+  "items": [
+    {
+      "headline": "SpaceX confirms about $40B of committed GPU financing, structured as an Apollo lease",
+      "segment": "financing",
+      "source": "TechCrunch",
+      "summary": "A filing on 26 October shows an Apollo-managed entity will buy Nvidia Vera Rubin chips and hardware and lease them to SpaceX for about 5 to 5.25 years, with leases starting in 1H 2027 and close expected by year-end. Rate and residual-value terms are undisclosed; this settles last week's unconfirmed Musk claim, with closing conditions still open.",
+      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
+    },
+    {
+      "headline": "Anthropic's S-1 reveals Anthropic Direct: $125.2B of five-year leases on dedicated sites",
+      "segment": "neocloud",
+      "source": "Fortune",
+      "summary": "Filed publicly 26 October: third parties secure land and power and operate the sites while Anthropic leases them and buys its own accelerators; agreements began around 30 September. Total compute commitments are put at $542B to $567B, with counterparties and MW undisclosed.",
+      "url": "https://fortune.com/2026/10/26/anthropics-s1-ipo-reveals-the-inner-workings-of-its-fast-evolving-compute-strategy/"
+    },
+    {
+      "headline": "Anthropic's SpaceX deal is up to $120.5B but can end on 90 days' notice from early 2027",
+      "segment": "neocloud",
+      "source": "Cape Fear Advisors",
+      "summary": "The S-1 puts the deal at up to $120.5B through 2029 (Fortune). A newsletter's reading of the filings adds about $3.1B a month at full delivery in December, non-cancelable periods ending January and March 2027, then 90-day exits either way; those terms rest on that single source, as the SEC filing would not load.",
+      "url": "https://capefearadvisors.substack.com/p/anthropic-and-spacex-one-relationship"
+    },
+    {
+      "headline": "Microsoft's capex miss and Alphabet's cash burn hit neoclouds again",
+      "segment": "financing",
+      "source": "24/7 Wall St.",
+      "summary": "Microsoft came in below expectations on 28 October and Alphabet posted free cash flow of -$9.1B against -$3.5B expected, and on 30 October CoreWeave fell 11% to $54.34 and Nebius 9% to $156.73. Evercore expects hyperscalers to burn about $200B over the next year; Nebius reports 12 November and CoreWeave 10 November.",
+      "url": "https://247wallst.com/investing/2026/10/30/coreweave-sinks-11-nebius-tumbles-9-as-hyperscaler-spending-jitters-rattle-ai-cloud-stocks-cloudflare-plunges-12-snowflake-drops-9/"
+    },
+    {
+      "headline": "Australia's ASIC examines Firmus's failed float as chip payments come due",
+      "segment": "neocloud",
+      "source": "ABC News (Australia)",
+      "summary": "Firmus pulled a A$44B float about two weeks before 29 October, when ASIC told a Senate hearing it is looking at what banks told buyers about demand. Filings suggest billions in chip commitments are in doubt, with US$550M due this year on one site and share handovers if it does not list by end-November; single source.",
+      "url": "https://www.abc.net.au/news/2026-10-29/asx-markets-business-live-news-29-october-2026/107321622"
+    },
+    {
+      "headline": "Oracle's default insurance eases on a borrowing cap; Microsoft's $25B bond draws $115B of orders",
+      "segment": "financing",
+      "source": "Seoul Economic Daily",
+      "summary": "Oracle's five-year CDS fell 22 bps in a day to about 274 on 28 October after it pledged to limit new capital-markets funding to $20B through May 2030 (record 288 on 15 October). Microsoft's tranches then widened only 2 to 3 bps from issue, so top credit still clears; single source for the cap.",
+      "url": "https://en.sedaily.com/international/2026/11/02/oracle-credit-risk-eases-on-borrowing-cap-as-microsoft-bond"
+    },
+    {
+      "headline": "JPMorgan note: $266B of AI bonds this year and CoreWeave CDS at a record 1,194.5 bps",
+      "segment": "financing",
+      "source": "Startup Fortune",
+      "summary": "The 23 October note splits 2026 issuance into about $182B hyperscalers, $42B data center operators and $42B chipmakers, nearly double all of 2025, and says lenders now want proof of cash flow. CoreWeave's 2031 notes touched 16% before settling near 14%; read through a secondary summary, so treat as single source.",
+      "url": "https://startupfortune.com/jpmorgan-says-lenders-now-demand-proof-ai-firms-can-repay-debt/"
+    },
+    {
+      "headline": "Cipher's Barber Lake cost rises to about $13M per MW; new leases wait for 30-60% design",
+      "segment": "developer",
+      "source": "Investing.com (call transcript)",
+      "summary": "On its 2 November call Cipher said cost rose from $10.4M per IT MW financed, with about $409M of tenant change orders of which only about $50M is reimbursed; a 20-year lease restores yield on cost to about 15% from about 13%. It is also building gas laterals for up to 2.5 GW with about 1 GW in early talks.",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cipher-digital-beats-q3-2026-eps-misses-revenue-93CH-4991951"
+    },
+    {
+      "headline": "Judge rejects xAI's bid to dismiss the Southaven turbine suit and its mobile-source defense",
+      "segment": "energy",
+      "source": "DeSoto County News",
+      "summary": "A Mississippi federal court ruled 30 October that the plant is not a mobile source exempt from permitting, contradicting the state regulator's earlier view; it did not decide liability. An NAACP injunction request to halt the turbines is pending, and the state has issued a notice with about $6.1M in potential penalties.",
+      "url": "https://desotocountynews.com/mississippi-news/xai-southaven-turbines-motion-denied"
+    },
+    {
+      "headline": "Argentina's country risk closes at 787 bps, up 180 in October, as external markets stay shut",
+      "segment": "financing",
+      "source": "Rankia",
+      "summary": "JP Morgan's index closed 30 October at its 2026 high, up 80 bps on the week and 385 from July's low, before easing to about 779 on 2 November. Analysts cite war, US long rates and a domestic recession, and say normal market access has not returned; EXIM may raise its Argentina line to $10B from $7B and DFC is studying about $20B, both ceilings rather than approvals.",
+      "url": "https://www.rankia.com.ar/noticias/bolsa/7534427-riesgo-pais-hoy-2-noviembre-2026-787-puntos-nuevo-maximo-ano"
+    }
+  ],
+  "kona": "Offtake got a new door: Anthropic Direct means a lab now leases dedicated sites from third parties that bring land, power and operations, so Kona should pitch to it and to its build partners as a powered site, while assuming its 90-day style exit rights and pricing credit accordingly. Debt got harder: Argentina's country risk closed at 787 bps with external markets effectively shut, so a first financing needs an investment-grade or prepaid offtaker plus official money, and EXIM and DFC ceilings are the place to push, though they are not approvals. Cipher's 25% overrun and the Southaven ruling give two practical rules: freeze design before signing a lease, and get permanent air permits for on-site gas from day one.",
+  "stale": "Kona tab, Argentina section: says country risk peaked at 655 bps and settled near 600 as a floor; it closed at 787 on 30 October, and the SpaceX case-study line citing 600 bps of country risk should move too. Players tab, SpaceX: the $40B Apollo-led package is described as sought; it is now a binding about $40B Apollo-managed lease commitment of 5 to 5.25 years, closing by year-end. Start Here point 2, Players and Financing tabs on the SpaceX deal: Anthropic shown at $1.25B a month and up to $84.5B; the S-1 now shows up to $120.5B. Players and Financing tabs, Oracle: record CDS of 288 is now about 274 with a $20B capital-markets cap through May 2030 (single source). Players tab, Firmus mentions: add the pulled float and ASIC inquiry. Kona tab, Argentina section: EXIM may rise to $10B and DFC is studying about $20B.",
+  "title": "Anthropic leases its own sites; Argentina risk hits 787"
+}

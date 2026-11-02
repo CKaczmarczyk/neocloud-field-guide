@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Amazon's energy contracts accounted as derivatives rose to about 690mn MWh with an ~18-year weighted duration, from 270mn MWh at 30 June; Jassy said capacity comes in blocks of hundreds of MW up to a gigawatt reserved well in advance.",
+      "company": "Amazon",
+      "date": "2026-10-30",
+      "direction": "supports",
+      "numbers": "Long-dated power procurement 2.6x in one quarter; the 2Q claim of doubling power capacity by end-2027 was not repeated in the transcripts read.",
+      "segment": "financing",
+      "source": "Amazon 3Q26 10-Q, Note 1; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000040/amzn-20260930.htm"
+    },
+    {
+      "claim": "CEO says Power & Energy output is paced by capacity with 'no slack in the system'; 4Q guided only to moderate growth; 58% of backlog ships within 12 months (59% in 2Q).",
+      "company": "Caterpillar",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Book-to-bill about 1.3x (derived: MP&E sales $19.65bn plus $5.9bn backlog growth). Lead times lengthened from late 2028 (August) to 2029 for large gas engines.",
+      "segment": "energy",
+      "source": "Caterpillar 3Q26 call (transcript)",
+      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
+    },
+    {
       "claim": "Agreed to buy Trench Group (bushings, instrument transformers, coils) for $9.0bn, 13x 2028E EBITDA, to vertically integrate a supplier and add high-voltage capacity; Electrification equipment backlog $42.2bn, +60% YoY.",
       "company": "GE Vernova",
       "date": "2026-10-28",
@@ -19,6 +39,16 @@
       "segment": "energy",
       "source": "GE Vernova 3Q26 release and 10-Q",
       "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm"
+    },
+    {
+      "claim": "S-1 flags connecting power to data centers as the main risk, exposed to permitting, legal and supply delays.",
+      "company": "Anthropic",
+      "date": "2026-10-26",
+      "direction": "supports",
+      "numbers": "One account says Anthropic expects a five-year power bottleneck (Motley Fool, secondary; not checked against the filing).",
+      "segment": "policy",
+      "source": "Fortune; Motley Fool",
+      "url": "https://fortune.com/2026/10/26/anthropics-s1-ipo-reveals-the-inner-workings-of-its-fast-evolving-compute-strategy/"
     },
     {
       "claim": "Josh preview: Galaxy's 830 MW of approved grid power at Helios is still unleased because it energizes only in late 2028 and Texas has gated large loads.",
@@ -93,22 +123,12 @@
       "segment": "policy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=b5YnPsBxgjA"
-    },
-    {
-      "claim": "CEO says Power & Energy output is paced by capacity with 'no slack in the system'; 4Q guided only to moderate growth; 58% of backlog ships within 12 months (59% in 2Q).",
-      "company": "Caterpillar",
-      "date": "2026-10-29",
-      "direction": "supports",
-      "numbers": "Book-to-bill about 1.3x (derived: MP&E sales $19.65bn plus $5.9bn backlog growth). Lead times lengthened from late 2028 (August) to 2029 for large gas engines.",
-      "segment": "energy",
-      "source": "Caterpillar 3Q26 call (transcript)",
-      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
     }
   ],
   "order": 3,
   "question": "Will chips arrive at sites that have no power in 2027?",
   "status": "strengthening",
-  "summary": "Utility dates are slipping and the gap is now costing signed deals: Microsoft dropped Nscale's UK flagship over a 2030s grid date, and Galaxy's 830 MW cannot be leased until it energizes in late 2028. Oracle's trucked gas shows the same gap in the US. The counterview is that US grid additions surge from about 2028.",
+  "summary": "Utility dates are slipping and the gap is now costing signed deals: Microsoft dropped Nscale's UK flagship over a 2030s grid date, and Galaxy's 830 MW cannot be leased until it energizes in late 2028. Oracle's trucked gas shows the same gap in the US, and Anthropic's S-1 now names power connection as the main risk to its own sites, with a five-year bottleneck expected per one account. The counterview is that US grid additions surge from about 2028.",
   "title": "Power arriving after the chips",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

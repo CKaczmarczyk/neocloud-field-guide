@@ -1,0 +1,674 @@
+{
+  "changes": [
+    "First rent, but small: 18 critical IT MW delivered at Black Pearl and $5.9mn of HPC lease revenue; mining was still 78% of revenue, so total revenue missed consensus by about 31%.",
+    "Cipher issued a ready-for-service notice for Barber Lake's first 51 critical IT MW (call only; not yet rent). Cost is now about $13.0mn per IT MW against $10.4mn financed; management puts average yield on cost back at 15.2% only with the 20-year lease (12.9% without it).",
+    "Management said early leases were rushed on immature designs. New leases wait for 30% to 60% design completion and are priced on yield on cost, which slows signing: no new campus lease since March.",
+    "Shares rose 9.9% in a month (415.1mn at 30 September to 456.4mn at 30 October) on the convert exchange, and the 10-Q still names at-the-market sales as a liquidity source. Pro forma unrestricted cash and bitcoin is $724mn.",
+    "Not asked on the call: Google's warrants carry a $435mn value test when the Fluidstack lease commences. At about $6.93 the 26.2mn warrant shares are worth about $182mn, so a shortfall of roughly $250mn would be owed in shares or cash [our approximate arithmetic; how value is measured is not disclosed].",
+    "Project notes marked down: 10-Q fair values fell to 100.5, 97.9 and 95.6 of par at 30 September from 104.2, 101.5 and 100.4 at 30 June."
+  ],
+  "checks": "A fresh subagent checked the draft against the 8-K, deck, release, both 10-Qs, the transcript extract and the price article: about 150 figures and claims confirmed, six wording or attribution errors fixed, and derived figures recomputed in code (25% cost rise, 9.9% shares, 3Q capex and OCF as 9M less H1, ex-warrant net income -$95.6mn reconciling to -$0.22, fair values as percent of par). Open: warrant share count is approximate (24.18mn plus about 2.0mn; EPS tables show 24.7mn), the floor is $435mn in the 3Q 10-Q but $430mn in 2Q, and the valuation method and trigger for a phased commencement are undisclosed. Call items rest on extracts of an AI-assisted Investing.com transcript, not raw text. Consensus varies by provider ($37.49mn to $38.69mn); the miss holds on all. No bond quote after 30 September found.",
+  "consensus_thesis": "Investors own Cipher as a Texas build-to-suit landlord whose 700 gross MW of backstopped or investment-grade leases turn into rent as halls are delivered, while pricing heavy doubt about build cost, dilution and parent funding.",
+  "date": "2026-11-02",
+  "headline": "The contracted-rent view holds but should move from 'overruns are a one-off' to 'returns were preserved by a longer lease and parent cash': Barber Lake's cost rose 25% to about $13.0mn per IT MW, 41mn new shares followed, no new campus lease was signed, and long-term credit quality holds rather than improves until halls bill on schedule.",
+  "kind": "postcall",
+  "kona": "Management's own account is the lesson: leases signed on immature designs cost Cipher 25% on build cost, and the hyperscaler leases with capex allowances passed overruns to the tenant while the modified-gross Fluidstack lease passed on only half of costs above the first $359.3mn. Kona should freeze design to at least 30% before signing and write a capex allowance into any lease. Rents are reportedly moving with financing costs, so Kona should quote on yield on cost (Barber Lake's achieved figure is about 15%; no target was stated) rather than a fixed $/kW-month. On-site gas is converging on an independent power producer that sells to the tenant under a PPA, with yields in line with grid sites, and Cipher targets gas in 2027 and about 1 GW of talks, so Kona's off-grid edge must rest on speed and gas cost, not on the model being unusual.",
+  "monitor": [
+    "MW billing at 31 December by site, against 18 MW today and the 51 MW Barber Lake notice; first Barber Lake rent in the 4Q release.",
+    "ERCOT final Batch Zero classification for Colchis in December, and any signed lease at Reveille, Ulysses or Odessa, with its funding mix.",
+    "Parent cash after remaining Barber Lake funding, at-the-market use below $10, and how the Google warrant shortfall is settled at Fluidstack lease commencement."
+  ],
+  "name": "Cipher Digital",
+  "pdf_brief": "/_blob/10442677c735d22c7ddc30c2242dd5e2",
+  "pdf_report": "/_blob/942f6352a12000033f6a21cd7ec6d28f",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Rent starts on schedule",
+            "Black Pearl ramps from August; Barber Lake bills from 4Q26, all halls by 1Q27",
+            "18 MW delivered; 51 MW Barber Lake RFS notice; dates held. No MW-by-date schedule, and Black Pearl and Stingray both 'implementing updated phased delivery schedule'; three Black Pearl amendments revised milestones",
+            "Unresolved",
+            "Deck pp.11-12; 10-Q leases note; call (51 MW)"
+          ],
+          [
+            "P2 Tenant credit is investment-grade",
+            "IG hyperscalers; Google backstop; AI lab extends",
+            "Deck repeats 'high investment-grade'. Backstop scope for years 11-20 not disclosed or asked; lab unnamed (deck p.7 names Anthropic with Fluidstack only on a water commitment); 10-Q says backstops apply only after rent commencement and carry limits",
+            "Unresolved",
+            "Deck p.5; 10-Q risk factors"
+          ],
+          [
+            "P3 Build costs are contained",
+            "A Barber Lake one-off, shared above $359.3mn",
+            "$13.0mn per IT MW vs $10.4mn financed (+25%), $9mn-$11mn guided; $409mn of change orders, tenant repays $50mn. Hyperscaler leases have capex allowances; next leases face inflation through 2027",
+            "Challenged",
+            "Deck pp.9, 12; call"
+          ],
+          [
+            "P4 Funded without common equity",
+            "Existing sites funded; new projects may need equity",
+            "$724mn pro forma; $1,610mn construction commitments mostly backed by project cash. Shares +9.9% in a month; ATM still a named source ($129.2mn raised in 9M at $23.50); equity for next project not addressed",
+            "Challenged",
+            "10-Q cover, liquidity; deck p.18"
+          ],
+          [
+            "P5 Pipeline becomes leases",
+            "Odessa, Reveille, Ulysses sign; Colchis in 2028",
+            "No new campus lease since March (the AI lab's Barber Lake term is the only new agreement). Reveille and Ulysses still 'in discussions'; Colchis conditional, with any lease conditional on interconnection; design-first policy slows signing",
+            "Challenged",
+            "Deck p.15; call"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Emphasized more",
+          "Emphasized less or dropped"
+        ],
+        "rows": [
+          [
+            "Yield on cost as the pricing measure; 'not a neocloud'",
+            "Original $9mn-$11mn per IT MW as a current guide"
+          ],
+          [
+            "Front-end design (30% to 60%) and construction reimbursement before lease",
+            "Speed of signing: August's 477 MW said to have cleared the milestones for lease execution"
+          ],
+          [
+            "On-site gas: 2.5 GW of laterals, about 1 GW in talks, IPP model",
+            "Barber Lake estimate at completion: the $2,941mn-$2,966mn range from the October deck is not repeated (now per IT MW)"
+          ],
+          [
+            "Batch Zero and 'PCLR' status of Colchis, Mikeska, Apollo, Stingray expansion",
+            "Equity position for a large new project (CFO addressed it in August, not now)"
+          ]
+        ]
+      },
+      "title": "Emphasis and disclosure shifts"
+    },
+    {
+      "body": "Trevor's watch-list. No analyst was named by CK; I chose Brett Knoblauch (Cantor), who pressed hardest on cost, though on two quarters and one transcript the choice is thin. 3Q question: when were Barber Lake costs locked in? Answer: rushed leases, immature design, scope, labor, lead times; the lock-in date was not given. Rating: partial. Later evidence: EAC at the next 10-Q. Wider point: nobody asked about the backstop for years 11-20, remaining Barber Lake equity, convert puts or project coverage, even with the stock down sharply. 3Q Q&A is from the Investing.com transcript; 2Q topics are from a Nasdaq call summary, so the 2Q column is partial. — Trevor",
+      "table": {
+        "head": [
+          "Topic",
+          "2Q26",
+          "3Q26",
+          "Trend",
+          "Rating of 3Q answers"
+        ],
+        "rows": [
+          [
+            "Build cost and yields",
+            "Rosenblatt, Needham",
+            "UBS, Cantor",
+            "Rising",
+            "Partial; timing of cost lock-in not answered"
+          ],
+          [
+            "Power and interconnection",
+            "Morgan Stanley",
+            "Compass Point, BTIG, Cantor",
+            "Persistent",
+            "Direct on leases; deflected on batteries"
+          ],
+          [
+            "On-site gas",
+            "none",
+            "BTIG, Compass Point",
+            "New",
+            "Direct"
+          ],
+          [
+            "Odessa and pipeline",
+            "H.C. Wainwright, Macquarie",
+            "Wells Fargo",
+            "Persistent",
+            "Partial"
+          ],
+          [
+            "Equity and funding",
+            "Jefferies",
+            "none",
+            "Fading (not asked)",
+            "n.a."
+          ],
+          [
+            "Backstop, converts, DSCR",
+            "none",
+            "none",
+            "Not asked",
+            "n.a."
+          ]
+        ]
+      },
+      "title": "Analyst focus and Trevor's watch-list"
+    },
+    {
+      "body": "Flags: [↑] better, [↓] worse, [~] within normal range, [?] distorted. For debt, cost and share lines, ↓ means worse for shareholders. 3Q capex and cash flow are 9M less H1 (10-Qs). NOI: $793mn averaged October 2026 to September 2036; $864mn averages August 2026 to July 2041, so not like for like.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Flag"
+        ],
+        "rows": [
+          [
+            "Revenue ($mn)",
+            "26.7",
+            "24.8",
+            "71.7",
+            "+7.5% / -62.8%",
+            "[↓]"
+          ],
+          [
+            "HPC lease revenue ($mn)",
+            "5.9",
+            "nil",
+            "nil",
+            "new",
+            "[↑]"
+          ],
+          [
+            "Bitcoin mining revenue ($mn)",
+            "20.8",
+            "24.8",
+            "71.7",
+            "-16% / -71%",
+            "[↓]"
+          ],
+          [
+            "BTC mined at Odessa",
+            "~296",
+            "~346",
+            "n.d.",
+            "-14%",
+            "[↓]"
+          ],
+          [
+            "Operating loss ($mn)",
+            "-71.9",
+            "-78.5",
+            "-37.6",
+            "better / worse",
+            "[~]"
+          ],
+          [
+            "Adjusted EBITDA ($mn)",
+            "-10.0",
+            "-30.0",
+            "40.8",
+            "better / worse",
+            "[↑]"
+          ],
+          [
+            "Interest expense ($mn)",
+            "59.0",
+            "66.7",
+            "1.3",
+            "-12% / n.m.",
+            "[~]"
+          ],
+          [
+            "Interest income ($mn)",
+            "32.7",
+            "35.9",
+            "0.5",
+            "-9% / n.m.",
+            "[↓]"
+          ],
+          [
+            "Capitalized interest ($mn)",
+            "37",
+            "16",
+            "n.d.",
+            "up",
+            "[↓]"
+          ],
+          [
+            "Warrant mark ($mn)",
+            "+127.2",
+            "-150.5",
+            "+31.9",
+            "non-cash",
+            "[?]"
+          ],
+          [
+            "Diluted EPS ($)",
+            "-0.22",
+            "-0.65",
+            "-0.01",
+            "better / worse",
+            "[?]"
+          ],
+          [
+            "Critical IT MW delivered",
+            "18",
+            "0",
+            "0",
+            "new",
+            "[↑]"
+          ],
+          [
+            "Contracted gross MW",
+            "700",
+            "700",
+            "n.a.",
+            "flat",
+            "[~]"
+          ],
+          [
+            "Contracted revenue ($bn)",
+            "16.6",
+            "11.4",
+            "n.a.",
+            "+46%",
+            "[↑]"
+          ],
+          [
+            "Avg. annualized NOI ($mn)",
+            "864",
+            "793",
+            "n.a.",
+            "window changed",
+            "[?]"
+          ],
+          [
+            "Capex, cash ($mn)",
+            "1,553",
+            "964 (H1)",
+            "n.d.",
+            "sharply up",
+            "[↓]"
+          ],
+          [
+            "Operating cash flow ($mn)",
+            "-131",
+            "-152 (H1)",
+            "n.d.",
+            "worse",
+            "[↓]"
+          ],
+          [
+            "Cash, unrestricted ($mn)",
+            "656",
+            "832",
+            "n.d.",
+            "-21%",
+            "[↓]"
+          ],
+          [
+            "Restricted cash ($mn)",
+            "2,197",
+            "3,728",
+            "n.d.",
+            "-41%",
+            "[~]"
+          ],
+          [
+            "Debt principal ($mn)",
+            "6,016 (6.7bn pro forma)",
+            "6,016",
+            "n.d.",
+            "flat before Oct.",
+            "[↓]"
+          ],
+          [
+            "Shares out (mn)",
+            "415.1 (456.4 on 30 Oct)",
+            "n.d.",
+            "n.d.",
+            "+9.9% in Oct.",
+            "[↓]"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: rent has begun and the operating loss narrowed, but the quarter proves little; NOI is a projection until far more than 18 MW bills. Excluding the warrant mark, net income was -$95.6mn, which reconciles to diluted EPS of -$0.22 on 439.7mn shares.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "Revenue, EBITDA",
+            "None given",
+            "Unchanged",
+            "FY26 about $216mn needs about $130mn in 4Q",
+            "n.a.",
+            "Consensus likely to fall [inference]"
+          ],
+          [
+            "Barber Lake delivery",
+            "Halls 4Q26 to 1Q27; 51 MW RFS",
+            "Maintained since Sept.; October rent in August",
+            "Rent timing in line",
+            "Aligned with tenant compute deployment",
+            "KBW cut target $28 to $11, keeps Outperform"
+          ],
+          [
+            "Black Pearl",
+            "Multiple halls by year-end; no MW",
+            "'Updated' schedule",
+            "n.a.",
+            "Phase I fit-out; Phase II electrical",
+            "Date risk unpriced"
+          ],
+          [
+            "Stingray",
+            "Shell 4Q26; phased delivery from 2027",
+            "August said 1H27; now 'updated'",
+            "n.a.",
+            "On schedule",
+            "Watch for slip"
+          ],
+          [
+            "Cost per IT MW",
+            "About $13.0mn; about 15.2% yield",
+            "Up from $10.4mn; 12.9% without extension",
+            "n.a.",
+            "Immature designs, scope, labor",
+            "Yield compares a 20-year average with a 10-year one"
+          ],
+          [
+            "Pipeline energization",
+            "Reveille 3Q27; Ulysses 4Q27; Colchis 2028; on-site 2027-28",
+            "Colchis now conditional",
+            "n.a.",
+            "ERCOT final in December",
+            "Lease timing open"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5-10 year view: long leases with strong credit make a durable annuity if delivered at cost. The franchise depends on power access, not on construction skill, which is still being proven.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power and interconnection",
+            "Strong",
+            "Improving",
+            "Conditional base load at Colchis; 11 sites, about 6.8 GW",
+            "Scarcity value, subject to December"
+          ],
+          [
+            "Site pipeline",
+            "Strong",
+            "Stable",
+            "941 acres added at Barber Lake and Black Pearl; 270 MW for 2027",
+            "Expansion optionality"
+          ],
+          [
+            "Tenant quality",
+            "Strong",
+            "Stable",
+            "IG hyperscalers; lab extension; second term unrated",
+            "Financing depends on backstop"
+          ],
+          [
+            "Cost of capital",
+            "Weakened",
+            "Weakening",
+            "Stingray marked at 95.6; 0% converts paid for with dilution",
+            "Next project costs more"
+          ],
+          [
+            "Execution speed",
+            "Mixed",
+            "Unresolved",
+            "Black Pearl early; Barber Lake 25% over",
+            "Delivery record not yet earned"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Delivery, Black Pearl and Stingray schedules",
+            "Preview risk",
+            "Updated, no dates",
+            "Up",
+            "2027 revenue timing unclear"
+          ],
+          [
+            "Barber Lake cost",
+            "Preview risk",
+            "About $13.0mn per IT MW; shared 50/50 above $359.3mn",
+            "Up",
+            "Parent bears more if costs rise"
+          ],
+          [
+            "Parent funding, dilution",
+            "Preview risk",
+            "$724mn; shares +9.9%; ATM named",
+            "Up",
+            "Equity below $10 dilutes NOI per share"
+          ],
+          [
+            "Google warrant top-up",
+            "Not flagged",
+            "$435mn value test the day before lease commencement; 26.2mn shares at $6.93 worth about $182mn, shortfall about $253mn",
+            "New",
+            "About 37mn shares at $6.93, or cash; timing depends on when commencement starts the exercise period, not disclosed [our arithmetic, approximate]"
+          ],
+          [
+            "Convert puts",
+            "Preview risk",
+            "$2.2bn; puts October 2029, November 2030",
+            "Stable",
+            "Refinancing issue if stock stays low"
+          ],
+          [
+            "Pipeline, ERCOT",
+            "Preview risk",
+            "Conditional; December",
+            "Stable",
+            "Lease timing depends on audit"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "Overruns destroy returns",
+            "Yield restored to 15.2% by lease extension",
+            "Arithmetic is management's; the longer term does the work. 12.9% is the honest 10-year comparison"
+          ],
+          [
+            "Parent needs equity",
+            "Parent has flexibility; no equity for Odessa",
+            "10-Q relies on bitcoin sales and ATM for 12-month liquidity; $200mn revolver limited to $50mn before completion"
+          ],
+          [
+            "Lease pace has stalled",
+            "Want the right lease, not the first",
+            "No new campus lease since March; demand claimed, not shown"
+          ]
+        ]
+      },
+      "title": "Concern, response, evidence"
+    },
+    {
+      "body": "Parent: 0% 2031 converts $1,300mn ($16.03), 0% 2032 converts $850mn ($15.31; capped to $28.35), $6.6mn 2030 converts, $200mn revolver. Net debt about $3bn per CFO. Fair values at 30 September (10-Q, Level 2): 100.5, 97.9, 95.6 of par, implying yields near 7% for the Stingray notes [inference]; no later quote found. Price: $6.93 on 2 November at 9:55 ET (24/7 Wall St.), market cap about $3.2bn on 456.4mn shares, about 2x that in debt. CFO's claim that its bonds sit among the tightest of about 20 to 25 high-yield construction financings is unverified.",
+      "table": {
+        "head": [
+          "Site",
+          "MW (gross)",
+          "Tenant",
+          "Contract value",
+          "Cost / funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Barber Lake",
+            "300",
+            "Fluidstack (Google support), then AI lab",
+            "$9.1bn, 20 yrs",
+            "About $13.0mn/IT MW; 7.125% notes $1,733mn plus parent equity; $1,278mn cash pro forma",
+            "51 MW RFS; halls 4Q26-1Q27"
+          ],
+          [
+            "Black Pearl",
+            "300",
+            "IG hyperscaler",
+            "$5.5bn, 15 yrs",
+            "6.125% notes $2,000mn; $849mn cash",
+            "18 MW delivered"
+          ],
+          [
+            "Stingray",
+            "100",
+            "IG hyperscaler",
+            "$2.0bn, 15 yrs",
+            "6.000% notes $810mn; $645mn cash",
+            "Shell by 4Q26"
+          ]
+        ]
+      },
+      "title": "Per-site funding"
+    },
+    {
+      "body": "Signals: (1) MW billing by site at 31 December; (2) ERCOT December result; (3) a signed lease and its funding mix; (4) ATM use in 4Q; (5) NOI per share. Tripwires: Barber Lake hall dates slip again; cost above $13.0mn per IT MW; equity issued below $10; rent credits. Confirmation: 51 MW plus further halls billing in 4Q revenue; a lease at Reveille or Ulysses funded at project level.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "body": "",
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters",
+          "Asked?"
+        ],
+        "rows": [
+          [
+            "How many MW bill on 31 December by hall, and what if Hall 5 slips past March?",
+            "Test of FY27 near $850mn",
+            "Not asked; 51 MW and 18 MW given"
+          ],
+          [
+            "What is the EAC today, what parent equity is left, and does Google's backstop cover the extended term? (credit)",
+            "Decides parent exposure and refinancing",
+            "Partly; per-MW cost given, equity and backstop not"
+          ],
+          [
+            "How are $2.2bn of converts met at 2029 and 2030 puts with the stock near $7? (credit)",
+            "Parent ranks behind $4.5bn secured notes",
+            "Not asked"
+          ],
+          [
+            "What changed in the Black Pearl schedule, and is it priced?",
+            "Largest near-term rent",
+            "Not asked; no dates"
+          ],
+          [
+            "What share of the next project is parent equity; will you commit to no ATM below a price?",
+            "NOI per share",
+            "Not asked"
+          ],
+          [
+            "When does project NOI cover interest, and what DSCR? (credit)",
+            "Tests non-recourse claim",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Questions for owners (preview questions and how the call answered them)"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Cipher 3Q26 8-K (2 November 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/cifr-20261102.htm"
+    },
+    {
+      "title": "Cipher 3Q26 release (Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/exh991-q326_earningsxprxvf.htm"
+    },
+    {
+      "title": "Cipher 3Q26 business update deck (Ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000047/cipherdigital_businessup.htm"
+    },
+    {
+      "title": "Cipher 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000050/cifr-20260930.htm"
+    },
+    {
+      "title": "Cipher 2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000041/cifr-20260630.htm"
+    },
+    {
+      "title": "3Q26 call transcript (Investing.com; AI-assisted)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-cipher-digital-beats-q3-2026-eps-misses-revenue-93CH-4991951"
+    },
+    {
+      "title": "3Q26 call page and consensus (MarketBeat)",
+      "url": "https://marketbeat.com/earnings/reports/2026-11-2-cipher-mining-inc-stock"
+    },
+    {
+      "title": "2Q26 call highlights (Nasdaq)",
+      "url": "https://www.nasdaq.com/articles/cipher-digital-ifr-q2-earnings-call-highlights-early-hpc-delivery"
+    },
+    {
+      "title": "24/7 Wall St., 2 November: price and KBW target",
+      "url": "https://247wallst.com/investing/2026/11/02/cipher-digital-falls-5-on-revenue-miss-and-keefe-bruyette-target-cut-terawulf-and-iren-drop-4/"
+    }
+  ],
+  "ticker": "CIFR",
+  "verdict": "Monitoring",
+  "versus": "Quarter: miss on revenue ($26.7mn vs $38.44mn at the preview date, $38.69mn at the print), small diluted EPS beat (-$0.22 vs about -$0.25), and adjusted EBITDA -$10.0mn with no consensus found. Outlook: in line; no formal guidance, Barber Lake dates held on the September schedule, but FY26 revenue consensus of about $216mn now needs about $130mn in 4Q."
+}

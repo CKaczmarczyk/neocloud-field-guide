@@ -1,6 +1,46 @@
 {
   "evidence": [
     {
+      "claim": "AP reports a Trelew Free of Data Centers movement citing lack of information on water and power for a Patagonian project.",
+      "company": "Green Capital / Trelew",
+      "date": "2026-11-02",
+      "direction": "supports",
+      "numbers": "Green Capital plan $3B, no customer yet, construction around 2028.",
+      "segment": "policy",
+      "source": "AP via La Nacion",
+      "url": "https://www.lanacion.com.ar/usa/argentinas-milei-pitches-a-regulation-free-ai-haven-at-the-end-of-the-world-nid02112026/"
+    },
+    {
+      "claim": "Court held Southaven turbines are not exempt from Clean Air Act permitting, against the state regulator's earlier view, and on 19 October denied a DOJ request to end the case.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-10-30",
+      "direction": "supports",
+      "numbers": "Ruling is on the motion, not the merits; injunction pending.",
+      "segment": "policy",
+      "source": "DeSoto County News",
+      "url": "https://desotocountynews.com/mississippi-news/xai-southaven-turbines-motion-denied"
+    },
+    {
+      "claim": "Asked about permitting and counterparty credit for slots out to 2029-30, the CEO said Caterpillar is 'not seeing significant changes' in customer project timing, but declined to say what share of slots hyperscalers back.",
+      "company": "Caterpillar",
+      "date": "2026-10-29",
+      "direction": "against",
+      "numbers": "No deferrals disclosed; backlog grew $5.9bn QoQ. Management's words and the numbers agree for now, but disclosure is thin.",
+      "segment": "energy",
+      "source": "Caterpillar 3Q26 call (Wells Fargo question; transcript)",
+      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
+    },
+    {
+      "claim": "Amazon announced Built Together, a $1bn community investment in US data center communities (training, efficiency upgrades, flexible local funding).",
+      "company": "Amazon",
+      "date": "2026-10-29",
+      "direction": "supports",
+      "numbers": "Paying communities is now part of a hyperscaler's build cost; effect on approvals not yet shown.",
+      "segment": "financing",
+      "source": "Amazon 3Q26 release",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm"
+    },
+    {
       "claim": "Galaxy says remaining TCEQ permits do not gate Helios construction or energization and the Texas permitting freeze will not affect Helios timelines; permits for current builds are in hand.",
       "company": "Galaxy Digital",
       "date": "2026-10-27",
@@ -83,22 +123,12 @@
       "segment": "policy",
       "source": "Utility Dive",
       "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
-    },
-    {
-      "claim": "Asked about permitting and counterparty credit for slots out to 2029-30, the CEO said Caterpillar is 'not seeing significant changes' in customer project timing, but declined to say what share of slots hyperscalers back.",
-      "company": "Caterpillar",
-      "date": "2026-10-29",
-      "direction": "against",
-      "numbers": "No deferrals disclosed; backlog grew $5.9bn QoQ. Management's words and the numbers agree for now, but disclosure is thin.",
-      "segment": "energy",
-      "source": "Caterpillar 3Q26 call (Wells Fargo question; transcript)",
-      "url": "https://gloom.sh/stocks/cat/transcripts/q3-2026"
     }
   ],
   "order": 7,
   "question": "Is opposition slowing builds, and where?",
   "status": "strengthening",
-  "summary": "Opposition is now national politics: Amazon dropped a Virginia campus, Memphis paused applications for 135 days, and Trump is telling developers to pay communities and make their own power. Moratorium bills mostly fail, but local pauses and withdrawals are rising, and cash offers have not reliably won votes.",
+  "summary": "Opposition is now national politics and is reaching the courts: a federal judge refused to dismiss the Southaven turbine suit and rejected the mobile-source defense, Amazon dropped a Virginia campus, Memphis paused applications for 135 days, and Trump is telling developers to pay communities and make their own power. It has also reached Patagonia, where a Trelew group opposes a data center plan. Moratorium bills mostly fail, but local pauses and withdrawals are rising, and cash offers have not reliably won votes.",
   "title": "Permitting and community backlash",
-  "updated": "2026-10-29"
+  "updated": "2026-11-02"
 }

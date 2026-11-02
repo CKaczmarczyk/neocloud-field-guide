@@ -1,0 +1,16 @@
+{
+  "active_mw": "",
+  "contracted_mw": "",
+  "date": "2026-10-30",
+  "debt_cost": "$17.5bn term loan drawn September 2026 at SOFR + 0.625-0.875% (matures 2029); September GBP 4.25bn notes 5.20-6.65% coupons; new secured supplier loan facility up to ~$80bn at variable rates (terms n.d.); A1/AA/AA- unsecured",
+  "margin": "EBITDA n.a. / operating 38.7% (AWS segment); Amazon consolidated operating 13.9%",
+  "name": "Amazon",
+  "notes": "First AMZN row. Revenue_m = AWS segment; total revenue $201,944mn. Amazon does not disclose MW or a capacity price. AWS +39.3% YoY; backlog $578bn (6.1-yr life). Cash capex $75.9bn, quarterly FCF -$33.5bn, TTM FCF -$42.4bn. Leases not yet commenced $164.9bn; commitments $883.6bn; energy contracts 690mn MWh. Flags vs 2Q26 filings (>25%): capex +43%, face debt +36% ($133.0bn to $180.9bn), commitments +36%, energy MWh 2.6x, quarterly FCF -$7.7bn to -$33.5bn; leases not yet commenced +20% (below flag). New: first secured (equipment) debt facility.",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "45984",
+  "segment": "financing",
+  "source": "Amazon 3Q26 8-K Ex. 99.1 and 10-Q",
+  "ticker": "AMZN",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000038/amzn-20260930xex991.htm"
+}
