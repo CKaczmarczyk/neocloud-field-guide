@@ -1,0 +1,538 @@
+{
+  "changes": [
+    "The call put a number on the next step: 'one or two' more power projects by year-end, with larger scale, longer terms and 'high quality counterparties'. Signed capacity is still 2,588 MW.",
+    "Year-end leverage is now about 3.75x before new power projects, leaving about $2bn of room to the 4x ceiling (per CFO). Our preview carried about 3.9x from the 2Q call (transcript not held this run); the basis may differ [INFERENCE].",
+    "About $5.9bn of equipment commitments for potential projects surfaced in the 10-Q. The CFO said some carry cancellation terms and declined to tie them to the 6 GW-plus opportunity set.",
+    "Partner pricing has 'moved a bit' from the 6.35% of the July Blackstone deal with 10-year Treasuries, per the CFO, who gave no direction; we read it as higher [INFERENCE].",
+    "NESE: the Third Circuit remanded the New Jersey certificate. The CEO said this could threaten in-service by next winter, with no material effect on the financial outlook."
+  ],
+  "checks": "Post-call rerun of the 3 November pre-call report, using the Motley Fool, Investing.com and MarketBeat versions of the call (read through a fetch tool that summarizes; several speakers are mislabeled in the Fool text, and direct quotes come from Investing.com or MarketBeat). Figures from the 3Q release and 10-Q carried from the pre-call report, which a fresh subagent checked on 3 November. Derived numbers recomputed in Python. Benzinga and GuruFocus transcripts not readable. A fresh subagent rechecked the draft on 4 November (about 170 figures across the three reports); corrections applied. Not checked: the 10-Q itself, so $5.9bn and 10% to 16% rest on the call; 2Q capex basis unreconciled.",
+  "consensus_thesis": "Investors own Williams as a fee-based gas pipeline compounder with contracted growth of 11%-plus a year through 2030, and Power Innovation (behind-the-meter generation for hyperscalers) as the AI option on top.",
+  "date": "2026-11-04",
+  "headline": "The consensus view does not need to change: the pipeline engine and credit hold, and the AI option gets a dated test (one or two projects by year-end), but its returns are still undisclosed and partner capital may cost more than in July.",
+  "kind": "postcall",
+  "kona": "Two points for Kona. First, Williams pays for equipment ahead of signed projects at scale, about $5.9bn, and hyperscalers reward speed; Kona should fix turbine or genset slots only with cancellation terms it can state to lenders. Second, the price of partner capital moved within four months of 6.35%, so Kona should not model a fixed JV return; ask infrastructure investors for a range and a rate reset. No change to pricing, since Williams still discloses no PPA price.",
+  "monitor": [
+    "One or two power awards by 31 December: GW, tenor, counterparty, funding structure.",
+    "Year-end leverage against about 3.75x, and how new projects use the $2bn of room.",
+    "NESE: New Jersey remand, the 9 November Senate cloture vote, in-service date."
+  ],
+  "name": "Williams",
+  "pdf_brief": "/_blob/72cc69529facfc125d720545ad256f3b",
+  "pdf_report": "/_blob/420fef3577adfb4f5215924775471e49",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Contracted growth at 11%-plus",
+            "Double-digit EBITDA growth through 2030; FY26 held or raised",
+            "EBITDA +6% YoY, YTD +9%; upper half of range; 11%-plus reaffirmed. No 2027 range given.",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P2 Power scales beyond 2.6 GW",
+            "More projects by year-end from a 6 GW-plus backlog",
+            "No award yet. CEO: one or two by year-end, more in 2027; timing depends on signed agreements and permits.",
+            "Unresolved",
+            "Call"
+          ],
+          [
+            "P3 Leverage within 3.5x to 4.0x",
+            "About 3.9x at year-end",
+            "3.80x at 30 September; about 3.75x guided at year-end before new projects; $2bn room to 4x. 4.11x on gross debt (our math).",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P4 Power earns pipeline-like returns",
+            "About 20% pre-tax, helped by JV promote",
+            "Management says the return framework should hold on larger projects and costs fall for customers, but gives no EBITDA or return figure. Partner pricing has moved since July.",
+            "Unresolved",
+            "Call"
+          ],
+          [
+            "P5 Transco on schedule",
+            "SESE partial early 2027; NESE on time",
+            "Four projects added over 400 MMcf/d. NESE remand puts next-winter timing at risk. SESE not found in sections read.",
+            "Challenged",
+            "Call; release"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: Customer quality and tenor on power projects; phased, larger projects; gas-supply security in site choice; partner capital. Emphasized less or dropped: Socrates economics stayed undisclosed; no project-level EBITDA. The 2026-27 leverage squeeze was framed as temporary, with earnings stronger from 2028. KPIs more important: Signed GW, leverage on a stated definition, distributions to Blackstone. Less important: quarterly marketing EBITDA. Risks: Up: NESE timing, cost of JV capital, equipment commitments. Down: Socrates delivery, with Phase 2 due later this week, ahead of schedule and within budget per the CEO. The release called Socrates fully online and also had Plato North on track for mid-November; the call says Phase 2 is still to come.",
+      "title": "Emphasis and disclosure shifts"
+    },
+    {
+      "body": "Watch-list: no analyst named by CK; I chose Spiro Dounis (Citi), who pressed hardest on funding. 3Q question: what reaches the high end of the 10% to 16% CAGR he read in the 10-Q, how funding ranks, and how $5.9bn of equipment ties to 6 GW-plus. Answer: 3.5x to 4x target, bolt-ons, partner capital; no strong link between equipment and GW. Rating: partial to deflected. Later evidence: the year-end award and its funding. Also Robert Catellier (CIBC) on JV structure: direct, with pricing moved from 6.35%. No one asked for Socrates EBITDA or agency treatment of the JV. Only the 3Q transcript was held, so the 2Q column is thin. — Trevor",
+      "table": {
+        "head": [
+          "Topic",
+          "2Q26",
+          "3Q26",
+          "Trend",
+          "3Q answer"
+        ],
+        "rows": [
+          [
+            "Power project pipeline and timing",
+            "Asked",
+            "JPMorgan, Wells Fargo, Jefferies, TD Cowen",
+            "Rising",
+            "Partial: 'one or two', no GW or customer"
+          ],
+          [
+            "Capex and funding, cost of capital",
+            "Asked",
+            "Citi, CIBC",
+            "Rising",
+            "Direct on 6.35% having moved; partial on structure"
+          ],
+          [
+            "Equipment commitments",
+            "n.a.",
+            "Citi",
+            "New",
+            "Deflected: no link to GW"
+          ],
+          [
+            "Project overbuild and returns",
+            "n.a.",
+            "TPH",
+            "New",
+            "Partial: no return figure"
+          ],
+          [
+            "Transco and NESE",
+            "n.a.",
+            "Goldman, Wells Fargo",
+            "Persistent",
+            "Direct on process"
+          ],
+          [
+            "Momentum, gathering, storage, LNG",
+            "n.a.",
+            "RBC, CIBC, UBS",
+            "Persistent",
+            "Direct"
+          ]
+        ]
+      },
+      "title": "Analyst focus and Trevor's watch-list"
+    },
+    {
+      "body": "Note: for cost, debt and capex lines, [↓] means worse for shareholders. Company leverage nets cash and $857mn of reimbursable equipment. 2Q capital investments are shown ex $188mn reimbursable per the pre-call report (release $1,830mn); that does not reconcile to about $176mn YTD reimbursable, so treat the +66% as unconfirmed.",
+      "table": {
+        "head": [
+          "Metric",
+          "This qtr",
+          "Prior qtr",
+          "Same qtr last year",
+          "QoQ / YoY flag"
+        ],
+        "rows": [
+          [
+            "Revenue ($mn)",
+            "3,223",
+            "3,053",
+            "2,923",
+            "[↑] +5.6% / +10.3%"
+          ],
+          [
+            "Service revenue ($mn)",
+            "2,319",
+            "2,152",
+            "2,121",
+            "[↑] +7.8% / +9.3%"
+          ],
+          [
+            "Adjusted EBITDA ($mn)",
+            "2,039",
+            "1,921",
+            "1,920",
+            "[↑] +6.1% / +6.2%"
+          ],
+          [
+            "Adjusted EPS",
+            "$0.54",
+            "$0.50",
+            "$0.49",
+            "[↑] +8.0% / +10.2%"
+          ],
+          [
+            "GAAP diluted EPS",
+            "$0.56",
+            "$0.68",
+            "$0.53",
+            "[?] -17.6% / +5.7%"
+          ],
+          [
+            "Operating income ($mn)",
+            "1,136",
+            "1,182",
+            "1,109",
+            "[~] -3.9% / +2.4%"
+          ],
+          [
+            "Operating margin",
+            "35.2%",
+            "38.7%",
+            "37.9%",
+            "[↓] -3.5pp / -2.7pp"
+          ],
+          [
+            "Trans., Power & Gulf adj. EBITDA ($mn)",
+            "1,030",
+            "959",
+            "947",
+            "[↑] +7.4% / +8.8%"
+          ],
+          [
+            "Northeast G&P adj. EBITDA ($mn)",
+            "542",
+            "540",
+            "505",
+            "[~] +0.4% / +7.3%"
+          ],
+          [
+            "West adj. EBITDA ($mn)",
+            "401",
+            "359",
+            "367",
+            "[↑] +11.7% / +9.3%"
+          ],
+          [
+            "Operating cash flow ($mn)",
+            "1,505",
+            "1,376",
+            "1,439",
+            "[↑] +9.4% / +4.6%"
+          ],
+          [
+            "AFFO ($mn)",
+            "1,589",
+            "1,450",
+            "1,449",
+            "[↑] +9.6% / +9.7%"
+          ],
+          [
+            "Dividend coverage (AFFO)",
+            "2.42x",
+            "2.26x",
+            "2.37x",
+            "[↑] +0.16x / +0.05x"
+          ],
+          [
+            "Capital investments ex-acq. ($mn)",
+            "2,727",
+            "1,642",
+            "1,053",
+            "[↓] +66% / +159%"
+          ],
+          [
+            "Interest expense ($mn)",
+            "385",
+            "371",
+            "372",
+            "[~] +3.8% / +3.5%"
+          ],
+          [
+            "Total debt ($mn)",
+            "33,934",
+            "30,793",
+            "n.a.",
+            "[↓] +10.2% / n.a."
+          ],
+          [
+            "Debt / adj. EBITDA (company basis)",
+            "3.80x",
+            "3.67x",
+            "3.73x",
+            "[↓] +0.13x / +0.07x"
+          ],
+          [
+            "Power Innovation signed (MW)",
+            "2,588",
+            "2,588",
+            "n.a.",
+            "[~] flat"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: solid. Service revenue +9%, AFFO +10%, operating income +2% as G&A ($275mn vs $168mn, with deal costs) and DD&A (+10%) rose. Deal costs look temporary; depreciation is structural as capital enters service.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "FY26 adj. EBITDA",
+            "$8.3bn to $8.5bn; upper half",
+            "Maintained, tone better",
+            "No consensus found",
+            "Transmission, storage and gathering strength",
+            "Implies $2,186mn to $2,286mn in 4Q"
+          ],
+          [
+            "FY26 growth capex",
+            "$7.3bn to $7.9bn",
+            "Maintained",
+            "n.a.",
+            "Excludes reimbursable equipment",
+            "Excludes any new power project"
+          ],
+          [
+            "Year-end leverage",
+            "About 3.75x before new power projects",
+            "About 3.9x in our preview (2Q call); run-rate Momentum basis",
+            "n.a.",
+            "About $2bn room to 4x; tight mainly in 2026-27",
+            "Cause of the difference is our inference: definition"
+          ],
+          [
+            "FY26 adj. EPS midpoint",
+            "$2.35",
+            "Maintained",
+            "Below $2.41 to $2.42",
+            "None given",
+            "Estimates may drift down [INFERENCE]"
+          ],
+          [
+            "EBITDA CAGR to 2030",
+            "11%-plus",
+            "Maintained",
+            "n.a.",
+            "Backlog; ROIC-linked pay",
+            "Citi reads 10% to 16% in the 10-Q; CFO called 16% the high end to chase"
+          ],
+          [
+            "New power projects",
+            "One or two by year-end; more in 2027",
+            "New, firmer than 'soon'",
+            "n.a.",
+            "Depends on signed agreements and permits",
+            "A binary test by 31 December"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5 to 10 year view: Transco expansion runs into the 2030s and supports the compounder case. Power Innovation adds optionality if contracts lengthen beyond the current up to 12.5 years (10-K, per preview); residual value after the primary term remains the undisclosed risk.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Gas network and Transco",
+            "Strong",
+            "Stable",
+            "Over 400 MMcf/d added; SESI II 150+ MMcf/d contracted, open season up to about 390 MMcf/d, build multiple 4x to 6x",
+            "Low-multiple expansions anchor returns"
+          ],
+          [
+            "BTM execution",
+            "Improving",
+            "Up",
+            "Phase 1 in under 18 months from commercialization; Phase 2 ahead of schedule, within budget (CEO)",
+            "Speed is what hyperscalers pay for"
+          ],
+          [
+            "Equipment access",
+            "Strong",
+            "Up",
+            "About $5.9bn committed for potential projects; supports backlog into early 2030s (CEO)",
+            "Scarce turbines are an asset, and a liability if projects slip"
+          ],
+          [
+            "Cost of capital",
+            "Good, may rise",
+            "Down",
+            "Blackstone 6.35% in July; pricing moved since, with 10-year yields, direction not stated",
+            "Next JV may earn a thinner spread [INFERENCE]"
+          ],
+          [
+            "Permitting",
+            "Mixed",
+            "Down",
+            "NESE remand; Senate cloture vote set for 9 November on permitting bill",
+            "Regulated growth depends on courts"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Concern: will AI power earn its capital? → Response: returns should hold at scale, phased builds, longer tenors. → Evidence: none yet in numbers; TPH's overbuild question got no return figure. Concern: leverage. → Response: about 3.75x, 2026-27 tight, stronger earnings from 2028. → Evidence: 3.80x, debt +$3.1bn in the quarter, 4.11x gross (our math).",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Funding intensity",
+            "Higher",
+            "Higher",
+            "Flat",
+            "Capital investments plus dividends exceed cash flow; $2bn room to 4x covers only part of a large project"
+          ],
+          [
+            "Equipment commitments",
+            "Not flagged",
+            "Monitoring",
+            "Up",
+            "About $5.9bn; cancellation terms undisclosed in what we read"
+          ],
+          [
+            "NESE timing",
+            "Low",
+            "Monitoring",
+            "Up",
+            "No material outlook effect per CEO; timing at risk"
+          ],
+          [
+            "Power counterparty concentration",
+            "High",
+            "High",
+            "Flat",
+            "Management signals a more diversified customer base and high-quality counterparties; none named"
+          ],
+          [
+            "Delivery",
+            "Moderate",
+            "Lower",
+            "Down",
+            "Socrates Phase 2 due this week"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "body": "Net debt $32,178mn (cash $1,756mn) against $30,590mn in June. Debt due within a year $2,202mn. Shares 1,250.2mn at end-October; dividend $0.525 a quarter, coverage 2.42x. Funding options for larger projects per CFO: another JV, a period of higher leverage, or insurance capital. Price: $71.19 at the 2 November close; about $74.22 after hours (+4.25%) per Investing.com. This corrects the pre-call report, which called the -4.25% a decline. No 3 November close, bond or CDS quote verified.",
+      "table": {
+        "head": [
+          "Period",
+          "Capital inv. ex-acq.",
+          "Operating cash flow",
+          "Gap",
+          "Debt",
+          "Equity and JV"
+        ],
+        "rows": [
+          [
+            "3Q26",
+            "$2,727mn",
+            "$1,505mn",
+            "$1,222mn",
+            "$2.75bn notes; debt +$3,141mn QoQ",
+            "$3,737mn JV cash; $2,020mn stock to Momentum sellers"
+          ],
+          [
+            "YTD26",
+            "$6,011mn",
+            "$4,484mn",
+            "$1,527mn",
+            "Debt +$4,573mn vs Dec-25",
+            "As above"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "5 signals: Power award GW and tenor; year-end leverage; Socrates Phase 2 in service; NESE ruling; first 2027 framework in February. Key risks building: Possibly costlier partner capital; $5.9bn of commitments; NESE. Confirmation signals: An award from a new counterparty with a term above 12.5 years, funded within 4x. Conviction tripwires: No award by 31 December; leverage above 4x; NESE slipping beyond next winter with a guide cut.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters / how answered"
+        ],
+        "rows": [
+          [
+            "Will at least one project be announced before year-end?",
+            "Answered: one or two expected; GW and customer not given."
+          ],
+          [
+            "What do the agencies calculate, and how do they treat 49% of JV EBITDA? (credit)",
+            "Not asked. Still open."
+          ],
+          [
+            "Will new power use a JV or corporate debt? (credit)",
+            "Asked by CIBC: JV, higher leverage or insurance capital; pricing moved from 6.35%."
+          ],
+          [
+            "What did Socrates add to 3Q EBITDA net of 49%?",
+            "Not asked or answered; first measured return remains missing."
+          ],
+          [
+            "Why does the EPS midpoint not move with EBITDA in the upper half?",
+            "Not found in the call summary reviewed."
+          ],
+          [
+            "Do $5.9bn of commitments bind if awards slip, and what is the cancellation cost? (credit)",
+            "New. CFO cited cancellation terms without amounts."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "Williams 3Q26 release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000107263/000010726326000035/wmb_20260930xer.htm"
+    },
+    {
+      "title": "Williams 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000036/wmb-20260930.htm"
+    },
+    {
+      "title": "Motley Fool: 3Q26 call transcript",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "Investing.com: 3Q26 call transcript",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
+    },
+    {
+      "title": "MarketBeat: call summary",
+      "url": "https://www.marketbeat.com/instant-alerts/transcript-what-williams-companies-wmb-said-on-its-q3-earnings-call-2026-11-04/"
+    }
+  ],
+  "ticker": "WMB",
+  "verdict": "Intact",
+  "versus": "Quarter in line: adjusted EPS $0.54 against $0.54 at MarketBeat ($0.56 at Zacks); no published adjusted EBITDA consensus. Outlook in line: FY26 guide held at $8.3bn to $8.5bn, tracking the upper half."
+}

@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Riot's Corsicana lease puts 1,101 of 1,151 contracted MW with one lab, named Anthropic PBC in the 10-Q; on the call no analyst asked about credit or termination.",
+      "company": "Riot Platforms",
+      "date": "2026-11-04",
+      "direction": "supports",
+      "numbers": "910 MW, about $28bn over 15 years; about 96% of MW; take-or-pay regardless of utilization.",
+      "segment": "developer",
+      "source": "RIOT 3Q26 10-Q; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926122417/riot-20260930x10q.htm"
+    },
+    {
       "claim": "Jassy called the $578bn backlog 'well-diversified' and listed new AWS deals with Meta, NVIDIA, OpenAI and others.",
       "company": "Amazon",
       "date": "2026-10-30",
@@ -131,5 +141,5 @@
   "status": "strengthening",
   "summary": "Exposure keeps rising and is changing shape: Anthropic's public S-1 puts compute commitments at $542B to $567B and adds Anthropic Direct, $125.2B of five-year leases on dedicated third-party sites, while the SpaceX deal grew to up to $120.5B. Those commitments are less firm than the headlines: the SpaceX deal reportedly allows 90-day exits from early 2027 (single source). Nscale's backlog is about 85% Microsoft and Anthropic. Lab demand now reaches landlords directly, widening both the tenant pool and the concentration.",
   "title": "Concentration on Anthropic and OpenAI",
-  "updated": "2026-11-02"
+  "updated": "2026-11-05"
 }

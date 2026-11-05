@@ -1,0 +1,16 @@
+{
+  "active_mw": "25 billing (AMD)",
+  "contracted_mw": "1,151 (from 4 Nov; 241 at 30 Sep)",
+  "date": "2026-11-05",
+  "debt_cost": "$573mn Rockdale bridge SOFR + 2.75%, $20.8mn drawn; AMD term loan expected near SOFR + 250; Corsicana fallback rent credits at 12%; no project debt closed",
+  "margin": "EBITDA 105% on BTC marks ($191.3mn; about $19.4mn ex gain, our estimate) / operating 0.7%",
+  "name": "Riot Platforms",
+  "notes": "First row for Riot. Corsicana lease is a subsequent event; 10-Q names Anthropic PBC. Not comparable: Corsicana rent is powered land, tenant owns modules.",
+  "period": "2026Q3",
+  "rate": "Corsicana powered land $130 per kW-month starting, about $165 average ($1.8bn / 910 MW / 12); Rockdale about $199 turnkey; AMD about $104-$106",
+  "revenue_m": "181.4 (data center 18.4)",
+  "segment": "developer",
+  "source": "RIOT 3Q26 10-Q, 8-K, release, 4 Nov call",
+  "ticker": "RIOT",
+  "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926122417/riot-20260930x10q.htm"
+}

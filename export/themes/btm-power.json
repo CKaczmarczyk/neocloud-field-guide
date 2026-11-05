@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Core Scientific plans behind-the-meter for the next Pecos buildings with an independent power producer; air permits are not filed and a 10.6-mile gas lateral is proposed.",
+      "company": "Core Scientific",
+      "date": "2026-11-05",
+      "direction": "for",
+      "numbers": "Backup generators expected under permit-by-rule; batteries at all sites.",
+      "segment": "developer",
+      "source": "CORZ 3Q26 call",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-5-core-scientific-inc-stock/"
+    },
+    {
       "claim": "Cipher is developing gas laterals for up to 2.5 GW, in talks on about 1 GW; an independent power producer would supply equipment and sell to the tenant under a PPA, with yields expected in line with grid sites.",
       "company": "Cipher Digital",
       "date": "2026-11-02",
@@ -173,6 +183,33 @@
       "segment": "energy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=GSMRhkbV2m4"
+    },
+    {
+      "claim": "Williams expects to announce one or two more behind-the-meter power projects by year-end, larger, with longer terms; signed capacity is 2,588 MW.",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
+    },
+    {
+      "claim": "Williams holds about $5.9bn of equipment commitments for potential projects; the CFO cited cancellation terms and saw no strong link to the 6 GW-plus opportunity set.",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "neutral",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
+    },
+    {
+      "claim": "Partner pricing has moved from the 6.35% of the July Blackstone JV with 10-year Treasuries, per the Williams CFO (no direction stated).",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "neutral",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
     }
   ],
   "order": 4,
@@ -180,5 +217,5 @@
   "status": "strengthening",
   "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, SpaceX plans 20 GW of its own power and cooling, and Cipher is laying gas laterals for up to 2.5 GW under an independent power producer model. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. The Southaven ruling adds a legal catch: temporary turbines are not exempt from air permits as mobile sources. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-11-02"
+  "updated": "2026-11-05"
 }

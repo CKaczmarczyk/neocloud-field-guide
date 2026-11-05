@@ -1,0 +1,16 @@
+{
+  "active_mw": "0 on leases (first rent 2Q27)",
+  "contracted_mw": "949",
+  "date": "2026-11-05",
+  "debt_cost": "6.129% Beacon Point notes due 2042, Baa2 (June 2026, last priced); revolver SOFR + 175; Phase 2 unpriced",
+  "margin": "EBITDA 46% (adjusted $33.0mn, new definition) / operating 448% on bitcoin marks ($318.2mn)",
+  "name": "Hut 8",
+  "notes": "First row for Hut 8, no prior to compare. Operating margin is not comparable with peers because of $413.8mn digital asset gain. Phase 2 lease extended to 17 years.",
+  "period": "2026Q3",
+  "rate": "Base-term average about $155-$159 per kW-month; first full year about $127-$129 (bond decks, our arithmetic); Phase 2 now 17 years, rent impact not stated",
+  "revenue_m": "71.1 (compute 68.4; no rent)",
+  "segment": "developer",
+  "source": "HUT 3Q26 release, 10-Q (XBRL), 4 Nov call",
+  "ticker": "HUT",
+  "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/tm2628741d1_ex99-1.htm"
+}

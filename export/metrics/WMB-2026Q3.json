@@ -1,0 +1,16 @@
+{
+  "active_mw": "Socrates Phase 1 in service; Phase 2 due this week; MW billing not disclosed (556 MW Socrates total)",
+  "contracted_mw": "2,588 signed",
+  "date": "2026-11-04",
+  "debt_cost": "Latest: $2.75bn notes (coupon not in sources read); Blackstone JV target return 6.35% in July, pricing since moved per CFO",
+  "margin": "EBITDA 63.3% / operating 35.2%",
+  "name": "Williams",
+  "notes": "First WMB row, no prior row. Revenue is total company; power not split out. vs 2Q26 filings: no metric moved over 25% except capital investments (+66%, 2Q basis unconfirmed). Rate blank: no PPA price disclosed. Leverage 3.80x; year-end about 3.75x before new projects.",
+  "period": "2026Q3",
+  "rate": "",
+  "revenue_m": "3223",
+  "segment": "energy",
+  "source": "Williams 3Q26 8-K Ex. 99.1; 3 Nov call",
+  "ticker": "WMB",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000107263/000010726326000035/wmb_20260930xer.htm"
+}

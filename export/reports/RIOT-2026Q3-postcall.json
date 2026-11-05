@@ -1,0 +1,553 @@
+{
+  "changes": [
+    "Corsicana is explained: 910 MW take-or-pay 'regardless of utilization', rent within 60 days of pad delivery, tenant owns modules and pays opex, about 33% unlevered yield on about $5.5bn.",
+    "Funding plan disclosed: base case 80% to 90% loan-to-cost, $4.4bn to $4.9bn non-recourse from 2027; fallback, tenant funds reimbursements with rent credits at 12%. Corsicana and Rockdale capital $7.6bn to $7.8bn (portfolio $7.7bn to $7.9bn), debt $6.1bn to $7.0bn, Riot equity $800mn to $1.5bn through mid-2028.",
+    "Riot's sources: about $2.1bn, being $950mn liquidity, about $900mn rent before debt service, $180mn expected AMD term loan and $110mn other. Only the $950mn is in hand. No project debt has closed.",
+    "Same 1 GW load supports 910 MW against 756 MW on a Tier 3 design, and capital about halves, with $130/kW-month starting rent.",
+    "Mining at Corsicana winds down around summer 2027; lease revenue guided at about $23mn in 2026, $250mn in 2027, $1.8bn in 2028 and $2.3bn in 2029."
+  ],
+  "checks": "Post-call: full Motley Fool transcript read by a research agent; a fresh verifier confirmed key quotes through a fetch tool that extracts text rather than showing it raw. Dates on EDGAR: 8-K item 2.02 and 10-Q on 4 November. 10-Q and XBRL facts checked; release figures from the StockTitan copy (not reopened). Derived numbers computed in Python, including the $28bn rent check. Transcript's $3.8bn and $7.2bn look like errors; we use the release's $38bn and did not report a with-options total beyond the release's. Prices from StockAnalysis, intraday 5 November. Corrections applied: question count, sources composition, bridge draw, first block date. Not confirmed: bridge's 31 December date on the call (from the August 8-K), 2Q columns (from pre-call record).",
+  "consensus_thesis": "Investors own Riot as a power-rich Texas landlord with 241 MW leased, a non-binding Corsicana LOI, and funding from bitcoin sales and project debt instead of new shares, and they doubt the backstop, the bridge refinancing and the value of unleased power.",
+  "date": "2026-11-05",
+  "headline": "The consensus view should move up: the call shows a credible way to fund Corsicana, and project-level returns are high, but credit quality improves only if the 2027 debt closes, since one lab without an investment-grade rating holds about 96% of contracted MW and the $573mn bridge's 31 December maturity went unaddressed.",
+  "kind": "postcall",
+  "kona": "Corsicana is the closest listed comparison for a model Kona has not priced: powered land, where the tenant owns the modules, at about $6mn per MW and $130/kW-month starting rent, about $178/MWh of IT load before energy on our arithmetic. Kona should price it as a fifth option, copy take-or-pay on all MW regardless of utilization and rent starting within 60 days of delivery, and copy the 12% tenant-funded fallback. Caution: Riot got this with 1 GW of approved power and an entire campus; at tens of MW Kona has less leverage, and the tenant is one lab.",
+  "monitor": [
+    "Bridge maturity 31 December and Rockdale high investment-grade counterparty: name and bond launch.",
+    "Corsicana debt launch in 2027, or use of 12% rent credits.",
+    "First Corsicana block June 2027 and 400 MW by September 2027 (10-Q); AMD 10 MW this month."
+  ],
+  "name": "Riot Platforms",
+  "pdf_brief": "/_blob/cc866424896b901d05133225fa745c25",
+  "pdf_report": "/_blob/696ac65f7cec52fb68b0d5e6da603890",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "Post-call version. Sources: 3Q26 10-Q and 8-K (EDGAR, 4 November), release (StockTitan copy), machine-generated Motley Fool transcript with AI quality control; quotes need checking against the audio. The transcript reads '$3.8 billion' and '$7.2 billion' for contracted value where other material says about $38bn; we use the release. The 10-Q names Anthropic PBC; on the call management said only frontier lab. No knowledge base on this run.",
+      "title": "Status"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Rockdale delivers on schedule",
+            "AMD 10 MW November; AI lab 96 MW December 2027",
+            "Dates kept. Base rent $7.7mn on 25 MW. About 70% of Rockdale cost under a GMP being finalized; Riot retains the rest",
+            "Confirmed",
+            "Release; 10-Q; call"
+          ],
+          [
+            "P2 IG backstop for lab tenant",
+            "Backstop finalized 'fairly quickly'",
+            "'High investment-grade counterparty' still being finalized; no name or date. Corsicana relies on the 12% fallback",
+            "Unresolved",
+            "Call"
+          ],
+          [
+            "P3 Funded without common equity",
+            "Bridge refinanced; AMD loan closes; BTC covers equity",
+            "No equity in 2026, none anticipated for announced projects. Sources about $2.1bn against $0.8bn to $1.5bn, but about $1.2bn of it is future rent or unclosed. ATM and bridge maturity not addressed",
+            "Unresolved",
+            "Call"
+          ],
+          [
+            "P4 Corsicana becomes a lease",
+            "LOI up to 756 MW, more than $1bn rent",
+            "910 MW, about $1.8bn average rent, effective 4 November",
+            "Confirmed",
+            "Release; 10-Q; call"
+          ],
+          [
+            "P5 Mining bridges the gap",
+            "No forced selling",
+            "Cost to mine ex-depreciation $39,265; 20,264 BTC sold year to date for $1.5bn; 2,418 BTC left; ramp-down at Corsicana from about summer 2027",
+            "Confirmed",
+            "Release; call"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: capital intensity, take-or-pay language, sources and uses for the whole portfolio; acknowledgement of tighter credit. Emphasized less or dropped: bitcoin as a treasury; the 31 December bridge date; the end of the Rockdale power block in October 2027. KPIs more important: contracted NOI, liquidity against equity need, delivery. Less: hashrate. Risks up: lab concentration. Down: unleased power value; Riot's share of Corsicana capital, since base-case debt covers 80% to 90% rather than leaving the $1.82bn we flagged pre-call. Margin moves structural once rent starts.",
+      "title": "Emphasis and disclosure shifts"
+    },
+    {
+      "body": "Trevor's watch-list. No analyst was named by CK; I chose Grondahl (Northland), the closest to a credit question on this call, with one transcript held so the pick is thin. 3Q question: how much of Rockdale's $11mn-$12mn per MW is fixed and who bears the risk? Answer: about 70% under a GMP being finalized, the rest owner-furnished, ordering finishing this month; Riot keeps non-GMP, site-condition and owner-furnished risk. Rating: direct. Later evidence: final GMP and contingency use. Wider point: eight questions and none on tenant credit, termination rights, the bridge or the ATM, after a lease with 96% of MW on one unrated lab. Ratings are our judgment. — Trevor",
+      "table": {
+        "head": [
+          "Topic",
+          "Who asked in 3Q26",
+          "Questions",
+          "Rating of answers"
+        ],
+        "rows": [
+          [
+            "Capital structure of lease",
+            "Morgan Stanley",
+            "2",
+            "Direct"
+          ],
+          [
+            "Build cost risk",
+            "Northland (2)",
+            "2",
+            "Direct; 'A GMP doesn't remove every risk'"
+          ],
+          [
+            "Sites and mining wind-down",
+            "Macquarie",
+            "2",
+            "Direct"
+          ],
+          [
+            "Texas rules",
+            "JPMorgan",
+            "2",
+            "Direct; interconnects approved and operating"
+          ],
+          [
+            "Lab credit, termination, bridge, ATM",
+            "None",
+            "0",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Analyst focus and Trevor's watch-list"
+    },
+    {
+      "body": "Note: for cost, debt and dilution lines, [↓] means worse for shareholders. 2Q segment revenue was not in the sources read. Corsicana is a subsequent event, not in the 30 September balance sheet.",
+      "table": {
+        "head": [
+          "Metric",
+          "This qtr",
+          "Prior qtr",
+          "Same qtr last year",
+          "QoQ / YoY flag"
+        ],
+        "rows": [
+          [
+            "Revenue ($mn)",
+            "181.4",
+            "174.2",
+            "180.2",
+            "[~] +4.1% / +0.7%"
+          ],
+          [
+            "Bitcoin mining revenue ($mn)",
+            "116.0",
+            "n.a.",
+            "160.8",
+            "[↓] n.a. / -27.9%"
+          ],
+          [
+            "Data center revenue ($mn)",
+            "18.4",
+            "n.a.",
+            "nil",
+            "[↑] n.a."
+          ],
+          [
+            "of which base rent ($mn)",
+            "7.7",
+            "4.9",
+            "nil",
+            "[↑] +57%"
+          ],
+          [
+            "Engineering revenue ($mn)",
+            "47.0",
+            "n.a.",
+            "19.1",
+            "[↑] n.a. / +146%"
+          ],
+          [
+            "Adjusted EBITDA ($mn)",
+            "191.3",
+            "-69.7",
+            "197.2",
+            "[?] marks; about $19.4mn ex $171.9mn BTC gain [INFERENCE; $176.0mn realized losses may be netted]"
+          ],
+          [
+            "Operating income ($mn)",
+            "1.2",
+            "n.a.",
+            "80.1",
+            "[↓] n.a. / -98.5%"
+          ],
+          [
+            "Operating margin",
+            "0.7%",
+            "n.a.",
+            "44.5%",
+            "[↓]"
+          ],
+          [
+            "Diluted EPS",
+            "$0.01",
+            "-$0.68",
+            "$0.26",
+            "[?] marks"
+          ],
+          [
+            "BTC produced",
+            "1,637",
+            "1,587",
+            "1,406",
+            "[↑] +3.2% / +16.4%"
+          ],
+          [
+            "Cost to mine ex-dep. ($/BTC)",
+            "39,265",
+            "49,912",
+            "46,324",
+            "[↑] -21% / -15%"
+          ],
+          [
+            "BTC sold (quarter)",
+            "10,599",
+            "n.a.",
+            "n.a.",
+            "[?]"
+          ],
+          [
+            "BTC held",
+            "2,418",
+            "11,380",
+            "n.a.",
+            "[↓] -79%"
+          ],
+          [
+            "Cash incl. restricted ($mn)",
+            "748.2",
+            "548.9",
+            "n.a.",
+            "[↑] +36%"
+          ],
+          [
+            "Book debt ($mn)",
+            "656.6",
+            "n.a.",
+            "n.a.",
+            "[?]"
+          ],
+          [
+            "D&A ($mn)",
+            "123.9",
+            "n.a.",
+            "n.a.",
+            "[?]"
+          ],
+          [
+            "Contracted critical IT MW",
+            "1,151*",
+            "241",
+            "n.a.",
+            "[↑] *from 4 November"
+          ],
+          [
+            "Shares (mn)",
+            "375.1",
+            "378.0",
+            "n.a.",
+            "[~]"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: mining is carrying costs better than feared, on lower cost to mine and credits, but cash burn remains: operating cash flow about -$214mn in 3Q (9M -$487.1mn, H1 -$272.8mn). Adjusted EBITDA is dominated by bitcoin marks and should not be read as run-rate.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "Corsicana delivery",
+            "400 MW Sept 2027; 200 MW Jan 2028; 310 MW July 2028",
+            "New",
+            "n.a.",
+            "Rent no later than 60 days after pad delivery",
+            "Not challenged"
+          ],
+          [
+            "Contracted NOI",
+            "About $2.2bn at full deployment; revenue about $2.3bn",
+            "New",
+            "n.a.",
+            "Portfolio 28% yield on $7.7bn-$7.9bn",
+            "Not challenged"
+          ],
+          [
+            "Corsicana capital",
+            "About $6mn per MW; about $5.5bn total",
+            "New",
+            "n.a.",
+            "About half a top-tier build (CEO)",
+            "Morgan Stanley asked why this structure"
+          ],
+          [
+            "Lease revenue",
+            "About $23mn 2026; $250mn 2027; $1.8bn 2028; $2.3bn 2029",
+            "New",
+            "n.a.",
+            "Delivery schedule",
+            "Not challenged"
+          ],
+          [
+            "Equity",
+            "None anticipated; Riot $0.8bn-$1.5bn through mid-2028",
+            "Maintained",
+            "Doubted by the market",
+            "Existing liquidity for Riot's share",
+            "ATM not asked"
+          ],
+          [
+            "Corsicana debt",
+            "80%-90% LTC, $4.4bn-$4.9bn, from 2027",
+            "New",
+            "n.a.",
+            "Fallback rent credits at 12%",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5 to 10 year view: a powered-land landlord earning about 99% NOI margin if the lab survives and pays. The asset is land and power, re-lettable at a price set by the market; the tenant's compute sits on the tenant's balance sheet, which limits Riot's exposure to GPU residual value.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power and sites",
+            "Strong",
+            "Up",
+            "Corsicana whole campus leased; 1,151 MW contracted",
+            "Approved power is what tenants paid for"
+          ],
+          [
+            "Tenant quality",
+            "Weak on rating",
+            "Mixed",
+            "Anthropic on 1,101 of 1,151 MW; backstop not seen",
+            "Rent is large; credit is the discount rate"
+          ],
+          [
+            "Cost of capital",
+            "Unproven",
+            "Unknown",
+            "No debt closed; AMD loan expected near SOFR+250; 12% fallback",
+            "Fallback caps funding cost near 12%"
+          ],
+          [
+            "Execution",
+            "Good, short record",
+            "Stable",
+            "AMD delivered; engineering arm grew revenue to $47.0mn",
+            "Large phases start in 2027"
+          ],
+          [
+            "Capital intensity",
+            "Better",
+            "Up",
+            "About $6mn per MW against $11mn to $12mn at Rockdale",
+            "Tenant bears compute and modules, so less capex and lower rent"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Concern: can a lab-backed lease be financed? → Response: 80% to 90% non-recourse debt in 2027; tenant funds with credits at 12% if not. → Evidence: no debt closed; management acknowledges a tighter credit market. Concern: rent math. → Response: not addressed. → Evidence: $130/kW-month, 3% escalators, simple start gives about $26.4bn against $28bn; the term running from Phase 3 explains about $1.2bn. About $1.8bn average rent is about $165/kW-month. Concern: Texas. → Response: interconnects approved and operating, no further approval needed. → Evidence: unlike Hut 8's Beacon Point; not tested by an analyst beyond JPMorgan.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Tenant concentration and credit",
+            "High",
+            "Higher",
+            "Up",
+            "About 96% of MW with one unrated lab (Anthropic per 10-Q); termination and re-letting rights not addressed"
+          ],
+          [
+            "Bridge and backstop",
+            "High",
+            "Unresolved",
+            "Flat",
+            "$573mn bridge, 31 December per August 8-K; call gave no date or name"
+          ],
+          [
+            "Funding of Riot's share",
+            "Elevated",
+            "Elevated",
+            "Down",
+            "$0.8bn to $1.5bn against $950mn in hand plus rent that starts with delivery; no project debt closed"
+          ],
+          [
+            "Delivery",
+            "Moderate",
+            "Moderate",
+            "Up",
+            "400 MW September 2027; rent credits and rent timing hinge on it"
+          ],
+          [
+            "Unleased power value",
+            "High",
+            "Lower",
+            "Down",
+            "Corsicana contract answers the doubt"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "body": "Dilution and per-share: no equity in 2026 per release; 375.1mn shares. The $594.4mn 0.75% converts (about 40mn shares, $14.86 conversion) are close to the money. Book debt $656.6mn, with only $67.5mn current, and the bridge had $20.8mn principal drawn at 30 September ($12.8mn net), non-recourse, to be repaid from long-term project financing (10-Q). Rate check: 10-Q base rent is $130/kW-month with 3% escalators, which averages about $161 over 15 years and about $26.4bn on a simple start; the stated $28bn implies about $171. The 10-Q runs the term 15 years from Phase 3, so earlier phases pay longer, which explains about $1.2bn on our arithmetic, leaving about $0.4bn; management did not address it. Year-one run-rate on 400 MW is about $624mn. Price: $15.37 close on 4 November (+9.6%), $14.43 at 9:47 ET on 5 November (-6.1%). No bond quote found; market cap about $5.4bn on 375.1mn shares.",
+      "table": {
+        "head": [
+          "Site",
+          "MW",
+          "Tenant",
+          "Lease value",
+          "Capex",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Rockdale AMD",
+            "50",
+            "AMD",
+            "About $311mn on first 25 MW",
+            "About $171mn",
+            "Balance sheet; DDTL",
+            "25 MW billing; 10 MW November 2026; 15 MW May 2027"
+          ],
+          [
+            "Rockdale AI lab",
+            "191",
+            "Frontier lab",
+            "About $9.1bn over 20 years",
+            "$2.1bn to $2.3bn",
+            "$573mn bridge; takeout not seen",
+            "96 MW December 2027; rest June 2028"
+          ],
+          [
+            "Corsicana",
+            "910",
+            "Same lab",
+            "About $28bn over 15 years",
+            "About $5.5bn",
+            "$1.8bn Riot sitework; $3.6bn reimbursement, 80%-90% LTC debt from 2027 or 12% rent credits",
+            "Sept 2027 to July 2028"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "5 signals: Bridge takeout; counterparty name; Corsicana debt launch; AMD November delivery; liquidity at year-end. Key risks building: One-tenant dependence; liquidity falling while commitments rise. Confirmation signals: Non-recourse debt at or below about 8% to 9% without a parent guarantee [our bar]. Conviction tripwires: ATM use; bridge extended without a takeout; rent credits used at 12% because lenders decline.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "How the call answered"
+        ],
+        "rows": [
+          [
+            "Riot's funding by quarter; no ATM through 2028? (credit)",
+            "Portfolio sources and uses given (about $2.1bn); no quarterly split; ATM not addressed. Riot's share lower than our $1.82bn on base-case debt."
+          ],
+          [
+            "Is the bridge drawn, takeout signed, who backstops Rockdale? (credit)",
+            "'High investment-grade counterparty' being finalized; bridge maturity and draw not addressed."
+          ],
+          [
+            "If lenders refuse, 12% rent credits: what do lenders say; any Corsicana credit support? (credit)",
+            "Base case debt launches in 2027; credit support not addressed."
+          ],
+          [
+            "$130/kW-month vs $28bn: what explains the gap?",
+            "Not addressed."
+          ],
+          [
+            "Termination, assignment and re-letting if the lab fails to pay?",
+            "Not addressed; no analyst asked."
+          ],
+          [
+            "Mining after the Rockdale block ends October 2027?",
+            "Block not addressed; Corsicana ramp-down around summer 2027."
+          ]
+        ]
+      },
+      "title": "Questions for owners (preview questions and how the call answered them)"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Riot 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926122417/riot-20260930x10q.htm"
+    },
+    {
+      "title": "Riot 8-K, 4 November",
+      "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926122368/riot-20261029x8k.htm"
+    },
+    {
+      "title": "Riot 3Q26 release (StockTitan copy)",
+      "url": "https://www.stocktitan.net/news/RIOT/riot-platforms-reports-third-quarter-2026-financial-results-and-e5aksf5iacob.html"
+    },
+    {
+      "title": "24/7 Wall St: price moves",
+      "url": "https://247wallst.com/investing/2026/11/04/riot-platforms-soars-20-on-earnings-and-28-billion-corsicana-ai-lease-cipher-digital-plunges-13-mara-drops-5/"
+    },
+    {
+      "title": "Yahoo Finance: results, $14.02",
+      "url": "https://finance.yahoo.com/technology/ai/articles/riot-platforms-tops-revenue-estimates-141000840.html"
+    },
+    {
+      "title": "MarketBeat: consensus",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-4-riot-blockchain-inc-stock/"
+    },
+    {
+      "title": "Riot 3Q26 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/riot-platforms-riot-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "StockAnalysis RIOT (price)",
+      "url": "https://stockanalysis.com/stocks/riot/"
+    }
+  ],
+  "ticker": "RIOT",
+  "verdict": "Strengthening",
+  "versus": "Quarter beat: revenue $181.4mn against about $160.4mn to $160.7mn (+13%); diluted EPS $0.01 against about -$0.33 to -$0.34, helped by bitcoin marks. Outlook above: the Corsicana LOI became a binding lease, larger than the LOI."
+}

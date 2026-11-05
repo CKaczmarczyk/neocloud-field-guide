@@ -1,0 +1,356 @@
+{
+  "brief": [
+    "Verdict ahead of the print: Tydal credit support and funding, not mining.",
+    "Kona: Tydal's $202/kW-month from a smaller tenant shows the price of weak credit and how LCs try to cover it."
+  ],
+  "changes": [
+    "Report date: 10 November, before the 8:00 a.m. ET call.",
+    "AI backlog rose to $2.9bn from $0.9bn in September; ARR about $86mn.",
+    "$100mn buyback on 8 October alongside a $1bn ATM filed 10 August.",
+    "A102 moved from 4Q26 to 1Q27 without explanation; infrastructure updates move to quarterly.",
+    "B. Riley cut its target to $19 and Barclays raised to $17 in October."
+  ],
+  "checks": "Built before results. Date from the company announcement. 2Q, Tydal terms and ATM from SEC filings, checked by a fresh subagent; corrections applied (group margin, gross vs IT MW, 30 June commitments, named LC bank). Revenue consensus single undated aggregator; labelled Provisional. Price from MarketBeat on 3 November, article internally inconsistent. Ortex and short interest not reopened. No bond or convert quote.",
+  "consensus_thesis": "Investors own Bitdeer for the conversion of owned power into contracted AI revenue with mining cash flow alongside, and avoid it for losses, dilution and unleased capacity; at about $6.76 on 3 November (about $1.56bn, near a 52-week low) and about 26% of float short, the market doubts funding and tenant credit at Tydal. Provisional: limited preview material; no convert or bond price found.",
+  "date": "2026-11-05",
+  "headline": "3Q26 revenue (consensus about $247.7mn, single aggregator) matters less than whether the Tydal letters of credit and project debt are in place before the first delivery in 4Q26, and how much of the $1bn ATM funds the gap.",
+  "kind": "preview",
+  "kona": "Tydal shows how far rent rises for a weaker tenant: about $202/kW-month over 16 years, with a year-10 exit and $1.3bn of letters of credit doing the work a stronger tenant's rating would. If the LCs close, that is a structure Kona could copy; if they do not, it shows high rent without credit support cannot be financed. Tydal's rent is also well above the US peer rents on the scorecard, a reference for a site outside the US.",
+  "kpis": [
+    {
+      "consensus": "$247.7mn (Benzinga, undated)",
+      "current": "",
+      "metric": "Revenue",
+      "note": "Self-mining $168.4mn",
+      "prior": "$228.8mn (2Q26)"
+    },
+    {
+      "consensus": "-$0.33",
+      "current": "",
+      "metric": "EPS",
+      "note": "HCW -$0.28",
+      "prior": "-$0.37"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Adj. EBITDA",
+      "note": "",
+      "prior": "$31.1mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "3,855 (monthly sum)",
+      "metric": "BTC mined",
+      "note": "Our sum",
+      "prior": "2,694"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "about $86mn (Sept)",
+      "metric": "AI ARR",
+      "note": "Backlog $2.9bn",
+      "prior": "about $76mn (June)"
+    },
+    {
+      "consensus": "",
+      "current": "",
+      "metric": "Cash / borrowings",
+      "note": "Our sum of release lines",
+      "prior": "$456.8mn / about $1,842mn"
+    }
+  ],
+  "monitor": [
+    "Tydal: letters of credit ($1.3bn anticipated) and first 66.5 gross MW (about 60.5 IT) in 4Q26.",
+    "Project debt or ATM for about $500mn Tydal capex remaining.",
+    "Related-party funding: BIT facilities $423.3mn at 29 September, some at one-week tenor."
+  ],
+  "name": "Bitdeer",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "Tydal's first 66.5 gross MW is due this quarter and the $1.3bn of letters of credit were 'anticipated' in August. Has J.P. Morgan's LC been issued, who is the second bank, and what happens to the lease and your $500mn of remaining capex if they are not?",
+      "style": "credit",
+      "why": "Sets whether the $4.7bn is financeable."
+    },
+    {
+      "question": "You filed a $1bn ATM in August and announced a $100mn buyback in October with the stock near $7. You sold $58.0mn net through 29 September. How much since, at what price, and what share of 2027 capex is equity?",
+      "style": "credit",
+      "why": "Tests non-dilutive claim and per-share value."
+    },
+    {
+      "question": "BIT related-party facilities reached $423.3mn at 29 September, including one-week money. What is the maturity profile and what is the rollover plan?",
+      "style": "credit",
+      "why": "Short tenor against long-lived assets."
+    },
+    {
+      "question": "The tenant can exit at year 10 on a 16-year lease. What does a project lender count, and what rent do you assume for years 11 to 16?",
+      "style": "credit",
+      "why": "Decides debt capacity."
+    },
+    {
+      "question": "Backlog tripled to $2.9bn on ARR of about $86mn. When does A102, now moved to 1Q27, start, and what GPU cost and prepayment back A201 at over $1.7bn?",
+      "style": "equity",
+      "why": "Tests AI Cloud conversion and owned-GPU risk."
+    }
+  ],
+  "risks": [
+    "Volta credit and LCs.",
+    "Dilution and ATM.",
+    "Short-tenor related-party debt.",
+    "Group gross margin -3.7%.",
+    "Clarington suit in discovery."
+  ],
+  "sections": [
+    {
+      "body": "Engine: mines bitcoin on its own SEALMINER rigs and converts owned power into AI colocation and GPU cloud, funded by ATM equity, converts, related-party loans and planned project debt. Revenue map: 2Q self-mining about 74%, AI Cloud about 6% (our calc); Tydal about $294mn a year average ($4.7bn / 16, our calc). Costs: power $44/MWh; R&D $36.1mn; G&A $34.3mn. Sensitivities: BTC and hash price, ARR and utilization, ATM price. What would break it, as filed: Volta LC or milestones, capital and dilution, hash price, Tydal delays, Clarington suit; short-tenor rollover is our addition.",
+      "title": "Business model"
+    },
+    {
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus or estimate",
+          "Source, date",
+          "Prior"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "$247.7mn",
+            "Benzinga, undated (single source)",
+            "2Q $228.8mn"
+          ],
+          [
+            "3Q26 EPS",
+            "-$0.33; HCW -$0.28",
+            "Benzinga; MarketBeat, 7 Oct",
+            "2Q -$0.37"
+          ],
+          [
+            "FY26 EPS",
+            "-$1.68 (30 Oct); -$1.72 (7 Oct); HCW -$1.59",
+            "MarketBeat",
+            "FY27 HCW +$2.40"
+          ],
+          [
+            "Adj. EBITDA, capex, HPC MW",
+            "n.a.; no formal guidance",
+            "",
+            "2Q $31.1mn; capex $266mn"
+          ],
+          [
+            "Share price",
+            "About $6.76 on 3 Nov; $1.56bn",
+            "MarketBeat (inconsistent high in article)",
+            "52-week low area $6.55, 30 Oct"
+          ],
+          [
+            "Short interest",
+            "60.1mn, 26.43% of float, 15 Oct; 31.9% of free float (Ortex)",
+            "MarketBeat; Ortex",
+            "Cost to borrow 0.73%"
+          ],
+          [
+            "Bonds",
+            "n.a.",
+            "No convert or bond quote found",
+            "Convert principal $1.2bn"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Tydal delivers with credit support",
+            "First halls on time; LCs issued",
+            "LC closing; 66.5 gross MW by 31 December kept",
+            "B. Riley, Rosenblatt; bears on tenant"
+          ],
+          [
+            "P2 Non-dilutive funding",
+            "Project debt pays most",
+            "Debt signed for about $500mn; ATM use disclosed",
+            "Management vs Ortex-cited bears (about $750mn equity through 2027)"
+          ],
+          [
+            "P3 AI Cloud converts backlog",
+            "ARR ramps",
+            "ARR above about $86mn; backlog at or above $2.9bn; A102 and A201 dates",
+            "HC Wainwright"
+          ],
+          [
+            "P4 Mining funds the bridge",
+            "Mining covers overhead",
+            "Revenue vs $247.7mn; group gross margin above -3.7%; EBITDA above $31.1mn",
+            "Consensus; KBW cautious"
+          ],
+          [
+            "P5 Site options have value",
+            "Clarington, Rockdale, Knoxville lease",
+            "New lease or dated update",
+            "Management named Tennessee and Washington"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "CFO: Tydal and A102 are proof points",
+            "Ortex: about 43 MW unleased at Tydal"
+          ],
+          [
+            "Volta interested in expanding",
+            "Minimal external SEALMINER sales"
+          ],
+          [
+            "A201 over $1.7bn over five years; 95% utilization",
+            "About $750mn equity through 2027 (Ortex)"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Project debt vs equity: non-dilutive preference, $1bn ATM, $100mn buyback. 2) Volta LC credit. 3) Mining economics at negative gross margin.",
+      "title": "Live debates"
+    },
+    {
+      "body": "Tydal unleased: about 43 MW (Ortex) vs 47 MW gross (call) vs A401 42.7 IT MW (update), probably gross vs IT. Market cap $1.56bn vs $2.04bn at $7.50, unreconciled. Whether $1,842mn of borrowings includes the $1.2bn converts is unconfirmed. StockAnalysis's 9 November date is an estimate; the company says 10 November.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: cash $456.8mn ($496.3mn with restricted), digital assets $196.9mn, borrowings about $1,842mn including $633mn related-party; $457mn ATM raised in 2Q. BTC held only 47 in September. $252.6mn capex commitments within 12 months at 30 June. $58.0mn net ATM from 1 July to 29 September (4,367,199 shares).",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "table": {
+        "head": [
+          "",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep"
+        ],
+        "rows": [
+          [
+            "BTC mined",
+            "990",
+            "1,190",
+            "1,310",
+            "1,355"
+          ],
+          [
+            "Self-mining EH/s",
+            "73.0",
+            "76.7",
+            "79.9",
+            "82.3"
+          ],
+          [
+            "BTC held",
+            "150",
+            "257",
+            "61",
+            "47"
+          ],
+          [
+            "AI ARR",
+            "about $76mn",
+            "about $76mn",
+            "about $86mn",
+            "about $86mn"
+          ],
+          [
+            "Pipeline IT MW",
+            "n.a.",
+            "141.4",
+            "206.5",
+            "333.5"
+          ]
+        ]
+      },
+      "title": "Monthly operations"
+    },
+    {
+      "body": "See the questions field.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Bitdeer announces 3Q26 call",
+      "url": "https://finviz.com/news/409395/bitdeer-announces-third-quarter-2026-earnings-conference-call-for-november-10th-2026"
+    },
+    {
+      "title": "2Q26 release (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026086938/ea030131301ex99-1.htm"
+    },
+    {
+      "title": "10 August 6-K: Tydal lease (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899123/000121390026087067/ea0301286-6k_bitdeer.htm"
+    },
+    {
+      "title": "September update (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899123/000121390026110703/ea030767901ex99-1.htm"
+    },
+    {
+      "title": "29 September 6-K (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899123/000121390026104638/ea030647301ex99-1.htm"
+    },
+    {
+      "title": "8 October 6-K: buyback (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1899123/000121390026107955/ea0307821-6k_bitdeer.htm"
+    },
+    {
+      "title": "2Q call (Webull)",
+      "url": "https://www.webull.com/news/15381566661288960"
+    },
+    {
+      "title": "Benzinga estimates",
+      "url": "https://www.benzinga.com/quote/BTDR/earnings-forecasts"
+    },
+    {
+      "title": "MarketBeat price and ratings, 3 November",
+      "url": "https://www.marketbeat.com/instant-alerts/price-bitdeer-technologies-group-nasdaq-btdr-stock-price-up-96-should-you-buy-2026-11-03/"
+    },
+    {
+      "title": "MarketBeat estimates, 7 October",
+      "url": "https://www.marketbeat.com/instant-alerts/estimates-research-analysts-offer-predictions-for-btdr-q3-earnings-2026-10-07/"
+    },
+    {
+      "title": "MarketBeat short interest",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/BTDR/short-interest"
+    },
+    {
+      "title": "Ortex note",
+      "url": "https://ortex.news/articles/188549/bitdeer-shorts-rebuild-as-the-stock-sheds-16-in-a-week"
+    },
+    {
+      "title": "B. Riley target, 30 October",
+      "url": "https://www.marketbeat.com/instant-alerts/analyst-bitdeer-technologies-group-nasdaq-btdr-price-target-cut-to-1900-by-analysts-at-b-riley-financial-2026-10-30/"
+    }
+  ],
+  "ticker": "BTDR",
+  "verdict": "Preview",
+  "versus": ""
+}

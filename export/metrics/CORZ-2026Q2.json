@@ -5,7 +5,7 @@
   "debt_cost": "7.75% secured notes; revolver SOFR + 175",
   "margin": "Colocation gross margin 59%",
   "name": "Core Scientific",
-  "notes": "Has a $3B minimum market-cap covenant. Seeded from guide research.",
+  "notes": "$3B market-cap test is a condition to revolver borrowing, not a maintenance covenant (3Q26 10-Q). Seeded from guide research.",
   "period": "2026Q2",
   "rate": "~$100–147 per kW-month",
   "revenue_m": "n/d",

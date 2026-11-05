@@ -1,0 +1,565 @@
+{
+  "changes": [
+    "Texas is the new risk: Beacon Point's baseload designation depends on a state audit, with results expected 10 December and final 17 December; management anticipates an unconditional classification, with 700 MW energization in 1Q27.",
+    "Phase 2 financing has no date: it follows the December result. The Phase 2 lease was extended from 15 to 17 years to help offset potentially higher financing costs.",
+    "The buyback was walked back in tone: 'we do not plan to continue to buy aggressively' and no revolver for buybacks, after $250mn at about $74.88 a share against a $48.94 close on 4 November.",
+    "Free parent bitcoin is thinner than it looked: 1,361 unencumbered BTC at 1 November (about $107mn at $78,265) against about 6,200 parent BTC derived in our pre-call note.",
+    "Management says the current build approach, 'NASA rocket programs', will not work at multi-gigawatt scale; existing projects stay on plan and design efficiency should offset rising cost, with no figure."
+  ],
+  "checks": "Post-call: full Motley Fool transcript read by a research agent; a fresh verifier confirmed key items through a fetch tool that extracts text rather than showing it raw. Dates on EDGAR: 8-K item 2.02 and 10-Q on 4 November. Release and 10-Q rechecked; parts of the 10-Q (Note 11, subsequent events) not read. 'Recourse to the parent' transcript line reads oddly and is not relied on. Derived numbers computed in Python ($74.88, 13%, $107mn). BTC price $78,265 from 24/7 Wall St (one source). Corrections applied: analyst counts, equity wording, 949 MW in 2Q (597 before July). Prices from StockAnalysis, intraday 5 November. No bond quote. Scorecard and themes written.",
+  "consensus_thesis": "Investors own Hut 8 as the best-financed listed AI landlord (949 MW on 15- to 17-year triple-net leases, $7.5bn of non-recourse investment-grade bonds), and doubt sector funding and how Beacon Point Phase 2 gets paid for.",
+  "date": "2026-11-05",
+  "headline": "The consensus view should turn more cautious on funding and on Texas, though not on contracts: project bonds and construction hold, but Phase 2 waits on a December state decision, free parent liquidity is smaller after the buyback, and the stock's 23% fall on 4 November says the market has already moved.",
+  "kind": "postcall",
+  "kona": "Hut 8 gave more term, not more rent, to help the bond math: a 15 to 17 year lease is a tool Kona can ask for at small scale. It is also buying energized West Texas sites from a bankruptcy process at up to about $0.78mn per utility MW, a floor for bare energized power, and on the call it said capital scarcity is producing such assets. The Texas audit shows how a state decision can hold up an investment-grade financing; Kona should list Neuquen and national permits as conditions precedent lenders will price, and line up lenders before signing.",
+  "monitor": [
+    "17 December Texas result and any 1Q27 energization change.",
+    "Phase 2 financing: size, loan-to-cost, coupon, and any parent equity.",
+    "Parent liquidity against the revolver test from 1Q27, and retirement of the $200mn FalconX loan before April 2027."
+  ],
+  "name": "Hut 8",
+  "pdf_brief": "/_blob/cb3cf7eb8c7116d9aefb618260976c12",
+  "pdf_report": "/_blob/debf3c96a7aea5230994ecb743c62bc0",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "Post-call version. Sources: 3Q26 release and 10-Q (EDGAR, 4 November); machine-generated Motley Fool transcript with AI quality control; quotes need checking against the audio. One transcript line reads 'One, recourse to the parent' as something that will not change; context suggests no recourse, so we do not rely on it beyond the CFO's zero recourse-debt remark. 10-Q Note 11 and subsequent events not read. No knowledge base on this run.",
+      "title": "Status"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Halls deliver on schedule",
+            "River Bend 2Q27; Beacon Point 3Q27; Phase 2 2Q28",
+            "All dates kept; over 1,200 on site at River Bend; Phase 1 ground improvements about 95%, steel starts this month",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P2 Tenant credit is IG",
+            "Google-backed; AA- or higher at Beacon Point",
+            "Fluidstack with Anthropic as end user and Broadcom and Google in the credit profile; AA- per prior disclosure, not repeated. No analyst tested it",
+            "Unresolved",
+            "Call; July release"
+          ],
+          [
+            "P3 Growth without common equity",
+            "Non-recourse bonds at about 95% LTC",
+            "No more equity expected for River Bend or Beacon Point (no phase limit stated, and not tested by analysts). Phase 2 unpriced; lease lengthened to 17 years to offset cost; 'other avenues' unspecified",
+            "Challenged",
+            "Call"
+          ],
+          [
+            "P4 Pipeline converts to leases",
+            "New leases from 8.7 GW",
+            "No new lease; 6.4 GW in diligence and exclusivity; 184 acres cleared for River Bend expansion; counterparty not disclosed",
+            "Unresolved",
+            "Call; release"
+          ],
+          [
+            "P5 Bitcoin is a funding reserve",
+            "9,314 parent BTC fund campus equity",
+            "About 3,100 BTC sold for the buyback; 1,361 BTC unencumbered at 1 November",
+            "Challenged",
+            "Call"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: discipline, the December Texas calendar, changing the build template, cash ('we believe that cash will be king'), Louisiana. Emphasized less or dropped: Phase 2 financing timing, promised for 'the coming weeks' in August; the buyback as a priority; Texas compared with Louisiana was not made explicit. KPIs more important: free parent liquidity; capex against dates. Less: GAAP EPS, driven by $413.8mn bitcoin gain. Risks up: Texas, Phase 2, parent liquidity. Down: River Bend construction. Margin moves are temporary until rent starts in 2Q27.",
+      "title": "Emphasis and disclosure shifts"
+    },
+    {
+      "body": "Trevor's watch-list. No analyst was named by CK; I chose Gravett (UBS), who asked about Beacon permits and Phase 2 timing, with one transcript held so the pick is thin; Gravett also pressed Core Scientific on 5 November. 3Q question: permit status and when Phase 2 finances? Answer: focus on 17 December, batteries can design around diesel, no date. Rating: partial. Later evidence: Phase 2 terms after the December result. Wider point: nobody asked whether Beacon Point lease remedies apply if the Texas decision delays energization, or for the revolver's liquidity test. Ratings are our judgment. Trend needs earlier transcripts. — Trevor",
+      "table": {
+        "head": [
+          "Topic",
+          "Who asked in 3Q26",
+          "Questions",
+          "Rating of answers"
+        ],
+        "rows": [
+          [
+            "Capex and funding",
+            "UBS, B. Riley",
+            "2",
+            "Partial; deflected on debt structure"
+          ],
+          [
+            "Power, permits and Texas",
+            "UBS, Needham, Northland, Rosenblatt, Cantor",
+            "5",
+            "Partial"
+          ],
+          [
+            "Sites and pipeline",
+            "ROTH, Craig-Hallum (2), BTIG",
+            "4",
+            "Mostly partial; direct on the funnel"
+          ],
+          [
+            "Build cost and pricing",
+            "Wells Fargo, JPMorgan, Lucid",
+            "3",
+            "Partial, direct on change orders"
+          ],
+          [
+            "Buyback and capital allocation",
+            "Piper Sandler (2), Rosenblatt",
+            "3",
+            "Direct"
+          ],
+          [
+            "Tenant credit",
+            "ROTH (partly)",
+            "1",
+            "Partial; unannounced deals not discussed"
+          ]
+        ]
+      },
+      "title": "Analyst focus and Trevor's watch-list"
+    },
+    {
+      "body": "Note: for cost, debt and dilution lines, [↓] means worse for shareholders. H1 figures shown where 2Q alone was not in sources read. Adjusted EBITDA definition changed in 2Q26.",
+      "table": {
+        "head": [
+          "Metric",
+          "This qtr",
+          "Prior qtr",
+          "Same qtr last year",
+          "QoQ / YoY flag"
+        ],
+        "rows": [
+          [
+            "Revenue ($mn)",
+            "71.1",
+            "74.9",
+            "83.5",
+            "[↓] -5.1% / -14.9%"
+          ],
+          [
+            "Compute revenue ($mn)",
+            "68.4",
+            "72.5",
+            "70.0",
+            "[↓] -5.7% / -2.3%"
+          ],
+          [
+            "Lease rent ($mn)",
+            "nil",
+            "nil",
+            "nil",
+            "[~] from 2Q27"
+          ],
+          [
+            "Adjusted EBITDA ($mn)",
+            "33.0",
+            "10.4",
+            "30.5",
+            "[?] new definition, ex BTC marks"
+          ],
+          [
+            "Adj. EBITDA incl. BTC marks ($mn)",
+            "350.3",
+            "n.a.",
+            "109.0",
+            "[?] marks"
+          ],
+          [
+            "Net income to Hut 8 ($mn)",
+            "131.1",
+            "n.a.",
+            "50.1",
+            "[?] marks"
+          ],
+          [
+            "Diluted EPS",
+            "$0.98",
+            "-$1.27",
+            "$0.43",
+            "[?] marks"
+          ],
+          [
+            "G&A ($mn)",
+            "99.6",
+            "n.a.",
+            "25.9",
+            "[↓] +285% YoY; SBC $64.7mn"
+          ],
+          [
+            "Interest expense ($mn)",
+            "105.5",
+            "60.4 (H1)",
+            "8.6",
+            "[↓]"
+          ],
+          [
+            "Interest income ($mn)",
+            "61.8",
+            "27.1 (H1)",
+            "nil",
+            "[↑]"
+          ],
+          [
+            "Capitalized interest ($mn)",
+            "16.5 of 122.0",
+            "n.a.",
+            "nil",
+            "[?] 13.5%"
+          ],
+          [
+            "Capex, PP&E ($mn)",
+            "About 476",
+            "616.2 (H1)",
+            "n.a.",
+            "[?]"
+          ],
+          [
+            "Cash ($mn)",
+            "156.9",
+            "233.6",
+            "n.a.",
+            "[↓] -33%"
+          ],
+          [
+            "Restricted cash and investments ($mn)",
+            "6,394.5",
+            "6,787.1",
+            "n.a.",
+            "[↓] -6% as spent"
+          ],
+          [
+            "Loans and notes, book ($mn)",
+            "7,631.5",
+            "7,638.4",
+            "n.a.",
+            "[~]"
+          ],
+          [
+            "BTC held incl. ABTC",
+            "16,787",
+            "17,316",
+            "n.a.",
+            "[~] -3.1%"
+          ],
+          [
+            "Contracted IT MW",
+            "949",
+            "597",
+            "n.a.",
+            "[↑] Phase 2 signed July"
+          ],
+          [
+            "Pipeline MW",
+            "7,859",
+            "8,660",
+            "n.a.",
+            "[↓] -9.2%"
+          ],
+          [
+            "Shares (mn)",
+            "122.4; 120.0 at 2 Nov",
+            "123.2",
+            "n.a.",
+            "[↑] buybacks"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: unchanged in substance. No rent yet. Net interest carry about $43.7mn in the quarter against $33.0mn of adjusted EBITDA; G&A is inflated by stock pay ($64.7mn). Margin moves are temporary until first rent, and the carry widens as bond cash is spent and interest income falls.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "River Bend first hall",
+            "2Q27",
+            "Maintained",
+            "Matches",
+            "Steel and foundations complete",
+            "Not challenged"
+          ],
+          [
+            "Beacon Point Phase 1",
+            "3Q27",
+            "Maintained",
+            "Matches",
+            "Steel starts this month; 700 MW energization 1Q27 subject to Texas",
+            "UBS, Needham pressed Texas"
+          ],
+          [
+            "Beacon Point Phase 2",
+            "2Q28",
+            "Maintained",
+            "Matches",
+            "Lease to 17 years; financing after December",
+            "Date not given"
+          ],
+          [
+            "Average annual NOI",
+            "More than $1.75bn",
+            "Maintained",
+            "Matches",
+            "Triple-net, take-or-pay",
+            "Not challenged"
+          ],
+          [
+            "Buyback authorization",
+            "$1.0bn",
+            "Raised $750mn",
+            "n.a.",
+            "Not buying aggressively; no revolver",
+            "Piper, Rosenblatt pressed"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5 to 10 year view: 15-year contracted NOI above $1.75bn with amortizing debt should compound if halls deliver. The bitcoin business shrinks in importance; the parent's balance sheet matters only until Phase 2 and the next campuses are funded.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power and sites",
+            "Strong",
+            "Stable",
+            "Exclusivity 3,180 MW; Texas sites at about $0.78mn per utility MW",
+            "Cheap energized sites support future leases"
+          ],
+          [
+            "Tenant quality",
+            "Strong",
+            "Stable",
+            "Google backstop; AA- or higher; 704 of 949 MW with one tenant",
+            "Credit is the core of bond pricing"
+          ],
+          [
+            "Cost of capital",
+            "Strong, under test",
+            "Down",
+            "6.13% to 6.19% bonds; Phase 2 unpriced after extending lease",
+            "Phase 2 is the live test"
+          ],
+          [
+            "Execution",
+            "Good so far",
+            "Up",
+            "River Bend ahead of first hall",
+            "Rent depends on it"
+          ],
+          [
+            "Capital allocation",
+            "Questioned",
+            "Down",
+            "BTC to buybacks before Phase 2; management now says not aggressive",
+            "Cash now prioritized"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Concern: Phase 2 equity. → Response: no extra equity expected for River Bend or Beacon Point; Phase 2 financing to follow December. → Evidence: lease extended to 17 years; 'other avenues' unspecified. Concern: buybacks strain parent. → Response: not buying aggressively; no revolver use. → Evidence: $250mn spent at about $74.88 against $47.22 at 9:46 ET on 5 November (about 37% lower); $750mn authorization remains, about 13% of a $5.7bn market cap. Management's 'over $7.7bn' liquidity includes project restricted cash, so it is mostly not free.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Texas designation",
+            "Low",
+            "High",
+            "Up",
+            "Beacon Point depends on 17 December; 700 MW energization expected 1Q27"
+          ],
+          [
+            "Phase 2 funding",
+            "High",
+            "High",
+            "Up",
+            "$9.8bn lease, no price or date; a longer lease used to offset cost"
+          ],
+          [
+            "Parent liquidity",
+            "Moderate",
+            "Elevated",
+            "Up",
+            "1,361 free BTC, $156.9mn cash, $428mn test from 1Q27 (definition not read); revolver undrawn; FalconX $200mn to retire before April 2027"
+          ],
+          [
+            "Carry before rent",
+            "Elevated",
+            "Elevated",
+            "Flat",
+            "Interest expense $105.5mn against income $61.8mn; forward path not addressed"
+          ],
+          [
+            "Concentration",
+            "High",
+            "High",
+            "Flat",
+            "704 of 949 MW with one tenant"
+          ],
+          [
+            "Delivery",
+            "Moderate",
+            "Moderate",
+            "Down",
+            "River Bend on plan"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "body": "Per-share: 3,338,479 shares bought for about $250.0mn; 120.0mn outstanding on 2 November. ATM proceeds $120.1mn in 9M. Remaining authorization $750mn, about 13% of a $5.7bn market cap at $47.22. Funding: about $6.6bn cash and restricted balances, mostly held at projects. $1.07bn revolver undrawn. Bitcoin marks: $697.4mn Hut 8 and $702.9mn ABTC at 30 September. Price: $63.75 on 3 November, $48.94 close on 4 November (-23.2%), $47.22 at 9:46 ET on 5 November. No bond quote found.",
+      "table": {
+        "head": [
+          "Site",
+          "MW IT",
+          "Tenant",
+          "Lease value",
+          "Capex",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "River Bend",
+            "245",
+            "Fluidstack, Google backstop",
+            "$7.0bn",
+            "n.a. in sources read",
+            "$3.25bn 6.192% notes",
+            "First hall 2Q27; steel done"
+          ],
+          [
+            "Beacon Point 1",
+            "352",
+            "AA- or higher",
+            "$9.8bn",
+            "n.a. in sources read",
+            "$4.25bn 6.129% notes",
+            "First hall 3Q27"
+          ],
+          [
+            "Beacon Point 2",
+            "352",
+            "Same tenant",
+            "$9.8bn",
+            "n.a.",
+            "Under evaluation",
+            "First hall 2Q28"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "5 signals: 17 December Texas result; Phase 2 financing; revolver draws; free BTC; new lease. Key risks building: Texas; parent cushion; concentration. Confirmation signals: Unconditional classification, then a Phase 2 bond near Phase 1 terms with little parent equity. Conviction tripwires: Conditional or delayed Texas result; revolver drawn for anything but projects; more buybacks before Phase 2 prices; a slip at River Bend.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "How the call answered"
+        ],
+        "rows": [
+          [
+            "Rank Phase 2 equity against buybacks; will the revolver fund repurchases? (credit)",
+            "No ranking; 'we also do not plan to use the revolver for share buybacks'."
+          ],
+          [
+            "Does parent bitcoin count toward the $428mn test; parent cash? (credit)",
+            "Not addressed; 1,361 unencumbered BTC at 1 November; cash $156.9mn not labelled parent-only."
+          ],
+          [
+            "Phase 2: cost, LTC, coupon, date, fallback? (credit)",
+            "None given; after 17 December; 'other avenues'; lease now 17 years."
+          ],
+          [
+            "Capitalized share of interest and income path?",
+            "Not addressed."
+          ],
+          [
+            "What left the pipeline, and what is closest to a lease?",
+            "Called a funnel; 1.3 GW moved to exclusivity; nothing named."
+          ],
+          [
+            "New for owners: if 17 December is adverse or late, what happens to the lease, the $4.25bn bonds and 3Q27 delivery? (credit)",
+            "Open."
+          ]
+        ]
+      },
+      "title": "Questions for owners (preview questions and how the call answered them)"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Hut 8 3Q26 release (SEC Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926122347/tm2628741d1_ex99-1.htm"
+    },
+    {
+      "title": "Hut 8 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1964789/000119312526446146/hut-20260930.htm"
+    },
+    {
+      "title": "StockTitan: release",
+      "url": "https://www.stocktitan.net/news/HUT/hut-8-reports-third-quarter-2026-60xqslhn3jx8.html"
+    },
+    {
+      "title": "Blockonomi: price",
+      "url": "https://blockonomi.com/hut-8-corp-hut-stock-surges-15-as-7859-mw-pipeline-and-1-3b-annual-noi-target-drive-ai-expansion"
+    },
+    {
+      "title": "MarketBeat: consensus",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-4-hut-8-mining-corp-stock-2/"
+    },
+    {
+      "title": "24/7 Wall St: BTC price",
+      "url": "https://247wallst.com/investing/2026/11/04/riot-platforms-soars-20-on-earnings-and-28-billion-corsicana-ai-lease-cipher-digital-plunges-13-mara-drops-5/"
+    },
+    {
+      "title": "Hut 8 3Q26 call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/hut-8-hut-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "StockAnalysis HUT (price)",
+      "url": "https://stockanalysis.com/stocks/hut/"
+    }
+  ],
+  "ticker": "HUT",
+  "verdict": "Monitoring",
+  "versus": "Quarter: revenue miss, $71.1mn against $75.5mn to $76.5mn (-6% to -7%); diluted EPS $0.98 against about -$0.75, entirely bitcoin marks. Outlook in line: delivery dates held, no new lease, Phase 2 funding still open."
+}

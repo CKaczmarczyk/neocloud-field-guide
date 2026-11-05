@@ -1,0 +1,371 @@
+{
+  "brief": [
+    "Verdict ahead of the print: funding and the 4Q margin ramp, not revenue.",
+    "Kona: the price of weak-credit compute money is set here; read every facility's spread and tenor."
+  ],
+  "changes": [
+    "Report date: after the close on 10 November, call 5:00 p.m. ET.",
+    "Stock $48.42 on 4 November, -9.9% that day, from $91.72 on 6 October.",
+    "CDS record 1,194.5bp and 2032 notes touching 15% in mid-October; CEO memo calls the market irrational.",
+    "$3.7bn 2.875% convert due 2033 priced 18 September and $2.6bn delayed-draw loan at SOFR+550 on 7 August.",
+    "Target cuts: Morgan Stanley $70, Citi $128 and others; Goldman upgraded to Buy on 19 October."
+  ],
+  "checks": "Built before results. Date from the company release. 2Q from release and 10-Q on EDGAR, checked by a fresh subagent. Convert and DDTL from 8-Ks. Consensus from Zacks via Yahoo and Orford; EPS bases not reconciled; no paid feed. Goldman $23bn and Bernstein $76bn from headlines only. CDS via a repost of Bloomberg, mid-October, no later quote; price 4 November. Broker targets from a ratings list and not reopened individually.",
+  "consensus_thesis": "Investors own CoreWeave for take-or-pay backlog, tight supply and rising price per MW, and avoid it for leverage, refinancing and customer credit; at $48.42 on 4 November (down about 47% from $91.72 on 6 October) with five-year CDS that touched a record 1,194.5bp and 2031 notes yielding about 14.5% in mid-October, the market prices a funding problem, not an operating one, with about 20% of float short.",
+  "date": "2026-11-05",
+  "headline": "3Q26 revenue (consensus about $3.54bn, guide $3.45bn to $3.6bn) should not be the test: the stock and bonds will trade on how the funding gap is closed at what cost, and whether the fourth-quarter margin ramp in the full-year guide still holds.",
+  "kind": "preview",
+  "kona": "CoreWeave is the market's price for weak-credit compute money. Read its next facility as a ceiling for what lenders would ask of Kona if it owned GPUs: spread, advance rate, and above all tenor against contract life. If owners cannot fund on contracts this strong at under 15% unsecured, Kona's power-only or hosted options look better than owning GPUs.",
+  "kpis": [
+    {
+      "consensus": "about $3.54bn; guide $3.45bn-$3.6bn",
+      "current": "",
+      "metric": "Revenue",
+      "note": "BofA $3.66bn",
+      "prior": "$2,575mn (2Q26)"
+    },
+    {
+      "consensus": "guide $200mn-$260mn",
+      "current": "",
+      "metric": "Adj. operating income",
+      "note": "BofA margin 6.7%",
+      "prior": "$128mn (5%)"
+    },
+    {
+      "consensus": "3Q n.a.; FY26 about $7.6bn (Visible Alpha)",
+      "current": "",
+      "metric": "Adj. EBITDA",
+      "note": "",
+      "prior": "$1,510mn (59%)"
+    },
+    {
+      "consensus": "guide $860mn-$940mn",
+      "current": "",
+      "metric": "Interest",
+      "note": "",
+      "prior": "$640mn"
+    },
+    {
+      "consensus": "guide $11.5bn-$13.5bn; BofA $12.5bn",
+      "current": "",
+      "metric": "Capex",
+      "note": "Different bases",
+      "prior": "$6,422mn PP&E cash"
+    },
+    {
+      "consensus": "BofA about 1.7 GW",
+      "current": "",
+      "metric": "Active MW",
+      "note": "Over 1.85 GW at YE",
+      "prior": "about 1.5 GW"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Contracted MW",
+      "note": "",
+      "prior": "about 3.7 GW; 4.2 GW by call"
+    },
+    {
+      "consensus": "BofA RPO about $129bn early 3Q",
+      "current": "",
+      "metric": "Backlog",
+      "note": "",
+      "prior": "$104.2bn; over $25bn added early 3Q"
+    },
+    {
+      "consensus": "YE26 $47.6bn, 6.3x (Visible Alpha)",
+      "current": "",
+      "metric": "Debt",
+      "note": "About $52bn with leases",
+      "prior": "$35.6bn; recourse $31.4bn, non-recourse $3.7bn"
+    }
+  ],
+  "monitor": [
+    "New facilities: spread, tenor against contract life, recourse, undrawn capacity.",
+    "Adjusted operating income against $200mn-$260mn, and whether FY $960mn-$1.15bn stays.",
+    "Active MW against about 1.7 GW, and whether over 1.85 GW at year-end and $35bn-$39bn capex hold."
+  ],
+  "name": "CoreWeave",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "You raised $3.7bn at 2.875% in September and $2.6bn at SOFR+550 in August, yet your 2032 notes touched 15% in October. What is the blended cost of the next $10bn, how much of the 2027 need is committed today, and which facility closes next, on what date?",
+      "style": "credit",
+      "why": "Sets whether new contracts still earn above funding cost; tests the funding pillar."
+    },
+    {
+      "question": "Goldman puts the gap near $23bn and Bernstein near $76bn. What is your number through end-2027, and what is the first thing you cut if asset-level lenders ask for 300bp more?",
+      "style": "credit",
+      "why": "A number narrows a debate spread by a factor of three; capex is the release valve."
+    },
+    {
+      "question": "The $2.6bn loan, guaranteed by the parent, runs five years against contracts cited at about 3.1 years. Which contracts back it, what happens at contract end, and what residual GPU value does the lender assume?",
+      "style": "credit",
+      "why": "Connects debt tenor to GPU residual risk."
+    },
+    {
+      "question": "Your FY operating income guide needs about $581mn-$771mn in 4Q on one estimate, after $200mn-$260mn in 3Q. Which MW, at what price, deliver that step, and do you still guide low-teens margin in 4Q?",
+      "style": "equity",
+      "why": "Direct test of the margin ramp; a cut would hurt credit too."
+    },
+    {
+      "question": "You said prices rose about 25% in July and about 70% of 2Q deals had prepayments. What is the price per MW-year and prepayment share on 3Q signings, by customer type?",
+      "style": "equity",
+      "why": "Shows whether pricing offsets funding cost."
+    },
+    {
+      "question": "Top three customers were 36%, 26% and 10% of 2Q revenue. Who is in the backlog added since June, what share is investment grade, and what security do you hold if a lab misses a payment?",
+      "style": "credit",
+      "why": "Tenant credit drives the cost of every delayed-draw loan."
+    }
+  ],
+  "risks": [
+    "Funding gap and spreads.",
+    "4Q margin ramp.",
+    "Customer concentration and lab credit.",
+    "Delivery slips against 1.85 GW.",
+    "GPU residual against loan tenor."
+  ],
+  "sections": [
+    {
+      "body": "Rents GPU capacity under largely long-term take-or-pay contracts, funded mainly by asset-level delayed-draw loans secured on those contracts and GPUs, with parent debt, converts, equity and customer prepayments covering the rest (September convert presentation). Revenue = active MW x price per MW-year.",
+      "title": "Business model"
+    },
+    {
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus or estimate",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "About $3.54bn",
+            "Zacks via Yahoo, 3 Nov; Orford, 5 Nov",
+            "2Q $2,575mn; guide $3.45bn-$3.6bn"
+          ],
+          [
+            "3Q26 EPS",
+            "-$1.17 / -$1.55 (basis unreconciled)",
+            "Zacks; Orford",
+            "2Q GAAP -$1.14; Zacks actual -$1.03"
+          ],
+          [
+            "Adj. EBITDA",
+            "3Q n.a.; FY26 about $7.6bn, FY27 about $16.9bn",
+            "Visible Alpha via Yahoo, 17 Oct",
+            "2Q $1,510mn"
+          ],
+          [
+            "Revenue FY",
+            "FY26 $12.87bn; FY27 $26.47bn; 4Q26 $4.69bn",
+            "Orford, 5 Nov",
+            "Guide FY26 $12.4bn-$13.2bn"
+          ],
+          [
+            "Capex",
+            "BofA $12.5bn (single analyst)",
+            "Yahoo, 22 Oct",
+            "Guide 3Q $11.5bn-$13.5bn; FY $35bn-$39bn"
+          ],
+          [
+            "Active MW",
+            "BofA about 1.7 GW (single analyst)",
+            "Yahoo, 22 Oct",
+            "2Q about 1.5 GW; YE over 1.85 GW"
+          ],
+          [
+            "Backlog",
+            "BofA about $129bn early 3Q (single analyst)",
+            "Yahoo, 22 Oct",
+            "2Q $104.2bn"
+          ],
+          [
+            "Share price",
+            "$48.42 close; about $26.7bn on 551mn shares",
+            "Orford, 4 Nov; MarketBeat shows $22.22bn",
+            "$91.72 on 6 Oct"
+          ],
+          [
+            "Short interest",
+            "69.78mn shares, 20.06% of float at 15 Oct",
+            "MarketBeat",
+            "Prior 59.95mn"
+          ],
+          [
+            "CDS / bonds",
+            "CDS record 1,194.5bp; 9% 2031 about 82.75, about 14.5%, 15 Oct; 2032s touched 15%, 13 Oct",
+            "Bloomberg via repost; Yahoo. No later quote found",
+            "Provisional"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Funding stays open",
+            "Asset-level money available at tolerable cost",
+            "New facilities, spreads, undrawn $10.0bn; Goldman's +100-200bp vs 13.5%-15% unsecured yields",
+            "Goldman, BofA vs Bernstein, Morgan Stanley"
+          ],
+          [
+            "P2 Margin ramp holds",
+            "Low-teens adjusted operating margin in 4Q",
+            "3Q $200mn-$260mn; FY $960mn-$1.15bn retained",
+            "Management, BofA vs Orford"
+          ],
+          [
+            "P3 Delivery on schedule",
+            "More MW each quarter",
+            "Revenue vs $3.54bn; active about 1.7 GW; YE over 1.85 GW",
+            "BofA; Morgan Stanley questions deployment"
+          ],
+          [
+            "P4 Backlog quality",
+            "Take-or-pay with stronger paper",
+            "Backlog at or above about $129bn; top-customer share below 36% / 26% / 10%",
+            "Company, JPMorgan vs Fitch's note"
+          ],
+          [
+            "P5 Interest stays covered",
+            "EBITDA covers interest as debt rises",
+            "Interest $860mn-$940mn against adj. EBITDA",
+            "Davidson, HSBC on risk"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Goldman: ARR per MW and IRR biased up; debt cost +100-200bp, limited after that",
+            "Bernstein: model economically challenged despite demand"
+          ],
+          [
+            "JPMorgan: selloff disconnected from fundamentals; mostly take-or-pay",
+            "Davidson: equity could go to zero if the boom turns; borrows about 9%, earns about 1%"
+          ],
+          [
+            "BofA: financing concern, not operating deterioration",
+            "Musk (25 Oct): debt markets nearly shut for neoclouds"
+          ],
+          [
+            "Company: about 25% July price rise; about 70% of 2Q deals had prepayment",
+            "Orford: 4Q operating income step; $2.6bn loan five years against 3.1-year contracts"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "1) Funding gap: BofA about $20bn, Goldman about $23bn, Bernstein about $76bn (the last two from headlines). 2) Whether secondary yields set the cost of new money. 3) Whether the 4Q margin ramp delivers the FY guide. 4) Lab and customer credit and concentration.",
+      "title": "Live debates"
+    },
+    {
+      "body": "Goldman target reported as $106 cut from $139 and as $139 raised from $106; Bernstein Underperform vs MarketBeat's Hold then Strong Sell; Burry short as bear vs reduced bets (10 September headline); debt $35.6bn (10-Q) vs about $52bn with leases (Yahoo); EPS bases unreconciled; the 9% 2031 notes appear at about 82.75 / 14.5% and 79.9 / 15.6% in the same repost. Prices are from mid-October for credit; card is Provisional on bonds.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: total indebtedness $35.6bn, $10.0bn undrawn; recourse $31.4bn, non-recourse $3.7bn (net); cash $5,524mn, about $6.9bn with restricted and securities. Since: $2.6bn DDTL SOFR+550 due September 2031, unconditionally guaranteed by the parent (8-K); $3.7bn 2.875% converts due 2033, upsized from $3.0bn.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See the questions field.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "neocloud",
+  "sources": [
+    {
+      "title": "CoreWeave announces 3Q26 date",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Date-of-Third-Quarter-2026-Financial-Results-and-Conference-Call/default.aspx"
+    },
+    {
+      "title": "Orford, 5 November preview",
+      "url": "https://rickorford.com/coreweave-stock-is-down-47-in-four-weeks-ahead-of-its-nov-10-earnings/"
+    },
+    {
+      "title": "Zacks via Yahoo, 3 November",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-crwv-expected-beat-earnings-140004833.html"
+    },
+    {
+      "title": "BofA via Yahoo, 22 October",
+      "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-capacity-expansion-drive-revenue-172700931.html"
+    },
+    {
+      "title": "Visible Alpha via Yahoo, 17 October",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-projected-6-3x-gross-215000198.html"
+    },
+    {
+      "title": "2Q26 release (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000362/coreweave2q26earningspress.htm"
+    },
+    {
+      "title": "2Q26 10-Q (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+    },
+    {
+      "title": "2Q call summary (MarketBeat)",
+      "url": "https://www.marketbeat.com/instant-alerts/coreweave-q2-earnings-call-highlights-2026-08-11/"
+    },
+    {
+      "title": "Short interest (MarketBeat)",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/CRWV/short-interest"
+    },
+    {
+      "title": "CDS repost, 15 October",
+      "url": "https://www.edwardconard.com/macro-roundup/cds-prices-on-coreweave-debt-imply-more-than-a-60-chance-of-default-within-the-next-five-years-the-firms-debt-is-selling-off-with-9-notes-maturing-in-2031-trading-as-low-as-79-9-cents-on-the-dolla/"
+    },
+    {
+      "title": "Bond yields and CEO memo (Yahoo, 14 October)",
+      "url": "https://finance.yahoo.com/technology/article/yikes-coreweave-stock-tanks-on-bond-yield-woes-ceo-blames-market-acting-irrationally-203838274.html"
+    },
+    {
+      "title": "Goldman upgrade (Investing, 19 October)",
+      "url": "https://za.investing.com/news/stock-market-news/coreweave-jumps-as-goldman-sachs-upgrades-stock-after-25-rout-4511553"
+    },
+    {
+      "title": "Ratings list (Daily Political, 3 November)",
+      "url": "https://www.dailypolitical.com/2026/11/03/investment-analysts-recent-ratings-changes-for-coreweave-crwv.html"
+    },
+    {
+      "title": "Funding gap headlines",
+      "url": "https://fourweekmba.com/ai-coreweaves-funding-gap-goldman-says-23b-bernstein-76b/"
+    },
+    {
+      "title": "September convert presentation (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm"
+    },
+    {
+      "title": "August DDTL 8-K (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm"
+    },
+    {
+      "title": "Convert pricing (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000432/ex991pricing.htm"
+    }
+  ],
+  "ticker": "CRWV",
+  "verdict": "Preview",
+  "versus": ""
+}

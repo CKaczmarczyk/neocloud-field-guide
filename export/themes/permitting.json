@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Hut 8's Beacon Point baseload designation depends on a Texas audit, results expected 10 December, final 17 December; Phase 2 financing follows it.",
+      "company": "Hut 8",
+      "date": "2026-11-04",
+      "direction": "supports",
+      "numbers": "700 MW energization expected 1Q27 if unconditional.",
+      "segment": "developer",
+      "source": "HUT 3Q26 call",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/hut-8-hut-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Riot says its Texas interconnects are fully approved and operating with no further approval needed, an advantage against sites still in the state process.",
+      "company": "Riot Platforms",
+      "date": "2026-11-04",
+      "direction": "against",
+      "numbers": "Same 1 GW load, 910 MW on the tenant-module design.",
+      "segment": "developer",
+      "source": "RIOT 3Q26 call",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/riot-platforms-riot-q3-2026-earnings-call-transcript/"
+    },
+    {
       "claim": "AP reports a Trelew Free of Data Centers movement citing lack of information on water and power for a Patagonian project.",
       "company": "Green Capital / Trelew",
       "date": "2026-11-02",
@@ -123,6 +143,15 @@
       "segment": "policy",
       "source": "Utility Dive",
       "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
+    },
+    {
+      "claim": "Third Circuit remanded the New Jersey certificate for NESE; Williams' CEO said next-winter in-service could be at risk, with no material outlook effect; a Senate cloture vote on a permitting bill was cited for 9 November.",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
     }
   ],
   "order": 7,
@@ -130,5 +159,5 @@
   "status": "strengthening",
   "summary": "Opposition is now national politics and is reaching the courts: a federal judge refused to dismiss the Southaven turbine suit and rejected the mobile-source defense, Amazon dropped a Virginia campus, Memphis paused applications for 135 days, and Trump is telling developers to pay communities and make their own power. It has also reached Patagonia, where a Trelew group opposes a data center plan. Moratorium bills mostly fail, but local pauses and withdrawals are rising, and cash offers have not reliably won votes.",
   "title": "Permitting and community backlash",
-  "updated": "2026-11-02"
+  "updated": "2026-11-05"
 }

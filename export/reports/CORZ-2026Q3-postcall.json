@@ -1,0 +1,593 @@
+{
+  "changes": [
+    "Rent ramp beat: 485 MW billing against 437 MW in mid-July and 395 MW in June; colocation revenue $215.4mn, +58% QoQ; colocation gross margin 60%.",
+    "First clean operating profit: operating income $72.4mn (31% margin) against a $78.5mn loss, with adjusted EBITDA margin 57%.",
+    "AMD funding still open: the 10-Q says the build will need additional external financing, with project bonds expected within 12 months and 'no assurance'. Management says no equity is expected for the initial 530 MW and all its equity is already invested.",
+    "Liquidity fell $857mn to $1,744mn after $540mn of capex and $444mn for Polaris, against $4.4bn of purchase and construction commitments, mostly over 24 months.",
+    "Definition correction: the $3bn market-cap test is a condition to borrow on the revolver, not a maintenance covenant. The quarterly test is $150mn minimum liquidity."
+  ],
+  "checks": "Dates on EDGAR: 8-K item 2.02 (12:04 UTC) and 10-Q (13:09 UTC) on 5 November; release and 10-Q read directly. Call: full MarketBeat/Quartr transcript read once by a research agent; a fresh verifier could not reopen it (preview page only), so key points were spot-checked against BigGo's AI summary: air permits, no equity, $650mn warrants, 2027 deadlines, Dalton, 385 MW and analyst names all matched; firm attributions and ratings are not independently confirmed, and no CoreWeave question appears in either. Consensus from the preview record and MarketBeat. Derived numbers computed in Python. Fresh subagent checked the draft; corrections applied (AMD construction status, warrant-cash wording, converts). Price intraday at 9:57 ET; full-day reaction not available. No bond quote found. 10-Q covenant wording corrects the prior scorecard note.",
+  "consensus_thesis": "Investors own Core Scientific as a colocation landlord with about 1.1 GW leased, moving from CoreWeave-only to AMD-backed tenancy, and price doubt over CoreWeave credit and over how the $6bn AMD build gets financed.",
+  "date": "2026-11-05",
+  "headline": "The consensus view needs little change: delivery and margins came in better than expected, which supports the rent story, but credit quality holds rather than improves until the AMD project bond prices and because almost all current revenue still depends on CoreWeave, whose debt trades at distressed levels.",
+  "kind": "postcall",
+  "kona": "Three points. A signed AMD-backed lease still has not produced a priced bond after more than three months, so Kona should not assume paper converts to debt quickly. AMD's support came with warrants valued at $90.1mn on the first 530 MW, about $0.17mn per MW, plus more on reserved MW: credit from a stronger party has a price Kona should budget. And US peers now pursue behind-the-meter with air permits unfiled, which keeps Kona's permitted off-grid pitch relevant, though analysts here asked about permits more than anything else.",
+  "monitor": [
+    "First AMD project bond: size, yield, advance rate, recourse.",
+    "Dalton Phase Two: the last roughly 100 MW of CoreWeave billing by early 2027, and first Pecos delivery in 1H27.",
+    "Tranche 1 warrant cash (about $650mn, expiry 23 January 2027) and whether AMD exercises reservations through 2027."
+  ],
+  "name": "Core Scientific",
+  "pdf_brief": "/_blob/e5a31818b0af62be6ddf1b55ac8ae199",
+  "pdf_report": "/_blob/12159f2b0121a0100103c893f93eca71",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "Post-call version. Sources: 3Q26 release and 10-Q (EDGAR, 5 November); machine-generated call transcript (MarketBeat/Quartr), speakers unlabelled, read once and cross-checked on key points against BigGo's AI summary; quotes need checking against the audio. History held: 3Q26 and two comparison quarters from the release; 2Q26 call from the preview record only. No knowledge base on this run, so historical depth is limited.",
+      "title": "Status"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 CoreWeave ramp delivers",
+            "Billing well above 437 MW; Dalton Phase Two from year-end",
+            "485 MW at 30 September, unchanged at the call; license fees $157.3mn; remaining about 100 MW at Dalton by early next year, no firm dates",
+            "Confirmed",
+            "Release; 10-Q; call"
+          ],
+          [
+            "P2 CoreWeave credit holds",
+            "Payment continues; CDS are noise",
+            "All colocation revenue, 84% of 9M revenue. Leases assigned to CW SPV with CoreWeave still primary obligor; management cites SPV backing, guarantee and UCC-perfected security. No analyst asked. 10-Q: recourse depends on its condition at default",
+            "Unresolved",
+            "10-Q; call"
+          ],
+          [
+            "P3 AMD diversifies",
+            "530 MW delivers in 2027-28 on $14bn",
+            "Pecos 1H27, about half online in 2027, rest through 2028; reservation right on 1,925 MW through 28 December 2028. No AMD lease has commenced, construction underway across five campuses; AMD holds warrants as lease incentive",
+            "Unresolved",
+            "10-Q; call"
+          ],
+          [
+            "P4 Project debt funds the AMD build",
+            "About $6bn from project bonds",
+            "Not secured; no yield, advance rate or date. 'The project bond market is absolutely open', but no gating item was named. Equity: none expected for 530 MW",
+            "Challenged",
+            "10-Q; call"
+          ],
+          [
+            "P5 Clean numbers",
+            "Warrant noise fades; weakness fixed",
+            "$1,034mn warrant gain drove net income $1,178mn; material weakness not remediated, target year-end assessment. Operating income now positive",
+            "Unresolved",
+            "Release; 10-Q"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: AMD share of NOI (over half of stabilized NOI on under half of capacity); new power (about 385 MW more at Muskogee and Hunt by mid-2028); behind-the-meter at Pecos; capital scarcity as an advantage ('capital is the throttle on all new development'). Emphasized less or dropped: speculative build of about 500 MW was not quantified; mining exits by year-end. KPIs more important: billing MW, operating margin, liquidity against commitments. Less: net income. Risks up: funding sequence, Texas permits. Down: CoreWeave delivery, cost of mining drag. Margin moves are structural: fixed rent on delivered MW over a mostly fixed cost base.",
+      "title": "Emphasis and disclosure shifts"
+    },
+    {
+      "body": "Trevor's watch-list. No analyst was named by CK; I chose Petersen (Jefferies), the most direct on project finance on this call, though with one transcript held the pick is thin. 3Q question: project finance covenants and loan-to-cost? Answer: bond market open, more diligence, no change in terms, no figure. Rating: partial. Later evidence: terms of the first bond. Wider point: with CoreWeave's CDS at a record in October, nobody asked what happens to 590 MW if it misses a payment. Trend needs earlier transcripts; Q&A counts come from one quarter. Ratings are our judgment. — Trevor",
+      "table": {
+        "head": [
+          "Topic",
+          "Who asked in 3Q26",
+          "Questions",
+          "Rating of answers"
+        ],
+        "rows": [
+          [
+            "Capex and funding; cost of debt",
+            "Needham, Cantor, Jefferies",
+            "3",
+            "Partial, except direct on warrant cash"
+          ],
+          [
+            "Power, permits and Texas",
+            "Needham, Cantor, Craig-Hallum, KBW, Jones (2), Compass Point",
+            "7",
+            "Direct on filing status; partial on timing"
+          ],
+          [
+            "AMD reservations",
+            "Lucid",
+            "1",
+            "Partial; adjustment not answered"
+          ],
+          [
+            "Build cost and yield",
+            "UBS, Clear Street",
+            "2",
+            "Partial to deflected; $11mn-$12mn per MW kept, no % locked"
+          ],
+          [
+            "Long-run margin",
+            "Jefferies",
+            "1",
+            "Deflected"
+          ],
+          [
+            "Site pipeline and M&A",
+            "B. Riley, BTIG (2), Craig-Hallum, UBS",
+            "5",
+            "Mostly direct; 2 GW mix deflected"
+          ],
+          [
+            "Customer credit (CoreWeave)",
+            "None",
+            "0",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Analyst focus and Trevor's watch-list"
+    },
+    {
+      "body": "Note: for cost, debt and dilution lines, [↓] means worse for shareholders. 3Q25 EBITDA margin computed from 6.5 / 81.1. Contracted MW 2Q as AMD signed in July, disclosed with 2Q. Operating margin computed. Depreciation is small today (D&A $18.0mn) because the customer funded most CoreWeave capex.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY"
+        ],
+        "rows": [
+          [
+            "Billing MW",
+            "485",
+            "395",
+            "n.a.",
+            "[↑] +22.8%"
+          ],
+          [
+            "Contracted MW (CoreWeave 590 + AMD 530)",
+            "about 1,120",
+            "about 1,120",
+            "n.a.",
+            "[~]"
+          ],
+          [
+            "Total revenue ($mn)",
+            "232.9",
+            "164.2",
+            "81.1",
+            "[↑] +41.8% / +187%"
+          ],
+          [
+            "Colocation revenue ($mn)",
+            "215.4",
+            "136.7",
+            "15.0",
+            "[↑] +57.6% / +1,341%"
+          ],
+          [
+            "of which license fees ($mn)",
+            "157.3",
+            "98.8",
+            "9.8",
+            "[↑] +59.2%"
+          ],
+          [
+            "of which power pass-through ($mn)",
+            "57.6",
+            "35.1",
+            "3.6",
+            "[?] pass-through"
+          ],
+          [
+            "Colocation gross margin",
+            "60%",
+            "59%",
+            "26%",
+            "[~]"
+          ],
+          [
+            "Self-mining revenue ($mn)",
+            "12.3",
+            "21.5",
+            "57.4",
+            "[↓] exit by year-end"
+          ],
+          [
+            "Adjusted EBITDA ($mn)",
+            "133.6",
+            "41.1",
+            "6.5",
+            "[↑] +225%"
+          ],
+          [
+            "Adjusted EBITDA margin",
+            "57%",
+            "25%",
+            "8%",
+            "[↑]"
+          ],
+          [
+            "Operating income ($mn)",
+            "72.4",
+            "-78.5",
+            "-54.8",
+            "[↑]"
+          ],
+          [
+            "Operating margin",
+            "31.1%",
+            "-47.8%",
+            "-67.6%",
+            "[↑]"
+          ],
+          [
+            "Interest expense, net ($mn)",
+            "35.0",
+            "23.8",
+            "-0.8",
+            "[↓] +47%"
+          ],
+          [
+            "Change in warrant value ($mn, gain)",
+            "1,034.4",
+            "-1,045.5",
+            "-74.9",
+            "[?] marks"
+          ],
+          [
+            "Net income ($mn)",
+            "1,178.1",
+            "-1,155.3",
+            "-144.0",
+            "[?] marks"
+          ],
+          [
+            "Capex incl. acquisitions ($mn)",
+            "985.1",
+            "797.5",
+            "244.5",
+            "[↓] +23.5%"
+          ],
+          [
+            "Liquidity and DSRA ($mn)",
+            "1,744.2",
+            "2,601.1",
+            "694.8",
+            "[↓] -32.9%"
+          ],
+          [
+            "Cash ($mn)",
+            "803.9",
+            "1,769.7",
+            "n.a.",
+            "[↓] -54.6%"
+          ],
+          [
+            "Long-term debt ($mn)",
+            "4,302.2",
+            "4,298.0",
+            "n.a.",
+            "[~]"
+          ],
+          [
+            "Warrant liabilities ($mn)",
+            "1,118.9",
+            "1,975.3",
+            "n.a.",
+            "[?] marks"
+          ],
+          [
+            "Stockholders' deficit ($mn)",
+            "-1,092.1",
+            "-2,419.4",
+            "n.a.",
+            "[↑]"
+          ],
+          [
+            "Shares outstanding (mn)",
+            "322.0",
+            "n.a.",
+            "n.a.",
+            "[?]"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improved. Operating income turned positive on 90 MW more billing; annual coupon on the $3.30bn notes is about $256mn (our arithmetic) and amortization at 11.5% a year starts once rent credits end. The improvement is structural while CoreWeave pays.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "4Q revenue",
+            "Double-digit sequential increase",
+            "New",
+            "4Q consensus not found",
+            "More billing, Dalton",
+            "Not pressed"
+          ],
+          [
+            "CoreWeave delivery",
+            "About 100 MW remaining by early 2027",
+            "Consistent; preview had a year-end start",
+            "n.a.",
+            "Dalton Phase Two",
+            "Not pressed"
+          ],
+          [
+            "AMD delivery",
+            "Pecos 1H27; about half in 2027; rest through 2028",
+            "Maintained",
+            "n.a.",
+            "530 MW over five campuses",
+            "Questions on permits, load studies"
+          ],
+          [
+            "AMD build cost",
+            "$11mn-$12mn per MW",
+            "Maintained",
+            "n.a.",
+            "Owner-furnished equipment bought early",
+            "UBS got no % locked"
+          ],
+          [
+            "Portfolio run-rate",
+            "$1.8bn revenue, $1.6bn NOI on about 1.1 GW",
+            "Maintained",
+            "n.a.",
+            "Contract average",
+            "Do-the-math answer on margin"
+          ],
+          [
+            "AMD equity",
+            "None expected for Phase 1",
+            "Firmer than October",
+            "Needham noted possible stock offering",
+            "Equity already invested",
+            "Funding still pending"
+          ],
+          [
+            "Project bonds",
+            "Within 12 months (10-Q)",
+            "Maintained",
+            "n.a.",
+            "Optimizing package across five leases",
+            "Partial answers"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5 to 10 year view: if AMD and its supported neocloud lease deliver, the business becomes a $1.6bn NOI landlord with half its income on stronger paper. The value of the option on 1,925 MW more depends on funding and AMD using it.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power and sites",
+            "Strong",
+            "Up",
+            "About 2.6 GW gross, 1.7 GW leasable, 385 MW more secured by mid-2028",
+            "Scarce power supports repricing"
+          ],
+          [
+            "Tenant quality",
+            "Mixed",
+            "Up, slowly",
+            "AMD over half of stabilized NOI once built; CoreWeave all of today's rent",
+            "Mix improves only as AMD delivers"
+          ],
+          [
+            "Cost of capital",
+            "Weak",
+            "Down",
+            "7.75% secured notes; no AMD bond yet",
+            "Price of next dollar is the test"
+          ],
+          [
+            "Execution",
+            "Good",
+            "Up",
+            "90 MW added in the quarter, margin 60%",
+            "Supports AMD credibility"
+          ],
+          [
+            "Durability",
+            "Moderate",
+            "Stable",
+            "Term 12 years CoreWeave, 15 years AMD plus options",
+            "Bond investors will underwrite AMD years"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Concern: CoreWeave fails. → Response: SPVs with end-customer commitments, CoreWeave as guarantor, UCC-perfected interest in infrastructure. → Evidence: leases assigned to CW SPV; no re-lease plan or timing given; no analyst asked. Concern: AMD funding forces equity. → Response: none expected for Phase 1. → Evidence: all sponsor equity 'already invested', amount not given; bond pending; about $650mn of warrant cash goes primarily to equity in proactive builds as reservations are exercised (CFO), while the 10-Q lists it among anticipated sources alongside restricted cash released through letters of credit.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "CoreWeave credit and concentration",
+            "High",
+            "High",
+            "Flat",
+            "All colocation revenue; 10-Q flags limits on recourse; CoreWeave CDS touched 1,194.5bp in October; stock $48.42 on 4 November"
+          ],
+          [
+            "AMD financing",
+            "High",
+            "High",
+            "Up",
+            "Bond not priced; $4.4bn commitments; 10-Q warns it may reduce, delay or modify spend without financing"
+          ],
+          [
+            "Liquidity sequence",
+            "Moderate",
+            "Elevated",
+            "Up",
+            "$804mn cash, $838mn restricted, $100mn revolver; revolver draw needs market cap of $3bn or more (about $3.7bn at $11.63)"
+          ],
+          [
+            "Texas permits and rules",
+            "Moderate",
+            "Elevated",
+            "Up",
+            "Air permits at Pecos and Hunt not filed; the December state review was raised by Needham and not answered"
+          ],
+          [
+            "Reporting controls",
+            "Moderate",
+            "Moderate",
+            "Flat",
+            "Material weakness unremediated"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "body": "Per-share: 322.0mn shares; diluted weighted 469mn given warrants. Tranche 1 warrants: 94.9mn at $6.81, about $646mn if exercised by 23 January 2027 (in the money at $11.63). AMD warrant: up to 30mn at $23.47, vesting 12,222 shares per MW; issue-date value $90.1mn on the 530 MW and $206.4mn unvested on the reservation, booked as lease incentive and a real cost of AMD's lease. Next dollar: 7.75% notes (May 2026); no later price. Maturities: $3.30bn 7.75% notes due 2031, amortizing; $460mn 3.00% converts due 2029; $625mn 0% converts due 2031. L/C facility up to $500mn, none issued at 30 September, to replace cash collateral. Market cap about $3.7bn on $11.63 (5 November, 9:57 ET, down 8.9%); the 4 November close of $12.76 was before results. No bond quote found. Implied average rate: about $134/kW-month ($1.8bn / 1,120 MW / 12) and about $147 on AMD ($14bn / 15 / 530 MW / 12), our arithmetic.",
+      "table": {
+        "head": [
+          "Site group",
+          "MW",
+          "Tenant",
+          "Lease value",
+          "Capex",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Five conversion campuses",
+            "590",
+            "CoreWeave (some leases via CW SPV)",
+            "Over $10bn (over $24bn potential total less about $14bn; our arithmetic)",
+            "Mostly customer funded; $180.9mn 9M",
+            "Customer; capped company share",
+            "485 MW billing; about 105 MW in construction"
+          ],
+          [
+            "Five campuses incl. Pecos, Muskogee, Hunt",
+            "530 (377 direct + 152 supported)",
+            "AMD; neocloud with AMD support",
+            "About $14bn, 15 years",
+            "About $6bn at $11mn-$12mn per MW",
+            "Equity done; project bonds pending",
+            "Pecos 1H27; rest through 2028"
+          ],
+          [
+            "Reservation",
+            "1,925",
+            "AMD option",
+            "n.a.",
+            "n.a.",
+            "Warrant cash, future bonds",
+            "Through 28 December 2028"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "5 signals: AMD bond terms; Dalton billing; warrant exercise; first AMD reservation exercise; CoreWeave results on 10 November. Key risks building: funding sequence; Texas air permits; CoreWeave. Confirmation signals: Project bond priced with no parent recourse; Pecos on time; second tenant named. Conviction tripwires: Equity sold near $12; revolver unavailable if market cap falls below $3bn; any CoreWeave lease amendment; rent credits extended.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "How the call answered"
+        ],
+        "rows": [
+          [
+            "CoreWeave default: what happens to 590 MW and how long to re-lease? (credit)",
+            "Not asked or addressed; prepared remarks gave SPVs, guarantee and security only."
+          ],
+          [
+            "AMD bond: yield, advance rate, parent equity; common stock near $13? (credit)",
+            "Yield and advance rate not given; bond market 'absolutely open'; no equity for Phase 1, amount of equity invested not given."
+          ],
+          [
+            "Billing on 30 September and today; Dalton dates?",
+            "485 MW for both; about 100 MW by early next year; no dates."
+          ],
+          [
+            "Any covenant tied to market cap? (credit)",
+            "Not raised on call. 10-Q: $3bn is a condition to revolver borrowing; $150mn minimum quarterly liquidity."
+          ],
+          [
+            "AMD reservations: how long, anything paid?",
+            "Quarterly deadlines, most in 2027, final end-2028 (1,925 MW per 10-Q; dates undisclosed); payment not addressed."
+          ],
+          [
+            "New for owners: warrant cash is 'primarily' for proactive builds. How much will you commit before a tenant signs, and at what price? (credit)",
+            "Open."
+          ]
+        ]
+      },
+      "title": "Questions for owners (preview questions and how the call answered them)"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "Core Scientific 3Q26 release (SEC Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000028/q32026corescientificinc-ea.htm"
+    },
+    {
+      "title": "Core Scientific 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000030/core-20260930.htm"
+    },
+    {
+      "title": "3Q26 call transcript and consensus (MarketBeat)",
+      "url": "https://www.marketbeat.com/earnings/reports/2026-11-5-core-scientific-inc-stock/"
+    },
+    {
+      "title": "BigGo call summary",
+      "url": "https://finance.biggo.com/quote/CORZ/earnings-call/US_CORZ_2026-11-05"
+    },
+    {
+      "title": "StockAnalysis CORZ (price)",
+      "url": "https://stockanalysis.com/stocks/corz/"
+    },
+    {
+      "title": "CoreWeave CDS (15 October repost of Bloomberg)",
+      "url": "https://www.edwardconard.com/macro-roundup/cds-prices-on-coreweave-debt-imply-more-than-a-60-chance-of-default-within-the-next-five-years-the-firms-debt-is-selling-off-with-9-notes-maturing-in-2031-trading-as-low-as-79-9-cents-on-the-dolla/"
+    }
+  ],
+  "ticker": "CORZ",
+  "verdict": "Monitoring",
+  "versus": "Quarter: beat, revenue $232.9mn against about $196.4mn to $196.9mn (+18%); adjusted EBITDA $133.6mn, no consensus found; diluted EPS $0.47 is warrant-driven and not comparable to about -$0.05. Outlook: in line on delivery (4Q revenue up double digits sequentially, AMD from 1H27); below on funding, with project debt still not secured."
+}

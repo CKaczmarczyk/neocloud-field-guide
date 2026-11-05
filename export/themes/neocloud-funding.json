@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "Core Scientific says the project bond market is open and terms unchanged but has no priced AMD bond three months after signing; the 10-Q says financing is needed with no assurance.",
+      "company": "Core Scientific",
+      "date": "2026-11-05",
+      "direction": "for",
+      "numbers": "About $6bn build; $4.4bn commitments; liquidity $1,744mn, -$857mn QoQ; 'capital is the throttle'.",
+      "segment": "developer",
+      "source": "CORZ 3Q26 10-Q; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000030/core-20260930.htm"
+    },
+    {
+      "claim": "Riot's Corsicana plan: 80% to 90% non-recourse debt from 2027, with tenant-funded rent credits at an implied 12% if debt is not available on comparable terms.",
+      "company": "Riot Platforms",
+      "date": "2026-11-04",
+      "direction": "mixed",
+      "numbers": "$4.4bn-$4.9bn debt; about $5.5bn capital; about 33% yield on cost; no project debt closed.",
+      "segment": "developer",
+      "source": "RIOT 3Q26 call",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/riot-platforms-riot-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Hut 8 fell 23% on 4 November with Phase 2 financing undated and a smaller free cushion after a $250mn buyback; management now says 'cash will be king'.",
+      "company": "Hut 8",
+      "date": "2026-11-04",
+      "direction": "for",
+      "numbers": "1,361 unencumbered BTC; $156.9mn cash; $250mn at about $74.88 vs $48.94 close.",
+      "segment": "developer",
+      "source": "HUT 3Q26 call; StockAnalysis",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/hut-8-hut-q3-2026-earnings-call-transcript/"
+    },
+    {
       "claim": "Cipher's project notes marked down to 100.5, 97.9 and 95.6 of par at 30 September from 104.2, 101.5 and 100.4 at 30 June, despite investment-grade or backstopped rent.",
       "company": "Cipher Digital",
       "date": "2026-11-02",
@@ -188,7 +218,7 @@
   "order": 5,
   "question": "Can neoclouds keep raising money below what their assets earn?",
   "status": "weakening",
-  "summary": "October repriced weak-credit compute and the last week did not reverse it: CoreWeave fell 11% to $54.34 on 30 October with CDS touching a record 1,194.5 bps, Firmus's failed A$44B float now faces an ASIC review with chip payments due, and Nscale still has no price range against a $30-35B target as investors push $16-19B. Microsoft's capex miss and Alphabet's -$9.1B free cash flow raise doubt about the buyers themselves. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open.",
+  "summary": "October repriced weak-credit compute and the last week did not reverse it: CoreWeave fell 11% to $54.34 on 30 October with CDS touching a record 1,194.5 bps, Firmus's failed A$44B float now faces an ASIC review with chip payments due, and Nscale still has no price range against a $30-35B target as investors push $16-19B. Microsoft's capex miss and Alphabet's -$9.1B free cash flow raise doubt about the buyers themselves. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open. 5 November: landlord peers still have unpriced project debt (Core Scientific AMD, Hut 8 Phase 2, Riot Corsicana), with Riot offering a 12% tenant fallback.",
   "title": "Neocloud funding access",
-  "updated": "2026-11-02"
+  "updated": "2026-11-05"
 }

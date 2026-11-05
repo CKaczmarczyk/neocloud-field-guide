@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "CoreWeave moved certain Core Scientific leases into CW SPV, with CoreWeave still primary obligor; the 10-Q says recourse depends on its condition at default, and no analyst asked on the call.",
+      "company": "Core Scientific",
+      "date": "2026-11-05",
+      "direction": "mixed",
+      "numbers": "590 MW CoreWeave; 485 MW billing; 84% of 9M revenue; AMD over half of stabilized NOI once built.",
+      "segment": "developer",
+      "source": "CORZ 3Q26 10-Q; call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000030/core-20260930.htm"
+    },
+    {
+      "claim": "Hut 8's call named Anthropic as River Bend end user with Broadcom and Google in the credit profile; the Phase 2 lease went from 15 to 17 years to help offset financing cost.",
+      "company": "Hut 8",
+      "date": "2026-11-04",
+      "direction": "mixed",
+      "numbers": "352 MW, $9.8bn; a longer term replaces a rent rise in the bond math.",
+      "segment": "developer",
+      "source": "HUT 3Q26 call",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/hut-8-hut-q3-2026-earnings-call-transcript/"
+    },
+    {
       "claim": "Cipher's Barber Lake overruns shows how lease structure allocates risk: hyperscaler leases have capex allowances, while Cipher bears the first $359.3mn at the Fluidstack site, in exchange for a 10-year AI lab term; Google's warrants carry a value test at lease commencement.",
       "company": "Cipher Digital",
       "date": "2026-11-02",
@@ -258,5 +278,5 @@
   "status": "strengthening",
   "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. This week SpaceX's about $40B Apollo lease confirmed Musk's claim that a borrower with non-AI revenue can still raise at scale (rate undisclosed), and Oracle's pledge to cap borrowing cut its CDS by 22 bps in a day, which shows credit now responds to balance-sheet discipline. Status unchanged.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-11-02"
+  "updated": "2026-11-05"
 }

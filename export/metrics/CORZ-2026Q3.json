@@ -1,0 +1,16 @@
+{
+  "active_mw": "485 billing",
+  "contracted_mw": "~1,120 (CoreWeave 590, AMD 530)",
+  "date": "2026-11-05",
+  "debt_cost": "7.75% secured notes due 2031 at 99.25 (May 2026, last priced; market yield not found); revolver SOFR + 175 (August)",
+  "margin": "EBITDA 57% / operating 31%",
+  "name": "Core Scientific",
+  "notes": "Flags: active +22.8% QoQ, within range but 2Q row used 437 mid-July; 2Q row's '$3B minimum market-cap covenant' corrected: a condition to revolver borrowing, plus $150mn minimum liquidity. 2Q revenue was n/d in the prior row (164.2 per release, +41.8%). 2Q margin column was colocation gross, now EBITDA/operating; colocation gross 60%.",
+  "period": "2026Q3",
+  "rate": "About $134 per kW-month contract average ($1.8bn / 1,120 MW / 12); AMD about $147 ($14bn / 15y / 530 MW)",
+  "revenue_m": "232.9 (colocation 215.4)",
+  "segment": "developer",
+  "source": "CORZ 3Q26 release, 10-Q, 5 Nov call",
+  "ticker": "CORZ",
+  "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000028/q32026corescientificinc-ea.htm"
+}
