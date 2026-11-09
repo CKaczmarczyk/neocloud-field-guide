@@ -1,14 +1,15 @@
 {
   "drivers": [
-    "Operating ARR vs over $4bn by December",
-    "Funding of $25bn-$30bn FY27 capex",
+    "Operating ARR vs over $4bn by January, may run to February",
+    "Closing $6bn target funding against about $15bn remaining FY27 capex",
     "2027 contracts and price per IT MW",
-    "Microsoft concentration",
+    "Customer concentration: top three 70% of revenue",
     "Dilution"
   ],
-  "model": "Economic engine: IREN owns powered sites and the GPUs on them, selling AI cloud on 3-year to 5-year contracts with large prepayments. Revenue map: active IT MW x price per MW-year (recent contracts above $20mn per IT MW). Costs: power, GPU depreciation (about six years, press), staff, interest. Funding: GPU financing ($3.6bn at about 6% for Microsoft, $2.4bn at 9.0% for Mackenzie), prepayments 45% to 55% of GPU capex, converts, equity. Sensitivities: commissioning dates, GPU prices, tenant credit, financing costs. Would break the model: ARR slips, unfunded capex, Microsoft loss, GPU price fall. Sources: FY26 release and call.",
+  "model": "Economic engine: IREN owns powered sites and the GPUs on them, selling AI cloud on 3-year to 5-year contracts with large prepayments. Revenue map: active IT MW x price per MW-year (recent contracts above $20mn per IT MW). Costs: power, GPU depreciation (about six years, press), staff, interest. Funding: GPU financing ($3.6bn at about 6% for Microsoft, $2.4bn at 9.0% for Mackenzie), prepayments 45% to 55% of GPU capex, converts, equity. Sensitivities: commissioning dates, GPU prices, tenant credit, financing costs. Would break the model: ARR slips, unfunded capex, Microsoft loss, GPU price fall. Sources: FY26 release and call. Update 6 Nov 2026: GPU debt $3.6bn stated near 6% (Microsoft), 9.0% Mackenzie, 9.51% CA Leasing; prepayments up to 90% of GPU capex on recent contracts; about $22mn per IT MW-year on 5-year contract.",
   "name": "IREN",
-  "next_report": "2026-11-05",
+  "next_report": "",
+  "next_report_note": "1Q FY27 reported 5 November 2026; next date not announced.",
   "segment": "neocloud",
   "thesis": "",
   "ticker": "IREN"

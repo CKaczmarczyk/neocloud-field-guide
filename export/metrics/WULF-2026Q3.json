@@ -1,0 +1,16 @@
+{
+  "active_mw": "102",
+  "contracted_mw": "839",
+  "date": "2026-11-06",
+  "debt_cost": "7.75% secured notes 2030 (Ba2/BB, prior row, not reconfirmed); Justified financing not priced",
+  "margin": "EBITDA -17% / operating -116%",
+  "name": "TeraWulf",
+  "notes": "Revenue +70% QoQ and revenue includes pass-through and fit-out; rent $46.0mn. Google backstop announced 4 Nov, size undisclosed. CB-4 first rent moved to Nov-Dec; Justified end date to 2Q28.",
+  "period": "2026Q3",
+  "rate": "~$197 per kW-month on Anthropic (derived, term average)",
+  "revenue_m": "76.2",
+  "segment": "developer",
+  "source": "TeraWulf Q3 release and deck, 6 Nov 2026",
+  "ticker": "WULF",
+  "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026071306/a_wulfearningsreleaseq32026.htm"
+}

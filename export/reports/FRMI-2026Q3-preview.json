@@ -1,0 +1,344 @@
+{
+  "brief": [
+    "Verdict ahead of the print: can it finance Phase 1 before the 31 December deadlines.",
+    "Kona: sign the lease and the debt together; lease conditions tied to your own financing are a trap."
+  ],
+  "changes": [
+    "Report date: release 7:00 a.m. ET, call 9:00 a.m. ET on 12 November (company, 12 October).",
+    "TensorWave lease (signed 9 August; 15 years, 222 MW, about $6.5bn) passed its 31 October closing date unclosed; project financing still open; neither side has terminated (3 November).",
+    "AMD credit support signed 13 October; size not disclosed.",
+    "MUFG turbine loan amended 16 October: 400 MW lease covenant waived, step-up amortization removed, $25mn fee, new syndicate.",
+    "Stock $3.72 (13 October) to about $1.57 (6 November); co-founder sold 7.66mn shares 3-5 November and is pushing for a sale; two directors won a majority of votes cast but not of shares outstanding on 30 October and hold over."
+  ],
+  "checks": "Built before results. Date from company release (12 October). 2Q26 figures, debt by facility, CIP, Phase 0-1 need, Texas Tech NTP from 10-Q and release on EDGAR, confirmed by a fresh subagent. Convert, MUFG amendment ($25mn fee, waiver, about $56mn amortization avoided) and TensorWave terms from 8-Ks and fact sheet, confirmed; 9 August signing date per 10-Q; lapse per 3 November release. Wording corrected on substantial doubt (alleviated by management plans) and director vote. Price $1.57 on 6 November confirmed (StockAnalysis). Not checked: consensus, broker targets, short interest (single source), insider sales. AMD support size undisclosed. Consensus thin and stale: Provisional.",
+  "consensus_thesis": "Brokers still rate Fermi a Buy as an option on scarce Texas power assets (about 1.5 GW of landed turbines, 6 GW of air permits, a signed 15-year TensorWave lease with AMD credit support), but at about $1.57 on 6 November, down from $3.72 on 13 October, with about 20% of float short (single source), substantial-doubt language in the 10-Q (which management says its plans alleviate) and the co-founder selling and pushing for a sale, the tape prices distress or heavy dilution.",
+  "date": "2026-11-09",
+  "headline": "3Q26 is a funding and survival test, not an earnings event: the $6.5bn TensorWave lease lapsed unclosed on 31 October for want of project financing, cash was $92mn at 30 June against about $2bn needed in 12 months, and the market cap (about $1.0bn) sits below book PP&E.",
+  "kind": "preview",
+  "kona": "Fermi is the cautionary case for gas-powered, behind-the-meter AI campuses: a signed lease with a big-name credit backstop still did not close because construction financing was a condition precedent, while turbine warehouse loans at 12-14% ran up the clock. For Kona the lesson is to line up project debt (or a tenant prepayment) in parallel with the lease rather than after it, avoid lease closing conditions that hinge on its own financing, and keep equipment debt short of covenants tied to signing a lease by a fixed date.",
+  "kpis": [
+    {
+      "consensus": "$2.4-6.0mn (stale)",
+      "current": "",
+      "metric": "Revenue",
+      "note": "No effective lease",
+      "prior": "nil (2Q26)"
+    },
+    {
+      "consensus": "EBITDA -$25.5mn (MarketScreener)",
+      "current": "",
+      "metric": "Operating loss",
+      "note": "",
+      "prior": "$26.8mn (2Q); $193.0mn 1H"
+    },
+    {
+      "consensus": "-$0.07 to -$0.09",
+      "current": "",
+      "metric": "EPS",
+      "note": "Two aggregators",
+      "prior": "-$0.04"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Capex (PP&E)",
+      "note": "",
+      "prior": "$185.0mn (2Q); $626.2mn 1H"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Cash incl. restricted",
+      "note": "Plus about $382mn net convert proceeds in July",
+      "prior": "$91.7mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Debt",
+      "note": "Plus $431mn convert in July",
+      "prior": "$536.9mn gross"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Construction in progress",
+      "note": "",
+      "prior": "$1,539.2mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Power energized",
+      "note": "First 210 MW guided 1 July 2027",
+      "prior": "0 MW; about 1.5 GW landed"
+    }
+  ],
+  "monitor": [
+    "TensorWave closing: new date, open conditions, and lender term sheets against the roughly $3bn Phase 0-1 need.",
+    "Cash at 30 September, runway and whether substantial-doubt language remains in the 3Q 10-Q.",
+    "31 December deadlines: Keystone loan prepayment trigger and Texas Tech notice to proceed (needs a 200 MW lease and Phase 1 financing)."
+  ],
+  "name": "Fermi America",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "Project-level financing is a closing condition of the TensorWave lease, which lapsed on 31 October despite AMD credit support from 13 October. Which lenders have issued term sheets, for how much against the roughly $3bn Phase 0-1 need, and what new closing date has TensorWave agreed?",
+      "style": "credit",
+      "why": "Tests the pillar everything else depends on."
+    },
+    {
+      "question": "The 10-Q cites about $2bn needed in 12 months. What was cash at 30 September after about $382mn net convert proceeds and the $25mn MUFG fee, how many months of runway is that, and will the substantial-doubt language be repeated?",
+      "style": "credit",
+      "why": "Sets dilution risk and the equity's value."
+    },
+    {
+      "question": "The $77.3mn Keystone loan must be prepaid without an approved customer agreement by 31 December, and the $444.9mn MUFG loan at about 12% matures 10 August 2027. Is a waiver or refinancing agreed, and who joins the new MUFG syndicate?",
+      "style": "credit",
+      "why": "Near-dated secured debt sits ahead of the convert."
+    },
+    {
+      "question": "Texas Tech requires notice to proceed by 31 December, conditioned on a 200 MW Phase 1 lease and financing. If TensorWave has not closed, what happens to the site rights, and has an extension been agreed?",
+      "style": "equity",
+      "why": "The land is the core asset in the bull floor."
+    },
+    {
+      "question": "The 13 August release promised about 200 MW of commercial power within six months, but the call said first power of 210 MW on 1 July 2027. Which is right, is the Phase One EPC contract signed, and are the Hillcore definitive agreements (due about 9 November) done?",
+      "style": "equity",
+      "why": "Management credibility on delivery dates."
+    },
+    {
+      "question": "The co-founder claims indications of $10-20bn enterprise value were rebuffed. Is the board running a strategic review, and what is the status of the EDNY subpoena and SEC request?",
+      "style": "equity",
+      "why": "Sale optionality versus governance risk."
+    }
+  ],
+  "risks": [
+    "Lease never closes; no Phase 1 financing.",
+    "Liquidity and going concern; dilutive recapitalization.",
+    "31 December Keystone and Texas Tech deadlines; MUFG maturity August 2027.",
+    "Governance fight and regulatory probes (EDNY subpoena, SEC request).",
+    "Timeline credibility (200 MW in six months vs first power July 2027)."
+  ],
+  "sections": [
+    {
+      "body": "Developing Project Matador, a behind-the-meter gas-power and AI data center campus near Amarillo, Texas, on a 99-year Texas Tech ground lease, with an ambition of about 17 GW (gas turbines, a Hillcore-funded gas plant, grid, solar and later nuclear). Earns modified-net lease rent with 2.5% escalators, fuel passed through; TensorWave fact sheet guides about 75-80% project NOI margin. Pre-revenue; funded so far by the IPO, 12-17% equipment loans and a $431mn convert.",
+      "title": "Business model"
+    },
+    {
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus or estimate",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 EPS",
+            "-$0.09 / -$0.07",
+            "MarketScreener; FXEmpire, 9 Nov",
+            "2Q -$0.04 vs -$0.06 consensus"
+          ],
+          [
+            "3Q26 revenue",
+            "$6.0mn / $2.4mn (stale)",
+            "Same",
+            "2Q nil"
+          ],
+          [
+            "FY26 EPS",
+            "-$0.28 to -$0.50",
+            "StockAnalysis 16 Oct; MarketScreener",
+            "1H -$0.34"
+          ],
+          [
+            "FY27 revenue",
+            "About $664mn (stale)",
+            "MarketScreener",
+            "Revenue guided from late 3Q or 4Q 2027"
+          ],
+          [
+            "Targets",
+            "Average $16.6-18.4; range $6-35",
+            "StockAnalysis, MarketBeat, Barchart (pre-lapse)",
+            "Cantor cut to $8 on 16 Oct"
+          ],
+          [
+            "Share price",
+            "About $1.57; about $1.0bn market cap",
+            "6 Nov close (two sources)",
+            "$3.72 on 13 Oct; 52-week low $1.44"
+          ],
+          [
+            "Short interest",
+            "66.8mn shares, 19.6% of float",
+            "StockAnalysis, about 26 Oct (single source)",
+            ""
+          ],
+          [
+            "Convert",
+            "No quote found",
+            "",
+            "5% 2031, conversion about $9.52"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 TensorWave closes",
+            "Lease becomes the financing template",
+            "Status, new closing date, open conditions",
+            "Texas Capital, Stifel, company"
+          ],
+          [
+            "P2 Funding without wipe-out",
+            "Project debt and partners fund construction",
+            "Cash at 30 Sep; term sheets; going-concern language",
+            "Doubted by Cantor, co-founder"
+          ],
+          [
+            "P3 Hard-asset floor",
+            "PP&E, turbines, permits and land support value",
+            "Impairment tests; equipment monetization",
+            "Implicit bull case; market prices below book"
+          ],
+          [
+            "P4 Power timeline",
+            "First 210 MW by 1 July 2027; 640 MW by 4Q27",
+            "EPC contract; Hillcore documents; MPS units",
+            "Company"
+          ],
+          [
+            "P5 Strategic optionality",
+            "A sale could crystallize value",
+            "Board comment on strategic review",
+            "Co-founder (single, interested source)"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "Signed $6.5bn, 15-year lease with AMD credit support",
+            "Lease not effective; financing is the binding constraint"
+          ],
+          [
+            "650 MW expansion option and AMD framework",
+            "Substantial-doubt language (alleviated by plans); about $2bn need vs $1bn market cap"
+          ],
+          [
+            "About 1.5 GW of landed turbines; 6 GW air permits",
+            "Secured debt at 12-14%; MUFG matures August 2027"
+          ],
+          [
+            "MUFG waiver removed about $56mn of near-term amortization",
+            "31 December Keystone and Texas Tech deadlines"
+          ],
+          [
+            "Takeover optionality",
+            "Board fight, insider selling, EDNY subpoena and SEC request"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "(a) Is the TensorWave delay paperwork or fatal (company said on 22 September only the guaranty remained; on 3 November financing was still open). (b) Sale now versus standalone plan. (c) Can a recapitalization avoid heavy dilution with secured lenders ahead and a change-of-control put on the convert. (d) Is the power timeline real.",
+      "title": "Live debates"
+    },
+    {
+      "body": "Report date (Investing.com shows 17 November; company says 12 November); FY27 EPS -$0.01 vs +$0.31; insider ownership 2.8% vs 47%; Yorkville facility status (slides say expired 30 September undrawn; 10-Q cites a September 2027 maturity); net convert proceeds $417mn before vs $382mn after the capped call.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: cash $62.5mn plus $29.2mn restricted; debt $536.9mn (MUFG $444.9mn at about 12.2%, Keystone $77.3mn at 14.1%, CLMG $14.7mn); equity $1.03bn; Siemens obligations about $142.6mn through 2028. Since: $431.25mn 5% convert due 2031 (July); MUFG amendment with $25mn fee (October). No equity, DOE loan or project financing found on EDGAR to 5 November.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See questions: lender term sheets and new closing date; cash and runway; Keystone and MUFG; Texas Tech notice to proceed; power timeline and Hillcore; strategic review and probes.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "Fermi 3Q26 date",
+      "url": "https://www.newswire.com/news/fermi-announces-third-quarter-2026-earnings-release-and-call-date"
+    },
+    {
+      "title": "2Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000051/frmi-20260630.htm"
+    },
+    {
+      "title": "2Q26 release",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000207177826000046/fermiq22026erex_991.htm"
+    },
+    {
+      "title": "Convert 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000121390026078366/ea0298074-8k_fermi.htm"
+    },
+    {
+      "title": "TensorWave fact sheet",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000121390026109227/ea030854601ex99-1.htm"
+    },
+    {
+      "title": "MUFG amendment 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026109980/ea0308831-8k_fermi.htm"
+    },
+    {
+      "title": "Annual meeting 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026115928/ea0310920-8k_fermi.htm"
+    },
+    {
+      "title": "Lease update, 3 Nov",
+      "url": "https://www.stocktitan.net/news/FRMI/fermi-provides-update-on-lease-agreement-as-parties-work-toward-s55mo4hurwnb.html"
+    },
+    {
+      "title": "CEO letter, 21 Oct",
+      "url": "https://www.stocktitan.net/news/FRMI/fermi-provides-letter-to-shareholders-from-ceo-lee-mc-intire-on-3gf2atfjbage.html"
+    },
+    {
+      "title": "AMD credit support",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/13/stock-market-today-oct-13-fermi-surges-14-on-amd-credit-support-for-project-matador/"
+    },
+    {
+      "title": "MarketScreener calendar",
+      "url": "https://www.marketscreener.com/quote/stock/FERMI-INC-196211958/calendar/"
+    },
+    {
+      "title": "StockAnalysis forecast",
+      "url": "https://stockanalysis.com/stocks/frmi/forecast/"
+    },
+    {
+      "title": "Insider sale",
+      "url": "https://www.investing.com/news/insider-trading-news/fermi-director-toby-neugebauer-sells-13-million-in-shares-93CH-5006282"
+    },
+    {
+      "title": "Cantor target cut",
+      "url": "https://www.marketbeat.com/instant-alerts/analyst-fermi-nasdaq-frmi-stock-gets-price-target-reduction-from-cantor-fitzgerald-2026-10-16/"
+    }
+  ],
+  "ticker": "FRMI",
+  "verdict": "Preview",
+  "versus": "Pre-results. Pre-revenue; 2Q EPS -$0.04 vs -$0.06 consensus. 3Q EPS consensus -$0.07 to -$0.09 (FXEmpire, MarketScreener); revenue estimates ($2-6mn) look stale given no effective lease. Broker targets ($16.6-18.4 average) predate the lapse."
+}

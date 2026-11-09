@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "OpenAI Effingham County campus has a Georgia Power contract for 3.2 GW delivered 2028 to 2032, with the utility able to cut up to 1,000 MW at peak.",
+      "company": "OpenAI / Georgia Power",
+      "date": "2026-11-06",
+      "direction": "supports",
+      "numbers": "Grid power at gigawatt scale arrives late and partly interruptible.",
+      "segment": "energy",
+      "source": "24/7 Wall St. via Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-says-pay-data-centers-135128479.html"
+    },
+    {
       "claim": "Amazon's energy contracts accounted as derivatives rose to about 690mn MWh with an ~18-year weighted duration, from 270mn MWh at 30 June; Jassy said capacity comes in blocks of hundreds of MW up to a gigawatt reserved well in advance.",
       "company": "Amazon",
       "date": "2026-10-30",
@@ -130,5 +140,5 @@
   "status": "strengthening",
   "summary": "Utility dates are slipping and the gap is now costing signed deals: Microsoft dropped Nscale's UK flagship over a 2030s grid date, and Galaxy's 830 MW cannot be leased until it energizes in late 2028. Oracle's trucked gas shows the same gap in the US, and Anthropic's S-1 now names power connection as the main risk to its own sites, with a five-year bottleneck expected per one account. The counterview is that US grid additions surge from about 2028.",
   "title": "Power arriving after the chips",
-  "updated": "2026-11-02"
+  "updated": "2026-11-09"
 }

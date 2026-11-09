@@ -1,0 +1,16 @@
+{
+  "active_mw": "93",
+  "contracted_mw": "~300",
+  "date": "2026-11-06",
+  "debt_cost": "9.51% stated, 10.38% effective (GPU Financing 3.0, parent-guaranteed, unrated)",
+  "margin": "EBITDA 29% / operating -82%",
+  "name": "IREN",
+  "notes": "Fiscal 1Q FY27. AI cloud $200mn of revenue. Over $4bn ARR moved to January, may run to February. Contracted MW is the 0.3GW program behind the ARR target; 0.8GW target by end 2027 not all contracted. First row, so no prior-quarter comparison.",
+  "period": "2026Q3",
+  "rate": "~$22mn per IT MW-year on 5-year; over $40mn on short term",
+  "revenue_m": "228",
+  "segment": "neocloud",
+  "source": "IREN release and 10-Q, 5 Nov 2026",
+  "ticker": "IREN",
+  "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm"
+}

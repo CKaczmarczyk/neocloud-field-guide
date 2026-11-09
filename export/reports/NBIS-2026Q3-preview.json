@@ -1,0 +1,363 @@
+{
+  "brief": [
+    "Verdict ahead of the print: delivery at Vineland and the funding sequence, not revenue.",
+    "Kona: IG-backed prepayments plus asset-backed debt is the template; permitting discipline is now a tenant requirement."
+  ],
+  "changes": [
+    "Report date: before the US open on 12 November, call 8:00 a.m. ET (company, 30 October).",
+    "Stock $129.49 on 6 November, from $299.86 high in June; fell about 15% on 5 November on the Texas moratorium threat and a Bloomberg report that Microsoft tightened oversight of Nebius, IREN and Nscale projects.",
+    "$5.0bn converts priced 19 August, $5.75bn closed 24 August with greenshoe (0.50% 2030, 4.50% 2034; conversion about $313-325) and $800mn of older notes swapped for about 15.8mn shares.",
+    "$3.5bn 364-day secured Citi facility on 22 October at SOFR+275bp stepping up to 350bp; $775mn asset-backed loan at SOFR+250bp in July.",
+    "Targets cut: Citi $324 to $265 (Buy), Piper $237 to $185 (Neutral); BofA Buy $310; Morgan Stanley Equal-weight $144."
+  ],
+  "checks": "Built before results. Report date from company release (30 October). 2Q26 and 3Q25 figures, ARR, prepayment guide, ATM remaining and $ per MW from 6-K exhibits on EDGAR, confirmed by a fresh subagent. Converts, $775mn ABS (matures 31 October 2030) and Citi facility confirmed from company releases. Price $129.49 on 6 November and 5 November -14.9% confirmed (StockAnalysis). FY26 guides (revenue, capex, YE ARR, MW) from 2Q call recap, not reconfirmed. Consensus from Yahoo, Zacks, StockAnalysis, Equibles; TIKR capex and net debt single source. Microsoft oversight from a secondary write-up of Bloomberg; Vineland fine not reconfirmed. No convert quote found.",
+  "consensus_thesis": "Investors own Nebius for hyperscaler-anchored demand (Microsoft $17.4-19.4bn, Meta up to about $27bn, over $40bn of commitments), a 41% adjusted EBITDA margin and prepayment-heavy funding that makes its credit look unlike CoreWeave's; at $129.49 on 6 November (down from $299.86 in June, about 17% of shares short, Burry publicly short) the market is pricing delivery and funding risk at Vineland and neocloud contagion, not a demand problem.",
+  "date": "2026-11-09",
+  "headline": "3Q26 revenue (consensus about $906mn, +56% QoQ) is not the test: the stock trades on whether Vineland delivers for Microsoft, how the 364-day Citi facility is taken out, and whether the year-end ARR guide of $7-9bn and a first 2027 guide hold.",
+  "kind": "preview",
+  "kona": "Nebius shows the funding path a GPU owner can use when its tenants are investment grade: prepayments covering 50-60% of capex, asset-backed loans at SOFR+250-275bp, and converts. If those spreads hold through a neocloud sell-off, hosting an IG-backed GPU owner is a financeable model for Kona; if Microsoft's tighter oversight of third-party sites becomes a pattern, Kona should expect hyperscaler tenants to demand site access, delivery penalties and permitting proof (Vineland was fined over $1mn for 62 unpermitted generators), which favors getting Argentine permits and gas supply fully documented before signing.",
+  "kpis": [
+    {
+      "consensus": "about $906mn (Yahoo, 17); Zacks $917mn",
+      "current": "",
+      "metric": "Revenue",
+      "note": "+56% QoQ implied",
+      "prior": "$582.3mn (2Q26); 3Q25 $146.1mn"
+    },
+    {
+      "consensus": "n.a.; FY guide about 40% margin",
+      "current": "",
+      "metric": "Adj. EBITDA",
+      "note": "Equibles model $374mn (single source)",
+      "prior": "$236.2mn (41%)"
+    },
+    {
+      "consensus": "Wolfe $4.26bn; Equibles $4.1bn",
+      "current": "",
+      "metric": "ARR",
+      "note": "YE guide $7-9bn; Wolfe YE $6.3bn",
+      "prior": "$3.0bn (June)"
+    },
+    {
+      "consensus": "FY about $23.2bn (TIKR, single source)",
+      "current": "",
+      "metric": "Capex",
+      "note": "FY guide $20-25bn",
+      "prior": "$5,657mn (2Q); $8,130mn 1H"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Connected MW",
+      "note": "YE guide 800 MW-1 GW",
+      "prior": "not disclosed at 30 June"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Contracted power",
+      "note": "raised from 4+ GW",
+      "prior": "target 5 GW by YE26"
+    },
+    {
+      "consensus": "YE net debt about $14bn (TIKR, single source)",
+      "current": "",
+      "metric": "Debt",
+      "note": "plus converts, ABS and Citi since June",
+      "prior": "$8,546mn"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Cash",
+      "note": "",
+      "prior": "$8,042mn plus $1,056mn restricted"
+    },
+    {
+      "consensus": "FY prepayments over $9bn (guide)",
+      "current": "",
+      "metric": "Deferred revenue (prepayments)",
+      "note": "",
+      "prior": "$5,975mn"
+    }
+  ],
+  "monitor": [
+    "Connected and active MW at 30 September against 800 MW-1 GW by year-end, and Vineland status for Microsoft.",
+    "Take-out of the Citi 364-day facility: size, advance rate and spread of the asset-backed loan against the $40bn of commitments.",
+    "ARR at 30 September (single-analyst views $4.1-4.3bn) and whether $7-9bn year-end ARR and $20-25bn capex hold; first 2027 guide."
+  ],
+  "name": "Nebius",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "Citi's $3.5bn facility is 364-day secured debt at SOFR+275bp stepping to 350bp. How much is drawn, against what collateral, what triggers the step-up, and what takes it out: size, advance rate, date and spread of the asset-backed loan against the $40bn of commitments, compared with $775mn at SOFR+250bp?",
+      "style": "credit",
+      "why": "Tests the funding pillar; a 364-day bridge without a named take-out is the bears' main point."
+    },
+    {
+      "question": "You guided over $9bn of 2026 prepayments with $5.98bn deferred revenue at 30 June. What was collected in 3Q, and how much of second-half capex (about $12-17bn left of the $20-25bn guide) is funded by prepayments versus new debt?",
+      "style": "credit",
+      "why": "Prepayments are what make Nebius's credit different from CoreWeave's."
+    },
+    {
+      "question": "12.3mn ATM shares remained at 30 June and the August exchange issued about 15.8mn more. How many ATM shares were sold since, at what price, and is equity in the 2027 plan with the stock near $130?",
+      "style": "equity",
+      "why": "Dilution versus debt sets the cost of the next dollar."
+    },
+    {
+      "question": "Vineland had stop-work orders in August, a NJ DEP fine over $1mn for 62 unpermitted generators on 22 September, and Microsoft staff on site per Bloomberg on 5 November. Is any Microsoft tranche late, and are delay credits accruing?",
+      "style": "equity",
+      "why": "Delivery to the anchor customer is the core execution pillar."
+    },
+    {
+      "question": "What were connected and active MW and ARR at 30 September, and are you narrowing the $7-9bn year-end ARR range given 2Q contracts only bill from late 4Q?",
+      "style": "equity",
+      "why": "FY26 revenue consensus already sits near the top of guidance."
+    },
+    {
+      "question": "2Q D&A of about $260mn was about 45% of revenue against a 41% EBITDA margin. What useful life do you use for Blackwell and Rubin, and what are 2027 revenue, capex (consensus about $29bn) and margin guides?",
+      "style": "equity",
+      "why": "Judges profitability on operating margin, not EBITDA."
+    }
+  ],
+  "risks": [
+    "Vineland delivery and permitting on Microsoft's only site.",
+    "Refinancing of the 364-day Citi facility.",
+    "Neocloud credit contagion from CoreWeave.",
+    "ARR guide slip as Q2 contracts start billing only late 4Q.",
+    "Depreciation absorbing EBITDA; GAAP losses widening."
+  ],
+  "sections": [
+    {
+      "body": "Full-stack AI GPU cloud; AI cloud was $575mn of $582mn 2Q26 revenue. Revenue = connected MW x price per MW-year (about $20-25mn per MW-year on multi-year deals, $40-50mn short-term, per 2Q call). Funded by customer prepayments, converts, ATM equity, secured and asset-backed debt and operating cash flow. Anchors: Microsoft (Vineland, NJ) and Meta (up to about $27bn, tranches from early 2027).",
+      "title": "Business model"
+    },
+    {
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus or estimate",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q26 revenue",
+            "About $906mn (range $877-943mn); Zacks $917mn",
+            "Yahoo, about 30 Oct; Zacks, 9 Nov",
+            "2Q $582.3mn; 3Q25 $146.1mn"
+          ],
+          [
+            "3Q26 EPS",
+            "-$0.61 / -$1.24 (basis unreconciled)",
+            "Zacks; Yahoo (5 analysts)",
+            "2Q adj. net loss -$33.2mn"
+          ],
+          [
+            "Adj. EBITDA",
+            "n.a. as consensus",
+            "",
+            "2Q $236.2mn; FY guide about 40%"
+          ],
+          [
+            "FY26 revenue",
+            "About $3.35bn; Earnings Whispers $3.48bn",
+            "Yahoo, StockAnalysis; EW, 4 Nov",
+            "Guide $3.0-3.4bn"
+          ],
+          [
+            "FY27 revenue",
+            "About $12.2bn (range $8.8-18.0bn)",
+            "Yahoo, 22 analysts",
+            "No guide yet"
+          ],
+          [
+            "Capex",
+            "FY26 about $23.2bn; FY27 about $29.1bn",
+            "TIKR, 26 Oct (single source)",
+            "Guide $20-25bn"
+          ],
+          [
+            "YE26 ARR",
+            "Wolfe $6.3bn; Equibles base $7.2bn",
+            "24/7 Wall St, 21 Aug; Equibles",
+            "Guide $7-9bn"
+          ],
+          [
+            "Share price",
+            "$129.49; about $35.5bn market cap",
+            "StockAnalysis, 6 Nov",
+            "52-week $73.52-299.86"
+          ],
+          [
+            "Short interest",
+            "47.64mn shares, about 17%",
+            "FINRA via Equibles, 15 Oct",
+            "Prior 44.70mn"
+          ],
+          [
+            "Converts",
+            "No trading quote found",
+            "",
+            "0.50% 2030 conv. about $313; 4.50% 2034 about $325"
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Demand and pricing",
+            "Demand exceeds supply; price per MW firm",
+            "Revenue vs about $906mn; ARR vs $4.1-4.3bn; new-deal $ per MW",
+            "BofA, Citi, Zacks"
+          ],
+          [
+            "P2 Delivery",
+            "Capacity comes on as promised",
+            "Connected MW at 30 Sep; 800 MW-1 GW by YE; Vineland",
+            "Morgan Stanley (main uncertainty), DA Davidson"
+          ],
+          [
+            "P3 Funding without heavy dilution",
+            "Prepayments and IG-backed debt fund capex",
+            "Prepayments YTD; Citi take-out; ABS size and spread; ATM use",
+            "Bulls vs CoreWeave-contagion bears"
+          ],
+          [
+            "P4 Unit economics",
+            "About 40% EBITDA margin converts to returns",
+            "EBITDA margin; D&A vs revenue; GAAP loss",
+            "Cavenagh (Sell) vs management"
+          ],
+          [
+            "P5 Anchor quality",
+            "Microsoft and Meta de-risk the book",
+            "Microsoft delivery and terms; Meta start early 2027",
+            "Bulls vs Bloomberg oversight report"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "ARR from $551mn to $3.0bn in three quarters",
+            "Capex $20-25bn; negative FCF for years per consensus"
+          ],
+          [
+            "41% adj. EBITDA margin (50% in AI cloud)",
+            "Net debt heading to about $14bn YE26 (single source)"
+          ],
+          [
+            "Over $40bn commitments; prepayments 50-60% of new-deal capex",
+            "364-day Citi facility adds refinancing risk"
+          ],
+          [
+            "$8bn cash at June; low-coupon converts",
+            "Vineland execution on Microsoft's only site"
+          ],
+          [
+            "Pricing rising; Nvidia 9.3% holder",
+            "D&A absorbs most of FY27 EBITDA; FY27 EPS about -$6.16"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "(a) Year-end ARR of $7-9bn versus Wolfe $6.3bn and Equibles $7.2bn. (b) Microsoft as de-risking anchor or concentration and oversight risk. (c) Whether CoreWeave's credit stress reaches Nebius's funding cost. (d) First 2027 guide against about $12.2bn consensus with a very wide range.",
+      "title": "Live debates"
+    },
+    {
+      "body": "FY26 revenue consensus $3.35bn vs $3.48bn; 3Q EPS -$0.61 vs -$1.24; YE26 net debt about $14bn vs $34bn (TIKR articles conflict); short interest about 17% vs 27.7% (unverified); the 5 November drop -15% close vs -19% reported.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "At 30 June: cash $8.04bn plus $1.06bn restricted, debt $8.55bn, deferred revenue $5.98bn. Since: $775mn ABS at SOFR+250bp (July); $5.75bn converts (August) less $800mn exchanged for about 15.8mn shares; $3.5bn Citi 364-day facility (October, draw undisclosed). Rough pro-forma gross debt about $14.3bn before any Citi draw (own arithmetic, unverified). Management says larger asset-backed loans against IG contracts are still to come.",
+      "title": "Funding and balance sheet"
+    },
+    {
+      "body": "See questions: Citi take-out and ABS terms; prepayments collected in 3Q; ATM use; Vineland and Microsoft delivery; MW and ARR at 30 September; D&A life and 2027 guide.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "neocloud",
+  "sources": [
+    {
+      "title": "Nebius 3Q26 date announcement",
+      "url": "https://nebius.com/newsroom/nebius-group-announces-date-of-third-quarter-2026-results-and-conference-call"
+    },
+    {
+      "title": "2Q26 release (6-K ex99-1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-1.htm"
+    },
+    {
+      "title": "2Q26 shareholder letter (ex99-2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm"
+    },
+    {
+      "title": "3Q25 release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm"
+    },
+    {
+      "title": "Convert pricing",
+      "url": "https://nebius.com/newsroom/nebius-group-announces-pricing-of-upsized-private-offering-of-5-0-billion-of-convertible-senior-notes"
+    },
+    {
+      "title": "Citi $3.5bn facility",
+      "url": "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi"
+    },
+    {
+      "title": "$775mn secured financing",
+      "url": "https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout"
+    },
+    {
+      "title": "Yahoo analysis",
+      "url": "https://finance.yahoo.com/quote/NBIS/analysis/"
+    },
+    {
+      "title": "StockAnalysis forecast",
+      "url": "https://stockanalysis.com/stocks/nbis/forecast/"
+    },
+    {
+      "title": "Equibles preview",
+      "url": "https://equibles.com/research/nebius-group-nbis-q3-2026-earnings-preview-and-forecast"
+    },
+    {
+      "title": "TIKR, Texas vote",
+      "url": "https://www.tikr.com/blog/nebius-sinks-another-19-as-texas-vote-hits-data-centers-the-hurdle-is-going-to-get-higher"
+    },
+    {
+      "title": "Microsoft oversight (secondary)",
+      "url": "https://tech-insider.org/microsoft-neocloud-oversight-nebius-iren-nscale-bloomberg-2026/"
+    },
+    {
+      "title": "WHYY, Vineland fine",
+      "url": "https://whyy.org/articles/vineland-data-center-fined/"
+    },
+    {
+      "title": "2Q26 call highlights",
+      "url": "https://www.nasdaq.com/articles/nebius-group-q2-earnings-call-highlights"
+    }
+  ],
+  "ticker": "NBIS",
+  "verdict": "Preview",
+  "versus": "Pre-results. 3Q revenue consensus about $906mn (Yahoo, 17 analysts; Zacks $917mn) against 2Q $582mn; FY26 guide $3.0-3.4bn with consensus about $3.35bn near the top; FY27 consensus about $12.2bn with a range of $8.8-18.0bn."
+}

@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "SpaceX GPU lease rent is one-twentieth of financed cost per quarter plus a fixed rate, over about five years; Apollo deals total $75B versus $44.9B of neocloud chip-backed debt since 2023 (single source, The Information via FourWeekMBA).",
+      "company": "Apollo / SpaceX",
+      "date": "2026-11-08",
+      "direction": "supports",
+      "numbers": "Capital is flowing to the strongest credits (SpaceX, Anthropic) at scale while smaller neocloud credits widen.",
+      "segment": "financing",
+      "source": "FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-apollos-75b-chip-deals-for-spacex-anthropic-top-neoclouds/"
+    },
+    {
+      "claim": "CFO: an investment-grade tenant is absolutely critical to preserve spread; Google's support for the $19bn Anthropic lease applies from lease commencement via mandatory assumption or debt-reducing termination payment, falling away on Anthropic investment-grade ratings.",
+      "company": "TeraWulf",
+      "date": "2026-11-06",
+      "direction": "supports",
+      "numbers": "Size of the support undisclosed; Justified debt not yet priced. Automated transcript.",
+      "segment": "developer",
+      "source": "TeraWulf 3Q26 call",
+      "url": "https://gloom.sh/stocks/wulf/transcripts/q3-2026"
+    },
+    {
+      "claim": "GPU debt without an investment-grade block priced at stated 9.0% and 9.51%, parent-guaranteed; non-recourse private placement stated 5.96%.",
+      "company": "IREN",
+      "date": "2026-11-05",
+      "direction": "supports",
+      "numbers": "Effective rates 10.7%, 10.38% and 7.09%.",
+      "segment": "neocloud",
+      "source": "IREN 10-Q, Note 19",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm"
+    },
+    {
       "claim": "CoreWeave moved certain Core Scientific leases into CW SPV, with CoreWeave still primary obligor; the 10-Q says recourse depends on its condition at default, and no analyst asked on the call.",
       "company": "Core Scientific",
       "date": "2026-11-05",
@@ -19,6 +49,16 @@
       "segment": "developer",
       "source": "HUT 3Q26 call",
       "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/hut-8-hut-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Fermi and TensorWave did not close their lease by 31 October; open conditions include construction-level project financing, guaranties and board approvals; neither party has terminated.",
+      "company": "Fermi America",
+      "date": "2026-11-03",
+      "direction": "supports",
+      "numbers": "A signed lease with a backstopped tenant did not turn into debt; shares fell about 7% to $2.05.",
+      "segment": "energy",
+      "source": "Fermi press release",
+      "url": "https://www.valuethemarkets.com/news/press-releases/fermi-provides-update-on-lease-agreement-as-parties-work-tow"
     },
     {
       "claim": "Cipher's Barber Lake overruns shows how lease structure allocates risk: hyperscaler leases have capex allowances, while Cipher bears the first $359.3mn at the Fluidstack site, in exchange for a 10-year AI lab term; Google's warrants carry a value test at lease commencement.",
@@ -278,5 +318,5 @@
   "status": "strengthening",
   "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. This week SpaceX's about $40B Apollo lease confirmed Musk's claim that a borrower with non-AI revenue can still raise at scale (rate undisclosed), and Oracle's pledge to cap borrowing cut its CDS by 22 bps in a day, which shows credit now responds to balance-sheet discipline. Status unchanged.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-11-05"
+  "updated": "2026-11-09"
 }

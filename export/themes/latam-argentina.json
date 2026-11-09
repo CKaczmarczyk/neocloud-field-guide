@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Country risk closed at 852 bps on 4 November, a 2026 high, up 65 bps in three sessions from 787 on 30 October.",
+      "company": "Argentina",
+      "date": "2026-11-04",
+      "direction": "against",
+      "numbers": "Up from a 402 low in July; Argentina LNG still targets FID on 26 November.",
+      "segment": "financing",
+      "source": "Rava Bursatil",
+      "url": "https://www.rava.com/cotizaciones/historico/riesgo-pais/2026/11/04/"
+    },
+    {
       "claim": "AP: Milei pitches a regulation-free AI haven; Pampa seeks developers for a gas-powered site near Vaca Muerta and Crusoe sought talks with energy officials.",
       "company": "Argentina",
       "date": "2026-11-02",
@@ -107,7 +117,7 @@
   "order": 8,
   "question": "Is Argentina, or Latin America, becoming investable for AI compute?",
   "status": "weakening",
-  "summary": "Moved to weakening from mixed because the Argentine side is what changed and it worsened: country risk closed at 787 bps on 30 October, up 180 in a month and 385 from July, and analysts say market access has not returned, ahead of a 2027 election investors are waiting on. The offsets are official and not yet approved: EXIM may raise its line to $10B, DFC is studying about $20B, Argentina LNG targets FID on 26 November. The region remains better than the country, with Crusoe in Paraguay; Milei's no-regulation pitch has drawn visitors but Stargate is still only a letter of intent and the Super RIGI awaits the Senate. An LNG FID, an EXIM charter renewal or a Senate vote would argue for moving back.",
+  "summary": "Still weakening: country risk rose again to 852 bps on 4 November, a 2026 high, from 787 on 30 October and 402 in July, ahead of a 2027 election investors are waiting on. The offsets are official and not yet approved: EXIM's up to $6B LNG offer needs board approval in 2027, DFC is studying about $20B, Argentina LNG targets FID on 26 November. The region remains better than the country, with Crusoe in Paraguay; Stargate Argentina is still only a letter of intent and the Super RIGI awaits the Senate. The US midterm backlash is a relative plus for offshore sites but does not lower Argentine borrowing costs; an LNG FID or a Senate vote would argue for moving back.",
   "title": "Argentina and Latin America",
-  "updated": "2026-11-02"
+  "updated": "2026-11-09"
 }

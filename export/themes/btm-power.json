@@ -11,6 +11,53 @@
       "url": "https://www.marketbeat.com/earnings/reports/2026-11-5-core-scientific-inc-stock/"
     },
     {
+      "claim": "NTT DATA will deploy 900 MW of Bloom fuel cells as primary on-site power across data centers, first shipments 2027; Bloom calls it its largest international project.",
+      "company": "Bloom Energy",
+      "date": "2026-11-05",
+      "direction": "supports",
+      "numbers": "No price or sites; the same-day Google Wyoming 702 MW item reused an existing AEP order; Bloom fell 16% to $167.52 on post-midterm fears.",
+      "segment": "energy",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/08/bloom-energy-stock-fell-16-on-the-same-day-2-giant-data-center-deals-named-it-is-it-a-buy/"
+    },
+    {
+      "claim": "Williams expects to announce one or two more behind-the-meter power projects by year-end, larger, with longer terms; signed capacity is 2,588 MW.",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
+    },
+    {
+      "claim": "Williams holds about $5.9bn of equipment commitments for potential projects; the CFO cited cancellation terms and saw no strong link to the 6 GW-plus opportunity set.",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "neutral",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
+    },
+    {
+      "claim": "Partner pricing has moved from the 6.35% of the July Blackstone JV with 10-year Treasuries, per the Williams CFO (no direction stated).",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "neutral",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
+    },
+    {
+      "claim": "The gas-powered Project Matador lease with TensorWave missed its 31 October close for want of project financing.",
+      "company": "Fermi America",
+      "date": "2026-11-03",
+      "direction": "against",
+      "numbers": "Shows BTM gas campuses can stall on financing, not equipment or permits.",
+      "segment": "energy",
+      "source": "Fermi press release",
+      "url": "https://www.valuethemarkets.com/news/press-releases/fermi-provides-update-on-lease-agreement-as-parties-work-tow"
+    },
+    {
       "claim": "Cipher is developing gas laterals for up to 2.5 GW, in talks on about 1 GW; an independent power producer would supply equipment and sell to the tenant under a PPA, with yields expected in line with grid sites.",
       "company": "Cipher Digital",
       "date": "2026-11-02",
@@ -183,33 +230,6 @@
       "segment": "energy",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=GSMRhkbV2m4"
-    },
-    {
-      "claim": "Williams expects to announce one or two more behind-the-meter power projects by year-end, larger, with longer terms; signed capacity is 2,588 MW.",
-      "company": "Williams",
-      "date": "2026-11-03",
-      "direction": "supports",
-      "segment": "energy",
-      "source": "Williams 3Q26 call",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
-    },
-    {
-      "claim": "Williams holds about $5.9bn of equipment commitments for potential projects; the CFO cited cancellation terms and saw no strong link to the 6 GW-plus opportunity set.",
-      "company": "Williams",
-      "date": "2026-11-03",
-      "direction": "neutral",
-      "segment": "energy",
-      "source": "Williams 3Q26 call",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
-    },
-    {
-      "claim": "Partner pricing has moved from the 6.35% of the July Blackstone JV with 10-year Treasuries, per the Williams CFO (no direction stated).",
-      "company": "Williams",
-      "date": "2026-11-03",
-      "direction": "neutral",
-      "segment": "energy",
-      "source": "Williams 3Q26 call",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-williams-posts-record-q3-2026-results-shares-rise-425-93CH-4995847"
     }
   ],
   "order": 4,
@@ -217,5 +237,5 @@
   "status": "strengthening",
   "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, SpaceX plans 20 GW of its own power and cooling, and Cipher is laying gas laterals for up to 2.5 GW under an independent power producer model. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. The Southaven ruling adds a legal catch: temporary turbines are not exempt from air permits as mobile sources. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-11-05"
+  "updated": "2026-11-09"
 }

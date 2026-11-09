@@ -1,6 +1,65 @@
 {
   "evidence": [
     {
+      "claim": "Microsoft plans to cut the number of neocloud suppliers in favor of its own sites, has not chosen which to drop, and let an older-generation Oracle capacity deal lapse (people familiar; single source).",
+      "company": "Microsoft",
+      "date": "2026-11-09",
+      "direction": "against",
+      "numbers": "Microsoft was 62-67% of CoreWeave revenue; the spokesperson cites flexibility and choice, while Microsoft says demand still exceeds supply.",
+      "segment": "neocloud",
+      "source": "Dataconomy",
+      "url": "https://dataconomy.com/2026/11/09/microsoft-cuts-neocloud-partners-to-favor-own-data-centers/"
+    },
+    {
+      "claim": "CFO says the company will not dilute holders at these levels and liquidity plus Abernathy proceeds cover remaining commitments without equity markets.",
+      "company": "TeraWulf",
+      "date": "2026-11-06",
+      "direction": "neutral",
+      "numbers": "Shares +19.4% YTD; $1.2bn equity raised in nine months; interest 70% of revenue.",
+      "segment": "developer",
+      "source": "TeraWulf 3Q26 call and release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026071306/a_wulfearningsreleaseq32026.htm"
+    },
+    {
+      "claim": "CoreWeave 9.625% 2032 notes yielded above 16% and 5-year CDS passed 1,289 bps on 5 November, up from a 1,194.5 record in October.",
+      "company": "CoreWeave",
+      "date": "2026-11-06",
+      "direction": "against",
+      "numbers": "Q3 interest guide $860-940M on $3.45-3.6B revenue; stock down about half in a month while 42 analysts still rate it Buy.",
+      "segment": "financing",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/07/coreweaves-bonds-now-yield-more-than-16-days-before-earnings/"
+    },
+    {
+      "claim": "An unnamed seller is auctioning about $500M of data center loans (Vantage, CyrusOne, a Stargate slice); JPMorgan, Morgan Stanley, SMBC and MUFG reportedly shopping AI debt they underwrote (single source, relaying Bloomberg).",
+      "company": "Lenders",
+      "date": "2026-11-06",
+      "direction": "against",
+      "segment": "financing",
+      "source": "Startup Fortune",
+      "url": "https://startupfortune.com/a-500-million-pile-of-data-center-loans-just-hit-the-auction-block/"
+    },
+    {
+      "claim": "Nebius CEO says demand remains enormous; it raised about $2.8B through its ATM at a $224 average and expects over $9B of customer prepayments in 2026.",
+      "company": "Nebius",
+      "date": "2026-11-06",
+      "direction": "neutral",
+      "numbers": "Shares fell 47.7% in a month to $130.78; it is funding with equity and prepayments rather than high-yield debt.",
+      "segment": "neocloud",
+      "source": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/11/06/ai-cloud-crash-puts-coreweave-and-nebius-on-sale-their-next-reports-decide-what-happens-next/"
+    },
+    {
+      "claim": "CEO attributed the FY27 capex cut purely to financial markets, leaving about $15bn remaining against $25bn-$30bn guided in August.",
+      "company": "IREN",
+      "date": "2026-11-05",
+      "direction": "against",
+      "numbers": "Net debt $216mn to $4.43bn in a quarter; finance expense $73mn; operating margin -82%.",
+      "segment": "neocloud",
+      "source": "IREN 1Q FY27 call",
+      "url": "https://www.tradingkey.com/news/transcripts/262288895-"
+    },
+    {
       "claim": "Core Scientific says the project bond market is open and terms unchanged but has no priced AMD bond three months after signing; the 10-Q says financing is needed with no assurance.",
       "company": "Core Scientific",
       "date": "2026-11-05",
@@ -218,7 +277,7 @@
   "order": 5,
   "question": "Can neoclouds keep raising money below what their assets earn?",
   "status": "weakening",
-  "summary": "October repriced weak-credit compute and the last week did not reverse it: CoreWeave fell 11% to $54.34 on 30 October with CDS touching a record 1,194.5 bps, Firmus's failed A$44B float now faces an ASIC review with chip payments due, and Nscale still has no price range against a $30-35B target as investors push $16-19B. Microsoft's capex miss and Alphabet's -$9.1B free cash flow raise doubt about the buyers themselves. Nebius says prices per MW are still rising, so the gap is between strong pricing talk and costly money. Secured loans against strong customers remain open. 5 November: landlord peers still have unpriced project debt (Core Scientific AMD, Hut 8 Phase 2, Riot Corsicana), with Riot offering a 12% tenant fallback.",
+  "summary": "Credit for weaker neoclouds got worse after the midterms: CoreWeave's 2032 notes passed 16% and its CDS 1,289 bps, banks are reportedly selling AI loans and an unnamed holder is auctioning $500M of data center debt, and Microsoft says it will use fewer neocloud suppliers (single source). Fermi's lease failed to close for want of project finance, and Firmus and Nscale remain unresolved. The strong end still raises: Nebius funded with $2.8B of ATM equity and prepayments, and Apollo's $75B of chip deals went to SpaceX and Anthropic, so the market is splitting by credit rather than shutting. Status stays weakening; CoreWeave's 10 November and Nebius's 12 November results are the next tests.",
   "title": "Neocloud funding access",
-  "updated": "2026-11-05"
+  "updated": "2026-11-09"
 }

@@ -1,0 +1,586 @@
+{
+  "changes": [
+    "Google credit support for the $19bn Anthropic lease announced 4 November, applying once the lease commences: mandatory lease assumption or debt-reducing termination payment; no upfront equity to Google; cost recoverable from the tenant; falls away on Anthropic investment-grade ratings. No dollar cap disclosed.",
+    "CB-4 rent: 102 MW still billing at 30 September; phased November to December, against a late-September first hall in August.",
+    "Justified completions now late 2027 through 2Q28, from 2H27 to early 2028; Fluor GMP EPC signed, GMP still being set, design at 90%.",
+    "Revenue beat, yet interest of $53.6mn is 70% of revenue and adjusted EBITDA stayed negative at -$12.8mn.",
+    "Revolver rises to $400mn when the CB-4 lease commences ($150mn today, $75mn used); $280mn of Abernathy proceeds still to come; parent cash about $1.1bn."
+  ],
+  "checks": "Figures from the 8-K earnings release and investor deck on EDGAR (Ex. 99.1, 6 November), 8-K of 23 October and the 4 November release via StockTitan; 10-Q not read. Call from Gloom's automated transcript, with errors, so spoken figures are marked by source; 2Q26 Q&A partly summary. 4 November 8-K could not be opened. Consensus from preview (Yahoo, 14 analysts); 24/7 Wall St. shows $63.34mn. Price from 24/7 Wall St., 6 Nov, 9:54 ET. The close-to-30% equity layer in the transcript is unverified and left out. Independent fact-check run, corrections applied. Derived numbers recomputed in code.",
+  "consensus_thesis": "A power-rich landlord whose contracted MW become debt capacity once investment-grade credit stands behind the tenant, valued on 2027-28 rent rather than this quarter.",
+  "date": "2026-11-06",
+  "headline": "The consensus view holds and its largest overhang has eased, because Google agreed to backstop the Anthropic lease with no incremental upfront equity, but credit quality only improves once the Justified debt prices, CB-4's first rent moved later, and Justified's end date moved to 2Q28.",
+  "kind": "postcall",
+  "kona": "Management says debt needs investment-grade support, and even a $19bn lease with a top lab needed Google behind it; Kona's tenant at tens of megawatts should expect the same or pay for it. The structure is worth copying in smaller form: assumption or termination payment on default, wrap cost charged to the tenant, no equity given away. GMP EPC contracts are the second lender ask.",
+  "monitor": [
+    "MW billing at 31 December (270 MW guided) and 31 March (438 MW).",
+    "Justified debt: size, coupon, recourse, and how much of the rent Google stands behind.",
+    "First Muskie tenant, and whether it comes with direct investment-grade credit."
+  ],
+  "name": "TeraWulf",
+  "pdf_brief": "/_blob/5fea941a5b1eae8604901fe936e754b2",
+  "pdf_report": "/_blob/480b725684c9984a5735dc8c53247001",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumed",
+          "Quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 CB-4 and CB-5 on schedule",
+            "CB-4 first hall late Sep; all by Q4; CB-5 January",
+            "No CB-4 rent in 3Q; Nov-Dec phasing; CB-5 Q1 2027. Company says on track",
+            "Confirmed, with slip",
+            "Release; deck; call"
+          ],
+          [
+            "P2 Investment-grade support for Justified",
+            "Not finalized; KBW's main overhang",
+            "Announced with Google (AA+/Aa2); no incremental upfront equity; applies from lease commencement",
+            "Confirmed",
+            "4 Nov release; call"
+          ],
+          [
+            "P3 Justified debt at a workable price",
+            "About $3.5bn, Bloomberg via press",
+            "Not launched; terms when it kicks off",
+            "Unresolved",
+            "Call"
+          ],
+          [
+            "P4 Build cost holds",
+            "$8mn-$10mn LM; $10mn-$12mn Justified",
+            "$8.9mn at LM; Justified reaffirmed; design 90%, GMP being set",
+            "Confirmed",
+            "Call"
+          ],
+          [
+            "P5 Funded without heavy dilution",
+            "Rely on project debt",
+            "CFO says liquidity and Abernathy fund commitments without equity markets; 19.4% more shares YTD",
+            "Unresolved",
+            "Call; release"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: investment-grade as a requirement on every lease, GMP contracts, Lake Mariner cost inside guidance. Emphasized less or dropped: mining (no call discussion; revenue $13.2mn); Morgantown only when asked; current pricing, on which the CEO told analysts not to focus. KPIs now matter more: MW billing by date, rent excluding pass-through ($46.0mn of revenue). Less: GAAP net income ($709.9mn on a $728.4mn warrant gain and $95mn Abernathy gain). Risks up: rate-and-spread exposure until Justified prices, though management cites contractual protections. Risks down: tenant credit at Justified from lease commencement.",
+      "title": "What changed in emphasis"
+    },
+    {
+      "body": "Trevor's watch-list. No analyst named by CK; I chose Brett Knoblauch (Cantor) for pressing how long hyperscaler backstops last. 3Q26: rated partial (mechanism, no appetite data); same analyst pressed IREN on investment-grade mix a day earlier. Also Stephen Byrd (Morgan Stanley) on equity overhang: options listed (prepayment, customer equity, leverage, stake sales), none sized. Ratings: 16 questions from 10 analysts: 7 direct, 6 partial, 3 deflected. Automated transcript with errors; 2Q26 topics partly from a summary.",
+      "table": {
+        "head": [
+          "Topic",
+          "2Q26 call",
+          "3Q26 call",
+          "Status / answers"
+        ],
+        "rows": [
+          [
+            "Cost of debt and recourse",
+            "Glagola (KBW)",
+            "Grondahl (Northland), Luebchow (Wells), Dorsheimer (Blair), Knoblauch (Cantor)",
+            "Rising; direct to partial, no economics"
+          ],
+          [
+            "Capex and funding",
+            "Northland; Brendler (Rosenblatt)",
+            "Byrd (Morgan Stanley), Funk (BofA)",
+            "Persistent; direct, no sizes"
+          ],
+          [
+            "Build cost and overruns",
+            "Oppenheimer; Funk",
+            "Glagola",
+            "Persistent; direct, GMP"
+          ],
+          [
+            "Power and sites",
+            "Giles (B. Riley), Rollins (Citi)",
+            "Giles; Lucid",
+            "Persistent; partial"
+          ],
+          [
+            "Pricing and yields",
+            "Funk",
+            "Rollins; Lucid",
+            "Rising; deflected twice"
+          ],
+          [
+            "Permitting and politics",
+            "Lucid; Brendler",
+            "Dorsheimer; Funk",
+            "Persistent; direct, then deflected on cost"
+          ],
+          [
+            "Delivery and MW timing",
+            "",
+            "Giles",
+            "Direct: 168 MW + 168 MW"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "body": "Flags: for cost, debt and dilution lines, [↓] means worse for shareholders. Q2 EPS was -$1.94 on a $755.7mn warrant loss; Q3 basic EPS $1.42, diluted -$0.03. Q3 10-Q not yet read.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue, $mn",
+            "76.2",
+            "44.8",
+            "50.6",
+            "+70% / +51%",
+            "[↑]"
+          ],
+          [
+            "HPC lease revenue, $mn",
+            "63.0",
+            "31.9",
+            "7.2",
+            "+97% / n.m.",
+            "[↑]"
+          ],
+          [
+            "of which rent, $mn (deck)",
+            "46.0",
+            "n.a.",
+            "n.a.",
+            "60% of revenue",
+            "[?]"
+          ],
+          [
+            "Mining revenue, $mn",
+            "13.2",
+            "12.8",
+            "43.4",
+            "+3% / -69%",
+            "[~]"
+          ],
+          [
+            "Adjusted EBITDA, $mn",
+            "-12.8",
+            "-18.3",
+            "18.1",
+            "improved QoQ",
+            "[↑]"
+          ],
+          [
+            "Operating loss, $mn (margin)",
+            "-88.2 (-116%)",
+            "n.a.",
+            "-24.7",
+            "",
+            "[↓]"
+          ],
+          [
+            "Depreciation, $mn",
+            "29.6",
+            "21.2",
+            "26.5",
+            "+40% / +12%",
+            "[↓]"
+          ],
+          [
+            "Interest expense, $mn (% revenue)",
+            "53.6 (70%)",
+            "56.4 (126%)",
+            "9.8",
+            "-5% / n.m.",
+            "[↓]"
+          ],
+          [
+            "Net income, $mn (warrants)",
+            "709.9",
+            "see note",
+            "-455.1",
+            "distorted",
+            "[?]"
+          ],
+          [
+            "MW billing at quarter end",
+            "102",
+            "81",
+            "n.a.",
+            "+26%",
+            "[↑]"
+          ],
+          [
+            "Contracted critical IT MW",
+            "839",
+            "about 840",
+            "n.a.",
+            "flat",
+            "[~]"
+          ],
+          [
+            "MW under construction",
+            "737",
+            "n.a.",
+            "n.a.",
+            "",
+            "[~]"
+          ],
+          [
+            "Build cost at LM, $mn per MW",
+            "8.9",
+            "$8mn-$10mn guide",
+            "n.a.",
+            "within guide",
+            "[~]"
+          ],
+          [
+            "Cash + restricted, $bn",
+            "2.36",
+            "about 3.0",
+            "n.a.",
+            "-21%",
+            "[↓]"
+          ],
+          [
+            "Debt, carrying, $bn",
+            "5.23",
+            "n.a.",
+            "n.a.",
+            "",
+            "[↓]"
+          ],
+          [
+            "Net debt, $bn (deck)",
+            "3.4",
+            "2.7",
+            "n.a.",
+            "+$0.7bn",
+            "[↓]"
+          ],
+          [
+            "Warrant liabilities, $bn",
+            "1.09",
+            "1.82",
+            "n.a.",
+            "-40%",
+            "[↑]"
+          ],
+          [
+            "Shares outstanding, mn",
+            "501.4",
+            "n.a.",
+            "n.a.",
+            "+19.4% YTD",
+            "[↓]"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improving on rent ramp, but losses remain until CB-4 and CB-5 bill; the beat does not change that, since it includes pass-through and fit-out revenue.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Management explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "CB-4 (168 MW)",
+            "Phased Nov-Dec 2026",
+            "Later first hall; year-end held",
+            "n.a.",
+            "\"on track\"",
+            "Soft slip, little 4Q revenue"
+          ],
+          [
+            "CB-5 (168 MW)",
+            "Phased through Q1 2027",
+            "Maintained",
+            "n.a.",
+            "Commissioning starts this month",
+            "Sets the $700mn exit"
+          ],
+          [
+            "Run-rate lease revenue",
+            "About $700mn exiting Q1 2027",
+            "New",
+            "n.a.",
+            "About half of contracted MW live",
+            "The anchor number"
+          ],
+          [
+            "Justified (401 MW)",
+            "Late 2027 to 2Q28; $10mn-$12mn/MW",
+            "End date later",
+            "n.a.",
+            "Three buildings, Fluor GMP",
+            "GMP not yet set"
+          ],
+          [
+            "LM cost",
+            "$8mn-$10mn/MW; est. $8.9mn",
+            "Maintained",
+            "n.a.",
+            "Within range",
+            "Credible so far"
+          ],
+          [
+            "New contracting",
+            "250 MW-500 MW a year",
+            "Maintained",
+            "n.a.",
+            "Existing portfolio suffices",
+            "Muskie is the test"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "Over 5 to 10 years the landlord model avoids GPU residual risk and benefits from power scarcity. The reliance on a single wrap provider is the structural question: analysts asked how long such backstops will be offered, and management could only say it expects others to follow.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observation",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Power and interconnection",
+            "Strong",
+            "Up",
+            "Muskie to 1 GW subject to approval; Big Sandy CCGT filing due, approval mid-2027",
+            "Scarce 2028-29 supply"
+          ],
+          [
+            "Site pipeline",
+            "Strong",
+            "Stable",
+            "About 2.1 GW development pipeline; Chesapeake pending",
+            "Backs the contracting target"
+          ],
+          [
+            "Tenant quality",
+            "Improving",
+            "Up",
+            "Google behind Fluidstack and Anthropic",
+            "Credit is borrowed, and can fall away"
+          ],
+          [
+            "Cost of capital",
+            "Better",
+            "Mixed",
+            "All leases to be investment-grade backed; spreads wider",
+            "Protected only against peers"
+          ],
+          [
+            "Execution",
+            "Good, slipping",
+            "Mixed",
+            "$8.9mn per MW; CB-4 start, Justified end moved",
+            "Now the main risk"
+          ],
+          [
+            "Durability",
+            "Strong",
+            "Stable",
+            "10-year to 20-year leases, tenants bring GPUs",
+            "No residual risk on chips"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Backstop. Concern: unfinished credit support. Response: signed. Evidence: release and CFO mechanics; no size, and it ends when Anthropic reaches certain ratings. Equity. Concern: large leases force dilution. Response: no dilution at these levels, CEO says the equity required is in hand. Evidence: $1.2bn raised in 9M; $550mn already in Justified; claim untested until debt closes.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Tenant credit, Justified",
+            "High",
+            "Moderate",
+            "Down",
+            "Google support signed; size undisclosed"
+          ],
+          [
+            "Project funding price",
+            "High",
+            "High",
+            "Stable",
+            "No coupon yet, with spreads wider"
+          ],
+          [
+            "Delivery",
+            "Elevated",
+            "Elevated",
+            "Up",
+            "CB-4 start and Justified end both moved"
+          ],
+          [
+            "Dilution, convertibles",
+            "Elevated",
+            "Elevated",
+            "Stable",
+            "$491.5mn short-term converts; cap table assumes $500mn cash repayment"
+          ],
+          [
+            "Lab concentration",
+            "High",
+            "High",
+            "Stable",
+            "Anthropic is $19bn of about $27bn contracted"
+          ],
+          [
+            "Community cost",
+            "Low",
+            "Rising",
+            "Up",
+            "Host agreements expected; cost unsized"
+          ]
+        ]
+      },
+      "title": "Major risks"
+    },
+    {
+      "body": "Liquidity: $2.36bn cash and restricted, $1.1bn at the parent (about $300mn behind Muskie LCs). Adds: revolver to $400mn on CB-4 commencement, $150mn by 31 December and about $130mn by 30 April from Abernathy. Against: $491.5mn short-term converts and $567mn of accrued construction and payables. Dilution: shares 501.4mn vs 420.1mn at year-end (+19.4%); warrant liability $1.09bn. Stock $10.44 at 9:54 ET on 6 November (24/7 Wall St.), about $5.2bn market cap, after a 30% slide in a month. Per-share read: $700mn of run-rate lease revenue against about $3.4bn of net debt today, before Justified's debt. Our implied Anthropic rent is about $197 per kW-month over the term ($19bn / 20 years / 401 MW).",
+      "table": {
+        "head": [
+          "Site",
+          "MW",
+          "Tenant",
+          "Lease value",
+          "Capex",
+          "Funded by",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Lake Mariner",
+            "438 (102 live)",
+            "Fluidstack (Google), Core42",
+            "About $8bn",
+            "$8.9mn per MW; about $1bn left",
+            "Senior secured notes, $3.2bn face; 2/3 of the rest committed",
+            "CB-4 Q4; CB-5 Q1 27"
+          ],
+          [
+            "Justified",
+            "401 net",
+            "Anthropic (Google)",
+            "About $19bn",
+            "$10mn-$12mn per MW",
+            "$550mn equity; project debt pending",
+            "Late 27 to 2Q28"
+          ],
+          [
+            "Muskie",
+            "1 GW power",
+            "None yet",
+            "nil",
+            "$10mn-$12mn per MW (turnkey)",
+            "$300mn of cash backing LCs",
+            "Ramp from 4Q28"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "Signals: MW billing, 31 December and 31 March; Justified coupon and recourse; Muskie tenant and rent; GMP figure at Justified; Settlement of short-term converts. Risks building: Backstop size unknown and no cover before lease commencement; another date slip would hit Justified's financing window. Confirmation: 438 MW billing by end of March; Justified debt at investment-grade-like spread with no parent recourse. Tripwires: CB-5 past April; Justified debt requiring parent guarantee or equity; a coupon near neocloud junk yields.",
+      "title": "Monitoring"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "Asked on the call?"
+        ],
+        "rows": [
+          [
+            "Credit. You said credit support protects against Anthropic default. What share of 20-year rent or debt does Google cover, and when does it end relative to debt maturity?",
+            "Asked by Wells; structure only."
+          ],
+          [
+            "Credit. What all-in coupon and recourse do you expect on Justified, and what if Anthropic's ratings end the wrap while spreads are wide?",
+            "Rollins, Citi asked yields; deflected."
+          ],
+          [
+            "Equity. You will not dilute at these levels. What is the $ gap to fund Muskie, and will you settle the $491.5mn converts in cash?",
+            "Byrd asked; no sizes. Converts not asked."
+          ],
+          [
+            "Delivery. CB-4 had a late-September hall in August. Which hall began rent, on what date, and is any Justified date set by the tenant?",
+            "Partly asked by B. Riley."
+          ],
+          [
+            "Pricing. Twice you declined to give current yields. What rent per kW-month would Muskie clear today?",
+            "Deflected."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "developer",
+  "sources": [
+    {
+      "title": "TeraWulf Q3 release, Ex. 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026071306/a_wulfearningsreleaseq32026.htm"
+    },
+    {
+      "title": "TeraWulf Q3 investor update",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026071306/terawulfq32026investorpr.htm"
+    },
+    {
+      "title": "Google backstop release, StockTitan",
+      "url": "https://www.stocktitan.net/news/WULF/tera-wulf-secures-google-credit-backstop-for-project-financing-in-9vkmcv36ox7l.html"
+    },
+    {
+      "title": "8-K, 23 October",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026067100/wulf-20261023.htm"
+    },
+    {
+      "title": "Call transcript, Gloom",
+      "url": "https://gloom.sh/stocks/wulf/transcripts/q3-2026"
+    },
+    {
+      "title": "2Q26 transcript, Gloom",
+      "url": "https://gloom.sh/stocks/wulf/transcripts/q2-2026"
+    },
+    {
+      "title": "24/7 Wall St., 6 November",
+      "url": "https://247wallst.com/investing/2026/11/06/terawulf-rises-4-after-q3-beat-and-google-backed-anthropic-lease-iren-surges-17-cipher-mining-climbs-6/"
+    }
+  ],
+  "ticker": "WULF",
+  "verdict": "Intact",
+  "versus": "Quarter: beat on revenue ($76.2mn vs $64.3mn Yahoo, from preview; $63.34mn per 24/7 Wall St.), but HPC rent proper was $46.0mn. Outlook: in line, as CB-4 stays in the fourth quarter though its first hall moved past late September and Justified now runs to 2Q28."
+}

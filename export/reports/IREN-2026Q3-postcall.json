@@ -1,0 +1,583 @@
+{
+  "changes": [
+    "Over $4bn ARR target moved from year-end to January, possibly end of February, after a Microsoft network change across 200 MW and supplier timing.",
+    "December quarter implied near $250mn of revenue, plus any residual mining (a quarter of $1bn ARR, no material new Horizon or Mackenzie capacity), against $392mn consensus dated 17 October.",
+    "FY27 capex plan cut: about $5bn spent plus about $15bn remaining, or near $20bn, against $25bn to $30bn in August.",
+    "New contracts at about $22mn per IT MW-year on five years and over $40mn on a short term; prepayments reach up to 90% of GPU capex.",
+    "Net debt rose from $216mn to $4.43bn in one quarter; parent-guaranteed GPU debt priced at 9.0% and 9.51%."
+  ],
+  "checks": "Figures from the IREN release (GlobeNewswire), 10-Q on EDGAR and XBRL company facts. Call from TradingKey's transcript, read by an independent check through the close; Benzinga, Fool, Gloom and BigGo could not be opened. A separate fact-check of the draft was run and its corrections applied. Derived numbers recomputed in code. Consensus single-source (Equibles, 17 Oct, from preview); stale risk. Price from 24/7 Wall St., 6 Nov, 9:54 ET. GPU useful life in years not found by keyword search of the 10-Q.",
+  "consensus_thesis": "A former miner with owned power becoming a GPU cloud, with over $4bn of contracted ARR for 2026 capacity, where the market pays for the contracts but doubts the funding.",
+  "date": "2026-11-06",
+  "headline": "The consensus view should shift from timing to funding: the $4bn ARR target slipped one to two months and December-quarter consensus needs to fall by about a third, but cutting FY27 capex by $5bn to $10bn and raising contract prices lowers the funding risk the stock had been pricing, while credit quality holds rather than improves as net debt jumps to $4.4bn.",
+  "kind": "postcall",
+  "kona": "IREN's newest contracts show a tenant can fund up to 90% of GPU capex by prepayment, which sets the opening ask if Kona owns GPUs. Its 9.0% to 9.51% parent-guaranteed debt is the price of non-investment-grade GPU money, likely a floor for Kona. IREN's contract protects it from delay credits when Microsoft asks for a change, yet revenue still starts late; Kona should copy that clause and also seek payment for time lost to tenant changes. Staging capex with cheap land options is the behavior to copy.",
+  "monitor": [
+    "Operating ARR and Horizon 2 to 4 acceptance dates by end January.",
+    "How the $6bn target funding closes, at what price, and ATM use with the stock near $21 (post-quarter sales averaged about $36).",
+    "Tenant, MW and term on 2027 contracts; operating margin as AI revenue ramps."
+  ],
+  "name": "IREN",
+  "pdf_brief": "/_blob/51316dd2d2dfbd5c5c49a36f07d3c919",
+  "pdf_report": "/_blob/2264b86b3c738c6e9aec1d108145cdbf",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumed",
+          "Quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 ARR live on time",
+            "Over $4bn by December; $392mn next quarter",
+            "$1bn at 30 Sep; target January, may run to February; Microsoft-requested changes carry no delay credits, revenue still later",
+            "Challenged",
+            "Release; call; 10-Q"
+          ],
+          [
+            "P2 Funding gap closes without heavy dilution",
+            "$14bn secured, $8bn targeted, of $25bn-$30bn",
+            "$15bn remaining: $9bn in hand, $6bn targeted against $12bn-$15bn indicative sources. Shares +7.0% QoQ, +4.3% more by 30 Oct",
+            "Unresolved",
+            "Release; call; 10-Q"
+          ],
+          [
+            "P3 2027 capacity contracts",
+            "Late-stage talks cover much of 2027",
+            "Backlog $20.3bn, +22% QoQ; post-quarter 5-year and short-term contracts, a lab expansion, H100 recontracts; 2027 mix not guided",
+            "Unresolved",
+            "Release"
+          ],
+          [
+            "P4 Pricing holds",
+            "Above $20mn per IT MW",
+            "Post-quarter $22mn on 5 years, over $40mn short; in-quarter 3-year $19mn-$23mn, 5-year about $17mn; pricing +11%, +12%",
+            "Confirmed, mixed",
+            "Release"
+          ],
+          [
+            "P5 Depreciation and returns",
+            "GPU life about six years",
+            "Operating margin -82% vs EBITDA 29%; life in years not found in the 10-Q",
+            "Unresolved",
+            "10-Q"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: capital discipline (the CEO attributed the capex cut purely to financial markets), prepayment share, investment-grade share of backlog, data center assets as collateral ($6bn net, 20-year life). Emphasized less or dropped: the $25bn-$30bn FY27 capex headline; any dated target for ARR beyond the $4bn level (the CFO declined to give one). KPIs now matter more: remaining capex against sources, prepayment percentage, operating margin. Less: mining revenue ($28mn, ending by December). Risks up: delivery, refinancing load (current debt $950mn vs $169mn). Risks down: equity-at-any-price, since the capex plan flexed.",
+      "title": "What changed in emphasis"
+    },
+    {
+      "body": "Trevor's watch-list. No analyst named by CK; I chose Brett Knoblauch (Cantor) because he pressed credit mix here and backstop durability on TeraWulf's call a day later. 3Q26: asked whether investment-grade mix is the emphasis given prepayment-heavy deals; opening answer direct. Later evidence: backlog about two-thirds investment-grade. Earlier-call Q&A was not retrieved, so the matrix covers one quarter.",
+      "table": {
+        "head": [
+          "Topic",
+          "Analysts, 5 Nov call",
+          "Status",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "Delivery and MW timing",
+            "Golding (Macquarie)",
+            "Persistent",
+            "Partial: no split of delay by cause"
+          ],
+          [
+            "Capex and funding",
+            "Golding; Lewis (BTIG); Ng (Goldman)",
+            "Rising",
+            "Partial: extra cost \"entirely immaterial\", no $ per MW update"
+          ],
+          [
+            "Customer credit mix",
+            "Knoblauch (Cantor)",
+            "Rising",
+            "Direct opening: \"both\""
+          ],
+          [
+            "Pricing and demand",
+            "Vafi (Canaccord); Lewis; Petersen (Jefferies)",
+            "Persistent",
+            "Direct: GPU price rises passed through"
+          ],
+          [
+            "Power and sites",
+            "Vafi; Donovan (Compass Point); Petersen",
+            "Persistent",
+            "Direct: staged land options; Sweetwater 2GW in Batch Zero"
+          ],
+          [
+            "2027 capacity mix",
+            "Colonnese (H.C. Wainwright)",
+            "New",
+            "Deflected: composition not guided"
+          ],
+          [
+            "Depreciation, residual value",
+            "None",
+            "Absent",
+            "Nobody asked: a gap"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "body": "Flags: for cost, debt and dilution lines, [↓] means worse for shareholders. Fiscal 1Q FY27 shown as 3Q26 by calendar. Prior-quarter MW and backlog derived from company growth rates.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "QoQ / YoY",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue, $mn",
+            "228",
+            "137",
+            "240",
+            "+66% / -5%",
+            "[↑]"
+          ],
+          [
+            "AI cloud revenue, $mn",
+            "200",
+            "71",
+            "7",
+            "+182% / n.m.",
+            "[↑]"
+          ],
+          [
+            "of which lease, $mn",
+            "65",
+            "nil",
+            "nil",
+            "new",
+            "[↑]"
+          ],
+          [
+            "Mining revenue, $mn",
+            "28",
+            "67",
+            "233",
+            "-58% / -88%",
+            "[↓]"
+          ],
+          [
+            "Adjusted EBITDA, $mn (margin)",
+            "66 (29%)",
+            "19 (14%)",
+            "92",
+            "+15pp margin",
+            "[↑]"
+          ],
+          [
+            "Operating loss, $mn (margin)",
+            "-186 (-82%)",
+            "-620 (incl. $450mn impairment)",
+            "-76",
+            "distorted",
+            "[?]"
+          ],
+          [
+            "D&A, $mn",
+            "148",
+            "112",
+            "85",
+            "+32% / +74%",
+            "[↓]"
+          ],
+          [
+            "Operating AI capacity, MW",
+            "93",
+            "about 41 (derived)",
+            "n.a.",
+            "+127%",
+            "[↑]"
+          ],
+          [
+            "Operating ARR",
+            "$1bn",
+            "about $0.5bn (\"doubled\")",
+            "n.a.",
+            "+100%",
+            "[↑]"
+          ],
+          [
+            "Backlog",
+            "$20.3bn",
+            "about $16.6bn (derived)",
+            "n.a.",
+            "+22%",
+            "[↑]"
+          ],
+          [
+            "Top-3 customers, % revenue",
+            "28/24/18",
+            "n.a.",
+            "n.a.",
+            "70% total",
+            "[?]"
+          ],
+          [
+            "Capex, cash, $mn",
+            "4,824",
+            "1,978",
+            "280",
+            "+144%",
+            "[↓]"
+          ],
+          [
+            "Unpaid capex in payables, $mn",
+            "2,493",
+            "n.a.",
+            "126",
+            "",
+            "[?]"
+          ],
+          [
+            "Operating cash flow, $mn",
+            "529",
+            "1,811",
+            "142",
+            "prepayment-led",
+            "[~]"
+          ],
+          [
+            "Finance expense, $mn (% revenue)",
+            "73 (32%)",
+            "24 (18%)",
+            "9",
+            "+204%",
+            "[↓]"
+          ],
+          [
+            "Total debt incl. leases, $mn",
+            "10,208",
+            "7,836",
+            "n.a.",
+            "+30%",
+            "[↓]"
+          ],
+          [
+            "Net debt, $mn",
+            "4,430",
+            "216",
+            "n.a.",
+            "up 20x",
+            "[↓]"
+          ],
+          [
+            "Recourse / non-recourse debt, $mn",
+            "8,061 / 1,980",
+            "6,768 / 938",
+            "n.a.",
+            "",
+            "[↓]"
+          ],
+          [
+            "Deferred revenue, $mn",
+            "2,544",
+            "1,843",
+            "n.a.",
+            "+38%",
+            "[↑]"
+          ],
+          [
+            "Shares outstanding, mn",
+            "406.9",
+            "380.2",
+            "282.9",
+            "+7.0% / +43.8%",
+            "[↓]"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improving on contract prices and EBITDA, still deeply negative at the operating line (-82%) with funding costs rising faster than AI revenue is delivered.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Management explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "Over $4bn ARR",
+            "January; may run to February",
+            "Lowered (was by 31 Dec)",
+            "Below",
+            "Microsoft network change on 200 MW, supplier timing",
+            "No delay credits owed; revenue slips, contracts do not"
+          ],
+          [
+            "December-quarter revenue",
+            "None; a quarter of $1bn ARR, no material new capacity",
+            "New signal",
+            "About $250mn plus residual mining vs $392mn (derived)",
+            "Ramp in early 2027",
+            "Consensus should fall; FY27 $2.81bn at risk"
+          ],
+          [
+            "FY27 capex",
+            "About $15bn remaining",
+            "Lowered (about $20bn total vs $25bn-$30bn, derived)",
+            "No consensus",
+            "Financial markets, not demand",
+            "Credit-positive, delays growth"
+          ],
+          [
+            "Capacity",
+            "0.8GW by end 2027",
+            "Maintained",
+            "n.a.",
+            "Six sites building",
+            "Not all contracted"
+          ],
+          [
+            "GPU financing mix",
+            "About 90% of GPU capex incl. prepayments",
+            "Consistent per CFO",
+            "n.a.",
+            "Contracts up to 90% from prepayments alone",
+            "Tenant funds the chips"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "Over 5 to 10 years the owned sites and power should outlast any GPU generation; the question is whether IREN keeps enough equity value through the capex cycle to own them. H100s recontracting at double original pricing help today, but one data point does not set a residual curve.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observation",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Power and sites",
+            "Strong",
+            "Stable",
+            "Over 5GW secured; 2GW Sweetwater in ERCOT Batch Zero, conditional",
+            "Option value; capex staged"
+          ],
+          [
+            "Customer credit",
+            "Improving",
+            "Up",
+            "About two-thirds of backlog investment-grade; NVIDIA, Microsoft and 13 others",
+            "Supports cheaper debt"
+          ],
+          [
+            "Cost of capital",
+            "Middling",
+            "Mixed",
+            "Investment-grade block stated near 6%; other GPU debt stated 9.0%-9.51%, parent-guaranteed",
+            "Tenant credit sets price"
+          ],
+          [
+            "Delivery speed",
+            "Good, disrupted",
+            "Mixed",
+            "Horizon 1 in about 14 months; 200 MW redesign",
+            "Tenant changes are the new risk"
+          ],
+          [
+            "Software",
+            "Emerging",
+            "Up",
+            "Mirantis bought for about $538mn",
+            "Unproven for margin"
+          ],
+          [
+            "Durability",
+            "Unproven",
+            "Unclear",
+            "Three-year to five-year contracts on 20-year buildings",
+            "Re-leasing decides value"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "body": "Delay. Concern: the ARR ramp keeps moving. Response: tenant-requested and small. Evidence: 10-Q says Microsoft-requested changes extend delivery dates with no delay credits due; Horizon 3 GPUs on site, Horizon 4 still arriving. Funding. Concern: capex exceeds what markets will fund. Response: fully funded to the ARR target; $6bn target against $12bn-$15bn indicative. Evidence: $18.9bn of commitments at 30 September (Dell's $6.7bn order of 28 September likely inside, overlap not stated) against $5.8bn cash, of which $2.3bn restricted.",
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Delivery and tenant changes",
+            "Elevated",
+            "Elevated",
+            "Up",
+            "Microsoft changes extend dates: no credits owed, but revenue starts later"
+          ],
+          [
+            "Funding and refinancing",
+            "High",
+            "High",
+            "Mixed",
+            "$723mn due in rest of FY27, $1.06bn in FY28; $6bn still targeted"
+          ],
+          [
+            "Concentration",
+            "Elevated",
+            "Elevated",
+            "Stable",
+            "Top three 70% of revenue, unnamed in filing"
+          ],
+          [
+            "GPU residual value",
+            "Open",
+            "Open",
+            "Stable",
+            "Short contracts; no life in years found in 10-Q"
+          ],
+          [
+            "Component cost",
+            "Low",
+            "Rising",
+            "Up",
+            "Memory and SSD push GPU prices"
+          ],
+          [
+            "Community opposition",
+            "Low",
+            "Low",
+            "Up",
+            "Raised by Goldman"
+          ]
+        ]
+      },
+      "title": "Major risks"
+    },
+    {
+      "body": "What the next dollar costs: stated 9.0% and 9.51% on parent-guaranteed GPU debt (effective 10.7% and 10.4%), against stated 5.96% on non-recourse private-placement notes (effective 7.1%); converts effective 0.4% to 4.2%, with dilution. No market bond or CDS quote found. Maturities to June 2028: $723mn (rest of FY27), $1,059mn (FY28), against current debt of $950mn. GPU tranches amortize over 30 to 36 months, about the length of short contracts. Does the contract out-earn funding? At about $22mn per IT MW-year with 90% GPU prepayment, management cites 18-month GPU payback in a $20mn, 50% example; on those terms yes, but operating margin has yet to show it. Market cap near $8.9bn at $21.07 (24/7 Wall St., 6 Nov, 9:54 ET) on 424.4mn shares; remaining capex is 1.7x that.",
+      "table": {
+        "head": [
+          "Period",
+          "Capex",
+          "Op. cash flow",
+          "Gap",
+          "Debt raised",
+          "Equity",
+          "Deferred rev. change",
+          "Net debt",
+          "Shares (mn)"
+        ],
+        "rows": [
+          [
+            "3Q26",
+            "4,824",
+            "529",
+            "4,295",
+            "About $2.3bn net (9.0%, 9.51%, USPP 5.96%)",
+            "498",
+            "645",
+            "4,430",
+            "406.9"
+          ],
+          [
+            "2Q26",
+            "1,978",
+            "1,811",
+            "167",
+            "Part of financing $5.7bn total",
+            "2,112",
+            "1,722",
+            "216",
+            "380.2"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "Signals: Operating ARR at 31 January; Remaining FY27 capex against closed funding; Share count against the ATM; Prepayment share on new contracts; AI cloud operating margin. Risks building: Current debt up more than fivefold to $950mn; $18.9bn of commitments, up from $13.8bn; 70% revenue with three customers. Confirmation: Horizon 2 to 4 accepted by February; data center financing closed without the parent; a named 2027 tenant. Tripwires: ARR past February; ATM use below $25 to fund capex; a new GPU debt coupon above 10%; any contract with prepayment under 50%.",
+      "title": "Monitoring"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "Asked on the call?"
+        ],
+        "rows": [
+          [
+            "Credit. You have $5.8bn of cash, $2.3bn restricted, against $18.9bn of commitments. Which are cancellable, and what is the latest date you must close the $6bn before capex stops?",
+            "Tests P2. Not answered as framed."
+          ],
+          [
+            "Credit. GPU debt now costs 9.0% to 9.51% with a parent guarantee. What is the ceiling you would pay, and will you put data centers under non-recourse debt?",
+            "Tests recourse. Sources named, price not."
+          ],
+          [
+            "Equity. You sold about $630mn of stock in October at about $36 by our math. Will you use the ATM near $21?",
+            "Dilution. Not asked as far as visible."
+          ],
+          [
+            "Equity. You estimate GPU useful lives and sign contracts for three to five years. What operating margin does Horizon 1 earn today?",
+            "Tests P5. Not asked."
+          ],
+          [
+            "Delivery. Microsoft's change extends dates without credits. How many more changes can it request and is any revenue date contractually fixed?",
+            "Tests P1. Partly asked by Macquarie."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "neocloud",
+  "sources": [
+    {
+      "title": "IREN Q1 FY27 release",
+      "url": "https://www.globenewswire.com/news-release/2026/11/05/3397020/0/en/iren-reports-q1-fy27-results.html"
+    },
+    {
+      "title": "IREN 10-Q, 30 September 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm"
+    },
+    {
+      "title": "Call transcript, AOL",
+      "url": "https://www.aol.com/articles/iren-iren-q1-2027-earnings-080500000.html"
+    },
+    {
+      "title": "Call transcript, TradingKey",
+      "url": "https://www.tradingkey.com/news/transcripts/262288895-"
+    },
+    {
+      "title": "24/7 Wall St., 6 November",
+      "url": "https://247wallst.com/investing/2026/11/06/terawulf-rises-4-after-q3-beat-and-google-backed-anthropic-lease-iren-surges-17-cipher-mining-climbs-6/"
+    }
+  ],
+  "ticker": "IREN",
+  "verdict": "Monitoring",
+  "versus": "Quarter: in line to slight beat (revenue $228mn vs $221.3mn consensus, EPS -$0.66 vs -$0.665; both single-source, Equibles 17 Oct). Outlook: below (over $4bn ARR moved from December to January, possibly February; about $250mn of December-quarter revenue implied, plus residual mining, vs $392mn consensus)."
+}

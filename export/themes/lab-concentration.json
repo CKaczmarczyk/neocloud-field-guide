@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "ECM advisers now put Anthropic IPO value near $1T, down from $1.2-1.45T pre-selloff; the article cites $895.4B of non-cancellable infrastructure commitments with take-or-pay true-ups (single source).",
+      "company": "Anthropic",
+      "date": "2026-11-09",
+      "direction": "supports",
+      "numbers": "The $895.4B is well above the $542-567B read from the S-1 in October and is not reconciled; a lower valuation means the largest tenant raises less equity against fixed commitments.",
+      "segment": "financing",
+      "source": "ION Analytics",
+      "url": "https://ionanalytics.com/insights/mergermarket/anthropic-faces-near-impossible-ipo-choice-after-ai-stocks-felled-by-blue-tsunami-ecm-pulse-global/"
+    },
+    {
+      "claim": "Microsoft is trimming its neocloud supplier list (single source).",
+      "company": "Microsoft",
+      "date": "2026-11-09",
+      "direction": "supports",
+      "numbers": "Fewer large buyers per neocloud raises concentration on the labs that remain.",
+      "segment": "neocloud",
+      "source": "Dataconomy",
+      "url": "https://dataconomy.com/2026/11/09/microsoft-cuts-neocloud-partners-to-favor-own-data-centers/"
+    },
+    {
+      "claim": "Anthropic lease is about $19bn of about $27bn contracted revenue, and needs Google support because Anthropic is not investment-grade.",
+      "company": "TeraWulf",
+      "date": "2026-11-06",
+      "direction": "supports",
+      "numbers": "About 70% of contracted revenue from one lab (derived).",
+      "segment": "developer",
+      "source": "TeraWulf 3Q26 deck and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000162828026071306/terawulfq32026investorpr.htm"
+    },
+    {
       "claim": "Riot's Corsicana lease puts 1,101 of 1,151 contracted MW with one lab, named Anthropic PBC in the 10-Q; on the call no analyst asked about credit or termination.",
       "company": "Riot Platforms",
       "date": "2026-11-04",
@@ -139,7 +169,7 @@
   "order": 6,
   "question": "How exposed is the buildout to two labs?",
   "status": "strengthening",
-  "summary": "Exposure keeps rising and is changing shape: Anthropic's public S-1 puts compute commitments at $542B to $567B and adds Anthropic Direct, $125.2B of five-year leases on dedicated third-party sites, while the SpaceX deal grew to up to $120.5B. Those commitments are less firm than the headlines: the SpaceX deal reportedly allows 90-day exits from early 2027 (single source). Nscale's backlog is about 85% Microsoft and Anthropic. Lab demand now reaches landlords directly, widening both the tenant pool and the concentration.",
+  "summary": "Exposure keeps rising while the labs' own funding gets less certain. Anthropic's S-1 showed $542-567B of compute commitments and Anthropic Direct leases; an ECM report now cites $895.4B of non-cancellable commitments (single source, unreconciled) as its IPO valuation slips toward $1T from $1.2-1.45T. Microsoft trimming neocloud suppliers (single source) leaves the labs a larger share of remaining demand. The SpaceX deal's reported 90-day exits from 2027 (single source) show those commitments are less firm than headlines. Status stays strengthening.",
   "title": "Concentration on Anthropic and OpenAI",
-  "updated": "2026-11-05"
+  "updated": "2026-11-09"
 }

@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-09",
+  "items": [
+    {
+      "headline": "Data centers lose almost every local vote in the US midterms; Democrats win Texas, Ohio and Georgia governorships",
+      "segment": "developer",
+      "source": "PC Gamer",
+      "summary": "Voters backed restrictions in 38 of 39 completed local measures, including 10 charter caps typically at 25 MW and 5 outright bans; Texas Governor-elect Hinojosa pledged a moratorium on approvals, and Goldman says Democratic states backing moratoriums will hold 45% of planned US capacity by January. Sanders called for a national moratorium; CoreWeave wrote to Hinojosa on 7 November asking to complete permitted projects.",
+      "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/"
+    },
+    {
+      "headline": "CoreWeave's 2032 bonds yield over 16% and CDS tops 1,289 bps before Tuesday's earnings",
+      "segment": "financing",
+      "source": "24/7 Wall St.",
+      "summary": "The 9.625% 2032 notes yielded above 16% on 6 November and five-year CDS passed 1,289 bps on 5 November before easing to about 1,155; the stock fell 9.8% to $43.66 on 5 November and is down about half in a month. Q3 interest is guided at $860M to $940M against $3.45B to $3.6B of revenue; results come 10 November.",
+      "url": "https://247wallst.com/investing/2026/11/07/coreweaves-bonds-now-yield-more-than-16-days-before-earnings/"
+    },
+    {
+      "headline": "Microsoft is trimming its neocloud suppliers and did not renew Oracle",
+      "segment": "neocloud",
+      "source": "Dataconomy",
+      "summary": "Microsoft plans to use fewer neocloud providers and more of its own sites, has not decided which to drop, and let an older-generation Oracle capacity deal lapse; it already left Nscale's England site and did not renew Nscale in Texas. IREN says a Microsoft-requested network upgrade pushes delivery to January or February; reported via people familiar, so treat as single source.",
+      "url": "https://dataconomy.com/2026/11/09/microsoft-cuts-neocloud-partners-to-favor-own-data-centers/"
+    },
+    {
+      "headline": "About $500M of data center loans put up for auction as banks shop AI debt",
+      "segment": "financing",
+      "source": "Startup Fortune",
+      "summary": "An unnamed seller wants bids by 19 November on loans tied to Vantage, CyrusOne and a $25M slice of a Stargate site in New Mexico; JPMorgan, Morgan Stanley, SMBC and MUFG are reportedly shopping AI debt they underwrote, and RBC GAM says hedge funds have been heavy sellers. Relays a Bloomberg scoop; single source.",
+      "url": "https://startupfortune.com/a-500-million-pile-of-data-center-loans-just-hit-the-auction-block/"
+    },
+    {
+      "headline": "Anthropic's IPO roadshow starts with valuation talk sliding toward $1T",
+      "segment": "financing",
+      "source": "ION Analytics (Mergermarket)",
+      "summary": "After the Nasdaq 100 fell over 6% on 5 November, ECM advisers put fair value near $1T, down from $1.2T to $1.45T before the selloff and $2T at mid-year; the piece cites $895.4B of non-cancellable infrastructure commitments with take-or-pay true-ups, a figure far above the $542B to $567B read from the S-1 in October and not yet reconciled. Single source.",
+      "url": "https://ionanalytics.com/insights/mergermarket/anthropic-faces-near-impossible-ipo-choice-after-ai-stocks-felled-by-blue-tsunami-ecm-pulse-global/"
+    },
+    {
+      "headline": "Fermi's TensorWave lease misses its 31 October close because project financing is not in place",
+      "segment": "energy",
+      "source": "Fermi press release (ACCESS Newswire)",
+      "summary": "Fermi says conditions including construction-level project financing, guaranties and board approvals were not met, so the lease is not effective, though neither side has terminated; shares fell about 7% to $2.05 on 3 November. More is promised on this week's earnings call.",
+      "url": "https://www.valuethemarkets.com/news/press-releases/fermi-provides-update-on-lease-agreement-as-parties-work-tow"
+    },
+    {
+      "headline": "NTT DATA signs for 900 MW of Bloom fuel cells as primary on-site power",
+      "segment": "energy",
+      "source": "The Motley Fool",
+      "summary": "Announced 5 November, Bloom's largest international project, first shipments in 2027, no price or sites disclosed; the same-day Google Wyoming 702 MW news reused an existing AEP order. Bloom still fell 16% to $167.52 that day on post-midterm build-out fears.",
+      "url": "https://www.fool.com/investing/2026/11/08/bloom-energy-stock-fell-16-on-the-same-day-2-giant-data-center-deals-named-it-is-it-a-buy/"
+    },
+    {
+      "headline": "OpenAI pledges to pay for power and grid upgrades at campuses it owns",
+      "segment": "energy",
+      "source": "24/7 Wall St. (via Yahoo Finance)",
+      "summary": "The 5 November compact adds financial guarantees posted before major spending but has no legal force and does not cover leased sites like Oracle's Stargate capacity or SB Energy's Ohio campus. Its Georgia campus contract for 3.2 GW lets the utility cut up to 1,000 MW at peak.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-says-pay-data-centers-135128479.html"
+    },
+    {
+      "headline": "Apollo's two pending chip deals total $75B, more than all neocloud chip-backed debt since 2023",
+      "segment": "financing",
+      "source": "FourWeekMBA",
+      "summary": "SpaceX's about $40B GPU lease and the $35B Broadcom-TPU vehicle for Anthropic compare with $44.9B raised by eight neoclouds (CoreWeave $27B, IREN $3.9B, Crusoe $1.1B); SpaceX rent is one-twentieth of cost per quarter plus a fixed rate not yet set. Based on The Information's 4 November report; single source.",
+      "url": "https://fourweekmba.com/ai-apollos-75b-chip-deals-for-spacex-anthropic-top-neoclouds/"
+    },
+    {
+      "headline": "Argentina's country risk climbs to 852 bps, a 2026 high",
+      "segment": "financing",
+      "source": "Rava Bursatil",
+      "summary": "The EMBI spread closed at 852 bps on 4 November, up 65 bps in three sessions from 787 on 30 October and up from a 402 low in July. Argentina LNG still targets FID on 26 November, with EXIM's up to $6B offer subject to board approval in 2027.",
+      "url": "https://www.rava.com/cotizaciones/historico/riesgo-pais/2026/11/04/"
+    }
+  ],
+  "kona": "The 3 November midterms made US siting harder: voters backed restrictions in 38 of 39 counted local measures, and new Democratic governors in Texas, Ohio and Georgia campaigned on moratoriums, which strengthens Kona's pitch to labs and hyperscalers as an off-grid site outside US politics. Money got harder at the same time: CoreWeave bonds yield over 16%, banks are selling AI loans, and Fermi's TensorWave lease failed to close for want of project financing, so Kona should line up debt or a tenant prepayment alongside the lease and expect lenders to want an investment-grade wrap. Argentina's country risk at 852 bps works against the offshore pitch on the debt side, which makes US or multilateral credit support (EXIM, DFC) more central to the raise.",
+  "stale": "Players tab: CoreWeave CDS record of 1,194.5 bps and 2031 notes at 14-16% are out of date (CDS above 1,289 bps on 5 November, 2032 notes above 16%), as is any CoreWeave or Nebius share price (CoreWeave about $46, Nebius about $131 on 6 November). Kona tab: Argentina country risk of 787 bps is now 852 bps (4 November). Financing tab: Anthropic compute commitments of $542B to $567B may need review against the $895.4B non-cancellable figure reported by ION Analytics (single source). Players or Models tabs: Fermi's TensorWave lease should be shown as not closed, and Microsoft as a shrinking neocloud buyer.",
+  "title": "Blue wave hits data centers; neocloud credit cracks further"
+}

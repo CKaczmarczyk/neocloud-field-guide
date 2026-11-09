@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "CEO says H100s contracted at double the original pricing.",
+      "company": "IREN",
+      "date": "2026-11-05",
+      "direction": "supports",
+      "numbers": "Single data point; no MW or term; GPU useful life in years not found in the 10-Q.",
+      "segment": "neocloud",
+      "source": "IREN 1Q FY27 call (single source)",
+      "url": "https://www.tradingkey.com/news/transcripts/262288895-"
+    },
+    {
       "claim": "Asked about useful lives, Amazon said it is finding ways to extend useful lives and reach break-even sooner; Jassy said in-AWS chips earn revenue over 5-6 years versus upfront revenue if sold externally (from late 2027).",
       "company": "Amazon",
       "date": "2026-10-30",
@@ -112,5 +122,5 @@
   "status": "mixed",
   "summary": "Older chips are still holding value on management's telling: Crusoe says A100 and H100 rents exceed launch levels, and SpaceX says new compute pays back in under a year. But these are statements, not renewal data, and only a small part of fleets has come up for renewal; the test comes when 2027-28 supply is online and the first big block of contracts rolls off. SpaceX's Apollo lease runs about 5 to 5.25 years with Apollo owning the chips, a structure worth watching once its residual terms are known. Status unchanged.",
   "title": "What chips earn after their first contract",
-  "updated": "2026-11-02"
+  "updated": "2026-11-06"
 }

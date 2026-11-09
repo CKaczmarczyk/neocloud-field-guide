@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "CoreWeave wrote to Texas Governor-elect Hinojosa offering to work with her team on responsible completion of permitted projects.",
+      "company": "CoreWeave",
+      "date": "2026-11-07",
+      "direction": "supports",
+      "numbers": "No MW or dollars given; Hinojosa now talks of balance and stiffer rules rather than a flat moratorium.",
+      "segment": "neocloud",
+      "source": "Bloomberg via Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/coreweave-asks-texas-governor-elect-203310423.html"
+    },
+    {
+      "claim": "Democrats won Texas, Ohio and Georgia governorships on restriction platforms; Sanders called for a national moratorium; Goldman says moratorium-leaning Democratic states will hold 45% of planned US capacity by January.",
+      "company": "US midterms",
+      "date": "2026-11-05",
+      "direction": "supports",
+      "numbers": "Texas alone holds 27% of planned capacity (Wells Fargo).",
+      "segment": "policy",
+      "source": "Political.org",
+      "url": "https://political.org/2026/11/05/sen-bernie-sanders-and-other-democrats-call-for-national-data-center-moratorium-after-midterm-wins/"
+    },
+    {
+      "claim": "OpenAI pledged to pay for power and grid upgrades and post financial guarantees at campuses it owns, and to stop NDAs with officials.",
+      "company": "OpenAI",
+      "date": "2026-11-05",
+      "direction": "neutral",
+      "numbers": "Voluntary, no dollar figure, excludes leased sites such as Oracle Stargate capacity: words ahead of commitments.",
+      "segment": "policy",
+      "source": "24/7 Wall St. via Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-says-pay-data-centers-135128479.html"
+    },
+    {
       "claim": "Hut 8's Beacon Point baseload designation depends on a Texas audit, results expected 10 December, final 17 December; Phase 2 financing follows it.",
       "company": "Hut 8",
       "date": "2026-11-04",
@@ -19,6 +49,25 @@
       "segment": "developer",
       "source": "RIOT 3Q26 call",
       "url": "https://www.fool.com/earnings/call-transcripts/2026/11/04/riot-platforms-riot-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Voters backed data center restrictions in 38 of 39 completed local measures: 10 charter caps typically at 25 MW, 5 outright bans, 7 rezonings rejected.",
+      "company": "US midterms",
+      "date": "2026-11-04",
+      "direction": "supports",
+      "numbers": "56% of voters called data centers a major factor (NBC exit poll).",
+      "segment": "policy",
+      "source": "PC Gamer",
+      "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/"
+    },
+    {
+      "claim": "Third Circuit remanded the New Jersey certificate for NESE; Williams' CEO said next-winter in-service could be at risk, with no material outlook effect; a Senate cloture vote on a permitting bill was cited for 9 November.",
+      "company": "Williams",
+      "date": "2026-11-03",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Williams 3Q26 call",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
     },
     {
       "claim": "AP reports a Trelew Free of Data Centers movement citing lack of information on water and power for a Patagonian project.",
@@ -143,21 +192,12 @@
       "segment": "policy",
       "source": "Utility Dive",
       "url": "https://www.utilitydive.com/news/behind-the-new-york-data-center-pause-is-legislation-that-could-impact-exis/826369/"
-    },
-    {
-      "claim": "Third Circuit remanded the New Jersey certificate for NESE; Williams' CEO said next-winter in-service could be at risk, with no material outlook effect; a Senate cloture vote on a permitting bill was cited for 9 November.",
-      "company": "Williams",
-      "date": "2026-11-03",
-      "direction": "supports",
-      "segment": "energy",
-      "source": "Williams 3Q26 call",
-      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/03/williams-wmb-q3-2026-earnings-call-transcript/"
     }
   ],
   "order": 7,
   "question": "Is opposition slowing builds, and where?",
   "status": "strengthening",
-  "summary": "Opposition is now national politics and is reaching the courts: a federal judge refused to dismiss the Southaven turbine suit and rejected the mobile-source defense, Amazon dropped a Virginia campus, Memphis paused applications for 135 days, and Trump is telling developers to pay communities and make their own power. It has also reached Patagonia, where a Trelew group opposes a data center plan. Moratorium bills mostly fail, but local pauses and withdrawals are rising, and cash offers have not reliably won votes.",
+  "summary": "Opposition became an election result: on 3 November voters backed restrictions in 38 of 39 counted local measures, including 25 MW caps and outright bans, and Democrats won Texas, Ohio and Georgia governorships on moratorium platforms; Goldman says moratorium-leaning states will hold 45% of planned US capacity by January. Developers are already adjusting (CoreWeave wrote to Texas's governor-elect, OpenAI pledged to pay for its own power), though pledges are voluntary and exclude leased sites. Earlier signals still hold: the Southaven court ruling, Amazon's Virginia withdrawal, Memphis's pause, and opposition reaching Patagonia. Status stays strengthening, now with state-level force behind it.",
   "title": "Permitting and community backlash",
-  "updated": "2026-11-05"
+  "updated": "2026-11-09"
 }
