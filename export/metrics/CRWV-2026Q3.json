@@ -1,0 +1,22 @@
+{
+  "active_mw": "1,700 (over)",
+  "capex_m": "14,500 mgmt basis (cash PP&E 9,441)",
+  "contracted_mw": "4,600 (over)",
+  "da_m": "1,889",
+  "date": "2026-11-11",
+  "debt_cost": "Weighted avg. cost of debt 7.9% (company); latest DDTL 5.5 SOFR + 550, Ba2/BB+; next DDTL talked at 7-7.5%; unsecured 2032s above 16% pre-results",
+  "ebitda_m": "2,256",
+  "interest_m": "846",
+  "margin": "Adj. EBITDA 62% / adj. operating 10% (GAAP operating 6%)",
+  "name": "CoreWeave",
+  "net_loss_m": "(709); adjusted (529)",
+  "notes": "Flags vs 2Q (>25%): revenue +42%; adj. operating margin 5% to 10%; interest +32%; D&A +36%; debt +34% to $46.9bn; backlog +27% to ~$132.5bn; capex basis: 2Q row 9,352 appears management basis, 3Q mgmt 14,500 vs cash 9,441. Rate definition differs from 2Q row (management's $/MW is not revenue per active MW). FY26 guide raised; 4Q interest $1.05-1.15bn.",
+  "period": "2026Q3",
+  "rate": "~$40mn per MW (annualized) short-dated; $20-25mn long-dated (management, basis not defined); revenue / avg active MW ~$9mn per MW-year (our calc)",
+  "revenue_m": "3,661",
+  "segment": "neocloud",
+  "sites": "52 active",
+  "source": "CoreWeave 3Q26 release (8-K ex. 99.1) and call, 10 Nov 2026",
+  "ticker": "CRWV",
+  "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm"
+}

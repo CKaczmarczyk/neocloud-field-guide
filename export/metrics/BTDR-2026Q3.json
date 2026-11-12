@@ -1,0 +1,16 @@
+{
+  "active_mw": "n.a. for AI (Tydal not yet energized); 1,747.7 MW total power online, mostly mining",
+  "contracted_mw": "~332 IT MW secured for AI Cloud (company); Tydal lease 121 IT MW (overlap not stated)",
+  "date": "2026-11-11",
+  "debt_cost": "Converts ~$1.2bn at 4-5.25%, none due before Dec 2029; related-party BTC loans, coupon undisclosed; Tydal project debt (at least $500mn) not priced",
+  "margin": "Adj. EBITDA 21.7% / operating -18.4%",
+  "name": "Bitdeer",
+  "notes": "First row. Group revenue mostly mining; AI Cloud backlog ~$2.9bn. Tydal LCs (~$1.3bn) not yet issued; $666.5mn related-party debt current vs $213.7mn cash.",
+  "period": "2026Q3",
+  "rate": "Tydal ~$202 per kW-month (derived: $4.7bn / 16 years / 121 MW / 12, term average)",
+  "revenue_m": "320.7 (AI Cloud 20.4)",
+  "segment": "developer",
+  "source": "Bitdeer 3Q26 release (6-K ex. 99.1) and call, 10 Nov 2026",
+  "ticker": "BTDR",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026117797/ea031140301ex99-1.htm"
+}

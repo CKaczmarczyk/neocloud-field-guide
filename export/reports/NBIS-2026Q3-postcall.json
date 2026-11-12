@@ -1,0 +1,625 @@
+{
+  "changes": [
+    "About $325mn of the $980.8mn was one-off 'asset-light' revenue; without it revenue grew ~13% QoQ, not 68% (6-K ex. 99.2; our calc).",
+    "Delivery slipped: New Jersey (Microsoft) will have 'more than half' of contracted capacity by year-end, the rest in 2Q27, after temporary generation was retired early; FY26 revenue goes to the low end and $7bn ARR moves to February.",
+    "First 2027 guide: revenue $12-13bn (consensus ~$12.2bn) but capex $40-45bn, 75-85% from prepayments and asset-backed debt, pre-tax breakeven only in 4Q27.",
+    "Prepayments are now the funding model: >90% of 3Q contract value carries one, covering >100% of related capex; deferred revenue rose $3.43bn to $9.41bn, but receivables rose $3.76bn and 3Q operating cash flow was -$273mn.",
+    "Debt rose to $14.19bn from $8.55bn (converts $5.75bn, $775mn asset-backed facility); operating cash flow swung from +$2.25bn in 2Q to -$273mn; the $3.5bn Citi secured facility (October) was not addressed on the call."
+  ],
+  "checks": "Post-call. Release, letter and 2Q comparatives from the 6-K exhibits on EDGAR; call from the Investing.com AI-assisted transcript (only one available; Motley Fool and Seeking Alpha not yet posted). A fresh subagent reopened all sources and recomputed derived figures in Python: all core figures confirmed. Fixed after check: 'not a ceiling' belongs to 2027 prepayments, not revenue; 2Q interest ($119.1mn, so interest fell 6% QoQ), operating loss, net loss and operating cash flow (+$2.25bn) filled in; EPS bases separated (GAAP -$0.13; adj. ~$0.30 vs ~-$0.61 consensus); FY27 revenue consensus ~$12.0-12.2bn; removed an unsourced capex-per-MW range. From the 9 November preview, not reopened: Citi 364-day tenor and SOFR+275-350bp, convert coupons and conversion prices, ARR analyst views. Price: $154.69 close 11 November; ~$123 (-20%) intraday 12 November (Investing.com, time not stated); no close yet. Two analyst names (Morgan Stanley, BNP) unconfirmed. Issued shares +21mn QoQ, more than the ATM explains; not reconciled.",
+  "consensus_thesis": "Investors own Nebius for hyperscaler-anchored demand, a ~40% EBITDA margin and prepayment-heavy funding; at $154.69 on 11 November (about $123 intraday on 12 November, -20%, Investing.com) the market prices delivery and funding risk, not demand.",
+  "date": "2026-11-12",
+  "headline": "The consensus view should shift from 'demand-led compounding' to 'execution and funding': demand and pricing (>$25mn per MW-year) look stronger, but delivery slips, a much larger 2027 capex bill and uncollected prepayments mean credit quality holds only if 2027 prepayments of $17-20bn are collected on time.",
+  "kind": "postcall",
+  "kona": "Nebius now gets >90% of new contract value prepaid and says prepayments cover all related capex, at >$25mn per MW-year: Kona should ask GPU-cloud or hosting tenants for prepayments sized to capex, not just deposits. The Vineland delay came from temporary generation being retired early, so behind-the-meter power is now a tenant-facing delivery risk: Kona should show permanent gas generation and fuel supply fully contracted before committing dates, and price delay credits. Collection matters as much as signing: tie prepayment due dates to construction draws.",
+  "monitor": [
+    "New Jersey tranches delivered by year-end and February ARR above $7bn.",
+    "Cash collection of the 3Q receivables build ($3.76bn) and 4Q operating cash flow.",
+    "Citi facility take-out and the first large asset-backed loan against Microsoft or Meta contracts (size, advance rate, spread)."
+  ],
+  "name": "Nebius Group",
+  "pdf_brief": "/_blob/579fb94718f58cc0a56550024287d016",
+  "pdf_report": "/_blob/5e6ec21649d756b19fdd7ac0e9a54a9f",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "Emphasized more: prepayments as standard terms, contract value per MW, 2027 capacity (>1 GW a year) and a switch to revenue and pre-tax guidance. Less or dropped: ARR ('no longer the right measure'), connected-MW targets, the 800 MW-1 GW year-end goal. KPIs more important: deferred revenue and receivables, pre-tax income, RPO. Risks up: delivery at colocation sites, funding scale. Down: demand and pricing. → Dropping ARR the quarter it slips, and not disclosing MW, reduces the market's ability to track delivery; deferred revenue and receivables become the best proxy.",
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Demand and pricing",
+            "Demand exceeds supply; price per MW firm",
+            ">$12bn signed since 1 July; new-deal ACV >$25mn per MW-year (Q2 >$20mn); ARR $6.4bn vs $4.1-4.3bn analyst views (preview); RPO only +3% to $38.7bn",
+            "Confirmed",
+            "6-K ex. 99.2"
+          ],
+          [
+            "P2 Delivery",
+            "Capacity on time; 800 MW-1 GW connected by YE",
+            "New Jersey and other colocation sites 'behind schedule'; half of Microsoft capacity by YE, rest 2Q27; no MW disclosed",
+            "Challenged",
+            "Ex. 99.2; call"
+          ],
+          [
+            "P3 Funding without heavy dilution",
+            "Prepayments and IG-backed debt fund capex",
+            "Prepayments >100% of new-deal capex, but OCF -$273mn; ~$1.0bn net ATM in 3Q (7.6mn shares left); 2027 needs $6-11bn beyond prepay/ABF; Citi take-out silent",
+            "Unresolved",
+            "Ex. 99.1; call"
+          ],
+          [
+            "P4 Unit economics",
+            "~40% EBITDA margin converts to returns",
+            "47.5% EBITDA, 5.1% GAAP operating margin; flattered by one-off revenue; pre-tax breakeven 4Q27 on 5-year depreciation",
+            "Unresolved",
+            "Ex. 99.1, 99.2"
+          ],
+          [
+            "P5 Anchor quality",
+            "Microsoft and Meta de-risk the book",
+            "Microsoft in delivery planning but tranches late; no Meta update; 'high majority' of new $12bn is AI-native",
+            "Challenged",
+            "Ex. 99.2; call"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "table": {
+        "head": [
+          "Topic",
+          "Analysts (12 Nov call)",
+          "Status",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "Capex and funding",
+            "Duval (Goldman), Oliver (Baird)",
+            "Rising",
+            "Direct on prepayments; partial on 2027 gap (no $ figure)"
+          ],
+          [
+            "Delivery and MW timing",
+            "BNP analyst (name unconfirmed), Fish (Piper)",
+            "New",
+            "Mostly direct on cause (power); no milestones"
+          ],
+          [
+            "2027 guide and backlog",
+            "Radke (Citi), Chokshi (Northland)",
+            "Rising",
+            "Direct on 2027 assumptions; deflected on why RPO rose only 3% (follow-up); partial on AI-native share"
+          ],
+          [
+            "Margins",
+            "Donovan (Compass Point)",
+            "Persistent",
+            "Direct: ~40% FY26 reaffirmed; 2027 to trend up"
+          ],
+          [
+            "Pricing / contract mix",
+            "Morgan Stanley analyst (name unconfirmed)",
+            "Persistent",
+            "Partial; short-term mix not quantified"
+          ],
+          [
+            "One-off revenue",
+            "Matovic (Wolfe)",
+            "New",
+            "Direct: excluded from 2027 guide"
+          ],
+          [
+            "Customer concentration",
+            "Oliver (Baird)",
+            "Persistent",
+            "Deflected: enterprise split not reported"
+          ]
+        ]
+      },
+      "title": "Analyst focus (Trevor)"
+    },
+    {
+      "body": "No CK-named analysts; one transcript held, so trends are against the 9 November preview's questions. Added Alex Duval (Goldman Sachs), who opened on funding: asked whether prepayments can carry cash needs given the debt market; answer direct (yes, by allocating capacity across contract types); later evidence: 3Q operating cash flow negative despite $3.43bn of new deferred revenue. Added Tyler Radke (Citi): after a question on 2027 assumptions, followed up on why RPO rose 3% after >$12bn signed; deflected (timing, pricing, post-quarter signings); test: 4Q RPO. Unasked from our preview list: Citi facility take-out, D&A life (answered only as 5-year in the 2027 guide), ATM use (CFO volunteered 7.6mn shares left). — Trevor",
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "Flags: for cost, debt and dilution lines [↓] means worse for shareholders. Sources: 6-K ex. 99.1 and 99.2 (12 November); 2Q26 6-K.",
+      "table": {
+        "head": [
+          "Metric ($mn unless stated)",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "Flag",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "980.8",
+            "582.3",
+            "146.1",
+            "[↑]",
+            "+68% QoQ, +571% YoY"
+          ],
+          [
+            "  of which non-recurring asset-light",
+            "~325",
+            "n.a.",
+            "n.a.",
+            "[?]",
+            "First disclosed"
+          ],
+          [
+            "Adj. EBITDA (margin)",
+            "465.8 (47.5%)",
+            "236.2 (40.6%)",
+            "(5.2)",
+            "[↑]",
+            "Flattered by one-off"
+          ],
+          [
+            "GAAP operating income (margin)",
+            "50.4 (5.1%)",
+            "(175.9)",
+            "(130.2)",
+            "[↑]",
+            "Turned positive"
+          ],
+          [
+            "D&A (% revenue)",
+            "354.7 (36%)",
+            "259.7 (45%)",
+            "99.0",
+            "[↓]",
+            "+37% QoQ"
+          ],
+          [
+            "Interest expense (% revenue)",
+            "112.5 (11.5%)",
+            "119.1 (20%)",
+            "14.7",
+            "[~]",
+            "-6% QoQ"
+          ],
+          [
+            "Net loss, continuing / GAAP EPS",
+            "(37.5) / -$0.13",
+            "(190.4)",
+            "(119.6) / -$0.50",
+            "[↑]",
+            "Adj. net income +90.9"
+          ],
+          [
+            "Capex (cash PP&E)",
+            "7,300",
+            "5,657",
+            "956",
+            "[↓]",
+            "9M $15.4bn"
+          ],
+          [
+            "Operating cash flow",
+            "(273.0)",
+            "2,246.1",
+            "(80.6)",
+            "[↓]",
+            "Receivables +$3.76bn"
+          ],
+          [
+            "Deferred revenue (prepayments)",
+            "9,409",
+            "5,975",
+            "n.a.",
+            "[↑]",
+            "+$3.43bn"
+          ],
+          [
+            "Cash + restricted",
+            "7,426 + 1,216",
+            "8,042 + 1,056",
+            "n.a.",
+            "[~]",
+            ""
+          ],
+          [
+            "Total debt",
+            "14,191",
+            "8,546",
+            "n.a.",
+            "[↓]",
+            "+66% QoQ"
+          ],
+          [
+            "Net debt (ex restricted)",
+            "6,765",
+            "504",
+            "n.a.",
+            "[↓]",
+            ""
+          ],
+          [
+            "ARR ($bn)",
+            "6.4",
+            "3.0",
+            "n.a.",
+            "[↑]",
+            "+1,062% YoY; being retired"
+          ],
+          [
+            "RPO ($bn)",
+            "38.7",
+            "37.5",
+            "n.a.",
+            "[~]",
+            "+3%"
+          ],
+          [
+            "Active / connected MW",
+            "n.d.",
+            "n.d.",
+            "n.d.",
+            "[?]",
+            "Not disclosed"
+          ],
+          [
+            "New-deal ACV per MW-year",
+            ">$25mn",
+            ">$20mn",
+            "n.a.",
+            "[↑]",
+            ""
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improving on price and demand, deteriorating on delivery timing. Excluding the one-off $325mn, revenue grew ~13% QoQ (our calc); guidance credibility drops a notch (ARR target set in August missed by two months).",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "FY26 revenue",
+            "Low end of $3.0-3.4bn (CFO: $3.0-3.2bn)",
+            "Lowered",
+            "Below ~$3.35bn",
+            "Third-party capacity slipped into 1H27",
+            "Implied 4Q $1.04-1.24bn"
+          ],
+          [
+            "FY26 adj. EBITDA margin",
+            "~40%",
+            "Maintained",
+            "In line",
+            "Timing varies",
+            "4Q implies lower margin than 3Q"
+          ],
+          [
+            "FY26 capex",
+            "~$27bn",
+            "Raised (from $20-25bn)",
+            "Above ~$23.2-23.9bn",
+            "Building 2027 capacity",
+            "Implied 4Q ~$11.6bn"
+          ],
+          [
+            "ARR",
+            ">$7bn for February",
+            "Delayed ~2 months",
+            "Below $7-9bn YE",
+            "Same slip",
+            "Metric dropped from 2027"
+          ],
+          [
+            "Contracted power",
+            "5 GW by YE",
+            "Maintained",
+            "n.a.",
+            "",
+            ""
+          ],
+          [
+            "FY27 revenue",
+            "$12-13bn",
+            "New",
+            "In line (~$12.0-12.2bn)",
+            "Conservative capacity timing",
+            "Excludes asset-light deals"
+          ],
+          [
+            "FY27 capex",
+            "$40-45bn",
+            "New",
+            "Above ~$29bn",
+            "Owned sites, >1 GW a year",
+            "75-85% prepay and ABF; prepayments $17-20bn, 'not a ceiling'"
+          ],
+          [
+            "Pre-tax breakeven",
+            "4Q27",
+            "New",
+            "n.a.",
+            "5-year depreciation",
+            "FY27 loss implied"
+          ]
+        ]
+      },
+      "title": "Guidance analysis"
+    },
+    {
+      "body": "5-10 year view: pricing power and an enterprise customer base are building, but Nebius is moving from asset-light colocation to owning gigawatt sites; returns will depend on delivering >1 GW a year on time and funding it at asset-backed spreads.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power and sites",
+            "Mixed",
+            "↓ near term",
+            "Colocation sites late; >3 GW owned sites over 3-3.5 years",
+            "Owned sites cut third-party risk but raise capex"
+          ],
+          [
+            "Customer credit",
+            "Strong but shifting",
+            "~",
+            "Microsoft, Meta anchors; new $12bn mostly AI-native",
+            "Prepayments offset weaker credit"
+          ],
+          [
+            "Cost of capital",
+            "Moderate",
+            "~",
+            "Converts 0.50% 2030 and 4.50% 2034; ABS SOFR+250; Citi 364-day SOFR+275-350 (terms per preview)",
+            "Cheaper than CoreWeave if prepay model holds"
+          ],
+          [
+            "Delivery speed",
+            "Weakening",
+            "↓",
+            "Temporary generation retired early; Bloom fuel cells replacing",
+            "Behind-the-meter power is now a delivery risk"
+          ],
+          [
+            "Software / services",
+            "Improving",
+            "↑",
+            "Token Factory, Databricks, Snowflake, Palantir wins",
+            "Supports >$25mn per MW-year pricing"
+          ]
+        ]
+      },
+      "title": "Strategic / moat evolution"
+    },
+    {
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Delivery and construction",
+            "Watched (Vineland fine, stop-work)",
+            "Microsoft tranches to 2Q27; other colocation sites late",
+            "Up",
+            "Revenue and ARR pushed right"
+          ],
+          [
+            "Funding and refinancing",
+            "Citi 364-day bridge",
+            "2027 capex $40-45bn; $6-11bn beyond prepay/ABF (our calc); Citi silent",
+            "Up",
+            "Dilution or costlier debt"
+          ],
+          [
+            "Prepayment collection",
+            "Not tracked",
+            "Receivables +$3.76bn; OCF negative",
+            "New",
+            "Prepay model only works if cash arrives"
+          ],
+          [
+            "Earnings quality",
+            "D&A absorbing EBITDA",
+            "One-off $325mn; breakeven 4Q27",
+            "Up",
+            "Margins not yet proof of returns"
+          ],
+          [
+            "Customer concentration",
+            "Microsoft oversight report",
+            "Mix shifting to AI-native",
+            "~",
+            "Credit mix weaker, prepay stronger"
+          ]
+        ]
+      },
+      "title": "Major risks and changes"
+    },
+    {
+      "table": {
+        "head": [
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "Can prepayments fund capex in a weak debt market?",
+            "Yes; capacity allocated across contract types",
+            "Partly: deferred revenue +$3.43bn but receivables +$3.76bn"
+          ],
+          [
+            "Why is Vineland late?",
+            "Temporary generation wound down early; moving to Bloom",
+            "Half of Microsoft capacity by YE; rest 2Q27"
+          ],
+          [
+            "Is 47.5% margin repeatable?",
+            "~40% for FY26; 2027 to trend up",
+            "One-off $325mn in 3Q; excluded from 2027 guide"
+          ]
+        ]
+      },
+      "title": "Concern → response → evidence"
+    },
+    {
+      "body": "$mn. 3Q and 9M from 6-K ex. 99.1 cash-flow statement; 2Q from 2Q26 6-K. Funding gap = capex less operating cash flow (our calc). What the next dollar costs: secured asset-backed debt at SOFR+250bp (July) and the Citi bridge at SOFR+275bp stepping to 350bp; converts cheap but convert at about $313-325 (preview), far above the share price. Maturities in 24 months: the Citi facility (364-day from October per preview; draw undisclosed). Management cites payback under two years on five-year deals with prepayments covering over 100% of capex: the risk is timing and collection, not pricing. Issued shares rose more than the ATM alone explains (+21mn QoQ in issued shares), so check the 6-K share bridge. → 2027 needs $40-45bn; if prepayments of $17-20bn arrive on time and asset-backed debt covers most of the rest, equity need is small; a slip of one quarter in collections widens the gap by several billion.",
+      "table": {
+        "head": [
+          "Period",
+          "Capex",
+          "Op. cash flow",
+          "Funding gap",
+          "Debt raised",
+          "Equity raised",
+          "Prepay (def. rev.)",
+          "Net debt",
+          "Shares (mn)"
+        ],
+        "rows": [
+          [
+            "3Q26",
+            "7,300",
+            "(273)",
+            "~7,573",
+            "Converts 5,750; ABS 773",
+            "Treasury shares (ATM) 1,062",
+            "9,409 (+3,434)",
+            "6,765",
+            "292.9"
+          ],
+          [
+            "2Q26",
+            "5,657",
+            "2,246",
+            "~3,411",
+            "n.a.",
+            "n.a.",
+            "5,975",
+            "504",
+            "n.a."
+          ],
+          [
+            "9M26",
+            "15,431",
+            "4,231",
+            "~11,200",
+            "Converts 10,088; ABS 773",
+            "Treasury shares 3,909; warrants 2,000",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "title": "Capital, funding and per-share impact"
+    },
+    {
+      "body": "Deferred revenue and receivables: does cash follow invoices in 4Q? | New Jersey: Microsoft tranches delivered by 31 December. | February ARR above $7bn (last ARR print). | Citi take-out and first contract-backed loan (size, spread). | 4Q RPO after >$12bn signed. Key risks building: delivery slips at colocation sites; 2027 funding scale; earnings quality. Confirmation: 4Q operating cash flow positive; capacity disclosed in MW. Tripwires: another delivery slip on Microsoft; equity raise above the ATM; prepayments refunded or deferred.",
+      "title": "Five signals"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters",
+          "Asked?"
+        ],
+        "rows": [
+          [
+            "3Q deferred revenue rose $3.43bn but receivables rose $3.76bn and OCF was -$273mn. How much of the receivable is collected since 30 September, and are prepayments contractually due before capex is spent?",
+            "Tests P3; prepay model is the credit story",
+            "No"
+          ],
+          [
+            "The $3.5bn 364-day Citi facility steps to SOFR+350bp. Drawn amount, and which contract-backed loan takes it out, at what advance rate and spread?",
+            "Credit: refinancing risk",
+            "No"
+          ],
+          [
+            "2027 capex $40-45bn with 75-85% from prepayments and asset-backed debt leaves $6-11bn. Equity, converts or more secured debt?",
+            "Credit and dilution",
+            "Partly (Oliver; no $)"
+          ],
+          [
+            "Excluding $325mn one-off, revenue grew ~13% QoQ. What was 3Q revenue and EBITDA margin on recurring cloud alone?",
+            "Tests P4",
+            "Partly (Matovic)"
+          ],
+          [
+            "Connected MW at 30 September and at year-end vs the old 800 MW-1 GW goal?",
+            "Tests P2",
+            "No"
+          ],
+          [
+            "RPO +3% after >$12bn signed: how much was signed after 30 September, and was any RPO repriced or cancelled?",
+            "Tests P1 and P5",
+            "Deflected (Radke)"
+          ]
+        ]
+      },
+      "title": "Questions for owners (post-call)"
+    },
+    {
+      "body": "Nebius now gets >90% of new contract value prepaid and says prepayments cover all related capex, at >$25mn per MW-year: Kona should ask GPU-cloud or hosting tenants for prepayments sized to capex, not just deposits. The Vineland delay came from temporary generation being retired early, so behind-the-meter power is now a tenant-facing delivery risk: Kona should show permanent gas generation and fuel supply fully contracted before committing dates, and price delay credits. Collection matters as much as signing: tie prepayment due dates to construction draws.",
+      "title": "Read-across for Kona"
+    }
+  ],
+  "segment": "neocloud",
+  "sources": [
+    {
+      "title": "Nebius 3Q26 release (6-K ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926126008/tm2629571d1_ex99-1.htm"
+    },
+    {
+      "title": "Nebius 3Q26 shareholder letter (6-K ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926126008/tm2629571d1_ex99-2.htm"
+    },
+    {
+      "title": "Nebius 2Q26 release (6-K ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-1.htm"
+    },
+    {
+      "title": "3Q26 call transcript (Investing.com, AI-assisted)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-nebius-sinks-premarket-after-q3-2026-eps-miss-93CH-5022210"
+    },
+    {
+      "title": "Nebius shares fall despite beat (Investing.com, price)",
+      "url": "https://www.investing.com/news/earnings/nebius-shares-fall-despite-beating-q3-estimates-5021464"
+    },
+    {
+      "title": "Consensus (Beinsure)",
+      "url": "https://beinsure.com/news/nebius-stock-drops-10-despite-571-ai-revenue-growth/"
+    }
+  ],
+  "ticker": "NBIS",
+  "verdict": "Monitoring",
+  "versus": "Quarter: beat (revenue $980.8mn vs ~$906-917mn; adj. EPS ~$0.30 vs ~-$0.61 consensus; GAAP EPS -$0.13). Outlook: below (FY26 revenue cut to $3.0-3.2bn vs ~$3.35bn; ARR target slips two months; capex up)."
+}

@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "About 130k GPUs roll off contract in 2027 and 170k in 2028; management sees about $4bn of 2027 ARR (about $10bn including 2028) from re-contracting paid-off GPUs; Ampere and Hopper prices up 30-50% QoQ.",
+      "company": "CoreWeave",
+      "date": "2026-11-10",
+      "direction": "supports",
+      "numbers": "Renewal ARR is outside backlog and unsigned; DDTL 5.5 runs about five years on contracts averaging about three.",
+      "segment": "neocloud",
+      "source": "CoreWeave 3Q26 call",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-coreweave-tops-q3-2026-forecast-and-shares-rise-57-93CH-5017354"
+    },
+    {
       "claim": "CEO says H100s contracted at double the original pricing.",
       "company": "IREN",
       "date": "2026-11-05",
@@ -122,5 +132,5 @@
   "status": "mixed",
   "summary": "Older chips are still holding value on management's telling: Crusoe says A100 and H100 rents exceed launch levels, and SpaceX says new compute pays back in under a year. But these are statements, not renewal data, and only a small part of fleets has come up for renewal; the test comes when 2027-28 supply is online and the first big block of contracts rolls off. SpaceX's Apollo lease runs about 5 to 5.25 years with Apollo owning the chips, a structure worth watching once its residual terms are known. Status unchanged.",
   "title": "What chips earn after their first contract",
-  "updated": "2026-11-06"
+  "updated": "2026-11-11"
 }

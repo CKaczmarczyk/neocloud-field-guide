@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Microsoft capacity at the New Jersey (Vineland) colocation site slipped: more than half delivered by year-end, the rest in 2Q27, after the site's temporary generation was retired early; power is moving to Bloom fuel cells.",
+      "company": "Nebius",
+      "date": "2026-11-12",
+      "direction": "against",
+      "numbers": "FY26 revenue cut to low end of $3.0-3.4bn; $7bn ARR target moved from December to February.",
+      "segment": "neocloud",
+      "source": "Nebius 3Q26 shareholder letter and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926126008/tm2629571d1_ex99-2.htm"
+    },
+    {
       "claim": "Core Scientific plans behind-the-meter for the next Pecos buildings with an independent power producer; air permits are not filed and a 10.6-mile gas lateral is proposed.",
       "company": "Core Scientific",
       "date": "2026-11-05",
@@ -237,5 +247,5 @@
   "status": "strengthening",
   "summary": "On-site gas has gone mainstream and now has political cover: Trump says data centers must make their own power, INNIO took one developer to 1.72 GW of engines, SpaceX plans 20 GW of its own power and cooling, and Cipher is laying gas laterals for up to 2.5 GW under an independent power producer model. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets run into late 2028, with prices rising. The Southaven ruling adds a legal catch: temporary turbines are not exempt from air permits as mobile sources. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-11-09"
+  "updated": "2026-11-12"
 }

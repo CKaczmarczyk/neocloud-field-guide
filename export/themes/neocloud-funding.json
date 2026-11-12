@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "Guides 2027 capex of $40-45bn, 75-85% funded by customer prepayments and asset-backed debt, with prepayments of $17-20bn; says >90% of 3Q contract value is prepaid, covering >100% of related capex.",
+      "company": "Nebius",
+      "date": "2026-11-12",
+      "direction": "neutral",
+      "numbers": "Deferred revenue +$3.43bn to $9.41bn but receivables +$3.76bn and 3Q operating cash flow -$273mn; debt $14.19bn (from $8.55bn); $6-11bn of 2027 capex outside prepay/ABF (our calc); Citi bridge take-out not addressed.",
+      "segment": "neocloud",
+      "source": "Nebius 3Q26 6-K and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926126008/tm2629571d1_ex99-2.htm"
+    },
+    {
+      "claim": "Says it needs under $5bn of parent-level capital through 2027, will not use unsecured debt at current yields, expects about $9bn of prepayments in three months, and talks its next delayed-draw loan at about 7-7.5%.",
+      "company": "CoreWeave",
+      "date": "2026-11-10",
+      "direction": "supports",
+      "numbers": "Weighted cost of debt 7.9%, but total debt rose $11.8bn in the quarter to $46.9bn and 4Q interest is guided to $1.05-1.15bn; unsecured 2032s yielded above 16% before results.",
+      "segment": "neocloud",
+      "source": "CoreWeave 3Q26 call and release",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-coreweave-tops-q3-2026-forecast-and-shares-rise-57-93CH-5017354"
+    },
+    {
+      "claim": "Started Tydal project financing of at least $500mn secured on contracted rent; would not rule out an equity raise in 4Q26 or 1Q27.",
+      "company": "Bitdeer",
+      "date": "2026-11-10",
+      "direction": "against",
+      "numbers": "Prepayments ($263.8mn) and BTC sales funded 3Q capex; $666.5mn of related-party debt current against $213.7mn of cash; no loan priced.",
+      "segment": "developer",
+      "source": "Bitdeer 3Q26 call and 6-K",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/10/bitdeer-btdr-q3-2026-earnings-call-transcript/"
+    },
+    {
       "claim": "Microsoft plans to cut the number of neocloud suppliers in favor of its own sites, has not chosen which to drop, and let an older-generation Oracle capacity deal lapse (people familiar; single source).",
       "company": "Microsoft",
       "date": "2026-11-09",
@@ -279,5 +309,5 @@
   "status": "weakening",
   "summary": "Credit for weaker neoclouds got worse after the midterms: CoreWeave's 2032 notes passed 16% and its CDS 1,289 bps, banks are reportedly selling AI loans and an unnamed holder is auctioning $500M of data center debt, and Microsoft says it will use fewer neocloud suppliers (single source). Fermi's lease failed to close for want of project finance, and Firmus and Nscale remain unresolved. The strong end still raises: Nebius funded with $2.8B of ATM equity and prepayments, and Apollo's $75B of chip deals went to SpaceX and Anthropic, so the market is splitting by credit rather than shutting. Status stays weakening; CoreWeave's 10 November and Nebius's 12 November results are the next tests.",
   "title": "Neocloud funding access",
-  "updated": "2026-11-09"
+  "updated": "2026-11-12"
 }

@@ -1,0 +1,325 @@
+{
+  "brief": [
+    "Verdict ahead of the print: leadership continuity and the size of Nvidia's ecosystem guarantees matter more than the revenue beat.",
+    "Kona: do not rely on Nvidia backstops in a GPU-owner tenant's financing plan."
+  ],
+  "changes": [
+    "Report date: Tuesday 17 November, results about 1:20 p.m. PT, call 2:00 p.m. PT (company, 28 October; repeated in the 12 November release filed as 8-K ex. 99.1).",
+    "Jensen Huang resigned as CEO, president and director (effective 11 November, announced 12 November; no reason given in the 8-K). CFO Colette Kress is interim CEO and stays CFO; Harvey Jones becomes the first-ever board chair; the board expects operations, customer commitments and roadmap to continue without interruption. On 8 November the board had opened an independent investigation with outside counsel (company statement, per press).",
+    "Downgrades: Bernstein to Market Perform on CEO uncertainty ($400 to $200); Baird to Neutral on data center visibility and supply ($500 to $200); Wells Fargo target $315 to $300 (press).",
+    "The Information (reported 23 October) put Nvidia's exposure to neoclouds at more than $170bn; Nvidia reported in talks on a residual value guarantee for Nscale's West Virginia campus for Anthropic (The Information, 29 October).",
+    "Bloomberg (5 November): Microsoft pulling back from parts of deals with Nscale, Nebius and IREN."
+  ],
+  "checks": "Built before results. Date from Nvidia's 28 October release, repeated in the 12 November release (8-K ex. 99.1). CEO transition from the 8-K (items 5.02, 9.01; event date 11 November; no reason stated). 2Q FY27 figures and 3Q guide from release and CFO commentary; guarantees ($108.5bn incl. $105bn Ohio), cloud ($29bn) and AI-cloud ($36bn) agreements, equity ($99bn held, $25bn committed), supply commitments ($279bn), DSO and 16% customer from the 2Q 10-Q; all confirmed by a fresh subagent. Consensus: ~$109bn revenue and $2.47 EPS confirmed; LSEG $109.2bn, Fiscal AI $108.4bn, ranges and FY27/FY28 not reopened. Price $173.73 (11 Nov) confirmed; record close $239.11 (CoinAlertNews) vs $239.24 unconfirmed; drawdown ~27% computed. Removed: Oppenheimer downgrade, -10% intraday move and FBI probe (unsourced); personal allegations not stated. Single-source: China $7.5bn, Firmus, OpenAI tranche, Baird write-down, H200s in Hong Kong. No CDS level for November.",
+  "consensus_thesis": "Investors own Nvidia for supply-constrained AI demand (FY28 revenue guided up about 70%) and 74-75% gross margins, and have grown wary of the balance sheet it lends to the ecosystem (about $108.5bn of guarantees, $65bn of cloud and AI-cloud capacity agreements, about $99bn of equity stakes); at $173.73 on 11 November, before the resignation was announced, the stock was about 27% below its 6 October record close (~$239), so it now prices leadership and vendor-financing risk, not a demand problem.",
+  "date": "2026-11-12",
+  "headline": "Fiscal 3Q27 (quarter to 25 October, results 17 November after the close) is a test of whether the $108bn revenue guide, $422bn of commitments and $108.5bn of guarantees still look safe after Jensen Huang resigned as CEO (effective 11 November, announced 12 November).",
+  "kind": "preview",
+  "kona": "Nvidia's guarantees and capacity buy-backs are what make many neocloud tenants financeable; if the CEO change or the Microsoft pull-back makes Nvidia cap that support, GPU-owning tenants lose a backstop and lenders will price their credit on its own. Kona should not count on Nvidia credit support in a GPU-owner tenant's financing plan, and should prefer tenants whose contracts are backed by a hyperscaler or prepaid.",
+  "kpis": [
+    {
+      "consensus": "$108.4-109.2bn (Fiscal AI, Yahoo 45 analysts, LSEG via IG)",
+      "current": "",
+      "metric": "Revenue",
+      "note": "Guide $108.0bn ±2%",
+      "prior": "$96.2bn (2Q FY27); $57.0bn (3Q FY26)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Data center revenue",
+      "note": "Vera Rubin about 20% of 3Q data center revenue (2Q call)",
+      "prior": "$89.0bn (Hyperscale $48.7bn; AI clouds, industrial and enterprise $40.3bn)"
+    },
+    {
+      "consensus": "about 74% (= guide)",
+      "current": "",
+      "metric": "Gross margin",
+      "note": "Guide 74.0% ±50bp; 4Q trough 71-72%",
+      "prior": "75.0% GAAP and non-GAAP"
+    },
+    {
+      "consensus": "$2.46-2.48",
+      "current": "",
+      "metric": "EPS (non-GAAP)",
+      "note": "",
+      "prior": "$2.22 non-GAAP; $2.46 GAAP"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Guarantees",
+      "note": "2Q FY27 10-Q",
+      "prior": "$108.5bn (incl. up to $105bn for SB Energy's Ohio campus leased to OpenAI)"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Cloud and AI-cloud capacity agreements",
+      "note": "Capacity Nvidia buys and AI clouds can resell; commitments fall as capacity is used",
+      "prior": "$29bn cloud services + $36bn AI-cloud agreements"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Equity investments",
+      "note": "Nearly $50bn in frontier labs (2Q call)",
+      "prior": "about $99bn held; $25bn committed"
+    },
+    {
+      "consensus": "n.a.",
+      "current": "",
+      "metric": "Supply and capacity commitments",
+      "note": "Mostly memory",
+      "prior": "$279bn (from $119bn)"
+    },
+    {
+      "consensus": "$124.3-124.5bn (Yahoo; Investing.com)",
+      "current": "",
+      "metric": "4Q FY27 revenue (next guide)",
+      "note": "Range $117.3-138.5bn",
+      "prior": ""
+    }
+  ],
+  "monitor": [
+    "Guarantees, AI-cloud agreements and committed equity investments in the 3Q 10-Q against $108.5bn, $65bn and $25bn at 2Q.",
+    "4Q revenue guide against about $124bn consensus and the gross-margin trough of 71-72%.",
+    "Leadership: any change to interim arrangements, retention, and whether commitments to neoclouds and OpenAI's Ohio campus are restated."
+  ],
+  "name": "Nvidia",
+  "pdf_brief": "",
+  "pdf_report": "",
+  "period": "2026Q3",
+  "questions": [
+    {
+      "question": "The 2Q 10-Q lists $108.5bn of guarantees, $105bn of it for the Ohio campus leased to an OpenAI affiliate, and $36bn of AI-cloud capacity agreements. What were both at 25 October, which counterparties do they cover, and what has been drawn or reserved?",
+      "style": "credit",
+      "why": "Tests how much neocloud and lab credit risk sits on Nvidia's balance sheet."
+    },
+    {
+      "question": "Press reports Nvidia is weighing a residual value guarantee for Nscale's West Virginia campus. Has any new guarantee or capacity purchase been signed since July, and is there a cap the board has set on such support?",
+      "style": "credit",
+      "why": "Vendor-financing pillar; Kona-relevant precedent."
+    },
+    {
+      "question": "DSO rose to 60 days from 45 on extended terms for investment-grade customers. What were DSO and receivables at quarter-end, and are any neocloud receivables past due?",
+      "style": "credit",
+      "why": "Early sign of customer stress."
+    },
+    {
+      "question": "With Microsoft reportedly pulling back from parts of its Nscale, Nebius and IREN deals, have any AI-cloud customers deferred or cancelled Blackwell or Rubin orders, and does the 4Q guide assume any capacity Nvidia itself buys back?",
+      "style": "equity",
+      "why": "Tests demand durability through the neocloud channel."
+    },
+    {
+      "question": "Under interim leadership, are the FY28 ~70% growth outlook and the gross-margin path (71-72% trough in 4Q, 72-73% in FY28) reaffirmed?",
+      "style": "equity",
+      "why": "Tests whether guidance survives the CEO change."
+    },
+    {
+      "question": "The Information reported about $7.5bn of Nvidia chips reaching China (single source). Is any revenue at risk of restatement, write-down or export penalty?",
+      "style": "equity",
+      "why": "Legal and compliance tail on reported revenue."
+    }
+  ],
+  "risks": [
+    "Leadership transition; the board's independent investigation (company statement, 8 November); circumstances not stated in the 8-K.",
+    "Vendor financing: guarantees and capacity agreements with neoclouds and labs called on if a customer fails.",
+    "China export compliance (reports of chips reaching China; H200 units stuck in Hong Kong).",
+    "Gross margin squeezed by memory prices.",
+    "Hyperscaler pull-back from neocloud capacity (Microsoft)."
+  ],
+  "sections": [
+    {
+      "body": "Buyer and financier mode: Nvidia sells the GPUs, and increasingly supports demand for them by investing in labs and neoclouds, buying back cloud capacity, and guaranteeing leases and land. Data center was $89.0bn of $96.2bn 2Q FY27 revenue. One direct customer was 16% of 2Q revenue.",
+      "title": "Business model"
+    },
+    {
+      "table": {
+        "head": [
+          "Metric",
+          "Consensus or estimate",
+          "Source, date",
+          "Prior / guide"
+        ],
+        "rows": [
+          [
+            "3Q revenue",
+            "$108.98bn (range $104.9-116.3bn); $109.2bn; $108.4bn",
+            "Yahoo, 5 Nov; LSEG via IG, 10 Nov; Fiscal AI (only ~$109bn confirmed by checker)",
+            "Guide $108.0bn ±2%; 2Q $96.2bn"
+          ],
+          [
+            "3Q EPS",
+            "$2.47 (range $2.34-2.70)",
+            "Yahoo, 5 Nov; Koyfin 11 Nov",
+            "2Q $2.22 non-GAAP"
+          ],
+          [
+            "Gross margin",
+            "about 74%",
+            "Guide",
+            "2Q 75.0%"
+          ],
+          [
+            "4Q revenue",
+            "$124.48bn (range $117.3-138.5bn); $124.3bn",
+            "Yahoo; Investing.com",
+            "Wells Fargo $126.4bn"
+          ],
+          [
+            "FY27 / FY28 revenue",
+            "about $411.7bn / about $692bn",
+            "Yahoo",
+            "FY28 guided up about 70%"
+          ],
+          [
+            "Share price",
+            "$173.73 on 11 Nov (about $4.19tn); fell on 12 Nov (no close found)",
+            "Motley Fool",
+            "Record close ~$239 on 6 Oct ($239.11 per CoinAlertNews)"
+          ],
+          [
+            "CDS",
+            "Record 82bp in late July (reported 28 July); no November level found",
+            "ICE via Bloomberg (TNW)",
+            ""
+          ]
+        ]
+      },
+      "title": "Consensus numbers"
+    },
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumes",
+          "Test this quarter (bar)",
+          "Held by"
+        ],
+        "rows": [
+          [
+            "P1 Demand outruns supply",
+            "Hyperscaler and neocloud demand sustains growth",
+            "Revenue vs $108-109bn; 4Q guide vs ~$124bn",
+            "Mizuho, Raymond James, IG"
+          ],
+          [
+            "P2 Margins hold",
+            "Memory costs absorbed",
+            "3Q GM vs 74%; 4Q trough 71-72% held",
+            "Company; IG"
+          ],
+          [
+            "P3 Vendor financing is contained",
+            "Guarantees and capacity buys are limited risk",
+            "10-Q guarantees, AI-cloud agreements, DSO",
+            "Management vs Burry, The Information"
+          ],
+          [
+            "P4 Continuity after Huang",
+            "Roadmap and commitments unchanged",
+            "Interim CEO tone; guidance reaffirmed",
+            "Board vs Bernstein"
+          ],
+          [
+            "P5 China is upside only",
+            "Guide excludes China; no compliance cost",
+            "Any write-down or penalty disclosure",
+            "IG vs Baird ($5bn H200 risk)"
+          ]
+        ]
+      },
+      "title": "Thesis pillars"
+    },
+    {
+      "table": {
+        "head": [
+          "Bull",
+          "Bear"
+        ],
+        "rows": [
+          [
+            "FY28 growth guided ~70%, supply-limited",
+            "CEO resignation; leadership and retention risk (Bernstein)"
+          ],
+          [
+            "Guide excludes China: upside",
+            "Exports compliance; H200s stuck in Hong Kong (single source)"
+          ],
+          [
+            "Chips redeployable; 'we're not making loans'",
+            "More than $170bn exposure to neoclouds (The Information); Cisco comparisons"
+          ],
+          [
+            "Rubin ramp about 20% of 3Q data center",
+            "Gross margin trough 71-72% on memory"
+          ]
+        ]
+      },
+      "title": "Bull and bear"
+    },
+    {
+      "body": "(a) Does leadership change alter the roadmap, commitments or guidance? (b) How large and how contingent is Nvidia's support of neoclouds and labs, and is Microsoft's pull-back a first call on it? (c) Gross-margin floor as memory prices rise. (d) China: upside or compliance liability?",
+      "title": "Live debates"
+    },
+    {
+      "body": "YTD move -4% to -6.8% (price date differs); record close $239.11-239.24 (vs $243.37 intraday high); 4Q consensus $124.3bn vs $124.5bn; targets after the CEO news range from $200 (Bernstein, Baird) to $300 (Morgan Stanley, Wells Fargo). Single-source: China $7.5bn report (The Information), Firmus talks, OpenAI final $10bn tranche, Baird $5bn write-down.",
+      "title": "Where sources disagree"
+    },
+    {
+      "body": "See questions: guarantees and AI-cloud agreements at quarter-end; new guarantees (Nscale); DSO and neocloud receivables; neocloud order deferrals; guidance under interim CEO; China exposure.",
+      "title": "Questions for the call"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "Nvidia 3Q FY27 call date (28 Oct)",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+    },
+    {
+      "title": "Nvidia 8-K, CEO transition (12 Nov)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+    },
+    {
+      "title": "2Q FY27 release",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027?output=1"
+    },
+    {
+      "title": "2Q FY27 CFO commentary",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf"
+    },
+    {
+      "title": "2Q FY27 call transcript",
+      "url": "https://s201.q4cdn.com/141608511/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf"
+    },
+    {
+      "title": "Bernstein downgrade on CEO uncertainty (Investing.com)",
+      "url": "https://uk.investing.com/news/stock-market-news/bernstein-downgrades-nvidia-stock-rating-on-ceo-uncertainty-93CH-4976066"
+    },
+    {
+      "title": "Nvidia $170bn neocloud exposure (TNW)",
+      "url": "https://thenextweb.com/news/nvidia-170bn-neoclouds-firmus"
+    },
+    {
+      "title": "Nvidia weighs Nscale guarantee (TechCrunch)",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/"
+    },
+    {
+      "title": "Nvidia CDS record (TNW)",
+      "url": "https://thenextweb.com/news/nvidia-announced-750bn-of-ai-deals-its-own-credit-market-flinched"
+    },
+    {
+      "title": "Preview pricing (Motley Fool)",
+      "url": "https://www.fool.com/investing/2026/11/10/prediction-nov-17-will-be-a-huge-day-for-the-stock-market/"
+    },
+    {
+      "title": "Nvidia 2Q FY27 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    }
+  ],
+  "ticker": "NVDA",
+  "verdict": "Preview",
+  "versus": "Pre-results. Guide $108.0bn revenue (±2%) and 74.0% gross margin; consensus about $108.4-109.2bn revenue and EPS about $2.46-2.48; 4Q consensus about $124.3-124.5bn."
+}

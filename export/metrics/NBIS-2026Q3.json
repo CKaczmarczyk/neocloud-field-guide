@@ -1,0 +1,21 @@
+{
+  "active_mw": "n/d (not disclosed; 'biggest QoQ increase in active capacity')",
+  "capex_m": "7,300",
+  "contracted_mw": ">4 GW contracted power (5 GW YE target)",
+  "da_m": "355",
+  "date": "2026-11-12",
+  "debt_cost": "$775M asset-backed facility at SOFR + 250 (July); $3.5B Citi secured facility (Oct) SOFR + 275 stepping to 350 per preview; converts 0.50% 2030 / 4.50% 2034",
+  "ebitda_m": "466",
+  "interest_m": "113",
+  "margin": "Adj. EBITDA 47.5% / GAAP operating 5.1% (incl. ~$325M one-off asset-light revenue)",
+  "name": "Nebius",
+  "net_loss_m": "(37.5); adjusted +90.9",
+  "notes": "Flags vs 2Q (>25%): revenue +68% (only ~+13% ex ~$325M one-off); EBITDA +97%; D&A +37%; debt +66% to $14.2B; capex +29%; OCF swung from +$2.25B to -$273M as receivables rose $3.76B. ARR $6.4B being retired as a KPI. Margin basis same as 2Q (adj. EBITDA); 2Q row lacked operating margin.",
+  "period": "2026Q3",
+  "rate": ">$25M ACV per MW-year on 3Q deals (>$20M on 2Q deals), management basis",
+  "revenue_m": "981",
+  "segment": "neocloud",
+  "source": "Nebius 3Q26 6-K ex. 99.1 and 99.2, call 12 Nov 2026",
+  "ticker": "NBIS",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926126008/tm2629571d1_ex99-1.htm"
+}

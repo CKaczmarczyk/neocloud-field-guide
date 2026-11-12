@@ -1,0 +1,680 @@
+{
+  "changes": [
+    "Adjusted operating margin doubled to 10% (5% in 2Q, 1% in 1Q); FY26 adjusted operating income guide raised 26% at the midpoint, implying about 16.5% in 4Q at the midpoint (15-18% across the range).",
+    "Funding plan reframed: no new parent unsecured debt at current yields through 2027, under $5bn of parent-level capital needed, next delayed-draw loan talked at about 7-7.5%.",
+    "About $9bn of customer prepayments and deposits due in the next three months; prepayments on about 70% of this year's deals.",
+    "Backlog about $132.5bn (+27% QoQ); contracted power above 4.6 GW (+over 900 MW); active power above 1.7 GW (+over 200 MW).",
+    "Total debt $46.9bn, up $11.8bn QoQ; 4Q interest guided to $1.05-1.15bn; capex of $14.5bn (management basis) ran above the top of the guide."
+  ],
+  "checks": "Post-call. Results from the 3Q26 release (SEC 8-K exhibit 99.1, 10 November) and the 2Q26 and 3Q25 releases; call content from four transcripts (Investing.com, Motley Fool via AOL, Equibles, TradingKey) that agree on six analysts. 10-Q not yet filed, so 3Q customer concentration, maturities and ATM usage are missing. Derived figures (growth, margins, total and net debt, funding gap, EBITDA less interest, coverage, implied 4Q = FY guide less 9M) recomputed in Python. A fresh subagent checked about 93 items against the sources: about 85 confirmed; fixed: bond yields (2032s above 16%, not 15-16%), 'half junk-bond yields' attributed to The Next Web not Bloomberg, implied 4Q margin restated as ~16.5% at midpoints (15-18% range). Unverifiable from today's sources and carried from the 5 November preview: prior 3Q guides ($3.45-3.6bn revenue, $860-940mn interest), prior FY adjusted operating income guide ($0.96-1.15bn; consistent with the release's +26% at midpoint), Goldman's +100-200bp view. Microsoft supplier-cut report is single source (Dataconomy). Share price: $48.73 close 10 November; about $56 (+16%) early 11 November per 24/7 Wall St; no bond or CDS quote dated 10-11 November found. EPS consensus conflicting across sources and not used.",
+  "consensus_thesis": "Investors own CoreWeave for take-or-pay backlog, tight supply and rising price per MW, and avoid it for leverage, refinancing and customer credit; going in, the stock (about $48) and bonds (2032s above 16%, CDS above 1,100bp) priced a funding problem, not an operating one.",
+  "date": "2026-11-11",
+  "headline": "The market's funding-crisis view should soften: a beat-and-raise quarter plus a plan to fund 2027 almost entirely at asset level (under $5bn of parent capital, about $9bn of prepayments in three months) strengthens the thesis, but debt rose $11.8bn in the quarter and credit relief now depends on the next delayed-draw loan pricing near 7-7.5%.",
+  "kind": "postcall",
+  "kona": "CoreWeave has put a price on tenant credit: its delayed-draw loans run from about 225bp over SOFR for investment-grade customers to 550bp for AI labs, and prepayments on about 70% of deals are its cheapest capital. For Kona: price contracts to win prepayment, and prefer investment-grade or large-enterprise tenants over labs if it ever finances GPUs; short-dated capacity at about $40mn per MW against $20-25mn long-dated shows the premium for flexibility. Reopened secured lending helps a Kona tenant fund GPUs, but power-only or hosting still keeps Kona out of the spread.",
+  "monitor": [
+    "Pricing and rating of the next delayed-draw loan (talked at 7-7.5%, 'high investment grade' expected).",
+    "4Q adjusted operating margin against the implied ~16.5%, and active power above 1.85 GW at year-end.",
+    "10-Q: top-customer concentration, debt maturities, ATM usage and the basis of the $14.5bn capex figure."
+  ],
+  "name": "CoreWeave",
+  "pdf_brief": "/_blob/3bf55135c011d830fbff1b102e2efa6e",
+  "pdf_report": "/_blob/de44e451b8a3959803c77a136a84f40b",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Funding stays open",
+            "Asset-level money at tolerable cost; Goldman +100-200bp vs 13.5-15% unsecured",
+            "Net $8.0bn of debt raised in 3Q; weighted cost of debt 7.9%; next loan talked at 7-7.5%; under $5bn parent capital needed through 2027; no parent unsecured at current yields",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P2 Margin ramp holds",
+            "Low-teens 4Q margin; 3Q $200-260mn",
+            "3Q $379mn (10%); FY raised to $1.275-1.375bn, implying about 16.5% in 4Q at midpoints",
+            "Confirmed",
+            "Release; our calc"
+          ],
+          [
+            "P3 Delivery on schedule",
+            "Active about 1.7 GW; YE over 1.85 GW",
+            "Over 1.7 GW active (+over 200 MW); YE target kept; 'no material risks' to 2027 deliveries",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P4 Backlog quality",
+            "Backlog at or above about $129bn; concentration easing",
+            "Backlog about $132.5bn; over 75% of committed capex through 2027 tied to IG or enterprise; 3Q concentration not yet disclosed (2Q top customer 36%)",
+            "Unresolved",
+            "Release; call; 2Q 10-Q"
+          ],
+          [
+            "P5 Interest covered",
+            "EBITDA covers rising interest",
+            "Adj. EBITDA / interest 2.7x (2.4x in 2Q); but 4Q interest guide $1.05-1.15bn, up about 30%",
+            "Confirmed",
+            "Release; our calc"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "More: funding self-sufficiency (prepayments, asset-level loans, a 'high investment grade' rating hoped for on the next loan); EBITDA less interest as a 2027 target; re-contracting of paid-off GPUs (about 130k roll off in 2027, about 170k in 2028) as roughly $4bn of 2027 ARR outside backlog; enterprise and financial-services customers (10% of backlog). Less or dropped: unsecured bonds as a funding source; any 2026 revenue-per-quarter guide (only FY and 4Q interest given); a total funding-gap number. KPIs gaining weight: EBITDA less interest, prepayments, weighted cost of debt. Losing weight: headline backlog growth on its own. → The narrative moved from growth to funding discipline. That is what the market wanted to hear; it now has to show up in loan pricing and 4Q interest.",
+      "title": "What management emphasized"
+    },
+    {
+      "body": "Prior-quarter transcripts were not retrieved on this run, so status reflects the 2Q preview's debates, not a full matrix.",
+      "table": {
+        "head": [
+          "Topic",
+          "Analysts, 10 Nov call",
+          "Status",
+          "Answer"
+        ],
+        "rows": [
+          [
+            "Pricing per MW / returns",
+            "Borges (Goldman); Chatterjee (JPMorgan); Daryanani (Evercore)",
+            "Persistent",
+            "Direct on price levels ($20-25mn long, about $40mn short); partial on margin split"
+          ],
+          [
+            "Capex and funding",
+            "Borges",
+            "Persistent",
+            "Direct: capex locked at contract signing"
+          ],
+          [
+            "Backlog and new contracts",
+            "Zelnick (Deutsche); Daryanani",
+            "Rising",
+            "Partial: 2028 not yet marketed; renewals outside backlog"
+          ],
+          [
+            "Customer concentration and credit",
+            "Keirstead (UBS)",
+            "Persistent",
+            "Partial: enterprise mix figures, no lab share of backlog"
+          ],
+          [
+            "Power and sites / permitting",
+            "Chatterjee; Reitzes (Melius)",
+            "New",
+            "Partial: no MW split for Texas"
+          ],
+          [
+            "Delivery and MW timing",
+            "Reitzes",
+            "Persistent",
+            "Direct: Vera Rubin live"
+          ],
+          [
+            "Cost of debt, DDTL tenor, GPU life",
+            "None asked directly",
+            "Gap",
+            "Covered only in prepared remarks"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "body": "No analyst named by CK; I chose Amit Daryanani (Evercore ISI) because he pressed hardest on returns after funding cost. 3Q26: asked post-financing returns on short-dated ($40mn per MW) vs long-dated ($20-25mn) deals and whether the renewal ARR is signed. Answer: payback about 6-18 months short-dated vs about 1-2 years long-dated; renewal ARR is outside backlog and unsigned (partial on returns, direct on renewals). Later evidence to track: renewal pricing on the 2027 roll-offs. — Trevor",
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "Flags: [↑] better, [↓] worse, [~] within ±5% or normal, [?] unavailable. For cost, debt and share lines ↓ means worse for shareholders. Totals are our sums of balance-sheet lines (2Q total $35.1bn on this basis; preview used $35.6bn incl. other items). Sources: 3Q26, 2Q26, 3Q25 releases; call.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "Flag",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue ($mn)",
+            "3,661",
+            "2,575",
+            "1,365",
+            "[↑]",
+            "+42% QoQ, +168% YoY"
+          ],
+          [
+            "Adj. operating income ($mn) / margin",
+            "379 / 10%",
+            "128 / 5%",
+            "217 / 16%",
+            "[↑]",
+            "Margin doubled QoQ"
+          ],
+          [
+            "GAAP operating income ($mn) / margin",
+            "207 / 6%",
+            "-49 / -2%",
+            "52 / 4%",
+            "[↑]",
+            "Positive again"
+          ],
+          [
+            "Adj. EBITDA ($mn) / margin",
+            "2,256 / 62%",
+            "1,510 / 59%",
+            "838 / 61%",
+            "[↑]",
+            ""
+          ],
+          [
+            "D&A ($mn) / % revenue",
+            "1,889 / 52%",
+            "1,393 / 54%",
+            "630 / 46%",
+            "[~]",
+            "+36% QoQ"
+          ],
+          [
+            "Interest expense ($mn) / % revenue",
+            "846 / 23%",
+            "640 / 25%",
+            "310 / 23%",
+            "[↓]",
+            "+32% QoQ"
+          ],
+          [
+            "Adj. EBITDA less interest ($mn)",
+            "1,410",
+            "870",
+            "528",
+            "[↑]",
+            "Our calc"
+          ],
+          [
+            "Net loss ($mn) / EPS",
+            "-709 / -$1.27",
+            "-626 / -$1.14",
+            "-110 / -$0.22",
+            "[↓]",
+            "Adj. net loss -529"
+          ],
+          [
+            "Active power",
+            ">1.7 GW",
+            "~1.5 GW",
+            "~590 MW",
+            "[↑]",
+            "+over 200 MW"
+          ],
+          [
+            "Contracted power",
+            ">4.6 GW",
+            "~3.7 GW",
+            "~2.9 GW",
+            "[↑]",
+            "+over 900 MW"
+          ],
+          [
+            "Revenue backlog ($bn)",
+            "~132.5",
+            "~104.2",
+            "55.6",
+            "[↑]",
+            "+27% QoQ"
+          ],
+          [
+            "Capex, cash PP&E ($mn)",
+            "9,441",
+            "6,422",
+            "3,279",
+            "[↓]",
+            "Mgmt basis $14.5bn"
+          ],
+          [
+            "Operating cash flow ($mn)",
+            "1,975",
+            "679",
+            "1,689",
+            "[↑]",
+            "2Q single source"
+          ],
+          [
+            "Deferred revenue ($mn)",
+            "10,002",
+            "9,692",
+            "5,336",
+            "[~]",
+            "About $9bn more due"
+          ],
+          [
+            "Total debt ($mn) recourse / non-rec.",
+            "41,600 / 5,273",
+            "31,405 / 3,663",
+            "14,035 total",
+            "[↓]",
+            "+34% QoQ"
+          ],
+          [
+            "Cash incl. restricted ($mn)",
+            "6,404",
+            "6,904",
+            "2,969",
+            "[↓]",
+            "Undrawn DDTL ~$5bn"
+          ],
+          [
+            "Weighted avg. shares (mn)",
+            "559",
+            "551",
+            "498",
+            "[↓]",
+            "ATM up to 35mn shares"
+          ],
+          [
+            "Weighted avg. cost of debt",
+            "7.9%",
+            "n.a.",
+            "~10.4% (implied)",
+            "[↑]",
+            "-250bp YoY per mgmt"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: improving. Margin gains came from price (structural while supply is tight, cyclical beyond 2027) and from scale absorbing D&A; interest still takes about a quarter of revenue.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "FY26 revenue",
+            "$13.0-13.3bn",
+            "Raised (was $12.4-13.2bn)",
+            "Above ($12.86bn LSEG)",
+            "Execution, pricing, earlier delivery",
+            "Citi target to $149; Jefferies cut to $90 (single source)"
+          ],
+          [
+            "FY26 adj. operating income",
+            "$1.275-1.375bn",
+            "Raised (was $0.96-1.15bn)",
+            "Above (~$1.07bn VA)",
+            "Pricing up ~25% in July, ~10% later",
+            "Implied 4Q ~16.5% at midpoints (15-18% range)"
+          ],
+          [
+            "Exit-2026 run-rate revenue",
+            "$20-21bn",
+            "Raised",
+            "n.a.",
+            "Backlog conversion",
+            "Partial; prior figure not captured"
+          ],
+          [
+            "FY26 capex",
+            "$37-39bn",
+            "Low end raised (was $35-39bn)",
+            "n.a.",
+            "Earlier deployment",
+            "Basis of $14.5bn 3Q unclear"
+          ],
+          [
+            "4Q26 interest",
+            "$1.05-1.15bn",
+            "New",
+            "n.a.",
+            "Debt growth",
+            "Up ~30% QoQ"
+          ],
+          [
+            "YE26 active power",
+            ">1.85 GW",
+            "Maintained",
+            "In line",
+            "Permitted sites",
+            "Needs +150 MW in 4Q"
+          ],
+          [
+            "2027 framing",
+            "EBITDA less interest more than doubles; capex in line with 2026 if only backlog",
+            "New",
+            "n.a.",
+            "Prepayments excluded from metric",
+            "Unsecured market avoided"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "5-10 year view: scale and Nvidia allocation are real advantages, but the economics depend on renewing paid-off GPUs at good prices and on lenders accepting tenor longer than contracts. The first test of residual value comes with 130k GPUs rolling off in 2027.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Access to power and sites",
+            "Strong",
+            "Stable",
+            "Over 4.6 GW contracted; 1.3 GW international; Texas mostly online or permitted",
+            "Supports 2027 delivery"
+          ],
+          [
+            "Customer credit quality",
+            "Mixed",
+            "Improving",
+            ">75% of committed 2027 capex tied to IG or enterprise; labs still large; 3Q concentration n.a.",
+            "Sets loan spreads (225-550bp)"
+          ],
+          [
+            "Cost of capital vs peers",
+            "Weak",
+            "Improving",
+            "WACD 7.9% (-250bp YoY); unsecured 2032s above 16% pre-results",
+            "Asset-level only; equity via ATM"
+          ],
+          [
+            "Delivery speed",
+            "Strong",
+            "Stable",
+            "+over 200 MW in quarter; first Vera Rubin online",
+            "Revenue converts on time"
+          ],
+          [
+            "Software and managed services",
+            "Moderate",
+            "Improving",
+            "Managed inference over $250mn booked ARR; 70% of new 3Q customers used Forge",
+            "Helps re-contracting"
+          ],
+          [
+            "Nvidia allocation",
+            "Strong",
+            "Stable",
+            "First cloud with Vera Rubin",
+            "Pricing power while supply tight"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Funding and refinancing",
+            "High",
+            "High",
+            "Down",
+            "Parent need under $5bn; but debt +$11.8bn QoQ and 4Q interest up ~30%"
+          ],
+          [
+            "Customer concentration and credit",
+            "High",
+            "High",
+            "Flat",
+            "No 3Q split; Microsoft reportedly cutting neocloud suppliers (Dataconomy, 9 Nov, single source)"
+          ],
+          [
+            "GPU residual value",
+            "Medium",
+            "Medium",
+            "Up",
+            "130k / 170k GPUs roll off 2027 / 2028; DDTL 5.5 runs ~5 years on ~3-year contracts"
+          ],
+          [
+            "Pricing",
+            "Low",
+            "Medium",
+            "Up",
+            "Margin gains rest on 25% + 10% price rises; oversupply question from Goldman"
+          ],
+          [
+            "Delivery and permitting",
+            "Medium",
+            "Medium",
+            "Flat",
+            "YE needs +150 MW; post-election regulatory questions on Texas"
+          ],
+          [
+            "Dilution",
+            "Medium",
+            "Medium",
+            "Up",
+            "ATM up to 35mn shares (~6% of weighted shares); usage n.a."
+          ]
+        ]
+      },
+      "title": "Major risks"
+    },
+    {
+      "table": {
+        "head": [
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "Funding gap is unbridgeable at current spreads",
+            "Under $5bn parent capital through 2027; no unsecured at current yields",
+            "Cash capex less OCF $7.5bn in 3Q; ~$9bn prepayments due; ~$5bn undrawn DDTL; $6.4bn cash incl. restricted"
+          ],
+          [
+            "Margin ramp will not show up",
+            "Pricing more than offsets cost increases",
+            "Adj. operating margin 1% → 5% → 10%; FY guide +26% at midpoint"
+          ],
+          [
+            "Labs dominate credit",
+            "Enterprise mix rising; 10% of backlog financial services",
+            "No lab share of backlog given; top customer 36% in 2Q"
+          ]
+        ]
+      },
+      "title": "Concern → response → evidence"
+    },
+    {
+      "body": "$mn. Funding gap = cash capex less operating cash flow. Net debt = recourse plus non-recourse debt less cash and restricted cash (our sums; excludes $18.7bn of operating leases). Shares = weighted average. Funding in the quarter: $2.6bn DDTL 5.5 at SOFR+550, ~5 years, Ba2/BB+, on contracts averaging ~3 years (August); ~$4.2bn of 2.875% converts due 2033 incl. option (September); ATM for up to 35mn shares (September). What the next dollar costs: secured, contract-backed loans at about 7-7.5% (management; The Next Web puts it at about half junk-bond yields); unsecured 2032s above 16% before results, now avoided. Maturities in 24 months: current debt $10.6bn (recourse $9.2bn, non-recourse $1.4bn) at 30 September. → Do new contracts earn more than their funding cost? Long-dated deals at $20-25mn per MW with 1-2 year payback against 7-8% debt: yes, if lenders keep accepting tenor longer than contracts.",
+      "table": {
+        "head": [
+          "Period",
+          "Capex (cash)",
+          "Op. cash flow",
+          "Funding gap",
+          "Debt raised (net)",
+          "Equity",
+          "Prepay (def. rev.)",
+          "Net debt",
+          "Shares (mn)"
+        ],
+        "rows": [
+          [
+            "3Q25",
+            "3,279",
+            "1,689",
+            "1,590",
+            "+2,606 (4,010 less 1,404)",
+            "n.a.",
+            "5,336",
+            "11,066",
+            "498"
+          ],
+          [
+            "2Q26",
+            "6,422",
+            "679",
+            "5,743",
+            "n.a.",
+            "n.a.",
+            "9,692",
+            "28,164",
+            "551"
+          ],
+          [
+            "3Q26",
+            "9,441",
+            "1,975",
+            "7,466",
+            "+7,957 (10,301 less 2,344)",
+            "ATM opened; capped calls -566",
+            "10,002",
+            "40,469",
+            "559"
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "Signals: (1) next DDTL size, yield and rating; (2) 4Q adjusted operating margin vs implied ~16.5%; (3) active power at year-end vs 1.85 GW; (4) prepayments collected vs ~$9bn; (5) 10-Q top-customer shares. Risks building: interest rising faster than EBITDA in 4Q; GPU roll-offs repriced lower; Microsoft reducing neocloud suppliers. Confirmation: next loan prices at or below 7.5% with an investment-grade rating; 4Q margin in mid-teens; bonds rally toward 10-12%. Conviction tripwires: a new parent unsecured or discounted equity raise; a delivery slip below 1.85 GW; a large customer reducing commitments.",
+      "title": "Monitoring checklist"
+    },
+    {
+      "body": "Pre-call questions answered: blended cost (WACD 7.9%, next loan 7-7.5%); funding gap (no total; under $5bn parent capital); prepayment share (~70% of deals). Not answered: DDTL tenor vs contracts, IG share of backlog.",
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters",
+          "Asked on call?"
+        ],
+        "rows": [
+          [
+            "You expect the next loan near 7-7.5% and 'high investment grade'. Which customers back it, what share of the 2027 committed capex not yet on a DDTL does it cover, and what is the advance rate? Follow-up: will it close before year-end?",
+            "Credit: sets cost of the next $10bn+",
+            "Not asked; prepared remarks only"
+          ],
+          [
+            "DDTL 5.5 runs about five years on contracts averaging about three. What residual GPU value does the lender assume, and what renewal price is needed to repay it? Follow-up: is any of it parent-guaranteed?",
+            "Credit: GPU residual vs tenor",
+            "Not asked"
+          ],
+          [
+            "4Q interest guide implies about $4.4bn annualized. At what debt level does EBITDA less interest stop rising, and is the 2027 doubling before or after the ~$9bn of prepayments?",
+            "Credit and equity: coverage",
+            "Partial (metric excludes prepayments)"
+          ],
+          [
+            "Implied 4Q margin is about 16.5% at midpoints. How much comes from short-dated contracts at ~$40mn per MW that may not renew at that price?",
+            "Equity: structural vs cyclical margin",
+            "Partial (Chatterjee)"
+          ],
+          [
+            "What share of backlog is with AI labs, and who are the top three customers in 3Q?",
+            "Credit: concentration",
+            "Partial (Keirstead); 10-Q due"
+          ],
+          [
+            "How many ATM shares have been sold, at what price, and is equity part of the under-$5bn parent need?",
+            "Equity: dilution",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Questions for owners (post-call)"
+    },
+    {
+      "body": "→ CoreWeave has put a price on tenant credit: its delayed-draw loans run from about 225bp over SOFR for investment-grade customers to 550bp for AI labs, and prepayments on about 70% of deals are its cheapest capital. For Kona: price contracts to win prepayment, and prefer investment-grade or large-enterprise tenants over labs if it ever finances GPUs; short-dated capacity at about $40mn per MW against $20-25mn long-dated shows the premium for flexibility. Reopened secured lending helps a Kona tenant fund GPUs, but power-only or hosting still keeps Kona out of the spread.",
+      "title": "Read-across for Kona"
+    }
+  ],
+  "segment": "neocloud",
+  "sources": [
+    {
+      "title": "3Q26 results release, 8-K exhibit 99.1 (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm"
+    },
+    {
+      "title": "3Q26 release (IR)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "title": "2Q26 release (IR)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Second-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "title": "3Q25 release (IR)",
+      "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Reports-Strong-Third-Quarter-2025-Results/default.aspx"
+    },
+    {
+      "title": "3Q26 call transcript (Investing.com)",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-coreweave-tops-q3-2026-forecast-and-shares-rise-57-93CH-5017354"
+    },
+    {
+      "title": "3Q26 call transcript (Motley Fool via AOL)",
+      "url": "https://www.aol.com/articles/coreweave-crwv-q3-2026-earnings-031911000.html"
+    },
+    {
+      "title": "3Q26 call transcript (Equibles)",
+      "url": "https://equibles.com/stocks/crwv/calls/2026-q3"
+    },
+    {
+      "title": "3Q26 slides summary (Investing.com)",
+      "url": "https://www.investing.com/news/company-news/coreweave-q3-2026-slides-revenue-surges-168-margins-expand-93CH-5017372"
+    },
+    {
+      "title": "DDTL 5.5 release, 10 August (IR)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-2-6-Billion-Loan-Facility-Expanding-Financing-Flexibility-for-AI-Infrastructure/default.aspx"
+    },
+    {
+      "title": "Convertible notes pricing (IR)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Prices-Upsized-3-7-Billion-Convertible-Senior-Notes-Offering/default.aspx"
+    },
+    {
+      "title": "ATM program (IR)",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-At-the-Market-Offering-Program/default.aspx"
+    },
+    {
+      "title": "Reaction, consensus and next loan (The Next Web)",
+      "url": "https://thenextweb.com/news/coreweave-forecast-q3-2026-revenue-unsecured-debt"
+    },
+    {
+      "title": "Stock move and target changes (24/7 Wall St, 11 November)",
+      "url": "https://247wallst.com/investing/2026/11/11/coreweave-jumps-16-as-beat-and-raise-quarter-eases-financing-fears-nebius-surges-13-oracle-rises-5/"
+    },
+    {
+      "title": "Pre-earnings bond and CDS levels (BigGo, single source)",
+      "url": "https://finance.biggo.com/news/204bf15e-5f3c-4b32-94dd-fb7d68ffa673"
+    },
+    {
+      "title": "2Q26 customer concentration (sec-api.io citing 10-Q)",
+      "url": "https://sec-api.io/insights/coreweave-crwv-2026-revenue-analysis-top-customer-concentration-exposure"
+    }
+  ],
+  "ticker": "CRWV",
+  "verdict": "Strengthening",
+  "versus": "Quarter: beat (revenue $3,661mn vs about $3.54bn consensus and $3.45-3.6bn guide; adjusted operating income $379mn vs $200-260mn guide; interest $846mn below the $860-940mn guide). Outlook: above (FY26 revenue raised to $13.0-13.3bn vs $12.86bn LSEG consensus; FY adjusted operating income raised to $1.275-1.375bn vs about $1.07bn consensus; year-end active power above 1.85 GW kept)."
+}
