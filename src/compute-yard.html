@@ -107,6 +107,13 @@ button.act{font:600 12px var(--display);letter-spacing:.04em;text-transform:uppe
 .viz .line{fill:none;stroke-width:2}
 .viz .dot{stroke:var(--surface);stroke-width:2}
 .viz .mark:hover rect,.viz .dot:hover{opacity:.8}
+.chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.chain .cc{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--line);padding:12px 12px 10px;display:flex;flex-direction:column;gap:3px;min-width:0;position:relative}
+.chain .cc.hi{border-top-color:var(--c2)}.chain .cc.app{border-top-color:var(--c4)}
+.chain .cc .n{font:600 14px var(--display)}.chain .cc .r{font-size:12px;color:var(--muted)}
+.chain .cc .v{font:600 20px var(--display);margin-top:6px}.chain .cc.hi .v{color:var(--c2)}.chain .cc.app .v{color:var(--c4)}
+.chain .cc .sh{font:500 12px var(--mono);color:var(--muted)}.chain .cc .d{font-size:12.5px;color:var(--muted);margin-top:4px}
+@media (max-width:760px){.chain{grid-template-columns:1fr 1fr}}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
 .mgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
@@ -140,7 +147,7 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
 <header class="top">
   <h1>Neocloud Field Guide</h1>
   <p>Who sells AI compute, who builds and powers the sites, how it gets financed, and what that implies for how Kona should make money.</p>
-  <div class="stamp">Research gathered 4 Oct 2026, updated 9 Nov · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
+  <div class="stamp">Research gathered 4 Oct 2026, updated 12 Nov · figures are from company releases and trade press, linked per section · items marked as flagged need checking against filings before use in a model</div>
 </header>
 
 <nav class="tabs" role="tablist" id="tabs"></nav>
@@ -207,6 +214,18 @@ input.scen{width:auto;flex:1;min-width:160px;font-family:var(--body)}
     <p class="lede">Sridhar Ramaswamy's framing (27 Oct 2026): a lab buys compute for years and sells intelligence by the token, which is not a bank's problem but borrows a piece of risk from five other industries. Useful because each lens names a different number to watch, and because it says where Kona should sit in the chain.</p>
     <div class="grid2" id="lenses"></div>
     <p class="src">Source: @RamaswmySridhar thread, 27 Oct 2026, paraphrased. The contract calculator on the Model tab reproduces the spread arithmetic: set revenue 50% above capex and a 30% revenue miss removes almost all of it.</p>
+  </div>
+  <div class="block">
+    <h2>Who captures the margin: the stack in dollars per watt per year</h2>
+    <p class="lede">Tomasz Tunguz (Theory Ventures, 11 Nov 2026) normalizes every layer of the AI stack to gross profit per watt of data-center power per year, from the utility to the application, at a 40% application margin and before GPU depreciation. The two charts are redrawn here from his figures; the third applies the same unit to Kona.</p>
+    <div class="chain" id="chain"></div>
+    <div class="viz" id="viz-tunguz"></div>
+    <div class="viz" id="viz-tunguzkona"></div>
+    <div class="grid2">
+      <div class="card"><h3>What the unit shows for Kona</h3><p>The landlord's $1.98 per watt-year is CoreWeave's wholesale rent at Core Scientific ($100–115 per kW-month on 12-year take-or-pay terms, about $165 all-in; CBRE's H1 2026 wholesale asking rate is the same $165). Power is a $0.80 pass-through on top, so the US tenant pays about $2.78 for the bottom two layers. Kona's $190 per kW-month is $2.28 per watt-year and includes fuel, which at $3 gas, a 9.0 heat rate and 1.25 PUE costs about $0.30. The tenant pays 18% less all-in; Kona keeps about $1.98 of gross profit per watt-year, the same as the US landlord, because the power layer that is a pass-through for Core Scientific is Kona's own product.</p></div>
+      <div class="card"><h3>The argument against owning the chips</h3><div class="kona"><div class="eyebrow">For Kona</div><div>The neocloud bar is the argument against owning the chips: $7.00 of pre-depreciation gross profit against a $6–8 annual capital charge on $35–50 per watt of GPUs leaves $0–2 after depreciation (CoreWeave's Q3 2026 D&amp;A was 52% of revenue). The landlord keeps $1.98 with no capital charge beyond the building. New four- and five-year CoreWeave contracts at $20–25 per watt-year, against the $9.15 blended fleet rate, are the input for the GPU-financed case on the Model tab, not Anthropic's $7–13 per GPU-hour burst rate.</div></div></div>
+    </div>
+    <p class="src">Source: Tomasz Tunguz, "Who captures the most margin in AI?", 11 Nov 2026; his footnotes cite Core Scientific SEC filings for power (6.6–7.1¢/kWh, about 5¢ in West Texas), CoreWeave's Q3 2026 results ($3.66B revenue, +168%; adjusted EBITDA $2.26B; GAAP net loss $709M; 1.7 GW active, 4.6 GW contracted, $132.5B backlog), CBRE H1 2026, and Anthropic's S-1/A of 2 Nov 2026. His figures are modeled approximations, not audited disclosures. Kona figures are the Operating Model base case. <a href="https://tomtunguz.com/who-captures-the-most-margin-in-ai/">Tunguz, Who captures the most margin in AI?</a></p>
   </div>
   <div class="block">
     <h2>Six ways to monetize a powered site</h2>
@@ -1150,7 +1169,10 @@ table("#fuel",["Gas price, $/MMBtu","Fuel cost, $/MWh","Context"],[
 ].forEach(x=>$("#openq").append(el("li",null,x)));
 
 /* ---------- library ---------- */
-[{t:"Oracle and the other data center players: nine new profiles",by:"Desk research from filings, earnings releases and trade press · 29 October 2026",u:"https://www.sec.gov/Archives/edgar/data/0000789019/000119312526436133/msft-20260930.htm",why:"The buyers and landlords Kona will be priced against: what each one spends, leases, backstops and borrows at, and what that means for an Argentine shell.",
+[{t:"Who captures the most margin in AI?",by:"Tomasz Tunguz, Theory Ventures · 11 November 2026",u:"https://tomtunguz.com/who-captures-the-most-margin-in-ai/",why:"The first public attempt to put every layer of the AI stack in one unit, gross profit per watt of data-center power per year, which is the unit a landlord with its own generation should be judged in.",
+  pts:["At a 40% application margin the $25/w/yr end price splits: power $0.80 (3%, pass-through), data center $1.20 of gross profit on $1.98 of rent (5%), neocloud $7.00 (28%, pre-depreciation), inference $6.00 (24%), application $10.00 (40%). Applications and neoclouds hold 68%; the top three layers 92%.","The neocloud's $7.00 is before a $6–8/w/yr capital charge on $35–50/w of GPUs over six years, so post-depreciation gross profit is $0–2; CoreWeave's Q3 2026 D&A was 52% of revenue.","Landlord rent: CoreWeave at Core Scientific $100–115/kW-month on 12-year take-or-pay, about $165 all-in; CBRE's H1 2026 wholesale asking rate $165.31; 250–500 kW deployments $204.69.","New CoreWeave four- and five-year contracts at $20–25/w/yr versus $9.15 blended; Anthropic's S-1/A shows burst compute at $7–13 per GPU-hour on $5.0B of quarterly short-term spend.","Vertical integration is consolidating margin: CoreWeave bought Weights & Biases, OpenPipe, Marimo and Monolith; Nebius spent $1B+ on Tavily, Eigen AI, Clarifai and Inferize in 2026."],
+  chg:"Added a 'Who captures the margin' block to the Models tab with the value-chain diagram and the waterfall redrawn, plus a Kona version of the bottom two layers ($2.28/w/yr with fuel inside the rent against $2.78 at a US wholesale landlord)."},
+{t:"Oracle and the other data center players: nine new profiles",by:"Desk research from filings, earnings releases and trade press · 29 October 2026",u:"https://www.sec.gov/Archives/edgar/data/0000789019/000119312526436133/msft-20260930.htm",why:"The buyers and landlords Kona will be priced against: what each one spends, leases, backstops and borrows at, and what that means for an Argentine shell.",
   pts:["Oracle: $664B of backlog, about half OpenAI, against $288B of 15–19-year leases it neither guarantees nor backstops; BBB-/Baa2 negative, CDS at a record 288 bps; Oracle-tenanted landlord debt clears at 7.5% (Saline) or below par (Doña Ana).","Microsoft: $364.6B of leases not yet commenced and a $45.2B capex quarter blamed on late neocloud deliveries; Google: $43.8B of credit backstops on Fluidstack's leases at TeraWulf, Cipher and Hut 8 in exchange for warrants; Amazon: $220B capex, one 300 MW miner lease (Cipher).","Developers: Vantage's $38B at about +250 took eight months to place; QTS refinances Microsoft shells at 6.1–6.25%; Aligned/ODATA is the only US developer operating in Latin America and has no Argentine site.","Hut 8 and Fluidstack: the small-landlord playbook, a 15-year triple-net lease to a Google-backstopped tenant financed at 95% loan-to-cost and 6.2%, about $14M per MW and $159 per kW-month derived."],
   chg:"Added nine Players profiles (Oracle, Microsoft, Google, Amazon under Buyer / financing; Vantage, QTS, Aligned, Hut 8 under Developer / landlord; Fluidstack under Neocloud), four Oracle- and QTS-related rows on the debt table, and replaced the Hut 8 and Vantage/Aligned watchlist rows."},
 {t:"CoreWeave Q2 2026 earnings presentation",by:"CoreWeave, Inc. · 11 August 2026 · 23 slides · sent by CK",u:"https://investors.coreweave.com/",why:"The quarter the guide's CoreWeave figures come from, in the company's own layout, with five quarters of the lines that matter for credit: depreciation, interest and capex.",
@@ -1828,6 +1850,42 @@ function waterfall(box,title,steps,opt={}){
     g.append(sv("text",{x:x+w/2,y:sy(p.hi)-5,class:"val","text-anchor":"middle"},(st.total?"":st.value<0?"−":"+")+Math.abs(st.value)+"%"));
     const words=st.label.split(" ");let line="",ly=H-bottom+14;const lines=[];words.forEach(wd=>{if((line+" "+wd).trim().length>16){lines.push(line.trim());line=wd}else line+=" "+wd});lines.push(line.trim());lines.forEach((l,k)=>g.append(sv("text",{x:x+w/2,y:ly+k*12,class:"tick","text-anchor":"middle"},l)));svg.append(g)});
   svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));box.append(svg);if(opt.note)box.append(el("div","src",opt.note))}
+/* ---------- Tunguz: gross profit per watt-year ---------- */
+function dwaterfall(box,title,steps,opt={}){
+  box.textContent="";box.append(el("div","vtitle",title));
+  const W=780,H=opt.H||330,top=22,bottom=opt.bottom||74,left=52,right=14,n=steps.length,bw=(W-left-right)/n;
+  const svg=sv("svg",{viewBox:`0 0 ${W} ${H}`,role:"img","aria-label":title});
+  let run=0;const pos=steps.map(st=>{if(st.total){run=st.value;return{lo:0,hi:st.value}}const r={lo:Math.min(run,run+st.value),hi:Math.max(run,run+st.value)};run+=st.value;return r});
+  const max=opt.max||Math.max(...pos.map(p=>p.hi),opt.ref||0)*1.06,sy=v=>top+(H-top-bottom)*(1-v/max);
+  const tk=opt.ticks||5;for(let i=0;i<=tk;i++){const v=max/tk*i,y=sy(v);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"grid"}));svg.append(sv("text",{x:left-6,y:y+4,class:"tick","text-anchor":"end"},"$"+(v%1?v.toFixed(1):v.toFixed(0))))}
+  steps.forEach((st,i)=>{const p=pos[i],x=left+i*bw+bw*0.16,w=bw*0.68,y0=sy(p.hi),h=Math.max(2,sy(p.lo)-sy(p.hi));const g=sv("g",{class:"mark"});
+    g.append(sv("rect",{x:x,y:y0,width:w,height:h,rx:3,fill:st.fill||(st.total?"var(--ink)":st.cost?"var(--muted)":"var(--c1)"),opacity:st.dim?0.45:1}));
+    if(i>0&&!st.total){svg.append(sv("line",{x1:left+(i-1)*bw+bw*0.84,x2:x,y1:sy(pos[i-1].hi>pos[i-1].lo&&!steps[i-1].cost?pos[i-1].hi:pos[i-1].hi),y2:sy(pos[i-1].hi),class:"grid","stroke-dasharray":"3 3"}))}
+    g.append(sv("text",{x:x+w/2,y:y0-6,class:"val","text-anchor":"middle"},(st.total||st.cost?"":"+")+"$"+st.value.toFixed(2)+(st.cost?" cost":"")+(st.tag?" "+st.tag:"")));
+    if(st.inbar&&h>26)g.append(sv("text",{x:x+w/2,y:y0+h/2+4,"text-anchor":"middle",style:"font-size:11px;fill:#fff;font-weight:600"},st.inbar));
+    const ty=H-bottom+14;if(st.share)g.append(sv("text",{x:x+w/2,y:ty,class:"val","text-anchor":"middle",style:st.hi?"fill:var(--c2)":""},st.share));
+    g.append(sv("text",{x:x+w/2,y:ty+15,class:"lbl","text-anchor":"middle",style:"font-weight:600"},st.label));
+    if(st.sub)g.append(sv("text",{x:x+w/2,y:ty+29,class:"tick","text-anchor":"middle"},st.sub));
+    svg.append(g)});
+  if(opt.ref){const y=sy(opt.ref);svg.append(sv("line",{x1:left,x2:W-right,y1:y,y2:y,class:"ref"}));svg.append(sv("text",{x:W-right-4,y:y-5,class:"tick","text-anchor":"end"},opt.refLabel||""))}
+  svg.append(sv("line",{x1:left,x2:W-right,y1:sy(0),y2:sy(0),class:"axis"}));box.append(svg);if(opt.note)box.append(el("div","src",opt.note))}
+(function tunguz(){
+  if(!$("#chain"))return;
+  [["Power plant","Grid and generation","$0.80/w","3% share","Pass-through electricity",""],["Data center operator","Wholesale landlord","+$1.20/w","5% share","12-year powered shell",""],["Neocloud","GPU cluster operator","+$7.00/w","28% share","Bare-metal accelerators","hi"],["Inference vendor","Model serving layer","+$6.00/w","24% share","Token routing and cache",""],["AI application","Customer-facing agent","+$10.00/w","40% share","Workflow and end product","app"]].forEach(([n,r,v,sh,d,k])=>{const c=el("div","cc"+(k?" "+k:""));c.append(el("div","n",n),el("div","r",r),el("div","v",v),el("div","sh",sh),el("div","d",d));$("#chain").append(c)});
+  dwaterfall($("#viz-tunguz"),"Applications and neoclouds capture 68% of AI gross margin: gross profit per watt-year, pre-depreciation, 40% application margin",[
+    {label:"Power",sub:"utility",value:0.80,cost:true,share:"3% share"},
+    {label:"Data center",sub:"landlord",value:1.20,share:"5% share",tag:"(60%)",fill:"var(--c1)"},
+    {label:"Neocloud",sub:"CoreWeave",value:7.00,share:"28% share",inbar:"78% margin*",fill:"var(--c2)",hi:true},
+    {label:"Inference",sub:"serving layer",value:6.00,share:"24% share",inbar:"40% margin",fill:"var(--c1)"},
+    {label:"Application",sub:"agent",value:10.00,share:"40% share",inbar:"40% margin",fill:"var(--c4)"},
+    {label:"End price",sub:"total stack",value:25.00,total:true,inbar:"100%"}],
+    {max:30,ticks:6,note:"Redrawn from Tunguz (11 Nov 2026). *CoreWeave margin is pre-depreciation: $0–2/w/yr after GPU depreciation. Power is the utility cost basis, 3% of the $25/w/yr end price."});
+  dwaterfall($("#viz-tunguzkona"),"The bottom two layers at Kona: $2.28 per watt-year with fuel inside the rent, against $2.78 at a US wholesale landlord",[
+    {label:"Fuel",sub:"$3 gas, PUE 1.25",value:0.30,cost:true},
+    {label:"Gross profit",sub:"rent less fuel",value:1.98,inbar:"87% of rent",fill:"var(--accent)"},
+    {label:"Rent",sub:"$190/kW-month",value:2.28,total:true,fill:"var(--ink)",inbar:"100%"}],
+    {max:3.0,ticks:3,ref:2.78,refLabel:"US tenant all-in: $0.80 power + $1.98 rent = $2.78",H:280,bottom:60,note:"Kona Operating Model base case in Tunguz's unit. Gross profit here is rent less fuel; engine O&M, site cost and overhead take the block margin to 76%."});
+})();
 (function cwDeck(){
   if(!$("#viz-cwwater"))return;
   waterfall($("#viz-cwwater"),"Cumulative cash of a five-year contract, % of total contract revenue (CoreWeave, March 2026)",[{label:"Total contract revenue",value:100,total:true},{label:"Data center lease and power",value:-16},{label:"Direct opex",value:-9},{label:"Interest",value:-8},{label:"Principal on asset-level debt",value:-41},{label:"Capex funded by parent",value:-10},{label:"Residual to parent",value:16,total:true}],{note:"Assumptions on the slide: 80% loan-to-cost DDTL at 6.5% with a five-year maturity, about 75% contracted EBITDA margin including the lease, no customer prepayment. Principal plus parent-funded capex (51%) is the capex, so capex is about 2.55 years of revenue."});
