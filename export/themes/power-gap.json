@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Amended S-1 says transformers, turbines, generators and substations can take years to procure and Anthropic may pay above-market prices for long-lead generation.",
+      "company": "Anthropic",
+      "date": "2026-11-10",
+      "direction": "supports",
+      "numbers": "It acted on it: $3.4bn for 1.7 GW of generators due within two years (FT).",
+      "segment": "energy",
+      "source": "Fortune (citing FT and the S-1/A)",
+      "url": "https://fortune.com/2026/11/10/anthropic-3-4-billion-deal-gas-data-centers-ai-ipo/"
+    },
+    {
       "claim": "OpenAI Effingham County campus has a Georgia Power contract for 3.2 GW delivered 2028 to 2032, with the utility able to cut up to 1,000 MW at peak.",
       "company": "OpenAI / Georgia Power",
       "date": "2026-11-06",
@@ -140,5 +150,5 @@
   "status": "strengthening",
   "summary": "Utility dates are slipping and the gap is now costing signed deals: Microsoft dropped Nscale's UK flagship over a 2030s grid date, and Galaxy's 830 MW cannot be leased until it energizes in late 2028. Oracle's trucked gas shows the same gap in the US, and Anthropic's S-1 now names power connection as the main risk to its own sites, with a five-year bottleneck expected per one account. The counterview is that US grid additions surge from about 2028.",
   "title": "Power arriving after the chips",
-  "updated": "2026-11-09"
+  "updated": "2026-11-16"
 }

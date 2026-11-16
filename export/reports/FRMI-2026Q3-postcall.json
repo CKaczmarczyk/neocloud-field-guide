@@ -1,0 +1,567 @@
+{
+  "banner": "Post-call version. Sources: 8-K exhibits 99.1 (release) and 99.2 (presentation) and the 3Q26 10-Q, all filed 12 November 2026; call transcript of 12 November (Motley Fool); 2Q26 call summary (Nasdaq). Four quarters of public history (IPO October 2025); full Q&A held for 3Q26 only.",
+  "changes": [
+    "TensorWave lease terminated on 10 November after its closing date passed (10-Q); AMD credit support falls away with it.",
+    "Replacement is a non-binding LOI with an unnamed investment-grade hyperscaler for about 600 MW of powered land, plus a $200mn prepayment agreement (wire due 13 November per the call) and a $15mn early-works agreement; a $90mn steel purchase is still being finalized.",
+    "Model pivot to 'Powered Land Plus': the customer builds its own data halls, so Fermi's capex per MW falls to the company's cited $3.9-5.1mn benchmark, and so does rent (benchmark $55-69 per kW-month).",
+    "10-Q: resources 'not sufficient' for 12 months before management plans; substantial doubt judged alleviated only by capex sequencing, undrawn equipment facilities and possible asset sales. The turbine warehouse lenders (MUFG assigned the loan to a new syndicate on 9 October) require committed project financing for 400 MW by 10 February 2027 or it is an event of default.",
+    "First power restated as late 2Q or early 3Q27 for the first building (2Q call: 210 MW on 1 July 2027); on-site mobilization targeted for 1 December."
+  ],
+  "checks": "Post-call. A fresh subagent that had not seen the drafting reopened the 3Q26 10-Q, release and presentation (8-K ex. 99.1/99.2), 2Q26 10-Q, the Motley Fool transcript, the Nasdaq 2Q summary and the BigGo price note, and recomputed every derived figure in Python (gap 187.9, market cap $1,324.5mn at $2.05, convert 83.5% of par, rent $396-497mn, build cost $2.34-3.06bn, yield 12.9-21.2%, runway 4.6 months). All core figures confirmed. Fixed after check: Botham's wire answer paraphrased (no 'no doubt' quote); the turbine warehouse facility is now held by a new syndicate (MUFG assigned it 9 October), and the amendment removed the 10 November lease trigger for $25mn of fees; the 10-Q discloses extension talks with Texas Tech (none agreed); consensus EPS narrowed to about -$0.09 (BigGo, single source). Unverified or single source: 2Q PP&E additions 185.0 (press, not stated in the 2Q 10-Q, which gives 1H 626.2); TensorWave 222 MW (prior Field Guide records, not in the 3Q 10-Q); broker Buy ratings in the consensus card (carried from the preview); founder sale demand (Stocktwits, 9 November). Price $2.05 on 12 November (BigGo, single source); today's price not checked. The $200mn wire was due 13 November; receipt not confirmed at writing.",
+  "consensus_thesis": "Brokers rate Fermi a Buy as an option on scarce Texas power assets and a signed TensorWave lease; at about $1.8 before results the stock priced distress or heavy dilution (Provisional, from the 12 November preview).",
+  "date": "2026-11-13",
+  "headline": "The call made the hyperscaler deal more concrete ($200mn wire due 13 November, site mobilization 1 December) but the 10-Q shows it is a non-binding letter of intent racing three hard deadlines (Texas Tech and Keystone on 31 December, turbine-loan project financing on 10 February 2027); the thesis is now binary on a signed lease, and credit quality stays weak until one exists.",
+  "kind": "postcall",
+  "kona": "Fermi's pivot shows where the bankable middle is for a behind-the-meter campus: sell powered land to an investment-grade tenant that builds its own halls, take a prepayment to bridge, and keep capex near $4-5mn per MW. But a non-binding LOI did not satisfy Fermi's lenders or landlord, so Kona should avoid loan or land milestones tied to a lease date it does not control, and should treat a prepayment as bridge money, with its refund terms negotiated before first draw.",
+  "monitor": [
+    "Receipt of the $200mn wire (due 13 November) and whether it is refundable if no lease is signed.",
+    "Definitive lease by 31 December: it is the condition for the Texas Tech notice to proceed and the Keystone approved-customer test.",
+    "A fully committed project financing for 400 MW by 10 February 2027 (event-of-default trigger on the $445mn turbine warehouse loan, ex-MUFG)."
+  ],
+  "name": "Fermi America",
+  "pdf_brief": "/_blob/e76f0131453cd6a0e9138d186dc480d7",
+  "pdf_report": "/_blob/c4fab1398c2f5069975a120f03a7efe1",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "body": "Emphasized more: investment-grade hyperscalers only, 'safe harbor' sites as ERCOT freezes large loads, Powered Land Plus economics, Texas Tech support. Less or dropped: TensorWave and neocloud tenants; turnkey builds; Hillcore (not mentioned on the call; still in the 10-Q); a dated MW figure for first power. KPIs more important: cash receipts, lease signing date, project-financing commitments. Risks up: covenant deadlines, single-tenant dependence. Down: tenant credit quality, Fermi capex per MW. → Fermi has traded a larger revenue line for a smaller capital need; that is the right trade if it signs, because lenders will lend against an investment-grade lease at a fraction of today's 12-13%.",
+      "table": {
+        "head": [
+          "Pillar",
+          "What the market assumed",
+          "What the quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 TensorWave closes",
+            "Lease becomes the financing template",
+            "Terminated 10 Nov after closing date passed; chairman would not say who ended it",
+            "Broken",
+            "10-Q note 9; call"
+          ],
+          [
+            "P2 Funding without wipe-out",
+            "Project debt and partners fund construction",
+            "Cash $315.5mn; $200mn prepay due 13 Nov; going-concern doubt alleviated only by plans; turbine lenders need project finance by 10 Feb 2027",
+            "Unresolved",
+            "10-Q; call"
+          ],
+          [
+            "P3 Hard-asset floor",
+            "Turbines, permits and PP&E support value",
+            "Net PP&E $1.67bn; CEO puts equipment at up to ~$4bn replacement value (claim); 6 GW air permit",
+            "Confirmed (for now)",
+            "Release; call"
+          ],
+          [
+            "P4 Power timeline",
+            "210 MW by 1 July 2027; 640 MW by 4Q27",
+            "First building late 2Q/early 3Q27; 600 MW in 2027; mobilization 1 Dec; F-class EPC not discussed",
+            "Challenged",
+            "Call; presentation"
+          ],
+          [
+            "P5 Strategic optionality",
+            "A sale could crystallize value",
+            "Not addressed on call; largest shareholder (founder) still demanding a sale",
+            "Unresolved",
+            "Call; press 9 Nov"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Trevor's watch-list. Added Vikram Malhotra (Mizuho) as the analyst pressing hardest on funding: in 3Q26 he asked who terminated TensorWave (deflected by the chairman), whether the 13 November wire is firm (direct: management said it had no question it would be met), when the lease signs (deflected) and what yield to model (deflected). Also watching Stephen Gengaro (Stifel) on capex per MW and required returns (partial, then deflected). Later evidence to log: the wire, the lease date and disclosed rent. No analyst asked about the going-concern language, the 10 February turbine-loan trigger, Keystone or the founder's sale demand. 2Q26 analyst names were not available (summary only). — Trevor",
+      "table": {
+        "head": [
+          "Topic",
+          "3Q26 askers",
+          "Answer",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Backlog and new contracts",
+            "Golding (Macquarie), Ocean (OceanWall), Malhotra (Mizuho)",
+            "Partial: 'very far along', no lease date",
+            "New (anchor swap)"
+          ],
+          [
+            "Delivery and MW timing",
+            "Hodulik (UBS), Amicucci (Evercore ISI)",
+            "Direct: late 2Q/early 3Q27; 1 Dec mobilization",
+            "Persistent"
+          ],
+          [
+            "Power, sites and permits",
+            "Golding, Amicucci, Hodulik",
+            "Direct on permits; partial on Texas Tech covenants",
+            "Rising"
+          ],
+          [
+            "Capex and funding",
+            "Gengaro (Stifel), Ocean, Malhotra",
+            "Direct on wire date; partial on capex",
+            "Rising"
+          ],
+          [
+            "Pricing and returns",
+            "Gengaro, Malhotra",
+            "Deflected: no yield figures",
+            "New"
+          ],
+          [
+            "Contract term; residual value",
+            "Landon (Rothschild)",
+            "Direct: 15-20 yr NNN; equipment up to ~$4bn replacement",
+            "New"
+          ],
+          [
+            "Going concern, MUFG, Keystone, sale",
+            "Nobody",
+            "Not asked",
+            "Gap"
+          ]
+        ]
+      },
+      "title": "Analyst focus (Trevor)"
+    },
+    {
+      "body": "Flags: [↑] better, [↓] worse, [~] within ±5% or normal, [?] unavailable. For cost, debt and dilution lines [↓] means worse for shareholders. Sources: 3Q26 10-Q and 8-K ex. 99.1; 2Q26 10-Q. 3Q25 pre-IPO. 3Q burn is 9M less 1H per the 10-Q cash-flow statement.",
+      "table": {
+        "head": [
+          "Metric ($mn unless stated)",
+          "3Q26",
+          "2Q26",
+          "3Q25",
+          "Flag",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "0",
+            "0",
+            "0",
+            "[~]",
+            "Pre-revenue"
+          ],
+          [
+            "Operating loss (G&A)",
+            "142.2",
+            "26.8",
+            "n.a.",
+            "[↓]",
+            "Stock comp $65.8mn"
+          ],
+          [
+            "Net loss / EPS",
+            "141.6 / -$0.22",
+            "25.8 / -$0.04",
+            "n.a.",
+            "[↓]",
+            ""
+          ],
+          [
+            "PP&E additions",
+            "133.4",
+            "185.0",
+            "n.a.",
+            "[↑]",
+            "9M $759.5mn"
+          ],
+          [
+            "Operating cash burn",
+            "54.5",
+            "~28 avg (1H 56.0)",
+            "n.a.",
+            "[↓]",
+            "9M 110.6"
+          ],
+          [
+            "Cash + restricted",
+            "286.3 + 29.2",
+            "62.5 + 29.2",
+            "n.a.",
+            "[↑]",
+            "Convert proceeds"
+          ],
+          [
+            "Debt, net of costs",
+            "958.4",
+            "520.1",
+            "n.a.",
+            "[↓]",
+            "+$431mn convert"
+          ],
+          [
+            "Convert fair value (% par)",
+            "83.5%",
+            "n.a.",
+            "n.a.",
+            "[?]",
+            "$360mn / $431.25mn"
+          ],
+          [
+            "Net PP&E",
+            "1,669.6",
+            "1,547.9",
+            "n.a.",
+            "[↑]",
+            ""
+          ],
+          [
+            "Unconditional purchase obligations",
+            "126.2",
+            "n.a.",
+            "n.a.",
+            "[?]",
+            "111.6 facility-funded"
+          ],
+          [
+            "Shares outstanding (mn)",
+            "646.1",
+            "638.1",
+            "n.a.",
+            "[↓]",
+            "+1.3%"
+          ],
+          [
+            "Power energized (MW)",
+            "0",
+            "0",
+            "0",
+            "[~]",
+            "2027 plan 600 MW"
+          ],
+          [
+            "Contracted MW",
+            "222 (TensorWave; ended 10 Nov)",
+            "0",
+            "0",
+            "[?]",
+            "Now 600 MW non-binding LOI"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: not yet measurable. Cash burn about doubled to $54.5mn a quarter; the GAAP loss jump is mostly non-cash stock payments. Management credibility: Deteriorating. 2Q said the TensorWave backstop would be named 'in coming days' and first power was 210 MW on 1 July 2027; the lease then failed and the date softened. Current guidance deserves low weight until the lease is signed.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "First power",
+            "First building late 2Q or early 3Q27",
+            "Softened (was 210 MW on 1 Jul 2027)",
+            "n.a.",
+            "Customer aligns its build to Fermi's power",
+            "Hodulik got dates, not MW"
+          ],
+          [
+            "2027 power",
+            "~600 MW, one hyperscaler; up to 8 buildings",
+            "New",
+            "n.a.",
+            "Ramps as buildings finish",
+            "Lease date deflected"
+          ],
+          [
+            "Site mobilization",
+            "1 December 2026",
+            "New",
+            "n.a.",
+            "Funded by prepayment",
+            "Taken at face value"
+          ],
+          [
+            "Capex per MW (PLP)",
+            "$3.9-5.1mn benchmark",
+            "New",
+            "n.a.",
+            "$1.67bn already spent offsets",
+            "Yield not given"
+          ],
+          [
+            "Pipeline",
+            "2.2 GW; 4-5 IG hyperscalers",
+            "New",
+            "n.a.",
+            "Direct hyperscalers only",
+            "No second LOI named"
+          ]
+        ]
+      },
+      "title": "Guidance analysis"
+    },
+    {
+      "body": "5-10 year view: if it signs, Matador is one of few multi-GW behind-the-meter gas campuses with land, air permits and fuel in hand, and PLP keeps Fermi's capital need modest. Without a lease by year-end, land rights and secured debt both come under pressure and the assets are worth what a forced buyer pays.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Investment implication"
+        ],
+        "rows": [
+          [
+            "Power assets and permits",
+            "Strong on paper",
+            "~",
+            "6 GW air permit; >2 GW equipment secured; 450 MMcf/d pipeline",
+            "Scarce as ERCOT freezes large loads"
+          ],
+          [
+            "Land",
+            "At risk",
+            "↓",
+            "Texas Tech notice to proceed needs a 200 MW Phase 1 lease by 31 Dec",
+            "Binary on the lease"
+          ],
+          [
+            "Tenant quality",
+            "Improved, unsigned",
+            "↑?",
+            "IG hyperscaler, 600 MW, self-builds",
+            "Bankable once signed"
+          ],
+          [
+            "Cost of capital",
+            "High",
+            "~",
+            "Secured 12-13% fixed; turbine loan SOFR+4%; converts ~83.5% of par",
+            "Equity bears the gap"
+          ],
+          [
+            "Execution",
+            "Weak",
+            "↓",
+            "TensorWave failed; 1 July 2027 date softened; EPC not discussed",
+            "Low delivery credibility"
+          ]
+        ]
+      },
+      "title": "Strategic / moat evolution"
+    },
+    {
+      "table": {
+        "head": [
+          "Risk",
+          "Prior status",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Tenant / lease",
+            "TensorWave unsigned closing",
+            "Terminated; IG LOI non-binding",
+            "~",
+            "Binary on signing"
+          ],
+          [
+            "Liquidity",
+            "Substantial doubt",
+            "Doubt 'alleviated' by plans; ~4.6 months of gross burn in unrestricted cash",
+            "~",
+            "Prepayment or dilution"
+          ],
+          [
+            "31 Dec deadlines",
+            "Open",
+            "Texas Tech NTP and Keystone tests unchanged; extension talks with Texas Tech disclosed",
+            "↑",
+            "Land and debt at stake"
+          ],
+          [
+            "Turbine loan 10 Feb 2027",
+            "Not flagged",
+            "Event of default without committed 400 MW financing",
+            "↑ (new)",
+            "Cross-pressure on $445mn"
+          ],
+          [
+            "Governance",
+            "Founder dispute",
+            "Sale demand renewed 9 Nov; not addressed on call",
+            "↑",
+            "Sale pressure"
+          ],
+          [
+            "Construction",
+            "Timeline doubted",
+            "First building late 2Q/early 3Q27",
+            "~",
+            "Tenant penalties"
+          ]
+        ]
+      },
+      "title": "Major risks and changes"
+    },
+    {
+      "table": {
+        "head": [
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "LOI never becomes a lease",
+            "Customer is mobilizing and paying before signing",
+            "$200mn wire due 13 Nov; $15mn early works; lease date not given"
+          ],
+          [
+            "Runway",
+            "Customer capital, project debt, sequencing",
+            "10-Q: cash not sufficient for 12 months before plans"
+          ],
+          [
+            "Texas Tech and Keystone",
+            "Both parties 'working to meet all requirements'",
+            "10-Q: in discussions with Texas Tech on an extension; none agreed"
+          ]
+        ]
+      },
+      "title": "Concern → response → evidence"
+    },
+    {
+      "body": "$mn. Gap = PP&E additions plus operating burn (our calc), before equipment-facility draws. Next dollar: secured equipment debt at 12.0-12.9% fixed or SOFR+4% (turbine warehouse, ex-MUFG; the 9 October amendment removed the 10 November lease trigger for $25mn of fees); the 5% convert traded at ~83.5% of par on 30 September. Maturities in 24 months: turbine warehouse loan $444.9mn (10 August 2027). Remaining 2026 purchase commitments $22.0mn. Market cap ~$1.32bn at $2.05 on 12 November (BigGo Finance, single source) vs net PP&E $1.67bn. Illustrative only, using the company's market benchmarks, not Fermi terms: 600 MW at $55-69 per kW-month is $396-497mn a year of fixed charges against $2.3-3.1bn of PLP build cost, a 13-21% gross yield (our calc). → A signed IG lease would let Fermi borrow far below 12%; without it, the next dollar is equity near $2.",
+      "table": {
+        "head": [
+          "Period",
+          "PP&E adds",
+          "Op. burn",
+          "Gap",
+          "Debt raised",
+          "Equity",
+          "Prepay",
+          "Debt, net",
+          "Shares (mn)"
+        ],
+        "rows": [
+          [
+            "3Q26",
+            "133.4",
+            "54.5",
+            "187.9",
+            "Convert 431.25",
+            "Stock-paid fees 21.5",
+            "Agreed 200 (not received)",
+            "958.4",
+            "646.1"
+          ],
+          [
+            "2Q26",
+            "185.0",
+            "~28",
+            "~213",
+            "n.a.",
+            "n.a.",
+            "0",
+            "520.1",
+            "638.1"
+          ]
+        ]
+      },
+      "title": "Capital, funding and per-share impact"
+    },
+    {
+      "body": "$200mn wire received, and its refund terms. | Definitive lease: term, fixed charge per kW-month, credit support. | Texas Tech notice to proceed and Keystone status at 31 December. | Committed project financing for 400 MW by 10 February 2027. | First-power MW and the F-class EPC award. Key risks building: deadline cliff from 31 December to 10 February; single-tenant dependence. Confirmation: signed lease plus project-debt commitment. Tripwires: wire missed; Texas Tech termination notice; turbine-loan default notice; equity raise below $2.",
+      "title": "Five signals"
+    },
+    {
+      "table": {
+        "head": [
+          "Question for owners",
+          "Why it matters",
+          "Asked on call?"
+        ],
+        "rows": [
+          [
+            "The 10-Q calls the hyperscaler deal a non-binding LOI. If no lease is signed, must the $200mn be repaid, and is it secured ahead of the converts?",
+            "Credit: ranking and liquidity",
+            "Wire date asked (13 Nov); refund terms not asked"
+          ],
+          [
+            "The turbine warehouse lenders (ex-MUFG) need committed financing for 400 MW of generation by 10 February 2027. Who is providing it, and does a lease signed in December leave time to close it?",
+            "Credit: $445mn event of default",
+            "Not asked"
+          ],
+          [
+            "Texas Tech's notice to proceed requires a signed 200 MW Phase 1 lease by 31 December. Will the lease be signed by then, or is an extension agreed?",
+            "Land rights (P4)",
+            "Asked (Amicucci); partial answer"
+          ],
+          [
+            "You cite $55-69 per kW-month for powered land. Will Fermi's fixed charges sit inside that range, above it for behind-the-meter power, or below it?",
+            "Returns on the $1.67bn spent",
+            "Asked (Gengaro, Malhotra); deflected"
+          ],
+          [
+            "The 10-Q says cash is not sufficient for 12 months before management plans. Without the prepayment, how many months of runway, and is an equity raise planned?",
+            "Dilution",
+            "Not asked"
+          ],
+          [
+            "Is the board running a sale process in parallel, as the largest shareholder demands?",
+            "P5 and governance",
+            "Not asked"
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    },
+    {
+      "body": "Fermi's pivot shows where the bankable middle is for a behind-the-meter campus: sell powered land to an investment-grade tenant that builds its own halls, take a prepayment to bridge, and keep capex near $4-5mn per MW. But a non-binding LOI did not satisfy Fermi's lenders or landlord, so Kona should avoid loan or land milestones tied to a lease date it does not control, and should treat a prepayment as bridge money, with its refund terms negotiated before first draw.",
+      "title": "Read-across for Kona"
+    }
+  ],
+  "segment": "energy",
+  "sources": [
+    {
+      "title": "Fermi 3Q26 10-Q (filed 12 November 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/2071778/000207177826000058/frmi-20260930.htm"
+    },
+    {
+      "title": "Fermi 3Q26 release (8-K ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0002071778/000121390026118351/ea031197701ex99-1.htm"
+    },
+    {
+      "title": "Fermi 3Q26 presentation (8-K ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/2071778/000121390026118351/ea031197701ex99-2.htm"
+    },
+    {
+      "title": "Fermi 3Q26 earnings call transcript (Motley Fool)",
+      "url": "https://www.fool.com/earnings/call-transcripts/2026/11/12/fermi-inc-frmi-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "title": "Fermi 2Q26 call highlights (Nasdaq)",
+      "url": "https://www.nasdaq.com/articles/fermi-q2-earnings-call-highlights"
+    },
+    {
+      "title": "Share move 12 November (BigGo Finance)",
+      "url": "https://finance.biggo.com/news/01ecd872-c9de-44a5-88d4-2b68753c7ec8"
+    },
+    {
+      "title": "Founder renews sale push (Stocktwits, 9 November)",
+      "url": "https://stocktwits.com/news-articles/markets/equity/fermi-s-largest-shareholder-renews-push-for-immediate-sale-claims-board-fumbled-10-b-20-b-valuation-opportunity/cNGACcvR9ed"
+    }
+  ],
+  "ticker": "FRMI",
+  "verdict": "Weakening",
+  "versus": "Quarter: miss (EPS -$0.22 vs about -$0.09 consensus; mostly stock-based G&A). Outlook: no financial guidance; first power for the first building now 'late 2Q or early 3Q27' (was 210 MW on 1 July 2027); 600 MW in 2027 for one hyperscaler under a non-binding letter of intent."
+}

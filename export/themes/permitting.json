@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Mississippi permit board rejected the environmental groups' appeal of SpaceXAI's 41-turbine Southaven air permit, citing insufficient evidence; one commissioner dissented.",
+      "company": "SpaceX (SpaceXAI)",
+      "date": "2026-11-10",
+      "direction": "against",
+      "numbers": "The NAACP Clean Air Act suit over unpermitted turbines continues in federal court.",
+      "segment": "policy",
+      "source": "Action News 5 (WMC)",
+      "url": "https://www.actionnews5.com/2026/11/11/state-rejects-appeal-over-spacexais-air-permit-southaven-facility/"
+    },
+    {
       "claim": "CoreWeave wrote to Texas Governor-elect Hinojosa offering to work with her team on responsible completion of permitted projects.",
       "company": "CoreWeave",
       "date": "2026-11-07",
@@ -199,5 +209,5 @@
   "status": "strengthening",
   "summary": "Opposition became an election result: on 3 November voters backed restrictions in 38 of 39 counted local measures, including 25 MW caps and outright bans, and Democrats won Texas, Ohio and Georgia governorships on moratorium platforms; Goldman says moratorium-leaning states will hold 45% of planned US capacity by January. Developers are already adjusting (CoreWeave wrote to Texas's governor-elect, OpenAI pledged to pay for its own power), though pledges are voluntary and exclude leased sites. Earlier signals still hold: the Southaven court ruling, Amazon's Virginia withdrawal, Memphis's pause, and opposition reaching Patagonia. Status stays strengthening, now with state-level force behind it.",
   "title": "Permitting and community backlash",
-  "updated": "2026-11-09"
+  "updated": "2026-11-16"
 }

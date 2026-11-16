@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "OpenAI takes all 457 MW of a new TensorWave AMD deployment for six years; no other tenants.",
+      "company": "OpenAI / TensorWave",
+      "date": "2026-11-16",
+      "direction": "supports",
+      "numbers": "Value undisclosed.",
+      "segment": "neocloud",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios"
+    },
+    {
+      "claim": "Amended S-1: about $900.9bn of committed compute and infrastructure spending, $451.6bn before 2030 and $70.7bn due within 12 months of 30 September; plus $3.4bn for 1.7 GW of its own gas generators.",
+      "company": "Anthropic",
+      "date": "2026-11-10",
+      "direction": "supports",
+      "numbers": "Seeks about $1.3T at $70-78 a share, above the $1T ECM figure logged on 9 November.",
+      "segment": "energy",
+      "source": "Fortune (citing FT and the S-1/A)",
+      "url": "https://fortune.com/2026/11/10/anthropic-3-4-billion-deal-gas-data-centers-ai-ipo/"
+    },
+    {
       "claim": "ECM advisers now put Anthropic IPO value near $1T, down from $1.2-1.45T pre-selloff; the article cites $895.4B of non-cancellable infrastructure commitments with take-or-pay true-ups (single source).",
       "company": "Anthropic",
       "date": "2026-11-09",
@@ -169,7 +189,7 @@
   "order": 6,
   "question": "How exposed is the buildout to two labs?",
   "status": "strengthening",
-  "summary": "Exposure keeps rising while the labs' own funding gets less certain. Anthropic's S-1 showed $542-567B of compute commitments and Anthropic Direct leases; an ECM report now cites $895.4B of non-cancellable commitments (single source, unreconciled) as its IPO valuation slips toward $1T from $1.2-1.45T. Microsoft trimming neocloud suppliers (single source) leaves the labs a larger share of remaining demand. The SpaceX deal's reported 90-day exits from 2027 (single source) show those commitments are less firm than headlines. Status stays strengthening.",
+  "summary": "Exposure keeps rising: Anthropic's amended S-1 shows about $900.9bn of compute and infrastructure commitments with $70.7bn due within a year, and it is now buying its own gas generators; OpenAI took all 457 MW of TensorWave's new AMD build. Anthropic's IPO is pitched near $1.3T against ECM chatter of $1T, so the labs' funding hinges on one listing window. Microsoft trimming neocloud suppliers (single source) leaves the labs a larger share of remaining demand, and the SpaceX deal's reported 90-day exits (single source) show commitments are less firm than headlines. Status stays strengthening.",
   "title": "Concentration on Anthropic and OpenAI",
-  "updated": "2026-11-09"
+  "updated": "2026-11-16"
 }

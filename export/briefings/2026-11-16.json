@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-16",
+  "items": [
+    {
+      "headline": "CoreWeave beats and raises: backlog $132.5B, 4.6 GW contracted",
+      "segment": "neocloud",
+      "source": "CoreWeave investor relations",
+      "summary": "Q3 revenue $3.66B (up 168%), net loss $709M; 2026 revenue guide raised to $13.0-13.3B and capex to $37-39B. Active power passed 1.7 GW, contracted power rose more than 900 MW to 4.6 GW, and management expects about $9B of customer prepayments in the next three months.",
+      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "headline": "Nebius trims 2026 to $3.0-3.2B on colocation power delays, guides 2027 to $12-13B",
+      "segment": "neocloud",
+      "source": "Yahoo Finance (GuruFocus call summary); Nebius 6-K",
+      "summary": "Q3 revenue $981M (up 571%, including about $325M non-recurring). Vineland slipped because the host wound down temporary generation faster than planned, so Nebius is expediting Bloom fuel cells; prepayments now cover more than 100% of capex for contracted capacity, up from 50-60%. Shares fell about 17%.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nebius-group-nv-nbis-q3-230849772.html"
+    },
+    {
+      "headline": "TensorWave to supply OpenAI 457 MW of AMD capacity for six years",
+      "segment": "neocloud",
+      "source": "The Next Web; TensorWave release via Business Wire",
+      "summary": "MI455X GPUs in Helios racks across unnamed US sites, first capacity in H1 2027 and full deployment by early 2028; value undisclosed. It is the first named provider under OpenAI's AMD partnership.",
+      "url": "https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios"
+    },
+    {
+      "headline": "Fermi replaces collapsed TensorWave lease with $200M hyperscaler prepayment",
+      "segment": "developer",
+      "source": "The Tech Capital",
+      "summary": "An unnamed investment-grade hyperscaler is prepaying $200M while negotiating a lease on 600 MW of powered land at Project Matador, Amarillo; the definitive lease and a $90M materials agreement are not yet signed. Single source, paywalled.",
+      "url": "https://thetechcapital.com/fermi-replaces-collapsed-tensorwave-deal-with-200-million-hyperscaler-bet"
+    },
+    {
+      "headline": "Anthropic commits $3.4B to 1.7 GW of gas generators",
+      "segment": "energy",
+      "source": "Fortune (citing Financial Times)",
+      "summary": "Per the FT, Anthropic took over OnePWR Solutions' Caterpillar generator commitments, with units available within two years; its amended S-1 warns of competition for gas supply and pipeline capacity where behind-the-meter power is allowed.",
+      "url": "https://fortune.com/2026/11/10/anthropic-3-4-billion-deal-gas-data-centers-ai-ipo/"
+    },
+    {
+      "headline": "Mississippi upholds SpaceXAI's 41-turbine Southaven permit",
+      "segment": "energy",
+      "source": "Action News 5 (WMC)",
+      "summary": "The permit board rejected the appeal of the March permit for the roughly 1.2 GW plant that powers Colossus 2. The separate NAACP Clean Air Act suit over turbines run before the permit continues after a federal judge refused to dismiss it.",
+      "url": "https://www.actionnews5.com/2026/11/11/state-rejects-appeal-over-spacexais-air-permit-southaven-facility/"
+    },
+    {
+      "headline": "Banks and credit investors pull back from AI data center debt",
+      "segment": "financing",
+      "source": "Reuters via Yahoo Finance",
+      "summary": "Reuters reports some lenders would balk even with Anthropic or Google backstops; neoclouds and standalone operators face the sharpest pullback, Nebius shelved a high-yield bond in October, and 10-year hyperscaler spreads are about 50 bps wider this year versus 20 bps for non-AI industrials. JPMorgan holds $29B of data center CRE loans.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/banks-investors-grow-wary-ai-110413813.html"
+    },
+    {
+      "headline": "ING sells $500M of data center loans; Barclays insures; ABS spreads widen",
+      "segment": "financing",
+      "source": "Korea Daily (citing Reuters, FT, CREFC)",
+      "summary": "ING is auctioning about $500M of data center loans, Barclays is buying credit insurance on AI loans (insurers take 20-50% of a loan), and five-year A-rated data center ABS spreads rose from 1.95 to 2.57 points while three-month issuance fell about 20% year on year (CREFC).",
+      "url": "https://en.koreadaily.com/ai-investment-risk-global-financial-institutions/"
+    },
+    {
+      "headline": "Nvidia in talks to guarantee construction debt for Nscale's Anthropic site",
+      "segment": "financing",
+      "source": "Let's Data Science (citing Business Insider and The Information)",
+      "summary": "The Information, via Business Insider, says Nvidia may backstop construction financing for Nscale's West Virginia campus built for Anthropic; Nvidia's separate $1B tranche of Nscale's pre-IPO round was due around 16 November. Single source and unconfirmed.",
+      "url": "https://letsdatascience.com/news/nvidia-weighs-deeper-financial-backing-as-neoclouds-face-sha-7d525121"
+    },
+    {
+      "headline": "Argentina's country risk jumps to 939 bps; Neuquén pitches data centers on stranded gas",
+      "segment": "financing",
+      "source": "The Rio Times; Diario Neuquino",
+      "summary": "The JPMorgan spread rose from 787 to 939 bps in the week to 6 November, a 2026 high, around the US midterms and 2027 debt worries. Separately, Neuquén energy minister Gustavo Medele is promoting data centers that burn gas producers cannot currently ship, with no named companies or timeline (single source).",
+      "url": "https://www.riotimesonline.com/argentina-country-risk-trump-midterms/"
+    }
+  ],
+  "kona": "Power is now the thing that slips schedules: Nebius missed its 2026 range because temporary generation at Vineland was pulled early, and Anthropic is buying 1.7 GW of gas generators itself, so Kona should sell firm, already-secured power plus the hall, not energy alone, and price for that scarcity. Offtakers still want capacity (CoreWeave backlog $132.5B, OpenAI signing 457 MW with TensorWave), and Fermi shows a hyperscaler will prepay $200M against powered land before a lease is final, so a prepayment should be the first ask. Debt got harder this week: banks are balking at AI loans even with Anthropic or Google backstops, ABS spreads are up, and Argentina's country risk jumped to 939 bps, so plan the first block on equity, prepayments and a DFI or ECA anchor rather than commercial project debt.",
+  "stale": "Kona tab, Argentina blocks card: says country risk peaked at 655 bps and settled near 600; it closed at 939 on 6 November. Models tab lease comps: the Fermi Amarillo row (TensorWave, 222 MW, 15 yr) is a collapsed deal; Fermi now has a $200M prepayment from an unnamed hyperscaler on 600 MW, lease unsigned. Players tab CoreWeave profile and Model tab CoreWeave charts use Q2 figures (1.5 GW active, about 4.2 GW contracted); Q3 is 1.7 GW active, 4.6 GW contracted, $132.5B backlog, 2026 revenue guide $13.0-13.3B and capex $37-39B. Nebius: any 2026 guide of $3.0-3.4B is now $3.0-3.2B, with 2027 at $12-13B. Financing tab Stargate Argentina row: 'no site' is outdated; Sur Energy's CEO has named the Confluencia area of Neuquén, though there is still no definitive contract or RIGI filing.",
+  "title": "Demand holds, credit shuts, and power decides who delivers"
+}

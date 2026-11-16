@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "Neuquen energy minister Gustavo Medele is promoting data centers beside Vaca Muerta to burn gas producers cannot currently ship; he cites financing and aligning several industries as the hurdles (single source).",
+      "company": "Neuquen province",
+      "date": "2026-11-08",
+      "direction": "supports",
+      "numbers": "No companies, volumes, sites or timeline given.",
+      "segment": "policy",
+      "source": "Diario Neuquino",
+      "url": "https://diarioneuquino.com.ar/neuquen-busca-atraer-data-centers-a-vaca-muerta-para-generar-electricidad-con-gas-que-hoy-no-puede-comercializarse/"
+    },
+    {
+      "claim": "JP Morgan country risk closed at 939 bps on 6 November, up 152 in a week; Deputy Economy Minister Daza says RIGI has approved about $75bn of projects.",
+      "company": "Argentina",
+      "date": "2026-11-06",
+      "direction": "against",
+      "numbers": "Up from 852 on 4 November and about 400 in July; highest since October 2025.",
+      "segment": "financing",
+      "source": "The Rio Times",
+      "url": "https://www.riotimesonline.com/argentina-country-risk-trump-midterms/"
+    },
+    {
       "claim": "Country risk closed at 852 bps on 4 November, a 2026 high, up 65 bps in three sessions from 787 on 30 October.",
       "company": "Argentina",
       "date": "2026-11-04",
@@ -117,7 +137,7 @@
   "order": 8,
   "question": "Is Argentina, or Latin America, becoming investable for AI compute?",
   "status": "weakening",
-  "summary": "Still weakening: country risk rose again to 852 bps on 4 November, a 2026 high, from 787 on 30 October and 402 in July, ahead of a 2027 election investors are waiting on. The offsets are official and not yet approved: EXIM's up to $6B LNG offer needs board approval in 2027, DFC is studying about $20B, Argentina LNG targets FID on 26 November. The region remains better than the country, with Crusoe in Paraguay; Stargate Argentina is still only a letter of intent and the Super RIGI awaits the Senate. The US midterm backlash is a relative plus for offshore sites but does not lower Argentine borrowing costs; an LNG FID or a Senate vote would argue for moving back.",
+  "summary": "Still weakening: country risk closed at 939 bps on 6 November, up from 787 a week earlier and about 400 in July, as investors weigh 2027 debt payments and whether a Democratic Congress limits US support. The offsets are official and not yet approved: EXIM's Argentina line and DFC's roughly $20B study, and Argentina LNG targeting FID on 26 November. Local pull is rising, with Neuquen's energy minister pitching data centers on stranded Vaca Muerta gas and Pampa offering 800 MW, but Stargate Argentina is still a letter of intent and the Super RIGI awaits the Senate. The region remains better than the country (Crusoe in Paraguay); an LNG FID or a Senate vote would argue for moving back.",
   "title": "Argentina and Latin America",
-  "updated": "2026-11-09"
+  "updated": "2026-11-16"
 }

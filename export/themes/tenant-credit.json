@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "After the TensorWave lease terminated, an unnamed investment-grade hyperscaler agreed a $200mn prepayment while negotiating about 600 MW of powered land (lease non-binding).",
+      "company": "Fermi",
+      "date": "2026-11-13",
+      "direction": "supports",
+      "numbers": "Rent benchmark falls to $55-69 per kW-month under the powered-land model, against $140-200 for full halls.",
+      "segment": "developer",
+      "source": "The Tech Capital; Field Guide FRMI post-call report",
+      "url": "https://thetechcapital.com/fermi-replaces-collapsed-tensorwave-deal-with-200-million-hyperscaler-bet"
+    },
+    {
       "claim": "Of more than $12bn of contracts signed since 1 July, a 'high majority' is from AI-native customers rather than hyperscalers; Nebius offsets weaker credit with prepayments on >90% of contract value.",
       "company": "Nebius",
       "date": "2026-11-12",
@@ -9,6 +19,15 @@
       "segment": "neocloud",
       "source": "Nebius 3Q26 shareholder letter and call",
       "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-nebius-sinks-premarket-after-q3-2026-eps-miss-93CH-5022210"
+    },
+    {
+      "claim": "Fermi's TensorWave lease (with AMD credit support) was terminated on 10 November after its closing date passed; Fermi replaced it with a non-binding LOI from an unnamed investment-grade hyperscaler for about 600 MW, backed by a $200mn prepayment agreement. The CEO said investment-grade buyers are going direct as high-yield financing tightens.",
+      "company": "Fermi America",
+      "date": "2026-11-12",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Fermi 3Q26 10-Q and call",
+      "url": "https://www.sec.gov/Archives/edgar/data/2071778/000207177826000058/frmi-20260930.htm"
     },
     {
       "claim": "Delayed-draw loan spreads since IPO range from about 225bp over SOFR for investment-grade customers to 550bp for AI labs; over 75% of committed 2027 capex is tied to investment-grade or enterprise customers.",
@@ -29,6 +48,16 @@
       "segment": "developer",
       "source": "Bitdeer 3Q26 call",
       "url": "https://www.fool.com/earnings/call-transcripts/2026/11/10/bitdeer-btdr-q3-2026-earnings-call-transcript/"
+    },
+    {
+      "claim": "Reuters: some lenders say they would balk at new AI loans even with Anthropic or Google backstops.",
+      "company": "Banks",
+      "date": "2026-11-09",
+      "direction": "against",
+      "numbers": "If true, the backstop no longer guarantees access, only price; management at TeraWulf still calls an investment-grade tenant critical.",
+      "segment": "financing",
+      "source": "Reuters via Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/banks-investors-grow-wary-ai-110413813.html"
     },
     {
       "claim": "SpaceX GPU lease rent is one-twentieth of financed cost per quarter plus a fixed rate, over about five years; Apollo deals total $75B versus $44.9B of neocloud chip-backed debt since 2023 (single source, The Information via FourWeekMBA).",
@@ -346,7 +375,7 @@
   "order": 1,
   "question": "Does the tenant's credit, not the asset, set what developers and neoclouds pay to borrow?",
   "status": "strengthening",
-  "summary": "Every 2026 financing points the same way. Debt backed by investment-grade contracts or a hyperscaler guarantee (Google backstops, Amazon's parent guarantee at Cipher) prices near 6-7%; GPU debt without that wrapper now pays 11% or more (Volta), and even Anthropic is reported paying above 10% on lease-backed chip debt. This week SpaceX's about $40B Apollo lease confirmed Musk's claim that a borrower with non-AI revenue can still raise at scale (rate undisclosed), and Oracle's pledge to cap borrowing cut its CDS by 22 bps in a day, which shows credit now responds to balance-sheet discipline. Status unchanged.",
+  "summary": "Every 2026 financing still points the same way: debt backed by investment-grade contracts or a hyperscaler guarantee prices near 6-7%, GPU debt without that wrapper pays 9-11% or more, and CoreWeave's DDTL spreads run from about 225 bps for investment-grade customers to 550 bps for AI labs. Fermi shows the flip side: once its venture-backed tenant fell through, only an investment-grade hyperscaler could step in, and on a prepayment. The new caveat this week is quantity, not price: Reuters reports some lenders would decline even backstopped loans because their books are full. Status unchanged; a backstop now buys price more reliably than access.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-11-12"
+  "updated": "2026-11-16"
 }

@@ -1,6 +1,26 @@
 {
   "evidence": [
     {
+      "claim": "TensorWave will supply OpenAI 457 MW of AMD MI455X capacity for six years from 1H27, under OpenAI's AMD partnership.",
+      "company": "TensorWave",
+      "date": "2026-11-16",
+      "direction": "neutral",
+      "numbers": "Value and financing undisclosed; the same company's 222 MW Fermi lease terminated on 10 November for want of project finance.",
+      "segment": "neocloud",
+      "source": "The Next Web",
+      "url": "https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios"
+    },
+    {
+      "claim": "ING is selling about $500mn of data center loans, Barclays insures AI loans (insurers take 20-50% of a loan), and HSBC has considered it.",
+      "company": "Banks / ABS market",
+      "date": "2026-11-14",
+      "direction": "against",
+      "numbers": "CREFC: five-year A-rated data center ABS spreads rose from 1.95 to 2.57 points; three-month issuance down about 20% year on year.",
+      "segment": "financing",
+      "source": "Korea Daily (citing Reuters, FT, CREFC)",
+      "url": "https://en.koreadaily.com/ai-investment-risk-global-financial-institutions/"
+    },
+    {
       "claim": "Guides 2027 capex of $40-45bn, 75-85% funded by customer prepayments and asset-backed debt, with prepayments of $17-20bn; says >90% of 3Q contract value is prepaid, covering >100% of related capex.",
       "company": "Nebius",
       "date": "2026-11-12",
@@ -9,6 +29,15 @@
       "segment": "neocloud",
       "source": "Nebius 3Q26 6-K and call",
       "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926126008/tm2629571d1_ex99-2.htm"
+    },
+    {
+      "claim": "Fermi's 10-Q says its cash is not sufficient for 12 months before management plans; its $445mn MUFG turbine loan defaults unless committed project financing for 400 MW is in place by 10 February 2027, and its 5% converts were valued at about 83.5% of par on 30 September.",
+      "company": "Fermi America",
+      "date": "2026-11-12",
+      "direction": "supports",
+      "segment": "energy",
+      "source": "Fermi 3Q26 10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/2071778/000207177826000058/frmi-20260930.htm"
     },
     {
       "claim": "Says it needs under $5bn of parent-level capital through 2027, will not use unsecured debt at current yields, expects about $9bn of prepayments in three months, and talks its next delayed-draw loan at about 7-7.5%.",
@@ -31,6 +60,16 @@
       "url": "https://www.fool.com/earnings/call-transcripts/2026/11/10/bitdeer-btdr-q3-2026-earnings-call-transcript/"
     },
     {
+      "claim": "Reuters: some lenders would decline new AI data center loans even with Anthropic or Google backstops; neoclouds and standalone operators face the sharpest pullback; Nebius shelved a high-yield bond in October.",
+      "company": "Banks",
+      "date": "2026-11-09",
+      "direction": "against",
+      "numbers": "10-year hyperscaler spreads about 50 bps wider this year versus 20 bps for non-AI industrials.",
+      "segment": "financing",
+      "source": "Reuters via Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/banks-investors-grow-wary-ai-110413813.html"
+    },
+    {
       "claim": "Microsoft plans to cut the number of neocloud suppliers in favor of its own sites, has not chosen which to drop, and let an older-generation Oracle capacity deal lapse (people familiar; single source).",
       "company": "Microsoft",
       "date": "2026-11-09",
@@ -39,6 +78,16 @@
       "segment": "neocloud",
       "source": "Dataconomy",
       "url": "https://dataconomy.com/2026/11/09/microsoft-cuts-neocloud-partners-to-favor-own-data-centers/"
+    },
+    {
+      "claim": "The Information via Business Insider: Nvidia in talks to guarantee construction financing for Nscale's West Virginia campus built for Anthropic (single source, unconfirmed).",
+      "company": "Nscale / Nvidia",
+      "date": "2026-11-06",
+      "direction": "against",
+      "numbers": "Shows supplier credit replacing bank credit for a neocloud with a $103bn contracted book.",
+      "segment": "financing",
+      "source": "Let's Data Science (citing Business Insider)",
+      "url": "https://letsdatascience.com/news/nvidia-weighs-deeper-financial-backing-as-neoclouds-face-sha-7d525121"
     },
     {
       "claim": "CFO says the company will not dilute holders at these levels and liquidity plus Abernathy proceeds cover remaining commitments without equity markets.",
@@ -307,7 +356,7 @@
   "order": 5,
   "question": "Can neoclouds keep raising money below what their assets earn?",
   "status": "weakening",
-  "summary": "Credit for weaker neoclouds got worse after the midterms: CoreWeave's 2032 notes passed 16% and its CDS 1,289 bps, banks are reportedly selling AI loans and an unnamed holder is auctioning $500M of data center debt, and Microsoft says it will use fewer neocloud suppliers (single source). Fermi's lease failed to close for want of project finance, and Firmus and Nscale remain unresolved. The strong end still raises: Nebius funded with $2.8B of ATM equity and prepayments, and Apollo's $75B of chip deals went to SpaceX and Anthropic, so the market is splitting by credit rather than shutting. Status stays weakening; CoreWeave's 10 November and Nebius's 12 November results are the next tests.",
+  "summary": "Credit for weaker neoclouds kept tightening: Reuters reports some lenders would decline AI loans even with Anthropic or Google backstops, ING is selling $500mn of data center loans, Barclays is insuring, and A-rated data center ABS spreads are about 60 bps wider since Q1. CoreWeave's 2032 notes passed 16% and it says it will not issue unsecured debt at these yields, leaning on $9bn of prepayments; Nebius is funding 2027 largely from prepayments too. Nvidia is reported weighing a construction guarantee for Nscale (single source), and Fermi's TensorWave lease died for want of project finance. Contracts still get signed (TensorWave-OpenAI 457 MW), so the market is splitting by credit and shifting to prepayments and supplier support rather than shutting. Status stays weakening.",
   "title": "Neocloud funding access",
-  "updated": "2026-11-12"
+  "updated": "2026-11-16"
 }
