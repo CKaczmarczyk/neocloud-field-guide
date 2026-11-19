@@ -351,6 +351,24 @@
       "segment": "neocloud",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=b5YnPsBxgjA"
+    },
+    {
+      "claim": "Nvidia's neocloud commitments (renamed from 'AI cloud agreements') fell to $32bn from $36bn and now take effect only if the neocloud secures financing and Nvidia accepts the deployed capacity.",
+      "company": "Nvidia",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 CFO commentary (Josh)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+    },
+    {
+      "claim": "Kress says future Nvidia support will focus on land, power and shell and be 'disciplined and selective'; guarantees attach only once a building is ready for service, so they cannot fund construction.",
+      "company": "Nvidia",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 call (Josh)",
+      "url": "https://singjupost.com/nvidia-q3-fy27-earnings-call-transcript/"
     }
   ],
   "order": 5,
@@ -358,5 +376,5 @@
   "status": "weakening",
   "summary": "Credit for weaker neoclouds kept tightening: Reuters reports some lenders would decline AI loans even with Anthropic or Google backstops, ING is selling $500mn of data center loans, Barclays is insuring, and A-rated data center ABS spreads are about 60 bps wider since Q1. CoreWeave's 2032 notes passed 16% and it says it will not issue unsecured debt at these yields, leaning on $9bn of prepayments; Nebius is funding 2027 largely from prepayments too. Nvidia is reported weighing a construction guarantee for Nscale (single source), and Fermi's TensorWave lease died for want of project finance. Contracts still get signed (TensorWave-OpenAI 457 MW), so the market is splitting by credit and shifting to prepayments and supplier support rather than shutting. Status stays weakening.",
   "title": "Neocloud funding access",
-  "updated": "2026-11-16"
+  "updated": "2026-11-18"
 }

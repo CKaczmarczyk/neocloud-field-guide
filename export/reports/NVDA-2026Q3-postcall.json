@@ -1,0 +1,703 @@
+{
+  "changes": [
+    "Demand and supply both stepped up: data center revenue $107.6bn (+21% QoQ); Rubin nearly $20bn of revenue, 'our fastest architecture ramp ever'; supply commitments $390bn (from $279bn).",
+    "Guarantees rose to $118.0bn from $108.5bn; a new $9.5bn 'power and systems credit support' line appeared next to the $105bn SB Energy Ohio support for OpenAI and $3.5bn for neoclouds.",
+    "Neocloud commitments ('AI cloud agreements', renamed) fell to $32bn from $36bn and are now stated as conditional on the neocloud securing financing and Nvidia accepting the deployed capacity.",
+    "Data center leases not yet commenced reached $74bn (cloud service agreements plus leases $102bn, from $74bn); equity commitments fell to $20bn from $25bn.",
+    "Kress, as interim CEO, said future support will focus on land, power and shell and be 'disciplined and selective', with investment-grade customers 'very helpful'; the chairman said Huang will not be reinstated and the CEO search will not be rushed."
+  ],
+  "checks": "Figures from the 3Q FY27 release (8-K ex. 99.1) and CFO commentary (ex. 99.2), both filed 17 November 2026 (accession 0001045810-26-000088); 10-Q not yet filed, so customer concentration and equity holdings are pending. Prior-quarter guarantees, agreements, DSO and equity commitments from the 2Q 10-Q via the preview record. Transcript: Singju Post (possibly garbled passages flagged by source), cross-checked with IBTimes for guarantee quotes. Consensus: Proactive via Yahoo (provider not named). Price: close $155.46 on 17 November (Yahoo), after hours $162.94 at 7:59 p.m. ET (+4.8%, StockTitan). Derived numbers (growth rates, margins, 13-week 4Q, totals) recomputed in code. Independent fact-check by a fresh agent with sources only: about 95 items confirmed against the release, CFO commentary, 2Q 10-Q and transcripts; 13 corrections applied (off-balance-sheet sum restated to $272bn; unsupported pricing, memory, staff and 'standalone CPU' wording removed; DSO 45-day history dropped; call vs commentary attributions fixed). Opex and trend labels are judgments; Microsoft pull-back is from Bloomberg (5 Nov) via the preview.",
+  "consensus_thesis": "Investors own Nvidia for supply-constrained AI demand and 74-75% gross margins, but going in they were pricing leadership risk after Jensen Huang's resignation and growing vendor-financing exposure (about $108.5bn of guarantees at 2Q); the stock closed at $155.46 on 17 November, about 35% below the ~$239 record close of 6 October cited in the preview.",
+  "date": "2026-11-18",
+  "headline": "The demand case strengthened and needs no change; the vendor-financing exposure grew again, but it is now more explicitly conditional, so credit quality holds rather than weakens.",
+  "kind": "postcall",
+  "kona": "Nvidia said future support will go to land, power and shell, 'disciplined and selective', with investment-grade customers seen as helpful, and that its guarantees only attach once a building is ready for service. That makes Kona's category the one Nvidia prefers to support, but its support cannot de-risk construction: Kona still needs its own construction finance, with Nvidia support, if any, refinancing it at energization. With neocloud commitments now conditional on the neocloud raising money, Kona should not treat a GPU-owner tenant's Nvidia agreement as credit support and should prefer hyperscaler-backed or prepaid tenants. It should also check whether the new Commerce Department export controls change GPU shipments to Argentina.",
+  "monitor": [
+    "3Q 10-Q (due within days): customer concentration, equity holdings, counterparty of the new $9.5bn guarantee.",
+    "4Q gross margin against the 71-72% 'bottom' and DSO against 64 days.",
+    "Effect of the new Commerce Department export controls on non-China demand, and CEO search progress."
+  ],
+  "name": "Nvidia",
+  "pdf_brief": "/_blob/5b9b86c3aa9b7ded7ea403d369268f77",
+  "pdf_report": "/_blob/3891116867bb0f5035a732356c7d1280",
+  "period": "2026Q3",
+  "sections": [
+    {
+      "table": {
+        "head": [
+          "Pillar",
+          "Market assumed",
+          "Quarter showed",
+          "Verdict",
+          "Source"
+        ],
+        "rows": [
+          [
+            "P1 Demand outruns supply",
+            "Revenue near $108-109bn; 4Q guide near $124bn",
+            "$115.8bn; 4Q guide $130.0bn; FY28 ~75% (from 70%)",
+            "Confirmed",
+            "Release; call"
+          ],
+          [
+            "P2 Margins hold",
+            "3Q GM ~74%; 4Q trough 71-72%",
+            "74.9% non-GAAP; 4Q 71-72% called 'our bottom'; FY28 72-73% unchanged",
+            "Confirmed",
+            "CFO commentary; call"
+          ],
+          [
+            "P3 Vendor financing contained",
+            "Guarantees and capacity buys limited",
+            "Guarantees $118.0bn (+$9.5bn); leases not commenced $74bn; DSO 64 days; neocloud $32bn now conditional",
+            "Challenged",
+            "CFO commentary"
+          ],
+          [
+            "P4 Continuity after Huang",
+            "Roadmap and guidance unchanged",
+            "Guide raised; 'roadmap is on track'; Huang not reinstated; search not rushed",
+            "Confirmed (near term)",
+            "Release; call"
+          ],
+          [
+            "P5 China is upside only",
+            "Guide excludes China; no compliance cost",
+            "$2.4bn Hopper to China in 3Q, shipments stopped; new export-control oversight committee; new BIS rules",
+            "Unresolved",
+            "CFO commentary; call"
+          ]
+        ]
+      },
+      "title": "Pillar scorecard"
+    },
+    {
+      "body": "Emphasized more: conditionality of guarantees and neocloud commitments; land, power and shell as the preferred form of support; supply-chain deals (Kinsus, Samsung Electro-Mechanics, SPIL); the $2.5T cloud backlog figure. Less or dropped: Huang's '100%' growth framing (Moore raised it; Kress did not address it); the 'AI cloud agreements' label; no new frontier-lab investment figure. KPIs more important: guarantees by type, leases not commenced, DSO, neocloud commitments. Less: China revenue (now excluded from guidance). Risks up: guarantee exposure, lease commitments, receivables, export rules. Down: margin floor (called the bottom), leadership disruption to near-term execution.",
+      "title": "What changed in emphasis"
+    },
+    {
+      "body": "3Q answers: 1 direct (Rasgon), 6 partial, 1 deflected (Reitzes on policy). Pre-empted in prepared remarks: guarantee conditionality, gross-margin bottom. Not asked: circumstances of Huang's exit (chairman barred questions), Microsoft's reported pull-back from neocloud deals, DSO.",
+      "table": {
+        "head": [
+          "Topic",
+          "2Q FY27",
+          "3Q FY27",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Demand / FY28 outlook",
+            "Moore, Rasgon",
+            "Moore, Reitzes",
+            "Persistent"
+          ],
+          [
+            "Capex, funding, vendor financing",
+            "Arya",
+            "Muse, Rasgon, Schneider",
+            "Rising"
+          ],
+          [
+            "Pricing and margins",
+            "Rasgon",
+            "Arcuri",
+            "Persistent"
+          ],
+          [
+            "Competition (ASICs, open models)",
+            "Arya, Arcuri",
+            "Arcuri",
+            "Persistent"
+          ],
+          [
+            "Power, sites, supply",
+            "Schneider, Rakers",
+            "Buchalter",
+            "Persistent"
+          ],
+          [
+            "Customer concentration (labs)",
+            "-",
+            "Buchalter",
+            "New"
+          ],
+          [
+            "Leadership and retention",
+            "-",
+            "Arya",
+            "New"
+          ],
+          [
+            "China / export policy",
+            "-",
+            "Moore, Reitzes",
+            "New"
+          ],
+          [
+            "Inference vs training",
+            "Muse",
+            "-",
+            "Fading"
+          ]
+        ]
+      },
+      "title": "Analyst focus matrix (Trevor)"
+    },
+    {
+      "body": "CK named no analysts; Trevor chose Rasgon (pressed hardest on credit conditionality) and Muse (vendor-financing appetite).",
+      "table": {
+        "head": [
+          "Analyst",
+          "Questions",
+          "Answer (3Q)",
+          "Rating",
+          "Next test"
+        ],
+        "rows": [
+          [
+            "Stacy Rasgon (Bernstein)",
+            "2Q: drivers of FY28, pricing, unconstrained demand. 3Q: is the 'conditional on financing' language for neocloud commitments new?",
+            "3Q: 'Is it new? No. Did we change anything? No.' Guarantee falls away if the project is delayed.",
+            "Direct",
+            "Test against 3Q 10-Q wording vs 2Q 10-Q."
+          ],
+          [
+            "C.J. Muse (Cantor)",
+            "2Q: inference share, Groq. 3Q: appetite for vendor financing and effect on neoclouds.",
+            "Land, power and shell; IG customers 'very helpful'; no sizing.",
+            "Partial",
+            "Watch new guarantee lines in 4Q."
+          ]
+        ]
+      },
+      "title": "Trevor's watch-list"
+    },
+    {
+      "body": "QoQ / YoY. For commitments, guarantees, receivables and supply lines, [↓] means larger exposure (worse for holders). Prior-quarter leases per 2Q 10-Q. Non-GAAP includes stock-based compensation from 1Q FY27. Operating margin computed from release figures.",
+      "table": {
+        "head": [
+          "Metric",
+          "3Q FY27",
+          "2Q FY27",
+          "3Q FY26",
+          "QoQ / YoY flag",
+          "Trend"
+        ],
+        "rows": [
+          [
+            "Revenue",
+            "$115.8bn",
+            "$96.2bn",
+            "$57.0bn",
+            "[↑] +20% / +103%",
+            "Accelerating"
+          ],
+          [
+            "Data center revenue",
+            "$107.6bn",
+            "$89.0bn",
+            "$51.2bn",
+            "[↑] +21% / +110%",
+            "Accelerating"
+          ],
+          [
+            "  Hyperscale",
+            "$60.1bn",
+            "$48.7bn",
+            "$35.1bn",
+            "[↑] +23% / +71%",
+            "Rising"
+          ],
+          [
+            "  AI clouds, industrial, enterprise",
+            "$47.5bn",
+            "$40.3bn",
+            "$16.1bn",
+            "[↑] +18% / +195%",
+            "Rising"
+          ],
+          [
+            "Edge computing revenue",
+            "$8.2bn",
+            "$7.2bn",
+            "$5.8bn",
+            "[↑] +14% / +42%",
+            "Rising"
+          ],
+          [
+            "Gross margin (non-GAAP)",
+            "74.9%",
+            "75.0%",
+            "73.5%",
+            "[~] -0.1pp / +1.4pp",
+            "At peak"
+          ],
+          [
+            "Operating margin (GAAP)",
+            "66.9%",
+            "66.2%",
+            "63.2%",
+            "[~] +0.7pp / +3.8pp",
+            "Stable"
+          ],
+          [
+            "EPS (non-GAAP, diluted)",
+            "$2.68",
+            "$2.22",
+            "$1.27",
+            "[↑] +21% / +111%",
+            "Rising"
+          ],
+          [
+            "Operating cash flow",
+            "$48.3bn",
+            "$24.1bn",
+            "$23.8bn",
+            "[↑]",
+            "Volatile"
+          ],
+          [
+            "Free cash flow",
+            "$43.8bn",
+            "$21.3bn",
+            "$22.1bn",
+            "[↑]",
+            "Volatile"
+          ],
+          [
+            "Accounts receivable / DSO",
+            "$81.0bn / 64 days",
+            "n.a. / 60 days",
+            "n.a.",
+            "[↓] (worse)",
+            "Lengthening"
+          ],
+          [
+            "Inventory",
+            "$39.7bn",
+            "$31.6bn",
+            "n.a.",
+            "[?] Rubin build",
+            "Rising"
+          ],
+          [
+            "Supply commitments",
+            "$390bn",
+            "$279bn",
+            "n.a.",
+            "[↓] (larger)",
+            "Rising"
+          ],
+          [
+            "Guarantees, max. gross exposure",
+            "$118.0bn",
+            "$108.5bn",
+            "n.a.",
+            "[↓] (larger)",
+            "Rising"
+          ],
+          [
+            "Cloud service agreements",
+            "$28bn",
+            "$29bn",
+            "n.a.",
+            "[~]",
+            "Flat"
+          ],
+          [
+            "Data center leases not commenced",
+            "$74bn",
+            "$45bn ($25bn own + $20bn third party)",
+            "n.a.",
+            "[↓] (larger)",
+            "Rising"
+          ],
+          [
+            "Neocloud commitments",
+            "$32bn",
+            "$36bn",
+            "n.a.",
+            "[↑] (smaller)",
+            "Falling"
+          ],
+          [
+            "Equity investment commitments",
+            "$20bn",
+            "$25bn",
+            "n.a.",
+            "[↑] (smaller)",
+            "Falling"
+          ],
+          [
+            "Capital returned",
+            "$28.1bn",
+            "n.a.",
+            "n.a.",
+            "[?]",
+            "Record"
+          ],
+          [
+            "China data center (Hopper)",
+            "$2.4bn",
+            "n.a.",
+            "n.a.",
+            "[?] shipments stopped",
+            "Ending"
+          ]
+        ]
+      },
+      "title": "KPI dashboard"
+    },
+    {
+      "body": "Underlying economic performance: stronger than expected; the guide is supply-limited, not demand-limited.",
+      "table": {
+        "head": [
+          "Metric",
+          "Guidance",
+          "vs. prior",
+          "vs. consensus",
+          "Mgmt explanation",
+          "Analyst read"
+        ],
+        "rows": [
+          [
+            "4Q revenue",
+            "$130.0bn +/-3% (14 weeks)",
+            "New",
+            "Above (~$124.4bn)",
+            "Rubin ramp; extra week",
+            "Beat-and-raise intact; ~$120.7bn on a 13-week basis (our calc)"
+          ],
+          [
+            "4Q gross margin",
+            "71.0-72.0%",
+            "Maintained",
+            "In line (71.7%)",
+            "'Our bottom'; memory secured",
+            "Credible: guided twice"
+          ],
+          [
+            "4Q opex (non-GAAP)",
+            "~$10.7bn",
+            "New",
+            "n.a.",
+            "Compute and infrastructure spend",
+            "Rising faster than 2Q"
+          ],
+          [
+            "FY28 revenue growth",
+            "~75%",
+            "Raised (from ~70%)",
+            "n.a.",
+            "Demand plus added supply",
+            "Supply-limited guide; conditional on 'customers' access to capital'"
+          ],
+          [
+            "FY28 gross margin",
+            "72-73%",
+            "Maintained",
+            "n.a.",
+            "Margin 'held solid' moving to new pricing",
+            "'We see no changes at this time'"
+          ],
+          [
+            "FY27 tax rate",
+            "16-18%",
+            "Maintained",
+            "n.a.",
+            "-",
+            "-"
+          ]
+        ]
+      },
+      "title": "Guidance"
+    },
+    {
+      "body": "Five to ten years: the moat now rests on supply control and platform breadth more than on one founder. The open question is how much demand is real end-demand versus demand Nvidia's own credit makes financeable.",
+      "table": {
+        "head": [
+          "Dimension",
+          "Condition",
+          "Direction",
+          "Key observations",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Platform breadth (GPU, CPU, networking)",
+            "Strong",
+            "Up",
+            "Networking above $21bn; CPU revenue to more than double in FY28",
+            "Wider share of each GW"
+          ],
+          [
+            "Supply access",
+            "Strong",
+            "Up",
+            "$390bn commitments; new packaging partners",
+            "Competitors face memory and packaging scarcity"
+          ],
+          [
+            "Pricing power",
+            "Strong",
+            "Stable",
+            "GM 74.9%; FY28 72-73% under new pricing",
+            "Holds through memory cost spike"
+          ],
+          [
+            "Ecosystem financing",
+            "Large",
+            "Up (risk)",
+            "$118bn guarantees; $74bn leases; $32bn neocloud",
+            "Demand partly underwritten by Nvidia's balance sheet"
+          ],
+          [
+            "Leadership",
+            "Interim",
+            "Down",
+            "Huang gone; Kress interim CEO and CFO",
+            "Execution risk over 12-24 months"
+          ]
+        ]
+      },
+      "title": "Moat"
+    },
+    {
+      "table": {
+        "head": [
+          "Risk",
+          "Prior",
+          "Current",
+          "Direction",
+          "Implication"
+        ],
+        "rows": [
+          [
+            "Vendor financing / guarantees",
+            "Rising",
+            "Higher",
+            "Up",
+            "$118bn contingent; first Ohio phase FY29"
+          ],
+          [
+            "Customer receivables",
+            "Rising",
+            "Higher",
+            "Up",
+            "DSO 64 days on extended IG terms"
+          ],
+          [
+            "Leadership",
+            "New",
+            "High",
+            "Stable",
+            "Search ongoing; investigation not discussed"
+          ],
+          [
+            "Export controls / China",
+            "Elevated",
+            "Higher",
+            "Up",
+            "New BIS rules; oversight committee"
+          ],
+          [
+            "Memory cost / margin",
+            "Elevated",
+            "Elevated",
+            "Down",
+            "4Q called the bottom"
+          ],
+          [
+            "Hyperscaler pull-back from neoclouds",
+            "New",
+            "Unaddressed",
+            "?",
+            "Microsoft pull-back (Bloomberg, 5 Nov) not raised on the call"
+          ]
+        ]
+      },
+      "title": "Risks"
+    },
+    {
+      "table": {
+        "head": [
+          "Topic",
+          "Concern",
+          "Response",
+          "Evidence"
+        ],
+        "rows": [
+          [
+            "Guarantees",
+            "Contingent exposure grows each quarter",
+            "Not new; effective only once a building is ready for service; no payments to date",
+            "Exposure +$9.5bn QoQ; first Ohio building FY29"
+          ],
+          [
+            "Neocloud commitments",
+            "Nvidia is the buyer of last resort",
+            "Conditional on neocloud financing and Nvidia acceptance",
+            "Down $4bn QoQ; label changed"
+          ],
+          [
+            "Receivables",
+            "Customers paying slower",
+            "Extended terms for investment-grade, multi-quarter deals",
+            "DSO 60 to 64 days QoQ"
+          ]
+        ]
+      },
+      "title": "Concern, response, evidence"
+    },
+    {
+      "body": "Off-balance-sheet support (guarantees, leases, neocloud and equity commitments) totals about $272bn (including $28bn of cloud service agreements) against $53.5bn of cash and a $44bn quarterly FCF run-rate (our sum). Capital order per Kress: suppliers first, then committed investments, then selective customer support; buybacks finish by end-FY28.",
+      "table": {
+        "head": [
+          "Item",
+          "3Q FY27",
+          "2Q FY27"
+        ],
+        "rows": [
+          [
+            "Operating cash flow",
+            "$48.3bn",
+            "$24.1bn"
+          ],
+          [
+            "Free cash flow",
+            "$43.8bn",
+            "$21.3bn"
+          ],
+          [
+            "Capital returned (buybacks + dividends)",
+            "$28.1bn ($22bn + $6.0bn)",
+            "n.a."
+          ],
+          [
+            "Cash and marketable debt securities",
+            "$53.5bn",
+            "n.a."
+          ],
+          [
+            "Non-marketable equity securities",
+            "$65.5bn (vs $22.3bn at FY26 end)",
+            "n.a."
+          ],
+          [
+            "Guarantees (SB Energy / power and systems / neocloud LPS)",
+            "$105.0 / $9.5 / $3.5bn",
+            "$105.0 / - / $3.5bn"
+          ],
+          [
+            "Leases not commenced + cloud agreements",
+            "$102bn",
+            "$74bn"
+          ],
+          [
+            "Neocloud + equity commitments",
+            "$32bn + $20bn",
+            "$36bn + $25bn"
+          ],
+          [
+            "Buyback authorization remaining",
+            "$227.3bn",
+            "n.a."
+          ]
+        ]
+      },
+      "title": "Capital and funding"
+    },
+    {
+      "body": "Signals: Guarantee total and any new line in the 4Q CFO commentary. | DSO and receivables vs 64 days / $81bn. | Neocloud commitments vs $32bn: further falls signal Nvidia stepping back. | Leases not commenced vs $74bn and whether any are assigned to third parties. | CEO appointment and any change to the FY28 ~75% guide.. Risks building: Contingent liabilities growing faster than cash; lease commitments up to 20 years; export-rule exposure outside China. Confirmation: Guarantees flat or falling while revenue grows; DSO back below 60; FY28 guide held by a permanent CEO. Tripwires: Any payment under a guarantee; a neocloud default or accepted-capacity dispute; FY28 guide cut on 'access to capital'.",
+      "title": "Monitoring"
+    },
+    {
+      "table": {
+        "head": [
+          "Question",
+          "Why it matters",
+          "On the call"
+        ],
+        "rows": [
+          [
+            "Guarantees rose $9.5bn to $118.0bn with a new 'power and systems credit support' line. Who is the counterparty, what triggers it, and is there a board-set cap on total credit support?",
+            "Credit: sizes the new exposure and tests P3.",
+            "Not asked; Muse got 'selective' with no number."
+          ],
+          [
+            "Kress said a guarantee 'doesn't exist anymore' if a project is delayed. For the $105bn Ohio support, which milestone triggers each building's guarantee, and what is the exposure by FY29 and FY30?",
+            "Credit: timing of contingent liability.",
+            "Partly: 'when they are ready to go' (call); first building FY29 per CFO commentary."
+          ],
+          [
+            "Neocloud commitments fell to $32bn from $36bn. Was any commitment cancelled because a neocloud failed to raise financing, and which partners account for the drop?",
+            "Credit and demand: early sign of neocloud funding stress.",
+            "Not asked."
+          ],
+          [
+            "DSO rose to 64 days from 60. What share of the $81bn of receivables is on extended terms, and are any neocloud receivables past due?",
+            "Credit: customer stress shows here first.",
+            "Not asked."
+          ],
+          [
+            "FY28 growth was raised to about 75%, conditional on 'customers' access to capital'. How much of FY28 revenue is from customers whose financing Nvidia supports?",
+            "Equity: how much growth is self-financed.",
+            "Not asked."
+          ],
+          [
+            "How do this week's Commerce Department export controls affect shipments to non-China markets, including tier-two countries?",
+            "Equity: P5 and sovereign demand.",
+            "Moore asked; 'still studying'."
+          ]
+        ]
+      },
+      "title": "Questions for owners"
+    }
+  ],
+  "segment": "financing",
+  "sources": [
+    {
+      "title": "NVIDIA 3Q FY27 8-K (items 2.02, 9.01)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm"
+    },
+    {
+      "title": "3Q FY27 CFO commentary (ex. 99.2)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+    },
+    {
+      "title": "3Q FY27 release (ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+    },
+    {
+      "title": "3Q FY27 release (company)",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+    },
+    {
+      "title": "3Q FY27 call transcript (Singju Post)",
+      "url": "https://singjupost.com/nvidia-q3-fy27-earnings-call-transcript/"
+    },
+    {
+      "title": "2Q FY27 call transcript (company)",
+      "url": "https://s201.q4cdn.com/141608511/files/content_files/TRANSCRIPT_-NVIDIA-Corp-NVDA-US-Q2-2027-Earnings-Call-26-August-2026-5_00-PM-ET.pdf"
+    },
+    {
+      "title": "Consensus comparison (Proactive via Yahoo)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-beats-third-quarter-estimates-214100573.html"
+    },
+    {
+      "title": "Guarantee conditionality (IBTimes)",
+      "url": "https://www.ibtimes.com/nvidia-ai-infrastructure-guarantees-reach-118-billion-3809904"
+    },
+    {
+      "title": "Close 17 Nov (Yahoo)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-222310679.html"
+    },
+    {
+      "title": "After-hours price (StockTitan)",
+      "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-17-2026"
+    }
+  ],
+  "ticker": "NVDA",
+  "verdict": "Intact",
+  "versus": "Beat on the quarter: revenue $115.8bn vs about $109.3bn consensus and the $108.0bn guide; non-GAAP EPS $2.68 vs $2.47. Above on the outlook: 4Q revenue guide $130.0bn (+/-3%, 14-week quarter) vs about $124.4bn consensus; FY28 growth raised to about 75% from 70%; gross-margin path unchanged."
+}

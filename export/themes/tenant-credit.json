@@ -370,6 +370,16 @@
       "segment": "neocloud",
       "source": "CoreWeave",
       "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"
+    },
+    {
+      "claim": "Nvidia guarantees rose to $118.0bn from $108.5bn, adding a $9.5bn 'power and systems credit support' line; no payments made to date. DSO rose to 64 days from 60 on extended terms for investment-grade customers.",
+      "company": "Nvidia",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "numbers": "$105.0bn SB Energy Ohio (OpenAI leases) / $9.5bn power and systems / $3.5bn neocloud land, power and shell",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 CFO commentary (Josh)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
     }
   ],
   "order": 1,
@@ -377,5 +387,5 @@
   "status": "strengthening",
   "summary": "Every 2026 financing still points the same way: debt backed by investment-grade contracts or a hyperscaler guarantee prices near 6-7%, GPU debt without that wrapper pays 9-11% or more, and CoreWeave's DDTL spreads run from about 225 bps for investment-grade customers to 550 bps for AI labs. Fermi shows the flip side: once its venture-backed tenant fell through, only an investment-grade hyperscaler could step in, and on a prepayment. The new caveat this week is quantity, not price: Reuters reports some lenders would decline even backstopped loans because their books are full. Status unchanged; a backstop now buys price more reliably than access.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-11-16"
+  "updated": "2026-11-18"
 }

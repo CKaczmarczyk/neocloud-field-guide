@@ -1,9 +1,9 @@
 {
   "drivers": [],
-  "model": "Sells the GPUs, invests in neoclouds, and backstops capacity and leases (CoreWeave, OpenAI's Ohio campus).",
+  "model": "Sells the GPUs, CPUs and networking for AI data centers (data center $107.6bn of $115.8bn 3Q FY27 revenue: hyperscale $60.1bn; AI clouds, industrial and enterprise $47.5bn), and increasingly underwrites demand: $118.0bn of guarantees (incl. up to $105bn for SB Energy's Ohio campus leased to OpenAI), $74bn of data center leases not commenced, $28bn of cloud service agreements, $32bn of conditional neocloud commitments and $20bn of equity commitments (3Q FY27 CFO commentary). Sensitivities: hyperscaler and lab capex, memory and packaging supply, export controls, customer access to capital.",
   "name": "Nvidia",
-  "next_report": "2026-11-17",
-  "next_report_note": "3Q FY27 call 17 November 2026 per company.",
+  "next_report": "2027-02-24",
+  "next_report_note": "Estimated, not announced: 4Q FY27 (14-week quarter to late January 2027) likely late February 2027. 3Q FY27 reported 17 November 2026; post-call record saved 18 November.",
   "segment": "financing",
   "thesis": "",
   "ticker": "NVDA"
