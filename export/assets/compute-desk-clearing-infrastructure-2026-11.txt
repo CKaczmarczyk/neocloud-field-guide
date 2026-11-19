@@ -1,0 +1,27 @@
+Building the Clearing Infrastructure for Compute 
+Death of the “offtake”
+Today, compute risk moves from seller to buyer through offtake contracts. Neoclouds and their lenders require buyers to commit to years of capacity, whether or not they will need it.
+That model has hit its limit. Lenders now see that offtakers, hyperscalers included, can default. The symptoms: neocloud bond yields are soaring and hyperscaler credit default swap spreads are widening. Meanwhile, AI demand keeps compute sold out. Capacity is locked up years ahead but unavailable today. In financial terms, the market is illiquid and not clearing.
+The fix is a clearinghouse.
+Consider that crude oil, for instance, is never sold out. Commodities like natural gas trade on exchanges. They often facilitate a transaction in the future, not in the present. But the future carries risk: What if a buyer cannot pay ? What if a seller does not deliver?
+That is what a clearinghouse is for. It becomes the buyer to every seller and the seller to every buyer. If one side defaults, the clearinghouse makes the other whole. Counterparty and physical delivery risk is taken away from the transaction.
+We are building that, for compute.
+A clearinghouse needs a reference price
+With a clearinghouse in place, clearing a trade requires a price, and compute is negotiated privately behind closed doors. So we built a family of indexes that track prices from private transactions, sourced through exclusive price-sharing partnerships with neoclouds.
+Compute Desk is best known for its 1-year reserved compute price tickers, like $DESKB300. Through Bloomberg, Kaiko and @general_index, they reach 350,000 CFOs, traders and CIOs. Hyperscalers like Meta, hedge funds and nearly every major bank use them as reference rates.
+A reference price makes market risk hedgeable.
+Trading compute risk
+Compute risk can be packaged as futures, forwards, options, asset-backed securities and credit default swaps. We've built a network of partners to structure, make markets in and broker it.
+Nodal Exchange (@NodalExchange), Architect Financial (@Architect_Fi) and Liquid Compute (@liquidcompute) will list compute futures referencing our rates. Over the counter, traders and brokers like Wintermute provide liquidity in swaps, forwards and options priced off our indexes.
+Compute may be the largest risk in the world that nobody can hedge. Trading firms, hedge funds and family offices are in the business of pricing risk like that, and they get paid for carrying it. The risk they take on is risk lifted off someone who doesn't want it: an AI startup uncertain of next year's compute utilization, or a teachers' pension fund overexposed to compute loans. Our product, Compute Trader, gives both sides access to this market.
+The plumbing for compute risk
+Every mature commodity market runs on three pieces: a clearinghouse (check), a reference price (check) and a physical delivery mechanism. So we built Compute Clear, our physical clearing technology, which lets a clearinghouse deliver compute to end users. We are rolling it out with exchange partners like Architect Financial.
+With a working clearing infrastructure, we unbundle the offtake. Cash-settled derivatives carry the financial risk, while granular futures and forwards give title to the actual compute. Accessing compute becomes fundamentally different. Compute stops being locked up years ahead and will be bought and sold like every other commodity. Sellers will no longer need multi-year offtakes to transfer risk. Buyers will stop having to wait for compute capacity. Owning the clearing infrastructure will mean Compute Desk will facilitate every transaction in an entirely new compute market.
+With all this financial machinery in the background, it all comes down to this:
+
+ “Compute Desk solves financial risk related to compute, which, for us, means we can access compute for only as long as we need it, and not more”. Clem von Stengel (@clemvonstengel), CEO of Conduit Intelligence (@conduitpbc), a brain-computer interface startup and happy Compute Desk client building science fiction with GPUs.
+________
+
+Anthology (@MenloVentures/Anthropic ), Motive Partners, Hedosophia, Crucible Capital, Inovia, Blue Wire capital, Soma Capital, Mythos Ventures, Firestreak, Drysdale, 6thMan are joining Lightspeed Venture Partners, and we’re immensely grateful for their support.
+Andrawes Bahou 
+Co-founder, CEO Compute Desk. 
