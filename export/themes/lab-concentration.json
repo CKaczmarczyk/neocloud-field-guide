@@ -1,6 +1,25 @@
 {
   "evidence": [
     {
+      "claim": "Anthropic priced its IPO at $83, above the $70-78 range, selling 980 million shares for $81.3B plus a $26B concurrent private placement.",
+      "company": "Anthropic",
+      "date": "2026-11-18",
+      "direction": "supports",
+      "numbers": "About $1.38T fully diluted at pricing; gives the largest compute buyer a far larger cash cushion behind its leases, but the buildout now leans on one listed lab.",
+      "segment": "financing",
+      "source": "Renaissance Capital",
+      "url": "https://www.renaissancecapital.com/IPO-Center/News/122776/Anthropic-prices-upsized-IPO-at-$83-above-the-range"
+    },
+    {
+      "claim": "Nvidia expects frontier labs to be about 15% of data center revenue this year; its largest contingent exposure is up to $105bn of credit support for SB Energy's Ohio campus under 20-year leases to OpenAI, first building expected in FY29.",
+      "company": "Nvidia / OpenAI",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 call and CFO commentary (Josh)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+    },
+    {
       "claim": "OpenAI takes all 457 MW of a new TensorWave AMD deployment for six years; no other tenants.",
       "company": "OpenAI / TensorWave",
       "date": "2026-11-16",
@@ -184,21 +203,12 @@
       "segment": "developer",
       "source": "TeraWulf 10-Q",
       "url": "https://www.sec.gov/Archives/edgar/data/0001083301/000108330126000166/wulf-20260630.htm"
-    },
-    {
-      "claim": "Nvidia expects frontier labs to be about 15% of data center revenue this year; its largest contingent exposure is up to $105bn of credit support for SB Energy's Ohio campus under 20-year leases to OpenAI, first building expected in FY29.",
-      "company": "Nvidia / OpenAI",
-      "date": "2026-11-17",
-      "direction": "supports",
-      "segment": "financing",
-      "source": "Nvidia 3Q FY27 call and CFO commentary (Josh)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
     }
   ],
   "order": 6,
   "question": "How exposed is the buildout to two labs?",
   "status": "strengthening",
-  "summary": "Exposure keeps rising: Anthropic's amended S-1 shows about $900.9bn of compute and infrastructure commitments with $70.7bn due within a year, and it is now buying its own gas generators; OpenAI took all 457 MW of TensorWave's new AMD build. Anthropic's IPO is pitched near $1.3T against ECM chatter of $1T, so the labs' funding hinges on one listing window. Microsoft trimming neocloud suppliers (single source) leaves the labs a larger share of remaining demand, and the SpaceX deal's reported 90-day exits (single source) show commitments are less firm than headlines. Status stays strengthening.",
+  "summary": "Exposure keeps rising, but the main buyer is now better funded: Anthropic raised $81.3B in its IPO at $83 plus a $26B placement (about $1.38T fully diluted), against about $900.9bn of compute and infrastructure commitments with $70.7bn due within a year. OpenAI took all 457 MW of TensorWave's AMD build. The buildout's credit now leans on one listed lab whose shares trade near the offer price, and the SpaceX deal's reported 90-day exits show commitments are less firm than headlines. Status stays strengthening.",
   "title": "Concentration on Anthropic and OpenAI",
-  "updated": "2026-11-18"
+  "updated": "2026-11-23"
 }

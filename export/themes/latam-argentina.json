@@ -1,6 +1,36 @@
 {
   "evidence": [
     {
+      "claim": "Pampa incorporated Pampa AI S.A.U. to build data centers on about 800 MW of its generation and Vaca Muerta gas, starting at Loma La Lata, with bylaws covering GPU imports, IaaS, GPU-as-a-Service and acting as a wholesale power agent.",
+      "company": "Pampa Energia",
+      "date": "2026-11-23",
+      "direction": "supports",
+      "numbers": "No investment amount, tenant or timeline disclosed; a corporate vehicle, not a project.",
+      "segment": "energy",
+      "source": "Revista Petroquimica",
+      "url": "https://revistapetroquimica.com/pampa-energia-ingresa-al-negocio-de-los-data-centers-con-pampa-ai-s-a-u/"
+    },
+    {
+      "claim": "JP Morgan country risk rose 236 bps in a week to 1,070, the highest since October 2025; Globals fell about 7% on the week; analysts cite the 2027 election and global risk-off.",
+      "company": "Argentina sovereign",
+      "date": "2026-11-20",
+      "direction": "against",
+      "numbers": "CCL reached $1,794, a 13.6% gap to the official rate; YPF fell 12.5%, Vista 9.4%, Pampa 5.4% in dollars.",
+      "segment": "financing",
+      "source": "Infobae",
+      "url": "https://www.infobae.com/economia/2026/11/21/el-riesgo-pais-escalo-230-puntos-y-las-acciones-argentinas-se-hundieron-hasta-25-en-una-semana-muy-negativa-de-wall-street/"
+    },
+    {
+      "claim": "Trump said US companies would be barred from building AI data centers abroad or face a tremendous tax, with no mechanism, size or country named, and before telling his own officials.",
+      "company": "US government",
+      "date": "2026-11-20",
+      "direction": "against",
+      "numbers": "No order or bill; Congress holds taxing power. Risk falls on any US tenant for a non-US site.",
+      "segment": "policy",
+      "source": "The Private Banker (citing CNBC)",
+      "url": "https://leprivatebanker.com/2026/11/20/trump-threatens-ban-or-tremendous-tax-on-u-s-firms-building-ai-data-centers-abroad-without-details/"
+    },
+    {
       "claim": "Neuquen energy minister Gustavo Medele is promoting data centers beside Vaca Muerta to burn gas producers cannot currently ship; he cites financing and aligning several industries as the hurdles (single source).",
       "company": "Neuquen province",
       "date": "2026-11-08",
@@ -137,7 +167,7 @@
   "order": 8,
   "question": "Is Argentina, or Latin America, becoming investable for AI compute?",
   "status": "weakening",
-  "summary": "Still weakening: country risk closed at 939 bps on 6 November, up from 787 a week earlier and about 400 in July, as investors weigh 2027 debt payments and whether a Democratic Congress limits US support. The offsets are official and not yet approved: EXIM's Argentina line and DFC's roughly $20B study, and Argentina LNG targeting FID on 26 November. Local pull is rising, with Neuquen's energy minister pitching data centers on stranded Vaca Muerta gas and Pampa offering 800 MW, but Stargate Argentina is still a letter of intent and the Super RIGI awaits the Senate. The region remains better than the country (Crusoe in Paraguay); an LNG FID or a Senate vote would argue for moving back.",
+  "summary": "Still weakening, faster: country risk jumped to 1,070 bps on 20 November (939 on 6 November, about 400 in July) and the CCL gap widened to 13.6%, as investors price the 2027 election and global risk-off. Trump's unspecified threat to tax or bar US firms building data centers abroad adds a new risk for any US tenant in Neuquen. Local pull keeps growing: Pampa incorporated Pampa AI on 800 MW and Vaca Muerta gas, and the province is pitching stranded-gas compute, but Stargate Argentina is still a letter of intent and the Super RIGI awaits the Senate. EXIM, DFC and an Argentina LNG FID remain the offsets to watch.",
   "title": "Argentina and Latin America",
-  "updated": "2026-11-16"
+  "updated": "2026-11-23"
 }

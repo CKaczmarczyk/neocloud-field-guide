@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-23",
+  "items": [
+    {
+      "headline": "Applied Digital signs 18-year, 150 MW lease with an investment-grade hyperscaler",
+      "segment": "developer",
+      "source": "Reuters via Investing.com",
+      "summary": "About $5.4B of base-term revenue (about $12.7B over 33 years with renewals), which works out to roughly $2.0M per MW a year or about $167 per kW-month; the company says pricing is higher than its prior leases. Financed through its $5B Macquarie equity partnership then project debt; delivery from 1H 2028; contracted base-term revenue now above $41B, about 75% investment grade.",
+      "url": "https://www.investing.com/news/stock-market-news/applied-digital-signs-54-billion-ai-data-center-lease-with-hyperscaler-5045760"
+    },
+    {
+      "headline": "Nvidia cuts neocloud commitments to $32B and makes support conditional on completion",
+      "segment": "financing",
+      "source": "Capacity",
+      "summary": "Commitments under its neocloud agreements fell to $32B at end-October from $36B; Kress said they activate only after the neocloud has secured financing, deployed and had capacity accepted, none fall due before fiscal 2028, and a delayed project loses the guarantee. Construction risk stays with developers and their lenders.",
+      "url": "https://capacityglobal.com/news/nvidia-trims-neocloud-commitments/"
+    },
+    {
+      "headline": "Nvidia reinstates Jensen Huang as CEO; neocloud stocks rebound",
+      "segment": "neocloud",
+      "source": "Investing.com",
+      "summary": "On 23 Nov the board reversed Huang's 12 Nov resignation; Kress returns to CFO. Nvidia rose about 31%, Nebius about 23% and CoreWeave about 21% intraday. Goldman said it remains to be seen whether Nvidia will keep striking multi-party ecosystem deals at the same scale.",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-5045795"
+    },
+    {
+      "headline": "Apollo and Goldman price about $44B of SpaceX GPU notes, upsized",
+      "segment": "financing",
+      "source": "TeslaNorth (citing Apollo release)",
+      "summary": "Senior and subordinated notes fund Nvidia Vera Rubin equipment for SpaceX's terrestrial compute, with deliveries and lease starts in 1H 2027; anchors include BlackRock, Goldman Sachs Asset Management and KKR-advised accounts. Called the largest GPU financing to date; pricing per tranche was not disclosed in the source read.",
+      "url": "https://teslanorth.com/2026/11/20/spacex-44-billion-gpu-financing-priced/"
+    },
+    {
+      "headline": "CoreWeave default swaps near 1,233 bps; Apollo's Rowan warns of neocloud 'existential crisis'",
+      "segment": "financing",
+      "source": "The Private Banker (citing Bloomberg, CNBC)",
+      "summary": "CoreWeave 5-year CDS rose as much as 76 bps to 1,232.6 on 20 Nov and its 9.75% 2031 bond yields close to 16%; Oracle CDS about 328 bps. Rowan said many neocloud projects lose access to capital without Nvidia as guarantor; Tuttle and Defiance filed for ETFs that buy CDS on CoreWeave, Oracle, Meta and a Mag 7 basket.",
+      "url": "https://leprivatebanker.com/2026/11/20/ai-credit-gauges-worsen-as-coreweave-default-swaps-widen-toward-1233-basis-points-and-oracle-hits-a-one-month-high/"
+    },
+    {
+      "headline": "Anthropic prices record IPO at $83, raising $81.3B",
+      "segment": "financing",
+      "source": "Renaissance Capital",
+      "summary": "980 million shares at $83, above the $70 to $78 range, plus a $26B concurrent private placement; about $1.38T fully diluted at pricing, trading as ANT from 19 Nov. Gives the largest marginal compute buyer a much bigger cash cushion behind its leases.",
+      "url": "https://www.renaissancecapital.com/IPO-Center/News/122776/Anthropic-prices-upsized-IPO-at-$83-above-the-range"
+    },
+    {
+      "headline": "Trump threatens ban or 'tremendous tax' on US firms building AI data centers abroad",
+      "segment": "financing",
+      "source": "The Private Banker (citing CNBC)",
+      "summary": "Said at a 20 Nov White House press conference with no mechanism, size, company or country named, and before telling his own officials; Congress holds taxing power. Directly relevant to any US tenant for a non-US site. Reported widely (CNBC, AP, Axios); no policy text yet.",
+      "url": "https://leprivatebanker.com/2026/11/20/trump-threatens-ban-or-tremendous-tax-on-u-s-firms-building-ai-data-centers-abroad-without-details/"
+    },
+    {
+      "headline": "Argentina country risk jumps 236 bps in a week to 1,070",
+      "segment": "financing",
+      "source": "Infobae",
+      "summary": "JP Morgan spread hit its highest since October 2025; Global bonds fell about 7% on the week, CCL reached $1,794 and the gap to the official rate widened to 13.6%. YPF fell 12.5%, Vista 9.4% and Pampa 5.4% in dollars; analysts cite the 2027 election and global risk-off.",
+      "url": "https://www.infobae.com/economia/2026/11/21/el-riesgo-pais-escalo-230-puntos-y-las-acciones-argentinas-se-hundieron-hasta-25-en-una-semana-muy-negativa-de-wall-street/"
+    },
+    {
+      "headline": "Pampa Energía incorporates Pampa AI for Vaca Muerta gas-powered data centers",
+      "segment": "energy",
+      "source": "Revista Petroquímica",
+      "summary": "The new subsidiary, now in the Boletín Oficial, will use about 800 MW of Pampa generation and Vaca Muerta gas, starting at Loma La Lata in Neuquén; its bylaws allow data centers, GPU imports, IaaS and GPU-as-a-Service, and acting as a wholesale-market power agent. No investment amount or tenant has been announced.",
+      "url": "https://revistapetroquimica.com/pampa-energia-ingresa-al-negocio-de-los-data-centers-con-pampa-ai-s-a-u/"
+    }
+  ],
+  "kona": "Debt got dearer on both of Kona's axes this week: Argentine country risk jumped to 1,070 bps (from about 830) while CoreWeave's default swaps hit about 1,233 bps and Nvidia said its neocloud support only switches on after a project is financed, built and accepted, so Kona cannot lean on vendor backstops during construction and should price any debt off an investment-grade tenant or lab guarantee, not its own credit. The offtake signal is better: Applied Digital signed an 18-year, 150 MW investment-grade lease at about $167 per kW-month with higher pricing than its earlier deals, which supports Kona's turnkey-lease pricing, but Trump's threatened ban or tax on US firms building data centers abroad is a new, undefined risk for any US hyperscaler or lab tenant in Neuquén. Pampa Energía has now incorporated Pampa AI with 800 MW and Vaca Muerta gas at Loma La Lata, a direct local competitor for the same tenants and a possible gas or power partner.",
+  "stale": "Kona tab, currency and country risk block: says the spread settled near 600 bps as a floor (now 1,070 as of 20 Nov). Players and Kona text: 'Kona pays 600 bps of country risk before any project spread' (now about 1,070). Financing/Kona tables: CoreWeave unsecured yield taken from 20 Oct (now near 16%, CDS about 1,233 bps on 20 Nov). Argentina watchlist row: 'Pampa offering 800 MW' should read Pampa AI S.A.U. incorporated. Applied Digital player card: market cap and Dakotas/Louisiana description predate the Alabama campus and the new 150 MW lease; contracted base-term revenue now above $41B. Amazon's Anthropic stake valued at $80 per share; the IPO priced at $83.",
+  "title": "Credit tightens, Argentina reprices, Pampa enters Kona's lane"
+}

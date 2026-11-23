@@ -1,6 +1,16 @@
 {
   "evidence": [
     {
+      "claim": "Pampa incorporated Pampa AI S.A.U. to build data centers on about 800 MW of its generation and Vaca Muerta gas, starting at Loma La Lata, with bylaws covering GPU imports, IaaS, GPU-as-a-Service and acting as a wholesale power agent.",
+      "company": "Pampa Energia",
+      "date": "2026-11-23",
+      "direction": "supports",
+      "numbers": "No investment amount, tenant or timeline disclosed; a corporate vehicle, not a project.",
+      "segment": "energy",
+      "source": "Revista Petroquimica",
+      "url": "https://revistapetroquimica.com/pampa-energia-ingresa-al-negocio-de-los-data-centers-con-pampa-ai-s-a-u/"
+    },
+    {
       "claim": "Microsoft capacity at the New Jersey (Vineland) colocation site slipped: more than half delivered by year-end, the rest in 2Q27, after the site's temporary generation was retired early; power is moving to Bloom fuel cells.",
       "company": "Nebius",
       "date": "2026-11-12",
@@ -276,5 +286,5 @@
   "status": "strengthening",
   "summary": "On-site gas is mainstream and the largest buyers now own the equipment: Anthropic committed $3.4bn to 1.7 GW of generators (FT), INNIO took one developer to 1.72 GW of engines, SpaceX plans 20 GW of its own power, and Cipher is laying gas laterals for up to 2.5 GW. Equipment is the bottleneck: heavy-duty turbines are sold out through 2030 and gensets into late 2028, and Anthropic now flags competition for gas and pipeline capacity in its own filing. Permits are being won (Mississippi upheld SpaceXAI's 41-turbine Southaven plant on 10 November) but temporary turbines are not exempt as mobile sources. Costs remain high, about $150-200 per MWh off-grid in Texas, so it wins on speed, not price. Status unchanged.",
   "title": "Behind-the-meter and gas-to-compute",
-  "updated": "2026-11-16"
+  "updated": "2026-11-23"
 }

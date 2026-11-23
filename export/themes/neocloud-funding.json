@@ -1,6 +1,44 @@
 {
   "evidence": [
     {
+      "claim": "Board reinstated Jensen Huang as CEO on 23 Nov; Kress returns to CFO. Goldman says it remains to be seen whether Nvidia keeps striking multi-party ecosystem deals at the same scale.",
+      "company": "Nvidia",
+      "date": "2026-11-23",
+      "direction": "neutral",
+      "numbers": "Nebius up about 23% and CoreWeave about 21% intraday; the $32B conditional neocloud commitment from the 17 Nov filing is unchanged.",
+      "segment": "financing",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-5045795"
+    },
+    {
+      "claim": "CoreWeave five-year CDS rose as much as 76 bps to 1,232.6 and its 9.75% 2031 bond yields close to 16%; Oracle CDS about 328 bps. Apollo CEO Marc Rowan said neocloud projects could face an existential crisis without Nvidia as guarantor.",
+      "company": "CoreWeave / Oracle",
+      "date": "2026-11-20",
+      "direction": "supports",
+      "numbers": "Protection on CoreWeave costs about four times Oracle; insiders split, with co-founder Venturo buying $30M of 2031 bonds while the market prices over 65% five-year default odds.",
+      "segment": "financing",
+      "source": "The Private Banker (citing Bloomberg, CNBC)",
+      "url": "https://leprivatebanker.com/2026/11/20/ai-credit-gauges-worsen-as-coreweave-default-swaps-widen-toward-1233-basis-points-and-oracle-hits-a-one-month-high/"
+    },
+    {
+      "claim": "Nvidia's neocloud commitments (renamed from 'AI cloud agreements') fell to $32bn from $36bn and now take effect only if the neocloud secures financing and Nvidia accepts the deployed capacity.",
+      "company": "Nvidia",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 CFO commentary (Josh)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+    },
+    {
+      "claim": "Kress says future Nvidia support will focus on land, power and shell and be 'disciplined and selective'; guarantees attach only once a building is ready for service, so they cannot fund construction.",
+      "company": "Nvidia",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 call (Josh)",
+      "url": "https://singjupost.com/nvidia-q3-fy27-earnings-call-transcript/"
+    },
+    {
       "claim": "TensorWave will supply OpenAI 457 MW of AMD MI455X capacity for six years from 1H27, under OpenAI's AMD partnership.",
       "company": "TensorWave",
       "date": "2026-11-16",
@@ -351,30 +389,12 @@
       "segment": "neocloud",
       "source": "Catalyst",
       "url": "https://www.youtube.com/watch?v=b5YnPsBxgjA"
-    },
-    {
-      "claim": "Nvidia's neocloud commitments (renamed from 'AI cloud agreements') fell to $32bn from $36bn and now take effect only if the neocloud secures financing and Nvidia accepts the deployed capacity.",
-      "company": "Nvidia",
-      "date": "2026-11-17",
-      "direction": "supports",
-      "segment": "financing",
-      "source": "Nvidia 3Q FY27 CFO commentary (Josh)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
-    },
-    {
-      "claim": "Kress says future Nvidia support will focus on land, power and shell and be 'disciplined and selective'; guarantees attach only once a building is ready for service, so they cannot fund construction.",
-      "company": "Nvidia",
-      "date": "2026-11-17",
-      "direction": "supports",
-      "segment": "financing",
-      "source": "Nvidia 3Q FY27 call (Josh)",
-      "url": "https://singjupost.com/nvidia-q3-fy27-earnings-call-transcript/"
     }
   ],
   "order": 5,
   "question": "Can neoclouds keep raising money below what their assets earn?",
   "status": "weakening",
-  "summary": "Credit for weaker neoclouds kept tightening: Reuters reports some lenders would decline AI loans even with Anthropic or Google backstops, ING is selling $500mn of data center loans, Barclays is insuring, and A-rated data center ABS spreads are about 60 bps wider since Q1. CoreWeave's 2032 notes passed 16% and it says it will not issue unsecured debt at these yields, leaning on $9bn of prepayments; Nebius is funding 2027 largely from prepayments too. Nvidia is reported weighing a construction guarantee for Nscale (single source), and Fermi's TensorWave lease died for want of project finance. Contracts still get signed (TensorWave-OpenAI 457 MW), so the market is splitting by credit and shifting to prepayments and supplier support rather than shutting. Status stays weakening.",
+  "summary": "Still weakening: CoreWeave's CDS widened to about 1,233 bps on 20 November with its 2031 bonds near 16%, Apollo's Rowan warned of an existential crisis for neoclouds without Nvidia's guarantees, and Nvidia's $32B of neocloud commitments now attach only after financing and acceptance. Banks are selling or insuring data center loans and CoreWeave and Nebius are funding largely from customer prepayments. Huang's reinstatement on 23 November lifted the stocks about 20% but did not change the conditional terms; whether he restores multi-party deal-making is the swing factor. Status unchanged.",
   "title": "Neocloud funding access",
-  "updated": "2026-11-18"
+  "updated": "2026-11-23"
 }

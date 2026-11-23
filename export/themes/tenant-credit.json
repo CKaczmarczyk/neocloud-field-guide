@@ -1,6 +1,46 @@
 {
   "evidence": [
     {
+      "claim": "Signed an 18-year lease for 150 MW of critical IT with an unnamed investment-grade hyperscaler, about $5.4B base-term revenue ($12.7B with renewals); says pricing beats its prior leases; to be funded through its $5B Macquarie equity partnership then project debt.",
+      "company": "Applied Digital",
+      "date": "2026-11-23",
+      "direction": "supports",
+      "numbers": "About $2.0M per MW a year, roughly $167 per kW-month; contracted base-term revenue now above $41B, about 75% investment grade.",
+      "segment": "developer",
+      "source": "Reuters via Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/applied-digital-signs-54-billion-ai-data-center-lease-with-hyperscaler-5045760"
+    },
+    {
+      "claim": "CoreWeave five-year CDS rose as much as 76 bps to 1,232.6 and its 9.75% 2031 bond yields close to 16%; Oracle CDS about 328 bps. Apollo CEO Marc Rowan said neocloud projects could face an existential crisis without Nvidia as guarantor.",
+      "company": "CoreWeave / Oracle",
+      "date": "2026-11-20",
+      "direction": "supports",
+      "numbers": "Protection on CoreWeave costs about four times Oracle; insiders split, with co-founder Venturo buying $30M of 2031 bonds while the market prices over 65% five-year default odds.",
+      "segment": "financing",
+      "source": "The Private Banker (citing Bloomberg, CNBC)",
+      "url": "https://leprivatebanker.com/2026/11/20/ai-credit-gauges-worsen-as-coreweave-default-swaps-widen-toward-1233-basis-points-and-oracle-hits-a-one-month-high/"
+    },
+    {
+      "claim": "Apollo and Goldman priced an upsized, oversubscribed $44B of senior and subordinated notes to buy Nvidia Vera Rubin equipment for SpaceX, anchored by BlackRock, GSAM and KKR-advised accounts; leases start as chips arrive in 1H 2027.",
+      "company": "SpaceX / Apollo / Goldman",
+      "date": "2026-11-20",
+      "direction": "supports",
+      "numbers": "Largest GPU financing to date; tranche pricing not in the source read.",
+      "segment": "financing",
+      "source": "TeslaNorth (citing Apollo release)",
+      "url": "https://teslanorth.com/2026/11/20/spacex-44-billion-gpu-financing-priced/"
+    },
+    {
+      "claim": "Nvidia guarantees rose to $118.0bn from $108.5bn, adding a $9.5bn 'power and systems credit support' line; no payments made to date. DSO rose to 64 days from 60 on extended terms for investment-grade customers.",
+      "company": "Nvidia",
+      "date": "2026-11-17",
+      "direction": "supports",
+      "numbers": "$105.0bn SB Energy Ohio (OpenAI leases) / $9.5bn power and systems / $3.5bn neocloud land, power and shell",
+      "segment": "financing",
+      "source": "Nvidia 3Q FY27 CFO commentary (Josh)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
+    },
+    {
       "claim": "After the TensorWave lease terminated, an unnamed investment-grade hyperscaler agreed a $200mn prepayment while negotiating about 600 MW of powered land (lease non-binding).",
       "company": "Fermi",
       "date": "2026-11-13",
@@ -351,41 +391,12 @@
       "segment": "developer",
       "source": "CryptoSlate",
       "url": "https://cryptoslate.com/the-brutal-346m-math-behind-galaxys-high-stakes-race-to-build-coreweaves-texas-ai-mega-center/"
-    },
-    {
-      "claim": "Josh AMZN preview: Cipher's 70 MW Stingray lease is 15-year triple-net with a 3% escalator and an Amazon.com, Inc. guarantee of rent and opex; Amazon pays overruns above $10.5M per IT MW.",
-      "company": "Cipher Digital / Amazon",
-      "date": "2026-06-01",
-      "direction": "supports",
-      "numbers": "The parent guarantee let Cipher raise about $810M of project debt; Josh estimates about $128 to $159 per kW-month.",
-      "segment": "developer",
-      "source": "Cipher 8-K, via Josh AMZN preview",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001819989/000095010326008635/dp248110_ex9901.htm"
-    },
-    {
-      "claim": "A facility backed by one investment-grade customer priced at SOFR + 225 bps, rated A3.",
-      "company": "CoreWeave",
-      "date": "2026-03-01",
-      "direction": "supports",
-      "segment": "neocloud",
-      "source": "CoreWeave",
-      "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-Landmark-8-5-Billion-Financing-Facility-Achieving-First-Investment-Grade-Rated-GPU-backed-Financing/default.aspx"
-    },
-    {
-      "claim": "Nvidia guarantees rose to $118.0bn from $108.5bn, adding a $9.5bn 'power and systems credit support' line; no payments made to date. DSO rose to 64 days from 60 on extended terms for investment-grade customers.",
-      "company": "Nvidia",
-      "date": "2026-11-17",
-      "direction": "supports",
-      "numbers": "$105.0bn SB Energy Ohio (OpenAI leases) / $9.5bn power and systems / $3.5bn neocloud land, power and shell",
-      "segment": "financing",
-      "source": "Nvidia 3Q FY27 CFO commentary (Josh)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm"
     }
   ],
   "order": 1,
   "question": "Does the tenant's credit, not the asset, set what developers and neoclouds pay to borrow?",
   "status": "strengthening",
-  "summary": "Every 2026 financing still points the same way: debt backed by investment-grade contracts or a hyperscaler guarantee prices near 6-7%, GPU debt without that wrapper pays 9-11% or more, and CoreWeave's DDTL spreads run from about 225 bps for investment-grade customers to 550 bps for AI labs. Fermi shows the flip side: once its venture-backed tenant fell through, only an investment-grade hyperscaler could step in, and on a prepayment. The new caveat this week is quantity, not price: Reuters reports some lenders would decline even backstopped loans because their books are full. Status unchanged; a backstop now buys price more reliably than access.",
+  "summary": "This week sharpened the split rather than changing it: Applied Digital signed an 18-year investment-grade lease at about $167 per kW-month with better pricing and will fund it with project debt, and Apollo and Goldman placed $44B of SpaceX chip notes oversubscribed, while CoreWeave's CDS reached about 1,233 bps against Oracle's 328. Apollo's Rowan says many neocloud projects lose capital access without Nvidia as guarantor, and Nvidia's support now attaches only after completion. Debt backed by investment-grade contracts prices near 6-7%, unwrapped GPU debt 9-11% or more, and some lenders are rationing even backstopped loans. Status unchanged.",
   "title": "Tenant credit sets the cost of capital",
-  "updated": "2026-11-18"
+  "updated": "2026-11-23"
 }
